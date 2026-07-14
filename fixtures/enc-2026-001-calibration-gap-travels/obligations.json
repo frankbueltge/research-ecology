@@ -1,0 +1,43 @@
+[
+  {
+    "id": "obl-enc2026001-live-status-travels",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "source_event_id": "evt-enc2026001-02-object-admitted",
+    "proposer_collective_id": "meridian",
+    "obligated_collective_id": "ensemble",
+    "clause_text": "Live status travels with every derived operation, at equal prominence to the derived headline — not a status frozen at the moment of translation.",
+    "clause_source": "field-research memory/downstream-commitments.md, condition 1 (standing contract, event evt-enc2026001-01-contract-published)",
+    "instantiation_quote": "SHIPPED and live at extraction time, with its 2026-07-03 correction and re-verification history displayed on the work itself; if upstream revises or discards, this work updates on the same cycle or pauses",
+    "instantiation_source": "studio projects/native-speaker/data.json (commit 3be83b4c4e41f73203da6ef3edee2e4c2c8722ad), field upstream.instrument_001_live_status",
+    "status": "active",
+    "prominence": "load_bearing",
+    "accepted_by_event_id": "evt-enc2026001-02-object-admitted",
+    "evidence_events": [
+      "evt-enc2026001-02-object-admitted",
+      "evt-enc2026001-05-correction-applied",
+      "evt-enc2026001-06-derivative-published"
+    ],
+    "active_from": "2026-07-12T13:48:36Z",
+    "note": "Still active at time of fixture encoding: Meridian's session-33 correction (evt-05) landed after Native Speaker's premiere; the obligation as written binds Ensemble to keep updating on the same cycle as instrument 001's live status changes, or pause — this is the concrete, checkable trace of the standing contract's condition 1 inside this specific encounter."
+  },
+  {
+    "id": "obl-enc2026001-caveat-preservation",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "source_event_id": "evt-enc2026001-02-object-admitted",
+    "proposer_collective_id": "meridian",
+    "obligated_collective_id": "ensemble",
+    "clause_text": "A re-voiced or re-cooked piece must preserve the caveat its source work's own README names as load-bearing — re-voicing compresses, and compression is where a load-bearing caveat is dropped for pace, not from bad intent.",
+    "clause_source": "field-research memory/downstream-commitments.md, condition 2 (standing contract, event evt-enc2026001-01-contract-published)",
+    "instantiation_quote": "A 2026 study in a Czech-language setting found NO systematic bias against non-native speakers; the contemporary detectors studied did not rely on perplexity as a key feature (Al Ali, Helcl, Libovický, EACL 2026). The bias may be perplexity-architecture-specific and/or English-specific, or diminishing in newer models — not resolved",
+    "instantiation_source": "studio works/2026-07-13-native-speaker/data.json, verified.counter_evidence (role: \"LOAD-BEARING CAVEAT — survives every re-voicing of this work\")",
+    "status": "active",
+    "prominence": "load_bearing",
+    "accepted_by_event_id": "evt-enc2026001-02-object-admitted",
+    "evidence_events": [
+      "evt-enc2026001-02-object-admitted",
+      "evt-enc2026001-06-derivative-published"
+    ],
+    "active_from": "2026-07-12T13:48:36Z",
+    "note": "The counter-evidence caveat (perplexity bias may be architecture/English-specific, not universal) is carried at the premiere (f6a9d8f) exactly as at increment 1 (3be83b4) — no compression drop observed between the two commits."
+  }
+]

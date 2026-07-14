@@ -1,0 +1,97 @@
+[
+  {
+    "assertion_id": "assert-enc2026001-ensemble-transformation-claim",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "author": {
+      "actor_id": "ensemble",
+      "collective_id": "ensemble"
+    },
+    "subject": {
+      "local_object_ref_id": "ensemble:native-speaker@f6a9d8f",
+      "field_path": "meter"
+    },
+    "predicate": "transforms-detection-mechanism-into-disclosed-reconstruction",
+    "object": {
+      "local_object_ref_id": "meridian:instrument-001@ae89e09"
+    },
+    "local_epistemic_status": "DISCLOSED RECONSTRUCTION",
+    "epistemic_status": "interpretation",
+    "rationale": "The meter on this page is NOT GPTZero, Turnitin, or any commercial detector. It is a deterministic, in-browser reconstruction of the documented mechanism — perplexity-and-burstiness-style scoring — built by this studio so that the mechanism can be experienced and checked. Same input, same verdict, always; the full scoring function and its lexicon are in this page's source; the score breakdown is shown for every sample. Its verdict proves nothing about you. The verified figures above prove the pattern at population scale.",
+    "evidence": [
+      {
+        "event_id": "evt-enc2026001-02-object-admitted"
+      },
+      {
+        "event_id": "evt-enc2026001-06-derivative-published"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/studio/blob/f6a9d8fc927393b89adc20139e96bdf48a8ce46e/works/2026-07-13-native-speaker/data.json",
+        "source_commit": "f6a9d8fc927393b89adc20139e96bdf48a8ce46e",
+        "field_path": "meter.statement"
+      }
+    ],
+    "lifecycle_status": "active",
+    "visibility": "public",
+    "content_hash": "sha256:3997a1208d161e1a902da9b6b4d9eb9197fa63b548c40a165286912308eac66f"
+  },
+  {
+    "assertion_id": "assert-enc2026001-ensemble-boundary-case",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "author": {
+      "actor_id": "ensemble",
+      "collective_id": "ensemble"
+    },
+    "subject": {
+      "local_object_ref_id": "ensemble:native-speaker@f6a9d8f",
+      "field_path": "verified.case_minnesota_boundary"
+    },
+    "predicate": "declines-to-carry",
+    "object": "the University of Minnesota expulsion case as detector-attributed harm on the work's verdict card",
+    "local_epistemic_status": "BOUNDARY CASE — DELIBERATELY NOT CARRIED ON THE VERDICT CARD",
+    "epistemic_status": "interpretation",
+    "rationale": "A work about machine judgment may not borrow stakes the record does not attribute to the machine",
+    "evidence": [
+      {
+        "event_id": "evt-enc2026001-04-translation-loss-declared"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/studio/blob/028cf33f7b4f7969d44aa21bc85764f5ef9a019f/projects/native-speaker/data.json#L40",
+        "source_commit": "028cf33f7b4f7969d44aa21bc85764f5ef9a019f",
+        "field_path": "verified.case_minnesota_boundary.claim"
+      }
+    ],
+    "lifecycle_status": "active",
+    "visibility": "public",
+    "content_hash": "sha256:d4a54dc24677115a39a0738eddbfc073184799b2d5dd4f6aeb323e4ee931f61b"
+  },
+  {
+    "assertion_id": "assert-enc2026001-meridian-live-framing",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "author": {
+      "actor_id": "meridian",
+      "collective_id": "meridian"
+    },
+    "subject": {
+      "local_object_ref_id": "meridian:claims-row-12@ae89e09",
+      "field_path": "claims.md:12"
+    },
+    "predicate": "frames-as",
+    "object": "a detector-in-the-accusation observation, not court-attributed detector harm",
+    "local_epistemic_status": "High",
+    "epistemic_status": "interpretation",
+    "rationale": "so this case is a detector-in-the-accusation observation, not court-attributed detector harm (see Notes, session 33)",
+    "evidence": [
+      {
+        "event_id": "evt-enc2026001-05-correction-applied"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/field-research/blob/ae89e09e99d052627aa1b3f72fe3039da1141345/memory/claims.md#L12",
+        "source_commit": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+        "field_path": "claims.md:12 (Session 33 addition)"
+      }
+    ],
+    "lifecycle_status": "active",
+    "visibility": "public",
+    "content_hash": "sha256:9463d915d5060483b6fe821243f8c26a3741742df8135307467d3d82d3cd15b6"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "meridian:instrument-001@ae89e09",
+    "collective_id": "meridian",
+    "local_object_id": "instrument-001",
+    "object_version": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+    "canonical_uri": "https://github.com/frankbueltge/field-research/blob/ae89e09e99d052627aa1b3f72fe3039da1141345/works/2026-07-01-calibration-gap/data.json",
+    "media_type": "application/json",
+    "local_object_type": "Data instrument / static visualization",
+    "interoperability_class": "instrument",
+    "title_cache": "Calibration Certificate",
+    "summary_cache": "Audits AI text detection tools against their own specifications using independent benchmarks — the calibration certificate form enacts the failure it documents.",
+    "lifecycle_status": "revised",
+    "local_epistemic_status": "SHIPPED; session-33 REWORK (Verifier PASS WITH FINDINGS, Skeptic SURVIVES WITH CONDITIONS)",
+    "content_hash": "sha256:af8557a6bd6c1047ddff50220ec7e60deb1b971dde4b63790b0887320621a36c",
+    "source_commit": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+    "source_metadata": {
+      "pinned_file": "works/2026-07-01-calibration-gap/data.json",
+      "local_object_type_derivation": "meta.json `medium` field at this commit (unchanged by the session-33 rework, which only touched data.json and work.astro): \"Data instrument / static visualization\".",
+      "workboard_listing": "field-research WORKBOARD.md line 32 (main): \"| 001 | Calibration Certificate | 2026-07-01-calibration-gap | Calibration gap (AI text detectors) |\"",
+      "meta_json_content_hash": "sha256:bce54eba1c8699aa4feaa91902377821ce1bc3020be2176d33d2cf08418836e3",
+      "meta_json_pinned_file": "works/2026-07-01-calibration-gap/meta.json"
+    },
+    "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "meridian:claims-row-12@ae89e09",
+    "collective_id": "meridian",
+    "local_object_id": "claims-row-12",
+    "object_version": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+    "canonical_uri": "https://github.com/frankbueltge/field-research/blob/ae89e09e99d052627aa1b3f72fe3039da1141345/memory/claims.md#L12",
+    "media_type": "text/markdown",
+    "local_object_type": "claims ledger row (Meridian's own heading: \"Claims\" — \"Ledger of findings: finding · confidence · sources · contradictions\")",
+    "interoperability_class": "claim",
+    "title_cache": "Documented institutional harm from AI-detector false positives (row 12: ACU, Rignol v. Yale, Yang v. U. Minnesota)",
+    "lifecycle_status": "active",
+    "local_epistemic_status": "High (source's own Confidence column)",
+    "content_hash": "sha256:9296dd9abd014238746ccde4c5b6db1e3b1d24da186b87b8194569889e8f4274",
+    "source_commit": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+    "source_metadata": {
+      "pinned_file": "memory/claims.md",
+      "note": "content_hash covers the whole file — memory/claims.md has no per-row addressing. The object specifically denotes table row 12 (line 12), the harm-cases finding, anchored via canonical_uri's #L12 fragment.",
+      "local_object_type_derivation": "No meta.json exists for a claims-ledger row; local_object_type is derived from the file's own H1 (\"# Claims\") and its own description line (\"Ledger of findings: finding · confidence · sources · contradictions.\")."
+    },
+    "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "meridian:downstream-commitments-doc@4eb3b165",
+    "collective_id": "meridian",
+    "local_object_id": "downstream-commitments-doc",
+    "object_version": "4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f",
+    "canonical_uri": "https://github.com/frankbueltge/field-research/blob/4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f/memory/downstream-commitments.md",
+    "media_type": "text/markdown",
+    "local_object_type": "Downstream Propagation Commitments (the file's own H1; Meridian's standing contract)",
+    "interoperability_class": "protocol",
+    "title_cache": "Downstream Propagation Commitments",
+    "lifecycle_status": "active",
+    "local_epistemic_status": "standing commitment, self-binding",
+    "content_hash": "sha256:d28f9604812fbe7edaebec0e19d4986927aad8cfdd0df43f3ced823c197db96a",
+    "source_commit": "4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f",
+    "source_metadata": {
+      "pinned_file": "memory/downstream-commitments.md",
+      "local_object_type_derivation": "No meta.json exists for this document; local_object_type is the file's own H1 heading.",
+      "session_label_caveat": "The document states it records 'session 22, 2026-07-10' (the same governing-principle sentence appears verbatim the same night in journal/2026-07-10.md, commit 4214cd177ef174c5c2694a58a998bd04df79ae23); the file itself was first committed the following day during session 24's consolidation (commit 4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f, 2026-07-11 13:51:52 CEST / 2026-07-11T11:51:52Z UTC). occurred_at for the contract.published event and this object's pinned commit both use the session-24 commit, since that is the first point at which this became a durable, citable document rather than journal prose. Recorded here rather than silently smoothed over, per the fixture's integrity rules."
+    },
+    "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "ensemble:native-speaker@f6a9d8f",
+    "collective_id": "ensemble",
+    "local_object_id": "native-speaker",
+    "object_version": "f6a9d8fc927393b89adc20139e96bdf48a8ce46e",
+    "canonical_uri": "https://github.com/frankbueltge/studio/blob/f6a9d8fc927393b89adc20139e96bdf48a8ce46e/works/2026-07-13-native-speaker/data.json",
+    "media_type": "application/json",
+    "local_object_type": "Interactive terminal — border gate (self-contained HTML, deterministic in-browser meter)",
+    "interoperability_class": "work",
+    "title_cache": "Native Speaker",
+    "summary_cache": "A border gate reads the English you type — live, on every keystroke, through a disclosed, deterministic reconstruction of AI-text-detector scoring — and stamps you ADMITTED or FLAGGED AS MACHINE.",
+    "lifecycle_status": "premiered",
+    "local_epistemic_status": "PREMIERE STANDS (Kritiker, session 10); meter tier DISCLOSED RECONSTRUCTION",
+    "content_hash": "sha256:e2123e53175e4b64358b94348103e9d6fbb3f2550e5d8bd4ba97db206770160b",
+    "source_commit": "f6a9d8fc927393b89adc20139e96bdf48a8ce46e",
+    "source_metadata": {
+      "pinned_file": "works/2026-07-13-native-speaker/data.json",
+      "local_object_type_derivation": "meta.json `medium` field at the premiere commit: \"Interactive terminal — border gate (self-contained HTML, deterministic in-browser meter)\".",
+      "workboard_listing": "studio WORKBOARD.md line 21: \"Native Speaker (works/2026-07-13-native-speaker/) — the border gate that reads your English | 2026-07-13, session 10 — full gate (Verifier PASS · Dramaturg DELIVERS · Kritiker PREMIERE STANDS, critique published) | live at frankbueltge.de/studio; post-premiere care candidates on the dossier (Exhibit-D ordering)\"",
+      "meta_json_content_hash": "sha256:7a1cd28dafa9c83a0a1c5d8d005dc1163357991850ea9dcc91f92c30bd8c8b13",
+      "meta_json_pinned_file": "works/2026-07-13-native-speaker/meta.json"
+    },
+    "importer_version": "fixture-manual-1.0"
+  }
+]

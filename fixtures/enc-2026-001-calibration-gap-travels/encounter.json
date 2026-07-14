@@ -1,0 +1,51 @@
+{
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "slug": "enc-2026-001-calibration-gap-travels",
+  "title": "The Calibration Gap travels: Instrument 001 → Native Speaker → correction upstream",
+  "editorial_proposition": "A source object travels under a standing, self-issued contract; the receiver's own first-hand research finds a gap in the source's harm register and reports it upstream; the source re-verifies and revises; the receiver, independently, had already declined to use the same case as evidence on its own work. Two incompatible local framings of the same court case remain live in both archives at once.",
+  "proposition_author": { "actor_id": "the-middle-editor", "note": "Phase 1 encoding; no editorial voice beyond the sourced record." },
+  "visibility": "public",
+  "initiating_event_id": "evt-enc2026001-01-contract-published",
+  "created_at": "2026-07-11T11:51:52Z",
+  "dormant_at": null,
+  "archived_at": null,
+  "correlation_group": null,
+  "participants": [
+    {
+      "collective_id": "meridian",
+      "actor_id": "meridian",
+      "role": "source",
+      "local_status": "correction applied; register revised; obligations active",
+      "local_status_rationale": "Meridian bound itself to standing downstream conditions (2026-07-11, session 22/24), was consumed under those conditions by Ensemble, received a downstream correction report from the studio (2026-07-12, via Frank as delegated conductor), re-verified and revised instrument 001 and claims row 12 through a full gauntlet re-run the same day (session 33), and continues to hold obligations toward any downstream work still consuming that instrument.",
+      "joined_at": "2026-07-11T11:51:52Z",
+      "response_expected": false
+    },
+    {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble",
+      "role": "receiver",
+      "local_status": "premiered; live-status obligation active",
+      "local_status_rationale": "Ensemble consumed instrument 001 and claims.md rows under Meridian's standing contract, accepted the live-status obligation explicitly in its own data.json, independently declined to carry the Minnesota case as detector-attributed harm on the verdict card, and premiered Native Speaker through its own full gate. The obligation to update or pause on any future upstream revision remains active.",
+      "joined_at": "2026-07-12T13:48:36Z",
+      "response_expected": true
+    },
+    {
+      "actor_id": "frank-bueltge",
+      "collective_id": null,
+      "role": "conductor",
+      "local_status": "transport only; not an authoring party to either side's assertions",
+      "local_status_rationale": "Delivered the studio's correction report into Meridian's inbox (REQUESTS.md), explicitly delegated by the team (\"via the studio's conductor, explicitly delegated\") — an apparatus role, not a third interpretive voice (docs/ENCOUNTER-INVENTORY.md, 'Apparatus visibility built in').",
+      "joined_at": "2026-07-12T14:44:51Z",
+      "response_expected": false
+    }
+  ],
+  "non_participants": [
+    {
+      "collective_id": "ulysses",
+      "note": "Not a participant in this encounter. Zero references in either direction between Ulysses and Meridian; Ulysses↔Ensemble is structural permission only (\"The Atelier … usable with attribution\"), never exercised (docs/ENCOUNTER-INVENTORY.md, 'Documented silences'). Rendered here as documented non-relation, not failure or inferred refusal (spec 03 §8.1); no default Ulysses lens applied (spec 07 §11)."
+    }
+  ],
+  "shared_resolution": null,
+  "resolution_note": "No global `encounter.resolved` event exists or is modeled (spec 03 §10: 'There is no global encounter.resolved unless all participating practices explicitly issue compatible local closure events'). Meridian's local status is 'correction applied; register revised; obligations active' while Ensemble's is 'premiered; live-status obligation active' — both current and true at once, neither flattened into a single shared label. The two archives' framings of the Yang v. University of Minnesota case remain structurally different and both live: Meridian carries it as a claims-ledger harm case with an appellate caveat at display prominence; Ensemble declines to carry it as detector-attributed harm at all on Native Speaker's verdict card.",
+  "source_note": "This encounter has no explicit `offer.created` event: the transfer began as consumption under Meridian's pre-existing standing contract (memory/downstream-commitments.md), not a bilateral offer addressed to this specific encounter (docs/ENCOUNTER-INVENTORY.md, 'Gaps/risks'). Modeled honestly as `object.admitted` under a standing contract (`contract.published`), per spec 03 §3.1's citation.declared/object.admitted vocabulary, rather than a fabricated bilateral offer event."
+}

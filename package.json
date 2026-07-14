@@ -1,0 +1,22 @@
+{
+  "name": "research-ecology",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Federated Research Ecology — Phase 1 protocol kernel (npm workspaces monorepo).",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

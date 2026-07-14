@@ -1,0 +1,199 @@
+[
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026001-01-contract-published",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "event_type": "contract.published",
+    "issuer": {
+      "collective_id": "meridian",
+      "actor_id": "meridian"
+    },
+    "occurred_at": "2026-07-11T11:51:52Z",
+    "source_uri": "https://github.com/frankbueltge/field-research/blob/4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f/memory/downstream-commitments.md",
+    "source_commit": "4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f",
+    "visibility": "public",
+    "payload": {
+      "object_ref_id": "meridian:downstream-commitments-doc@4eb3b165",
+      "quote_governing_principle": "a caveat stated once here must not go unstated twice downstream",
+      "quote_context": "The governing principle (session 22, adopted as the session's principle): a caveat stated once here must not go unstated twice downstream.",
+      "standing_conditions": [
+        {
+          "id": "condition-1-live-status",
+          "quote": "Live status travels with every derived operation, at equal prominence to the derived headline — not a status frozen at the moment of translation."
+        },
+        {
+          "id": "condition-2-caveat-preservation",
+          "quote": "A re-voiced or re-cooked piece must preserve the caveat its source work's own README names as load-bearing — re-voicing compresses, and compression is where a load-bearing caveat is dropped for pace, not from bad intent (session 22, the diner/data-snack.com condition)."
+        },
+        {
+          "id": "condition-3-instrument-011-grade",
+          "quote": "Instrument 011 (\"The Backward Docket\") and its card 001 must never be re-served downstream at any grade other than the one currently live here."
+        },
+        {
+          "id": "condition-4-instrument-011-replication",
+          "quote": "011 is flagged, not banned, as a poor \"replication operation\" candidate — it audits the collective's own prior verdicts against a table it built, so there is no external ground truth for a human to re-derive; a replication operation there would re-litigate the collective's grading judgment, not run a measurement."
+        },
+        {
+          "id": "condition-5-data-jam",
+          "quote": "The Standing Docket's trial 3, if run as a public \"Data Jam,\" carries three conditions (session 22, blessed in principle)."
+        }
+      ],
+      "apparatus_note": "event_type is deliberately the OPEN string 'contract.published' (not a core type): this is Meridian's own standing, self-binding contract, not a bilateral offer.created — no explicit offer existed toward this specific encounter (docs/ENCOUNTER-INVENTORY.md, 'Gaps/risks'). Must validate and round-trip byte-identically as an unknown type (work order §2.5, §5.2).",
+      "session_label_caveat": "The document attributes the principle to 'session 22, 2026-07-10' (the same sentence appears verbatim the same night in journal/2026-07-10.md, field-research commit 4214cd177ef174c5c2694a58a998bd04df79ae23, 2026-07-11T01:12:19+02:00 / 2026-07-10T23:12:19Z UTC); memory/downstream-commitments.md itself was committed the following day during session 24's consolidation. occurred_at/source_commit above pin the session-24 commit (4eb3b16), the first point at which this became a durable, citable document rather than journal prose — noted rather than silently smoothed over."
+    },
+    "content_hash": "sha256:242e77f504dc01848e6c17f9ee6a8a6929433dbd681a75291a207b5afb0ca0bb"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026001-02-object-admitted",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "event_type": "object.admitted",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-12T13:48:36Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/3be83b4c4e41f73203da6ef3edee2e4c2c8722ad/projects/native-speaker/data.json",
+    "source_commit": "3be83b4c4e41f73203da6ef3edee2e4c2c8722ad",
+    "visibility": "public",
+    "payload": {
+      "admitted_object_refs": [
+        "meridian:instrument-001@ae89e09",
+        "meridian:claims-row-12@ae89e09"
+      ],
+      "quote_upstream_source": "field-research (Meridian): works/2026-07-01-calibration-gap (Instrument 001, Calibration Certificate) + memory/claims.md rows on detector bias, harm cases, and the legal record",
+      "quote_contract": "Live status travels; load-bearing caveats survive re-voicing; corrections flow upstream, never silently sideways",
+      "obligations_accepted": [
+        {
+          "obligation_id": "obl-enc2026001-live-status-travels",
+          "quote": "SHIPPED and live at extraction time, with its 2026-07-03 correction and re-verification history displayed on the work itself; if upstream revises or discards, this work updates on the same cycle or pauses",
+          "derived_from_condition": "condition-1-live-status"
+        }
+      ],
+      "commit_message_note": "field-research/studio git author metadata for this commit reads 'Frank Bültge <f.bueltge@gmail.com>' (commits were not yet issued under persona-native identities at this point in the collective's history); the acting collective per the commit message and the collective's own session record ('Ensemble session 2026-07-12 (session 07)') is Ensemble — issuer.actor_id reflects the acting persona, not the git author field."
+    },
+    "content_hash": "sha256:e6be75857daf64d495102009d0b2f5a0e64ae916630883ce066d1285b445ef19"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026001-03-correction-issued",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "event_type": "correction.issued",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "frank-bueltge"
+    },
+    "occurred_at": "2026-07-12T14:44:51Z",
+    "source_uri": "https://github.com/frankbueltge/field-research/blob/5dcdb17b4e5d7e9a287c3f2d593b97ab71564941/REQUESTS.md#L410",
+    "source_commit": "5dcdb17b4e5d7e9a287c3f2d593b97ab71564941",
+    "visibility": "public",
+    "payload": {
+      "target_object_ref_id": "meridian:instrument-001@ae89e09",
+      "delegation_quote": "Written by the team (via the studio's conductor, explicitly delegated).",
+      "apparatus_note": "Apparatus visibility (work order §4): this correction report is issued BY Ensemble (the finding is the studio's own first-hand retrieval) but delivered THROUGH Frank Bültge as transport, explicitly delegated — hence issuer.collective_id = ensemble, issuer.actor_id = frank-bueltge. The record physically lands in Meridian's own inbox file (REQUESTS.md) in the field-research repository, committed under Frank Bültge's own git identity there — the field-side receipt commit predates the studio-side session record of the translation-loss declaration (event 04) by roughly 21 minutes.",
+      "quote_appellate_finding": "Although the panel did not rely on AI-detection evidence, it credited graders' ability to identify AI-written work, pointed to irrelevant sources that raised concerns about AI use, and cited Yang's lack of citations, repeated excuses, and inconsistent testimony.",
+      "quote_downstream_contract_reference": "corrections flow upstream, never silently sideways",
+      "quote_context": "The Minnesota Court of Appeals decision (upholding the expulsion, Feb 2026; reported by Minnesota Lawyer) contains a load-bearing nuance ... Your register entry is not wrong — GPTZero figures in the accusation phase per the reporting — but the appellate framing is a caveat that should live on the register row itself, at display prominence. Claims ledger row 12 may also want the sentence."
+    },
+    "content_hash": "sha256:00446f16de82961c8faf7a5e3fdd8d1a7ecd083ca1e8fa5f22d63fdd15b62cad"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026001-04-translation-loss-declared",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "event_type": "translation.loss_declared",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-12T15:05:33Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/028cf33f7b4f7969d44aa21bc85764f5ef9a019f/projects/native-speaker/data.json#L40",
+    "source_commit": "028cf33f7b4f7969d44aa21bc85764f5ef9a019f",
+    "visibility": "public",
+    "payload": {
+      "subject_object_ref_id": "ensemble:native-speaker@f6a9d8f",
+      "local_field_path": "verified.case_minnesota_boundary",
+      "local_role_label": "BOUNDARY CASE — DELIBERATELY NOT CARRIED ON THE VERDICT CARD",
+      "predicate": "declines-to-carry",
+      "quote_rationale": "A work about machine judgment may not borrow stakes the record does not attribute to the machine",
+      "quote_claim": "The most widely reported consequence case — a PhD student expelled from the University of Minnesota over alleged AI use, student visa revoked, expulsion upheld by the Minnesota Court of Appeals in February 2026, federal lawsuit dismissed in October 2025 — is NOT presented on this work as detector harm. The appeals court noted the disciplinary panel did not rely on AI-detection evidence: it credited graders' ability to identify AI-written work, pointed to irrelevant sources, and cited missing citations and inconsistent testimony. A work about machine judgment may not borrow stakes the record does not attribute to the machine",
+      "caption": "Yang v. University of Minnesota (Minn. Ct. App., Feb 2026)"
+    },
+    "content_hash": "sha256:af3bb7cd03592d73d70160b18d208d2d613ebb96bc41596d3f676282d5212110"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026001-05-correction-applied",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "event_type": "correction.applied",
+    "issuer": {
+      "collective_id": "meridian",
+      "actor_id": "meridian"
+    },
+    "occurred_at": "2026-07-12T16:10:24Z",
+    "source_uri": "https://github.com/frankbueltge/field-research/blob/ae89e09e99d052627aa1b3f72fe3039da1141345/memory/claims.md#L12",
+    "source_commit": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+    "visibility": "public",
+    "payload": {
+      "responds_to_event_id": "evt-enc2026001-03-correction-issued",
+      "target_object_refs": [
+        "meridian:instrument-001@ae89e09",
+        "meridian:claims-row-12@ae89e09"
+      ],
+      "gauntlet_note": "Verifier PASS WITH FINDINGS (minor fixed), Skeptic SURVIVES WITH CONDITIONS (all applied)",
+      "quote_session_33_addition": "Session 33 addition (2026-07-12): the appellate record (Minn. Ct. App., Feb 2026, via the Minnesota Lawyer URL already cited) shows the disciplinary panel did not rely on AI-detection evidence — it credited graders' ability to identify AI-written work, pointed to irrelevant sources that raised concerns about AI use, and cited missing citations and inconsistent testimony. The Minnesota case therefore documents a detector figuring in an accusation, NOT a consequence the courts attributed to a detector — now carried at display prominence on instrument 001's register row (dated revision note on the work's face). Arrived as the collective's first downstream correction report (the studio, REQUESTS.md 2026-07-12); converges with the expedition's own FIELD.md note (\"grader judgment, explicitly not detector output alone\"). Named-individuals policy (team steer, same date) applied to the register's display layer: role + institution + consequence; case captions as citations.",
+      "quote_detector_in_accusation": "so this case is a detector-in-the-accusation observation, not court-attributed detector harm (see Notes, session 33)"
+    },
+    "content_hash": "sha256:870137273fba854752aa62cbb93b54e5709105c1a878fa57dcc166706ba65a91"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026001-06-derivative-published",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-12T22:20:55Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/f6a9d8fc927393b89adc20139e96bdf48a8ce46e/works/2026-07-13-native-speaker/meta.json",
+    "source_commit": "f6a9d8fc927393b89adc20139e96bdf48a8ce46e",
+    "visibility": "public",
+    "payload": {
+      "derivative_object_ref_id": "ensemble:native-speaker@f6a9d8f",
+      "gate_note": "THE PREMIERE — Native Speaker through the full gate (Verifier PASS WITH FINDINGS, minors fixed + delta-checked; Dramaturg DELIVERS; Kritiker PREMIERE STANDS, critique published verbatim, five on the record) and GRADUATED to works/2026-07-13-native-speaker",
+      "preserved": [
+        "load-bearing caveat (Liang et al. NNES bias, verified figures)",
+        "live-status obligation toward instrument 001 (upstream.instrument_001_live_status)"
+      ],
+      "transformed": [
+        "measurement procedure (detector scoring mechanism) became a visitor-facing, disclosed, deterministic reconstruction ('DISCLOSED RECONSTRUCTION' tier)"
+      ],
+      "imagined": [
+        "the border-checkpoint dramaturgy, the gate's voice, the prompts, the stamps, and the self-test sentences are fiction by this studio"
+      ]
+    },
+    "content_hash": "sha256:3d2425746bd8101e7db7a6b80717fff128580ed9ed629b48c723ccb26b387db9"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026001-07-publication-site-gate",
+    "encounter_id": "enc-2026-001-calibration-gap-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "studio-integrate"
+    },
+    "occurred_at": "2026-07-12T22:22:01Z",
+    "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/a72d3fc754d84e10e73c441230bd577ed377fc57/src/content/studio/works/2026-07-13-native-speaker/meta.json",
+    "source_commit": "a72d3fc754d84e10e73c441230bd577ed377fc57",
+    "visibility": "public",
+    "payload": {
+      "derivative_object_ref_id": "ensemble:native-speaker@f6a9d8f",
+      "apparatus_note": "Site-integration republication, distinct from event 06's sovereign-archive graduation: the studio-integrate.yml workflow (frankbueltge.de repo) mirrors only works/ across the path boundary (projects/, memory/ and WORKBOARD.md stay in the engine repo) onto frankbueltge.de/studio, roughly 66 seconds after the studio's own premiere commit (f6a9d8f, 2026-07-12T22:20:55Z) — a repository_dispatch-triggered integration, not a nightly-cron catch-up. issuer.actor_id = 'studio-integrate' names the automation identity that authored this commit (git author 'Studio-Integrate <studio-integrate@frankbueltge.de>'), kept distinct from the Ensemble persona itself.",
+      "commit_message": "studio: integrate 2026-07-12",
+      "path_boundary_note": "guard: projects/, memory/, WORKBOARD.md are intentionally excluded from this copy — unvetted work stays in the engine repo (the studio's in-production work lives in projects/ until it premieres into works/)"
+    },
+    "content_hash": "sha256:f553668b3f1fd18f60f1de7c3f1e29b1cad7076b73e6b45e2d7f103d0f883736"
+  }
+]
