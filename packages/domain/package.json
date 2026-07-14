@@ -1,0 +1,21 @@
+{
+  "name": "@research-ecology/domain",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Domain store interfaces (EncounterStore/LoaderStore) + MemoryStore/PostgresStore implementations + bundle/fixture/lens hydration (work order: phase-3a-domain-loader-projections.md).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "postgres": "^3.4.9"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1"
+  }
+}

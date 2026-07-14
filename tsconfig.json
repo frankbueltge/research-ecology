@@ -7,7 +7,11 @@
   "include": [
     "packages/protocol/src/**/*.ts",
     "packages/adapters/src/**/*.ts",
+    "packages/domain/src/**/*.ts",
+    "packages/projections/src/**/*.ts",
     "apps/importer/src/**/*.ts",
+    "apps/loader/src/**/*.ts",
+    "apps/project/src/**/*.ts",
     "tests/contract/**/*.ts"
   ]
 }

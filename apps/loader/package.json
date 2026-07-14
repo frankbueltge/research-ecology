@@ -1,0 +1,17 @@
+{
+  "name": "@research-ecology/loader",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Loader CLI: validates bundles/fixture/lenses via packages/protocol and idempotently upserts them into MemoryStore (dry validation) or PostgresStore (work order: phase-3a-domain-loader-projections.md).",
+  "type": "module",
+  "scripts": {
+    "load": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@research-ecology/domain": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4",
+    "@types/node": "^26.1.1"
+  }
+}

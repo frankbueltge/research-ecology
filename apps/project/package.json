@@ -1,0 +1,18 @@
+{
+  "name": "@research-ecology/project",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project CLI: generates map versions for an encounter x lens via packages/projections and stores them via the active store; --export writes validated JSON artifacts (work order: phase-3a-domain-loader-projections.md).",
+  "type": "module",
+  "scripts": {
+    "project": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@research-ecology/domain": "*",
+    "@research-ecology/projections": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4",
+    "@types/node": "^26.1.1"
+  }
+}

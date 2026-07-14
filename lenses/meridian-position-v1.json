@@ -1,0 +1,51 @@
+{
+  "lens_id": "meridian-position-v1",
+  "version": 1,
+  "name": "Parallel positions (Meridian)",
+  "author": {
+    "actor_id": "meridian",
+    "collective_id": "meridian",
+    "role": "collective (imported material only) — this lens renders Meridian's own register-state reading, not The Middle's"
+  },
+  "purpose": "Time collapses into register-state: the claims-ledger row before and after the session-33 correction, the correction rendered as an overlay with the original visible struck-not-erased, the appellate caveat at display prominence (mirroring the source's own amber sub-line), and the standing conditions as an obligation matrix with per-condition state. The derivative appears only as 'a downstream consumer that reported the gap' — deliberately its perspective, not the derivative's own.",
+  "selection": {
+    "event_ids": [
+      "evt-enc2026001-01-contract-published",
+      "evt-enc2026001-03-correction-issued",
+      "evt-enc2026001-05-correction-applied"
+    ],
+    "object_ref_ids": [
+      "meridian:instrument-001@ae89e09",
+      "meridian:claims-row-12@ae89e09",
+      "meridian:downstream-commitments-doc@4eb3b165"
+    ],
+    "assertion_ids": [
+      "assert-enc2026001-meridian-live-framing"
+    ],
+    "obligation_ids": [
+      "obl-enc2026001-live-status-travels",
+      "obl-enc2026001-caveat-preservation"
+    ],
+    "notes": "Events 01/03/05 (design §3.3); Meridian's claims-row-12 framing assertion; both obligations, shown as the standing conditions Meridian holds toward downstream."
+  },
+  "evidence_threshold": {
+    "excludes_machine_suggestion": true,
+    "authors_only": [
+      "meridian"
+    ]
+  },
+  "unknown_type_policy": "show_rupture",
+  "renderer": "parallel-positions",
+  "declared_exclusions": [
+    {
+      "kind": "participant not included",
+      "excluded_author_collective_id": "ensemble",
+      "reason": "Ensemble's transformation claim and boundary-case refusal are excluded here — the derivative appears only as 'a downstream consumer that reported the gap', deliberately its perspective and no more; see ensemble-transformation-v1 or the compare view."
+    },
+    {
+      "kind": "editorial scope",
+      "reason": "Events 02/04/06/07 (Ensemble's own admission, transformation and publication chain) are excluded — this lens collapses time into register-state on Meridian's side only; see provenance-v1 for the full time-ordered chain."
+    }
+  ],
+  "implementation_hash": "sha256:95c2cf091c3c2dfdf88d7d9d0e0d399fe93ff2a2b8912db05976a38fa58a541a"
+}

@@ -25,7 +25,8 @@ Audit facts against GCP here:
   existing Cloudflare account/domain.
 - **Database:** **Neon PostgreSQL 16+** (managed, serverless, EU region, free tier covers
   v1's volume by orders of magnitude), accessed via the Neon serverless driver /
-  Hyperdrive; Drizzle ORM for typed queries and migrations.
+  Hyperdrive; Drizzle ORM for typed queries and migrations. **Phase 3a amendment:** v1 read
+  layer uses postgres.js with typed mappers; Drizzle enters with the first write feature.
 - **Jobs:** importer, projection generator and Git exporter run as **GitHub Actions**
   (nightly cron after the engine integrates, plus manual dispatch), committing exports to a
   public Git archive — Git stays the durable public memory, per the lab's "Git is the

@@ -1,0 +1,54 @@
+{
+  "lens_id": "provenance-v1",
+  "version": 1,
+  "name": "Provenance chain",
+  "author": {
+    "actor_id": "the-middle-editor",
+    "role": "editor",
+    "note": "The neutral entry lens (design §3.1) — no collective's voice, only the recorded chain."
+  },
+  "purpose": "A neutral, dated ledger of what was recorded as happening: every operational event of this encounter in order, each entry showing its issuer, its pinned source commit and a payload excerpt; accepted obligations anchor as boxed clauses at the event that accepted them. No interpretation — assertions are excluded entirely (see declared_exclusions).",
+  "selection": {
+    "event_ids": [
+      "evt-enc2026001-01-contract-published",
+      "evt-enc2026001-02-object-admitted",
+      "evt-enc2026001-03-correction-issued",
+      "evt-enc2026001-04-translation-loss-declared",
+      "evt-enc2026001-05-correction-applied",
+      "evt-enc2026001-06-derivative-published",
+      "evt-enc2026001-07-publication-site-gate"
+    ],
+    "object_ref_ids": [
+      "meridian:instrument-001@ae89e09",
+      "meridian:claims-row-12@ae89e09",
+      "meridian:downstream-commitments-doc@4eb3b165",
+      "ensemble:native-speaker@f6a9d8f"
+    ],
+    "assertion_ids": [],
+    "obligation_ids": [
+      "obl-enc2026001-live-status-travels",
+      "obl-enc2026001-caveat-preservation"
+    ],
+    "notes": "All 7 sourced operational events (design §3.1 'operational events only, all 7'); every object referenced by them; both obligations, anchored at their accepting event (object.admitted, evt-02)."
+  },
+  "evidence_threshold": {
+    "excludes_machine_suggestion": true
+  },
+  "unknown_type_policy": "show_rupture",
+  "renderer": "provenance-chain",
+  "declared_exclusions": [
+    {
+      "kind": "editorial scope",
+      "reason": "Interpretations are not provenance: all authored assertions (Ensemble's transformation claim and boundary-case refusal, Meridian's live framing) are excluded from this lens entirely. See ensemble-transformation-v1 / meridian-position-v1, or the compare view."
+    },
+    {
+      "kind": "editorial scope",
+      "reason": "The editorial.encounter_assembled event (The Middle's own 2026-07-14 act of assembling this record) is not shown as a chain entry in v1 — the ledger renders the encounter's own operational history, not the apparatus that recorded it. Visible on /apparatus instead."
+    },
+    {
+      "kind": "computational limit",
+      "reason": "Declared blind spots (design §3.1): meaning, internal deliberation, anything outside the pinned commits."
+    }
+  ],
+  "implementation_hash": "sha256:80f47c37d8dbc68294eb770f923a8380c18e31e81ae4a3fca3cd48e6052ae696"
+}

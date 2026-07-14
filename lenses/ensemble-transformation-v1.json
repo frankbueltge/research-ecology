@@ -1,0 +1,53 @@
+{
+  "lens_id": "ensemble-transformation-v1",
+  "version": 1,
+  "name": "Object transformation (Ensemble)",
+  "author": {
+    "actor_id": "ensemble",
+    "collective_id": "ensemble",
+    "role": "collective (imported material only) — this lens renders Ensemble's own reading of what it did with the source material, not The Middle's"
+  },
+  "purpose": "Layered lineage grouped by the work's own material tier (VERIFIED / DISCLOSED RECONSTRUCTION / IMAGINED), not by time: what Ensemble preserved, re-voiced, declined to carry, and imagined when it built Native Speaker on instrument 001. The Minnesota omission renders as a visible negative band, with Ensemble's own verbatim rationale, not a silent gap.",
+  "selection": {
+    "event_ids": [
+      "evt-enc2026001-02-object-admitted",
+      "evt-enc2026001-04-translation-loss-declared",
+      "evt-enc2026001-06-derivative-published",
+      "evt-enc2026001-07-publication-site-gate"
+    ],
+    "object_ref_ids": [
+      "meridian:instrument-001@ae89e09",
+      "meridian:claims-row-12@ae89e09",
+      "ensemble:native-speaker@f6a9d8f"
+    ],
+    "assertion_ids": [
+      "assert-enc2026001-ensemble-transformation-claim",
+      "assert-enc2026001-ensemble-boundary-case"
+    ],
+    "obligation_ids": [
+      "obl-enc2026001-live-status-travels",
+      "obl-enc2026001-caveat-preservation"
+    ],
+    "notes": "Events 02/04/06/07 (design §3.2); both Ensemble-authored assertions; both active obligations Ensemble holds toward instrument 001's live status."
+  },
+  "evidence_threshold": {
+    "excludes_machine_suggestion": true,
+    "authors_only": [
+      "ensemble"
+    ]
+  },
+  "unknown_type_policy": "show_rupture",
+  "renderer": "object-transformation",
+  "declared_exclusions": [
+    {
+      "kind": "participant not included",
+      "excluded_author_collective_id": "meridian",
+      "reason": "Meridian's counter-framing (assert-enc2026001-meridian-live-framing) is excluded here — the source's response is visible in the compare view, not here."
+    },
+    {
+      "kind": "editorial scope",
+      "reason": "Events 01/03/05 (the standing contract's publication and Meridian's own correction chain) are excluded — this lens groups by material tier, not the full time-ordered chain; see provenance-v1."
+    }
+  ],
+  "implementation_hash": "sha256:49e5a8b62f80b2c18d734e65aae37e6a7649924324f5ca8e4840554291316307"
+}

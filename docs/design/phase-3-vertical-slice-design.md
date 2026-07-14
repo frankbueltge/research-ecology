@@ -22,8 +22,8 @@ SvelteKit app: SSR record pages + client islands for compare/trace views
 ```
 
 - `packages/domain`: repository interface (`EncounterStore`) with the Postgres
-  implementation as the runtime store; an in-memory implementation exists **for tests
-  only** (not a supported runtime).
+  implementation as the deployed runtime store; an in-memory implementation (hydrating
+  from bundles + fixture) doubles as the no-DB local dev mode and the test store.
 - `packages/projections`: pure functions `(records, lensVersion, watermark) → mapVersion`
   — no I/O, fully deterministic, checksum over canonical JSON (Phase-1 hashing).
 - The **encounter record itself is editorial**: participants, initiating event, proposition.

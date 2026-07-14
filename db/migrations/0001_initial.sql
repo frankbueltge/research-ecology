@@ -405,3 +405,51 @@ COMMENT ON COLUMN events.external_event_id IS
   '(issuer_collective_id, external_event_id) makes re-imports a no-op rather than a duplicate '
   'row. `content_hash` is the primary durable identity of the event; `source_commit` is a '
   'best-effort pointer that may dangle after a source history rewrite (ADR 0009).';
+
+-- ============================================================================================
+-- Phase 3a amendments (work order: phase-3a-domain-loader-projections.md) — purely additive,
+-- backward-compatible (ADD COLUMN with a default; no existing column/table/row touched).
+-- ============================================================================================
+--
+-- Three genuine gaps surfaced wiring PostgresStore (packages/domain) against this file exactly
+-- as it stood after Phase 1/2: none of them are schema/migration changes needed for a NEW
+-- collective's own vocabulary (that already works with zero changes, spec 05 §11.11) — they are
+-- places this file had no column at all for a concept Phase 3 depends on.
+--
+-- 1. `events.source_event_id`: the JSON envelope's OWN stable id (e.g.
+--    "evt-enc2026001-02-object-admitted", as fixtures/.../events.json and obligations.json's
+--    `source_event_id` field reference it) has no column here — `external_event_id` is already
+--    documented above as the sha256 IDEMPOTENCY KEY, a different value. Obligations,
+--    `encounters.initiating_event_id`-style back-references and `corrects_event_id` all need to
+--    resolve the plain envelope id, not the hash. Nullable + partially unique so Phase 1/2 rows
+--    (none of which exist yet outside this work order's own loader) are unaffected either way.
+-- 2. `local_object_refs.ref_id`: the Phase-2 bundle format's own composed object id
+--    (`<collective_id>:<local_object_id>@<shortSha>`, packages/adapters/src/types.ts
+--    `LocalObjectRef.id`) — this table has a UUID primary key but no column carrying that
+--    string, which every bundle/fixture object.json file and every cross-reference
+--    (assertions' subject/object, events' `*_object_ref_id` payload fields) uses as THE id.
+-- 3. `encounters.non_participants`: spec 05's "documented non-relation" requirement (audit §4
+--    "Documented silences", fixture `encounter.json` `non_participants[]`, contract test 5 —
+--    Ulysses' absence from this encounter must render as absence, never a synthesized "missing
+--    participant" signal) — there was no column anywhere on `encounters` for this at all.
+
+ALTER TABLE events ADD COLUMN source_event_id TEXT;
+CREATE UNIQUE INDEX events_source_event_id_uq ON events(source_event_id) WHERE source_event_id IS NOT NULL;
+COMMENT ON COLUMN events.source_event_id IS
+  'The JSON envelope''s own `event_id` string (Phase 3a amendment) — distinct from '
+  '`external_event_id` (a sha256 idempotency key, see comment above). Nullable because it is '
+  'optional envelope metadata, not every caller has one; unique when present.';
+
+ALTER TABLE local_object_refs ADD COLUMN ref_id TEXT;
+CREATE UNIQUE INDEX local_object_refs_ref_id_uq ON local_object_refs(ref_id) WHERE ref_id IS NOT NULL;
+COMMENT ON COLUMN local_object_refs.ref_id IS
+  'The Phase-2 bundle format''s own composed object id, `<collective_id>:<local_object_id>@'
+  '<shortSha>` (packages/adapters/src/types.ts LocalObjectRef.id) — Phase 3a amendment, so '
+  'PostgresStore can resolve the same string every bundle/fixture JSON file and every '
+  'cross-reference (assertions, event payloads) already uses as THE object identity.';
+
+ALTER TABLE encounters ADD COLUMN non_participants JSONB NOT NULL DEFAULT '[]'::jsonb;
+COMMENT ON COLUMN encounters.non_participants IS
+  'Documented non-relations (spec 05 "what must not be inferred automatically" / audit §4
+  "Documented silences") — Phase 3a amendment. Rendered as-is, verbatim; never synthesized '
+  'from absence and never treated as a rejection or a gap to fill.';
