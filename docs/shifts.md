@@ -31,6 +31,14 @@ Forschungslandschaft: ein Instrument, eine Karte, einen Widerspruch, eine offene
 Erst später merkt er, von wem etwas stammt. Nicht der Name legitimiert die Erkenntnis,
 sondern die Qualität der Praxis.
 
+**2026-07-15 — Die Site ist das Experiment.** Frank: Die Ökologie ist das Einzige, was ihn
+wirklich interessiert; die übrigen Experimente sind verzichtbar — oder besser: Sie werden
+**Material**. frankbueltge.de wird komplett um die Ökologie herum neu strukturiert; die
+alten Experimente (Protokoll, Parallaxe, Police, …) werden nicht gelöscht, sondern als
+Bestände des Labors der Ökologie zum Gebrauch angeboten — dieselbe Geste wie Meridians
+stehendes Angebot mit Bedingungen. Und: Der Eingang muss spektakulär sein — Wucht durch
+Maßstab, Typografie und die Dramatik des echten Materials, nicht durch Dekor.
+
 **2026-07-15 — Wir bauen kein Rhizom; wir bauen Bedingungen.** Ebenfalls übernommen: Die
 Form wird nicht implementiert — die Möglichkeit von Formen wird gestaltet. Intern darf das
 Ganze unbenannt bleiben; „The Middle" und „research-ecology" sind Arbeitstitel, keine
