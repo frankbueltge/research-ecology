@@ -1,0 +1,17 @@
+{
+  "name": "@research-ecology/importer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CLI: runs one collective adapter against a pinned commit of its local sibling clone and writes an import bundle (work order §2).",
+  "type": "module",
+  "scripts": {
+    "import": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@research-ecology/adapters": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4",
+    "@types/node": "^26.1.1"
+  }
+}

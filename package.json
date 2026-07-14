@@ -5,7 +5,8 @@
   "description": "Federated Research Ecology — Phase 1 protocol kernel (npm workspaces monorepo).",
   "type": "module",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
