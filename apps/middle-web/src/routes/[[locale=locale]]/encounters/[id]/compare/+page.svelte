@@ -62,18 +62,23 @@
 </article>
 
 <style>
-  /* Hidden entirely (not just visually) below 64rem: on desktop the radios' :checked state
-     drives nothing (both panels always show side by side, see .compare-grid below), so they
-     stay out of the accessibility tree there — an off-screen-but-present input whose visible
-     <label> is inside a display:none switcher fails "every form control has an accessible
-     label" (axe rule label/hidden-explicit-label; caught in the a11y suite). Below 64rem, both
-     the switcher and the (now functionally meaningful) radios become present together. */
+  /* One position at a time at EVERY width (interim after the first human critique,
+     2026-07-15): the earlier desktop two-column layout collided — the object-transformation
+     renderer's internal grid overflowed its half-width panel onto the neighbour — and,
+     worse, juxtaposing two complete registers is exactly the information deluge the
+     critique named. The sticky switcher guides the contrast instead. The full guided-
+     contrast redesign is specced in docs/design/redesign-after-first-critique.md. */
   .compare-radio {
-    display: none;
+    display: inline-block;
+    position: absolute;
+    left: -9999px;
   }
 
   .compare-switcher {
-    display: none;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 5;
     gap: var(--space-3);
     align-items: center;
     padding: var(--space-3) var(--space-5);
@@ -97,43 +102,21 @@
 
   .compare-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--space-6);
-    padding: var(--space-6) var(--space-5) 0;
+    padding: var(--space-5);
+    max-width: 72rem;
   }
 
   .compare-panel {
+    display: none;
     min-width: 0;
     border-top: 3px solid var(--ink);
     padding-top: var(--space-4);
   }
 
-  @media (max-width: 64rem) {
-    .compare-radio {
-      display: inline-block;
-      position: absolute;
-      left: -9999px;
-    }
-
-    .compare-switcher {
-      display: flex;
-      position: sticky;
-      top: 0;
-      z-index: 5;
-    }
-
-    .compare-grid {
-      grid-template-columns: 1fr;
-      padding: var(--space-5);
-    }
-
-    .compare-panel {
-      display: none;
-    }
-
-    #view-a:checked ~ .compare-grid .compare-panel--a,
-    #view-b:checked ~ .compare-grid .compare-panel--b {
-      display: block;
-    }
+  #view-a:checked ~ .compare-grid .compare-panel--a,
+  #view-b:checked ~ .compare-grid .compare-panel--b {
+    display: block;
   }
 </style>
