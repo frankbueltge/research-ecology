@@ -15,15 +15,19 @@ test.describe("route inventory", () => {
     });
   }
 
-  test("/ redirects (302) to the current encounter", async ({ page }) => {
+  // Work order phase-3d §0: `/` now renders the poster directly (no redirect to the record) —
+  // the guarantee this replaces ("/ reliably lands you on real, addressable content") still
+  // holds, just without leaving `/`.
+  test("/ renders the poster directly, no redirect", async ({ page }) => {
     const response = await page.goto("/", { waitUntil: "commit" });
-    expect(response?.request().redirectedFrom()).toBeTruthy();
-    await expect(page).toHaveURL(new RegExp(`/encounters/${ENCOUNTER_ID}$`));
+    expect(response?.request().redirectedFrom()).toBeFalsy();
+    await expect(page).toHaveURL(/\/$/);
   });
 
-  test("/de redirects (302) to the German current-encounter page", async ({ page }) => {
-    await page.goto("/de", { waitUntil: "commit" });
-    await expect(page).toHaveURL(new RegExp(`/de/encounters/${ENCOUNTER_ID}$`));
+  test("/de renders the German poster directly, no redirect", async ({ page }) => {
+    const response = await page.goto("/de", { waitUntil: "commit" });
+    expect(response?.request().redirectedFrom()).toBeFalsy();
+    await expect(page).toHaveURL(/\/de$/);
   });
 
   test("unknown encounter id → 404", async ({ page }) => {

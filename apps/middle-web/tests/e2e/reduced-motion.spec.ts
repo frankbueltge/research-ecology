@@ -25,3 +25,25 @@ test("skip-link transition duration collapses to 0 under prefers-reduced-motion"
   const duration = await page.locator(".skip-link").evaluate((el) => getComputedStyle(el).transitionDuration);
   expect(duration).toBe("0s");
 });
+
+/** Work order phase-3d §4 "reduced-motion (keine Zeichnung)": the poster's self-drawing glyph
+ * must render fully drawn immediately, with no running animation, when the visitor has
+ * `prefers-reduced-motion: reduce` set. */
+test("poster glyph renders fully drawn immediately under prefers-reduced-motion, no running animation", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+
+  const paths = page.locator(".poster .glyph--animated .glyph__transfer, .poster .glyph--animated .glyph__correction");
+  await expect(paths).toHaveCount(2);
+
+  const states = await paths.evaluateAll((els) =>
+    els.map((el) => {
+      const cs = getComputedStyle(el);
+      return { dashoffset: cs.strokeDashoffset, animationName: cs.animationName };
+    })
+  );
+  for (const state of states) {
+    expect(parseFloat(state.dashoffset)).toBe(0);
+    expect(state.animationName).toBe("none");
+  }
+});

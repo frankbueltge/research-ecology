@@ -1,10 +1,49 @@
 import { expect, test } from "@playwright/test";
-import { ENCOUNTER_ID } from "./fixtures.js";
+import { BEAT_IDS, ENCOUNTER_ID } from "./fixtures.js";
 
 /** No-JS journey (work order §1): the encounter page and a map version page render complete,
  * readable records with JavaScript disabled — SSR-first, progressive enhancement only (work
  * order §0). This file only runs under the `no-js` Playwright project (javaScriptEnabled:
  * false), configured in playwright.config.ts. */
+
+/** Work order phase-3d §4 "no-JS (Glyph statisch fertig, Sequenz erreichbar)": the poster's
+ * self-drawing glyph is pure CSS (no JS involved in the drawing at all), so it still completes
+ * with JS disabled; and the six-beat sequence below it is reachable via a plain in-page anchor
+ * link — no client script required for either. */
+test.describe("no-JS: poster and narrative", () => {
+  test("the invitation link and all six beat anchors exist as plain, reachable markup", async ({ page }) => {
+    await page.goto("/");
+    await expect(page.locator(".poster__invitation")).toHaveAttribute("href", "#beat-1");
+    for (const id of BEAT_IDS) {
+      await expect(page.locator(`#${id}`)).toHaveCount(1);
+    }
+  });
+
+  test("the glyph's CSS draw animation completes to fully-drawn without JS, and never loops", async ({ page }) => {
+    await page.goto("/");
+    const paths = page.locator(".poster .glyph--animated .glyph__transfer, .poster .glyph--animated .glyph__correction");
+    await expect(paths).toHaveCount(2);
+
+    // No loop, ever (work order §1 "Keine Loops, nichts pulsiert") — checkable immediately,
+    // no need to wait for the animation to run first. `locator.evaluateAll` runs in
+    // Playwright's own isolated world (unaffected by `javaScriptEnabled: false`, which only
+    // disables the page's own main-world scripts) — unlike `page.evaluate`/`waitForFunction`,
+    // which do NOT run under this project.
+    const iterationCounts = await paths.evaluateAll((els) => els.map((el) => getComputedStyle(el).animationIterationCount));
+    for (const count of iterationCounts) {
+      expect(count).not.toBe("infinite");
+    }
+
+    // The animation is pure CSS (no JS involved in the drawing itself), so it still completes
+    // with JS disabled — Playwright's web-first `toHaveCSS` assertion auto-retries/polls on its
+    // own (via the isolated world too), so no manual wait is needed.
+    const transfer = page.locator(".poster .glyph--animated .glyph__transfer");
+    const correction = page.locator(".poster .glyph--animated .glyph__correction");
+    await expect(transfer).toHaveCSS("stroke-dashoffset", /^0(px)?$/, { timeout: 3500 });
+    await expect(correction).toHaveCSS("stroke-dashoffset", /^0(px)?$/, { timeout: 3500 });
+  });
+});
+
 test.describe("no-JS: encounter page renders complete", () => {
   test("full record content is present without JS", async ({ page }) => {
     await page.goto(`/encounters/${ENCOUNTER_ID}`);

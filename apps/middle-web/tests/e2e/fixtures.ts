@@ -3,6 +3,14 @@ export const ENCOUNTER_ID = "enc-2026-001-calibration-gap-travels";
 
 export const LENS_IDS = ["provenance-v1", "ensemble-transformation-v1", "meridian-position-v1"] as const;
 
+/** The six narrative beat ids rendered on `/` (work order phase-3d §2), in order. */
+export const BEAT_IDS = ["beat-1", "beat-2", "beat-3", "beat-4", "beat-5", "beat-6"] as const;
+
+/** `/` (and `/de`) — the poster + narrative (work order phase-3d §0): no longer a redirect. */
+export function rootRoutes(): string[] {
+  return ["/", "/de"];
+}
+
 export function encounterRoutes(prefix = ""): string[] {
   return [
     `${prefix}/encounters/${ENCOUNTER_ID}`,
@@ -23,4 +31,4 @@ export function encounterRoutes(prefix = ""): string[] {
   ];
 }
 
-export const ALL_ROUTES = [...encounterRoutes(""), ...encounterRoutes("/de")];
+export const ALL_ROUTES = [...rootRoutes(), ...encounterRoutes(""), ...encounterRoutes("/de")];

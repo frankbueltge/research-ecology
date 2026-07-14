@@ -67,6 +67,11 @@ const HYDRATION_PATHS = {
 export { CURRENT_ENCOUNTER_ID, LENS_IDS };
 export type { LensId } from "../constants.js";
 
+/** Re-exported so other server-only modules that need a repo-root-relative path (e.g.
+ * `$lib/server/narrative.ts`'s `narratives/enc-2026-001.json`) reuse the same depth-independent
+ * resolution instead of re-implementing `findRepoRoot`. */
+export { REPO_ROOT };
+
 function toProjectionEvent(e: StoredEvent) {
   return {
     event_id: e.event_id,

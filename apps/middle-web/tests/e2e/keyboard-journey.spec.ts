@@ -11,9 +11,11 @@ async function expectVisibleFocusRing(locator: import("@playwright/test").Locato
  * keyboard user actually would — Tab to the element (skip-link first, since that's the very
  * first stop on every page) and Enter/Space to activate it — never `page.click()`. */
 test("keyboard-only journey stays fully operable with a visible focus ring at every stop", async ({ page }) => {
-  // 1. Home → redirects to the current encounter.
-  await page.goto("/");
-  await expect(page).toHaveURL(new RegExp(`/encounters/${ENCOUNTER_ID}$`));
+  // 1. Home is the poster + narrative now (work order phase-3d §0: no redirect any more); this
+  // journey continues to exercise the record itself, so it enters directly at the encounter
+  // page — the poster's own keyboard path (invitation → beats → "Akte einsehen") is covered by
+  // tests/e2e/narrative.spec.ts and tests/e2e/no-js.spec.ts instead.
+  await page.goto(`/encounters/${ENCOUNTER_ID}`);
 
   // Skip link is the first tab stop on every page (a11y requirement) and must show focus.
   await page.keyboard.press("Tab");

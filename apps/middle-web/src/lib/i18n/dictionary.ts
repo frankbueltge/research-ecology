@@ -183,6 +183,27 @@ export interface Dictionary {
     nextCta: string;
     prevCta: string;
   };
+  poster: {
+    headline: string;
+    invitation: string;
+    footnote: string;
+  };
+  narrative: {
+    viewRecordCta: string;
+    viewDivergenceCta: string;
+    authoredByPrefix: string;
+  };
+  divergence: {
+    kicker: string;
+    heading: string;
+    context: string;
+    backboneHeading: string;
+    appellateFindingLabel: string;
+    meridianLabel: string;
+    ensembleLabel: string;
+    bothStandNote: string;
+    fullMapsHeading: string;
+  };
   footer: {
     apparatusLink: string;
     aboutLink: string;
@@ -224,7 +245,7 @@ const en: Dictionary = {
     about: "About"
   },
   encounter: {
-    kicker: "Encounter",
+    kicker: "Record",
     propositionHeading: "Editorial proposition",
     propositionAuthorPrefix: "Proposed by",
     offeredHeading: "Who offered what",
@@ -377,6 +398,28 @@ const en: Dictionary = {
     nextCta: "Older →",
     prevCta: "← Newer"
   },
+  poster: {
+    headline: "A work found the flaw in the instrument it was built from.",
+    invitation: "Follow the material ↓",
+    footnote:
+      "The record of an encounter between independent research practices. Everything evidenced, nothing resolved."
+  },
+  narrative: {
+    viewRecordCta: "View the record →",
+    viewDivergenceCta: "View the divergence →",
+    authoredByPrefix: "Narrated by"
+  },
+  divergence: {
+    kicker: "Divergence",
+    heading: "One case, two registers",
+    context: "The Minnesota case, read twice: inside Meridian's claims register, and inside Ensemble's declined evidence.",
+    backboneHeading: "The shared record",
+    appellateFindingLabel: "Appellate finding",
+    meridianLabel: "Meridian — register line",
+    ensembleLabel: "Ensemble — declines to carry",
+    bothStandNote: "both stand, today",
+    fullMapsHeading: "Full maps"
+  },
   footer: {
     apparatusLink: "Apparatus",
     aboutLink: "About",
@@ -418,7 +461,7 @@ const de: Dictionary = {
     about: "Über"
   },
   encounter: {
-    kicker: "Begegnung",
+    kicker: "Akte",
     propositionHeading: "Redaktionelle These",
     propositionAuthorPrefix: "Vorgeschlagen von",
     offeredHeading: "Wer bot was an",
@@ -570,6 +613,27 @@ const de: Dictionary = {
     pageLabel: "Seite",
     nextCta: "Älter →",
     prevCta: "← Neuer"
+  },
+  poster: {
+    headline: "Ein Werk fand den Fehler im Instrument, aus dem es gebaut war.",
+    invitation: "Dem Material folgen ↓",
+    footnote: "Aufzeichnung einer Begegnung zwischen unabhängigen Forschungspraktiken. Alles belegt, nichts aufgelöst."
+  },
+  narrative: {
+    viewRecordCta: "Akte einsehen →",
+    viewDivergenceCta: "Zur Divergenz-Ansicht →",
+    authoredByPrefix: "Erzählt von"
+  },
+  divergence: {
+    kicker: "Divergenz",
+    heading: "Ein Fall, zwei Register",
+    context: "Der Minnesota-Fall, zweimal gelesen: einmal in Meridians Aussagenregister, einmal in Ensembles verweigerter Beweisführung.",
+    backboneHeading: "Der gemeinsame Bestand",
+    appellateFindingLabel: "Appellationsbefund",
+    meridianLabel: "Meridian — Registerzeile",
+    ensembleLabel: "Ensemble — verweigert die Übernahme",
+    bothStandNote: "beide gelten, heute",
+    fullMapsHeading: "Vollständige Karten"
   },
   footer: {
     apparatusLink: "Apparat",
