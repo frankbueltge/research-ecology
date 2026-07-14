@@ -9,9 +9,6 @@
  * - `resolveVisibility` defaults an encounter-event's visibility to "public" when absent.
  */
 
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import path from "node:path";
 import { Ajv2020 } from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import type { ErrorObject, ValidateFunction } from "ajv";
@@ -27,25 +24,23 @@ import type {
   TransferResponsePayload
 } from "./types.js";
 
-const currentDir = path.dirname(fileURLToPath(import.meta.url));
-const schemasDir = path.resolve(currentDir, "../schemas");
-
-function loadSchema(filename: string): Record<string, unknown> {
-  const raw = readFileSync(path.join(schemasDir, filename), "utf8");
-  return JSON.parse(raw) as Record<string, unknown>;
-}
+// Statically imported (not `readFileSync` against a `import.meta.url`-relative path): a bundler
+// (Vite, for apps/middle-web's SSR build) inlines these at build time, so the schema's on-disk
+// location relative to the *original* source file no longer has to survive being bundled into
+// a chunk that lives somewhere else on disk. `tsx`/`vitest` resolve the same JSON imports
+// directly, so this is not just a bundler workaround — it is strictly more portable than the
+// path-based read it replaces, with byte-identical schema content either way.
+import assertionSchema from "../schemas/assertion.schema.json" with { type: "json" };
+import collectiveManifestSchema from "../schemas/collective-manifest.schema.json" with { type: "json" };
+import encounterEventSchema from "../schemas/encounter-event.schema.json" with { type: "json" };
+import interventionSchema from "../schemas/intervention.schema.json" with { type: "json" };
+import lensSchema from "../schemas/lens.schema.json" with { type: "json" };
+import mapManifestSchema from "../schemas/map-manifest.schema.json" with { type: "json" };
+import transferOfferSchema from "../schemas/transfer-offer.schema.json" with { type: "json" };
+import transferResponseSchema from "../schemas/transfer-response.schema.json" with { type: "json" };
 
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
-
-const assertionSchema = loadSchema("assertion.schema.json");
-const collectiveManifestSchema = loadSchema("collective-manifest.schema.json");
-const encounterEventSchema = loadSchema("encounter-event.schema.json");
-const interventionSchema = loadSchema("intervention.schema.json");
-const lensSchema = loadSchema("lens.schema.json");
-const mapManifestSchema = loadSchema("map-manifest.schema.json");
-const transferOfferSchema = loadSchema("transfer-offer.schema.json");
-const transferResponseSchema = loadSchema("transfer-response.schema.json");
 
 const compiledAssertion: ValidateFunction = ajv.compile(assertionSchema);
 const compiledCollectiveManifest: ValidateFunction = ajv.compile(collectiveManifestSchema);

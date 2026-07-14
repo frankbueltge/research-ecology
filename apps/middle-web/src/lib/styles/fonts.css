@@ -1,0 +1,62 @@
+/**
+ * Self-hosted type (design §5, work order §0): Literata (editorial text) + IBM Plex Mono
+ * (record data). No Google Fonts CDN, no Inter/Roboto. `font-display: swap` throughout.
+ * Files live in /fonts (static/fonts/*), downloaded once from the upstream OFL repositories —
+ * see static/fonts/LICENSE-Literata.txt and static/fonts/LICENSE-IBMPlexMono.txt.
+ */
+
+@font-face {
+  font-family: "Literata";
+  src: url("/fonts/Literata-Variable.ttf") format("truetype-variations"), url("/fonts/Literata-Variable.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("/fonts/Literata-Italic-Variable.ttf") format("truetype-variations"), url("/fonts/Literata-Italic-Variable.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

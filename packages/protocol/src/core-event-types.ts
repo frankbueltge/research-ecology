@@ -3,6 +3,12 @@
  * stable namespace — this list is purely informational (work order §2.5): the envelope
  * validator must accept unknown types when the envelope is otherwise valid.
  * `isCoreEventType` never gates validation.
+ *
+ * Deliberately zero-dependency (no Ajv, no node:fs): this module is exported separately
+ * (package.json `"./core-event-types"`) precisely so a client-bundled UI component (e.g.
+ * apps/middle-web's `TypeChip.svelte`, "type chip" design §4) can import just this pure
+ * lookup without pulling in `validators.ts`'s Ajv schema compilation — Ajv's `new Function`
+ * codegen violates a strict script-src CSP with no `unsafe-eval` if it ever reaches a browser.
  */
 
 export const CORE_EVENT_TYPES = [

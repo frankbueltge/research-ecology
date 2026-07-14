@@ -8,6 +8,7 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
+    "./core-event-types": "./src/core-event-types.ts",
     "./schemas/*": "./schemas/*"
   },
   "scripts": {

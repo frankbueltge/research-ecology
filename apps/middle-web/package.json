@@ -1,0 +1,38 @@
+{
+  "name": "@research-ecology/middle-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The Middle — public read-only vertical slice (SvelteKit 2 / Svelte 5). Renders one encounter (enc-2026-001-calibration-gap-travels) through packages/domain + packages/projections, MemoryStore-backed in dev (work order: phase-3b-sveltekit-app.md).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test:unit && npm run test:e2e"
+  },
+  "dependencies": {
+    "@research-ecology/domain": "*",
+    "@research-ecology/projections": "*",
+    "@research-ecology/protocol": "*"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.61.1",
+    "@sveltejs/adapter-auto": "^7.0.1",
+    "@sveltejs/kit": "^2.69.3",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "@types/node": "^26.1.1",
+    "svelte": "^5.56.5",
+    "svelte-check": "^4.7.2",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.4",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

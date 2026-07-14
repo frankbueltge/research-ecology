@@ -1,0 +1,115 @@
+/**
+ * Design tokens (design §5, binding). "Register, not dashboard. Paper, not glass." — a public
+ * record room. Colour is semantic and scarce, never per-collective faction colour.
+ */
+
+:root {
+  /* -- surface / ink (light, default) -------------------------------------------------- */
+  --paper: #faf8f4;
+  --paper-raised: #f2ede4;
+  --ink: #1a1817;
+  --ink-soft: #4a4440;
+  /* WCAG AA requires >=4.5:1 for normal text; #7a7369 measured 4.41:1 on --paper (axe-core
+     caught it in the a11y suite) — darkened to clear the threshold with margin (5.5:1). */
+  --ink-faint: #6b6459;
+  --rule: #d8d0c2;
+  --rule-strong: #b7ab95;
+
+  /* -- the one accent: terracotta, authored strokes only -------------------------------- */
+  --accent: #9a4a2e;
+  --accent-ink: #ffffff;
+  --accent-soft: #f1e0d8;
+
+  /* -- functional (never a faction colour; used only for structural meaning) ------------ */
+  --negative-band-bg: #efe6df;
+  --negative-band-rule: #9a4a2e;
+  --link: #6a3420;
+  --focus-ring: #1a1817;
+
+  /* -- type ------------------------------------------------------------------------------ */
+  --font-editorial: "Literata", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-record: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --step--1: 0.875rem;
+  --step-0: 1rem;
+  --step-1: 1.2rem;
+  --step-2: 1.5rem;
+  --step-3: 1.9rem;
+  --step-4: 2.4rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  --content-max: 44rem;
+  --frame-max: 72rem;
+
+  --border-thin: 1px solid var(--rule);
+  --border-strong: 1px solid var(--rule-strong);
+
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --motion-ease: ease;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #161412;
+    --paper-raised: #1e1b18;
+    --ink: #efe9df;
+    --ink-soft: #c9c0b2;
+    --ink-faint: #948b7c;
+    --rule: #3a352e;
+    --rule-strong: #55503f;
+
+    --accent: #d97a52;
+    --accent-ink: #161412;
+    --accent-soft: #3a281f;
+
+    --negative-band-bg: #241d18;
+    --negative-band-rule: #d97a52;
+    --link: #e2966d;
+    --focus-ring: #efe9df;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #161412;
+  --paper-raised: #1e1b18;
+  --ink: #efe9df;
+  --ink-soft: #c9c0b2;
+  --ink-faint: #948b7c;
+  --rule: #3a352e;
+  --rule-strong: #55503f;
+
+  --accent: #d97a52;
+  --accent-ink: #161412;
+  --accent-soft: #3a281f;
+
+  --negative-band-bg: #241d18;
+  --negative-band-rule: #d97a52;
+  --link: #e2966d;
+  --focus-ring: #efe9df;
+
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+  }
+}
