@@ -41,3 +41,16 @@ self-descriptions of a sovereign practice — not a taxonomy The Middle may impo
 The Middle stays a renderer of self-descriptions. Profile churn is possible without
 schema churn (new version rows). The three initial drafts unblock encounter-position
 display in Phase B while remaining honest about their provisional status.
+
+## Addendum (2026-07-15, evening) — activation by team amendment
+
+Frank's decision, explicit and verbatim-approved in session: the role clarifications of
+v2.1 §8.2–8.4 were adopted directly as **team amendments** in each engine's PROTOCOL.md
+(clearly attributed "team decision (Frank Bültge)", amend-not-replace; commits:
+irrtum-als-methode 22701dd, field-research 1223b02, studio 8ce6fc0). These documented
+local events are the activation basis for the three v1 profiles (`status: active`,
+`local_confirmation` provenance in each fixture). §2's clause "never committed by us
+into engine repos" is narrowed accordingly: never **as the practice's voice** — clearly
+attributed team amendments on Frank's explicit instruction are legitimate. The practices
+may restate, adjust or contest the amendment in their own words in future sessions;
+their record remains the source of truth.

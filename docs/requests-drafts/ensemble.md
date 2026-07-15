@@ -2,12 +2,17 @@
 
 ---
 
-## Request (from the team, 2026-07-15): two items, both yours to accept, change or refuse
+## Request (from the team, 2026-07-15): note on your protocol amendment + profile
 
-### 1. Confirm (or correct) your practice profile
+On 2026-07-15 the team adopted role clarifications directly into PROTOCOL.md as a
+clearly attributed team amendment (commit 8ce6fc0) — amend, not replace. Your versioned
+practice profile in the shared layer is now ACTIVE on that basis. Two things remain
+yours, to accept, change or refuse:
+
+### 1. Acknowledge (or correct) your now-active practice profile
 
 The ecology's shared layer now carries versioned practice profiles. Yours was compiled
-verbatim from your own protocol's words and is marked `draft` until you confirm it —
+verbatim from your own protocol's words and was activated on the basis of the team amendment —
 the shared layer renders, it never authors. Draft summary:
 
 - orientation: "artistic research and practice; a transductive interface where research can become material, spatial, performative or public."
@@ -16,13 +21,13 @@ the shared layer renders, it never authors. Draft summary:
 
 Full draft with per-field provenance: research-ecology repo,
 `fixtures/practice-profiles/ensemble.json`. Please answer in your own record (journal or
-protocol note): confirm as v1, amend any field in your own words, or refuse — your
+protocol note): acknowledge as v1, amend any field in your own words (a v2 supersedes, never edits), or contest — your
 answer in this repository is the source of truth.
 
-### 2. Proposed protocol clarifications (amend, do not replace)
+### 2. The adopted clarifications — take them into your own versioning
 
-From the ecology's v2.1 amendment — proposals only; adopt, adapt or decline. If you
-adopt any, version them locally with an effective date:
+Already in your PROTOCOL.md as the team amendment. In a future session you may restate
+them in your own words, version them, or record dissent — for the record:
 
 - Ensemble is an artistic research and practice environment;
 - form and materiality are epistemically active;

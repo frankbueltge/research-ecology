@@ -1,16 +1,21 @@
 import { expect, test } from "@playwright/test";
+import { readFileSync } from "node:fs";
 import { ENCOUNTER_ID } from "./fixtures.js";
 
 /**
  * Position display on the encounter page (spec-v2.1 §7.1, ADR 0011, work order
  * phase-b-profiles.md §5/§6 item 6): every participating practice shows "Position in this
- * encounter: …" / "Held accountable to: …" from its applicable profile, with a visible draft chip;
+ * encounter: …" / "Held accountable to: …" from its applicable profile; the draft chip is
+ * state-aware — profiles were ACTIVATED on 2026-07-15 (team amendment, ADR 0011 addendum);
  * Ulysses (documented non-participant in enc-2026-001) gets no position block at all; the
  * wording never hardens into a fixed department label.
  */
 
 test.describe("encounter page: practice position display", () => {
-  test("Meridian and Ensemble each show a Position/Accountability block with a draft chip", async ({ page }) => {
+  const profileStatus = (name: string): string =>
+    JSON.parse(readFileSync(new URL(`../../../../fixtures/practice-profiles/${name}.json`, import.meta.url), "utf8")).status;
+
+  test("Meridian and Ensemble each show a Position/Accountability block; chip matches profile status", async ({ page }) => {
     await page.goto(`/encounters/${ENCOUNTER_ID}`);
 
     const meridianCard = page.locator(".participant").filter({ has: page.getByRole("heading", { name: /^Meridian/ }) });
@@ -18,13 +23,23 @@ test.describe("encounter page: practice position display", () => {
     await expect(meridianCard).toContainText("scientific research practice.");
     await expect(meridianCard).toContainText("Held accountable to:");
     await expect(meridianCard).toContainText("What justifies this claim, and under which conditions could it fail?");
-    await expect(meridianCard).toContainText("draft — compiled from the practice's protocol, pending local confirmation");
+    if (profileStatus("meridian") === "draft") {
+      await expect(meridianCard).toContainText("draft — compiled from the practice's protocol, pending local confirmation");
+    } else {
+      // activated 2026-07-15 (team amendment) — the pending chip must be gone
+      await expect(meridianCard.locator(".pending-badge")).toHaveCount(0);
+    }
 
     const ensembleCard = page.locator(".participant").filter({ has: page.getByRole("heading", { name: /^Ensemble/ }) });
     await expect(ensembleCard).toContainText("Position in this encounter:");
     await expect(ensembleCard).toContainText("Held accountable to:");
     await expect(ensembleCard).toContainText("What does the form do, and what becomes thinkable, perceptible or possible only through this work?");
-    await expect(ensembleCard).toContainText("draft — compiled from the practice's protocol, pending local confirmation");
+    if (profileStatus("ensemble") === "draft") {
+      await expect(ensembleCard).toContainText("draft — compiled from the practice's protocol, pending local confirmation");
+    } else {
+      // activated 2026-07-15 (team amendment) — the pending chip must be gone
+      await expect(ensembleCard.locator(".pending-badge")).toHaveCount(0);
+    }
   });
 
   test("exactly two position blocks render (Meridian source + Ensemble receiver) — the conductor gets none", async ({ page }) => {

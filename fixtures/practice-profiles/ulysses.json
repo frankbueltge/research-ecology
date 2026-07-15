@@ -27,7 +27,7 @@
   "non_exclusive": true,
   "protocol_ref": "https://github.com/frankbueltge/irrtum-als-methode/blob/c413eaec163b58d337ae74881fa4157b60db6f1a/PROTOCOL.md",
   "authored_by": "ulysses",
-  "status": "draft",
+  "status": "active",
   "effective_from": "2026-07-15T00:00:00Z",
   "provenance": {
     "_compiled_by": {
@@ -72,5 +72,13 @@
       "content_hash": "sha256:5db82a63ccefc1aa626c769a5a4939cebe1112b0ea8db90843ebc31f8cac4240",
       "note": "'The Atlas and the swerve — steer 2026-07-14' section (model collapse) + 'Prohibitions'."
     }
+  },
+  "local_confirmation": {
+    "kind": "team amendment (Frank Bültge), adopted by team decision",
+    "date": "2026-07-15",
+    "repo": "irrtum-als-methode",
+    "commit": "22701dd",
+    "section": "PROTOCOL.md — Team amendment — 2026-07-15 (federated research ecology v2.1)",
+    "note": "activation basis per ADR 0011 addendum 2026-07-15; the practice may restate, adjust or contest in its own words in a future session"
   }
 }

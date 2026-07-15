@@ -168,11 +168,11 @@ describe("practice-profile fixtures hydrate through hydrateMemoryStoreFromRepo (
     store = result.store;
   });
 
-  it("all three practice drafts are retrievable as the applicable profile, status draft", async () => {
+  it("all three practice profiles are retrievable as the applicable profile, status active (team amendment 2026-07-15, ADR 0011 addendum)", async () => {
     for (const collectiveId of ["meridian", "ulysses", "ensemble"]) {
       const profile = await store.getApplicableProfile(collectiveId);
       expect(profile).toBeDefined();
-      expect(profile?.status).toBe("draft");
+      expect(profile?.status).toBe("active");
       expect(profile?.non_exclusive).toBe(true);
     }
   });

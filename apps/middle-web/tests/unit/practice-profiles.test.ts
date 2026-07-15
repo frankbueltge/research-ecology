@@ -172,11 +172,15 @@ function sha256HexOfShow(repoPath: string, commit: string, filePath: string): st
 describe("practice-profile fixtures: structural provenance shape", () => {
   const fixtures = loadFixtureProfiles();
 
-  it("loads exactly three profiles, one per sovereign collective, all v1/draft/non_exclusive", () => {
+  it("loads exactly three profiles, one per sovereign collective, all v1/active/non_exclusive", () => {
     expect(fixtures.map((f) => f.collective_id).sort()).toEqual(["ensemble", "meridian", "ulysses"]);
     for (const fixture of fixtures) {
       expect(fixture.version).toBe(1);
-      expect(fixture.status).toBe("draft");
+      // Activated 2026-07-15: team amendments in each engine PROTOCOL.md are the local
+      // confirmation basis (ADR 0011 addendum) — the activation must carry that provenance.
+      expect(fixture.status).toBe("active");
+      expect(fixture.local_confirmation?.date).toBe("2026-07-15");
+      expect(fixture.local_confirmation?.commit).toMatch(/^[0-9a-f]{7,}$/);
       expect(fixture.non_exclusive).toBe(true);
     }
   });

@@ -27,7 +27,7 @@
   "non_exclusive": true,
   "protocol_ref": "https://github.com/frankbueltge/studio/blob/2243fc0839d4c49781b2dda0d6e24d61583a7909/PROTOCOL.md",
   "authored_by": "ensemble",
-  "status": "draft",
+  "status": "active",
   "effective_from": "2026-07-15T00:00:00Z",
   "provenance": {
     "_compiled_by": {
@@ -72,5 +72,13 @@
       "content_hash": "sha256:47a5b5563578561a354ec8650ac5ecd7060aef6d7e197c11e68012fec23e0eac",
       "note": "'Core value: honesty by labeling', 'Production discipline (the anti-drift law)' and 'Prohibitions'."
     }
+  },
+  "local_confirmation": {
+    "kind": "team amendment (Frank Bültge), adopted by team decision",
+    "date": "2026-07-15",
+    "repo": "studio",
+    "commit": "8ce6fc0",
+    "section": "PROTOCOL.md — Team amendment — 2026-07-15 (federated research ecology v2.1)",
+    "note": "activation basis per ADR 0011 addendum 2026-07-15; the practice may restate, adjust or contest in its own words in a future session"
   }
 }

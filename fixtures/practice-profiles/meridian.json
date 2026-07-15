@@ -27,7 +27,7 @@
   "non_exclusive": true,
   "protocol_ref": "https://github.com/frankbueltge/field-research/blob/32e2db56645e223f4f1249e52dbdf052763574f3/PROTOCOL.md",
   "authored_by": "meridian",
-  "status": "draft",
+  "status": "active",
   "effective_from": "2026-07-15T00:00:00Z",
   "provenance": {
     "_compiled_by": {
@@ -72,5 +72,13 @@
       "content_hash": "sha256:3982501d765a2a72d5b2ab6c880e4c802f9a4161838467a53a73a0591d201239",
       "note": "'Prohibitions' section, first two lines."
     }
+  },
+  "local_confirmation": {
+    "kind": "team amendment (Frank Bültge), adopted by team decision",
+    "date": "2026-07-15",
+    "repo": "field-research",
+    "commit": "1223b02",
+    "section": "PROTOCOL.md — Team amendment — 2026-07-15 (federated research ecology v2.1)",
+    "note": "activation basis per ADR 0011 addendum 2026-07-15; the practice may restate, adjust or contest in its own words in a future session"
   }
 }
