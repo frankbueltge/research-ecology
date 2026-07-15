@@ -80,3 +80,26 @@ Erst DENKEN (Optionen, Journeys, Name-Kandidaten — mit Frank im Dialog), dann
 Mockups (gebaute HTML wie heute — der Modus hat sich bewährt), dann EIN Umsetzungs-
 Paket auf Branch `site-v2`. NICHTS auf main ohne Franks Go. Modell-Ökonomie:
 stärkstes Modell fürs Denken/Design, Sonnet für die Umsetzung.
+
+## 5. Arbeitsstrang: Nightly-Kette Ende-zu-Ende, OHNE manuelle Nacharbeit (Frank, 00:25)
+
+Befund heute Nacht: **Atelier-Integrate war seit 14.07. rot** — Ulysses führte neue
+Kanten-Kinds ein (continues/complement/grounds), das Cockpit-Gate lehnte ehrlich ab,
+und niemand bemerkte es → Werke fehlten tagelang live. Fix ist deployt (ed9ea9a,
+Werke wieder live). Franks Anforderung: *„sicherstellen, dass alles, was in den
+Routinen produziert wird, auch wirklich auf der Live-Site erscheint — zukünftig ohne
+manuelle Nacharbeit."* Meridian/Studio vermutlich ebenfalls nicht taufrisch —
+Integration NACH dem Redesign, aber die Kette gehört zum Paket:
+
+1. **Sichtbarkeit statt Stille:** Jeder rote Integrate-/Nightly-Run muss ALARM
+   schlagen (GitHub-Notification an Frank / Badge auf einer internen Statusseite /
+   Issue-Bot). Ein ehrliches Gate, das niemand hört, ist ein stilles Loch.
+2. **Ökologie-Glied automatisieren:** research-ecology bekommt den nächtlichen
+   Workflow importer→(Tests)→export→Commit in die Site (Runbook site-export.md
+   existiert; Workflow fehlt). Dazu: Apps-Rebuild (atelier statisch) am selben Strang.
+3. **Gate-Failure-Policy:** Wenn Engines neues Vokabular erfinden (das SOLLEN sie),
+   ist der rote Run der Normalfall, nicht der Störfall → definierter Halbautomatik-
+   Pfad: Alarm + vorbereiteter „Vokabular bewusst erweitern"-PR statt tagelanger Stau.
+4. **Frische-Audit** aller Integrates (atelier ✅ repariert, meridian/studio prüfen:
+   Läufe grün ≠ Inhalt aktuell) + Ende-zu-Ende-Smoke: „jüngstes Engine-Werk ↔ live
+   sichtbar" als täglicher Check.
