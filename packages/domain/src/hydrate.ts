@@ -16,10 +16,17 @@ import {
   validateAssertion,
   validateCollectiveManifest,
   validateEncounterEvent,
-  validateLens
+  validateLens,
+  validatePracticeProfile
 } from "../../protocol/src/index.js";
 import type { EncounterEvent } from "../../protocol/src/index.js";
-import { ACTOR_SEED, COLLECTIVE_SEED, EDITORIAL_ACTOR_IDS, THE_MIDDLE_EDITORIAL_SENTINEL } from "./actor-seed.js";
+import {
+  ACTOR_SEED,
+  assertProfileAuthorIsNotEditorial,
+  COLLECTIVE_SEED,
+  EDITORIAL_ACTOR_IDS,
+  THE_MIDDLE_EDITORIAL_SENTINEL
+} from "./actor-seed.js";
 import { MemoryStore } from "./memory-store.js";
 import type { LoaderStore } from "./store.js";
 import type {
@@ -30,7 +37,8 @@ import type {
   StoredLensVersion,
   StoredObjectRef,
   StoredObligation,
-  StoredParticipant
+  StoredParticipant,
+  StoredPracticeProfileVersion
 } from "./types.js";
 
 function readJson<T>(filePath: string): T {
@@ -419,6 +427,44 @@ export async function loadLensesFromDir(store: LoaderStore, lensesDir: string): 
 }
 
 // --------------------------------------------------------------------------------------------
+// Practice profiles (fixtures/practice-profiles/*.json — spec-v2.1 §3, ADR 0011, work order
+// phase-b-profiles.md §4)
+// --------------------------------------------------------------------------------------------
+
+export interface ProfileLoadSummary {
+  loaded: string[];
+  rejected: string[];
+}
+
+/** Loads every `*.json` file in `profilesDir` as a `practice_profile_versions` row, same shape
+ * as `loadLensesFromDir`: schema-validate (packages/protocol), then the sentinel (ADR 0011 §1
+ * — "The Middle cannot publish a profile"), then `putPracticeProfileVersion`. A record that
+ * fails either check is never silently dropped — it is recorded in `rejected` instead (same
+ * honesty rule as bundle/fixture loading above), never written to the store. */
+export async function loadProfilesFromDir(store: LoaderStore, profilesDir: string): Promise<ProfileLoadSummary> {
+  const files = readdirSync(profilesDir).filter((f) => f.endsWith(".json")).sort();
+  const loaded: string[] = [];
+  const rejected: string[] = [];
+  for (const file of files) {
+    const profile = readJson<StoredPracticeProfileVersion>(path.join(profilesDir, file));
+    const result = validatePracticeProfile(profile);
+    if (!result.valid) {
+      rejected.push(`${file}: ${JSON.stringify(result.errors)}`);
+      continue;
+    }
+    try {
+      assertProfileAuthorIsNotEditorial(profile);
+    } catch (error) {
+      rejected.push(`${file}: ${(error as Error).message}`);
+      continue;
+    }
+    await store.putPracticeProfileVersion(profile);
+    loaded.push(`${profile.collective_id}@${profile.version}`);
+  }
+  return { loaded, rejected };
+}
+
+// --------------------------------------------------------------------------------------------
 // Full bootstrap (used by both apps/loader and apps/project's no-DB dev mode)
 // --------------------------------------------------------------------------------------------
 
@@ -427,26 +473,33 @@ export interface FullLoadSummary {
   bundles: BundleLoadSummary[];
   fixture: FixtureLoadSummary;
   lenses: LensLoadSummary;
+  profiles?: ProfileLoadSummary;
 }
 
 export interface HydrationPaths {
   bundlesRootDir: string;
   fixtureDir: string;
   lensesDir: string;
+  /** Optional (work order phase-b-profiles.md §4): omitted by every call site that predates
+   * profiles (apps/loader, apps/project, apps/export-site, existing tests) — those keep
+   * running with zero profile versions loaded, exactly as before. `apps/middle-web`'s server
+   * store is the one caller that sets it. */
+  profilesDir?: string;
 }
 
 /** Runs every hydration step, in the only order that satisfies referential dependencies
  * (actors/collectives before anything that references them; bundles and the fixture before
- * lenses, though lenses have no data dependency — kept last for readability only). Shared by
- * `apps/loader` (targets whatever store the CLI was given) and `apps/project`'s no-DB dev mode
- * (always builds a fresh `MemoryStore`, since there is no persistent process between CLI runs
- * — work order §0 "MemoryStore ... doubles as the no-DB local dev mode"). */
+ * lenses/profiles, though neither has a data dependency — kept last for readability only).
+ * Shared by `apps/loader` (targets whatever store the CLI was given) and `apps/project`'s
+ * no-DB dev mode (always builds a fresh `MemoryStore`, since there is no persistent process
+ * between CLI runs — work order §0 "MemoryStore ... doubles as the no-DB local dev mode"). */
 export async function runFullLoad(store: LoaderStore, paths: HydrationPaths): Promise<FullLoadSummary> {
   const seed = await seedActorsAndCollectives(store);
   const bundles = await loadAllBundlesFromRoot(store, paths.bundlesRootDir);
   const fixture = await loadFixtureEncounter(store, paths.fixtureDir);
   const lenses = await loadLensesFromDir(store, paths.lensesDir);
-  return { seed, bundles, fixture, lenses };
+  const profiles = paths.profilesDir ? await loadProfilesFromDir(store, paths.profilesDir) : undefined;
+  return { seed, bundles, fixture, lenses, profiles };
 }
 
 /** Convenience for the no-DB dev mode: a fresh, fully-hydrated `MemoryStore` plus the same

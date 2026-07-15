@@ -15,7 +15,8 @@ import type {
   AssertionRecord,
   EncounterEvent,
   LensDefinition,
-  MapManifest
+  MapManifest,
+  PracticeProfileVersion
 } from "../../protocol/src/index.js";
 import type { LocalObjectRef } from "../../adapters/src/index.js";
 
@@ -135,6 +136,14 @@ export type StoredLensVersion = LensDefinition;
 /** A `map_versions` row — the projection engine's output plus store-assigned identity
  * (map_id/version are NOT part of the content_hash basis; see packages/projections). */
 export type StoredMapVersion = MapManifest;
+
+/** A `practice_profile_versions` row (spec-v2.1 §3, ADR 0011, work order phase-b-profiles.md
+ * §3) — the Phase-1-style wire shape unchanged, same pattern as StoredLensVersion/
+ * StoredMapVersion above. Append-only like events/obligations: a new version supersedes,
+ * never edits, a prior one. `authored_by` is always an actor of the practice itself — the
+ * loader (hydrate.ts) and both stores' `putPracticeProfileVersion` throw otherwise, mirroring
+ * the editorial-issuer sentinel for events (ADR 0011 §1). */
+export type StoredPracticeProfileVersion = PracticeProfileVersion;
 
 /** spec 05 §3.15 — first-class declaration of what a bundle path could not become a record. */
 export interface StoredImportRecord {

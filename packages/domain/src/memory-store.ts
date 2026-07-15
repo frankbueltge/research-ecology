@@ -6,6 +6,7 @@
  * read-side guarantee holds independently of ingest-time checks.
  */
 
+import { assertProfileAuthorIsNotEditorial } from "./actor-seed.js";
 import type { EncounterStore, LoaderStore } from "./store.js";
 import type {
   IdempotentResult,
@@ -20,7 +21,8 @@ import type {
   StoredNonParticipant,
   StoredObjectRef,
   StoredObligation,
-  StoredParticipant
+  StoredParticipant,
+  StoredPracticeProfileVersion
 } from "./types.js";
 
 function participantKey(p: Pick<StoredParticipant, "encounter_id" | "role" | "actor_id">): string {
@@ -74,6 +76,7 @@ export class MemoryStore implements EncounterStore, LoaderStore {
   private readonly lensVersions = new Map<string, StoredLensVersion>();
   private readonly mapVersions = new Map<string, StoredMapVersion>();
   private readonly importRecords = new Map<string, StoredImportRecord>();
+  private readonly profileVersions = new Map<string, StoredPracticeProfileVersion>(); // `${collective_id}::${version}`
 
   // -- actors / collectives --------------------------------------------------------------
 
@@ -281,6 +284,37 @@ export class MemoryStore implements EncounterStore, LoaderStore {
     const key = importRecordKey(record);
     if (this.importRecords.has(key)) return { inserted: false };
     this.importRecords.set(key, record);
+    return { inserted: true };
+  }
+
+  // -- practice profiles (spec-v2.1 §3, ADR 0011) --------------------------------------------
+
+  async getApplicableProfile(collectiveId: string, asOf?: string): Promise<StoredPracticeProfileVersion | undefined> {
+    const cutoff = asOf ?? new Date().toISOString();
+    const candidates = [...this.profileVersions.values()].filter(
+      (p) =>
+        p.collective_id === collectiveId &&
+        p.status !== "superseded" &&
+        p.effective_from <= cutoff &&
+        (!p.effective_to || p.effective_to > cutoff)
+    );
+    if (candidates.length === 0) return undefined;
+    const statusPriority = (status: string): number => (status === "active" ? 2 : status === "draft" ? 1 : 0);
+    candidates.sort((a, b) => statusPriority(b.status) - statusPriority(a.status) || b.version - a.version);
+    return candidates[0];
+  }
+
+  async listProfileVersions(collectiveId: string): Promise<StoredPracticeProfileVersion[]> {
+    return [...this.profileVersions.values()]
+      .filter((p) => p.collective_id === collectiveId)
+      .sort((a, b) => a.version - b.version);
+  }
+
+  async putPracticeProfileVersion(profile: StoredPracticeProfileVersion): Promise<IdempotentResult> {
+    assertProfileAuthorIsNotEditorial(profile);
+    const key = `${profile.collective_id}::${profile.version}`;
+    if (this.profileVersions.has(key)) return { inserted: false };
+    this.profileVersions.set(key, profile);
     return { inserted: true };
   }
 }

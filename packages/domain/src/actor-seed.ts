@@ -5,7 +5,7 @@
  * event/assertion/participant row that references an actor_id/collective_id.
  */
 
-import type { ActorKind, StoredActor, StoredCollective } from "./types.js";
+import type { ActorKind, StoredActor, StoredCollective, StoredPracticeProfileVersion } from "./types.js";
 
 export interface ActorSeedEntry {
   id: string;
@@ -101,6 +101,35 @@ export const EDITORIAL_ACTOR_IDS: ReadonlySet<string> = new Set([
  * registered as a `StoredCollective` — it names the shared apparatus, not a sovereign
  * practice, and encounter-event.schema.json only requires `collective_id` to be a string. */
 export const THE_MIDDLE_EDITORIAL_SENTINEL = "the-middle-editorial";
+
+/**
+ * Profile-author sentinel (ADR 0011 §1, work order phase-b-profiles.md §3): "The Middle cannot
+ * publish a profile." Mirrors `assertIssuerNeverImpersonatesCollective` in hydrate.ts (same
+ * `EDITORIAL_ACTOR_IDS` set), but lives here rather than in hydrate.ts so both the loader
+ * (hydrate.ts's `loadProfilesFromDir`) AND the two store implementations' own
+ * `putPracticeProfileVersion` can call it without a circular import — hydrate.ts already
+ * imports `MemoryStore`, so a check defined there could not be imported back into
+ * memory-store.ts/postgres-store.ts.
+ */
+export class EditorialProfileAuthorViolation extends Error {
+  constructor(collectiveId: string, version: number, authoredBy: string) {
+    super(
+      `practice_profile_versions ${collectiveId}@${version}: authored_by ("${authoredBy}") is ` +
+        `an editorial/Middle actor — practice profiles are always authored by the practice ` +
+        `itself, never by The Middle (ADR 0011 §1). Use an actor of the practice's own ` +
+        `collective instead.`
+    );
+    this.name = "EditorialProfileAuthorViolation";
+  }
+}
+
+export function assertProfileAuthorIsNotEditorial(
+  profile: Pick<StoredPracticeProfileVersion, "collective_id" | "version" | "authored_by">
+): void {
+  if (EDITORIAL_ACTOR_IDS.has(profile.authored_by)) {
+    throw new EditorialProfileAuthorViolation(profile.collective_id, profile.version, profile.authored_by);
+  }
+}
 
 export function actorSeedById(): Map<string, StoredActor> {
   const map = new Map<string, StoredActor>();

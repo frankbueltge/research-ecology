@@ -29,3 +29,12 @@ exist).
 8. **Deferred:** per-entry atlas import; `/refusals` route (no published inter-practice
    refusal exists); bounded constellation renderer; Drizzle (first write feature); datavism/
    data-snack as future practices.
+9. **`practice_profile_versions` PostgresStore (Phase B, work order phase-b-profiles.md §3):**
+   `putPracticeProfileVersion`/`getApplicableProfile`/`listProfileVersions` are hand-written to
+   mirror `MemoryStore`'s semantics exactly (same append-only idempotency key, same
+   active-over-draft/superseded-never `getApplicableProfile` ordering, reproduced in SQL via
+   `ORDER BY (status = 'active') DESC, version DESC`) but, like the rest of `PostgresStore`,
+   never executed against a live DB in this environment — covered by note 3 above once a real
+   Postgres exists. `constellations`/`constellation_encounters` (migration 0002) have no store
+   code at all yet (deliberate, work order §1: "kein Store-/UI-Code dafür, nur die Migration
+   selbst" — populated in Phase D).

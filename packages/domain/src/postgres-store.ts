@@ -21,7 +21,7 @@
 
 import postgres from "postgres";
 import type { Sql } from "postgres";
-import { THE_MIDDLE_EDITORIAL_SENTINEL } from "./actor-seed.js";
+import { assertProfileAuthorIsNotEditorial, THE_MIDDLE_EDITORIAL_SENTINEL } from "./actor-seed.js";
 import type { EncounterStore, LoaderStore } from "./store.js";
 import type {
   IdempotentResult,
@@ -36,7 +36,8 @@ import type {
   StoredNonParticipant,
   StoredObjectRef,
   StoredObligation,
-  StoredParticipant
+  StoredParticipant,
+  StoredPracticeProfileVersion
 } from "./types.js";
 
 function subjectRefId(value: unknown): string | undefined {
@@ -660,6 +661,79 @@ export class PostgresStore implements EncounterStore, LoaderStore {
         ${"@research-ecology/domain@0.1.0"}, ${record.kind}, ${record.reason},
         ${this.sql.json(({ path: record.path, detail: record.detail ?? null }) as any)}
       )
+    `;
+    return { inserted: result.count > 0 };
+  }
+
+  // -- practice profiles (spec-v2.1 §3, ADR 0011) --------------------------------------------
+
+  private async rowToProfile(row: Record<string, unknown>): Promise<StoredPracticeProfileVersion> {
+    let authoredBySlug = "";
+    if (row.authored_by) {
+      const rows = await this.sql`SELECT slug FROM actors WHERE id = ${row.authored_by as string}`;
+      authoredBySlug = rows[0]?.slug ?? "";
+    }
+    return {
+      collective_id: row.collective_id as string,
+      version: row.version as number,
+      public_name: row.public_name as string,
+      self_description: (row.self_description as string) ?? undefined,
+      orientation: row.orientation as string,
+      primary_commitment: row.primary_commitment as string,
+      accountability_questions: (row.accountability_questions as string[]) ?? [],
+      typical_operations: (row.typical_operations as string[]) ?? [],
+      admissible_outputs: (row.admissible_outputs as string[]) ?? [],
+      characteristic_risks: (row.characteristic_risks as string[]) ?? [],
+      non_exclusive: true,
+      protocol_ref: (row.protocol_ref as string) ?? undefined,
+      authored_by: authoredBySlug,
+      status: row.status as string,
+      effective_from: (row.effective_from as Date).toISOString(),
+      effective_to: row.effective_to ? (row.effective_to as Date).toISOString() : undefined,
+      provenance: (row.provenance as StoredPracticeProfileVersion["provenance"]) ?? {}
+    };
+  }
+
+  async getApplicableProfile(collectiveId: string, asOf?: string): Promise<StoredPracticeProfileVersion | undefined> {
+    const cutoff = asOf ?? new Date().toISOString();
+    const rows = await this.sql`
+      SELECT * FROM practice_profile_versions
+      WHERE collective_id = ${collectiveId} AND status <> 'superseded'
+        AND effective_from <= ${cutoff}
+        AND (effective_to IS NULL OR effective_to > ${cutoff})
+      ORDER BY (status = 'active') DESC, version DESC
+      LIMIT 1
+    `;
+    return rows[0] ? this.rowToProfile(rows[0]) : undefined;
+  }
+
+  async listProfileVersions(collectiveId: string): Promise<StoredPracticeProfileVersion[]> {
+    const rows = await this.sql`
+      SELECT * FROM practice_profile_versions WHERE collective_id = ${collectiveId} ORDER BY version
+    `;
+    return Promise.all(rows.map((row) => this.rowToProfile(row)));
+  }
+
+  async putPracticeProfileVersion(profile: StoredPracticeProfileVersion): Promise<IdempotentResult> {
+    assertProfileAuthorIsNotEditorial(profile);
+    const authoredByRowId = await this.resolveActorRowId(profile.authored_by);
+    const result = await this.sql`
+      INSERT INTO practice_profile_versions (
+        collective_id, version, public_name, self_description, orientation, primary_commitment,
+        accountability_questions, typical_operations, admissible_outputs, characteristic_risks,
+        non_exclusive, protocol_ref, authored_by, status, effective_from, effective_to, provenance
+      ) VALUES (
+        ${profile.collective_id}, ${profile.version}, ${profile.public_name},
+        ${profile.self_description ?? null}, ${profile.orientation}, ${profile.primary_commitment},
+        ${this.sql.json((profile.accountability_questions) as any)},
+        ${this.sql.json((profile.typical_operations ?? []) as any)},
+        ${this.sql.json((profile.admissible_outputs ?? []) as any)},
+        ${this.sql.json((profile.characteristic_risks ?? []) as any)},
+        ${profile.non_exclusive}, ${profile.protocol_ref ?? null}, ${authoredByRowId},
+        ${profile.status}, ${profile.effective_from}, ${profile.effective_to ?? null},
+        ${this.sql.json((profile.provenance) as any)}
+      )
+      ON CONFLICT (collective_id, version) DO NOTHING
     `;
     return { inserted: result.count > 0 };
   }

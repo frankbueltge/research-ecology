@@ -25,7 +25,8 @@ import type {
   StoredNonParticipant,
   StoredObjectRef,
   StoredObligation,
-  StoredParticipant
+  StoredParticipant,
+  StoredPracticeProfileVersion
 } from "./types.js";
 
 export interface EncounterStore {
@@ -65,6 +66,16 @@ export interface EncounterStore {
   listMapVersions(mapId: string): Promise<StoredMapVersion[]>;
 
   listImportRecords(collectiveId: string): Promise<StoredImportRecord[]>;
+
+  /** Scoped by collective (spec-v2.1 §3, ADR 0011, work order phase-b-profiles.md §3): the
+   * single applicable profile version for `collectiveId` as of `asOf` (defaults to now) —
+   * the most recent version with `effective_from <= asOf` (and, if set, `effective_to >
+   * asOf`), preferring `status: "active"` over `"draft"` at equal recency; `"superseded"`
+   * versions are never returned. */
+  getApplicableProfile(collectiveId: string, asOf?: string): Promise<StoredPracticeProfileVersion | undefined>;
+  /** Every profile version ever put for `collectiveId`, oldest first — the full version
+   * history (ADR 0011 §4: "profile history stays visible"). */
+  listProfileVersions(collectiveId: string): Promise<StoredPracticeProfileVersion[]>;
 }
 
 export interface LoaderStore {
@@ -113,6 +124,13 @@ export interface LoaderStore {
   nextMapVersion(mapId: string): Promise<number>;
 
   insertImportRecord(record: StoredImportRecord): Promise<IdempotentResult>;
+
+  /** Append-only, idempotent on (collective_id, version) — db/migrations/0002 `UNIQUE
+   * (collective_id, version)`. Throws `EditorialProfileAuthorViolation` (actor-seed.ts) if
+   * `authored_by` names an editorial/Middle actor, independent of whatever the loader already
+   * checked on the way in — the same "holds even if ingest is bypassed" guarantee epistemic
+   * contract test 6 established for `machine_suggestion` filtering. */
+  putPracticeProfileVersion(profile: StoredPracticeProfileVersion): Promise<IdempotentResult>;
 }
 
 // ---------------------------------------------------------------------------------------
