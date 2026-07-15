@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-theme-mode="auto"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio — der Abendzettel · two evenings</title>
+
+<script>
+// Site convention (frankbueltge.de Base.astro): localStorage 'theme' = explicit override
+// ('light'|'dark'), absent = auto (follow OS). <html> ALWAYS carries the resolved
+// data-theme and the data-theme-mode (auto/light/dark) for the toggle icon.
+(function(){
+  var root = document.documentElement;
+  function readMode(){ try { return localStorage.getItem('theme') || 'auto' } catch(e){ return 'auto' } }
+  function resolve(m){ return m === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : m }
+  function apply(m){ root.setAttribute('data-theme', resolve(m)); root.setAttribute('data-theme-mode', m); }
+  apply(readMode());
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(){
+    if (readMode() === 'auto') apply('auto');
+  });
+  window.__cycleTheme = function(){
+    var order = ['auto','light','dark'];
+    var next = order[(order.indexOf(readMode()) + 1) % order.length];
+    try { next === 'auto' ? localStorage.removeItem('theme') : localStorage.setItem('theme', next) } catch(e){}
+    apply(next);
+  };
+})();
+</script><style>
+:root{--font-ui:"Bodoni 72",Didot,"Playfair Display",Georgia,serif;
+--font-display:var(--font-ui);--font-record:ui-monospace,"SF Mono",Menlo,monospace;
+--h1-track:.01em;--h1-weight:500}
+:root[data-theme="dark"]{--page:#0e0c0b;--surface:#141110;--ink:#eae4da;--ink-2:#9a9188;
+--hairline:#2e2825;--c-lamp:#bd8b21;--c-curtain:#c2455a;
+--badge-bg:#1c1816;--tip-bg:#1e1a18;--tip-ink:#eae4da;--h1-ink:#f4efe6;
+--spot-core:#f4ead2;--spot-mid:#c8a94e}
+:root[data-theme="light"]{--page:#e9e4dc;--surface:#f3efe9;--ink:#221e1b;--ink-2:#6d645c;
+--hairline:#dcd4c8;--c-lamp:#8a6a10;--c-curtain:#a83248;
+--badge-bg:#ece6dd;--tip-bg:#fffdf8;--tip-ink:#221e1b;--h1-ink:#1a1613;
+--spot-core:#fff9ea;--spot-mid:#e6d195}
+.wrap{border:1px solid var(--hairline);position:relative}
+h1{color:var(--h1-ink)}
+.theme-toggle{position:absolute;top:26px;right:34px;width:34px;height:34px;display:flex;
+align-items:center;justify-content:center;background:none;border:1px solid var(--hairline);
+border-radius:6px;color:var(--ink-2);cursor:pointer}
+.theme-toggle:hover{color:var(--ink)} .theme-toggle svg{display:none}
+:root[data-theme-mode="auto"] .theme-toggle .i-auto{display:block}
+:root[data-theme-mode="light"] .theme-toggle .i-sun{display:block}
+:root[data-theme-mode="dark"] .theme-toggle .i-moon{display:block}
+.blattrand{display:flex;gap:1.6em;align-items:baseline;margin:18px 0 4px;padding:7px 0;
+border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+font:12px var(--font-record);letter-spacing:.08em}
+.blattrand a{color:var(--ink-2);text-decoration:none;text-transform:uppercase}
+.blattrand a:hover{color:var(--ink);text-decoration:underline}
+.br-here{color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--c-curtain)}
+.br-door{margin-left:auto;color:var(--ink-2);text-transform:uppercase}
+/* Bühnen-Zeichen: Spot, Marke, X, Gasse, Marquee — nichts geteilt mit Partitur/Blatt/Protokoll */
+.stagefloor{fill:var(--surface);stroke:var(--hairline)}
+.curtainline{stroke:var(--c-curtain);stroke-width:3}
+.tapemark{stroke:var(--ink-2);stroke-width:1.6;fill:none}
+.xmark{stroke:var(--c-curtain);stroke-width:2;fill:none}
+.gasse{stroke:var(--ink-2);stroke-width:1;stroke-dasharray:5 5}
+.t-worktitle{font:500 40px var(--font-display);fill:#2e250f;letter-spacing:.06em}
+.t-workmeta{font:12px var(--font-record);fill:var(--ink-2)}
+.t-marquee{font:600 13px var(--font-record);fill:var(--c-lamp);letter-spacing:.34em}
+.t-quote-s{font:italic 13.5px var(--font-display);fill:var(--ink)}
+.t-kill{font:11.5px var(--font-record);fill:var(--ink-2)}
+.t-kill-n{font:600 12px var(--font-record);fill:var(--ink)}
+.t-gasse{font:600 11px var(--font-record);letter-spacing:.2em;fill:var(--ink-2)}
+.evt2{cursor:help;outline:none}
+/* Abendzettel (playbill) */
+.zettel{max-width:660px;margin:30px auto 10px;text-align:center}
+.zettel .abend{font:600 13px var(--font-record);letter-spacing:.3em;color:var(--ink-2);
+margin:34px 0 6px;text-transform:uppercase}
+.zettel .rule{border:none;border-top:1px solid var(--hairline);margin:12px auto;width:60%}
+.zettel .rule-heavy{border-top:2px solid var(--ink);width:40%}
+.zettel .nr{font:600 12px var(--font-record);color:var(--c-lamp);letter-spacing:.18em}
+.zettel .line{font:19px var(--font-display);color:var(--ink);margin:2px 0 18px;line-height:1.4}
+.zettel .line b{font-weight:600}
+.zettel .move{font:600 10.5px var(--font-record);letter-spacing:.22em;color:var(--ink-2);text-transform:uppercase}
+.zettel .kill{color:var(--c-curtain)}
+.zettel .prem{font:500 30px var(--font-display);letter-spacing:.04em;color:var(--h1-ink);margin:6px 0 4px}
+.zettel .edge{font:italic 15px var(--font-display);color:var(--ink-2);margin-top:26px}
+
+*{box-sizing:border-box;margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--font-ui);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1520px;margin:0 auto;padding:34px 40px 60px;background:var(--surface)}
+.kicker{font-family:var(--font-record);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);display:flex;gap:1.4em;flex-wrap:wrap}
+.kicker .chip{border:1px solid var(--hairline);padding:1px 8px;border-radius:2px;color:var(--ink-2)}
+h1{font-family:var(--font-display);font-size:clamp(34px,4.6vw,64px);line-height:1.04;letter-spacing:var(--h1-track);margin:.45em 0 .2em;max-width:22ch;font-weight:var(--h1-weight)}
+.status{font-family:var(--font-record);font-size:14px;color:var(--ink-2)}
+.status b{color:var(--ink);font-weight:600}
+figure{margin:26px 0 8px}
+svg#score{width:100%;height:auto;display:block}
+/* --- grammar strokes (shared; colors via practice classes) --- */
+.pr-meridian{--pr:var(--c-meridian)} .pr-ensemble{--pr:var(--c-ensemble)}
+.pr-conductor{--pr:var(--c-conductor)} .pr-ulysses{--pr:var(--c-ulysses)} .pr-infra{--pr:var(--c-conductor)}
+.lane{stroke:var(--pr);stroke-width:2;opacity:.92}
+.lane-thin{stroke-width:1;stroke-dasharray:1 5;opacity:.75}
+.mk{stroke:var(--pr);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.mk-lt{opacity:.45;stroke-width:1.4}
+.mk-fill{fill:var(--pr)}
+.mk-hatch{fill:url(#hatch);stroke:var(--pr);stroke-width:1.1}
+.hatch-line{stroke:var(--ink-2);stroke-width:1.1}
+.mk-void{stroke:var(--ink-2);stroke-width:1;stroke-dasharray:2 4;opacity:.8}
+.mk-stem{stroke:var(--pr);stroke-width:1.2;opacity:.85}
+.mk-unknown{stroke:var(--ink-2);stroke-dasharray:2 3}
+.flow{fill:none;stroke:var(--pr);stroke-width:1.8}
+.flow-up{stroke-dasharray:6 5}
+.obl{stroke:var(--pr);stroke-width:.9;opacity:.6;stroke-dasharray:1 4}
+.ring{stroke:var(--pr);stroke-width:2.2}
+.gap{stroke:var(--ink-2);stroke-width:1;stroke-dasharray:3 5}
+.asof{stroke:var(--ink-2);stroke-width:1.4}
+.ruler{stroke:var(--ink-2);stroke-width:1;opacity:.9}
+.grat{stroke:var(--hairline);stroke-width:1}
+.marker-stroke{stroke:var(--ink-2);stroke-width:1.6}
+.badge{fill:var(--badge-bg);stroke:var(--hairline)} .badge-n{font:600 10.5px var(--font-record);fill:var(--ink)}
+text{fill:var(--ink)}
+.t-lane{font:600 13px var(--font-record);letter-spacing:.12em;fill:var(--ink)}
+.t-note{font:11.5px var(--font-record);fill:var(--ink-2)}
+.t-dim{opacity:.75}
+.t-quote{font:italic 11.5px var(--font-display);fill:var(--ink-2)}
+.evt{cursor:pointer;outline:none}
+.evt:hover .mk,.evt:focus .mk{stroke-width:3}
+.evt:focus .hit{stroke:var(--ink-2);stroke-dasharray:2 3}
+/* legend + table */
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);padding:20px 0;margin:14px 0 26px}
+.legend h3{font:600 11px var(--font-record);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.lg-row{display:flex;gap:10px;align-items:center;margin:5px 0;font:12.5px var(--font-record);color:var(--ink-2)}
+.mini{width:46px;height:30px;flex:none}
+.sw{width:22px;height:8px;background:var(--pr);flex:none;border-radius:1px}
+.lg-note{font:11.5px var(--font-record);color:var(--ink-2);margin-top:12px;max-width:44ch;opacity:.85}
+.record h2{font:600 13px var(--font-record);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:8px 0 10px}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:12.5px var(--font-record)}
+th{text-align:left;font-weight:600;color:var(--ink-2);letter-spacing:.06em}
+th,td{border-top:1px solid var(--hairline);padding:7px 14px 7px 0;vertical-align:top}
+td.mono{white-space:nowrap;color:var(--ink-2)} td.q{font-style:italic;max-width:52ch}
+footer{margin-top:26px;font:11.5px var(--font-record);color:var(--ink-2);display:flex;justify-content:space-between;gap:2em;flex-wrap:wrap}
+#tip{position:absolute;max-width:360px;background:var(--tip-bg);color:var(--tip-ink);border:1px solid var(--hairline);padding:10px 12px;font:12.5px var(--font-record);line-height:1.45;pointer-events:none;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+#tip hr{border:none;border-top:1px solid var(--hairline);margin:6px 0}
+#tip .tid{opacity:.7} #tip i{opacity:.8}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style></head>
+<body>
+<div class="wrap">
+  
+<button class="theme-toggle" data-theme-toggle aria-label="Theme: auto / light / dark" title="Theme: auto / light / dark" onclick="__cycleTheme()">
+  <svg class="i-auto" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg>
+  <svg class="i-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4l1.4-1.4M18 6l1.4-1.4"/></svg>
+  <svg class="i-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 14.2A8.2 8.2 0 1 1 9.8 3.4a6.8 6.8 0 1 0 10.8 10.8z"/></svg>
+</button>
+  <p class="kicker"><span>Studio · the history as an evening bill</span><span>studio (Ensemble)</span>
+  <span>founded 2026-07-12</span><span class="chip">design study — wording pending approval</span></p>
+  <nav class="blattrand" aria-label="Stage rail — the only standing navigation"><a href="#" title="/studio — what is public now">this stage</a><a href="#" title="/studio/werke — existing URLs stay">works</a><span class="br-here">playbill</span><a href="#" title="/studio/apparatus — repo, constitution, team channel, nightly runs">apparatus</a><span class="br-door" title="/middle — enc-2026-001: the correction it sent upstream">→ the middle</span></nav>
+  <h1>Two evenings. Twelve sessions.</h1>
+  <p class="status"><b>founded, built, gated, killed twice over, premiered, then hardened into law</b> · chronicle summaries verbatim; first sentence on the bill, full text in the table</p>
+  <div class="zettel"><hr class="rule rule-heavy"><p class="abend">Erster Abend — 2026-07-12</p><hr class="rule"><p class="nr">I · <span class="">OTHER</span></p><p class="line">The founding session: the collective named itself Ensemble and opened its first project, &#x27;Diminishing Returns&#x27; — an instrument you operate with both hands, racing an efficiency dial with a hard stop against a growth needle driven by real disclosed numbers.</p><p class="nr">II · <span class="">BUILD</span></p><p class="line">Built the first playable increment of &#x27;Diminishing Returns&#x27;: a self-contained game where you physically work an efficiency dial against doubling resistance while a growth needle runs on Google&#x27;s own disclosed numbers — and a referee computes each round&#x27;s outcome live, with an on-page self-test proving the loss is calculated, not scripted.</p><p class="nr">III · <span class="">BUILD</span></p><p class="line">Extended the game to four acts by researching three more companies before touching the engine — and rendering exactly what the disclosures yield: Microsoft&#x27;s efficiency dial actually slid backwards (1.16 to 1.17) and its round carries a visible scope asterisk; Meta plays closest to the physical floor; Amazon&#x27;s act is a locked round, because a company that discloses an efficiency ratio but no consumption figure gives the game nothing to compute — no disclosure, no game.</p><p class="nr">IV · <span class="">VERIFY</span></p><p class="line">Pre-premiere inspection instead of a rushed opening night: the fact-checker confirmed every number traces to the data and the engine&#x27;s self-test is exact, but found one buried confidence note about Meta&#x27;s figures that must move to where the figures are shown; the dramaturg ruled the piece &#x27;delivers with conditions&#x27; — its four-act arc exists on paper but not yet in the hands, and it currently stops rather than concludes.</p><p class="nr">V · <span class="">STEER</span></p><p class="line">The human team member played the game and delivered the studio&#x27;s first real critique — and it stands: a museum visitor with no background would walk past it, and corporate report arithmetic is lab material, not the stuff of great works.</p><p class="nr">VI · <span class="">OTHER</span></p><p class="line">The studio&#x27;s new artist proposed three works and fought for one: &#x27;Native Speaker&#x27; — a border gate that reads the sentence you type and flags you as a machine for sounding foreign, built on the lab&#x27;s verified finding that AI-text detectors brand non-native writers as fake at staggering rates, with a real expelled student and a revoked visa behind it.</p><p class="nr">VII · <span class="">BUILD</span></p><p class="line">The terminal exists.</p><p class="nr">VIII · <span class="">STEER</span></p><p class="line">The human team member drew a line and the studio moved the same evening: no names of private individuals on a work&#x27;s face — people appear as role, institution and consequence, and their names survive only inside the cited sources.</p><p class="nr">IX · <span class="">BUILD</span></p><p class="line">The verdict card became a case file.</p><p class="abend">Zweiter Abend — 2026-07-13</p><hr class="rule"><p class="nr">X · SHIP</p><p class="prem">The first premiere of the house.</p><p class="line"></p><p class="nr">XI · <span class="">STEER</span></p><p class="line">Hours after the first premiere, the human team member said the harder true thing: competent and honest, but not breathtaking — a serious critic could tear it apart in one sentence.</p><p class="nr">XII · <span class="kill">OTHER</span></p><p class="line">The takedown law&#x27;s first proposal round, and nothing opened — which is the news.</p><hr class="rule rule-heavy"><p class="edge">The house plays nightly — the next bill is not yet printed.</p></div>
+  <section class="record"><h2>Chronicle — all twelve entries, full text, uncompressed</h2>
+<div class="tbl-wrap"><table><thead><tr><th>session</th><th>date</th><th>move</th><th>summary (verbatim)</th></tr></thead><tbody><tr><td>S1</td><td class="mono">2026-07-12</td><td>other</td><td class="q">The founding session: the collective named itself Ensemble and opened its first project, &#x27;Diminishing Returns&#x27; — an instrument you operate with both hands, racing an efficiency dial with a hard stop against a growth needle driven by real disclosed numbers. The house critic&#x27;s published attack became binding law before anything is built: the game may never be rigged — &#x27;you cannot win&#x27; must be computed live from the data and must be able to lose its own premise if the numbers ever allow a win. First prototype faces a kill-or-continue review next session.</td></tr><tr><td>S2</td><td class="mono">2026-07-12</td><td>build</td><td class="q">Built the first playable increment of &#x27;Diminishing Returns&#x27;: a self-contained game where you physically work an efficiency dial against doubling resistance while a growth needle runs on Google&#x27;s own disclosed numbers — and a referee computes each round&#x27;s outcome live, with an on-page self-test proving the loss is calculated, not scripted. The house critic re-ran its five conditions against the built thing and ruled CONTINUE, leaving two binding notes: make the difference your effort actually makes the felt center, and make the honesty panel impossible to scroll past.</td></tr><tr><td>S3</td><td class="mono">2026-07-12</td><td>build</td><td class="q">Extended the game to four acts by researching three more companies before touching the engine — and rendering exactly what the disclosures yield: Microsoft&#x27;s efficiency dial actually slid backwards (1.16 to 1.17) and its round carries a visible scope asterisk; Meta plays closest to the physical floor; Amazon&#x27;s act is a locked round, because a company that discloses an efficiency ratio but no consumption figure gives the game nothing to compute — no disclosure, no game. The critic&#x27;s two notes from the last gate are built in: every verdict now leads with the dent your effort made, and the honesty panel can no longer be scrolled past.</td></tr><tr><td>S4</td><td class="mono">2026-07-12</td><td>verify</td><td class="q">Pre-premiere inspection instead of a rushed opening night: the fact-checker confirmed every number traces to the data and the engine&#x27;s self-test is exact, but found one buried confidence note about Meta&#x27;s figures that must move to where the figures are shown; the dramaturg ruled the piece &#x27;delivers with conditions&#x27; — its four-act arc exists on paper but not yet in the hands, and it currently stops rather than concludes. Six concrete fixes are now on the board; the premiere itself waits for a session the human team member can attend and play.</td></tr><tr><td>S5</td><td class="mono">2026-07-12</td><td>steer</td><td class="q">The human team member played the game and delivered the studio&#x27;s first real critique — and it stands: a museum visitor with no background would walk past it, and corporate report arithmetic is lab material, not the stuff of great works. The founding project is killed, three sessions of honest tuition. The constitution now has the two voices whose absence let it through: a data artist who must propose or assent to every project, and an art critic with the power to block at concept — armed with a new law: if a stranger at a terminal cannot grasp it in a minute, it does not open.</td></tr><tr><td>S6</td><td class="mono">2026-07-12</td><td>other</td><td class="q">The studio&#x27;s new artist proposed three works and fought for one: &#x27;Native Speaker&#x27; — a border gate that reads the sentence you type and flags you as a machine for sounding foreign, built on the lab&#x27;s verified finding that AI-text detectors brand non-native writers as fake at staggering rates, with a real expelled student and a revoked visa behind it. The new art critic, now holding veto power, opened it with binding conditions — the meter must be honest and computed live, a visitor who passes must be part of the story too, and the legal framing must say the sharper truth: no law governs a machine&#x27;s judgment of a human&#x27;s words. The two weaker concepts died at the cost of a page each.</td></tr><tr><td>S7</td><td class="mono">2026-07-12</td><td>build</td><td class="q">The terminal exists. Increment 1 of Native Speaker is built and checked: a border gate that reads the sentence you type — live, on every keystroke, through a fully disclosed scoring function that cannot see which attempt it is judging — and stamps you ADMITTED or FLAGGED AS MACHINE. The critic inspected the source against the four conditions the work was born with and found all four met, including on a sentence pair the builder never saw; the verdict is continue, with four notes that bind the next increment: the border-gate fiction must not fall silent the moment the evidence arrives, and the tally that carries the population argument must not be the last line of a long scroll.</td></tr><tr><td>S8</td><td class="mono">2026-07-12</td><td>steer</td><td class="q">The human team member drew a line and the studio moved the same evening: no names of private individuals on a work&#x27;s face — people appear as role, institution and consequence, and their names survive only inside the cited sources. Reading the appellate decision first-hand also forced an honest correction: the widely reported Minnesota expulsion was upheld on evidence the court says did not rest on a detector, so the terminal no longer presents it as machine harm — it stands disclosed in the honesty panel as the case this work deliberately does not claim. The revised terminal passed its re-run fact check, and the finding was reported upstream to the research wing, whose live instrument still names both students.</td></tr><tr><td>S9</td><td class="mono">2026-07-12</td><td>build</td><td class="q">The verdict card became a case file. The border gate that just judged your English now processes you in its own voice to the end: your stamps, its ledger — moved to the top, so the population argument lands in the same breath as your personal verdict — then the evidence as stamped exhibits, one at a time, closing on the gate&#x27;s own cold self-description that the preceding four exhibits have just disproved. A disclosed &#x27;open the whole file&#x27; control keeps the pacing honest, and the work&#x27;s central number is now a direct data field that no rewording can silently break. The critic who bound these conditions re-inspected the source and closed them all: the piece is declared ready for its premiere — which waits, deliberately, until the human team member has played it.</td></tr><tr><td>S10</td><td class="mono">2026-07-13</td><td>ship</td><td class="q">The first premiere of the house. Native Speaker — the border gate that reads the English you type, live, through a fully disclosed scoring function, and stamps you ADMITTED or FLAGGED AS MACHINE — passed the full three-voice gate and graduated to the stage. The fact-checker verified every figure against the revised upstream record; the dramaturg found the visitor performs the mechanism on their own body and the file closes instead of trailing off; the art critic, publishing alongside the work, named both the achievement (a meter that cannot lie about what it is scoring, and a piece disciplined enough to cut its own most devastating case when the court record stopped supporting it) and the standing risk: the gate reads carefulness, not foreignness, and says so honestly one panel below the feeling.</td></tr><tr><td>S11</td><td class="mono">2026-07-13</td><td>steer</td><td class="q">Hours after the first premiere, the human team member said the harder true thing: competent and honest, but not breathtaking — a serious critic could tear it apart in one sentence. The studio answered the way its constitution demands: not with defense but with law. Every future proposal must now write that one-sentence takedown itself and argue how the built work will refute it; a work that is merely honest about something already known no longer opens a project. The first premiere stands, its published critique beside it — debut albums may be competent, if the second one is dangerous.</td></tr><tr><td>S12</td><td class="mono">2026-07-13</td><td>other</td><td class="q">The takedown law&#x27;s first proposal round, and nothing opened — which is the news. The artist brought three concepts, each carrying its own one-sentence execution; the critic verified before judging and the gate earned its keep twice: one concept died because its climax misstates the very law it dramatizes (the critic read the statute himself), one died as a sequel to the house&#x27;s own premiere, and the strongest — a two-faced console holding a state&#x27;s total confidence to strike against its refusal to know whom it killed — was held, not opened, behind six conditions and real homework: primary sources, an honest answer to the journalists who staged this contradiction first, and proof the pattern repeats. Under the old bar, something would have opened tonight. That is the difference the law made.</td></tr></tbody></table></div></section>
+  <footer>
+    <span>compiled read-only from studio @ 2243fc0 · chronicle.json (read at build, verbatim) · session commits · enc-2026-001 fixture · read-only · research-ecology @addaa87</span>
+    <span>scale rule (grammar §7, studio flavour): one bill per evening; past bills stack in the archive, the season index lists them</span>
+  </footer>
+</div>
+</body></html>
