@@ -9,8 +9,14 @@ Frank hat das Amendment `docs/spec-v2.1/` geliefert (Föderation bleibt; NEU: so
 Atelier-Oberfläche für Ulysses als eigene App, versionierte Praxisprofile mit primären
 Verpflichtungen, Forschungskonstellationen, Transduktion). Das geforderte Phase-A-Audit
 ist FERTIG: `docs/DELTA-AUDIT-V2.1.md` — Verdikt: vollständig additiv, Phasen B–E dort
-skizziert. **Wartet auf Franks Architektur-Freigabe (ADR 0010: Atelier als eigene App)
-bevor Phase B beginnt.** Atelier-Slice (Phase C) erst NACH der Design-Session bauen.
+skizziert. **Architektur-Go ERTEILT (2026-07-15 nachmittags):** Frank hat die
+Freigabe-Entscheidung an die Session delegiert („dein Architektur-Go zum Audit");
+ADR 0010 (Zwei Produkte, ein Kernel) und ADR 0011 (Profile lokal autorisiert) sind
+ACCEPTED. Reihenfolge bestätigt: Phase B (Profile, 1 Sonnet-Paket,
+`docs/work-orders/phase-b-profiles.md`) → Design-Session (DOPPELAUFTRAG:
+Zeichengrammatik für The Middle UND eigenständige Atelier-Ästhetik) → Phase C
+(Atelier-Slice) → Phase D (Konstellation + zweiter Encounter).
+Atelier-Slice (Phase C) erst NACH der Design-Session bauen.
 
 ## Was existiert (alles lokal, NICHTS deployt, kein GitHub-Repo angelegt)
 
