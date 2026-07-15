@@ -189,6 +189,7 @@ export function layoutSheet(data: SheetData): SheetLayout {
   const sessionMarkersBySession = new Map<number, SessionMarker>();
 
   // -- edges, by kind -----------------------------------------------------------------------
+  const seenCaptionGroups = new Set<string>();
   for (const edge of data.edges) {
     const fromNode = data.nodes.get(edge.fromId);
     const toNode = data.nodes.get(edge.toId);
@@ -222,11 +223,17 @@ export function layoutSheet(data: SheetData): SheetLayout {
       });
     } else if (edge.kind === "bridge" || edge.kind === "complement") {
       const path = bendPath(fromP, toP, 0.45);
+      // Same-kind-and-session edges (e.g. the three S27 complements into the shelf) share
+      // near-identical midpoints — one caption speaks for the group; the edge register
+      // below still lists every edge individually.
+      const captionGroup = `${edge.kind}·${edge.session ?? ""}`;
+      const first = !seenCaptionGroups.has(captionGroup);
+      seenCaptionGroups.add(captionGroup);
       connectors.push({
         kind: edge.kind,
         path,
-        caption: sessionCaption(edge.kind, edge.session),
-        captionPos: { x: (fromP.x + toP.x) / 2, y: (fromP.y + toP.y) / 2 }
+        caption: first ? sessionCaption(edge.kind, edge.session) : undefined,
+        captionPos: first ? { x: (fromP.x + toP.x) / 2, y: (fromP.y + toP.y) / 2 } : undefined
       });
     } else if (edge.kind === "grounds") {
       const groundY = toP.y + 22;
