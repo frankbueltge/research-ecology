@@ -12,11 +12,18 @@ ist FERTIG: `docs/DELTA-AUDIT-V2.1.md` — Verdikt: vollständig additiv, Phasen
 skizziert. **Architektur-Go ERTEILT (2026-07-15 nachmittags):** Frank hat die
 Freigabe-Entscheidung an die Session delegiert („dein Architektur-Go zum Audit");
 ADR 0010 (Zwei Produkte, ein Kernel) und ADR 0011 (Profile lokal autorisiert) sind
-ACCEPTED. Reihenfolge bestätigt: Phase B (Profile, 1 Sonnet-Paket,
-`docs/work-orders/phase-b-profiles.md`) → Design-Session (DOPPELAUFTRAG:
-Zeichengrammatik für The Middle UND eigenständige Atelier-Ästhetik) → Phase C
-(Atelier-Slice) → Phase D (Konstellation + zweiter Encounter).
-Atelier-Slice (Phase C) erst NACH der Design-Session bauen.
+ACCEPTED. **Phase B ist FERTIG und reviewt (2026-07-15 ~15:20):** Migration 0002,
+Profil-Schema/Validator, Store-Parität + ADR-0011-Sentinel (Loader UND Store-Put),
+drei Profil-Entwürfe als Fixtures (Provenienz byte-genau, hash-verifiziert gegen die
+Engine-Repos), Positionsanzeige auf der Encounter-Seite. Commits `4910b66`..`6a61395`
+(main). Suiten: Contract 133→145, Unit 29→47, Playwright 110→114.
+⚠️ Bekannter Befund, KEINE Regression: die vorbestehenden Adapter-Contract-Tests
+(adapters/adapter-field/adapter-atelier) shellen nach git in die Nachbar-Repos und
+reißen unter hoher Maschinenlast (load ~29 beobachtet) ihre Hook-Timeouts; Dateien
+sind seit Phase 2 unverändert. Bei Gelegenheit hookTimeout anheben oder Bundles cachen.
+Nächste Schritte: Design-Session (DOPPELAUFTRAG: Zeichengrammatik für The Middle UND
+eigenständige Atelier-Ästhetik) → Phase C (Atelier-Slice) → Phase D (Konstellation +
+zweiter Encounter). Atelier-Slice (Phase C) erst NACH der Design-Session bauen.
 
 ## Was existiert (alles lokal, NICHTS deployt, kein GitHub-Repo angelegt)
 
