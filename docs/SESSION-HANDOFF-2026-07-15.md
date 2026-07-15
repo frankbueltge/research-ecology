@@ -1,7 +1,14 @@
 # Session-Übergabe — Stand 2026-07-15 nachmittags
 
-Für die nächste Session: **zuerst dieses Dokument, dann `docs/DELTA-AUDIT-V2.1.md`,
-dann `docs/shifts.md`** (Denk-Verschiebungen sind bindende Richtungsentscheidungen).
+**NÄCHSTE SESSION (2026-07-16, Grundsatz-Session Site-v2): zuerst
+`docs/design/site-v2-briefing.md`** — Hub/Einstieg fürs Gesamtprojekt, Projektname,
+Joy-Division-Header zurück, Header-Navi, /lab-Frage. Danach bei Bedarf: dieses
+Dokument, `docs/DELTA-AUDIT-V2.1.md`, `docs/shifts.md` (bindend).
+STAND SPÄTABENDS: Site LIVE mit Partitur-Eingang (63692ae); research-ecology
+ÖFFENTLICH; Atelier-App statisch (Secrets fehlen); Middle-App-Statisch = STOP mit
+Optionen (runbooks/apps-deploy.md); Profile ACTIVE via Team-Amendments (in den drei
+Engine-Repos gepusht); Wortlaute freigegeben & umgesetzt; Engine-Requests liegen in
+docs/requests-drafts/ (Läufe: Frank, morgen früh).
 
 ## ⚡ NEU seit mittags: v2.1-Delta eingetroffen und auditiert
 
