@@ -26,24 +26,23 @@ test("skip-link transition duration collapses to 0 under prefers-reduced-motion"
   expect(duration).toBe("0s");
 });
 
-/** Work order phase-3d §4 "reduced-motion (keine Zeichnung)": the poster's self-drawing glyph
- * must render fully drawn immediately, with no running animation, when the visitor has
- * `prefers-reduced-motion: reduce` set. */
-test("poster glyph renders fully drawn immediately under prefers-reduced-motion, no running animation", async ({ page }) => {
+/** Re-scoped for the 2026-07-15 entrance rebuild: the old self-drawing poster glyph (an
+ * `@keyframes` stroke-dashoffset animation gated on `--motion-fast`/`--motion-base`) is gone
+ * from `/` — the tableau's SVG is static, and station switching is a plain `display: none/block`
+ * toggle driven by `:has(#st-N:checked)`. The tableau's own CSS uses `transition` only (stroke/
+ * border/background color on hover and on the checked/focus-visible station, 160ms), never
+ * `animation` — so there is nothing here that depends on `prefers-reduced-motion` to begin
+ * with. This test asserts that directly: no element in the tableau carries a running (or even
+ * defined) CSS animation under `prefers-reduced-motion: reduce`. */
+test("entrance tableau has no running animation under prefers-reduced-motion (transitions only)", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
 
-  const paths = page.locator(".poster .glyph--animated .glyph__transfer, .poster .glyph--animated .glyph__correction");
-  await expect(paths).toHaveCount(2);
-
-  const states = await paths.evaluateAll((els) =>
-    els.map((el) => {
-      const cs = getComputedStyle(el);
-      return { dashoffset: cs.strokeDashoffset, animationName: cs.animationName };
-    })
+  const animationNames = await page.locator(".tableau .ln, .tableau .st-badge").evaluateAll((els) =>
+    els.map((el) => getComputedStyle(el).animationName)
   );
-  for (const state of states) {
-    expect(parseFloat(state.dashoffset)).toBe(0);
-    expect(state.animationName).toBe("none");
+  expect(animationNames.length).toBeGreaterThan(0);
+  for (const name of animationNames) {
+    expect(name).toBe("none");
   }
 });

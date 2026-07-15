@@ -10,12 +10,12 @@ const SCREENSHOT_DIR = path.join(here, "screenshots");
  * scroll. This file only runs under the `mobile` Playwright project (configured in
  * playwright.config.ts). */
 test.describe("mobile layout", () => {
-  test("screenshot: poster (mobile, 390px)", async ({ page }) => {
+  test("screenshot: entrance (mobile, 390px)", async ({ page }) => {
     await page.goto("/");
-    await page.screenshot({ path: path.join(SCREENSHOT_DIR, "poster-mobile--light.png") });
+    await page.screenshot({ path: path.join(SCREENSHOT_DIR, "entrance-mobile.png") });
   });
 
-  test("poster: headline wraps cleanly, no horizontal overflow (work order phase-3d §4)", async ({ page }) => {
+  test("entrance: headline wraps cleanly, no horizontal overflow (work order phase-3d §4)", async ({ page }) => {
     await page.goto("/");
     const { scrollWidth, clientWidth } = await page.evaluate(() => ({
       scrollWidth: document.documentElement.scrollWidth,
@@ -23,9 +23,30 @@ test.describe("mobile layout", () => {
     }));
     expect(scrollWidth).toBeLessThanOrEqual(clientWidth + 1);
 
-    const headline = page.locator(".poster__headline");
+    const headline = page.locator(".entrance__headline");
     const headlineOverflow = await headline.evaluate((el) => el.scrollWidth - el.clientWidth);
     expect(headlineOverflow).toBeLessThanOrEqual(1);
+  });
+
+  test("entrance: station badges meet the 24px minimum tap target; the active caption stays within the viewport", async ({
+    page
+  }) => {
+    await page.goto("/");
+    const badgeSizes = await page.locator(".st-badge").evaluateAll((els) =>
+      els.map((el) => {
+        const rect = el.getBoundingClientRect();
+        return { width: rect.width, height: rect.height };
+      })
+    );
+    expect(badgeSizes.length).toBe(6);
+    for (const size of badgeSizes) {
+      expect(size.width).toBeGreaterThanOrEqual(24);
+      expect(size.height).toBeGreaterThanOrEqual(24);
+    }
+
+    const captionBox = await page.locator(".cap-1").boundingBox();
+    expect(captionBox).not.toBeNull();
+    expect(captionBox!.width).toBeLessThanOrEqual(390);
   });
 
   test("encounter page: no horizontal scroll, first-screen items stack in one column", async ({ page }) => {

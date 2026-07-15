@@ -1,46 +1,43 @@
 import { expect, test } from "@playwright/test";
-import { BEAT_IDS, ENCOUNTER_ID } from "./fixtures.js";
+import { ENCOUNTER_ID, STATION_CAPTIONS } from "./fixtures.js";
 
 /** No-JS journey (work order §1): the encounter page and a map version page render complete,
  * readable records with JavaScript disabled — SSR-first, progressive enhancement only (work
  * order §0). This file only runs under the `no-js` Playwright project (javaScriptEnabled:
  * false), configured in playwright.config.ts. */
 
-/** Work order phase-3d §4 "no-JS (Glyph statisch fertig, Sequenz erreichbar)": the poster's
- * self-drawing glyph is pure CSS (no JS involved in the drawing at all), so it still completes
- * with JS disabled; and the six-beat sequence below it is reachable via a plain in-page anchor
- * link — no client script required for either. */
-test.describe("no-JS: poster and narrative", () => {
-  test("the invitation link and all six beat anchors exist as plain, reachable markup", async ({ page }) => {
+/** Re-scoped for the 2026-07-15 entrance rebuild ("no-JS: Sequenz erreichbar" still holds, in a
+ * new shape): the six-station tableau is CSS-only (`:has(#st-N:checked)` sibling selectors, no
+ * script), so it renders complete AND stays fully switchable with JavaScript disabled — clicking
+ * a `<label for="st-N">` natively checks its radio, a browser feature, not a script one. The old
+ * self-drawing glyph is gone from `/` entirely (replaced by the tableau's SVG, which is static,
+ * not animated), so there is no longer a "drawing completes without JS" case to cover here. */
+test.describe("no-JS: entrance renders complete", () => {
+  test("headline, status line, SVG drawing and all six station captions are present in plain markup", async ({ page }) => {
     await page.goto("/");
-    await expect(page.locator(".poster__invitation")).toHaveAttribute("href", "#beat-1");
-    for (const id of BEAT_IDS) {
-      await expect(page.locator(`#${id}`)).toHaveCount(1);
+    await expect(page.locator("#entrance-headline")).toBeVisible();
+    await expect(page.locator(".entrance__status")).toBeVisible();
+    await expect(page.locator(".tableau__svg")).toHaveCount(1);
+    await expect(page.locator(".tableau__caption")).toHaveCount(6);
+
+    // Station 1 is checked by default (SSR markup): its caption is visible, the rest are not —
+    // still present in the DOM (readable by assistive tech / view-source), just hidden.
+    await expect(page.locator(".cap-1")).toBeVisible();
+    for (const cap of STATION_CAPTIONS.slice(1)) {
+      await expect(page.locator(`.${cap}`)).toBeHidden();
     }
   });
 
-  test("the glyph's CSS draw animation completes to fully-drawn without JS, and never loops", async ({ page }) => {
+  test("stations switch via the CSS-only radios — no JS required", async ({ page }) => {
     await page.goto("/");
-    const paths = page.locator(".poster .glyph--animated .glyph__transfer, .poster .glyph--animated .glyph__correction");
-    await expect(paths).toHaveCount(2);
 
-    // No loop, ever (work order §1 "Keine Loops, nichts pulsiert") — checkable immediately,
-    // no need to wait for the animation to run first. `locator.evaluateAll` runs in
-    // Playwright's own isolated world (unaffected by `javaScriptEnabled: false`, which only
-    // disables the page's own main-world scripts) — unlike `page.evaluate`/`waitForFunction`,
-    // which do NOT run under this project.
-    const iterationCounts = await paths.evaluateAll((els) => els.map((el) => getComputedStyle(el).animationIterationCount));
-    for (const count of iterationCounts) {
-      expect(count).not.toBe("infinite");
-    }
+    await page.locator('label[for="st-3"]').click();
+    await expect(page.locator(".cap-3")).toBeVisible();
+    await expect(page.locator(".cap-1")).toBeHidden();
 
-    // The animation is pure CSS (no JS involved in the drawing itself), so it still completes
-    // with JS disabled — Playwright's web-first `toHaveCSS` assertion auto-retries/polls on its
-    // own (via the isolated world too), so no manual wait is needed.
-    const transfer = page.locator(".poster .glyph--animated .glyph__transfer");
-    const correction = page.locator(".poster .glyph--animated .glyph__correction");
-    await expect(transfer).toHaveCSS("stroke-dashoffset", /^0(px)?$/, { timeout: 3500 });
-    await expect(correction).toHaveCSS("stroke-dashoffset", /^0(px)?$/, { timeout: 3500 });
+    await page.locator('label[for="st-6"]').click();
+    await expect(page.locator(".cap-6")).toBeVisible();
+    await expect(page.locator(".cap-3")).toBeHidden();
   });
 });
 

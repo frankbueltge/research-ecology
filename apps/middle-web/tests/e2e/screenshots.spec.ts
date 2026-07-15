@@ -6,16 +6,19 @@ import { ENCOUNTER_ID } from "./fixtures.js";
 const here = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(here, "screenshots");
 
-/** One screenshot per renderer, light + dark (work order §1, extended by phase-3d §4: poster
- * light+dark, beat 3, divergence view light+dark). Visual review artifacts, not pixel-diff
- * assertions (no baseline images exist yet — that is a 3c/visual-review concern); this suite's
- * job is to guarantee every renderer form renders without throwing, in both colour schemes,
- * and leave a dated artifact behind for human review. `selector`, when present, scopes the
- * screenshot to that element instead of the full page (poster/beat-3 sit inside a long
- * scrolling `/` page — a full-page shot would not isolate them). */
+/** One screenshot per renderer, light + dark (work order §1, extended by phase-3d §4 and
+ * re-scoped for the 2026-07-15 entrance rebuild: the entrance itself light+dark, divergence
+ * view light+dark). Visual review artifacts, not pixel-diff assertions (no baseline images
+ * exist yet — that is a 3c/visual-review concern); this suite's job is to guarantee every
+ * renderer form renders without throwing, in both colour schemes, and leave a dated artifact
+ * behind for human review. `selector`, when present, scopes the screenshot to that element
+ * instead of the full page. The entrance itself is always a dark room regardless of the site's
+ * own theme — capturing it under both `light` and `dark` colour-scheme emulation is still
+ * meaningful because everything OUTSIDE `.entrance` (header/footer chrome) does follow the
+ * site theme; `.entrance`'s own screenshot content should look the same in both, which is
+ * itself worth a human glance. */
 const TARGETS: Array<{ name: string; path: string; selector?: string }> = [
-  { name: "poster", path: "/", selector: ".poster" },
-  { name: "beat-3", path: "/#beat-3", selector: "#beat-3" },
+  { name: "entrance", path: "/", selector: ".entrance" },
   { name: "encounter-page", path: `/encounters/${ENCOUNTER_ID}` },
   { name: "provenance-chain", path: `/encounters/${ENCOUNTER_ID}/maps/provenance-v1@1` },
   { name: "object-transformation", path: `/encounters/${ENCOUNTER_ID}/maps/ensemble-transformation-v1@1` },
@@ -40,3 +43,21 @@ for (const target of TARGETS) {
     });
   }
 }
+
+/** Two more entrance states worth a dedicated look: a mid-sequence station (3, an ordinary
+ * quoted caption) and the terminal station (6, the divergence miniature — the one place the
+ * collective names/quotes appear). Each needs the corresponding radio checked first, so these
+ * live outside the generic TARGETS loop above. */
+test("screenshot: entrance-station-3 (station 3 checked)", async ({ page }) => {
+  await page.goto("/");
+  await page.locator('label[for="st-3"]').click();
+  await page.locator(".cap-3").waitFor({ state: "visible" });
+  await page.locator(".entrance").screenshot({ path: path.join(OUT_DIR, "entrance-station-3.png") });
+});
+
+test("screenshot: entrance-station-6 (divergence caption visible)", async ({ page }) => {
+  await page.goto("/");
+  await page.locator('label[for="st-6"]').click();
+  await page.locator(".cap-6").waitFor({ state: "visible" });
+  await page.locator(".entrance").screenshot({ path: path.join(OUT_DIR, "entrance-station-6.png") });
+});

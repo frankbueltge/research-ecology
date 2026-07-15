@@ -187,6 +187,15 @@ export interface Dictionary {
     headline: string;
     invitation: string;
     footnote: string;
+    kicker: string;
+    statusAsOf: string;
+    statusLine: string;
+    stationsLabel: string;
+    instrumentLabel: string;
+    workLabel: string;
+    readingsLabel: string;
+    openRecordCta: string;
+    openDivergenceCta: string;
   };
   narrative: {
     viewRecordCta: string;
@@ -402,7 +411,16 @@ const en: Dictionary = {
     headline: "A work found the flaw in the instrument it was built from.",
     invitation: "Follow the material ↓",
     footnote:
-      "The record of an encounter between independent research practices. Everything evidenced, nothing resolved."
+      "The record of an encounter between independent research practices. Everything evidenced, nothing resolved.",
+    kicker: "The current encounter",
+    statusAsOf: "As of",
+    statusLine: "unresolved — both readings stand",
+    stationsLabel: "The material's path — stations 1–6",
+    instrumentLabel: "THE INSTRUMENT",
+    workLabel: "THE WORK",
+    readingsLabel: "TWO READINGS",
+    openRecordCta: "Open the full record →",
+    openDivergenceCta: "See the divergence →"
   },
   narrative: {
     viewRecordCta: "View the record →",
@@ -617,7 +635,16 @@ const de: Dictionary = {
   poster: {
     headline: "Ein Werk fand den Fehler im Instrument, aus dem es gebaut war.",
     invitation: "Dem Material folgen ↓",
-    footnote: "Aufzeichnung einer Begegnung zwischen unabhängigen Forschungspraktiken. Alles belegt, nichts aufgelöst."
+    footnote: "Aufzeichnung einer Begegnung zwischen unabhängigen Forschungspraktiken. Alles belegt, nichts aufgelöst.",
+    kicker: "Die aktuelle Begegnung",
+    statusAsOf: "Stand",
+    statusLine: "unaufgelöst — beide Lesarten gelten",
+    stationsLabel: "Der Weg des Materials — Stationen 1–6",
+    instrumentLabel: "DAS INSTRUMENT",
+    workLabel: "DAS WERK",
+    readingsLabel: "ZWEI LESARTEN",
+    openRecordCta: "Die ganze Akte öffnen →",
+    openDivergenceCta: "Zur Divergenz →"
   },
   narrative: {
     viewRecordCta: "Akte einsehen →",
