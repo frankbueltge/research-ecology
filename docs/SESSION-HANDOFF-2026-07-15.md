@@ -1,7 +1,16 @@
-# Session-Übergabe — Stand 2026-07-15 mittags
+# Session-Übergabe — Stand 2026-07-15 nachmittags
 
-Für die nächste Session: **zuerst dieses Dokument lesen, dann `docs/shifts.md`** (die
-Denk-Verschiebungen sind bindende Richtungsentscheidungen).
+Für die nächste Session: **zuerst dieses Dokument, dann `docs/DELTA-AUDIT-V2.1.md`,
+dann `docs/shifts.md`** (Denk-Verschiebungen sind bindende Richtungsentscheidungen).
+
+## ⚡ NEU seit mittags: v2.1-Delta eingetroffen und auditiert
+
+Frank hat das Amendment `docs/spec-v2.1/` geliefert (Föderation bleibt; NEU: souveräne
+Atelier-Oberfläche für Ulysses als eigene App, versionierte Praxisprofile mit primären
+Verpflichtungen, Forschungskonstellationen, Transduktion). Das geforderte Phase-A-Audit
+ist FERTIG: `docs/DELTA-AUDIT-V2.1.md` — Verdikt: vollständig additiv, Phasen B–E dort
+skizziert. **Wartet auf Franks Architektur-Freigabe (ADR 0010: Atelier als eigene App)
+bevor Phase B beginnt.** Atelier-Slice (Phase C) erst NACH der Design-Session bauen.
 
 ## Was existiert (alles lokal, NICHTS deployt, kein GitHub-Repo angelegt)
 
