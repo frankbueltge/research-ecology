@@ -262,6 +262,16 @@ export function buildWorksObjectRefs(
 
     let localObjectType = "work";
     let mediumDerivation: string;
+    // `title` (work order phase-c1 §1 finding, 2026-07-15): meta.json's own `title` field,
+    // read from the same parse as `medium` below — no new file read, no inference. Populates
+    // `title_cache` so a consumer (e.g. apps/atelier's sheet) can render the work's verbatim
+    // display name without re-deriving it from `local_object_id` (a slug, not a title) or from
+    // a rhizome node's `label` (only present for nodes that fail to resolve to a work ref —
+    // see resolveRhizomeEndpoint in atelier.ts). Left `undefined` (not fabricated, not an
+    // import_record) on the rare/hypothetical meta.json that omits it — every meta.json
+    // observed across all three engine repos at the time of this change carries a non-empty
+    // `title`, so this is a graceful edge, not an expected path.
+    let titleCache: string | undefined;
     if (!metaJsonRel) {
       importRecords.push({
         collective_id: collectiveId,
@@ -274,9 +284,11 @@ export function buildWorksObjectRefs(
       mediumDerivation = "no meta.json present in this work directory";
     } else {
       const metaText = showText(repo, `${dirPrefix}/meta.json`);
+      let meta: Record<string, unknown> | undefined;
       let medium: unknown;
       try {
-        medium = (JSON.parse(metaText) as Record<string, unknown>).medium;
+        meta = JSON.parse(metaText) as Record<string, unknown>;
+        medium = meta.medium;
       } catch (error) {
         importRecords.push({
           collective_id: collectiveId,
@@ -302,6 +314,10 @@ export function buildWorksObjectRefs(
         });
         mediumDerivation = "meta.json exists but has no non-empty 'medium' field";
       }
+      const title = meta?.title;
+      if (typeof title === "string" && title.length > 0) {
+        titleCache = title;
+      }
     }
 
     refs.push({
@@ -312,12 +328,16 @@ export function buildWorksObjectRefs(
       canonical_uri: blobUrl(repo, dirPrefix),
       source_uri: blobUrl(repo, dirPrefix),
       local_object_type: localObjectType,
+      ...(titleCache ? { title_cache: titleCache } : {}),
       lifecycle_status: "published (works/)",
       content_hash: inventoryContentHash(inventory),
       source_commit: repo.commit,
       source_metadata: {
         pinned_dir: dirPrefix,
         local_object_type_derivation: mediumDerivation,
+        title_cache_derivation: titleCache
+          ? `meta.json 'title' field at this commit: "${titleCache}"`
+          : "meta.json missing or has no non-empty 'title' field; title_cache omitted",
         content_hash_basis:
           "sha256 over canonicalJson({ files }) of the sorted per-file inventory below (path -> sha256 of raw bytes at this commit) — reused from the Phase-1 kernel's contentHash, not a hash of one file's raw bytes.",
         files: inventory

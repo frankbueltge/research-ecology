@@ -88,3 +88,53 @@ describe("atelier: no events are fabricated (no chronicle.json in this repo)", (
     expect(bundle.events).toEqual([]);
   });
 });
+
+describe("atelier: work title_cache is populated verbatim from meta.json (phase-c1 §1 finding)", () => {
+  it("every work referenced by a rhizome 'elaborates'/'bridge'/'complement'/'grounds' edge carries its own title", () => {
+    const expected: Record<string, string> = {
+      "2026-07-13-generative-unknowing": "Generative Unknowing",
+      "2026-07-07-named-the-glitch": "Named, the Glitch Is No More",
+      "2026-07-14-differential-reproduction": "Differential Reproduction",
+      "2026-07-14-negative-knowledge": "Negative Knowledge",
+      "2026-07-03-generation-loss": "Generation Loss",
+      "2026-07-11-the-closing-loop": "The Closing Loop",
+      "2026-07-12-low-background": "Low-Background"
+    };
+    for (const [slug, title] of Object.entries(expected)) {
+      const ref = bundle.objects.find((o) => o.local_object_id === slug);
+      expect(ref, `missing object ref for ${slug}`).toBeDefined();
+      expect(ref!.title_cache).toBe(title);
+    }
+  });
+
+  it("does not fabricate a title_cache for a work directory whose meta.json genuinely lacks one (none observed at this commit — every meta.json has a title)", () => {
+    const withoutTitle = bundle.objects.filter(
+      (o) => o.local_object_type !== "work-note" && o.local_object_type !== "session-journal" && !o.title_cache
+    );
+    // Doc refs (protocol/readme/requests/site-api/license/atlas) legitimately have no title_cache
+    // (buildDocObjectRef never sets one) — only work-directory refs are asserted here.
+    const workDirRefs = withoutTitle.filter((o) => o.lifecycle_status === "published (works/)");
+    expect(workDirRefs).toEqual([]);
+  });
+});
+
+describe("atelier: rhizome edge 'session' carries verbatim from pulse/rhizome.json (phase-c1 §1 finding)", () => {
+  it("all 19 edges import; session present only where the source edge has one", () => {
+    const edges = bundle.assertions.filter((a) => a.assertion_id.includes(":rhizome-edge-"));
+    expect(edges.length).toBe(19);
+    const withSession = edges.filter((a) => typeof (a as { session?: unknown }).session === "number");
+    const withoutSession = edges.filter((a) => (a as { session?: unknown }).session === undefined);
+    // 14 sourced edges carry a session (26/27/28); the 5 "elaborates" edges carry none.
+    expect(withSession.length).toBe(14);
+    expect(withoutSession.length).toBe(5);
+    for (const edge of withoutSession) {
+      expect(edge.predicate).toBe("elaborates");
+    }
+  });
+
+  it("session-27 grounds edge (Gerstgrasser → Differential Reproduction) carries session 27, not fabricated as null", () => {
+    const edge = bundle.assertions.find((a) => a.predicate === "grounds");
+    expect(edge).toBeDefined();
+    expect((edge as { session?: unknown }).session).toBe(27);
+  });
+});

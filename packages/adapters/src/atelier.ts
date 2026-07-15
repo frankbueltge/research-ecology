@@ -228,6 +228,15 @@ export function buildAtelierBundle(repoPath: string, commitRef: string, generate
       subject: resolveRhizomeEndpoint(fromNode, edge.from, workRefsBySlug),
       predicate: edge.kind,
       object: resolveRhizomeEndpoint(toNode, edge.to, workRefsBySlug),
+      // `session` (work order phase-c1 §1 finding, 2026-07-15): the edge's own `session` field,
+      // verbatim from pulse/rhizome.json, carried onto the assertion — schema-legal
+      // (assertion.schema.json: additionalProperties true) and previously parsed into the
+      // RhizomeEdge type but silently dropped before this fix. Some edges (all `elaborates`
+      // edges) have no session in the source; `session` is omitted from the assertion in that
+      // case rather than fabricated as e.g. null, so a consumer (e.g. apps/atelier's edge
+      // register table) can render "—" only because the field is genuinely absent, the same
+      // convention atelier_viz.py's table_html() uses ('S' + session if session else '—').
+      ...(typeof edge.session === "number" ? { session: edge.session } : {}),
       epistemic_status: "interpretation",
       evidence: [
         {
