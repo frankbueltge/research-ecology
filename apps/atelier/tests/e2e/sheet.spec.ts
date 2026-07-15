@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 /**
  * Work order §6 test 5 (own suite, own port — ADR 0010): the sheet renders the current thread
- * title verbatim, the edge register table is complete (19 rows at the current bundle), the
+ * title verbatim, the edge register table is complete (23 rows at the current bundle), the
  * reserved door's empty-state text is present, and the theme toggle cycles auto→light→dark.
  */
 
@@ -14,10 +14,10 @@ test.describe("the sheet renders the current thread verbatim", () => {
     await expect(page.locator("#sheet-headline")).toHaveText(ENTRANCE_THREAD_TITLE);
   });
 
-  test("the edge register table has all 19 rows", async ({ page }) => {
+  test("the edge register table has all 23 rows", async ({ page }) => {
     await page.goto("/");
     const rows = page.locator("section.record table tbody tr");
-    await expect(rows).toHaveCount(19);
+    await expect(rows).toHaveCount(23);
   });
 
   test("the reserved door's empty-state text is present", async ({ page }) => {

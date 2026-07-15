@@ -13,16 +13,16 @@
  * the figure, so nothing is lost, only abbreviated on-canvas.
  */
 
-import { NODE_POSITIONS, positionKeyFor, SESSION_ELBOWS, THREAD_ENDS, VIEWBOX, type Point } from "./positions.js";
+import { derivePositions, positionKeyFor, type DerivedPositions, type Point } from "./positions.js";
 import type { SheetData, SheetEdge, SheetNode } from "./types.js";
 
 function truncate(text: string, max: number): string {
   return text.length <= max ? text : `${text.slice(0, max - 1)}…`;
 }
 
-function pos(node: SheetNode): Point | undefined {
+function pos(node: SheetNode, derived: DerivedPositions): Point | undefined {
   const key = positionKeyFor(node.id, node.work?.localObjectId);
-  return NODE_POSITIONS[key];
+  return derived.nodePositions[key];
 }
 
 /** A soft cubic-bezier between two points, control points offset horizontally by a fraction of
@@ -127,9 +127,12 @@ function sessionCaption(kind: string, session: number | undefined): string {
 }
 
 export function layoutSheet(data: SheetData): SheetLayout {
+  // Fixed S26–S28 base extended by the deterministic growth rules (positions.ts) — the
+  // engines advance nightly; unlaid should stay empty unless a node kind is truly unknown.
+  const derived = derivePositions(data);
   const unlaid: string[] = [];
   const positioned = (node: SheetNode): Point | undefined => {
-    const p = pos(node);
+    const p = pos(node, derived);
     if (!p && !unlaid.includes(node.id)) unlaid.push(node.id);
     return p;
   };
@@ -148,7 +151,7 @@ export function layoutSheet(data: SheetData): SheetLayout {
     if (!p) continue;
 
     if (node.kind === "thread") {
-      const end = THREAD_ENDS[node.id];
+      const end = derived.threadEnds[node.id];
       if (!end) {
         unlaid.push(node.id);
         continue;
@@ -194,12 +197,12 @@ export function layoutSheet(data: SheetData): SheetLayout {
     const fromNode = data.nodes.get(edge.fromId);
     const toNode = data.nodes.get(edge.toId);
     if (!fromNode || !toNode) continue;
-    const fromP = pos(fromNode);
-    const toP = pos(toNode);
+    const fromP = pos(fromNode, derived);
+    const toP = pos(toNode, derived);
     if (!fromP || !toP) continue;
 
     if (edge.kind === "swerve") {
-      const elbow = edge.session !== undefined ? SESSION_ELBOWS[edge.session] : undefined;
+      const elbow = edge.session !== undefined ? derived.sessionElbows[edge.session] : undefined;
       const source = sourceById.get(edge.fromId);
       if (source && elbow) {
         source.stubPath = `M${fromP.x} ${fromP.y} H${elbow.x - 22}`;
@@ -211,7 +214,7 @@ export function layoutSheet(data: SheetData): SheetLayout {
         }
       }
     } else if (edge.kind === "elaborates") {
-      const end = THREAD_ENDS[edge.fromId] ?? fromP;
+      const end = derived.threadEnds[edge.fromId] ?? fromP;
       connectors.push({ kind: edge.kind, path: bendPath(end, toP, 0.4) });
     } else if (edge.kind === "continues") {
       continuesEdges.push({
@@ -267,7 +270,7 @@ export function layoutSheet(data: SheetData): SheetLayout {
   const sessionMarkers = [...sessionMarkersBySession.values()].sort((a, b) => a.session - b.session);
 
   return {
-    viewBox: VIEWBOX,
+    viewBox: derived.viewBox,
     threads: threads.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)),
     continuesEdges,
     sources: sources.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)),

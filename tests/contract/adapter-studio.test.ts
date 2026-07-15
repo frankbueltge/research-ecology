@@ -57,8 +57,8 @@ describe("studio: memory/ and WORKBOARD.md excluded", () => {
 });
 
 describe("studio: chronicle.json → events", () => {
-  it("emits 12 chronicle.entry events at this commit, verdict values verbatim (incl. 'graduated', 'discarded')", () => {
-    expect(bundle.events.length).toBe(12);
+  it("emits 14 chronicle.entry events at this commit, verdict values verbatim (incl. 'graduated', 'discarded')", () => {
+    expect(bundle.events.length).toBe(14);
     const verdicts = new Set(bundle.events.map((e) => (e.payload as { verdict: string | null }).verdict));
     expect(verdicts.has("graduated")).toBe(true);
     expect(verdicts.has("discarded")).toBe(true);

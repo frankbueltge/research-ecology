@@ -5,7 +5,7 @@
  */
 
 import { describe, it, expect, beforeAll } from "vitest";
-import { mkdtempSync, mkdirSync, writeFileSync } from "node:fs";
+import { readdirSync, mkdtempSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -259,7 +259,19 @@ describe("epistemic contract 7 — hashes and local terms round-trip byte-identi
   });
 
   it("'advance (outward)' survives a store round-trip of a bundle-level (non-encounter) event", async () => {
-    const event = await store.getEvent("2c884824bb7f99bfbcd6eeca435ba4a5f2d60a8bda3f53f1f4e750514049bfac");
+    // Looked up by its own content, not a pinned hash: bundles regenerate at the engines'
+    // moving HEADs nightly, and a pinned id would break on every unrelated new chronicle
+    // entry. The round-trip claim itself is unchanged — the open, parenthesised local term
+    // must come back byte-identical from the store.
+    const bundlesRoot = path.join(REPO_ROOT, "import/bundles");
+    const meridianDir = readdirSync(bundlesRoot).find((d) => d.startsWith("meridian@"));
+    expect(meridianDir).toBeDefined();
+    const bundleEvents = JSON.parse(
+      readFileSync(path.join(bundlesRoot, meridianDir!, "events.json"), "utf8")
+    ) as Array<{ event_id: string; payload: { move?: string } }>;
+    const advanceEntry = bundleEvents.find((e) => e.payload?.move === "advance (outward)");
+    expect(advanceEntry).toBeDefined();
+    const event = await store.getEvent(advanceEntry!.event_id);
     expect(event).toBeDefined();
     expect((event!.payload as { move?: string }).move).toBe("advance (outward)");
   });

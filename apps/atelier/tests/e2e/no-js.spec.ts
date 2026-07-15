@@ -15,7 +15,7 @@ test.describe("no-JS: the sheet's content is complete", () => {
     await expect(page.locator("#sheet-headline")).toHaveText(ENTRANCE_THREAD_TITLE);
     await expect(page.locator(".status").first()).toBeVisible();
     const rows = page.locator("section.record table tbody tr");
-    await expect(rows).toHaveCount(19);
+    await expect(rows).toHaveCount(23);
   });
 
   test("the SVG figure and its labels render without JavaScript (SSR, not client-drawn)", async ({ page }) => {

@@ -41,14 +41,14 @@ describe("sheet layout determinism (work order §6 test 1)", () => {
     expect(layout.unlaid).toEqual([]);
   });
 
-  it("the current sheet has exactly 19 edges, 3 threads, 8 sources, 8 works, 2 bridges (bundle @ c413eae)", async () => {
+  it("the current sheet has exactly 23 edges, 4 threads, 9 sources, 9 works, 3 bridges (bundle @ a583824)", async () => {
     const { assertions, objects } = await getAtelierData();
     const sheet = extractSheetData(assertions, objects);
-    expect(sheet.edges).toHaveLength(19);
+    expect(sheet.edges).toHaveLength(23);
     const byKind = (kind: string) => [...sheet.nodes.values()].filter((n) => n.kind === kind).length;
-    expect(byKind("thread")).toBe(3);
-    expect(byKind("source")).toBe(8);
-    expect(byKind("work")).toBe(8);
-    expect(sheet.edges.filter((e) => e.kind === "bridge")).toHaveLength(2);
+    expect(byKind("thread")).toBe(4);
+    expect(byKind("source")).toBe(9);
+    expect(byKind("work")).toBe(9);
+    expect(sheet.edges.filter((e) => e.kind === "bridge")).toHaveLength(3);
   });
 });
