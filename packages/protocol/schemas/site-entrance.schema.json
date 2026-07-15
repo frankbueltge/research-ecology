@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://frankbueltge.de/schemas/site-entrance-1.0.json",
+  "title": "Site Entrance Dataset",
+  "description": "Compact entrance dataset exported by apps/export-site into a target site's src/data/begegnungen/entrance.json (work order phase-3e-plumbing.md §1). Additive schema: additionalProperties true everywhere, matching every other protocol schema's evolvability rule.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["encounter_id", "title", "headline", "status", "participants", "stations", "links", "authored_by", "approval"],
+  "properties": {
+    "encounter_id": { "type": "string" },
+    "title": { "type": "string" },
+    "headline": { "$ref": "#/$defs/localizedText" },
+    "status": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["as_of", "statusLine"],
+      "properties": {
+        "as_of": { "type": "string" },
+        "statusLine": { "$ref": "#/$defs/localizedText" }
+      }
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["actor_id", "role"],
+        "properties": {
+          "actor_id": { "type": "string" },
+          "collective_id": { "type": ["string", "null"] },
+          "role": { "type": "string" },
+          "local_status": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "stations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["id", "heading"],
+        "properties": {
+          "id": { "type": "string" },
+          "heading": { "$ref": "#/$defs/localizedText" },
+          "quote": { "type": "string" },
+          "attribution": { "$ref": "#/$defs/localizedText" },
+          "akte_event_id": { "type": "string" },
+          "akte_event_type": { "type": "string" },
+          "divergence": { "type": "object" }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["akte", "divergenz"],
+      "properties": {
+        "akte": { "type": "string" },
+        "divergenz": { "type": "string" }
+      }
+    },
+    "authored_by": { "type": "string" },
+    "approval": { "type": "string", "enum": ["pending", "approved"] }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["de", "en"],
+      "properties": {
+        "de": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    }
+  }
+}

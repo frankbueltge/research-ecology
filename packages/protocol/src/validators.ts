@@ -20,6 +20,7 @@ import type {
   Intervention,
   LensDefinition,
   MapManifest,
+  SiteEntrance,
   TransferOfferPayload,
   TransferResponsePayload
 } from "./types.js";
@@ -36,6 +37,7 @@ import encounterEventSchema from "../schemas/encounter-event.schema.json" with {
 import interventionSchema from "../schemas/intervention.schema.json" with { type: "json" };
 import lensSchema from "../schemas/lens.schema.json" with { type: "json" };
 import mapManifestSchema from "../schemas/map-manifest.schema.json" with { type: "json" };
+import siteEntranceSchema from "../schemas/site-entrance.schema.json" with { type: "json" };
 import transferOfferSchema from "../schemas/transfer-offer.schema.json" with { type: "json" };
 import transferResponseSchema from "../schemas/transfer-response.schema.json" with { type: "json" };
 
@@ -48,6 +50,7 @@ const compiledEncounterEvent: ValidateFunction = ajv.compile(encounterEventSchem
 const compiledIntervention: ValidateFunction = ajv.compile(interventionSchema);
 const compiledLens: ValidateFunction = ajv.compile(lensSchema);
 const compiledMapManifest: ValidateFunction = ajv.compile(mapManifestSchema);
+const compiledSiteEntrance: ValidateFunction = ajv.compile(siteEntranceSchema);
 const compiledTransferOffer: ValidateFunction = ajv.compile(transferOfferSchema);
 const compiledTransferResponse: ValidateFunction = ajv.compile(transferResponseSchema);
 
@@ -116,6 +119,12 @@ export function validateMapManifest(data: unknown): ValidationResult {
   return runValidate(compiledMapManifest, data);
 }
 
+/** Validates the compact entrance dataset apps/export-site writes into a target site's
+ * src/data/begegnungen/entrance.json (work order phase-3e-plumbing.md §1). */
+export function validateSiteEntrance(data: unknown): ValidationResult {
+  return runValidate(compiledSiteEntrance, data);
+}
+
 export function validateTransferOffer(data: unknown): ValidationResult {
   return runValidate(compiledTransferOffer, data);
 }
@@ -136,6 +145,7 @@ export type {
   Intervention,
   LensDefinition,
   MapManifest,
+  SiteEntrance,
   TransferOfferPayload,
   TransferResponsePayload
 };

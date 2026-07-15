@@ -213,6 +213,56 @@ export interface TransferOfferPayload {
   [key: string]: unknown;
 }
 
+/** site-entrance.schema.json — additive, work order phase-3e-plumbing.md §1: the compact
+ * dataset apps/export-site writes into a target site's src/data/begegnungen/entrance.json.
+ * Not one of the original eight Phase-1 schemas; kept in this same hand-written-types file
+ * for consistency, added without touching anything above. */
+export interface LocalizedText {
+  de: string;
+  en: string;
+  [key: string]: unknown;
+}
+
+export interface SiteEntranceParticipant {
+  actor_id: string;
+  collective_id?: string | null;
+  role: string;
+  local_status?: string | null;
+  [key: string]: unknown;
+}
+
+export interface SiteEntranceStation {
+  id: string;
+  heading: LocalizedText;
+  quote?: string;
+  attribution?: LocalizedText;
+  akte_event_id?: string;
+  akte_event_type?: string;
+  divergence?: Record<string, unknown>;
+  [key: string]: unknown;
+}
+
+export interface SiteEntrance {
+  encounter_id: string;
+  title: string;
+  headline: LocalizedText;
+  status: {
+    as_of: string;
+    statusLine: LocalizedText;
+    [key: string]: unknown;
+  };
+  participants: SiteEntranceParticipant[];
+  stations: SiteEntranceStation[];
+  links: {
+    akte: string;
+    divergenz: string;
+    [key: string]: unknown;
+  };
+  authored_by: string;
+  approval: "pending" | "approved";
+  [key: string]: unknown;
+}
+
 /** transfer-response.schema.json */
 export type TransferResponseDecision =
   | "accepted"

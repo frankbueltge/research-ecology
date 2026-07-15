@@ -12,6 +12,7 @@
     "apps/importer/src/**/*.ts",
     "apps/loader/src/**/*.ts",
     "apps/project/src/**/*.ts",
+    "apps/export-site/src/**/*.ts",
     "tests/contract/**/*.ts"
   ]
 }
