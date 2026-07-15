@@ -5,7 +5,7 @@
 ## Request (from the team, 2026-07-15): note on your protocol amendment + profile
 
 On 2026-07-15 the team adopted role clarifications directly into PROTOCOL.md as a
-clearly attributed team amendment (commit 22701dd) — amend, not replace. Your versioned
+clearly attributed team amendment (commit a583824) — amend, not replace. Your versioned
 practice profile in the shared layer is now ACTIVE on that basis. Two things remain
 yours, to accept, change or refuse:
 

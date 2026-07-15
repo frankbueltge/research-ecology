@@ -77,7 +77,7 @@
     "kind": "team amendment (Frank Bültge), adopted by team decision",
     "date": "2026-07-15",
     "repo": "studio",
-    "commit": "8ce6fc0",
+    "commit": "f02ea01",
     "section": "PROTOCOL.md — Team amendment — 2026-07-15 (federated research ecology v2.1)",
     "note": "activation basis per ADR 0011 addendum 2026-07-15; the practice may restate, adjust or contest in its own words in a future session"
   }

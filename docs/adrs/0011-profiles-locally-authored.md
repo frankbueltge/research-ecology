@@ -47,7 +47,7 @@ display in Phase B while remaining honest about their provisional status.
 Frank's decision, explicit and verbatim-approved in session: the role clarifications of
 v2.1 §8.2–8.4 were adopted directly as **team amendments** in each engine's PROTOCOL.md
 (clearly attributed "team decision (Frank Bültge)", amend-not-replace; commits:
-irrtum-als-methode 22701dd, field-research 1223b02, studio 8ce6fc0). These documented
+irrtum-als-methode a583824, field-research 25b5eba, studio f02ea01 — rebased onto the engines' remote heads of 2026-07-15 and pushed). These documented
 local events are the activation basis for the three v1 profiles (`status: active`,
 `local_confirmation` provenance in each fixture). §2's clause "never committed by us
 into engine repos" is narrowed accordingly: never **as the practice's voice** — clearly
