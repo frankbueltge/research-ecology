@@ -20,6 +20,7 @@ import type {
   Intervention,
   LensDefinition,
   MapManifest,
+  PracticeProfileVersion,
   SiteEntrance,
   TransferOfferPayload,
   TransferResponsePayload
@@ -37,6 +38,7 @@ import encounterEventSchema from "../schemas/encounter-event.schema.json" with {
 import interventionSchema from "../schemas/intervention.schema.json" with { type: "json" };
 import lensSchema from "../schemas/lens.schema.json" with { type: "json" };
 import mapManifestSchema from "../schemas/map-manifest.schema.json" with { type: "json" };
+import practiceProfileSchema from "../schemas/practice-profile.schema.json" with { type: "json" };
 import siteEntranceSchema from "../schemas/site-entrance.schema.json" with { type: "json" };
 import transferOfferSchema from "../schemas/transfer-offer.schema.json" with { type: "json" };
 import transferResponseSchema from "../schemas/transfer-response.schema.json" with { type: "json" };
@@ -50,6 +52,7 @@ const compiledEncounterEvent: ValidateFunction = ajv.compile(encounterEventSchem
 const compiledIntervention: ValidateFunction = ajv.compile(interventionSchema);
 const compiledLens: ValidateFunction = ajv.compile(lensSchema);
 const compiledMapManifest: ValidateFunction = ajv.compile(mapManifestSchema);
+const compiledPracticeProfile: ValidateFunction = ajv.compile(practiceProfileSchema);
 const compiledSiteEntrance: ValidateFunction = ajv.compile(siteEntranceSchema);
 const compiledTransferOffer: ValidateFunction = ajv.compile(transferOfferSchema);
 const compiledTransferResponse: ValidateFunction = ajv.compile(transferResponseSchema);
@@ -125,6 +128,18 @@ export function validateSiteEntrance(data: unknown): ValidationResult {
   return runValidate(compiledSiteEntrance, data);
 }
 
+/**
+ * Validates a practice profile version against practice-profile.schema.json (spec-v2.1 §3,
+ * ADR 0011, work order phase-b-profiles.md §2): `non_exclusive` must be the literal `true`
+ * (schema `const`), `status` one of draft/active/superseded, `accountability_questions`
+ * non-empty. Does NOT check that `authored_by` names a practice actor rather than an
+ * editorial/Middle one — that rule needs the actor classification packages/domain owns and
+ * lives next to the existing editorial-issuer sentinel there, not duplicated here.
+ */
+export function validatePracticeProfile(data: unknown): ValidationResult {
+  return runValidate(compiledPracticeProfile, data);
+}
+
 export function validateTransferOffer(data: unknown): ValidationResult {
   return runValidate(compiledTransferOffer, data);
 }
@@ -145,6 +160,7 @@ export type {
   Intervention,
   LensDefinition,
   MapManifest,
+  PracticeProfileVersion,
   SiteEntrance,
   TransferOfferPayload,
   TransferResponsePayload

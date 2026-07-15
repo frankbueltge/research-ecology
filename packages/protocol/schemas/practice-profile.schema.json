@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://frankbueltge.de/schemas/practice-profile-1.0.json",
+  "title": "Epistemic Practice Profile Version",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "collective_id",
+    "version",
+    "public_name",
+    "orientation",
+    "primary_commitment",
+    "accountability_questions",
+    "non_exclusive",
+    "authored_by",
+    "status",
+    "effective_from",
+    "provenance"
+  ],
+  "properties": {
+    "collective_id": {"type": "string", "minLength": 1},
+    "version": {"type": "integer", "minimum": 1},
+    "public_name": {"type": "string", "minLength": 1},
+    "self_description": {"type": ["string", "null"]},
+    "orientation": {"type": "string", "minLength": 1},
+    "primary_commitment": {"type": "string", "minLength": 1},
+    "accountability_questions": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "typical_operations": {"type": ["array", "null"], "items": {"type": "string"}},
+    "admissible_outputs": {"type": ["array", "null"], "items": {"type": "string"}},
+    "characteristic_risks": {"type": ["array", "null"], "items": {"type": "string"}},
+    "non_exclusive": {"const": true},
+    "protocol_ref": {"type": ["string", "null"]},
+    "authored_by": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "enum": ["draft", "active", "superseded"]},
+    "effective_from": {"type": "string", "format": "date-time"},
+    "effective_to": {"type": "string", "format": "date-time"},
+    "provenance": {"type": "object", "additionalProperties": true}
+  }
+}

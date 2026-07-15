@@ -261,6 +261,65 @@ export interface SiteEntrance {
   [key: string]: unknown;
 }
 
+/** practice-profile.schema.json — spec-v2.1 §3 (ADR 0011). A versioned, locally-authored
+ * self-description of a sovereign practice — never a taxonomy The Middle imposes. Structural
+ * validation (this schema + `validatePracticeProfile`) lives here; the business rule that
+ * `authored_by` may never name an editorial/Middle actor lives in packages/domain, next to the
+ * existing editorial-issuer sentinel (work order phase-b-profiles.md §2 — deliberately not
+ * duplicated here). `status` stays a plain `string` rather than a narrowed union on purpose,
+ * matching the open-string convention documented at the top of packages/domain/src/types.ts:
+ * the DB CHECK and this schema's `enum` already constrain the actual value. */
+export interface PracticeProfileProvenanceEntry {
+  /** Path/name of the source file a quote was taken from, verbatim (e.g. "PROTOCOL.md"), or a
+   * short pointer into an already-ingested bundle record (e.g. "chronicle.json#session-1
+   * (ingested as import/bundles/...)"). Absent when `spec_ref` is the source instead. */
+  file?: string;
+  /** Full commit sha the quote is pinned to (ADR 0009). */
+  commit?: string;
+  /** `sha256:<hex>` of the cited file/record at that commit (ADR 0009) — the whole-file hash
+   * for a raw doc quote, or the record's own `content_hash` when citing an already-ingested
+   * bundle event. */
+  content_hash?: string;
+  /** Set instead of file/commit/content_hash when the field's source is Frank's own initial
+   * formulation in docs/spec-v2.1/, not a practice's repository (ADR 0011 §2), e.g.
+   * "docs/spec-v2.1/01-FEDERATED-ECOLOGY-V2.1-IMPLEMENTATION-DELTA.md §3". */
+  spec_ref?: string;
+  /** Free-text pointer to where in the source the quote lives (section heading, etc.) — never
+   * a paraphrase of the quote itself. */
+  note?: string;
+  [key: string]: unknown;
+}
+
+/** Field name → source. Also carries one synthetic `_compiled_by` entry (not a real profile
+ * field) documenting that a draft version was compiled by the lab session from the cited
+ * quotes and awaits the practice's own local confirmation (ADR 0011 §2). */
+export type PracticeProfileProvenance = Record<string, PracticeProfileProvenanceEntry>;
+
+export interface PracticeProfileVersion {
+  collective_id: string;
+  version: number;
+  public_name: string;
+  self_description?: string | null;
+  orientation: string;
+  primary_commitment: string;
+  accountability_questions: string[];
+  typical_operations?: string[] | null;
+  admissible_outputs?: string[] | null;
+  characteristic_risks?: string[] | null;
+  /** Always the literal `true` (ADR 0011 §3: enforced, not merely asserted — DB CHECK, this
+   * field's `const: true` in the schema, and this TS literal type all agree). */
+  non_exclusive: true;
+  protocol_ref?: string | null;
+  /** An actor id of the practice's own collective — never an editorial/Middle actor id
+   * (packages/domain enforces this at load time and at store-put time, ADR 0011 §1). */
+  authored_by: string;
+  status: string;
+  effective_from: string;
+  effective_to?: string;
+  provenance: PracticeProfileProvenance;
+  [key: string]: unknown;
+}
+
 /** transfer-response.schema.json */
 export type TransferResponseDecision =
   | "accepted"
