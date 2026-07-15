@@ -53,9 +53,21 @@ Künftige Begegnungen: Überschriften werden je Encounter neu geschrieben (edito
 pending) — Stil-Leitplanke: kurz, konkret, keine Metaphern ohne Datendeckung, das
 Zitat trägt die Beweislast, die Überschrift nur die Neugier.
 
-## 5. Status
+## 5. Status — ENTSCHIEDEN (Frank, 2026-07-15 abends: „nimm deine Vorschläge")
 
-Wartet auf Franks Entscheid zu §2 (Middle-Formel), §3 (Held accountable to),
-§4 Punkt 4 (upstream). Alles andere: Freigabe des Bestands wie gelistet.
-Nach Entscheid: Grammatik-Formeln unter Testschutz stellen (Work-Order-Punkt für
-das jeweilige Verdrahtungs-Paket).
+**Alle Wortlaute freigegeben**, Bestand plus die drei Vorschläge dieses Dokuments:
+§2 Middle-Datenkante = „here ends what the ledger knows" (+ as-of-Randnotat),
+§3 „Held accountable to:", §4.4 „The correction flows upstream."
+Damit freigegeben: Headline + Statuszeile + 6 Stationen (enc-2026-001, mit der
+upstream-Korrektur), Positions-Formel (neu gerahmt), alle vier Datenkanten-Formeln,
+die Karten-Headlines der Design-Session. Freigabe gilt den WORTLAUTEN; der
+Public-Deploy bleibt eine separate, ausstehende Entscheidung.
+
+**Umsetzungs-Punkte (nach Abschluss von Phase C1, um Git-Kollisionen mit dem
+laufenden Paket zu vermeiden):**
+1. `narratives/enc-2026-001.json`: Beat-4-Heading → „The correction flows upstream.";
+   approval-Feld: approved (Frank, 2026-07-15) — danach Site-Export auffrischen.
+2. `apps/middle-web` dictionary: `accountabilityPrefix` → „Held accountable to:"
+   (+ betroffene Tests aktualisieren — bewusste, dokumentierte Änderung, kein Aufweichen).
+3. Design-Generatoren/Varianten: as-of-Kanten-Text → freigegebene Formel, neu rendern.
+4. Beim Verdrahten: alle Grammatik-Formeln unter Testschutz (Protokoll-Prinzip).
