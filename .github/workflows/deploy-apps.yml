@@ -1,0 +1,79 @@
+name: Deploy apps (Cloudflare Pages)
+
+# Work order docs/work-orders/phase-c3-apps-static-deploy.md §2: prepared, not triggered. No
+# CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secret is set on this repo yet, so a real run of
+# this workflow will get as far as the build + smoke check and then fail at the wrangler step —
+# on purpose, until Frank adds those two secrets. See docs/runbooks/apps-deploy.md.
+#
+# Only apps/atelier has a job below. apps/middle-web is NOT included: it cannot currently be
+# built with `@sveltejs/adapter-static` at all (confirmed by an actual build attempt, not just
+# inspection) — its root layout renders a `<form>`-based theme toggle that POSTs to
+# `/theme-toggle` (a `+server.ts` endpoint that sets a cookie and redirects: needs a live server,
+# no static equivalent) and reads `page.url.search` on every single page; separately,
+# `/ledger`'s pagination reads `url.searchParams` in `+page.server.ts`. SvelteKit refuses to
+# prerender any page that touches those at request time. This is a design decision only Frank can
+# make, not something to route around here — see docs/runbooks/apps-deploy.md
+# "middle-web: not yet deployable" and the work order C3 report for the exact errors and options.
+# A future `deploy-middle` job belongs in this same file once that decision is made; the target
+# Cloudflare Pages project name is already reserved as `ecology-middle`.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/atelier/**"
+      - "packages/**"
+      - "fixtures/**"
+      - "lenses/**"
+      - ".github/workflows/deploy-apps.yml"
+  workflow_dispatch: {}
+
+jobs:
+  deploy-atelier:
+    name: Build + deploy apps/atelier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout research-ecology
+        uses: actions/checkout@v4
+        with:
+          path: research-ecology
+
+      # `import/` is gitignored (work order phase-3a: bundles are regenerated, never committed).
+      # The Atelier only ever renders Ulysses' data (`ATELIER_COLLECTIVE_ID` in
+      # apps/atelier/src/lib/server/store.ts), so only that one engine repo needs checking out
+      # here — irrtum-als-methode is public, so the default token is enough (no extra secret).
+      - name: Checkout irrtum-als-methode (Ulysses — the only collective the Atelier renders)
+        uses: actions/checkout@v4
+        with:
+          repository: frankbueltge/irrtum-als-methode
+          path: irrtum-als-methode
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: research-ecology/package-lock.json
+
+      - name: Install dependencies
+        working-directory: research-ecology
+        run: npm ci
+
+      - name: Import Ulysses bundle (populates import/bundles/, read-only toward the engine repo)
+        working-directory: research-ecology
+        run: npx tsx apps/importer/src/cli.ts --repo ../irrtum-als-methode --collective ulysses
+
+      - name: Build apps/atelier (adapter-static, full prerender)
+        working-directory: research-ecology
+        run: npm run build --workspace=@research-ecology/atelier
+
+      - name: Smoke-check the static output
+        working-directory: research-ecology
+        run: npm run smoke --workspace=@research-ecology/atelier
+
+      - name: Deploy to Cloudflare Pages (ecology-atelier)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy research-ecology/apps/atelier/build --project-name=ecology-atelier
