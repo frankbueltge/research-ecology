@@ -120,7 +120,7 @@ def build_svg():
     s.append(f'<text class="t-note t-dim" x="{(qx0+qx1)//2}" y="330" text-anchor="middle">the gap stays visible</text>')
 
     s.append(f'<path class="asof" d="M{ASOF_X} {RY+10} V{SHIFT_Y+14}"/>')
-    s.append(f'<text class="t-note" transform="rotate(-90 {ASOF_X+16} 440)" x="{ASOF_X+16}" y="440" text-anchor="middle">as-of edge · data ends here</text>')
+    s.append(f'<text class="t-note" transform="rotate(-90 {ASOF_X+16} 440)" x="{ASOF_X+16}" y="440" text-anchor="middle">here ends what the ledger knows</text>')
     s.append('</svg>')
     return "\n".join(s)
 

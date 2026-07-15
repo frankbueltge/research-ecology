@@ -13,7 +13,7 @@
    *   `stage` (1–6) — no animation, no JS, plain SVG geometry computed once at render time
    *   (work order §2 "statisch pro Beat, kein JS nötig"). The transfer line lengthens through
    *   stages 1–5; the correction arrow only exists from stage 4 onward (mirrors beat 4, "the
-   *   correction flows backwards") and completes at stage 5; stage 6 adds a small diverging
+   *   correction flows upstream") and completes at stage 5; stage 6 adds a small diverging
    *   fork at the transfer line's end (beat 6, "two readings remain").
    *
    * Purely decorative (the heading + quote already carry the meaning) — `aria-hidden`, no

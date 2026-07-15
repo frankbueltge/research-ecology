@@ -79,10 +79,16 @@ test.describe("narrative: six stations", () => {
     expect(hrefs.some((h) => h === `/encounters/${ENCOUNTER_ID}`)).toBe(true);
   });
 
-  test("pending-approval badge appears exactly once, in the entrance footnote — never inside a station caption", async ({ page }) => {
+  test("pending-approval badge never appears inside a station caption; footnote badge matches the narrative's approval state", async ({ page }) => {
     await page.goto("/");
     expect(await page.locator(".tableau__caption .pending-badge").count()).toBe(0);
-    expect(await page.locator(".entrance__footnote .pending-badge").count()).toBe(1);
+    // State-aware: the badge renders only while approval === "pending". The enc-2026-001
+    // wording set was approved by Frank on 2026-07-15 (docs/design/wortlaute-2026-07-15.md),
+    // so today the correct count is 0. A future pending narrative flips this back via data.
+    const approval = JSON.parse(
+      readFileSync(new URL("../../../../narratives/enc-2026-001.json", import.meta.url), "utf8")
+    ).approval;
+    expect(await page.locator(".entrance__footnote .pending-badge").count()).toBe(approval === "pending" ? 1 : 0);
   });
 
   for (const route of ["/"]) {

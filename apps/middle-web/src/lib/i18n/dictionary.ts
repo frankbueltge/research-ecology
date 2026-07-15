@@ -287,7 +287,9 @@ const en: Dictionary = {
     sourceNoteHeading: "A note on how this encounter began",
     openLensManifest: "Open lens manifest",
     positionPrefix: "Position in this encounter:",
-    accountabilityPrefix: "Accountability:",
+    // Approved wording (Frank, 2026-07-15; docs/design/wortlaute-2026-07-15.md §3): the
+    // profile value is a full question — the label frames it as one.
+    accountabilityPrefix: "Held accountable to:",
     // Verbatim, ADR 0011 §2 — never soften this exact sentence.
     profileDraftLabel: "draft — compiled from the practice's protocol, pending local confirmation"
   },

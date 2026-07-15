@@ -201,7 +201,7 @@ def page(title, kicker2, h1, status, rail_active, body, table, footer_extra):
 <div class="wrap">
   {TOGGLE_BTN}
   <p class="kicker"><span>Studio · {esc(kicker2)}</span><span>studio (Ensemble)</span>
-  <span>founded 2026-07-12</span><span class="chip">design study — wording pending approval</span></p>
+  <span>founded 2026-07-12</span><span class="chip">design study — wording approved 2026-07-15</span></p>
   {rail(rail_active)}
   <h1>{esc(h1)}</h1>
   <p class="status">{status}</p>

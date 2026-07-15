@@ -36,11 +36,11 @@ function assertionById(id: string): FixtureAssertion {
 }
 
 describe("getNarrative (structural shape)", () => {
-  it("loads exactly 6 beats, pending approval, authored by the-middle-editorial", () => {
+  it("loads exactly 6 beats, approved wording (Frank, 2026-07-15), authored by the-middle-editorial", () => {
     const narrative = getNarrative();
     expect(narrative.encounter_id).toBe("enc-2026-001-calibration-gap-travels");
     expect(narrative.authored_by).toBe("the-middle-editorial");
-    expect(narrative.approval).toBe("pending");
+    expect(narrative.approval).toBe("approved"); // approved by Frank 2026-07-15 (wortlaute-2026-07-15.md)
     expect(narrative.beats).toHaveLength(6);
   });
 

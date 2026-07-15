@@ -140,7 +140,7 @@ def build_svg():
 
     # as-of edge
     s.append(f'<path class="asof" d="M{ASOF_X} {RY+10} V{SHIFT_Y+14}"/>')
-    s.append(f'<text class="t-note" transform="rotate(-90 {ASOF_X+16} 440)" x="{ASOF_X+16}" y="440" text-anchor="middle">as-of edge · data ends here</text>')
+    s.append(f'<text class="t-note" transform="rotate(-90 {ASOF_X+16} 440)" x="{ASOF_X+16}" y="440" text-anchor="middle">here ends what the ledger knows</text>')
     s.append('</svg>')
     return "\n".join(s)
 
@@ -167,7 +167,7 @@ page = f"""<!doctype html>
 <div class="wrap">
   {TOGGLE_BTN}
   <p class="kicker"><span>The Middle · deep record</span><span>the ecology, as its repositories remember it</span>
-  <span>2026-06-10 → 2026-07-15</span><span class="chip">wording pending approval</span></p>
+  <span>2026-06-10 → 2026-07-15</span><span class="chip">wording approved · 2026-07-15</span></p>
   <h1>The practices are older than their federation.</h1>
   <p class="status"><b>{total} commits across 5 repositories</b> · 1 encounter · 8 recorded shifts · every mark dated and sourced; activity amplitude = commits per day (√-scaled)</p>
   <figure>{build_svg()}</figure>

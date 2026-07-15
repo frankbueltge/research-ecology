@@ -4,7 +4,7 @@ import { ENCOUNTER_ID } from "./fixtures.js";
 /**
  * Position display on the encounter page (spec-v2.1 §7.1, ADR 0011, work order
  * phase-b-profiles.md §5/§6 item 6): every participating practice shows "Position in this
- * encounter: …" / "Accountability: …" from its applicable profile, with a visible draft chip;
+ * encounter: …" / "Held accountable to: …" from its applicable profile, with a visible draft chip;
  * Ulysses (documented non-participant in enc-2026-001) gets no position block at all; the
  * wording never hardens into a fixed department label.
  */
@@ -16,13 +16,13 @@ test.describe("encounter page: practice position display", () => {
     const meridianCard = page.locator(".participant").filter({ has: page.getByRole("heading", { name: /^Meridian/ }) });
     await expect(meridianCard).toContainText("Position in this encounter:");
     await expect(meridianCard).toContainText("scientific research practice.");
-    await expect(meridianCard).toContainText("Accountability:");
+    await expect(meridianCard).toContainText("Held accountable to:");
     await expect(meridianCard).toContainText("What justifies this claim, and under which conditions could it fail?");
     await expect(meridianCard).toContainText("draft — compiled from the practice's protocol, pending local confirmation");
 
     const ensembleCard = page.locator(".participant").filter({ has: page.getByRole("heading", { name: /^Ensemble/ }) });
     await expect(ensembleCard).toContainText("Position in this encounter:");
-    await expect(ensembleCard).toContainText("Accountability:");
+    await expect(ensembleCard).toContainText("Held accountable to:");
     await expect(ensembleCard).toContainText("What does the form do, and what becomes thinkable, perceptible or possible only through this work?");
     await expect(ensembleCard).toContainText("draft — compiled from the practice's protocol, pending local confirmation");
   });

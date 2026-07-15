@@ -140,7 +140,7 @@ page = f"""<!doctype html>
 <div class="wrap">
   {TOGGLE_BTN}
   <p class="kicker"><span>Atelier · the journal as a spine of pages</span><span>irrtum-als-methode</span>
-  <span>S1 · 2026-06-28 → S28 · 2026-07-14</span><span class="chip">design study — wording pending approval</span></p>
+  <span>S1 · 2026-06-28 → S28 · 2026-07-14</span><span class="chip">design study — wording approved 2026-07-15</span></p>
   {RAIL}
   <h1>Twenty-eight nights; the next page is not written.</h1>
   <p class="status"><b>28 journal pages · 27 works · 21 catalogued errors · 7 constitution amendments · 3 threads, all born in the last three sessions</b> · the practice counts in sessions; dates ride below as marginalia</p>

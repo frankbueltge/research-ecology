@@ -20,7 +20,7 @@ D = {
     "headline": "A work found the flaw in the instrument it was built from.",
     "status": "unresolved — both readings stand",
     "as_of": "2026-07-14",
-    "approval": "wording pending approval · editorial narrative authored by the-middle-editorial",
+    "approval": "wording approved (Frank, 2026-07-15) · editorial narrative authored by the-middle-editorial",
     "lanes": [
         {"id": "meridian", "label": "MERIDIAN", "role": "source",
          "local": "correction applied; register revised; obligations active"},
@@ -196,7 +196,7 @@ def build_svg():
 
     # as-of edge: behind it there is nothing
     s.append(f'<path class="asof" d="M{ASOF_X} {RULER_Y+16} V{LANE_Y["ensemble"]+96}"/>')
-    s.append(f'<text class="t-note" transform="rotate(-90 {ASOF_X+16} {LANE_Y["conductor"]})" x="{ASOF_X+16}" y="{LANE_Y["conductor"]}" text-anchor="middle">as-of edge · data ends here</text>')
+    s.append(f'<text class="t-note" transform="rotate(-90 {ASOF_X+16} {LANE_Y["conductor"]})" x="{ASOF_X+16}" y="{LANE_Y["conductor"]}" text-anchor="middle">here ends what the ledger knows</text>')
     s.append('</svg>')
     return "\n".join(s)
 
@@ -444,7 +444,7 @@ def page(key, v, svg):
 <div class="wrap">
   {toggle}{prompt}
   <p class="kicker"><span>The Middle · contact zone record</span><span>{esc(D['encounter_id'])}</span>
-  <span>as of {esc(D['as_of'])}</span><span class="chip">wording pending approval</span></p>
+  <span>as of {esc(D['as_of'])}</span><span class="chip">wording approved · 2026-07-15</span></p>
   <h1>{esc(D['headline'])}</h1>
   <p class="status"><b>{esc(D['status'])}</b> · 7 ledger events · 3 lanes · 2 obligations active · 1 designed non-relation</p>
   <figure>{svg}</figure>
