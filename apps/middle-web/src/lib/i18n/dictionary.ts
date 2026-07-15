@@ -66,6 +66,12 @@ export interface Dictionary {
     resolutionNoteHeading: string;
     sourceNoteHeading: string;
     openLensManifest: string;
+    // <!-- DESIGN-SESSION: position-block strings provisional, chrome-string convention per
+    // BegegnungEntrance.astro on the site; wording fixed by ADR 0011 §2/§4 and spec-v2.1 §7.1,
+    // visual treatment is not. -->
+    positionPrefix: string;
+    accountabilityPrefix: string;
+    profileDraftLabel: string;
   };
   event: {
     issuedBy: string;
@@ -279,7 +285,11 @@ const en: Dictionary = {
     nonParticipationIntro: "Not every collective in the lab is part of every encounter. This section names who is absent here and why — a documented non-relation, never an inferred refusal.",
     resolutionNoteHeading: "On the absence of a shared resolution",
     sourceNoteHeading: "A note on how this encounter began",
-    openLensManifest: "Open lens manifest"
+    openLensManifest: "Open lens manifest",
+    positionPrefix: "Position in this encounter:",
+    accountabilityPrefix: "Accountability:",
+    // Verbatim, ADR 0011 §2 — never soften this exact sentence.
+    profileDraftLabel: "draft — compiled from the practice's protocol, pending local confirmation"
   },
   event: {
     issuedBy: "issued by",

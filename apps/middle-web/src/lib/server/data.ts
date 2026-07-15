@@ -17,7 +17,8 @@ import type {
   StoredNonParticipant,
   StoredObjectRef,
   StoredObligation,
-  StoredParticipant
+  StoredParticipant,
+  StoredPracticeProfileVersion
 } from "@research-ecology/domain";
 import { CURRENT_ENCOUNTER_ID, LENS_IDS, getApp, mapIdFor, type LensId } from "./store.js";
 
@@ -199,6 +200,16 @@ export async function listObjectsForCollective(collectiveId: string): Promise<St
 export async function getCollective(collectiveId: string): Promise<StoredCollective | undefined> {
   const { store } = await getApp();
   return store.getCollective(collectiveId);
+}
+
+/** The participant's currently applicable profile version (spec-v2.1 §3, ADR 0011, work order
+ * phase-b-profiles.md §5) — `undefined` when the collective has no profile loaded (e.g. a
+ * future fourth collective before its own draft exists) or, deliberately, for any participant
+ * that is not a sovereign practice at all (the apparatus/conductor row, `collective_id: null`
+ * — see the call site's own filter, never this function's job to guess). */
+export async function getApplicableProfileFor(collectiveId: string): Promise<StoredPracticeProfileVersion | undefined> {
+  const { store } = await getApp();
+  return store.getApplicableProfile(collectiveId);
 }
 
 export async function getActor(actorId: string): Promise<StoredActor | undefined> {

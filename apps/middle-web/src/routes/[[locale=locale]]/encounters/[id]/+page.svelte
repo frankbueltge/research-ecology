@@ -6,6 +6,7 @@
   import PendingApprovalBadge from "$lib/ui/PendingApprovalBadge.svelte";
   import ObligationClause from "$lib/ui/ObligationClause.svelte";
   import LensManifestPanel from "$lib/ui/LensManifestPanel.svelte";
+  import RecordFrame from "$lib/ui/RecordFrame.svelte";
   import ProvenanceChain from "$lib/renderers/ProvenanceChain.svelte";
   import { objectHref } from "$lib/object-ref.js";
   import type { PageData } from "./$types.js";
@@ -14,6 +15,7 @@
   const dict = $derived(dictionary[data.locale]);
 
   const { encounter, participants, nonParticipants, objects, obligations } = $derived(data.bundle);
+  const profilesByCollective = $derived(data.profilesByCollective);
 
   const sourceParticipants = $derived(participants.filter((p) => p.role === "source"));
   const receiverParticipants = $derived(participants.filter((p) => p.role === "receiver"));
@@ -92,6 +94,7 @@
 
   <h2>{dict.encounter.participantsHeading}</h2>
   {#each participants as participant (participant.actor_id)}
+    {@const profile = participant.collective_id ? profilesByCollective[participant.collective_id] : undefined}
     <div class="participant">
       <h3>
         {participant.collective?.current_name ?? participant.actor?.display_name ?? participant.actor_id}
@@ -108,6 +111,20 @@
       {/if}
       {#if participant.local_status_rationale}
         <p>{participant.local_status_rationale}</p>
+      {/if}
+      <!-- Position display (spec-v2.1 §7.1, ADR 0011, work order phase-b-profiles.md §5):
+           encounter-situated only — never a global/persistent practice label, and never shown
+           for a participant with no collective (the conductor) or no loaded profile (a
+           non-participant such as Ulysses in this encounter never reaches this branch at all,
+           since profilesByCollective is built only from this encounter's own participants). -->
+      {#if profile}
+        <RecordFrame variant="plain">
+          <p class="position-block__line">{dict.encounter.positionPrefix} {profile.orientation}</p>
+          <p class="position-block__line">{dict.encounter.accountabilityPrefix} {profile.accountability_questions[0]}</p>
+          {#if profile.status === "draft"}
+            <PendingApprovalBadge label={dict.encounter.profileDraftLabel} />
+          {/if}
+        </RecordFrame>
       {/if}
     </div>
   {/each}
@@ -246,6 +263,14 @@
 
   .participant__status {
     color: var(--ink-soft);
+  }
+
+  .position-block__line {
+    margin: 0 0 var(--space-2);
+  }
+
+  .position-block__line:last-of-type {
+    margin-bottom: var(--space-3);
   }
 
   .objects-grid {

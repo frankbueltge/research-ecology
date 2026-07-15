@@ -59,7 +59,11 @@ const REPO_ROOT = findRepoRoot(here);
 const HYDRATION_PATHS = {
   bundlesRootDir: path.join(REPO_ROOT, "import/bundles"),
   fixtureDir: path.join(REPO_ROOT, "fixtures/enc-2026-001-calibration-gap-travels"),
-  lensesDir: path.join(REPO_ROOT, "lenses")
+  lensesDir: path.join(REPO_ROOT, "lenses"),
+  // Practice profile drafts (spec-v2.1 §3, ADR 0011, work order phase-b-profiles.md §4/§5) —
+  // optional on HydrationPaths (every pre-existing caller omits it), set here so the encounter
+  // route's position display has profiles to render.
+  profilesDir: path.join(REPO_ROOT, "fixtures/practice-profiles")
 };
 
 /** Re-exported for existing callers (work order §0 "the honest single-encounter state") — the
