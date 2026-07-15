@@ -21,9 +21,21 @@ Engine-Repos), Positionsanzeige auf der Encounter-Seite. Commits `4910b66`..`6a6
 (adapters/adapter-field/adapter-atelier) shellen nach git in die Nachbar-Repos und
 reißen unter hoher Maschinenlast (load ~29 beobachtet) ihre Hook-Timeouts; Dateien
 sind seit Phase 2 unverändert. Bei Gelegenheit hookTimeout anheben oder Bundles cachen.
-Nächste Schritte: Design-Session (DOPPELAUFTRAG: Zeichengrammatik für The Middle UND
-eigenständige Atelier-Ästhetik) → Phase C (Atelier-Slice) → Phase D (Konstellation +
-zweiter Encounter). Atelier-Slice (Phase C) erst NACH der Design-Session bauen.
+**Design-Session GELAUFEN (2026-07-15 nachmittags, in derselben Session):** Franks
+Brief: clean-wissenschaftlich × kreativ, leicht futuristisches Dashboard, kein
+Spektakel, Terminal-/ZKM-tauglich, Kunstwerk statt Archiv; keine externen Referenzen
+(sein Atlas: investigation 114:11 vs spectacle). Ergebnisse in docs/design/:
+`zeichengrammatik-2026-07-15.md` (Partitur-Grammatik + §7 Zeit-Skalierung),
+`atelier-aesthetik-2026-07-15.md` (das Blatt, eigene Sprache per ADR 0010),
+`variants-2026-07-15/` (A/B/C-Varianten, Historie, Skalierungs-Specimen synthetisch,
+Atelier-Blatt; Generator-Skizzen als .py daneben; Paletten validator-geprüft).
+**Frank hat Richtung A (Observatorium) gewählt** + Light/Dark/Auto-Pflicht
+(Site-Konvention übernommen). Historie-Karte („The practices are older than their
+federation") und Atelier-Blatt (S26–S28 wörtlich aus dem Rhizom) gebaut, warten auf
+Franks Detail-Kritik. Wortlaute weiter pending (Chips auf allen Artefakten).
+Nächste Schritte: Franks Abnahme der Design-Ergebnisse → Phase C (Atelier-Slice, mit
+dem Blatt als Sprache; Generator als `score`-Renderer in packages/projections) →
+Phase D (Fable→Atlas-Encounter + Konstellation + Transduktion).
 
 ## Was existiert (alles lokal, NICHTS deployt, kein GitHub-Repo angelegt)
 
