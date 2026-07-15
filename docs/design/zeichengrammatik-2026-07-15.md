@@ -105,3 +105,27 @@ Dichte der Randnotate. Varianten in `docs/design/variants-2026-07-15/`:
 **ADR-0010-Grenze:** Diese Grammatik gilt für The Middle (App + Site-Eingang
 gleichzeitig). Das Atelier bekommt ausdrücklich eine EIGENE Bildsprache —
 eigener Entwurf, eigene Session-Etappe, nicht dieses Dokument.
+
+## 7. Zeit-Skalierung (Franks Frage 2026-07-15: „funktioniert das über Monate/Jahre?")
+
+Die Grammatik skaliert; die Projektion braucht dafür vier deklarierte Regeln
+(Nachweis: `variants-2026-07-15/specimen-19-monate.html` — 19 Monate, 82 Wochen-Bins,
+5 Begegnungen, ausdrücklich SYNTHETISCH beschriftet, Generator `specimen_viz.py`):
+
+1. **Bin-Regel (deterministisch aus der Datenspanne):** ≤ ~13 Wochen → Tages-Bins;
+   ≤ ~104 Wochen → ISO-Wochen-Bins; darüber → Monats-Bins. Das Lineal benennt die
+   aktive Regel auf der Karte selbst („one column per week · bin rule: …").
+   Leinwandbreite bleibt konstant — Wachstum ändert Dichte und Bin-Größe, nie die Breite.
+2. **Marken-Clustering pro (Bahn, Bin):** bis 3 Marken → Fächer; mehr → Knoten mit
+   „×n". Die Karte komprimiert, **die Registertabelle darunter nie** — sie führt
+   weiterhin jede einzelne Marke (der A11y-/Vollständigkeitsvertrag).
+3. **Begegnungen in groben Bins = Kreuzungsknoten** (Transferbogen + Gegenstrom +
+   Status-Ring: offen = unresolved). Das Detail wohnt eine Ebene tiefer: Klick auf den
+   Knoten öffnet die Partitur des Vorgangs — Status- und Historien-Karte sind dieselbe
+   Grammatik auf zwei Zeitskalen und verlinken einander.
+4. **Lücken sind Inhalt:** stille Strecken bleiben sichtbar (optional beschriftet),
+   werden nie weggestaucht. Nichtlineare „Teleskop"-Skalen (Gegenwart fein,
+   Tiefe grob) nur als EIGENE, deklarierte Lens-Variante mit sichtbaren Skalenbrüchen
+   im Lineal — niemals still. Für Installationen (ZKM-Leinwand) ist das lange Band
+   mit festem Schritt und horizontalem Lauf — die 24-Meter-Geste — eine eigene Lens,
+   kein Default.
