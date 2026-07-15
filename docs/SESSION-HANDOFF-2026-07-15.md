@@ -26,7 +26,8 @@ Brief: clean-wissenschaftlich × kreativ, leicht futuristisches Dashboard, kein
 Spektakel, Terminal-/ZKM-tauglich, Kunstwerk statt Archiv; keine externen Referenzen
 (sein Atlas: investigation 114:11 vs spectacle). Ergebnisse in docs/design/:
 `zeichengrammatik-2026-07-15.md` (Partitur-Grammatik + §7 Zeit-Skalierung),
-`atelier-aesthetik-2026-07-15.md` (das Blatt, eigene Sprache per ADR 0010),
+`atelier-aesthetik-2026-07-15.md` (das Blatt), `field-aesthetik-2026-07-15.md`
+(Messprotokoll/Schreiberstreifen) — drei eigene Sprachen per ADR-0010-Logik,
 `variants-2026-07-15/` (A/B/C-Varianten, Historie, Skalierungs-Specimen synthetisch,
 Atelier-Blatt; Generator-Skizzen als .py daneben; Paletten validator-geprüft).
 **Frank hat Richtung A (Observatorium) gewählt** + Light/Dark/Auto-Pflicht

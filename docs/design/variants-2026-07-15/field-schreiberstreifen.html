@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-theme-mode="auto"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Field — the strip · 2026-07-01 → 2026-07-14</title>
+
+<script>
+// Site convention (frankbueltge.de Base.astro): localStorage 'theme' = explicit override
+// ('light'|'dark'), absent = auto (follow OS). <html> ALWAYS carries the resolved
+// data-theme and the data-theme-mode (auto/light/dark) for the toggle icon.
+(function(){
+  var root = document.documentElement;
+  function readMode(){ try { return localStorage.getItem('theme') || 'auto' } catch(e){ return 'auto' } }
+  function resolve(m){ return m === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : m }
+  function apply(m){ root.setAttribute('data-theme', resolve(m)); root.setAttribute('data-theme-mode', m); }
+  apply(readMode());
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(){
+    if (readMode() === 'auto') apply('auto');
+  });
+  window.__cycleTheme = function(){
+    var order = ['auto','light','dark'];
+    var next = order[(order.indexOf(readMode()) + 1) % order.length];
+    try { next === 'auto' ? localStorage.removeItem('theme') : localStorage.setItem('theme', next) } catch(e){}
+    apply(next);
+  };
+})();
+</script><style>
+:root{--font-ui:Futura,"Century Gothic","Avenir Next",system-ui,sans-serif;
+--font-display:var(--font-ui);--font-record:ui-monospace,"SF Mono",Menlo,monospace;
+--h1-track:.05em;--h1-weight:500}
+:root[data-theme="light"]{--page:#e8ecea;--surface:#f5f7f6;--ink:#1c211f;--ink-2:#5d6a64;
+--hairline:#d3ddd7;--grid:#dbe4de;--grid-major:#c8d5cd;--c-stamp:#6a3fb5;--c-caveat:#9a6a08;
+--badge-bg:#e9eeeb;--tip-bg:#ffffff;--tip-ink:#1c211f;--h1-ink:#141816}
+:root[data-theme="dark"]{--page:#0c0f12;--surface:#12161a;--ink:#dde4e0;--ink-2:#8c9992;
+--hairline:#28323a;--grid:#1d2530;--grid-major:#28323e;--c-stamp:#7e5fd3;--c-caveat:#b3861d;
+--badge-bg:#1a2026;--tip-bg:#1a2026;--tip-ink:#dde4e0;--h1-ink:#eef2ef}
+.wrap{border:1px solid var(--hairline);position:relative}
+h1{color:var(--h1-ink);text-transform:uppercase}
+.theme-toggle{position:absolute;top:26px;right:34px;width:34px;height:34px;display:flex;
+align-items:center;justify-content:center;background:none;border:1px solid var(--hairline);
+border-radius:6px;color:var(--ink-2);cursor:pointer}
+.theme-toggle:hover{color:var(--ink)} .theme-toggle svg{display:none}
+:root[data-theme-mode="auto"] .theme-toggle .i-auto{display:block}
+:root[data-theme-mode="light"] .theme-toggle .i-sun{display:block}
+:root[data-theme-mode="dark"] .theme-toggle .i-moon{display:block}
+.blattrand{display:flex;gap:1.6em;align-items:baseline;margin:18px 0 4px;padding:7px 0;
+border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+font:12px var(--font-record);letter-spacing:.08em}
+.blattrand a{color:var(--ink-2);text-decoration:none;text-transform:uppercase}
+.blattrand a:hover{color:var(--ink);text-decoration:underline}
+.br-here{color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--c-stamp)}
+.br-door{margin-left:auto;color:var(--ink-2);text-transform:uppercase}
+/* Feld-Zeichen: Papier, Spur, Stempel, Fähnchen, Splice — nichts davon teilt Partitur oder Blatt */
+.gridline{stroke:var(--grid);stroke-width:1}
+.gridmajor{stroke:var(--grid-major);stroke-width:1}
+.trace{stroke:var(--ink);stroke-width:1.8;fill:none;stroke-linejoin:round}
+.instr{fill:var(--ink)}
+.stamp{stroke:var(--c-stamp);fill:none;stroke-width:1.6}
+.stamp-t{font:600 9.5px var(--font-record);fill:var(--c-stamp)}
+.flag{fill:var(--c-caveat)}
+.flag-pole{stroke:var(--c-caveat);stroke-width:1.4}
+.eich{stroke:var(--ink-2);stroke-width:1.6}
+.splice{stroke:var(--ink);stroke-width:1.4}
+.tape{fill:var(--ink-2);opacity:.18}
+.patch{stroke:var(--ink-2);stroke-width:1.2;fill:none;stroke-dasharray:2 2}
+.pen{fill:var(--ink)}
+.obl-f{stroke:var(--c-caveat);stroke-width:.9;opacity:.7;stroke-dasharray:1 4}
+.t-plate{font:600 12px var(--font-record);letter-spacing:.1em;fill:var(--ink)}
+.t-n{font:11.5px var(--font-record);fill:var(--ink-2)}
+.t-anchor{font:600 11px var(--font-record);fill:var(--ink)}
+.t-cav{font:11px var(--font-record);fill:var(--c-caveat)}
+.evt2{cursor:help;outline:none}
+
+*{box-sizing:border-box;margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--font-ui);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1520px;margin:0 auto;padding:34px 40px 60px;background:var(--surface)}
+.kicker{font-family:var(--font-record);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);display:flex;gap:1.4em;flex-wrap:wrap}
+.kicker .chip{border:1px solid var(--hairline);padding:1px 8px;border-radius:2px;color:var(--ink-2)}
+h1{font-family:var(--font-display);font-size:clamp(34px,4.6vw,64px);line-height:1.04;letter-spacing:var(--h1-track);margin:.45em 0 .2em;max-width:22ch;font-weight:var(--h1-weight)}
+.status{font-family:var(--font-record);font-size:14px;color:var(--ink-2)}
+.status b{color:var(--ink);font-weight:600}
+figure{margin:26px 0 8px}
+svg#score{width:100%;height:auto;display:block}
+/* --- grammar strokes (shared; colors via practice classes) --- */
+.pr-meridian{--pr:var(--c-meridian)} .pr-ensemble{--pr:var(--c-ensemble)}
+.pr-conductor{--pr:var(--c-conductor)} .pr-ulysses{--pr:var(--c-ulysses)} .pr-infra{--pr:var(--c-conductor)}
+.lane{stroke:var(--pr);stroke-width:2;opacity:.92}
+.lane-thin{stroke-width:1;stroke-dasharray:1 5;opacity:.75}
+.mk{stroke:var(--pr);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.mk-lt{opacity:.45;stroke-width:1.4}
+.mk-fill{fill:var(--pr)}
+.mk-hatch{fill:url(#hatch);stroke:var(--pr);stroke-width:1.1}
+.hatch-line{stroke:var(--ink-2);stroke-width:1.1}
+.mk-void{stroke:var(--ink-2);stroke-width:1;stroke-dasharray:2 4;opacity:.8}
+.mk-stem{stroke:var(--pr);stroke-width:1.2;opacity:.85}
+.mk-unknown{stroke:var(--ink-2);stroke-dasharray:2 3}
+.flow{fill:none;stroke:var(--pr);stroke-width:1.8}
+.flow-up{stroke-dasharray:6 5}
+.obl{stroke:var(--pr);stroke-width:.9;opacity:.6;stroke-dasharray:1 4}
+.ring{stroke:var(--pr);stroke-width:2.2}
+.gap{stroke:var(--ink-2);stroke-width:1;stroke-dasharray:3 5}
+.asof{stroke:var(--ink-2);stroke-width:1.4}
+.ruler{stroke:var(--ink-2);stroke-width:1;opacity:.9}
+.grat{stroke:var(--hairline);stroke-width:1}
+.marker-stroke{stroke:var(--ink-2);stroke-width:1.6}
+.badge{fill:var(--badge-bg);stroke:var(--hairline)} .badge-n{font:600 10.5px var(--font-record);fill:var(--ink)}
+text{fill:var(--ink)}
+.t-lane{font:600 13px var(--font-record);letter-spacing:.12em;fill:var(--ink)}
+.t-note{font:11.5px var(--font-record);fill:var(--ink-2)}
+.t-dim{opacity:.75}
+.t-quote{font:italic 11.5px var(--font-display);fill:var(--ink-2)}
+.evt{cursor:pointer;outline:none}
+.evt:hover .mk,.evt:focus .mk{stroke-width:3}
+.evt:focus .hit{stroke:var(--ink-2);stroke-dasharray:2 3}
+/* legend + table */
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);padding:20px 0;margin:14px 0 26px}
+.legend h3{font:600 11px var(--font-record);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.lg-row{display:flex;gap:10px;align-items:center;margin:5px 0;font:12.5px var(--font-record);color:var(--ink-2)}
+.mini{width:46px;height:30px;flex:none}
+.sw{width:22px;height:8px;background:var(--pr);flex:none;border-radius:1px}
+.lg-note{font:11.5px var(--font-record);color:var(--ink-2);margin-top:12px;max-width:44ch;opacity:.85}
+.record h2{font:600 13px var(--font-record);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:8px 0 10px}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:12.5px var(--font-record)}
+th{text-align:left;font-weight:600;color:var(--ink-2);letter-spacing:.06em}
+th,td{border-top:1px solid var(--hairline);padding:7px 14px 7px 0;vertical-align:top}
+td.mono{white-space:nowrap;color:var(--ink-2)} td.q{font-style:italic;max-width:52ch}
+footer{margin-top:26px;font:11.5px var(--font-record);color:var(--ink-2);display:flex;justify-content:space-between;gap:2em;flex-wrap:wrap}
+#tip{position:absolute;max-width:360px;background:var(--tip-bg);color:var(--tip-ink);border:1px solid var(--hairline);padding:10px 12px;font:12.5px var(--font-record);line-height:1.45;pointer-events:none;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+#tip hr{border:none;border-top:1px solid var(--hairline);margin:6px 0}
+#tip .tid{opacity:.7} #tip i{opacity:.8}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style></head>
+<body>
+<div class="wrap">
+  
+<button class="theme-toggle" data-theme-toggle aria-label="Theme: auto / light / dark" title="Theme: auto / light / dark" onclick="__cycleTheme()">
+  <svg class="i-auto" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg>
+  <svg class="i-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4l1.4-1.4M18 6l1.4-1.4"/></svg>
+  <svg class="i-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 14.2A8.2 8.2 0 1 1 9.8 3.4a6.8 6.8 0 1 0 10.8 10.8z"/></svg>
+</button>
+  <p class="kicker"><span>Field · the history as a recorder tape</span><span>field-research</span>
+  <span>2026-07-01 → 2026-07-14</span><span class="chip">design study — wording pending approval</span></p>
+  <nav class="blattrand" aria-label="Plate rail — the only standing navigation"><a href="#" title="/field — the instrument under verification">this instrument</a><a href="#" title="/field/werke — existing URLs stay">instruments</a><span class="br-here">register</span><a href="#" title="/field/journal — day files, grouped">journal</a><a href="#" title="/field/apparatus — repo, protocol, team channel, nightly runs">apparatus</a><span class="br-door" title="/middle — enc-2026-001">→ the middle</span></nav>
+  <h1>The pen has not lifted.</h1>
+  <p class="status"><b>37 collective sessions · 14 instruments · 13 chronicled moves · 5 calibrations · 1 splice · 1 patch</b> · the recorder runs on wall-clock days; quiet days stay on the tape as a flat line</p>
+  <figure><svg id="score" viewBox="0 190 1440 470" role="img" aria-label="Strip-chart tape 2026-07-01 to 2026-07-14: pen trace of commits per day, instrument marks, chronicled move stamps, one splice, one patch; the full register follows as a table.">
+<path class="gridmajor" d="M250 226 V560"/><path class="gridline" d="M265.2 226 V560"/><path class="gridline" d="M280.4 226 V560"/><path class="gridline" d="M295.59999999999997 226 V560"/><path class="gridline" d="M310.79999999999995 226 V560"/><path class="gridmajor" d="M325.99999999999994 226 V560"/><path class="gridline" d="M341.19999999999993 226 V560"/><path class="gridline" d="M356.3999999999999 226 V560"/><path class="gridline" d="M371.5999999999999 226 V560"/><path class="gridline" d="M386.7999999999999 226 V560"/><path class="gridmajor" d="M401.9999999999999 226 V560"/><path class="gridline" d="M417.1999999999999 226 V560"/><path class="gridline" d="M432.39999999999986 226 V560"/><path class="gridline" d="M447.59999999999985 226 V560"/><path class="gridline" d="M462.79999999999984 226 V560"/><path class="gridmajor" d="M477.99999999999983 226 V560"/><path class="gridline" d="M493.1999999999998 226 V560"/><path class="gridline" d="M508.3999999999998 226 V560"/><path class="gridline" d="M523.5999999999998 226 V560"/><path class="gridline" d="M538.7999999999998 226 V560"/><path class="gridmajor" d="M553.9999999999999 226 V560"/><path class="gridline" d="M569.1999999999999 226 V560"/><path class="gridline" d="M584.4 226 V560"/><path class="gridline" d="M599.6 226 V560"/><path class="gridline" d="M614.8000000000001 226 V560"/><path class="gridmajor" d="M630.0000000000001 226 V560"/><path class="gridline" d="M645.2000000000002 226 V560"/><path class="gridline" d="M660.4000000000002 226 V560"/><path class="gridline" d="M675.6000000000003 226 V560"/><path class="gridline" d="M690.8000000000003 226 V560"/><path class="gridmajor" d="M706.0000000000003 226 V560"/><path class="gridline" d="M721.2000000000004 226 V560"/><path class="gridline" d="M736.4000000000004 226 V560"/><path class="gridline" d="M751.6000000000005 226 V560"/><path class="gridline" d="M766.8000000000005 226 V560"/><path class="gridmajor" d="M782.0000000000006 226 V560"/><path class="gridline" d="M797.2000000000006 226 V560"/><path class="gridline" d="M812.4000000000007 226 V560"/><path class="gridline" d="M827.6000000000007 226 V560"/><path class="gridline" d="M842.8000000000008 226 V560"/><path class="gridmajor" d="M858.0000000000008 226 V560"/><path class="gridline" d="M873.2000000000008 226 V560"/><path class="gridline" d="M888.4000000000009 226 V560"/><path class="gridline" d="M903.6000000000009 226 V560"/><path class="gridline" d="M918.800000000001 226 V560"/><path class="gridmajor" d="M934.000000000001 226 V560"/><path class="gridline" d="M949.2000000000011 226 V560"/><path class="gridline" d="M964.4000000000011 226 V560"/><path class="gridline" d="M979.6000000000012 226 V560"/><path class="gridline" d="M994.8000000000012 226 V560"/><path class="gridmajor" d="M1010.0000000000013 226 V560"/><path class="gridline" d="M1025.2000000000012 226 V560"/><path class="gridline" d="M1040.4000000000012 226 V560"/><path class="gridline" d="M1055.6000000000013 226 V560"/><path class="gridline" d="M1070.8000000000013 226 V560"/><path class="gridmajor" d="M1086.0000000000014 226 V560"/><path class="gridline" d="M1101.2000000000014 226 V560"/><path class="gridline" d="M1116.4000000000015 226 V560"/><path class="gridline" d="M1131.6000000000015 226 V560"/><path class="gridline" d="M1146.8000000000015 226 V560"/><path class="gridmajor" d="M1162.0000000000016 226 V560"/><path class="gridline" d="M1177.2000000000016 226 V560"/><path class="gridline" d="M1192.4000000000017 226 V560"/><path class="gridline" d="M1207.6000000000017 226 V560"/><path class="gridline" d="M1222.8000000000018 226 V560"/><path class="gridmajor" d="M1238.0000000000018 226 V560"/><path class="gridline" d="M1253.2000000000019 226 V560"/><path class="gridline" d="M1268.400000000002 226 V560"/><path class="gridline" d="M1283.600000000002 226 V560"/><path class="gridline" d="M1298.800000000002 226 V560"/><path class="gridmajor" d="M1314.000000000002 226 V560"/><path class="gridline" d="M1329.200000000002 226 V560"/><path class="gridline" d="M1344.4000000000021 226 V560"/><path class="gridmajor" d="M250 226 H1352"/><path class="gridline" d="M250 241.2 H1352"/><path class="gridline" d="M250 256.4 H1352"/><path class="gridline" d="M250 271.59999999999997 H1352"/><path class="gridline" d="M250 286.79999999999995 H1352"/><path class="gridmajor" d="M250 301.99999999999994 H1352"/><path class="gridline" d="M250 317.19999999999993 H1352"/><path class="gridline" d="M250 332.3999999999999 H1352"/><path class="gridline" d="M250 347.5999999999999 H1352"/><path class="gridline" d="M250 362.7999999999999 H1352"/><path class="gridmajor" d="M250 377.9999999999999 H1352"/><path class="gridline" d="M250 393.1999999999999 H1352"/><path class="gridline" d="M250 408.39999999999986 H1352"/><path class="gridline" d="M250 423.59999999999985 H1352"/><path class="gridline" d="M250 438.79999999999984 H1352"/><path class="gridmajor" d="M250 453.99999999999983 H1352"/><path class="gridline" d="M250 469.1999999999998 H1352"/><path class="gridline" d="M250 484.3999999999998 H1352"/><path class="gridline" d="M250 499.5999999999998 H1352"/><path class="gridline" d="M250 514.7999999999998 H1352"/><path class="gridmajor" d="M250 529.9999999999999 H1352"/><path class="gridline" d="M250 545.1999999999999 H1352"/>
+<text class="t-n" x="300" y="580" text-anchor="middle">01</text>
+<text class="t-anchor" x="300" y="216" text-anchor="middle">S1</text>
+<text class="t-n" x="376" y="580" text-anchor="middle">02</text>
+<text class="t-n" x="452" y="580" text-anchor="middle">03</text>
+<text class="t-n" x="528" y="580" text-anchor="middle">04</text>
+<text class="t-n" x="604" y="580" text-anchor="middle">05</text>
+<text class="t-n" x="680" y="580" text-anchor="middle">06</text>
+<text class="t-n" x="756" y="580" text-anchor="middle">07</text>
+<text class="t-n" x="832" y="580" text-anchor="middle">08</text>
+<text class="t-n" x="908" y="580" text-anchor="middle">09</text>
+<text class="t-n" x="984" y="580" text-anchor="middle">10</text>
+<text class="t-n" x="1060" y="580" text-anchor="middle">11</text>
+<text class="t-anchor" x="1060" y="216" text-anchor="middle">S24</text>
+<text class="t-n" x="1136" y="580" text-anchor="middle">12</text>
+<text class="t-anchor" x="1136" y="216" text-anchor="middle">S31</text>
+<text class="t-n" x="1212" y="580" text-anchor="middle">13</text>
+<text class="t-n" x="1288" y="580" text-anchor="middle">14</text>
+<text class="t-anchor" x="1288" y="216" text-anchor="middle">S37</text>
+<text class="t-n" x="250" y="580" text-anchor="end">JUL·</text>
+<g class="evt2" tabindex="0"><path class="eich" d="M295 228 V238 M305 228 V238"/><title>2026-07-01 — PROTOCOL.md amended (git): calibration of the constitution</title></g>
+<g class="evt2" tabindex="0"><path class="eich" d="M371 228 V238 M381 228 V238"/><title>2026-07-02 — PROTOCOL.md amended (git): calibration of the constitution</title></g>
+<g class="evt2" tabindex="0"><path class="eich" d="M599 228 V238 M609 228 V238"/><title>2026-07-05 — PROTOCOL.md amended (git): calibration of the constitution</title></g>
+<g class="evt2" tabindex="0"><path class="eich" d="M751 228 V238 M761 228 V238"/><title>2026-07-07 — PROTOCOL.md amended (git): calibration of the constitution</title></g>
+<g class="evt2" tabindex="0"><path class="eich" d="M1055 228 V238 M1065 228 V238"/><title>2026-07-11 — PROTOCOL.md amended (git): calibration of the constitution</title></g>
+<text class="t-n" x="242" y="236" text-anchor="end">‖ calibration · 5×</text>
+<polyline class="trace" points="250,460 300,412.5 376,412.5 452,427.1 528,460.0 604,428.5 680,433.1 756,446.6 832,460.0 908,436.7 984,428.5 1060,409.7 1136,420.8 1212,431.5 1288,441.0 1308,452"/>
+<g class="evt2" tabindex="0"><rect x="290" y="300" width="20" height="176" fill="transparent"/><title>2026-07-01 · 25 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="366" y="300" width="20" height="176" fill="transparent"/><title>2026-07-02 · 25 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="442" y="300" width="20" height="176" fill="transparent"/><title>2026-07-03 · 12 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="518" y="300" width="20" height="176" fill="transparent"/><title>2026-07-04 · 0 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="594" y="300" width="20" height="176" fill="transparent"/><title>2026-07-05 · 11 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="670" y="300" width="20" height="176" fill="transparent"/><title>2026-07-06 · 8 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="746" y="300" width="20" height="176" fill="transparent"/><title>2026-07-07 · 2 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="822" y="300" width="20" height="176" fill="transparent"/><title>2026-07-08 · 0 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="898" y="300" width="20" height="176" fill="transparent"/><title>2026-07-09 · 6 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="974" y="300" width="20" height="176" fill="transparent"/><title>2026-07-10 · 11 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="1050" y="300" width="20" height="176" fill="transparent"/><title>2026-07-11 · 28 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="1126" y="300" width="20" height="176" fill="transparent"/><title>2026-07-12 · 17 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="1202" y="300" width="20" height="176" fill="transparent"/><title>2026-07-13 · 9 commits (git)</title></g>
+<g class="evt2" tabindex="0"><rect x="1278" y="300" width="20" height="176" fill="transparent"/><title>2026-07-14 · 4 commits (git)</title></g>
+<text class="t-n" x="242" y="420" text-anchor="end">pen trace ·</text>
+<text class="t-n" x="242" y="434" text-anchor="end">commits/day √</text>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1060" cy="268" r="9"/><text class="stamp-t" x="1060" y="271.4" text-anchor="middle">V</text><title>S25 — 2026-07-11 — move: verify (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1060" cy="290" r="9"/><text class="stamp-t" x="1060" y="293.4" text-anchor="middle">O</text><title>S26 — 2026-07-11 — move: other (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1060" cy="312" r="9"/><text class="stamp-t" x="1060" y="315.4" text-anchor="middle">C</text><title>S27 — 2026-07-11 — move: consolidation (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1060" cy="334" r="9"/><text class="stamp-t" x="1060" y="337.4" text-anchor="middle">B</text><title>S28 — 2026-07-11 — move: build (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1060" cy="356" r="9"/><text class="stamp-t" x="1060" y="359.4" text-anchor="middle">G</text><title>S29 — 2026-07-11 — move: gauntlet (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1060" cy="378" r="9"/><text class="stamp-t" x="1060" y="381.4" text-anchor="middle">V</text><title>S30 — 2026-07-11 — move: verify (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1136" cy="268" r="9"/><text class="stamp-t" x="1136" y="271.4" text-anchor="middle">C</text><title>S31 — 2026-07-12 — move: consolidation (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1136" cy="290" r="9"/><text class="stamp-t" x="1136" y="293.4" text-anchor="middle">B</text><title>S32 — 2026-07-12 — move: build (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1136" cy="312" r="9"/><text class="stamp-t" x="1136" y="315.4" text-anchor="middle">S</text><title>S33 — 2026-07-12 — move: steer (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1212" cy="268" r="9"/><text class="stamp-t" x="1212" y="271.4" text-anchor="middle">A</text><title>S34 — 2026-07-13 — move: advance (outward) (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1212" cy="290" r="9"/><text class="stamp-t" x="1212" y="293.4" text-anchor="middle">C</text><title>S35 — 2026-07-13 — move: consolidation (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1212" cy="312" r="9"/><text class="stamp-t" x="1212" y="315.4" text-anchor="middle">A</text><title>S36 — 2026-07-13 — move: advance (outward) (chronicle.json, verbatim)</title></g>
+<g class="evt2" tabindex="0"><circle class="stamp" cx="1288" cy="268" r="9"/><text class="stamp-t" x="1288" y="271.4" text-anchor="middle">A</text><title>S37 — 2026-07-14 — move: advance (outward) (chronicle.json, verbatim)</title></g>
+<text class="t-n" x="242" y="276" text-anchor="end">move stamps ·</text>
+<text class="t-n" x="242" y="290" text-anchor="end">chronicle S25–S37</text>
+<path class="instr" d="M282 482 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M294 482 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M306 482 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M318 482 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M282 496 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M294 496 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M306 496 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M318 496 l5 -9 l5 9 Z"><title>2026-07-01 — instrument added (works/, git): 8 this day</title></path>
+<path class="instr" d="M358 482 l5 -9 l5 9 Z"><title>2026-07-02 — instrument added (works/, git): 2 this day</title></path>
+<path class="instr" d="M370 482 l5 -9 l5 9 Z"><title>2026-07-02 — instrument added (works/, git): 2 this day</title></path>
+<path class="instr" d="M586 482 l5 -9 l5 9 Z"><title>2026-07-05 — instrument added (works/, git): 1 this day</title></path>
+<path class="instr" d="M662 482 l5 -9 l5 9 Z"><title>2026-07-06 — instrument added (works/, git): 1 this day</title></path>
+<path class="instr" d="M890 482 l5 -9 l5 9 Z"><title>2026-07-09 — instrument added (works/, git): 1 this day</title></path>
+<path class="instr" d="M1042 482 l5 -9 l5 9 Z"><title>2026-07-11 — instrument added (works/, git): 1 this day</title></path>
+<text class="t-n" x="242" y="494" text-anchor="end">instruments · 14</text>
+<g class="evt2" tabindex="0"><path class="flag-pole" d="M1082 364 V396"/><path class="flag" d="M1082 364 l16 5 l-16 5 Z"/><title>2026-07-11 — contract.published: the standing caveat commitment (session 22) travels · enc-2026-001</title></g>
+<path class="obl-f" d="M1082 396 L1306 396"/>
+<text class="t-cav" x="1302" y="390" text-anchor="end">caveat-preservation — active</text>
+<g class="evt2" tabindex="0"><path class="splice" d="M1158 226 L1174 560 M1168 226 L1184 560"/><rect class="tape" x="1150" y="360" width="42" height="64"/><title>2026-07-12 — git history rewritten (team decision): the tape is cut and respliced; commit pointers dangle, content hashes hold (ADR 0009; rewrite map in-repo)</title></g>
+<text class="t-n" x="1168" y="602" text-anchor="middle">splice · 07-12</text>
+<g class="evt2" tabindex="0"><rect class="patch" x="314" y="320" width="26" height="20"/><title>2026-07-01 — a Session-08 journal entry was lost to a parallel git recovery and restored VERBATIM in place (archival note in journal/2026-07-01.md)</title></g>
+<text class="t-n" x="326" y="312" text-anchor="middle">patch</text>
+<path class="pen" d="M1308 452 l22 -7 l-4 12 Z"/>
+<text class="t-n" x="1344" y="484" text-anchor="end">the pen has not lifted —</text>
+<text class="t-n" x="1344" y="498" text-anchor="end">the tape runs on</text>
+</svg></figure>
+  <section class="record"><h2>Tape register — every mark on this strip, uncompressed</h2>
+<div class="tbl-wrap"><table><thead><tr><th>session</th><th>date</th><th>mark</th><th>source</th></tr></thead><tbody><tr><td>S25</td><td class="mono">2026-07-11</td><td>move · verify</td><td class="mono">chronicle.json</td></tr><tr><td>S26</td><td class="mono">2026-07-11</td><td>move · other</td><td class="mono">chronicle.json</td></tr><tr><td>S27</td><td class="mono">2026-07-11</td><td>move · consolidation</td><td class="mono">chronicle.json</td></tr><tr><td>S28</td><td class="mono">2026-07-11</td><td>move · build</td><td class="mono">chronicle.json</td></tr><tr><td>S29</td><td class="mono">2026-07-11</td><td>move · gauntlet</td><td class="mono">chronicle.json</td></tr><tr><td>S30</td><td class="mono">2026-07-11</td><td>move · verify</td><td class="mono">chronicle.json</td></tr><tr><td>S31</td><td class="mono">2026-07-12</td><td>move · consolidation</td><td class="mono">chronicle.json</td></tr><tr><td>S32</td><td class="mono">2026-07-12</td><td>move · build</td><td class="mono">chronicle.json</td></tr><tr><td>S33</td><td class="mono">2026-07-12</td><td>move · steer</td><td class="mono">chronicle.json</td></tr><tr><td>S34</td><td class="mono">2026-07-13</td><td>move · advance (outward)</td><td class="mono">chronicle.json</td></tr><tr><td>S35</td><td class="mono">2026-07-13</td><td>move · consolidation</td><td class="mono">chronicle.json</td></tr><tr><td>S36</td><td class="mono">2026-07-13</td><td>move · advance (outward)</td><td class="mono">chronicle.json</td></tr><tr><td>S37</td><td class="mono">2026-07-14</td><td>move · advance (outward)</td><td class="mono">chronicle.json</td></tr><tr><td>—</td><td class="mono">2026-07-01</td><td>constitution calibrated (PROTOCOL.md)</td><td class="mono">git</td></tr><tr><td>—</td><td class="mono">2026-07-02</td><td>constitution calibrated (PROTOCOL.md)</td><td class="mono">git</td></tr><tr><td>—</td><td class="mono">2026-07-05</td><td>constitution calibrated (PROTOCOL.md)</td><td class="mono">git</td></tr><tr><td>—</td><td class="mono">2026-07-07</td><td>constitution calibrated (PROTOCOL.md)</td><td class="mono">git</td></tr><tr><td>—</td><td class="mono">2026-07-11</td><td>constitution calibrated (PROTOCOL.md)</td><td class="mono">git</td></tr><tr><td>—</td><td class="mono">2026-07-01</td><td>8 instrument(s) added</td><td class="mono">works/ git add-dates</td></tr><tr><td>—</td><td class="mono">2026-07-02</td><td>2 instrument(s) added</td><td class="mono">works/ git add-dates</td></tr><tr><td>—</td><td class="mono">2026-07-05</td><td>1 instrument(s) added</td><td class="mono">works/ git add-dates</td></tr><tr><td>—</td><td class="mono">2026-07-06</td><td>1 instrument(s) added</td><td class="mono">works/ git add-dates</td></tr><tr><td>—</td><td class="mono">2026-07-09</td><td>1 instrument(s) added</td><td class="mono">works/ git add-dates</td></tr><tr><td>—</td><td class="mono">2026-07-11</td><td>1 instrument(s) added</td><td class="mono">works/ git add-dates</td></tr><tr><td>S22</td><td class="mono">2026-07-11</td><td>contract.published — standing caveat commitment travels</td><td class="mono">enc-2026-001 ledger</td></tr><tr><td>S33</td><td class="mono">2026-07-12</td><td>correction.applied — register revised (steer)</td><td class="mono">enc-2026-001 ledger · chronicle</td></tr><tr><td>—</td><td class="mono">2026-07-12</td><td>splice: git history rewritten, pointers dangle, hashes hold</td><td class="mono">ADR 0009 · in-repo rewrite map</td></tr><tr><td>S08</td><td class="mono">2026-07-01</td><td>patch: journal entry lost, restored verbatim in place</td><td class="mono">journal/2026-07-01.md</td></tr></tbody></table></div></section>
+  <footer>
+    <span>compiled read-only from field-research @ 32e2db5 · chronicle.json · journal/ day files · works/ git add-dates · PROTOCOL.md git dates · enc-2026-001 fixture · read-only · research-ecology @15767e0</span>
+    <span>scale rule (grammar §7, field flavour): the tape never compresses — it rolls; older stretches wind onto the spool (paged strips)</span>
+  </footer>
+</div>
+</body></html>
