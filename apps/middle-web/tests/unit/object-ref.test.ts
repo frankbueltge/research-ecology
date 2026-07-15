@@ -20,8 +20,7 @@ describe("parseObjectRefId", () => {
 });
 
 describe("objectHref", () => {
-  it("builds a locale-prefixed /objects/[collective]/[localId] link", () => {
-    expect(objectHref("ensemble:native-speaker@f6a9d8f", "")).toBe("/objects/ensemble/native-speaker");
-    expect(objectHref("ensemble:native-speaker@f6a9d8f", "/de")).toBe("/de/objects/ensemble/native-speaker");
+  it("builds a /objects/[collective]/[localId] link (EN-only, 2026-07-15: no more locale prefix)", () => {
+    expect(objectHref("ensemble:native-speaker@f6a9d8f")).toBe("/objects/ensemble/native-speaker");
   });
 });

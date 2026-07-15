@@ -10,7 +10,6 @@
 
   const { data }: { data: PageData } = $props();
   const dict = $derived(dictionary[data.locale]);
-  const prefix = $derived(data.locale === "de" ? "/de" : "");
 
   const panelA = $derived(data.panels[0]!);
   const panelB = $derived(data.panels[1]!);
@@ -68,7 +67,7 @@
         {/if}
         {#if data.divergence.meridian.assertionId}
           <p class="divergence-position__link">
-            <a href={`${prefix}/assertions/${data.divergence.meridian.assertionId}`}>view authored assertion →</a>
+            <a href={`/assertions/${data.divergence.meridian.assertionId}`}>view authored assertion →</a>
           </p>
         {/if}
       </section>
@@ -85,7 +84,7 @@
         </div>
         {#if data.divergence.ensemble.assertionId}
           <p class="divergence-position__link">
-            <a href={`${prefix}/assertions/${data.divergence.ensemble.assertionId}`}>view authored assertion →</a>
+            <a href={`/assertions/${data.divergence.ensemble.assertionId}`}>view authored assertion →</a>
           </p>
         {/if}
       </section>
@@ -114,7 +113,7 @@
         <section class="compare-panel compare-panel--a">
           <h2>Ensemble — object-transformation</h2>
           <LensManifestPanel {...manifestPanelProps(panelA.manifest)} openByDefault={false} labels={dict.map} toggleHint={dict.common.lensManifestToggleHint} />
-          <ObjectTransformation payload={panelA.map.projection as unknown as ObjectTransformationPayload} {dict} locale={data.locale} />
+          <ObjectTransformation payload={panelA.map.projection as unknown as ObjectTransformationPayload} {dict} />
         </section>
 
         <section class="compare-panel compare-panel--b">
@@ -124,7 +123,6 @@
             payload={panelB.map.projection as unknown as ParallelPositionsPayload}
             actorNames={data.actorNames}
             dict={dict}
-            locale={data.locale}
             unrenderedAssertions={panelB.unrenderedAssertions}
           />
         </section>

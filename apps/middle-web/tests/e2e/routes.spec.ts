@@ -7,7 +7,8 @@ test.describe("route inventory", () => {
       const response = await page.goto(route);
       expect(response?.status()).toBe(200);
       const lang = await page.getAttribute("html", "lang");
-      expect(lang).toBe(route.startsWith("/de") ? "de" : "en");
+      // EN-only (2026-07-15: the ecology stack dropped German — every route is "en" now).
+      expect(lang).toBe("en");
       // SSR-first (work order §0): the record content is already in the markup before any
       // client script runs — check via the raw response body, not the (possibly hydrated) DOM.
       const body = await response!.text();
@@ -24,10 +25,9 @@ test.describe("route inventory", () => {
     await expect(page).toHaveURL(/\/$/);
   });
 
-  test("/de renders the German poster directly, no redirect", async ({ page }) => {
-    const response = await page.goto("/de", { waitUntil: "commit" });
-    expect(response?.request().redirectedFrom()).toBeFalsy();
-    await expect(page).toHaveURL(/\/de$/);
+  test("/de 404s (EN-only, 2026-07-15: the ecology stack dropped German — no more /de mirror)", async ({ page }) => {
+    const response = await page.goto("/de");
+    expect(response?.status()).toBe(404);
   });
 
   test("unknown encounter id → 404", async ({ page }) => {

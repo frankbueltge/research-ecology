@@ -12,7 +12,6 @@
 
   const { data }: { data: PageData } = $props();
   const dict = $derived(dictionary[data.locale]);
-  const prefix = $derived(data.locale === "de" ? "/de" : "");
 
   const { encounter, participants, nonParticipants, objects, obligations } = $derived(data.bundle);
 
@@ -121,7 +120,7 @@
   <ul class="record-list objects-grid">
     {#each objects as object (object.id)}
       <li class="objects-grid__item">
-        <a class="mono" href={objectHref(object.id, prefix)}>{object.title_cache ?? object.local_object_id}</a>
+        <a class="mono" href={objectHref(object.id)}>{object.title_cache ?? object.local_object_id}</a>
         <p class="objects-grid__type">{object.local_object_type}</p>
       </li>
     {/each}
@@ -142,7 +141,7 @@
   <p class="lede">{dict.encounter.mapsIntro}</p>
   {#each data.lensManifests as manifest (manifest.lensId)}
     <div class="map-link">
-      <h3><a href={`${prefix}/encounters/${encounter.encounter_id}/maps/${manifest.lensId}@${manifest.version}`}>{manifest.name}</a></h3>
+      <h3><a href={`/encounters/${encounter.encounter_id}/maps/${manifest.lensId}@${manifest.version}`}>{manifest.name}</a></h3>
       <LensManifestPanel
         lensName={manifest.name}
         authorLabel={manifest.authorLabel}

@@ -2,17 +2,15 @@
   import type { ObjectTransformationPayload, TransformationBandEntry } from "@research-ecology/projections";
   import ObligationClause from "$lib/ui/ObligationClause.svelte";
   import RuptureBlock from "./RuptureBlock.svelte";
-  import type { Dictionary, Locale } from "$lib/i18n";
+  import type { Dictionary } from "$lib/i18n";
   import { objectHref } from "$lib/object-ref.js";
 
   interface Props {
     payload: ObjectTransformationPayload;
     dict: Dictionary;
-    locale: Locale;
   }
 
-  const { payload, dict, locale }: Props = $props();
-  const prefix = $derived(locale === "de" ? "/de" : "");
+  const { payload, dict }: Props = $props();
 
   const bandsByCategory = $derived.by(() => {
     const groups: Record<TransformationBandEntry["category"], TransformationBandEntry[]> = {
@@ -40,7 +38,7 @@
     <h3>Source</h3>
     {#each payload.source_column as obj (obj.id)}
       <div class="transformation__object">
-        <a class="mono" href={objectHref(obj.id, prefix)}>{obj.id}</a>
+        <a class="mono" href={objectHref(obj.id)}>{obj.id}</a>
         <p class="transformation__object-type">{obj.local_object_type}</p>
         {#if obj.local_epistemic_status}<p class="transformation__status mono">{obj.local_epistemic_status}</p>{/if}
       </div>
@@ -60,7 +58,7 @@
                 lead={dict.map.ruptureLead}
                 localType={entry.label}
                 reason={`no registered renderer form for predicate "${entry.label}"`}
-                inspectHref={entry.assertion_id ? `${prefix}/assertions/${entry.assertion_id}` : undefined}
+                inspectHref={entry.assertion_id ? `/assertions/${entry.assertion_id}` : undefined}
                 inspectLabel="inspect raw assertion"
               />
             {:else if entry.is_negative_band}
@@ -68,7 +66,7 @@
                 <p class="transformation__label">{entry.label}</p>
                 {#if entry.rationale}<p class="transformation__rationale">“{entry.rationale}”</p>{/if}
                 {#if entry.assertion_id}
-                  <p class="transformation__link"><a href={`${prefix}/assertions/${entry.assertion_id}`}>view authored assertion →</a></p>
+                  <p class="transformation__link"><a href={`/assertions/${entry.assertion_id}`}>view authored assertion →</a></p>
                 {/if}
               </div>
             {:else}
@@ -77,7 +75,7 @@
                 {#if entry.rationale}<p class="transformation__rationale">{entry.rationale}</p>{/if}
                 {#if entry.local_epistemic_status}<p class="transformation__tier mono">{entry.local_epistemic_status}</p>{/if}
                 {#if entry.assertion_id}
-                  <p class="transformation__link"><a href={`${prefix}/assertions/${entry.assertion_id}`}>view authored assertion →</a></p>
+                  <p class="transformation__link"><a href={`/assertions/${entry.assertion_id}`}>view authored assertion →</a></p>
                 {/if}
               </div>
             {/if}
@@ -91,7 +89,7 @@
     <h3>Derivative</h3>
     {#each payload.derivative_column as obj (obj.id)}
       <div class="transformation__object">
-        <a class="mono" href={objectHref(obj.id, prefix)}>{obj.id}</a>
+        <a class="mono" href={objectHref(obj.id)}>{obj.id}</a>
         <p class="transformation__object-type">{obj.local_object_type}</p>
         {#if obj.local_epistemic_status}<p class="transformation__status mono">{obj.local_epistemic_status}</p>{/if}
       </div>

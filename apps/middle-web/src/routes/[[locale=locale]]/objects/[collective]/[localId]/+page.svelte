@@ -62,7 +62,6 @@
         {assertion}
         authorName={data.authorNames[assertion.assertion_id] ?? assertion.author.actor_id}
         dict={dict}
-        locale={data.locale}
         encounterId={assertion.encounter_id}
       />
     {/each}

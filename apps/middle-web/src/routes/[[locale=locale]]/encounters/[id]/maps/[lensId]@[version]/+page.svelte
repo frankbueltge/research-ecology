@@ -46,13 +46,12 @@
     {#if data.lens.renderer === "provenance-chain"}
       <ProvenanceChain payload={data.map.projection as unknown as ProvenanceChainPayload} actorNames={data.actorNames} {dict} />
     {:else if data.lens.renderer === "object-transformation"}
-      <ObjectTransformation payload={data.map.projection as unknown as ObjectTransformationPayload} {dict} locale={data.locale} />
+      <ObjectTransformation payload={data.map.projection as unknown as ObjectTransformationPayload} {dict} />
     {:else if data.lens.renderer === "parallel-positions"}
       <ParallelPositions
         payload={data.map.projection as unknown as ParallelPositionsPayload}
         actorNames={data.actorNames}
         {dict}
-        locale={data.locale}
         unrenderedAssertions={data.unrenderedAssertions}
       />
     {:else}

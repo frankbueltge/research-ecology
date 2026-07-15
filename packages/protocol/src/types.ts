@@ -216,13 +216,11 @@ export interface TransferOfferPayload {
 /** site-entrance.schema.json — additive, work order phase-3e-plumbing.md §1: the compact
  * dataset apps/export-site writes into a target site's src/data/begegnungen/entrance.json.
  * Not one of the original eight Phase-1 schemas; kept in this same hand-written-types file
- * for consistency, added without touching anything above. */
-export interface LocalizedText {
-  de: string;
-  en: string;
-  [key: string]: unknown;
-}
-
+ * for consistency, added without touching anything above.
+ *
+ * EN-only (Frank, 2026-07-15: the ecology stack dropped German — recurring per-nightly-run
+ * translation duty is not sustainable). Every field that used to be a `LocalizedText`
+ * (`{ de, en }`) is now a plain string; the former `LocalizedText` type is deleted. */
 export interface SiteEntranceParticipant {
   actor_id: string;
   collective_id?: string | null;
@@ -233,9 +231,9 @@ export interface SiteEntranceParticipant {
 
 export interface SiteEntranceStation {
   id: string;
-  heading: LocalizedText;
+  heading: string;
   quote?: string;
-  attribution?: LocalizedText;
+  attribution?: string;
   akte_event_id?: string;
   akte_event_type?: string;
   divergence?: Record<string, unknown>;
@@ -245,10 +243,10 @@ export interface SiteEntranceStation {
 export interface SiteEntrance {
   encounter_id: string;
   title: string;
-  headline: LocalizedText;
+  headline: string;
   status: {
     as_of: string;
-    statusLine: LocalizedText;
+    statusLine: string;
     [key: string]: unknown;
   };
   participants: SiteEntranceParticipant[];

@@ -2,8 +2,9 @@ import type { Handle } from "@sveltejs/kit";
 
 /**
  * Server hooks (work order §0 "Security headers"):
- *  - locale from the matched `[[locale=locale]]` route param (src/params/locale.ts) — no i18n
- *    framework, just a URL-prefix convention resolved once here via `event.params.locale`.
+ *  - locale is always "en" (the ecology stack dropped German, 2026-07-15 — `src/params/
+ *    locale.ts`'s matcher never matches "de" any more, so `event.params.locale` is always
+ *    undefined; this line stays only so `event.locals.locale` keeps its declared `Locale` type).
  *  - theme from a persisted cookie, applied server-side so there is no flash (design §5):
  *    the `<html data-theme="...">` attribute is set before the first byte reaches the client,
  *    never decided by a client script racing the paint.
@@ -12,7 +13,7 @@ import type { Handle } from "@sveltejs/kit";
  *    X-Content-Type-Options and a strict Referrer-Policy on every response.
  */
 export const handle: Handle = async ({ event, resolve }) => {
-  event.locals.locale = event.params.locale === "de" ? "de" : "en";
+  event.locals.locale = "en";
 
   const themeCookie = event.cookies.get("the-middle-theme");
   event.locals.theme = themeCookie === "dark" || themeCookie === "light" ? themeCookie : undefined;

@@ -14,9 +14,10 @@ test.describe("accessibility (axe-core, no serious/critical violations)", () => 
 });
 
 /** Work order phase-3d §4 "Blatt: axe light+dark" — explicit both-colour-scheme coverage for the
- * poster specifically (the generic loop above only exercises the default scheme). */
+ * poster specifically (the generic loop above only exercises the default scheme). EN-only
+ * (2026-07-15: the ecology stack dropped German — there is no more `/de` poster to check). */
 test.describe("accessibility: poster, light + dark", () => {
-  for (const route of ["/", "/de"]) {
+  for (const route of ["/"]) {
     for (const scheme of ["light", "dark"] as const) {
       test(`axe: ${route} (${scheme})`, async ({ page }) => {
         await page.emulateMedia({ colorScheme: scheme });

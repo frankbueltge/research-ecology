@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { StoredAssertion } from "@research-ecology/domain";
   import AuthoredStroke from "$lib/ui/AuthoredStroke.svelte";
-  import type { Dictionary, Locale } from "$lib/i18n";
+  import type { Dictionary } from "$lib/i18n";
   import { objectHref } from "$lib/object-ref.js";
 
   /** `text-montage` (design §4: assertion detail) — the authored claim, its evidence and its
@@ -11,12 +11,10 @@
     authorName: string;
     authorRoleLabel?: string;
     dict: Dictionary;
-    locale: Locale;
     encounterId?: string;
   }
 
-  const { assertion, authorName, authorRoleLabel, dict, locale, encounterId }: Props = $props();
-  const prefix = $derived(locale === "de" ? "/de" : "");
+  const { assertion, authorName, authorRoleLabel, dict, encounterId }: Props = $props();
 
   interface RefField {
     refId: string;
@@ -49,7 +47,7 @@
     <dt>{dict.assertion.subjectLabel}</dt>
     <dd class="mono">
       {#if subjectRef}
-        <a href={objectHref(subjectRef.refId, prefix)}>{subjectRef.refId}</a>{#if subjectRef.fieldPath} ({subjectRef.fieldPath}){/if}
+        <a href={objectHref(subjectRef.refId)}>{subjectRef.refId}</a>{#if subjectRef.fieldPath} ({subjectRef.fieldPath}){/if}
       {:else}
         {describePlain(assertion.subject)}
       {/if}
@@ -61,7 +59,7 @@
     <dt>{dict.assertion.objectLabel}</dt>
     <dd>
       {#if objectRef}
-        <a class="mono" href={objectHref(objectRef.refId, prefix)}>{objectRef.refId}</a>{#if objectRef.fieldPath} ({objectRef.fieldPath}){/if}
+        <a class="mono" href={objectHref(objectRef.refId)}>{objectRef.refId}</a>{#if objectRef.fieldPath} ({objectRef.fieldPath}){/if}
       {:else}
         {describePlain(assertion.object)}
       {/if}
@@ -88,7 +86,7 @@
         <li>
           {#if typeof item.event_id === "string"}
             {#if encounterId}
-              <a class="mono" href={`${prefix}/encounters/${encounterId}#event-${item.event_id}`}>{item.event_id}</a>
+              <a class="mono" href={`/encounters/${encounterId}#event-${item.event_id}`}>{item.event_id}</a>
             {:else}
               <span class="mono">{item.event_id}</span>
             {/if}

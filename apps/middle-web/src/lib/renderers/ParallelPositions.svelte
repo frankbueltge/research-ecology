@@ -3,20 +3,18 @@
   import CorrectionOverlay from "$lib/ui/CorrectionOverlay.svelte";
   import ObligationMatrix from "./ObligationMatrix.svelte";
   import RuptureBlock from "./RuptureBlock.svelte";
-  import type { Dictionary, Locale } from "$lib/i18n";
+  import type { Dictionary } from "$lib/i18n";
 
   interface Props {
     payload: ParallelPositionsPayload;
     actorNames: Record<string, string>;
     dict: Dictionary;
-    locale: Locale;
     /** Unrendered predicates the projection engine reported for this map (render_failures),
      * already filtered to this renderer by the caller. */
     unrenderedAssertions: Array<{ assertion_id: string; predicate: string; reason: string }>;
   }
 
-  const { payload, actorNames, dict, locale, unrenderedAssertions }: Props = $props();
-  const prefix = $derived(locale === "de" ? "/de" : "");
+  const { payload, actorNames, dict, unrenderedAssertions }: Props = $props();
 
   const baselineRow = $derived(payload.register_rows.find((r) => r.state === "baseline"));
   const correctedRow = $derived(payload.register_rows.find((r) => r.state === "corrected"));
@@ -64,7 +62,7 @@
     <h3>Current framing</h3>
     <p class="parallel__framing-value">{payload.current_framing.value}</p>
     {#if payload.current_framing.rationale}<p class="parallel__framing-rationale">{payload.current_framing.rationale}</p>{/if}
-    <p class="parallel__framing-link"><a href={`${prefix}/assertions/${payload.current_framing.assertion_id}`}>view authored assertion →</a></p>
+    <p class="parallel__framing-link"><a href={`/assertions/${payload.current_framing.assertion_id}`}>view authored assertion →</a></p>
   </section>
 {/if}
 
@@ -74,7 +72,7 @@
     lead={dict.map.ruptureLead}
     localType={failure.predicate}
     reason={failure.reason}
-    inspectHref={`${prefix}/assertions/${failure.assertion_id}`}
+    inspectHref={`/assertions/${failure.assertion_id}`}
     inspectLabel="inspect raw assertion"
   />
 {/each}

@@ -10,9 +10,7 @@
 
   const displayDate = $derived(
     data.lastEventDate
-      ? new Intl.DateTimeFormat(locale === "de" ? "de-DE" : "en-GB", { dateStyle: "medium" }).format(
-          new Date(`${data.lastEventDate}T00:00:00Z`)
-        )
+      ? new Intl.DateTimeFormat("en-GB", { dateStyle: "medium" }).format(new Date(`${data.lastEventDate}T00:00:00Z`))
       : ""
   );
 </script>
@@ -34,7 +32,7 @@
     </span>
   </div>
 
-  <h1 id="entrance-headline" class="entrance__headline">{data.narrative.headline?.[locale] ?? dict.poster.headline}</h1>
+  <h1 id="entrance-headline" class="entrance__headline">{data.narrative.headline ?? dict.poster.headline}</h1>
 
   <EncounterTableau narrative={data.narrative} {locale} {dict} encounterId={data.encounterId} />
 

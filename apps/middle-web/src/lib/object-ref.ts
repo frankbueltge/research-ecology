@@ -19,7 +19,7 @@ export function parseObjectRefId(id: string): ParsedObjectRef {
   };
 }
 
-export function objectHref(id: string, localePrefix: ""|"/de"): string {
+export function objectHref(id: string): string {
   const { collectiveId, localObjectId } = parseObjectRefId(id);
-  return `${localePrefix}/objects/${collectiveId}/${localObjectId}`;
+  return `/objects/${collectiveId}/${localObjectId}`;
 }

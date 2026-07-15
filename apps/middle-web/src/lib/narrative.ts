@@ -11,11 +11,6 @@
  * concern); it only guarantees every field the UI needs is present and non-empty.
  */
 
-export interface LocalizedText {
-  de: string;
-  en: string;
-}
-
 export interface NarrativeAkteLink {
   eventId: string;
   eventType: string;
@@ -23,23 +18,23 @@ export interface NarrativeAkteLink {
 
 export interface NarrativeQuoteBeat {
   id: string;
-  heading: LocalizedText;
+  heading: string;
   quote: string;
-  attribution: LocalizedText;
+  attribution: string;
   akte: NarrativeAkteLink;
 }
 
 export interface NarrativeDivergenceMiniature {
-  leftLabel: LocalizedText;
+  leftLabel: string;
   leftQuote: string;
-  rightLabel: LocalizedText;
+  rightLabel: string;
   rightQuote: string;
-  closing: LocalizedText;
+  closing: string;
 }
 
 export interface NarrativeDivergenceBeat {
   id: string;
-  heading: LocalizedText;
+  heading: string;
   divergence: NarrativeDivergenceMiniature;
 }
 
@@ -47,9 +42,10 @@ export type NarrativeBeat = NarrativeQuoteBeat | NarrativeDivergenceBeat;
 
 export interface Narrative {
   encounter_id: string;
-  /** The editorial one-sentence entrance headline (DE/EN) — single source for app AND
-   * site export; the app dictionary's poster.headline is only the fallback. */
-  headline?: { de: string; en: string };
+  /** The editorial one-sentence entrance headline — single source for app AND site export;
+   * the app dictionary's poster.headline is only the fallback. English-only (2026-07-15: the
+   * ecology stack dropped German — see i18n/dictionary.ts). */
+  headline?: string;
   authored_by: string;
   approval: "pending" | "approved";
   beats: NarrativeBeat[];
@@ -65,22 +61,8 @@ function isNonEmptyString(value: unknown): value is string {
   return typeof value === "string" && value.trim().length > 0;
 }
 
-function isLocalizedText(value: unknown, path: string, errors: string[]): value is LocalizedText {
-  if (!value || typeof value !== "object") {
-    errors.push(`${path}: expected an object with "de"/"en" string fields`);
-    return false;
-  }
-  const record = value as Record<string, unknown>;
-  let ok = true;
-  if (!isNonEmptyString(record.de)) {
-    errors.push(`${path}.de: expected a non-empty string`);
-    ok = false;
-  }
-  if (!isNonEmptyString(record.en)) {
-    errors.push(`${path}.en: expected a non-empty string`);
-    ok = false;
-  }
-  return ok;
+function requireNonEmptyString(value: unknown, path: string, errors: string[]): void {
+  if (!isNonEmptyString(value)) errors.push(`${path}: expected a non-empty string`);
 }
 
 /**
@@ -116,7 +98,7 @@ export function validateNarrative(data: unknown, sourceLabel: string): Narrative
       }
       const b = beat as Record<string, unknown>;
       if (!isNonEmptyString(b.id)) errors.push(`${path}.id: expected a non-empty string`);
-      isLocalizedText(b.heading, `${path}.heading`, errors);
+      requireNonEmptyString(b.heading, `${path}.heading`, errors);
 
       const isLastBeat = i === beats.length - 1;
       if (isLastBeat) {
@@ -124,15 +106,15 @@ export function validateNarrative(data: unknown, sourceLabel: string): Narrative
           errors.push(`${path}.divergence: expected an object (final beat is the divergence miniature)`);
         } else {
           const d = b.divergence as Record<string, unknown>;
-          isLocalizedText(d.leftLabel, `${path}.divergence.leftLabel`, errors);
-          isLocalizedText(d.rightLabel, `${path}.divergence.rightLabel`, errors);
-          isLocalizedText(d.closing, `${path}.divergence.closing`, errors);
+          requireNonEmptyString(d.leftLabel, `${path}.divergence.leftLabel`, errors);
+          requireNonEmptyString(d.rightLabel, `${path}.divergence.rightLabel`, errors);
+          requireNonEmptyString(d.closing, `${path}.divergence.closing`, errors);
           if (!isNonEmptyString(d.leftQuote)) errors.push(`${path}.divergence.leftQuote: expected a non-empty string`);
           if (!isNonEmptyString(d.rightQuote)) errors.push(`${path}.divergence.rightQuote: expected a non-empty string`);
         }
       } else {
         if (!isNonEmptyString(b.quote)) errors.push(`${path}.quote: expected a non-empty string`);
-        isLocalizedText(b.attribution, `${path}.attribution`, errors);
+        requireNonEmptyString(b.attribution, `${path}.attribution`, errors);
         if (!b.akte || typeof b.akte !== "object") {
           errors.push(`${path}.akte: expected an object`);
         } else {

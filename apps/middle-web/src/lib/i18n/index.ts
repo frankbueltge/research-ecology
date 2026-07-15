@@ -1,18 +1,15 @@
-export type Locale = "en" | "de";
+/** The ecology stack is EN-only (Frank, 2026-07-15: recurring per-nightly-run translation
+ * duty is not sustainable — see docs/spec and the engine repos, which now write English only).
+ * `Locale` stays a named type (rather than being deleted outright) so call sites that thread a
+ * locale through props/dictionary lookups need no further change. */
+export type Locale = "en";
 
 export { dictionary } from "./dictionary.js";
 export type { Dictionary } from "./dictionary.js";
 
-/** Prefixes an app-internal path with the locale, matching the URL-prefix routing convention
- * (work order §0 i18n: "URL-prefix routing (/de/...)", "no i18n framework dependency"). */
-export function localizedPath(locale: Locale, path: string): string {
-  const clean = path.startsWith("/") ? path : `/${path}`;
-  return locale === "de" ? `/de${clean}` : clean;
-}
-
-/** Strips a leading `/de` prefix, for building the "switch language" link on the other locale. */
-export function stripLocalePrefix(pathname: string): string {
-  if (pathname === "/de") return "/";
-  if (pathname.startsWith("/de/")) return pathname.slice(3);
-  return pathname;
+/** Identity path helper — kept as a named export (rather than inlining `path` at every call
+ * site) so callers built for the former `/de` URL-prefix convention need no change beyond the
+ * `Locale` type already collapsing to `"en"`. */
+export function localizedPath(_locale: Locale, path: string): string {
+  return path.startsWith("/") ? path : `/${path}`;
 }

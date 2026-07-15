@@ -10,9 +10,10 @@ export const LENS_IDS = ["provenance-v1", "ensemble-transformation-v1", "meridia
 export const STATION_RADIO_IDS = ["st-1", "st-2", "st-3", "st-4", "st-5", "st-6"] as const;
 export const STATION_CAPTIONS = ["cap-1", "cap-2", "cap-3", "cap-4", "cap-5", "cap-6"] as const;
 
-/** `/` (and `/de`) — the poster + narrative (work order phase-3d §0): no longer a redirect. */
+/** `/` — the poster + narrative (work order phase-3d §0): no longer a redirect. EN-only
+ * (2026-07-15: the ecology stack dropped German — there is no more `/de` mirror). */
 export function rootRoutes(): string[] {
-  return ["/", "/de"];
+  return ["/"];
 }
 
 export function encounterRoutes(prefix = ""): string[] {
@@ -35,4 +36,4 @@ export function encounterRoutes(prefix = ""): string[] {
   ];
 }
 
-export const ALL_ROUTES = [...rootRoutes(), ...encounterRoutes(""), ...encounterRoutes("/de")];
+export const ALL_ROUTES = [...rootRoutes(), ...encounterRoutes("")];

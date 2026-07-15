@@ -38,7 +38,7 @@
       id={`st-${i + 1}`}
       class="st-radio"
       checked={i === 0}
-      aria-label={`${i + 1} — ${beat.heading[locale]}`}
+      aria-label={`${i + 1} — ${beat.heading}`}
     />
   {/each}
 
@@ -119,27 +119,27 @@
       <div class={`tableau__caption cap-${i + 1}`}>
         <h2 class="cap-heading">
           <span class="cap-no mono">{i + 1}</span>
-          {beat.heading[locale]}
+          {beat.heading}
         </h2>
         {#if isDivergenceBeat(beat)}
           <div class="cap-divergence">
             <div class="cap-div-side">
-              <p class="cap-div-label mono">{beat.divergence.leftLabel[locale]}</p>
+              <p class="cap-div-label mono">{beat.divergence.leftLabel}</p>
               <p class="cap-quote mono">&ldquo;{beat.divergence.leftQuote}&rdquo;</p>
             </div>
             <div class="cap-div-side cap-div-side--accent">
-              <p class="cap-div-label mono">{beat.divergence.rightLabel[locale]}</p>
+              <p class="cap-div-label mono">{beat.divergence.rightLabel}</p>
               <p class="cap-quote mono">&ldquo;{beat.divergence.rightQuote}&rdquo;</p>
             </div>
           </div>
-          <p class="cap-attribution">{beat.divergence.closing[locale]}</p>
+          <p class="cap-attribution">{beat.divergence.closing}</p>
           <p class="cap-links">
             <a href={localizedPath(locale, `/encounters/${encounterId}/compare`)}>{dict.narrative.viewDivergenceCta}</a>
             <a href={localizedPath(locale, `/encounters/${encounterId}`)}>{dict.narrative.viewRecordCta}</a>
           </p>
         {:else}
           <blockquote class="cap-quote mono">&ldquo;{beat.quote}&rdquo;</blockquote>
-          <p class="cap-attribution">— {beat.attribution[locale]}</p>
+          <p class="cap-attribution">— {beat.attribution}</p>
           <p class="cap-links">
             <a href={localizedPath(locale, `/encounters/${encounterId}#event-${beat.akte.eventId}`)}>{dict.narrative.viewRecordCta}</a>
           </p>

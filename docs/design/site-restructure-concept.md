@@ -33,7 +33,8 @@ tritt hinter Praxis zurück — auf der ganzen Site.
 - **Nichts wird gelöscht.** Demotion statt Deletion: /lab leitet auf /praktiken +
   /bestaende um; alte Experiment-URLs bleiben gültig (Archiv-Ehrlichkeit, eingehende
   Links). Ob einzelne Nightlies später enden, entscheidet Frank pro Pipeline.
-- **Zweisprachig** wie bisher (EN root der Engines beachten; Site-Chrome DE/EN).
+- **Einsprachig Englisch** (Frank, 2026-07-15): keine Übersetzungspflicht pro nächtlichem
+  Lauf; die deutschen Alt-Seiten außerhalb der Ökologie bleiben bis zum Merge unberührt.
 
 ## 3. Der spektakuläre Eingang (Präzisierung)
 

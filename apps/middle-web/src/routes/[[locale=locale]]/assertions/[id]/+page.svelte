@@ -27,7 +27,6 @@
     authorName={data.authorName}
     authorRoleLabel={data.assertion.author.collective_id}
     dict={dict}
-    locale={data.locale}
     encounterId={data.assertion.encounter_id}
   />
 </article>

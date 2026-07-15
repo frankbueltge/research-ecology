@@ -132,8 +132,7 @@ describe("narrative beat quotes are byte-exact against their fixture source (wor
     const ensembleAssertion = assertionById("assert-enc2026001-ensemble-boundary-case");
     expect(beat.divergence.rightQuote).toBe(ensembleAssertion.object);
 
-    expect(beat.divergence.closing.en).toBe("no shared resolution");
-    expect(beat.divergence.closing.de).toBe("keine gemeinsame Auflösung");
+    expect(beat.divergence.closing).toBe("no shared resolution");
   });
 
   it("no beat quote or attribution names a collective before beat 6 (identity recession, work order §4)", () => {
@@ -142,10 +141,8 @@ describe("narrative beat quotes are byte-exact against their fixture source (wor
       if (isDivergenceBeat(beat)) continue;
       for (const name of ["Meridian", "Ensemble", "Ulysses"]) {
         expect(beat.quote).not.toContain(name);
-        expect(beat.attribution.de).not.toContain(name);
-        expect(beat.attribution.en).not.toContain(name);
-        expect(beat.heading.de).not.toContain(name);
-        expect(beat.heading.en).not.toContain(name);
+        expect(beat.attribution).not.toContain(name);
+        expect(beat.heading).not.toContain(name);
       }
     }
   });

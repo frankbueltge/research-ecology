@@ -3,7 +3,7 @@ import { getEncounterBundle } from "$lib/server/data.js";
 import { CURRENT_ENCOUNTER_ID } from "$lib/constants.js";
 import type { PageServerLoad } from "./$types.js";
 
-/** `/` (and `/de`) — the entrance tableau: the current encounter as one composed screen
+/** `/` — the entrance tableau: the current encounter as one composed screen
  * (kicker + explicit status line + headline + the six-station drawing with captions),
  * per the 2026-07-15 critique iteration ("kein ewiges Scrollen; was ist das hier?").
  * The record (Akte) lives one level deeper at `/encounters/[id]`. */

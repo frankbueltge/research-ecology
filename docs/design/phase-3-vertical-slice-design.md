@@ -29,7 +29,8 @@ SvelteKit app: SSR record pages + client islands for compare/trace views
 - The **encounter record itself is editorial**: participants, initiating event, proposition.
   It is stored with author attribution (see §6). Adapters never wrote it (Phase-2 rule).
 
-## 2. Routes (v1, bilingual chrome DE/EN — records stay source-language EN)
+## 2. Routes (v1 — English-only since 2026-07-15, Frank's decision: no per-run translation
+duty; the `/de/…` chrome mirror described below was removed again)
 
 ```
 /                                  → redirects to the current encounter (302, honest: there is exactly one)

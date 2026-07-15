@@ -2,21 +2,21 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://frankbueltge.de/schemas/site-entrance-1.0.json",
   "title": "Site Entrance Dataset",
-  "description": "Compact entrance dataset exported by apps/export-site into a target site's src/data/begegnungen/entrance.json (work order phase-3e-plumbing.md §1). Additive schema: additionalProperties true everywhere, matching every other protocol schema's evolvability rule.",
+  "description": "Compact entrance dataset exported by apps/export-site into a target site's src/data/begegnungen/entrance.json (work order phase-3e-plumbing.md §1). Additive schema: additionalProperties true everywhere, matching every other protocol schema's evolvability rule. EN-only (2026-07-15: the ecology stack dropped German) — every field that used to be a localizedText object ({ de, en }) is now a plain string.",
   "type": "object",
   "additionalProperties": true,
   "required": ["encounter_id", "title", "headline", "status", "participants", "stations", "links", "authored_by", "approval"],
   "properties": {
     "encounter_id": { "type": "string" },
     "title": { "type": "string" },
-    "headline": { "$ref": "#/$defs/localizedText" },
+    "headline": { "type": "string" },
     "status": {
       "type": "object",
       "additionalProperties": true,
       "required": ["as_of", "statusLine"],
       "properties": {
         "as_of": { "type": "string" },
-        "statusLine": { "$ref": "#/$defs/localizedText" }
+        "statusLine": { "type": "string" }
       }
     },
     "participants": {
@@ -41,9 +41,9 @@
         "required": ["id", "heading"],
         "properties": {
           "id": { "type": "string" },
-          "heading": { "$ref": "#/$defs/localizedText" },
+          "heading": { "type": "string" },
           "quote": { "type": "string" },
-          "attribution": { "$ref": "#/$defs/localizedText" },
+          "attribution": { "type": "string" },
           "akte_event_id": { "type": "string" },
           "akte_event_type": { "type": "string" },
           "divergence": { "type": "object" }
@@ -61,16 +61,5 @@
     },
     "authored_by": { "type": "string" },
     "approval": { "type": "string", "enum": ["pending", "approved"] }
-  },
-  "$defs": {
-    "localizedText": {
-      "type": "object",
-      "additionalProperties": true,
-      "required": ["de", "en"],
-      "properties": {
-        "de": { "type": "string" },
-        "en": { "type": "string" }
-      }
-    }
   }
 }

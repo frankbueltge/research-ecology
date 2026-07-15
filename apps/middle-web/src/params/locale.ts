@@ -1,7 +1,8 @@
 import type { ParamMatcher } from "@sveltejs/kit";
 
-/** Matches the optional `/de` URL-prefix segment (work order §0 i18n: "URL-prefix routing
- * (/de/...)"). Every route lives once under `src/routes/[[locale=locale]]/...` — English at
- * the bare path, the German chrome mirror under `/de/...` — instead of being hand-duplicated
- * into two parallel route trees. */
-export const match: ParamMatcher = (param) => param === "de";
+/** The ecology stack is EN-only (Frank, 2026-07-15: recurring per-nightly-run translation duty
+ * is not sustainable — see `$lib/i18n`). This matcher never matches, so the former `/de/...`
+ * URL space 404s instead of resolving; the `[[locale=locale]]` optional-param route-tree shape
+ * stays as-is on disk — renaming every route file under it (~20 files) was judged more churn
+ * than keeping one always-empty optional param whose only job now is to reject "de". */
+export const match: ParamMatcher = () => false;

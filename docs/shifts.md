@@ -39,6 +39,12 @@ Bestände des Labors der Ökologie zum Gebrauch angeboten — dieselbe Geste wie
 stehendes Angebot mit Bedingungen. Und: Der Eingang muss spektakulär sein — Wucht durch
 Maßstab, Typografie und die Dramatik des echten Materials, nicht durch Dekor.
 
+**2026-07-15 — Einsprachig: Englisch.** Frank: kein Deutsch im Ökologie-Stack. Die
+Erzähl-Inhalte entstehen nächtlich; eine Übersetzungspflicht pro Lauf wäre wiederkehrende
+Arbeit ohne Ertrag. Die Engine-Repos schreiben ohnehin Englisch, die Site ist EN-first.
+(Die deutschen Alt-Seiten der Site außerhalb der Ökologie bleiben unberührt, bis der
+Site-Umbau gemergt wird.)
+
 **2026-07-15 — Wir bauen kein Rhizom; wir bauen Bedingungen.** Ebenfalls übernommen: Die
 Form wird nicht implementiert — die Möglichkeit von Formen wird gestaltet. Intern darf das
 Ganze unbenannt bleiben; „The Middle" und „research-ecology" sind Arbeitstitel, keine

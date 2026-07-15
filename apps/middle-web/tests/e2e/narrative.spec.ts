@@ -30,14 +30,10 @@ async function captionHeadingText(page: Page, n: number): Promise<string> {
 }
 
 test.describe("narrative: six stations", () => {
-  test("station 1 and station 6 headings render, DE and EN, exactly as authored", async ({ page }) => {
+  test("station 1 and station 6 headings render exactly as authored (EN-only, 2026-07-15)", async ({ page }) => {
     await page.goto("/");
     expect(await captionHeadingText(page, 1)).toBe("An instrument, under conditions.");
     expect(await captionHeadingText(page, 6)).toBe("Two readings remain. Both stand.");
-
-    await page.goto("/de");
-    expect(await captionHeadingText(page, 1)).toBe("Ein Instrument, unter Bedingungen.");
-    expect(await captionHeadingText(page, 6)).toBe("Zwei Lesarten bleiben. Beide gelten.");
   });
 
   test("station 4's quote renders byte-exact against the fixture (spot check; full cross-check in tests/unit/narrative.test.ts)", async ({
@@ -89,7 +85,7 @@ test.describe("narrative: six stations", () => {
     expect(await page.locator(".entrance__footnote .pending-badge").count()).toBe(1);
   });
 
-  for (const route of ["/", "/de"]) {
+  for (const route of ["/"]) {
     test(`identity recession (work order §4): no collective name appears in the entrance outside station 6 — ${route}`, async ({
       page
     }) => {

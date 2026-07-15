@@ -64,32 +64,30 @@ export interface ExportResult {
 // duck-types packages/protocol's LensDefinition instead of importing it. The narrative JSON
 // itself is copied through verbatim (raw bytes) further down; this type only describes the
 // fields this module reads to build entrance.json's `stations`.
+//
+// EN-only (Frank, 2026-07-15: the ecology stack dropped German) — every field that used to be
+// a `{ de, en }` localized object is now a plain string; the former `LocalizedText` type is
+// deleted.
 // ------------------------------------------------------------------------------------------
-
-interface LocalizedText {
-  de: string;
-  en: string;
-  [key: string]: unknown;
-}
 
 interface RawNarrativeBeatBase {
   id: string;
-  heading: LocalizedText;
+  heading: string;
 }
 
 interface RawQuoteBeat extends RawNarrativeBeatBase {
   quote: string;
-  attribution: LocalizedText;
+  attribution: string;
   akte: { eventId: string; eventType: string };
 }
 
 interface RawDivergenceBeat extends RawNarrativeBeatBase {
   divergence: {
-    leftLabel: LocalizedText;
+    leftLabel: string;
     leftQuote: string;
-    rightLabel: LocalizedText;
+    rightLabel: string;
     rightQuote: string;
-    closing: LocalizedText;
+    closing: string;
   };
 }
 
@@ -97,7 +95,7 @@ type RawNarrativeBeat = RawQuoteBeat | RawDivergenceBeat;
 
 interface RawNarrative {
   encounter_id: string;
-  headline?: { de: string; en: string };
+  headline?: string;
   authored_by: string;
   approval: "pending" | "approved";
   beats: RawNarrativeBeat[];
@@ -185,16 +183,14 @@ function toProjectionParticipant(p: StoredParticipant) {
 
 /** The only currently-live encounter has `shared_resolution: null` (fixture encounter.json) —
  * this branch is exercised; the non-null branch is defensive for a future encounter and simply
- * carries the raw resolution string through both locales until that encounter's narrative
- * authors a real localized status line (documented gap, not a silent guess). */
-function computeStatusLine(sharedResolution: string | null): LocalizedText {
+ * carries the raw resolution string through until that encounter's narrative authors a real
+ * status line (documented gap, not a silent guess). EN-only (2026-07-15: the ecology stack
+ * dropped German — this used to return a `{ de, en }` pair). */
+function computeStatusLine(sharedResolution: string | null): string {
   if (sharedResolution === null) {
-    return {
-      de: "unaufgelöst — beide Lesarten gelten",
-      en: "unresolved — both readings stand"
-    };
+    return "unresolved — both readings stand";
   }
-  return { de: sharedResolution, en: sharedResolution };
+  return sharedResolution;
 }
 
 function toStation(beat: RawNarrativeBeat): Record<string, unknown> {
