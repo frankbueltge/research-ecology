@@ -118,6 +118,20 @@ describe("atelier: work title_cache is populated verbatim from meta.json (phase-
   });
 });
 
+describe("atelier: work source_metadata.date is populated verbatim from meta.json (phase-c1 §1 finding)", () => {
+  it("Differential Reproduction carries date 2026-07-14, not derived from local_object_id", () => {
+    const ref = bundle.objects.find((o) => o.local_object_id === "2026-07-14-differential-reproduction");
+    expect(ref).toBeDefined();
+    expect((ref!.source_metadata as { date?: string }).date).toBe("2026-07-14");
+  });
+
+  it("Named, the Glitch Is No More carries date 2026-07-07 (differs from any session date on its edges)", () => {
+    const ref = bundle.objects.find((o) => o.local_object_id === "2026-07-07-named-the-glitch");
+    expect(ref).toBeDefined();
+    expect((ref!.source_metadata as { date?: string }).date).toBe("2026-07-07");
+  });
+});
+
 describe("atelier: rhizome edge 'session' carries verbatim from pulse/rhizome.json (phase-c1 §1 finding)", () => {
   it("all 19 edges import; session present only where the source edge has one", () => {
     const edges = bundle.assertions.filter((a) => a.assertion_id.includes(":rhizome-edge-"));

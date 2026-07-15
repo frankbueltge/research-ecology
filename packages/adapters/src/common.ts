@@ -272,6 +272,12 @@ export function buildWorksObjectRefs(
     // observed across all three engine repos at the time of this change carries a non-empty
     // `title`, so this is a graceful edge, not an expected path.
     let titleCache: string | undefined;
+    // `date` (same finding): meta.json's own `date` field (ISO `YYYY-MM-DD`), carried into
+    // `source_metadata.date` — the design's ink slabs show a work's date; the only other place
+    // it appears verbatim is inside `local_object_id` itself (which is a slug, e.g.
+    // "2026-07-14-differential-reproduction" — parsing a date out of a slug client-side would
+    // be a derivation, not a store field, so it is captured explicitly here instead).
+    let workDate: string | undefined;
     if (!metaJsonRel) {
       importRecords.push({
         collective_id: collectiveId,
@@ -318,6 +324,10 @@ export function buildWorksObjectRefs(
       if (typeof title === "string" && title.length > 0) {
         titleCache = title;
       }
+      const date = meta?.date;
+      if (typeof date === "string" && date.length > 0) {
+        workDate = date;
+      }
     }
 
     refs.push({
@@ -338,6 +348,7 @@ export function buildWorksObjectRefs(
         title_cache_derivation: titleCache
           ? `meta.json 'title' field at this commit: "${titleCache}"`
           : "meta.json missing or has no non-empty 'title' field; title_cache omitted",
+        ...(workDate ? { date: workDate } : {}),
         content_hash_basis:
           "sha256 over canonicalJson({ files }) of the sorted per-file inventory below (path -> sha256 of raw bytes at this commit) — reused from the Phase-1 kernel's contentHash, not a hash of one file's raw bytes.",
         files: inventory
