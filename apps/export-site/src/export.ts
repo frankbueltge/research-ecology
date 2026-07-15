@@ -97,6 +97,7 @@ type RawNarrativeBeat = RawQuoteBeat | RawDivergenceBeat;
 
 interface RawNarrative {
   encounter_id: string;
+  headline?: { de: string; en: string };
   authored_by: string;
   approval: "pending" | "approved";
   beats: RawNarrativeBeat[];
@@ -316,11 +317,9 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   const entrance: SiteEntrance = {
     encounter_id: encounter.encounter_id,
     title: encounter.title ?? encounter.encounter_id,
-    // Work order §1: "headline (DE/EN aus dem Narrative)" — derived from the narrative's own
-    // first beat heading (the narrative object's only headline-shaped field; no top-level
-    // `headline` exists in narratives/enc-2026-001.json). Documented in the runbook and the
-    // final report as an interpretive decision, not a literal field reuse.
-    headline: firstBeat.heading,
+    // The narrative's own top-level editorial headline is the single source; the first
+    // beat's heading remains only the fallback for narratives that don't declare one.
+    headline: narrative.headline ?? firstBeat.heading,
     status: {
       as_of: watermark.slice(0, 10),
       statusLine: computeStatusLine(encounter.shared_resolution)

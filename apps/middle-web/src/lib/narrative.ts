@@ -47,6 +47,9 @@ export type NarrativeBeat = NarrativeQuoteBeat | NarrativeDivergenceBeat;
 
 export interface Narrative {
   encounter_id: string;
+  /** The editorial one-sentence entrance headline (DE/EN) — single source for app AND
+   * site export; the app dictionary's poster.headline is only the fallback. */
+  headline?: { de: string; en: string };
   authored_by: string;
   approval: "pending" | "approved";
   beats: NarrativeBeat[];

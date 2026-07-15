@@ -34,7 +34,7 @@
     </span>
   </div>
 
-  <h1 id="entrance-headline" class="entrance__headline">{dict.poster.headline}</h1>
+  <h1 id="entrance-headline" class="entrance__headline">{data.narrative.headline?.[locale] ?? dict.poster.headline}</h1>
 
   <EncounterTableau narrative={data.narrative} {locale} {dict} encounterId={data.encounterId} />
 
