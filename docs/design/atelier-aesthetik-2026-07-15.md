@@ -54,8 +54,51 @@ Wörtlichkeit + Provenienz (jedes Label aus dem Repo, Quelle im Fußtext), Volls
 (die Kantentabelle unter dem Blatt komprimiert nie), ehrliche Leere (die Tür), keine
 Loops/Puls. Getrennt ist die SPRACHE, nicht die Wahrhaftigkeit.
 
-## 5. Offen für den Phase-C-Slice
+## 5. Informationsarchitektur: der Blattrand (Franks Frage 2026-07-15)
+
+`/atelier` heute (EnginePage): Lede, Werke-Galerie, „Texte & Kataster", endloses
+Journal, Links Repo/Verfassung/Team-Kanal, Cockpit-Link. Neu nach Spec §4.3/4.5:
+**Eingang = das aktuelle Blatt, kein Gesamtüberblick.** Orientierung durch zwei Mittel:
+
+1. **Der Blattrand** — die EINZIGE stehende Navigation, eine schmale Zeile:
+   `this sheet · sheets · works · journal · material · apparatus · → the middle`.
+   Kein Mega-Menü, keine Sidebar. (Mock ist im Blatt und im Buchrücken eingebaut.)
+2. **Jedes Zeichen ist eine Tür** — die Karte IST die Navigation: Tafel → Werkseite,
+   Quellen-Stummel → Material-Eintrag, rote S-Marke → Journal-Seite (`…#s26`),
+   Faden-Titel → Problem-Blatt. Der Rand ist nur der Rückfallweg.
+   Rückweg-Konvention auf jeder Unterseite: „← back to the sheet".
+
+Zimmer-Zuordnung des Bestands (URLs bleiben stabil):
+
+| heute | wohin | Spec-Lens |
+|---|---|---|
+| Werke-Galerie + /atelier/werke/* | `works` — Routen unverändert; erreichbar über Tafeln | Operation |
+| Journal (endlose Liste) | `journal` = **Session-Register S1–S28**: eine Zeile pro Seite, Anker `#sNN`, jüngste aufgeklappt — die Endlos-Liste stirbt | Provenienz |
+| Atlas (im alten Cockpit) | `material` — der Atlas zieht als Quellen-Regal um; Quellen-Stummel der Blätter verlinken hierher | Material |
+| Repo, Verfassung (protocol.astro), Team-Kanal (requests.astro), Nightly-Maschinerie | `apparatus` — alles „wie die Maschine läuft" wohnt in EINEM Zimmer, nicht im Eingangs-Chrome | Apparat |
+| Cockpit | `/atelier/archive/cockpit` — datiertes Artefakt (ADR 0008), URL bleibt; dort Hinweis „the atlas now lives in material" | — |
+| Franks Rahmungstext (Lede) | 2 Sätze am Blatt-Fuß; volle Rahmung in `apparatus` | Apparat |
+| Counter-Maps | eigenes Zimmer erst, wenn es echte gibt (keine leere Rubrik) | Counter |
+
+Routen-Namen englisch (English-only-Entscheid); bestehende deutsche URLs
+(`/atelier/werke/*`, `/atelier/cockpit`) bleiben als Archiv-Pfade unangetastet.
+
+## 6. Historie: der Buchrücken (nicht die Partitur)
+
+Atelier-eigene Historienform (`variants-2026-07-15/atelier-historie.html`,
+Generator `atelier_history_viz.py`): **die Praxis zählt in Sessions, nicht in Tagen.**
+Alle 28 Journal-Seiten als Buchrücken (Daten als Marginalien darunter), Werke hängen
+als Tafeln unter ihrer Nacht (Git-Add-Daten), der Fehlerkataster streicht in Rotstift
+darüber (21), Verfassungsänderungen als Graphit-✳ (7, PROTOCOL.md-Git-Daten), die drei
+Fäden werden sichtbar erst aus S26–S28 geboren und bleiben offen. Datenkante ist die
+**ungeschriebene nächste Seite** (gestrichelt) — das Atelier-Pendant zur as-of-Kante,
+ohne deren Zeichen zu teilen. Skalenregel (§7 der Zeichengrammatik, Atelier-Geschmack):
+wächst der Rücken über das Blatt hinaus, bündeln sich Seiten zu **Lagen/Heften**
+(Buchbinder-Geste statt Wochen-Bins).
+
+## 7. Offen für den Phase-C-Slice
 
 Problem-/Operation-/Counter-Lens-Layouts aus dieser Sprache ableiten; Irrtums-Marken
-und Closure-Marginalien am echten Fehlerkataster erproben; Blatt-Navigation (mehrere
-Blätter = mehrere Threads); Ort der App (Pfad vs. Subdomain) bleibt Deployment-Frage.
+und Closure-Marginalien am echten Fehlerkataster erproben; Blattrand verdrahten
+(Routen aus §5); Session-Register bauen; Ort der App (Pfad vs. Subdomain) bleibt
+Deployment-Frage.
