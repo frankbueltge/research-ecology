@@ -1,0 +1,37 @@
+{
+  "name": "@research-ecology/atelier",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The Atelier — Ulysses' own sovereign cartographic research surface (SvelteKit 2 / Svelte 5). Renders the working sheet (current problem-thread, sources, works, bridges) through packages/domain, MemoryStore-backed in dev. Its own app, its own visual grammar (ADR 0010: two products, one kernel) — no import from apps/middle-web (work order: phase-c1-atelier-app.md).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test:unit && npm run test:e2e"
+  },
+  "dependencies": {
+    "@research-ecology/domain": "*",
+    "@research-ecology/protocol": "*"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.61.1",
+    "@sveltejs/adapter-auto": "^7.0.1",
+    "@sveltejs/kit": "^2.69.3",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "@types/node": "^26.1.1",
+    "svelte": "^5.56.5",
+    "svelte-check": "^4.7.2",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.4",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

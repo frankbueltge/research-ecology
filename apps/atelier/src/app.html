@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-theme-mode="auto">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<!-- Theme resolution (design atelier-aesthetik-2026-07-15.md §3, "same mechanic as the
+		     site" — frankbueltge.de Base.astro convention, taken over verbatim per work order §3):
+		     localStorage 'theme' is an explicit override ('light'|'dark'); absent = 'auto' (follow
+		     OS). Runs synchronously, before first paint, so there is no flash — this is why it is a
+		     raw inline script rather than a Svelte component. `nonce="%sveltekit.nonce%"` is
+		     SvelteKit's own per-response CSP nonce (svelte.config.js `csp.mode: "auto"` picks
+		     nonce mode for this app's non-prerendered routes): SvelteKit only auto-covers script
+		     tags it injects itself, so a hand-written inline script needs this placeholder to be
+		     admitted under `script-src 'self' 'nonce-...'` — no `unsafe-inline` needed either way.
+		     Without JavaScript the <html> tag above keeps its static default: data-theme="light"
+		     data-theme-mode="auto" — a workshop works in daylight (design §3, "Default hell"). -->
+		<script nonce="%sveltekit.nonce%">
+			(function () {
+				var root = document.documentElement;
+				function readMode() {
+					try {
+						return localStorage.getItem("theme") || "auto";
+					} catch (e) {
+						return "auto";
+					}
+				}
+				function resolve(mode) {
+					return mode === "auto"
+						? matchMedia("(prefers-color-scheme: dark)").matches
+							? "dark"
+							: "light"
+						: mode;
+				}
+				function apply(mode) {
+					root.setAttribute("data-theme", resolve(mode));
+					root.setAttribute("data-theme-mode", mode);
+				}
+				apply(readMode());
+				matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+					if (readMode() === "auto") apply("auto");
+				});
+			})();
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

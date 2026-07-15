@@ -1,0 +1,54 @@
+/**
+ * Design tokens (design atelier-aesthetik-2026-07-15.md §3, binding; values taken over verbatim
+ * from docs/design/variants-2026-07-15/atelier_viz.py's ATELIER_CSS — validated contrast pairs,
+ * work order §3). ADR 0010: this is the Atelier's OWN palette — no relation to, no import from,
+ * apps/middle-web/src/lib/styles/tokens.css. Workstation light (paper, ink, ultramarine thread,
+ * red pencil swerve) / evening-studio dark. `data-theme` is always resolved (never absent) by
+ * `src/app.html`'s inline script or, without JS, the static default there — so there is no
+ * `@media (prefers-color-scheme)` fallback layer here (unlike a component that might render
+ * without any explicit data-theme attribute at all).
+ */
+
+:root {
+  --font-ui: "Iowan Old Style", Georgia, serif;
+  --font-display: "Iowan Old Style", Georgia, serif;
+  --font-record: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+:root[data-theme="light"] {
+  --page: #ece5d6;
+  --surface: #f6f1e7;
+  --ink: #232019;
+  --ink-2: #6e6558;
+  --hairline: #ddd4c2;
+  --c-thread: #2c46c8;
+  --c-red: #b03a30;
+  --c-graphite: #8a8377;
+  --badge-bg: #efe8d9;
+  --tip-bg: #fffdf6;
+  --tip-ink: #232019;
+  --h1-ink: #1b1812;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --page: #100e0c;
+  --surface: #1b1815;
+  --ink: #e9e2d4;
+  --ink-2: #a1988a;
+  --hairline: #332e27;
+  --c-thread: #5c76e6;
+  --c-red: #cc584a;
+  --c-graphite: #97907f;
+  --badge-bg: #242019;
+  --tip-bg: #26221c;
+  --tip-ink: #e9e2d4;
+  --h1-ink: #f2ecdf;
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}

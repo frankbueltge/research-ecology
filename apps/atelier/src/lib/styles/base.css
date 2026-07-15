@@ -1,0 +1,329 @@
+/**
+ * Base page styles + the sheet's own drawing grammar (design atelier-aesthetik-2026-07-15.md
+ * §2, classes taken over from atelier_viz.py's ATELIER_CSS/build_svg()). Own stylesheet, own
+ * selectors — ADR 0010, no relation to apps/middle-web/src/lib/styles/base.css. Hover tooltips
+ * use native SVG `<title>` elements (not a JS-driven floating tip like the design mockup's
+ * `#tip` div) so full labels stay reachable without JavaScript.
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 34px 40px 60px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 26px;
+  right: 34px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  color: var(--ink);
+}
+.theme-toggle svg {
+  display: none;
+}
+:root[data-theme-mode="auto"] .theme-toggle .i-auto {
+  display: block;
+}
+:root[data-theme-mode="light"] .theme-toggle .i-sun {
+  display: block;
+}
+:root[data-theme-mode="dark"] .theme-toggle .i-moon {
+  display: block;
+}
+
+.kicker {
+  font-family: var(--font-record);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  display: flex;
+  gap: 1.4em;
+  flex-wrap: wrap;
+}
+.kicker .chip {
+  border: 1px solid var(--hairline);
+  padding: 1px 8px;
+  border-radius: 2px;
+  color: var(--ink-2);
+}
+
+.blattrand {
+  display: flex;
+  gap: 1.6em;
+  align-items: baseline;
+  margin: 18px 0 4px;
+  padding: 7px 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  font: 12px var(--font-record);
+  letter-spacing: 0.08em;
+  flex-wrap: wrap;
+}
+.blattrand a {
+  color: var(--ink-2);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.blattrand a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+.br-here {
+  color: var(--ink);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--c-red);
+}
+.br-door {
+  margin-left: auto;
+  color: var(--ink-2);
+  text-transform: uppercase;
+}
+.br-door a {
+  color: inherit;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 4.6vw, 60px);
+  line-height: 1.06;
+  margin: 0.45em 0 0.2em;
+  max-width: 24ch;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--h1-ink);
+}
+
+.status {
+  font-family: var(--font-record);
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.status b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+figure {
+  margin: 26px 0 8px;
+}
+svg#score {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* -- the sheet's own signs (§2 of the design doc) -- */
+.th {
+  stroke: var(--c-thread);
+  stroke-width: 2.6;
+  fill: none;
+  stroke-linecap: round;
+}
+.th-cont {
+  stroke-width: 1.6;
+  opacity: 0.75;
+}
+.stub {
+  stroke: var(--c-graphite);
+  stroke-width: 1.3;
+  fill: none;
+}
+.rp {
+  stroke: var(--c-red);
+  stroke-width: 1.8;
+  fill: none;
+}
+.rp-dot {
+  fill: var(--c-red);
+}
+.slab {
+  fill: var(--ink);
+}
+.slab-ghost {
+  fill: none;
+  stroke: var(--c-graphite);
+  stroke-width: 1.2;
+  stroke-dasharray: 3 3;
+}
+.tie {
+  stroke: var(--ink);
+  stroke-width: 1;
+  fill: none;
+  opacity: 0.65;
+}
+.bridge {
+  stroke: var(--ink);
+  stroke-width: 1.4;
+  fill: none;
+}
+.comp {
+  stroke: var(--c-graphite);
+  stroke-width: 1.1;
+  fill: none;
+  stroke-dasharray: 5 4;
+}
+.ground {
+  stroke: var(--c-graphite);
+  stroke-width: 2.6;
+}
+.door {
+  stroke: var(--ink-2);
+  stroke-width: 1.4;
+  fill: none;
+  stroke-dasharray: 6 5;
+}
+.t-thread {
+  font: italic 14.5px var(--font-display);
+  fill: var(--c-thread);
+}
+.t-src {
+  font: 11.5px var(--font-record);
+  fill: var(--ink-2);
+}
+.t-sess {
+  font: 600 11px var(--font-record);
+  fill: var(--c-red);
+}
+.t-work {
+  font: italic 13.5px var(--font-display);
+  fill: var(--ink);
+}
+.t-date {
+  font: 10.5px var(--font-record);
+  fill: var(--ink-2);
+}
+.t-note {
+  font: 11.5px var(--font-record);
+  fill: var(--ink-2);
+}
+.work-link {
+  fill: inherit;
+}
+
+/* -- legend / record table / footer -- */
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: 20px 0;
+  margin: 14px 0 26px;
+}
+.legend h3 {
+  font: 600 11px var(--font-record);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-bottom: 10px;
+}
+.lg-row {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin: 5px 0;
+  font: 12.5px var(--font-record);
+  color: var(--ink-2);
+}
+.lg-note {
+  font: 11.5px var(--font-record);
+  color: var(--ink-2);
+  margin-top: 12px;
+  max-width: 44ch;
+  opacity: 0.85;
+}
+
+.record h2 {
+  font: 600 13px var(--font-record);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin: 8px 0 10px;
+}
+.tbl-wrap {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font: 12.5px var(--font-record);
+}
+th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--ink-2);
+  letter-spacing: 0.06em;
+}
+th,
+td {
+  border-top: 1px solid var(--hairline);
+  padding: 7px 14px 7px 0;
+  vertical-align: top;
+}
+td.mono {
+  white-space: nowrap;
+  color: var(--ink-2);
+}
+td.q {
+  font-style: italic;
+  max-width: 52ch;
+}
+
+footer {
+  margin-top: 26px;
+  font: 11.5px var(--font-record);
+  color: var(--ink-2);
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.empty-door {
+  font: italic 12.5px var(--font-display);
+  color: var(--ink-2);
+}
+
+.stub-room {
+  padding: 40px 0;
+  font: 13px var(--font-record);
+  color: var(--ink-2);
+}
+.stub-room a {
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
