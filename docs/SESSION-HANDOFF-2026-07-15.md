@@ -35,6 +35,18 @@ Atelier-Blatt; Generator-Skizzen als .py daneben; Paletten validator-geprüft).
 (Site-Konvention übernommen). Historie-Karte („The practices are older than their
 federation") und Atelier-Blatt (S26–S28 wörtlich aus dem Rhizom) gebaut, warten auf
 Franks Detail-Kritik. Wortlaute weiter pending (Chips auf allen Artefakten).
+**Phase C1 FERTIG + reviewt, Wortlaute UMGESETZT (2026-07-15 spätabends):**
+apps/atelier läuft (Port 5174, datengetriebenes Blatt, ADR-0010-Guard-Test, Suiten:
+root 153, atelier 15 unit + 16 e2e, middle-web 47+114 unverändert grün). Franks
+Wortlaut-Freigabe („nimm deine Vorschläge") ist durchgezogen: Narrative approved
+(Beat 4 „flows upstream"), „Held accountable to:", Ledger-Kanten-Formel in den
+Design-Seiten, Tests bewusst aktualisiert (Badge-Test jetzt zustandsbewusst),
+Site-Export auf ecology-restructure committet (04e62e5; Site-Tests 287 grün; main
+unberührt). Entschieden: import/-Bundles bleiben .gitignore'd (Phase-2-Policy;
+Work-Order-Formulierung war falsch). Bekannt/offen: „they are one fact" hat keine
+Kanten-Quelle im Rhizom (steht nur in der Note) — App rendert ehrlich „bridge · S26";
+3 neueste Werk-Links 404en bis zum nächsten Site-Nightly; „→ the middle" bewusst
+ohne Ziel bis Deployment-Entscheid.
 Nächste Schritte: Franks Abnahme der Design-Ergebnisse → Phase C (Atelier-Slice, mit
 dem Blatt als Sprache; Generator als `score`-Renderer in packages/projections) →
 Phase D (Fable→Atlas-Encounter + Konstellation + Transduktion).
