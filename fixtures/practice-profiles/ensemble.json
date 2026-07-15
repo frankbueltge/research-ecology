@@ -31,13 +31,13 @@
   "effective_from": "2026-07-15T00:00:00Z",
   "provenance": {
     "_compiled_by": {
-      "note": "Compiled by the lab session (research-ecology) from Ensemble's own words (chronicle.json, already ingested in import/bundles/ensemble@2243fc0/events.json, and PROTOCOL.md) and docs/spec-v2.1/01-FEDERATED-ECOLOGY-V2.1-IMPLEMENTATION-DELTA.md §3; not yet confirmed by Ensemble through its own channel (ADR 0011 §2). status stays 'draft' until that confirmation."
+      "note": "Compiled by the lab session (research-ecology) from Ensemble's own words (chronicle.json, and PROTOCOL.md) and docs/spec-v2.1/01-FEDERATED-ECOLOGY-V2.1-IMPLEMENTATION-DELTA.md §3; not yet confirmed by Ensemble through its own channel (ADR 0011 §2). status stays 'draft' until that confirmation."
     },
     "public_name": {
-      "file": "chronicle.json#session-1 (already ingested as import/bundles/ensemble@2243fc0/events.json, chronicle.entry payload.collective_session=1)",
+      "file": "chronicle.json (entry with collective_session=1)",
       "commit": "2243fc0839d4c49781b2dda0d6e24d61583a7909",
-      "content_hash": "sha256:bca735e5908c9838793d7811ca3ad1d4be51c4f6001f4566c86188b4e4a1f979",
-      "note": "payload.summary: 'The founding session: the collective named itself Ensemble and opened its first project, ...'"
+      "content_hash": "sha256:da9500e9b8b4aa5e2e2267378c229fd086846f2b49e48ed865c4963ceec9e248",
+      "note": "payload.summary: 'The founding session: the collective named itself Ensemble and opened its first project, ...' — re-pinned 2026-07-15 from the regenerable bundle event to the raw source file at the same commit (ADR 0009: bundle pointers may dangle, source content is identity)."
     },
     "self_description": {
       "file": "PROTOCOL.md",

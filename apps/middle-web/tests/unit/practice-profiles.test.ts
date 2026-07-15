@@ -179,8 +179,9 @@ describe("practice-profile fixtures: structural provenance shape", () => {
       // Activated 2026-07-15: team amendments in each engine PROTOCOL.md are the local
       // confirmation basis (ADR 0011 addendum) — the activation must carry that provenance.
       expect(fixture.status).toBe("active");
-      expect(fixture.local_confirmation?.date).toBe("2026-07-15");
-      expect(fixture.local_confirmation?.commit).toMatch(/^[0-9a-f]{7,}$/);
+      const confirmation = (fixture as { local_confirmation?: { date?: string; commit?: string } }).local_confirmation;
+      expect(confirmation?.date).toBe("2026-07-15");
+      expect(confirmation?.commit).toMatch(/^[0-9a-f]{7,}$/);
       expect(fixture.non_exclusive).toBe(true);
     }
   });
@@ -272,19 +273,16 @@ describeIfSiblingRepos("practice-profile fixtures: quotes hash-verified against 
     }
   });
 
-  it("ensemble's public_name quote is verified against the already-ingested chronicle.entry event, not a raw repo read", () => {
+  it("ensemble's public_name quote is verified against chronicle.json at the pinned commit (bundle pointers are regenerable and may dangle, ADR 0009)", () => {
     const fixture = fixtures.find((f) => f.collective_id === "ensemble")!;
     const entry = fixture.provenance.public_name!;
     expect(entry.file).toMatch(/chronicle\.json/);
-    const bundleEventsPath = path.join(REPO_ROOT, "import/bundles/ensemble@2243fc0/events.json");
-    const events = JSON.parse(readFileSync(bundleEventsPath, "utf8")) as Array<{
-      event_type: string;
-      content_hash: string;
-      payload: { collective_session: number; summary: string };
-    }>;
-    const founding = events.find((e) => e.event_type === "chronicle.entry" && e.payload.collective_session === 1);
+    const hash = sha256HexOfShow(SIBLING_REPOS.ensemble, entry.commit!, "chronicle.json");
+    expect(`sha256:${hash}`).toBe(entry.content_hash);
+    const raw = showFileAtCommit(SIBLING_REPOS.ensemble, entry.commit!, "chronicle.json");
+    const chronicle = JSON.parse(raw) as Array<{ collective_session: number; summary: string }>;
+    const founding = chronicle.find((e) => e.collective_session === 1);
     expect(founding).toBeDefined();
-    expect(founding!.content_hash).toBe(entry.content_hash);
-    expect(founding!.payload.summary).toContain("the collective named itself Ensemble");
+    expect(founding!.summary).toContain("the collective named itself Ensemble");
   });
 });
