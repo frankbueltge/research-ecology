@@ -1,0 +1,79 @@
+<svg id="score" viewBox="0 192 1440 536" role="img" aria-label="Score map of encounter enc-2026-001-calibration-gap-travels: 7 ledger events across 3 lanes; the full event table follows below.">
+<defs><pattern id="hatch" width="5" height="5" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="5" class="hatch-line"/></pattern><marker id="tick" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" class="marker-stroke"/></marker><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" class="marker-stroke"/></marker></defs>
+<path class="grat" d="M340 248 V676"/>
+<path class="grat" d="M470 248 V676"/>
+<path class="grat" d="M600 248 V676"/>
+<path class="grat" d="M730 248 V676"/>
+<path class="grat" d="M860 248 V676"/>
+<path class="grat" d="M970 248 V676"/>
+<path class="grat" d="M1060 248 V676"/>
+<path class="ruler" d="M210 232 H1336"/>
+<path class="ruler" d="M340 226 V238"/>
+<text class="t-note" x="340" y="218" text-anchor="middle">2026-07-11</text>
+<path class="ruler" d="M470 226 V238"/>
+<text class="t-note" x="470" y="218" text-anchor="middle">2026-07-12</text>
+<path class="ruler" d="M1336 226 V238"/>
+<text class="t-note" x="1336" y="218" text-anchor="middle">2026-07-14</text>
+<text class="t-note t-dim" x="212" y="254">ordinal · ledger order</text>
+<path class="lane  pr-meridian" d="M210 300 H1226"/>
+<text class="t-lane pr-meridian" x="196" y="284" text-anchor="end">MERIDIAN</text>
+<text class="t-note t-dim" x="196" y="302" text-anchor="end">source</text>
+<path class="lane lane-thin pr-conductor" d="M210 450 H860"/>
+<text class="t-lane pr-conductor" x="196" y="434" text-anchor="end">CONDUCTOR</text>
+<text class="t-note t-dim" x="196" y="452" text-anchor="end">conductor</text>
+<path class="lane  pr-ensemble" d="M210 580 H1226"/>
+<text class="t-lane pr-ensemble" x="196" y="564" text-anchor="end">ENSEMBLE</text>
+<text class="t-note t-dim" x="196" y="582" text-anchor="end">receiver</text>
+<path class="flow flow-down pr-ensemble" marker-end="url(#arrow)" d="M354 304.2 C 411.5 342, 398.5 538, 456 575.8"/>
+<path class="flow flow-up pr-ensemble" marker-end="url(#arrow)" d="M484 575.8 C 541.5 560.5, 528.5 469.5, 586 454.2"/>
+<path class="flow flow-up pr-conductor" marker-end="url(#arrow)" d="M614 445.8 C 743 427.5, 717 322.5, 846 304.2"/>
+<path class="obl pr-ensemble" d="M470 606 H1330"/>
+<text class="t-note t-dim" x="1324" y="600" text-anchor="end">live-status-travels — active</text>
+<path class="obl pr-ensemble" d="M470 622 H1330"/>
+<text class="t-note t-dim" x="1324" y="616" text-anchor="end">caveat-preservation — active</text>
+<g class="evt" data-i="0" tabindex="0">
+<path class="mk pr-meridian" d="M340 284 V316" /><path class="mk mk-lt pr-meridian" d="M347 284 V316" /><path class="mk pr-meridian" d="M347 300 H360" marker-end="url(#tick)"/>
+<circle class="badge" cx="318" cy="266" r="9"/><text class="badge-n" x="318" y="269.2" text-anchor="middle">1</text>
+<rect class="hit" x="316" y="270" width="48" height="60" fill="transparent"/>
+</g>
+<g class="evt" data-i="1" tabindex="0">
+<rect class="mk-fill pr-ensemble" x="462" y="572" width="16" height="16" />
+<circle class="badge" cx="494" cy="550" r="9"/><text class="badge-n" x="494" y="553.2" text-anchor="middle">2</text>
+<rect class="hit" x="446" y="550" width="48" height="60" fill="transparent"/>
+</g>
+<g class="evt" data-i="2" tabindex="0">
+<path class="mk pr-conductor" d="M600 439 L611 450 L600 461 L589 450 Z" fill="none"/>
+<circle class="badge" cx="578" cy="416" r="9"/><text class="badge-n" x="578" y="419.2" text-anchor="middle">4</text>
+<rect class="hit" x="576" y="420" width="48" height="60" fill="transparent"/>
+</g>
+<g class="evt" data-i="3" tabindex="0">
+<rect class="mk-hatch pr-ensemble" x="714" y="573" width="11" height="14" /><rect class="mk-hatch pr-ensemble" x="735" y="573" width="11" height="14" /><path class="mk-void" d="M727 569 V591" />
+<circle class="badge" cx="754" cy="550" r="9"/><text class="badge-n" x="754" y="553.2" text-anchor="middle">3</text>
+<rect class="hit" x="706" y="550" width="48" height="60" fill="transparent"/>
+</g>
+<g class="evt" data-i="4" tabindex="0">
+<path class="mk pr-meridian" d="M850 302 L857 309 L871 291" fill="none"/>
+<circle class="badge" cx="838" cy="266" r="9"/><text class="badge-n" x="838" y="269.2" text-anchor="middle">5</text>
+<rect class="hit" x="836" y="270" width="48" height="60" fill="transparent"/>
+</g>
+<g class="evt" data-i="5" tabindex="0">
+<path class="mk-stem pr-ensemble" d="M970 580 V610" /><circle class="mk mk-punch pr-ensemble" cx="970" cy="618" r="7" />
+<rect class="hit" x="946" y="550" width="48" height="92" fill="transparent"/>
+</g>
+<g class="evt" data-i="6" tabindex="0">
+<path class="mk-stem pr-infra" d="M1060 580 V610" /><circle class="mk mk-punch pr-infra" cx="1060" cy="618" r="7" />
+<rect class="hit" x="1036" y="550" width="48" height="92" fill="transparent"/>
+</g>
+<circle class="ring pr-meridian" cx="1250" cy="300" r="10" fill="none"/>
+<circle class="ring pr-ensemble" cx="1250" cy="580" r="10" fill="none"/>
+<path class="gap" d="M1250 326 V416 M1250 464 V554"/>
+<circle class="badge" cx="1224" cy="396" r="9"/><text class="badge-n" x="1224" y="399.2" text-anchor="middle">6</text>
+<text class="t-note" x="1250" y="436" text-anchor="middle">no shared resolution</text>
+<text class="t-note t-dim" x="1250" y="454" text-anchor="middle">both stand</text>
+<text class="t-note t-dim" x="1222" y="242" text-anchor="end">Meridian&#x27;s framing</text>
+<text class="t-quote pr-meridian" x="1222" y="256" text-anchor="end"><tspan x="1222" dy="0">“a detector-in-the-accusation observation,</tspan><tspan x="1222" dy="14">not court-attributed detector harm”</tspan></text>
+<text class="t-note t-dim" x="1222" y="654" text-anchor="end">Ensemble&#x27;s refusal band</text>
+<text class="t-quote pr-ensemble" x="1222" y="668" text-anchor="end"><tspan x="1222" dy="0">“the University of Minnesota expulsion case</tspan><tspan x="1222" dy="14">as detector-attributed harm on the work&#x27;s</tspan><tspan x="1222" dy="14">verdict card”</tspan></text>
+<path class="asof" d="M1336 248 V676"/>
+<text class="t-note" transform="rotate(-90 1352 450)" x="1352" y="450" text-anchor="middle">here ends what the ledger knows</text>
+</svg>
