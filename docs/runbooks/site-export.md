@@ -8,12 +8,16 @@ dieses Dokument beschreibt den Ablauf; es legt **keinen** Workflow an.)
 `apps/export-site` liest denselben Datenbestand, den `apps/project` für die Karten dieses Repos
 verwendet (Bundles unter `import/bundles/**`, die Fixture unter
 `fixtures/enc-2026-001-calibration-gap-travels/`, `lenses/*.json`, `narratives/enc-2026-001.
-json`), erzeugt daraus deterministisch vier Artefakte und schreibt sie in den Ziel-Site-Checkout
+json`), erzeugt daraus deterministisch fünf Artefakte und schreibt sie in den Ziel-Site-Checkout
 (`frankbueltge.de`) unter `src/data/begegnungen/`:
 
 - `entrance.json` — kompakter Eingangs-Datensatz für die Astro-Seite `/`
 - `<slug>/narrative.json` — die Erzählung, byte-identisch aus `narratives/enc-2026-001.json`
   kopiert
+- `<slug>/score.json` — Partitur-Grundlage (work order phase-c2-site-entrance-design.md §1): die
+  vollen 7 Ledger-Events (nicht nur die 5 erzählten), Bahn/Infra pro Event, Obligations-Haltelinien
+  und Flüsse — Grundlage für `src/lib/begegnungen/score.ts` (TS-Port von
+  `docs/design/variants-2026-07-15/assemble_variants.py`s `build_svg()`) auf der Site
 - `<slug>/maps/<lensId>@<v>.json` — die drei Karten-Exporte (dieselbe `project()`-Engine, dieselbe
   Validierung wie `apps/project --export`)
 - `README.md` — Provenienz-Notiz (research-ecology-Commit, Generator-Version, datengetragenes

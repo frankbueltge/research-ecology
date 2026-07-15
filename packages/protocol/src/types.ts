@@ -261,6 +261,117 @@ export interface SiteEntrance {
   [key: string]: unknown;
 }
 
+/** score-export.schema.json — apps/export-site's second site artifact (work order
+ * phase-c2-site-entrance-design.md §1), sibling of SiteEntrance above. Carries the encounter's
+ * FULL ledger (all 7 events here, not just the 5 narrated ones entrance.json's stations cover)
+ * plus the lane/infra/flow/obligation facts the score renderer (src/lib/begegnungen/score.ts on
+ * the site, a TS port of docs/design/variants-2026-07-15/assemble_variants.py's build_svg())
+ * needs to draw the Partitur. `lane`/`infra`/flows/obligation `lane` are computed once here from
+ * real ledger fields (issuer vs. participants, `responds_to_event_id`, ledger order) — see
+ * apps/export-site/src/export.ts's `deriveLane`/`deriveFlows` doc comments for the exact rule.
+ * EN-only, additive (additionalProperties true), same evolvability rule as SiteEntrance. */
+export interface ScoreExportIssuer {
+  collective_id: string | null;
+  actor_id: string;
+  [key: string]: unknown;
+}
+
+export interface ScoreExportParticipant {
+  actor_id: string;
+  collective_id?: string | null;
+  role: string;
+  local_status?: string | null;
+  /** Lane id this participant's events are drawn on — its own collective_id, or (for the
+   * collective-less conductor participant) its role. */
+  lane?: string;
+  /** Vertical drawing rank, top to bottom (source above conductor above receiver — the
+   * Middle lies literally between the two practices, docs/design/zeichengrammatik-2026-07-15.
+   * md §1). Not array order: encounter.json declares source, receiver, conductor in that
+   * order; the score draws source, conductor, receiver. */
+  rank?: number;
+  [key: string]: unknown;
+}
+
+export interface ScoreExportNonParticipant {
+  collective_id: string;
+  note: string;
+  [key: string]: unknown;
+}
+
+export interface ScoreExportEvent {
+  event_id: string;
+  event_type: string;
+  /** `occurred_at` truncated to its date (`YYYY-MM-DD`) — same derivation as SiteEntrance's
+   * `status.as_of`. */
+  date: string;
+  issuer: ScoreExportIssuer;
+  /** Lane id (participant collective_id, or role for the collective-less conductor). */
+  lane: string;
+  /** True when `issuer.actor_id` names an automation identity not among the encounter's own
+   * declared participants (e.g. a CI integration bot delivering on a collective's behalf). */
+  infra: boolean;
+  /** Narrative station number (①–⑥) this event is narrated at, or null for ledger events the
+   * narrative doesn't single out (e.g. a second, infrastructure-side derivative.published). */
+  station: number | null;
+  quote?: string | null;
+  attribution?: string | null;
+  [key: string]: unknown;
+}
+
+export interface ScoreExportObligation {
+  id: string;
+  /** Short slug-derived label with status, e.g. "caveat-preservation — active". */
+  label: string;
+  /** Lane the obligation's haltelinie is drawn on (the obligated collective's lane). */
+  lane: string;
+  source_event_id: string;
+  status: string;
+  clause_text?: string;
+  [key: string]: unknown;
+}
+
+export interface ScoreExportFlow {
+  from_event_id: string;
+  to_event_id: string;
+  direction: "downstream" | "upstream";
+  [key: string]: unknown;
+}
+
+export interface ScoreExportDivergence {
+  leftLabel: string;
+  leftQuote: string;
+  rightLabel: string;
+  rightQuote: string;
+  closing: string;
+  leftLane?: string;
+  rightLane?: string;
+  /** Narrative station number (the divergence beat's own "beat-N" id, same derivation as
+   * ScoreExportEvent.station) — the ⑥ badge on the map. */
+  station?: number | null;
+  [key: string]: unknown;
+}
+
+export interface ScoreExport {
+  schema_version: string;
+  encounter_id: string;
+  headline: string;
+  status: {
+    as_of: string;
+    statusLine: string;
+    [key: string]: unknown;
+  };
+  authored_by: string;
+  approval: "pending" | "approved";
+  akte: string;
+  participants: ScoreExportParticipant[];
+  non_participants?: ScoreExportNonParticipant[];
+  events: ScoreExportEvent[];
+  obligations: ScoreExportObligation[];
+  flows: ScoreExportFlow[];
+  divergence: ScoreExportDivergence;
+  [key: string]: unknown;
+}
+
 /** practice-profile.schema.json — spec-v2.1 §3 (ADR 0011). A versioned, locally-authored
  * self-description of a sovereign practice — never a taxonomy The Middle imposes. Structural
  * validation (this schema + `validatePracticeProfile`) lives here; the business rule that

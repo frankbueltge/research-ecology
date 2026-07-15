@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://frankbueltge.de/schemas/score-export-1.0.json",
+  "title": "Score Export Dataset",
+  "description": "Compact score/Partitur dataset exported by apps/export-site into a target site's src/data/begegnungen/<slug>/score.json (work order phase-c2-site-entrance-design.md §1). Sibling of site-entrance.schema.json (same evolvability rule: additionalProperties true everywhere) — this is the encounter's full 7-event ledger plus the lane/flow/obligation facts the score renderer (src/lib/begegnungen/score.ts, a TS port of docs/design/variants-2026-07-15/assemble_variants.py's build_svg()) needs that entrance.json's narrated-station subset does not carry. EN-only, matching the rest of the ecology stack (2026-07-15).",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "encounter_id", "headline", "status", "authored_by", "approval", "akte", "participants", "events", "obligations", "flows", "divergence"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "encounter_id": { "type": "string" },
+    "headline": { "type": "string" },
+    "status": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["as_of", "statusLine"],
+      "properties": {
+        "as_of": { "type": "string" },
+        "statusLine": { "type": "string" }
+      }
+    },
+    "authored_by": { "type": "string" },
+    "approval": { "type": "string", "enum": ["pending", "approved"] },
+    "akte": { "type": "string" },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["actor_id", "role"],
+        "properties": {
+          "actor_id": { "type": "string" },
+          "collective_id": { "type": ["string", "null"] },
+          "role": { "type": "string" },
+          "local_status": { "type": ["string", "null"] },
+          "lane": { "type": "string" }
+        }
+      }
+    },
+    "non_participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["collective_id", "note"],
+        "properties": {
+          "collective_id": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["event_id", "event_type", "date", "issuer", "lane", "infra", "station"],
+        "properties": {
+          "event_id": { "type": "string" },
+          "event_type": { "type": "string" },
+          "date": { "type": "string" },
+          "issuer": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": ["collective_id", "actor_id"],
+            "properties": {
+              "collective_id": { "type": ["string", "null"] },
+              "actor_id": { "type": "string" }
+            }
+          },
+          "lane": { "type": "string" },
+          "infra": { "type": "boolean" },
+          "station": { "type": ["integer", "null"] },
+          "quote": { "type": ["string", "null"] },
+          "attribution": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "obligations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["id", "label", "lane", "source_event_id", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "lane": { "type": "string" },
+          "source_event_id": { "type": "string" },
+          "status": { "type": "string" },
+          "clause_text": { "type": "string" }
+        }
+      }
+    },
+    "flows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["from_event_id", "to_event_id", "direction"],
+        "properties": {
+          "from_event_id": { "type": "string" },
+          "to_event_id": { "type": "string" },
+          "direction": { "type": "string", "enum": ["downstream", "upstream"] }
+        }
+      }
+    },
+    "divergence": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["leftLabel", "leftQuote", "rightLabel", "rightQuote", "closing"],
+      "properties": {
+        "leftLabel": { "type": "string" },
+        "leftQuote": { "type": "string" },
+        "rightLabel": { "type": "string" },
+        "rightQuote": { "type": "string" },
+        "closing": { "type": "string" },
+        "leftLane": { "type": "string" },
+        "rightLane": { "type": "string" },
+        "station": { "type": ["integer", "null"] }
+      }
+    }
+  }
+}

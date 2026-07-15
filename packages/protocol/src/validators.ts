@@ -21,6 +21,7 @@ import type {
   LensDefinition,
   MapManifest,
   PracticeProfileVersion,
+  ScoreExport,
   SiteEntrance,
   TransferOfferPayload,
   TransferResponsePayload
@@ -39,6 +40,7 @@ import interventionSchema from "../schemas/intervention.schema.json" with { type
 import lensSchema from "../schemas/lens.schema.json" with { type: "json" };
 import mapManifestSchema from "../schemas/map-manifest.schema.json" with { type: "json" };
 import practiceProfileSchema from "../schemas/practice-profile.schema.json" with { type: "json" };
+import scoreExportSchema from "../schemas/score-export.schema.json" with { type: "json" };
 import siteEntranceSchema from "../schemas/site-entrance.schema.json" with { type: "json" };
 import transferOfferSchema from "../schemas/transfer-offer.schema.json" with { type: "json" };
 import transferResponseSchema from "../schemas/transfer-response.schema.json" with { type: "json" };
@@ -53,6 +55,7 @@ const compiledIntervention: ValidateFunction = ajv.compile(interventionSchema);
 const compiledLens: ValidateFunction = ajv.compile(lensSchema);
 const compiledMapManifest: ValidateFunction = ajv.compile(mapManifestSchema);
 const compiledPracticeProfile: ValidateFunction = ajv.compile(practiceProfileSchema);
+const compiledScoreExport: ValidateFunction = ajv.compile(scoreExportSchema);
 const compiledSiteEntrance: ValidateFunction = ajv.compile(siteEntranceSchema);
 const compiledTransferOffer: ValidateFunction = ajv.compile(transferOfferSchema);
 const compiledTransferResponse: ValidateFunction = ajv.compile(transferResponseSchema);
@@ -128,6 +131,13 @@ export function validateSiteEntrance(data: unknown): ValidationResult {
   return runValidate(compiledSiteEntrance, data);
 }
 
+/** Validates the compact score/Partitur dataset apps/export-site writes into a target site's
+ * src/data/begegnungen/<slug>/score.json (work order phase-c2-site-entrance-design.md §1),
+ * additive sibling of `validateSiteEntrance`. */
+export function validateScoreExport(data: unknown): ValidationResult {
+  return runValidate(compiledScoreExport, data);
+}
+
 /**
  * Validates a practice profile version against practice-profile.schema.json (spec-v2.1 §3,
  * ADR 0011, work order phase-b-profiles.md §2): `non_exclusive` must be the literal `true`
@@ -161,6 +171,7 @@ export type {
   LensDefinition,
   MapManifest,
   PracticeProfileVersion,
+  ScoreExport,
   SiteEntrance,
   TransferOfferPayload,
   TransferResponsePayload

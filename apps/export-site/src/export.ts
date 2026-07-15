@@ -34,7 +34,17 @@ import {
   type StoredParticipant
 } from "@research-ecology/domain";
 import { project, PROJECTIONS_ENGINE_VERSION, type ProjectionInput, type ProjectionLens } from "@research-ecology/projections";
-import { validateMapManifest, validateSiteEntrance, type MapManifest, type SiteEntrance } from "../../../packages/protocol/src/index.js";
+import {
+  validateMapManifest,
+  validateScoreExport,
+  validateSiteEntrance,
+  type MapManifest,
+  type ScoreExport,
+  type ScoreExportEvent,
+  type ScoreExportFlow,
+  type ScoreExportObligation,
+  type SiteEntrance
+} from "../../../packages/protocol/src/index.js";
 
 export const DEFAULT_ENCOUNTER_ID = "enc-2026-001-calibration-gap-travels";
 const LENS_IDS = ["provenance-v1", "ensemble-transformation-v1", "meridian-position-v1"] as const;
@@ -174,6 +184,267 @@ function toProjectionParticipant(p: StoredParticipant) {
     role: p.role,
     local_status: p.local_status,
     local_status_rationale: p.local_status_rationale
+  };
+}
+
+// ------------------------------------------------------------------------------------------
+// score.json assembly (work order phase-c2-site-entrance-design.md §1: additive export,
+// nothing hardcoded that the ledger already carries). The score renderer (frankbueltge.de's
+// src/lib/begegnungen/score.ts, a TS port of docs/design/variants-2026-07-15/
+// assemble_variants.py's build_svg()) needs three facts entrance.json's narrated-station
+// subset doesn't carry: the FULL ledger (all 7 events here, not just the 5 the narrative
+// singles out), which lane (source/conductor/receiver) each event and obligation belongs on,
+// and which event-to-event transitions are worth drawing as a flow arc. None of these are new
+// domain fields — every one below is a deterministic function of data already in the
+// hydrated store (participants, issuer, ledger order, `responds_to_event_id`).
+// ------------------------------------------------------------------------------------------
+
+/** A participant's lane id: its own collective_id (meridian/ensemble), or — for the
+ * collective-less conductor participant — its role. */
+function participantLane(p: StoredParticipant): string {
+  return p.collective_id ?? p.role;
+}
+
+/** Vertical drawing rank, top to bottom (source above conductor above receiver — The Middle
+ * lies literally between the two practices, docs/design/zeichengrammatik-2026-07-15.md §1
+ * "Bahnen"). Not participant array order: encounter.json declares source, receiver, conductor
+ * in that order; the score draws source, conductor, receiver. Unknown/future roles rank last,
+ * in the order they were declared — a documented fallback, never a crash. */
+const ROLE_RANK: Record<string, number> = { source: 0, conductor: 1, receiver: 2 };
+
+function participantRank(p: StoredParticipant, allParticipants: StoredParticipant[]): number {
+  const known = ROLE_RANK[p.role];
+  if (known !== undefined) return known;
+  return Object.keys(ROLE_RANK).length + allParticipants.findIndex((other) => other === p);
+}
+
+/**
+ * Which lane an event belongs on, and whether it was issued by an automation identity distinct
+ * from the encounter's own declared participants.
+ *
+ * Rule (checked against all 7 fixture events, including the one whose issuer.collective_id and
+ * drawn lane differ — evt-enc2026001-03-correction-issued, issued by Ensemble but DELIVERED by
+ * the conductor persona; events.json's own apparatus_note: "issuer.collective_id = ensemble,
+ * issuer.actor_id = frank-bueltge" because Ensemble explicitly delegated delivery):
+ *   1. match issuer.actor_id against a participant's actor_id (the ACTING persona — this is how
+ *      the ledger itself distinguishes "who is speaking" from "who is carrying"). If matched,
+ *      infra = false.
+ *   2. else match issuer.collective_id against a participant's collective_id (issuer.actor_id
+ *      names an identity the encounter never declared as a participant — e.g. an automation
+ *      persona such as "studio-integrate" acting on a collective's behalf). If matched,
+ *      infra = true.
+ *   3. else (issuer names neither a declared actor nor a declared collective): documented
+ *      fallback lane "unknown", infra = true — never a guessed lane.
+ */
+function deriveLane(
+  issuer: { collective_id: string | null; actor_id: string },
+  participants: StoredParticipant[]
+): { lane: string; infra: boolean } {
+  const byActor = participants.find((p) => p.actor_id === issuer.actor_id);
+  if (byActor) return { lane: participantLane(byActor), infra: false };
+  const byCollective = issuer.collective_id
+    ? participants.find((p) => p.collective_id === issuer.collective_id)
+    : undefined;
+  if (byCollective) return { lane: participantLane(byCollective), infra: true };
+  return { lane: "unknown", infra: true };
+}
+
+/** Fixed priority list of payload field names that, across this ledger's event types, hold the
+ * one sentence that matters (observed in fixtures/.../events.json, not per-event-id special
+ * cased) — used only as a fallback for events the narrative doesn't quote directly. */
+const QUOTE_PAYLOAD_KEYS = [
+  "quote_governing_principle",
+  "quote_contract",
+  "quote_appellate_finding",
+  "quote_rationale",
+  "quote_detector_in_accusation",
+  "quote_session_33_addition",
+  "gate_note",
+  "commit_message"
+];
+
+function deriveFallbackQuote(payload: Record<string, unknown> | undefined): string | null {
+  if (!payload) return null;
+  for (const key of QUOTE_PAYLOAD_KEYS) {
+    const value = payload[key];
+    if (typeof value === "string" && value.length > 0) return value;
+  }
+  return null;
+}
+
+function findNarrativeBeat(beats: RawNarrativeBeat[], eventId: string): RawQuoteBeat | undefined {
+  return beats.find((b): b is RawQuoteBeat => !isDivergenceBeat(b) && b.akte.eventId === eventId);
+}
+
+function beatStationNumber(beatId: string): number | null {
+  const match = /^beat-(\d+)$/.exec(beatId);
+  return match ? Number(match[1]) : null;
+}
+
+/**
+ * Quote + attribution for a score event. The 5 events the narrative singles out
+ * (`beats[].akte.eventId`) get the narrative's own approved quote/attribution — the same text
+ * entrance.json's stations show, so the score and the register agree word for word. The
+ * remaining events (currently: the two `derivative.published` events the narrative doesn't
+ * narrate) get a quote from the event's own payload (`deriveFallbackQuote`, never invented
+ * prose) and an attribution built from the issuer: the issuing collective, or
+ * "<actor> (infrastructure)" when `infra` is true.
+ */
+function deriveEventQuoteAndAttribution(
+  event: StoredEvent,
+  beat: RawQuoteBeat | undefined,
+  lane: { lane: string; infra: boolean }
+): { quote: string | null; attribution: string | null } {
+  if (beat) return { quote: beat.quote, attribution: beat.attribution };
+  const quote = deriveFallbackQuote(event.payload as Record<string, unknown> | undefined);
+  const attribution = lane.infra
+    ? `${event.issuer.actor_id} (infrastructure)`
+    : (event.issuer.collective_id ?? event.issuer.actor_id);
+  return { quote, attribution };
+}
+
+/**
+ * Which event-to-event transitions are worth drawing as a flow arc, and in which direction
+ * (docs/design/zeichengrammatik-2026-07-15.md §1 "Stromrichtung": downstream = source→receiver,
+ * upstream = receiver→source, vertically by lane rank). Every event TYPE listed here has a
+ * well-defined transport meaning in spec 03's own vocabulary, not this generator's invention:
+ * `object.admitted` is the moment a receiver takes on a source's object (the downstream
+ * transfer itself); `correction.issued` and `correction.applied` are, by definition, a
+ * correction travelling back. Each such event gets a flow edge FROM the event that occasioned
+ * it TO itself:
+ *   - `correction.applied` names its own trigger explicitly via `payload.responds_to_event_id`
+ *     (a real ledger field — no inference needed);
+ *   - the other two use the immediately preceding ledger event (ledger order is itself data,
+ *     not a guess: `object.admitted` always follows the contract it was admitted under;
+ *     `correction.issued` always follows the admission whose obligation it is delivering on).
+ * A transition is only drawn when the two events actually sit on different lanes (same-lane
+ * transitions are not a flow — nothing crosses The Middle).
+ */
+const FLOW_EVENT_TYPES = new Set(["object.admitted", "correction.issued", "correction.applied"]);
+
+function deriveFlows(
+  events: StoredEvent[],
+  eventLane: Map<string, string>,
+  laneRank: Map<string, number>
+): ScoreExportFlow[] {
+  const flows: ScoreExportFlow[] = [];
+  events.forEach((e, i) => {
+    if (!FLOW_EVENT_TYPES.has(e.event_type)) return;
+    const respondsTo = (e.payload as Record<string, unknown> | undefined)?.["responds_to_event_id"];
+    const fromEventId = typeof respondsTo === "string" ? respondsTo : events[i - 1]?.event_id;
+    if (!fromEventId) return;
+    const fromLane = eventLane.get(fromEventId);
+    const toLane = eventLane.get(e.event_id);
+    if (fromLane === undefined || toLane === undefined || fromLane === toLane) return;
+    const fromRank = laneRank.get(fromLane) ?? 0;
+    const toRank = laneRank.get(toLane) ?? 0;
+    flows.push({
+      from_event_id: fromEventId,
+      to_event_id: e.event_id,
+      direction: toRank > fromRank ? "downstream" : "upstream"
+    });
+  });
+  return flows;
+}
+
+/** Short slug label for an obligation, e.g. id "obl-enc2026001-caveat-preservation" ->
+ * "caveat-preservation — active". Every obligation id in this domain follows
+ * "obl-<encounter-slug>-<slug>" (obligations.json's own convention) — slicing off the first two
+ * dash-segments is a general rule, not a per-obligation lookup table. */
+function obligationLabel(id: string, status: string): string {
+  const slug = id.split("-").slice(2).join("-");
+  return `${slug} — ${status}`;
+}
+
+function buildScoreObligations(
+  obligations: StoredObligation[],
+  participants: StoredParticipant[]
+): ScoreExportObligation[] {
+  return obligations.map((o) => {
+    const obligated = o.obligated_collective_id
+      ? participants.find((p) => p.collective_id === o.obligated_collective_id)
+      : undefined;
+    const lane = obligated ? participantLane(obligated) : "unknown";
+    return {
+      id: o.id,
+      label: obligationLabel(o.id, o.status),
+      lane,
+      source_event_id: o.source_event_id,
+      status: o.status,
+      clause_text: o.clause_text
+    };
+  });
+}
+
+function buildScoreExport(
+  encounterId: string,
+  headline: string,
+  asOf: string,
+  statusLine: string,
+  authoredBy: string,
+  approval: "pending" | "approved",
+  akte: string,
+  participants: StoredParticipant[],
+  events: StoredEvent[],
+  obligations: StoredObligation[],
+  narrative: RawNarrative,
+  nonParticipants: Array<{ collective_id: string; note: string }>
+): ScoreExport {
+  const scoreParticipants = participants.map((p) => ({
+    actor_id: p.actor_id,
+    collective_id: p.collective_id,
+    role: p.role,
+    local_status: p.local_status ?? null,
+    lane: participantLane(p),
+    rank: participantRank(p, participants)
+  }));
+
+  const eventLane = new Map<string, string>();
+  const laneRank = new Map<string, number>();
+  for (const p of participants) laneRank.set(participantLane(p), participantRank(p, participants));
+
+  const scoreEvents: ScoreExportEvent[] = events.map((e) => {
+    const lane = deriveLane(e.issuer, participants);
+    eventLane.set(e.event_id, lane.lane);
+    const beat = findNarrativeBeat(narrative.beats, e.event_id);
+    const { quote, attribution } = deriveEventQuoteAndAttribution(e, beat, lane);
+    return {
+      event_id: e.event_id,
+      event_type: e.event_type,
+      date: e.occurred_at.slice(0, 10),
+      issuer: { collective_id: e.issuer.collective_id, actor_id: e.issuer.actor_id },
+      lane: lane.lane,
+      infra: lane.infra,
+      station: beat ? beatStationNumber(beat.id) : null,
+      quote,
+      attribution
+    };
+  });
+
+  const divergenceBeat = narrative.beats.find(isDivergenceBeat);
+  if (!divergenceBeat) throw new Error(`${narrative.encounter_id}: narrative has no divergence beat — cannot build score divergence`);
+  const sourceParticipant = participants.find((p) => p.role === "source");
+  const receiverParticipant = participants.find((p) => p.role === "receiver");
+
+  return {
+    schema_version: "1.0",
+    encounter_id: encounterId,
+    headline,
+    status: { as_of: asOf, statusLine },
+    authored_by: authoredBy,
+    approval,
+    akte,
+    participants: scoreParticipants,
+    non_participants: nonParticipants,
+    events: scoreEvents,
+    obligations: buildScoreObligations(obligations, participants),
+    flows: deriveFlows(events, eventLane, laneRank),
+    divergence: {
+      ...divergenceBeat.divergence,
+      leftLane: sourceParticipant ? participantLane(sourceParticipant) : undefined,
+      rightLane: receiverParticipant ? participantLane(receiverParticipant) : undefined,
+      station: beatStationNumber(divergenceBeat.id)
+    }
   };
 }
 
@@ -342,6 +613,43 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   const entranceFile = path.join(begegnungenDir, "entrance.json");
   writeJsonFile(entranceFile, entrance);
   filesWritten.push(path.relative(opts.siteDir, entranceFile));
+
+  // -- score.json (work order phase-c2-site-entrance-design.md §1) ----------------------------
+  // Exclude the synthesized `editorial.encounter_assembled` event (The Middle's own 2026-07-14
+  // act of assembling this record, added by the loader — hydrate.ts's `assembly_event_id`,
+  // never present in the raw fixture events.json) from the score's ledger: this mirrors
+  // provenance-v1's own exclusion of the exact same event ("the ledger renders the encounter's
+  // own operational history, not the apparatus that recorded it" — visible on /apparatus
+  // instead), and keeps the score's event count at the 7 real ledger events the zeichengrammatik
+  // and wortlaute documents both name. Filtered by id against the domain's own
+  // `assembly_event_id` field, not by a hardcoded event id or a guessed type-name string.
+  // Ledger order is itself data, not the hydrated store's incidental return order — sort
+  // defensively so `deriveFlows`'s "immediately preceding event" rule is never at the mercy of
+  // an unspecified store iteration order.
+  const orderedEvents = events
+    .filter((e) => e.event_id !== encounter.assembly_event_id)
+    .sort((a, b) => a.occurred_at.localeCompare(b.occurred_at));
+  const score: ScoreExport = buildScoreExport(
+    encounter.encounter_id,
+    entrance.headline,
+    entrance.status.as_of,
+    entrance.status.statusLine,
+    narrative.authored_by,
+    narrative.approval,
+    entrance.links.akte,
+    participants,
+    orderedEvents,
+    obligations,
+    narrative,
+    encounter.non_participants
+  );
+  const scoreValidation = validateScoreExport(score);
+  if (!scoreValidation.valid) {
+    throw new Error(`generated score.json failed score-export.schema.json: ${JSON.stringify(scoreValidation.errors)}`);
+  }
+  const scoreFile = path.join(encounterDir, "score.json");
+  writeJsonFile(scoreFile, score);
+  filesWritten.push(path.relative(opts.siteDir, scoreFile));
 
   // -- provenance README ----------------------------------------------------------------------
   const commit = resolveResearchEcologyCommit(opts.researchEcologyRoot);

@@ -12,7 +12,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { runExport, shortEncounterSlug, DEFAULT_ENCOUNTER_ID, type ExportResult } from "../../apps/export-site/src/export.js";
-import { validateSiteEntrance } from "../../packages/protocol/src/index.js";
+import { validateScoreExport, validateSiteEntrance } from "../../packages/protocol/src/index.js";
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(currentDir, "../..");
@@ -35,11 +35,12 @@ describe("export-site: determinism", () => {
     expect(runA.files.length).toBeGreaterThan(0);
   });
 
-  it("writes the four expected artifact kinds", () => {
+  it("writes the five expected artifact kinds", () => {
     const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
     expect(runA.files).toContain("src/data/begegnungen/entrance.json");
     expect(runA.files).toContain("src/data/begegnungen/README.md");
     expect(runA.files).toContain(`src/data/begegnungen/${slug}/narrative.json`);
+    expect(runA.files).toContain(`src/data/begegnungen/${slug}/score.json`);
     const mapFiles = runA.files.filter((f) => f.includes(`${slug}/maps/`));
     expect(mapFiles).toHaveLength(3);
   });
@@ -82,5 +83,54 @@ describe("export-site: determinism", () => {
     const exported = readFileSync(path.join(siteA, "src", "data", "begegnungen", slug, "narrative.json"));
     const original = readFileSync(path.join(REPO_ROOT, "narratives", "enc-2026-001.json"));
     expect(exported.equals(original)).toBe(true);
+  });
+
+  it("score.json validates against score-export.schema.json", () => {
+    const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
+    const raw = readFileSync(path.join(siteA, "src/data/begegnungen", slug, "score.json"), "utf8");
+    const score = JSON.parse(raw);
+    const result = validateScoreExport(score);
+    expect(result.valid, JSON.stringify(result.errors)).toBe(true);
+  });
+
+  it("score.json carries the full 7-event ledger, excluding the synthesized assembly event", () => {
+    const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
+    const raw = readFileSync(path.join(siteA, "src/data/begegnungen", slug, "score.json"), "utf8");
+    const score = JSON.parse(raw);
+    expect(score.events).toHaveLength(7);
+    expect(score.events.map((e: { event_type: string }) => e.event_type)).not.toContain("editorial.encounter_assembled");
+    // 5 events are narrated (stations ①–⑤ on the map are 1,2,4,3,5 — narrative order != ledger
+    // order for beats 3/4, docs/design/zeichengrammatik-2026-07-15.md §1); 2 (both
+    // derivative.published) carry no narrative station.
+    const stationed = score.events.filter((e: { station: number | null }) => e.station !== null);
+    expect(stationed).toHaveLength(5);
+    expect(new Set(stationed.map((e: { station: number }) => e.station))).toEqual(new Set([1, 2, 3, 4, 5]));
+  });
+
+  it("score.json places the delegated correction-issued event on the conductor lane, not its issuing collective's lane", () => {
+    const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
+    const raw = readFileSync(path.join(siteA, "src/data/begegnungen", slug, "score.json"), "utf8");
+    const score = JSON.parse(raw);
+    const correctionIssued = score.events.find((e: { event_id: string }) => e.event_id === "evt-enc2026001-03-correction-issued");
+    expect(correctionIssued.issuer.collective_id).toBe("ensemble");
+    expect(correctionIssued.lane).toBe("conductor");
+    expect(correctionIssued.infra).toBe(false);
+    const infraEvent = score.events.find((e: { event_id: string }) => e.event_id === "evt-enc2026001-07-publication-site-gate");
+    expect(infraEvent.infra).toBe(true);
+    expect(infraEvent.attribution).toBe("studio-integrate (infrastructure)");
+  });
+
+  it("score.json's two obligations and three flows are both derived, not invented", () => {
+    const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
+    const raw = readFileSync(path.join(siteA, "src/data/begegnungen", slug, "score.json"), "utf8");
+    const score = JSON.parse(raw);
+    expect(score.obligations).toHaveLength(2);
+    for (const obligation of score.obligations) {
+      expect(obligation.lane).toBe("ensemble"); // both obligated_collective_id === "ensemble" in the fixture
+      expect(obligation.source_event_id).toBe("evt-enc2026001-02-object-admitted");
+    }
+    expect(score.flows).toHaveLength(3);
+    expect(score.flows.filter((f: { direction: string }) => f.direction === "downstream")).toHaveLength(1);
+    expect(score.flows.filter((f: { direction: string }) => f.direction === "upstream")).toHaveLength(2);
   });
 });
