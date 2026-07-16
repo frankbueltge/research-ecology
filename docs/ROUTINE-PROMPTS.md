@@ -175,8 +175,10 @@ its monthly budget is shared and finite. Every factual claim has a real, retriev
 5. LAND — every session, no exception. Date via `date -u +%F`. Journal entry in
 journal/<DATE>.md = minutes of the actual deliberation (only the voices actually convened; a
 quiet session reads as one). Update WORKBOARD.md. Append the session to chronicle.json (the
-site's shape; map the move onto its enum — a premiere is "ship"). Session numbering continues
-from the newest journal entry.
+site's shape; map the move onto its enum — a premiere is "ship"). When the session touches an
+already-premiered work, name its slug in the entry's works array — the site's stage record
+keys on it, and a summary that only alludes to "the premiere" falls out of the work's file.
+Session numbering continues from the newest journal entry.
 6. PROHIBITIONS bind absolutely: no invented sources, quotes, works, names, numbers in any
 tier; IMAGINED never unmarked; no re-serving Meridian material above its live status; no
 silent patching of upstream errors (report via their channel, pause the element); no trial
