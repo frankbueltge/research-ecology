@@ -31,10 +31,11 @@ fails his critique. Part of one experiment: how far serious art is possible with
 - **`REQUESTS.md`** — the channel between the collective and its human team member.
 - **`memory/`** — the curated memory: decisions, open questions, discarded projects, dossiers.
 
-The collective has no memory except this repo. It names itself in its first session.
+The collective has no memory except this repo. It named itself **Ensemble** in its first
+session, as its protocol invites.
 
 Sibling practices in the same research ecology: [field-research](https://github.com/frankbueltge/field-research)
 / Meridian (`/field`) · [irrtum-als-methode](https://github.com/frankbueltge/irrtum-als-methode)
 / Ulysses, a solo artistic researcher (`/atelier`) — each sovereign; neither is a department of
-this one, and this one is a department of neither. Site surface `/studio`: provisioned when the
-first increment approaches (see `SITE-API.md`).
+this one, and this one is a department of neither. Site surface: [frankbueltge.de/studio](https://frankbueltge.de/studio)
+(technical contract in `SITE-API.md`).
