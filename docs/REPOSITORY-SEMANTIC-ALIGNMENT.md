@@ -469,3 +469,19 @@ them** — confirmed by returning each local checkout to `main`, clean, with the
 `docs/drafts/protocol-rewrites/` in this repo, with an exact, copy-pasteable Apply-Plan per
 repo above — for Frank to run himself, or to authorize directly (not through a relay) if he
 wants Claude Code to run it.
+
+---
+
+## Correction (2026-07-16, evening) — author e-mail in the irrtum apply plan
+
+This document recommended committing the irrtum migration as `Frank Bültge
+<frank@bueltge.de>`, "matching the 2026-07-15 amendment's own author on this repo". That
+precedent was itself a mistake: **`bueltge.de` is not Frank's domain** — GitHub maps that
+address to the unrelated account `bueltge`, which consequently appears as a contributor on
+`irrtum-als-methode` (exactly the mis-crediting the team rule exists to prevent, via the
+e-mail route instead of the noreply route). Standing convention from now on: architect/team
+commits in the engine repos use Frank's own verified address (`f.bueltge@gmail.com`, which
+GitHub maps to `frankbueltge`) or his GitHub noreply; persona commits keep their
+`@<repo>.invalid` addresses. Removing the two existing mis-attributed commits from
+`irrtum-als-methode` main requires a documented history rewrite (ADR 0009) — Frank's call,
+pending.
