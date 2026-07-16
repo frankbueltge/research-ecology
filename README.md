@@ -9,13 +9,25 @@ the constitution, the encounter protocol, the read-only importers, the determini
 projections, and The Middle — the contact-zone surface whose record the site's
 [/encounters](https://frankbueltge.de/encounters) page renders.
 
-**Status (2026-07-16):** the read-only federation is live — the site renders this repo's
-exports (entrance, score, maps) at its root and under /encounters; the export chain runs
-automatically after every engine session (`ecology-integrate` in the site repo, plus a
-nightly safety cron). Both apps (`apps/middle-web`, `apps/atelier`) build as fully static
-sites and await their Cloudflare Pages deployment (secrets/DNS pending). The writeable
-phase (live events, visitor impulses, the Postgres ledger) is designed but not begun —
-see `docs/design/impulse-besucher-schreiben-sich-ein.md` and ADR 0002/0005/0006.
+**Status (2026-07-16, evening):** the read-only federation is live — the site renders this
+repo's exports (entrance, score, maps) at its root and under /encounters; the export chain
+runs automatically after every engine session (`ecology-integrate` in the site repo, plus a
+nightly safety cron). The two apps sit on different rungs of the deployment ladder
+(implemented · buildable · statically exportable · deployable with the current adapter ·
+configured for production · actually deployed — these are not synonyms):
+
+- `apps/atelier` — implemented, buildable, statically exportable (adapter-static, full
+  prerender, smoke-checked). A deploy workflow exists (`deploy-apps.yml`) and its runs
+  currently **fail at the wrangler step by design**: the `CLOUDFLARE_API_TOKEN` /
+  `CLOUDFLARE_ACCOUNT_ID` secrets are not set yet. **Not deployed.**
+- `apps/middle-web` — implemented and buildable, but on the placeholder `adapter-auto` and
+  **not statically exportable today** (form-based theme toggle needs a live endpoint;
+  `url.search` reads block prerendering — see the workflow header and
+  `docs/runbooks/apps-deploy.md`). **Not deployable with the current adapter**; the design
+  decision is Frank's. Until it deploys, frankbueltge.de/akte/* 302s to this repo's fixtures.
+
+The writeable phase (live events, visitor impulses, the Postgres ledger) is designed but not
+begun — see `docs/design/impulse-besucher-schreiben-sich-ein.md` and ADR 0002/0005/0006.
 
 ## Layout
 
@@ -31,7 +43,7 @@ see `docs/design/impulse-besucher-schreiben-sich-ein.md` and ADR 0002/0005/0006.
 | `packages/protocol`, `packages/domain`, `packages/projections` | schemas, epistemic domain model, deterministic map/score renderers |
 | `apps/importer` | read-only adapters: engine repo → content-addressed bundle (idempotent, never writes upstream) |
 | `apps/export-site` | deterministic site artefacts → frankbueltge.de `src/data/begegnungen/` |
-| `apps/middle-web`, `apps/atelier` | the two surfaces (SvelteKit, static prerender) |
+| `apps/middle-web`, `apps/atelier` | the two surfaces (SvelteKit; atelier fully prerendered, middle-web still on placeholder adapter-auto — see Status) |
 | `fixtures/enc-2026-001-…/` | the first encounter's public record — events, assertions, obligations, verbatim |
 | `lenses/`, `narratives/` | situated lenses ("make maps, not tracings") and the approved tellings |
 | `db/` | the Postgres event/assertion schema, waiting for the writeable phase |
