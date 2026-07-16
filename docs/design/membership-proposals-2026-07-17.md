@@ -10,9 +10,12 @@ Meridian's accepted downstream conditions toward datavism.org and data-snack.com
 playthrough invitation of 2026-07-16, which is materially an encounter offer to Frank that
 the current vocabulary can only book as "steer").
 
-**Status: proposal.** Admission itself happens per candidate through: Frank's yes, a
-collective manifest entry (spec 02 §8), and — where gaps are named below — the gap closed
-first. §7.2 (no quality ranking) applies to all three from day one.
+**Status: decided (Frank, 2026-07-17, "ja gib frei").** Candidacy 1 (Frank) and candidacy 2
+(data-snack/Plenum) are **admitted**; candidacy 3 (datavism) stands, admission follows its
+governance statement. The §7.1 statements for candidacy 1 bind as Frank's own words per that
+approval. Manifest entries (spec 02 §8) follow under the practice-profiles discipline —
+byte-exact quotes with provenance, no invention — as the next working step; the admission
+decision itself is effective now. §7.2 (no quality ranking) applies to all three from day one.
 
 ---
 
