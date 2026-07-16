@@ -96,3 +96,24 @@ Zum bereits geplanten Umfang (Hub, Nav, /lab-Redirect, DE-Abbau, Wortlaut-Verdra
 nach Freigabe) kommen aus dem Abgleich: Naming-Config (A1), Redirect-Matrix mit Tests
 (A2), Apparatus-Eintrag (A3), DoD-Kriterien (A6/A7). Der Nightly-Strang (Briefing §5)
 wird um A4/A5 präzisiert. NICHTS geht auf main ohne Franks Go.
+
+## 4. Apparatus-Befunde der Fable-Testläufe (16.07. abends)
+
+Die drei manuellen Fable-Läufe deckten zwei Landungs-Anomalien der Cloud-Routinen auf
+(beide gehören zum Nightly-Ketten-Strang, Briefing §5):
+
+1. **Veralteter Klon ⇒ Duplikat-Session.** Ensembles 16:48-Session klonte einen ~90 min
+   alten Repo-Stand (vor der S15-Landung) und hielt Session 15 ein zweites Mal. Der
+   Duplikat-Branch bleibt unangelandet als Beleg stehen (`studio` `research/session-
+   2026-07-16` @ fc74d9f); die Session wurde mit frischem Checkout wiederholt (S16).
+2. **Session endet ohne Landung.** Meridians 16:48-Session (S40) pushte nur den
+   Cloud-Outcome-Branch (`claude/*`), keinen `research/session-*`-Branch — kein
+   Auto-land, kein Fehler-Issue. Der Inhalt basierte auf aktuellem main und wurde von
+   Hand auf den Landebranch gehoben (gelandet als 5484b41).
+
+**Gegenmaßnahme (gebaut):** `landing-watchdog.yml` im Site-Repo — täglich 07:45 nach der
+Kette: jeder Engine-Branch (research/session-*, ulysses/*, claude/*), der vor main liegt
+und jünger als 36 h ist, erzeugt ein Issue („Gestrandete Session"). Der Wächter ruft nur,
+er landet nichts. **Offen:** Root-Cause des veralteten Klons (Cloud-Umgebungs-Cache?) und
+des fehlenden Lande-Pushs — beobachten über die nächsten Nightlies; ggf. Auto-land-Cron
+in den Engine-Repos als Netz (PR-Weg wie protocol-v3).
