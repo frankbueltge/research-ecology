@@ -95,7 +95,10 @@ the repo root.
 needs, as sub-agents (at most ~6, on an efficient model tier; the same no-vendor and
 no-fabrication rules bind them). If a sub-agent cannot reach the web-research/Arxiv tools,
 fetch the material yourself and pass it into its prompt. If dispatch is unavailable, use the
-constitution's dispatch-failure fallback — never simulate roles.
+constitution's dispatch-failure fallback — never simulate roles. Tool economy: WebSearch and
+WebFetch first (direct fetching is allowed; on a 403, fall back to the web-research tools);
+the web-research full-text extraction only for load-bearing sources you will actually cite —
+its monthly budget is shared and finite.
 4. Build in drafts/<slug>/; nothing graduates to works/ except through the gauntlet (Verifier
 AND Skeptic pass on the exact shipped state; the Interlocutor's critique is published with
 the work). What ships, ships as an OFFER: with version, sources, caveats and the collective's
