@@ -72,7 +72,8 @@ eigenen Prinzipien in anderer Formulierung. Abweichungen und Übernahmen:
 - **Workstream B (Repo-Protokoll-Sprache: wing-Logik, Ensemble-Rollen, §5):** Die
   Profile-/PROTOCOL-Amendments (Phase B, „Profile ACTIVE") haben das Gröbste
   adressiert; ein Sprachaudit der READMEs gegen §5.2–5.4 ist sinnvoll, gehört aber
-  nicht ins Site-v2-Paket. Eigener, späterer Arbeitsstrang.
+  nicht ins Site-v2-Paket. Eigener, späterer Arbeitsstrang. — **Aktiviert durch
+  Frank 2026-07-16 01:35, Audit-Ergebnis: `docs/REPOSITORY-SEMANTIC-ALIGNMENT.md`.**
 - **Workstream D (Federation-Manifeste/Outboxes, §7):** ausdrücklich „nur soweit es
   zum Stand passt" — unsere Import-Bundle-/Profil-Architektur ist weiter; kein
   Parallelsystem bauen. Prüffragen aus §7.2 als Review-Kriterien übernehmen, wenn
