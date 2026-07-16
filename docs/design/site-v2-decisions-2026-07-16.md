@@ -38,6 +38,15 @@ Noch offen: Kernfrage 6 (Atlas-Dualität — als Vorschlag im Mockup, Franks Zus
 aussteht), Kernfrage 7 (Praxis-Seiten statisch vs. App-Links), Wortlaut-Redaktion
 (alles im Mockup ist DRAFT), „Holdings" als englisches Bestände-Label.
 
+**Nachtrag 16.07. vormittags — alles Offene geschlossen** (Frank: „wortlaute sind
+freigegeben. bitte durchziehen und selber entscheiden"): Wortlaute approved
+(`naming.ts`, ein Fix: Holdings nennt „The Policy" statt „Police"); Kernfrage 6 wie
+vorgeschlagen entschieden (Franks Atlas bleibt /atlas als Referenzsammlung; Ulysses'
+Papers-Regal zieht in einem späteren Paket nach /atelier/material, beide verweisen
+aufeinander); Kernfrage 7: Praxis-Seiten bleiben statisch aus den committeten Daten
+(kein App-Link, solange die Apps nicht deployt sind — Abgleich A6); Label „Holdings"
+bleibt. Freigabe-Trail: frankbueltge.de `docs/decision-log.md`.
+
 ## 2. Abgleich mit der Außenperspektive (ChatGPT-Brief, 2026-07-15)
 
 Quelle: `~/Downloads/CLAUDE-CODE-HANDOFF-SITE-REPOS-AUTOMATION.md`. Der Brief
