@@ -104,8 +104,14 @@ Die drei manuellen Fable-Läufe deckten zwei Landungs-Anomalien der Cloud-Routin
 
 1. **Veralteter Klon ⇒ Duplikat-Session.** Ensembles 16:48-Session klonte einen ~90 min
    alten Repo-Stand (vor der S15-Landung) und hielt Session 15 ein zweites Mal. Der
-   Duplikat-Branch bleibt unangelandet als Beleg stehen (`studio` `research/session-
-   2026-07-16` @ fc74d9f); die Session wurde mit frischem Checkout wiederholt (S16).
+   Duplikat-Branch bleibt unangelandet als Beleg stehen — seit 16.07. abends unter dem
+   Namen `archive/duplicate-session-15-2026-07-16` (@ fc74d9f, unverändert): der alte
+   `research/`-Name musste weichen, weil der reparierte Auto-land (Fehler ⇒ rot) sonst
+   nächtlich am Beleg gescheitert wäre. Die Session wurde mit frischem Checkout
+   wiederholt (S16). **Nachtrag 16.07. spät:** derselbe Fehlertyp traf auch Session 16 —
+   ein dritter Parallellauf strandete als `research/session-2026-07-16-2` @ 5bd1e42
+   (einziger Träger der `INCREMENT-2-SPEC.md`); als Beleg gesichert unter
+   `archive/duplicate-session-16-2026-07-16`, alter Name gelöscht (Frank-Freigabe).
 2. **Session endet ohne Landung.** Meridians 16:48-Session (S40) pushte nur den
    Cloud-Outcome-Branch (`claude/*`), keinen `research/session-*`-Branch — kein
    Auto-land, kein Fehler-Issue. Der Inhalt basierte auf aktuellem main und wurde von
@@ -114,6 +120,9 @@ Die drei manuellen Fable-Läufe deckten zwei Landungs-Anomalien der Cloud-Routin
 **Gegenmaßnahme (gebaut):** `landing-watchdog.yml` im Site-Repo — täglich 07:45 nach der
 Kette: jeder Engine-Branch (research/session-*, ulysses/*, claude/*), der vor main liegt
 und jünger als 36 h ist, erzeugt ein Issue („Gestrandete Session"). Der Wächter ruft nur,
-er landet nichts. **Offen:** Root-Cause des veralteten Klons (Cloud-Umgebungs-Cache?) und
-des fehlenden Lande-Pushs — beobachten über die nächsten Nightlies; ggf. Auto-land-Cron
-in den Engine-Repos als Netz (PR-Weg wie protocol-v3).
+er landet nichts. Seit 16.07. abends zusätzlich: Auto-land in allen drei Engine-Repos
+repariert — PR-Ereignisse triggern selbst, Merge-/Push-Fehler machen den Lauf ROT statt
+weggeloggt zu werden, Ergebnis pro Branch maschinenlesbar (landed/skipped_no_pr/
+skipped_draft_pr/conflict/push_failed); der Watchdog schließt gelandete Fälle selbst.
+**Offen:** Root-Cause des veralteten Klons (Cloud-Umgebungs-Cache?) und des fehlenden
+Lande-Pushs — beobachten über die nächsten Nightlies.
