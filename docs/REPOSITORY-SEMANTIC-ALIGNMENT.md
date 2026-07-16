@@ -1,3 +1,13 @@
+> **status: SUPERSEDED** · superseded_by: `docs/IMPLEMENTATION-HANDOFF-2026-07-16.md`
+> · effective_date: 2026-07-16 (evening)
+>
+> This document remains the unaltered historical record of Workstream B as of the morning
+> of 2026-07-16. Its state assertions — "NOT applied to any engine repo", "all three engine
+> repos untouched" — were true when written and are **no longer current**: the drafted
+> migrations have since been applied to the engine repos, directly authorized. What was
+> adopted, what was adapted, and what was deliberately not done is recorded in the handoff
+> document above, with the exact commits. Nothing below has been edited.
+
 # Repository Semantic Alignment (Workstream B)
 
 Status: **audit complete; constitutional migration drafted in full; NOT applied to any engine
