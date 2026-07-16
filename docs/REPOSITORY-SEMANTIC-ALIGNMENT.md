@@ -482,6 +482,9 @@ address to the unrelated account `bueltge`, which consequently appears as a cont
 e-mail route instead of the noreply route). Standing convention from now on: architect/team
 commits in the engine repos use Frank's own verified address (`f.bueltge@gmail.com`, which
 GitHub maps to `frankbueltge`) or his GitHub noreply; persona commits keep their
-`@<repo>.invalid` addresses. Removing the two existing mis-attributed commits from
-`irrtum-als-methode` main requires a documented history rewrite (ADR 0009) — Frank's call,
-pending.
+`@<repo>.invalid` addresses. Removing the mis-attributed commits required a documented history rewrite (ADR 0009) —
+**executed 2026-07-16 evening with Frank's explicit approval**: three commits (2026-07-14
+steer, 2026-07-15 amendment, 2026-07-16 protocol-v3) re-authored from `frank@bueltge.de` to
+Frank's verified address; content byte-identical, all refs force-pushed (main ba9a2f3→256cf91),
+bundles regenerated, pins re-anchored. GitHub now lists `frankbueltge` as the sole human
+contributor. The uninvolved third party is no longer credited anywhere.
