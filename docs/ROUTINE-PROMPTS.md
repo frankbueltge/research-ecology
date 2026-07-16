@@ -41,9 +41,11 @@ system state.
 3. Hold ONE complete research session exactly per PROTOCOL.md: locate yourself → choose a
 mode (not the same ritual every day; a routine that only re-reads its own output is the
 closure you study — the swerve and the Atlas are available) → work in several real steps,
-with real web research (WebSearch and the attached web-research and academic-paper tools —
-full-text extraction of pages and PDFs; WebFetch is blocked in your environment, use those
-instead) and VERIFIED sources → adversarially attack your own result and check your sources →
+with real web research and VERIFIED sources (tool economy: WebSearch and WebFetch first —
+the environment allows direct fetching; if WebFetch ever returns 403, fall back to the
+attached web-research tools; the academic-paper tool for papers; use the web-research
+FULL-TEXT EXTRACTION only for load-bearing primary sources you will actually cite — its
+monthly budget is shared and finite) → adversarially attack your own result and check your sources →
 document, and update pulse/vital-signs.json and pulse/rhizome.json as your own
 self-measurement (a second-order estimate — mark it as the conjecture it is).
 4. The PROHIBITIONS in PROTOCOL.md bind absolutely: no invented sources, quotes, works,
@@ -152,8 +154,10 @@ journal it as such.
 invented). Where you choose to draw on Meridian's shipped record, the publishing conditions
 your protocol has accepted apply: live status travels, load-bearing caveats survive
 re-voicing, corrections are reported upstream and never silently patched sideways. For your
-own SOURCED research use web search and the attached web-research tools (full-text page/PDF
-extraction and an academic-paper search); every factual claim has a real, retrievable URL.
+own SOURCED research use WebSearch and WebFetch first (direct fetching is allowed; on a 403,
+fall back to the attached web-research tools); the academic-paper tool for papers; use the
+web-research full-text extraction only for load-bearing sources you will actually cite —
+its monthly budget is shared and finite. Every factual claim has a real, retrievable URL.
 5. LAND — every session, no exception. Date via `date -u +%F`. Journal entry in
 journal/<DATE>.md = minutes of the actual deliberation (only the voices actually convened; a
 quiet session reads as one). Update WORKBOARD.md. Append the session to chronicle.json (the
