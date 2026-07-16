@@ -263,7 +263,11 @@ export function buildAtelierBundle(repoPath: string, commitRef: string, generate
   for (const [path, kind, reason] of [
     [".github", "editorial scope", "CI/automation workflow files, not research content"],
     ["tools", "editorial scope", "operator tooling (memory indexer CLI), not research content"],
-    [".gitignore", "editorial scope", "VCS configuration, not research content"]
+    [".gitignore", "editorial scope", "VCS configuration, not research content"],
+    // protocol-v3 migration (2026-07-16): superseded constitution versions move to archive/
+    // — historical record, deliberately not imported as live research content; the effective
+    // PROTOCOL.md is imported above.
+    ["archive", "superseded record", "archived constitution/README versions (protocol-v3 migration) — historical, not live content"]
   ] as const) {
     if (topLevel.includes(path)) {
       exclusions.push({ collective_id: COLLECTIVE_ID, path, kind, reason, source_commit: repo.commit });

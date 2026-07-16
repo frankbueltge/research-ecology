@@ -71,9 +71,9 @@ describe("atelier: rhizome node → work reference resolution never guesses", ()
 });
 
 describe("atelier: pulse/vital-signs.json closures", () => {
-  it("produces exactly one assertion per history entry (5 at this commit)", () => {
+  it("produces exactly one assertion per history entry (8 at this commit)", () => {
     const closures = bundle.assertions.filter((a) => a.predicate === "self-assessment.closure");
-    expect(closures.length).toBe(5);
+    expect(closures.length).toBe(8);
   });
 
   it("local_epistemic_status is the closure_note's own first word, verbatim", () => {
@@ -133,14 +133,14 @@ describe("atelier: work source_metadata.date is populated verbatim from meta.jso
 });
 
 describe("atelier: rhizome edge 'session' carries verbatim from pulse/rhizome.json (phase-c1 §1 finding)", () => {
-  it("all 26 edges import; session present only where the source edge has one", () => {
+  it("all 35 edges import; session present only where the source edge has one", () => {
     const edges = bundle.assertions.filter((a) => a.assertion_id.includes(":rhizome-edge-"));
-    expect(edges.length).toBe(26);
+    expect(edges.length).toBe(35);
     const withSession = edges.filter((a) => typeof (a as { session?: unknown }).session === "number");
     const withoutSession = edges.filter((a) => (a as { session?: unknown }).session === undefined);
-    // 19 sourced edges carry a session (26–30); the 7 "elaborates" edges carry none.
-    expect(withSession.length).toBe(19);
-    expect(withoutSession.length).toBe(7);
+    // 27 sourced edges carry a session (26–33); the 8 "elaborates" edges carry none.
+    expect(withSession.length).toBe(27);
+    expect(withoutSession.length).toBe(8);
     for (const edge of withoutSession) {
       expect(edge.predicate).toBe("elaborates");
     }
