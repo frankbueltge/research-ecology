@@ -28,6 +28,13 @@ consistency work), same evening.
 | site (`frankbueltge.de`) | /apparatus rewritten from the constitution (P0.2), autonomy language qualified site-wide ("locally constituted, machine-run … versioned wherever the apparatus permits"), README table de-winged, `approval: draft` explicitly documented as archival-record model (not a publication gate), legacy routes (`/lab/`, `/praktiken/` + /de twins) fixed, deploy gated on check+test, GitHub repo descriptions of all engine repos + site updated | `85804df`, `a6ca20c`, `5dcfe34`, `bd01dcb`, `7f05fb6` |
 | this repo | README deployment ladder (atelier: statically exportable, not deployed, fails at the intended secret gate; middle-web: not statically exportable on placeholder adapter-auto); decisions doc §4 updated (Beleg renames, auto-land repair) | see `git log docs/ README.md`, same evening |
 
+## Late additions (same night, third feedback round)
+
+| Where | What | Commit(s) |
+|---|---|---|
+| this repo, `docs/ROUTINE-PROMPTS.md` | optional encounter inbox in all three orientation passes ("check for offers, invitations, corrections or challenges explicitly addressed to this practice — no response required, silence remains legitimate, technical delivery is not acceptance"); explicitly a possibility, never an exchange obligation. Ensemble prompt also moved to `studio-feedback/`. **Still to mirror by hand into the cloud routines configuration.** | see `git log docs/ROUTINE-PROMPTS.md` |
+| `lab-pipelines` | ADR 0001 "generated mirror" — role, sync direction (site → mirror, never reverse), correction authority (none here; corrections are new dated renderings in the site repo) fixed as a decision record, linked from the README | ADR commit, same night |
+
 ## Deliberately not done
 
 - **`lab-pipelines` fix 3** (scheduled re-export workflow in the site repo): offered in the
