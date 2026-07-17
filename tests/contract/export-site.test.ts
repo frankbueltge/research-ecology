@@ -39,6 +39,7 @@ describe("export-site: determinism", () => {
     const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
     expect(runA.files).toContain("src/data/begegnungen/entrance.json");
     expect(runA.files).toContain("src/data/begegnungen/README.md");
+    expect(runA.files).toContain("src/data/begegnungen/register.json");
     expect(runA.files).toContain(`src/data/begegnungen/${slug}/narrative.json`);
     expect(runA.files).toContain(`src/data/begegnungen/${slug}/score.json`);
     const mapFiles = runA.files.filter((f) => f.includes(`${slug}/maps/`));

@@ -23,7 +23,7 @@
  */
 
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import {
   hydrateMemoryStoreFromRepo,
@@ -672,6 +672,39 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   mkdirSync(path.dirname(readmeFile), { recursive: true });
   writeFileSync(readmeFile, readme, "utf8");
   filesWritten.push(path.relative(opts.siteDir, readmeFile));
+
+  // -- register.json (2026-07-17: the ledger holds multiple encounters now) -------------------
+  // Listed straight from the fixtures' own encounter.json files — deterministic (sorted by
+  // directory name), no timestamps beyond each record's own status.as_of. The entrance keeps
+  // the one encounter with an authored score; the register names every recorded encounter so
+  // the site never silently under-reports the ledger (Frank, 2026-07-17: "warum wurde die
+  // encounter karte noch nicht aktualisiert??").
+  const fixturesRoot = path.join(opts.researchEcologyRoot, "fixtures");
+  const register = readdirSync(fixturesRoot)
+    .filter((d) => d.startsWith("enc-"))
+    .sort()
+    .map((dir) => {
+      const enc = JSON.parse(readFileSync(path.join(fixturesRoot, dir, "encounter.json"), "utf8")) as {
+        encounter_id: string;
+        title?: string;
+        status?: { as_of?: string; statusLine?: string } | null;
+        approval?: string | null;
+        authored_by?: string | null;
+        participants?: Array<{ collective_id?: string | null; actor_id?: string }>;
+      };
+      return {
+        encounter_id: enc.encounter_id,
+        title: enc.title ?? null,
+        status: enc.status ?? null,
+        approval: enc.approval ?? null,
+        authored_by: enc.authored_by ?? null,
+        participants: (enc.participants ?? []).map((p) => p.collective_id ?? p.actor_id ?? "unknown"),
+        record_url: `https://github.com/frankbueltge/research-ecology/tree/main/fixtures/${dir}`
+      };
+    });
+  const registerFile = path.join(begegnungenDir, "register.json");
+  writeJsonFile(registerFile, register);
+  filesWritten.push(path.relative(opts.siteDir, registerFile));
 
   return {
     encounterId: encounter.encounter_id,
