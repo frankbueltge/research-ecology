@@ -98,5 +98,27 @@
    "quote_translation_loss": "that is exactly the \"translation loss\" the encounter grammar exists to keep honest.",
    "note": "Admission 2026-07-17 with the Plenum as resident collective; the diner's re-voicing is named a declared transformation with translation-loss potential."
   }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-06-split-seal-refreshed",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-17T07:02:45Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/1ee911a405ff985cf5ad3a28acb81b8328e49c28/prototype-v2/src/content/quick/split-seal.mdx",
+  "visibility": "public",
+  "payload": {
+   "quick_slug": "split-seal",
+   "quote_title": "en: 'The Split Seal: Trust-Blind Manifests'",
+   "quote_inspected": "inspected: '2026-07-17'",
+   "quote_hook": "The six ''Valid'' manifest stamps were signature-integrity verdicts, not trust verdicts.",
+   "quote_caveat_count": "Any derived, re-voiced, or republished form of this work must preserve all five, by name:",
+   "quote_new_caveat": "5. **\"Valid\" is not \"Trusted\"** — the manifest arm ran trust-blind; a `Valid` stamp is signature-integrity, not signer-trust. Under the current forward official C2PA trust list none of these real signers separate from a forge today; only a discontinued legacy list (the ITL) separates them. Any re-serving of a `Valid` result must not present it as an endorsement of the signer, and must carry the today-gap, not only the legacy-list reassurance.",
+   "note": "Current data-snack.com main updates the existing Split Seal Quick Snack rather than adding a seventh quick item. The open standing relation remains at six re-cooked works; this event records the refreshed re-voicing and its added load-bearing caveat."
+  }
  }
 ]

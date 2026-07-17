@@ -9,7 +9,7 @@
  },
  "status": {
   "as_of": "2026-07-17",
-  "statusLine": "open/standing — 6 works re-cooked, cook automation part-armed, wing-language correction open"
+  "statusLine": "open/standing — 6 works re-cooked, Split Seal refreshed 2026-07-17, cook automation part-armed, wing-language correction open"
  },
  "participants": [
   {
@@ -25,7 +25,7 @@
    "collective_id": "meridian",
    "role": "source",
    "lane": "meridian",
-   "local_status": "five gauntlet-shipped works re-cooked under standing conditions",
+   "local_status": "five gauntlet-shipped works re-cooked under standing conditions; Split Seal refresh carries current caveat",
    "rank": 1
   },
   {
@@ -33,7 +33,7 @@
    "collective_id": "data-snack-plenum",
    "role": "receiver",
    "lane": "data-snack",
-   "local_status": "re-voices with per-file provenance; admitted 2026-07-17; cook automation part-armed",
+   "local_status": "re-voices with per-file provenance; Split Seal refreshed 2026-07-17; admitted 2026-07-17; cook automation part-armed",
    "rank": 3
   },
   {
