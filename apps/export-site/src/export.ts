@@ -23,7 +23,7 @@
  */
 
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync, writeFileSync, readdirSync, readFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import {
   hydrateMemoryStoreFromRepo,
@@ -56,6 +56,13 @@ export interface ExportOptions {
   /** Absolute path to the target site checkout (its src/data/begegnungen/ is written into). */
   siteDir: string;
   encounterId?: string;
+  /** Optional directory holding shallow clones of the engine repos, keyed by repo name
+   * (e.g. `<enginesRoot>/studio/works/…`). The site's ecology-integrate already clones these;
+   * when the path is given, the register carries a machine-OBSERVED receiver-work premiere
+   * status derived from each engine's works/ (see `observeReceiverWork`). Absent (e.g. the
+   * determinism test, which passes no engines) → no observation and register entries stay
+   * byte-identical to before this layer existed. */
+  enginesRoot?: string;
 }
 
 export interface ExportResult {
@@ -65,6 +72,10 @@ export interface ExportResult {
   /** Every file written, relative to siteDir, sorted — the CLI's stdout summary and what the
    * determinism test diffs. */
   files: string[];
+  /** Encounters whose receiver work has premiered (observed in the engine's works/) while the
+   * editorial record still reads "premiere pending". Never edits the record — it prompts the
+   * scribe ("Beobachten & anstoßen", 2026-07-17). Empty unless `enginesRoot` was given. */
+  driftWarnings: string[];
 }
 
 // ------------------------------------------------------------------------------------------
@@ -499,6 +510,114 @@ function writeJsonFile(filePath: string, data: unknown): void {
   writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }
 
+// ------------------------------------------------------------------------------------------
+// Observed receiver-work status (2026-07-17, "Beobachten & anstoßen"). A machine-OBSERVED,
+// non-editorial layer answering one verifiable question per encounter: does the receiver's
+// referenced work still sit in the engine's projects/ (in production), or has it graduated to
+// works/ (premiered)? Read from ground truth (the engine repo clones the site's
+// ecology-integrate already makes), NEVER from the scribe's editorial prose — so the register
+// self-corrects the moment a work premieres, while the byte-verified editorial ledger stays
+// scribe-authored. The gap this closes: the 2h auto-integrate faithfully re-exported the same
+// fixture forever; the fixture only changed when the scribe wrote it, and nothing told the
+// scribe a premiere had happened (enc-2026-002 froze on "premiere pending" while
+// studio/works/2026-07-17-no-way-of-knowing went live). Determinism (module rule "kein
+// Zeitstempel außer datengetragenen"): no wall clock — the premiere date is the works/
+// directory's own <YYYY-MM-DD> name prefix, not Date.now().
+// ------------------------------------------------------------------------------------------
+
+export interface ObservedReceiverWork {
+  receiver_collective: string;
+  engine_repo: string;
+  work_slug: string;
+  premiered: boolean;
+  /** the works/<YYYY-MM-DD>-<slug> directory that graduated, or null while still in projects/. */
+  work_dir: string | null;
+  /** the engine's own premiere date (work_dir's date prefix), or null. */
+  premiered_on: string | null;
+  /** the encounter's own object reference (a projects/ or works/ URI) — provenance, not a claim. */
+  in_production_uri: string;
+}
+
+interface RegisterObjectRef {
+  id?: string;
+  collective_id?: string | null;
+  canonical_uri?: string;
+}
+
+/** `github.com/frankbueltge/<repo>/blob/…` -> `<repo>`; null for a non-engine URI. Deriving the
+ * repo from the object's own URI (not a hardcoded collective→repo table) keeps a future engine
+ * working for free. */
+function repoFromCanonicalUri(uri: string): string | null {
+  return /github\.com\/frankbueltge\/([^/]+)\//.exec(uri)?.[1] ?? null;
+}
+
+/** bare work slug: object id `ensemble:no-way-of-knowing@c23d3a01` -> `no-way-of-knowing`. */
+function slugFromObjectId(id: string | undefined): string | null {
+  return id ? (/^[^:]+:([^@]+)@/.exec(id)?.[1] ?? null) : null;
+}
+
+/** The receiver's WORK object among an encounter's objects: owned by a receiver collective and
+ * pointing at that engine's projects/ or works/ (its artwork) — not its memory/dossiers (source
+ * material a receiver merely consumes). null when there is no such object, e.g. a receiver that
+ * is not one of the cloned engine collectives (datavism, data-snack): honestly not observable. */
+function findReceiverWorkObject(
+  objects: RegisterObjectRef[],
+  receiverCollectives: Set<string>
+): RegisterObjectRef | null {
+  return (
+    objects.find(
+      (o) =>
+        o.collective_id != null &&
+        receiverCollectives.has(o.collective_id) &&
+        typeof o.canonical_uri === "string" &&
+        /\/(projects|works)\//.test(o.canonical_uri)
+    ) ?? null
+  );
+}
+
+export function observeReceiverWork(
+  fixtureDir: string,
+  receiverCollectives: Set<string>,
+  enginesRoot: string
+): ObservedReceiverWork | null {
+  let objects: RegisterObjectRef[];
+  try {
+    objects = JSON.parse(readFileSync(path.join(fixtureDir, "objects.json"), "utf8")) as RegisterObjectRef[];
+  } catch {
+    return null; // no objects.json — nothing to observe, not an error
+  }
+  const workObject = findReceiverWorkObject(objects, receiverCollectives);
+  if (!workObject?.canonical_uri) return null;
+
+  const engineRepo = repoFromCanonicalUri(workObject.canonical_uri);
+  const workSlug = slugFromObjectId(workObject.id);
+  if (!engineRepo || !workSlug) return null;
+
+  // premiered == a works/ dir whose name (date prefix stripped) equals the slug; the engine's own
+  // dir-name convention is <YYYY-MM-DD>-<slug>. Sorted + first match = deterministic. A missing
+  // engine clone / works/ leaves premiered=false (honest: not observed rather than guessed).
+  let workDir: string | null = null;
+  try {
+    workDir =
+      readdirSync(path.join(enginesRoot, engineRepo, "works"))
+        .sort()
+        .find((d) => d === workSlug || d.replace(/^\d{4}-\d{2}-\d{2}-/, "") === workSlug) ?? null;
+  } catch {
+    workDir = null;
+  }
+  const premieredOn = workDir ? (/^(\d{4}-\d{2}-\d{2})-/.exec(workDir)?.[1] ?? null) : null;
+
+  return {
+    receiver_collective: workObject.collective_id!,
+    engine_repo: engineRepo,
+    work_slug: workSlug,
+    premiered: workDir !== null,
+    work_dir: workDir,
+    premiered_on: premieredOn,
+    in_production_uri: workObject.canonical_uri
+  };
+}
+
 export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   const encounterId = opts.encounterId ?? DEFAULT_ENCOUNTER_ID;
   const bundlesRootDir = path.join(opts.researchEcologyRoot, "import/bundles");
@@ -707,11 +826,13 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   // the site never silently under-reports the ledger (Frank, 2026-07-17: "warum wurde die
   // encounter karte noch nicht aktualisiert??").
   const fixturesRoot = path.join(opts.researchEcologyRoot, "fixtures");
+  const driftWarnings: string[] = [];
   const register = readdirSync(fixturesRoot)
     .filter((d) => d.startsWith("enc-"))
     .sort()
     .map((dir) => {
-      const enc = JSON.parse(readFileSync(path.join(fixturesRoot, dir, "encounter.json"), "utf8")) as {
+      const fixtureDir = path.join(fixturesRoot, dir);
+      const enc = JSON.parse(readFileSync(path.join(fixtureDir, "encounter.json"), "utf8")) as {
         encounter_id: string;
         title?: string;
         status?: { as_of?: string; statusLine?: string } | null;
@@ -719,7 +840,16 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
         authored_by?: string | null;
         participants?: Array<{ collective_id?: string | null; actor_id?: string; role?: string }>;
       };
-      return {
+      const entry: {
+        encounter_id: string;
+        title: string | null;
+        status: { as_of?: string; statusLine?: string } | null;
+        approval: string | null;
+        authored_by: string | null;
+        participants: Array<{ id: string; role: string | null }>;
+        record_url: string;
+        observed?: ObservedReceiverWork;
+      } = {
         encounter_id: enc.encounter_id,
         title: enc.title ?? null,
         status: enc.status ?? null,
@@ -727,10 +857,35 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
         authored_by: enc.authored_by ?? null,
         participants: (enc.participants ?? []).map((p) => ({
           id: p.collective_id ?? p.actor_id ?? "unknown",
-          role: (p as { role?: string }).role ?? null
+          role: p.role ?? null
         })),
         record_url: `https://github.com/frankbueltge/research-ecology/tree/main/fixtures/${dir}`
       };
+
+      // Observed layer — only when engine clones are on hand (production integrate), never in
+      // the determinism test. Adds a field; the editorial title/status are left untouched.
+      if (opts.enginesRoot) {
+        const receiverCollectives = new Set(
+          (enc.participants ?? [])
+            .filter((p) => p.role === "receiver" && p.collective_id)
+            .map((p) => p.collective_id as string)
+        );
+        if (receiverCollectives.size > 0) {
+          const observed = observeReceiverWork(fixtureDir, receiverCollectives, opts.enginesRoot);
+          if (observed) {
+            entry.observed = observed;
+            // Drift = observed premiere the editorial record hasn't caught up to. Signal only;
+            // it clears itself once the scribe rewrites the "premiere pending" wording.
+            if (observed.premiered && /premiere pending/i.test(enc.title ?? "")) {
+              driftWarnings.push(
+                `${enc.encounter_id}: receiver work premiered (${observed.engine_repo}/works/${observed.work_dir}) ` +
+                  `but the record still reads "premiere pending" — scribe should record the premiere`
+              );
+            }
+          }
+        }
+      }
+      return entry;
     });
   const registerFile = path.join(begegnungenDir, "register.json");
   writeJsonFile(registerFile, register);
@@ -740,6 +895,7 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
     encounterId: encounter.encounter_id,
     watermark,
     researchEcologyCommit: commit,
-    files: filesWritten.map((f) => f.split(path.sep).join("/")).sort()
+    files: filesWritten.map((f) => f.split(path.sep).join("/")).sort(),
+    driftWarnings
   };
 }

@@ -1,0 +1,98 @@
+name: Encounter freshness
+
+# "Beobachten & anstoßen" (2026-07-17). The register on the site already SELF-CORRECTS on every
+# ecology-integrate: apps/export-site reads each engine's works/ and emits a machine-observed
+# receiver-work premiere status. This job is the OTHER half — it PROMPTS the scribe. Once a day
+# (and on demand) it re-derives that observed status against fresh engine clones and, whenever a
+# receiver work has premiered while its encounter record still reads "premiere pending", it
+# opens (or updates) ONE tracking issue here. So a premiere can never again leave the editorial
+# ledger silently stale — which is exactly what happened to enc-2026-002 (studio premiered
+# "No Way of Knowing" while the record kept saying "premiere pending", and nothing said a word).
+#
+# It NEVER edits a record. The byte-verified editorial ledger stays the scribe's to write; this
+# job only makes the drift loud and self-clears the issue once the wording no longer says
+# "premiere pending". Reuses apps/export-site verbatim (single source of the drift logic).
+
+on:
+  schedule:
+    - cron: '20 5 * * *'   # 07:20 Berlin — after the engine nightlies and the site's integrates
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: encounter-freshness
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ISSUE_TITLE: "Encounter freshness — a receiver work premiered, the record hasn't caught up"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+
+      - name: Clone engine repos (ground truth for the observed layer)
+        run: |
+          git clone --depth 1 https://github.com/frankbueltge/field-research /tmp/engines/field-research
+          git clone --depth 1 https://github.com/frankbueltge/irrtum-als-methode /tmp/engines/irrtum-als-methode
+          git clone --depth 1 https://github.com/frankbueltge/studio /tmp/engines/studio
+
+      - name: Import bundles (read-only, deterministic ids — hydration needs them)
+        run: |
+          npx tsx apps/importer/src/cli.ts --repo /tmp/engines/field-research --collective meridian
+          npx tsx apps/importer/src/cli.ts --repo /tmp/engines/irrtum-als-methode --collective ulysses
+          npx tsx apps/importer/src/cli.ts --repo /tmp/engines/studio --collective ensemble
+
+      - name: Derive drift (export into a throwaway dir; read driftWarnings)
+        id: drift
+        run: |
+          set -euo pipefail
+          site="$(mktemp -d)"
+          npx tsx apps/export-site/src/cli.ts --site "$site" --engines /tmp/engines > /tmp/export.json
+          node -e '
+            const r = require("/tmp/export.json");
+            const w = Array.isArray(r.driftWarnings) ? r.driftWarnings : [];
+            require("fs").writeFileSync("/tmp/drift.md", w.map((x) => "- " + x).join("\n"));
+            require("fs").appendFileSync(process.env.GITHUB_OUTPUT, "count=" + w.length + "\n");
+          '
+          echo "----- drift warnings -----"
+          cat /tmp/drift.md || true
+
+      - name: Open / update / close the tracking issue
+        run: |
+          set -euo pipefail
+          existing="$(gh issue list --state open --json number,title \
+            --jq "[.[] | select(.title == env.ISSUE_TITLE)][0].number // \"\"")"
+          if [ "${{ steps.drift.outputs.count }}" -gt 0 ]; then
+            {
+              echo "The register's observed layer reports receiver works that have premiered while"
+              echo "their encounter record still reads \"premiere pending\". The **map already shows the"
+              echo "observed premiere** — this issue asks the scribe to record the premiere in the"
+              echo "editorial ledger (append-only) and then rewrite the title."
+              echo
+              echo "**Drift:**"
+              cat /tmp/drift.md
+              echo
+              echo "_Automated: .github/workflows/encounter-freshness.yml. Self-clears once the wording no longer says \"premiere pending\"._"
+            } > /tmp/issue-body.md
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file /tmp/issue-body.md
+              echo "updated issue #$existing"
+            else
+              gh issue create --title "$ISSUE_TITLE" --body-file /tmp/issue-body.md
+              echo "opened a new tracking issue"
+            fi
+          elif [ -n "$existing" ]; then
+            gh issue close "$existing" \
+              --comment "No drift: every premiered receiver work's record is current. Closed automatically."
+            echo "closed issue #$existing"
+          else
+            echo "no drift, no open issue — nothing to do"
+          fi

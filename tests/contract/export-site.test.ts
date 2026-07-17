@@ -7,7 +7,7 @@
  */
 
 import { describe, it, expect, beforeAll } from "vitest";
-import { mkdtempSync, readFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -134,5 +134,64 @@ describe("export-site: determinism", () => {
     expect(score.flows).toHaveLength(3);
     expect(score.flows.filter((f: { direction: string }) => f.direction === "downstream")).toHaveLength(1);
     expect(score.flows.filter((f: { direction: string }) => f.direction === "upstream")).toHaveLength(2);
+  });
+});
+
+// ------------------------------------------------------------------------------------------
+// Observed receiver-work layer ("Beobachten & anstoßen", 2026-07-17). A self-contained fake
+// engines dir (no dependency on the site's real clones) proves that, given engine ground truth,
+// the register gains a machine-observed premiere status and drift is reported — while the
+// editorial fixture is never touched. The determinism suite above is unaffected: it passes no
+// enginesRoot, so no `observed` field is emitted and its output stays byte-identical.
+// ------------------------------------------------------------------------------------------
+interface ObservedRegisterEntry {
+  encounter_id: string;
+  title: string | null;
+  observed?: { premiered: boolean; work_dir: string | null; premiered_on: string | null; engine_repo: string };
+}
+
+describe("export-site: observed receiver-work status", () => {
+  let site: string;
+  let result: ExportResult;
+  let register: ObservedRegisterEntry[];
+
+  beforeAll(async () => {
+    // Fake engine ground truth: the studio has both its works graduated to works/. The dir names
+    // carry the premiere dates the assertions read — data-carried, no wall clock.
+    const engines = mkdtempSync(path.join(tmpdir(), "engines-"));
+    for (const dir of ["2026-07-13-native-speaker", "2026-07-17-no-way-of-knowing"]) {
+      mkdirSync(path.join(engines, "studio", "works", dir), { recursive: true });
+    }
+    site = mkdtempSync(path.join(tmpdir(), "export-site-obs-"));
+    result = await runExport({ researchEcologyRoot: REPO_ROOT, siteDir: site, enginesRoot: engines });
+    register = JSON.parse(readFileSync(path.join(site, "src/data/begegnungen/register.json"), "utf8"));
+  });
+
+  const entry = (id: string): ObservedRegisterEntry => register.find((e) => e.encounter_id.startsWith(id))!;
+
+  it("marks enc-2026-002's receiver work premiered, read from the studio works/ dir name", () => {
+    const obs = entry("enc-2026-002").observed!;
+    expect(obs.premiered).toBe(true);
+    expect(obs.work_dir).toBe("2026-07-17-no-way-of-knowing");
+    expect(obs.premiered_on).toBe("2026-07-17");
+    expect(obs.engine_repo).toBe("studio");
+  });
+
+  it("reports drift for enc-2026-002 (premiered, but the record still reads 'premiere pending')", () => {
+    expect(result.driftWarnings.some((w) => w.includes("enc-2026-002"))).toBe(true);
+  });
+
+  it("does NOT report drift for enc-2026-001, whose title already reflects its premiere", () => {
+    expect(entry("enc-2026-001").observed!.premiered).toBe(true);
+    expect(result.driftWarnings.some((w) => w.includes("enc-2026-001"))).toBe(false);
+  });
+
+  it("leaves non-engine receivers (datavism, data-snack) unobserved rather than guessed", () => {
+    expect(entry("enc-2026-003").observed).toBeUndefined();
+    expect(entry("enc-2026-004").observed).toBeUndefined();
+  });
+
+  it("never mutates the editorial title — the 'premiere pending' wording stays the scribe's to change", () => {
+    expect(entry("enc-2026-002").title).toMatch(/premiere pending/i);
   });
 });
