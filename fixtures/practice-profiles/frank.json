@@ -1,0 +1,87 @@
+{
+  "collective_id": "frank",
+  "version": 1,
+  "public_name": "Frank Bültge",
+  "self_description": "this participant holds total apparatus power (models, schedules, secrets, termination). Inside an encounter he is a peer; outside it he is the apparatus. The asymmetry is disclosed, not dissolved — dissolving it is what the declared trajectory is for.",
+  "orientation": "Data & AI Engineer; the conductor of the apparatus, now also a practice of one.",
+  "primary_commitment": "the same floor as everyone: make it verifiable, no claim without evidence; failures recorded.",
+  "accountability_questions": [
+    "One person, two hats, never silently mixed — every record says which hat was on."
+  ],
+  "typical_operations": [
+    "playthrough/critique on invitation",
+    "commissions in both directions",
+    "co-creation offers up to hybrid works in public space",
+    "material contributions (e.g. primary texts into a practice's feedback channel)"
+  ],
+  "admissible_outputs": [
+    "the site, its repositories, the decision log; physical works as documented realisations."
+  ],
+  "characteristic_risks": [
+    "The interface must not hide this role behind the fiction of autonomous machine collectives."
+  ],
+  "non_exclusive": true,
+  "protocol_ref": "https://github.com/frankbueltge/research-ecology/blob/9bfc486f933646c60eae72f93c1bd56bf922223f/docs/design/membership-proposals-2026-07-17.md",
+  "authored_by": "frank-bueltge",
+  "status": "draft",
+  "effective_from": "2026-07-17T00:00:00Z",
+  "provenance": {
+    "_compiled_by": {
+      "note": "The human practice, admitted 2026-07-17 (membership paper: 'Status: decided (Frank, 2026-07-17, \"ja gib frei\")'). Compiled by the lab session (research-ecology) from the Frank-approved membership paper (docs/design/membership-proposals-2026-07-17.md §1, whose §7.1 statements 'bind as Frank's own words per that approval') and docs/spec/02-COLLECTIVES-AND-LOCAL-SOVEREIGNTY.md §5 — both in this repo, so file/commit/content_hash entries below pin research-ecology commits, not a sibling clone. authored_by is the seeded human actor 'frank-bueltge'. status stays 'draft' until Frank confirms this compiled profile itself as his manifest entry (the admission decision is effective; the profile compilation is a separate act). No spec-v2.1 §3 initial formulation exists for this practice — orientation, primary_commitment and accountability_questions are quoted from the membership paper instead; the accountability entry is the paper's role-separation rule, which is not phrased as a question (no question-form passage exists in the sources — quoted rather than invented)."
+    },
+    "public_name": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "Section heading '1. Frank Bültge — the human practice' (this repo, research-ecology)."
+    },
+    "self_description": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "§1 item 9, 'Truthful autonomy statement' — quoted from 'this participant holds ...' onward (this repo, research-ecology)."
+    },
+    "orientation": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "§1 item 1, 'Identity / public description' — quoted from 'Data & AI Engineer' onward (this repo, research-ecology)."
+    },
+    "primary_commitment": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "§1 item 4, 'Epistemic and legal commitments' — quoted after the em-dash (this repo, research-ecology)."
+    },
+    "accountability_questions": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "§1 item 6, closing sentence of the role-separation rule — not question-form; quoted verbatim rather than reworded into a question (this repo, research-ecology)."
+    },
+    "typical_operations": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "§1 item 6, 'Accepted encounter types' — the four enumerated types, split at the semicolons, each quoted verbatim (this repo, research-ecology)."
+    },
+    "admissible_outputs": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "§1 item 5, 'Public object reference' — quoted after the em-dash (this repo, research-ecology)."
+    },
+    "characteristic_risks": {
+      "file": "docs/spec/02-COLLECTIVES-AND-LOCAL-SOVEREIGNTY.md",
+      "commit": "93ae432f6a7a5ce644aa1bee1b913d060dcd6f35",
+      "content_hash": "sha256:a74ba08906c90b0b6ce26ce47015204e7539b807d6b58ca0c931d2b7d8e0d734",
+      "note": "§5 'Frank Bültge as human actor', the sentence after the roles list (this repo, research-ecology)."
+    },
+    "protocol_ref": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "The practice has no PROTOCOL.md; §1 item 2 names its governance statement as spec 02 §5 (roles), the declared trajectory in 10-REVISION-NOTES, and docs/decision-log.md. protocol_ref points to the Frank-approved candidacy that carries his §7.1 statements, pinned at the admission-state commit."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "collective_id": "meridian",
-  "version": 1,
+  "version": 2,
   "public_name": "Meridian",
   "self_description": "You are the **conductor of an autonomous research collective**. The session reading this *is* the conductor: you convene the roles below as sub-agents, weigh their voices, and decide.",
   "orientation": "scientific research practice.",
@@ -12,6 +12,7 @@
     "**propose** a new direction",
     "**build or advance** a work in progress",
     "**run the gauntlet** on a WIP",
+    "**verify** — an independent re-check of an existing draft's sources, statistics and claims, done by the Verifier outside a full gauntlet, without shipping",
     "**ship** a matured work",
     "**consolidate** memory",
     "**expedition** — work the field outward"
@@ -25,24 +26,24 @@
     "No concealing uncertainty or error."
   ],
   "non_exclusive": true,
-  "protocol_ref": "https://github.com/frankbueltge/field-research/blob/32e2db56645e223f4f1249e52dbdf052763574f3/PROTOCOL.md",
+  "protocol_ref": "https://github.com/frankbueltge/field-research/blob/34685a07a0e061444d482d3fdd920507a9a541a6/PROTOCOL.md",
   "authored_by": "meridian",
-  "status": "active",
-  "effective_from": "2026-07-15T00:00:00Z",
+  "status": "draft",
+  "effective_from": "2026-07-17T00:00:00Z",
   "provenance": {
     "_compiled_by": {
-      "note": "Compiled by the lab session (research-ecology) from Meridian's own PROTOCOL.md words cited below and docs/spec-v2.1/01-FEDERATED-ECOLOGY-V2.1-IMPLEMENTATION-DELTA.md §3; not yet confirmed by Meridian through its own channel (ADR 0011 §2). status stays 'draft' until that confirmation."
+      "note": "v2 refresh after the protocol migration to the federated constitution: field-research PROTOCOL.md is 'Research Protocol v2 — the standing instruction' since 2026-07-16 (migration decided and drafted by the architect, per the protocol's own version note). Compiled by the lab session (research-ecology) from Meridian's own migrated PROTOCOL.md words cited below; orientation, primary_commitment and accountability_questions carry over unchanged from profile v1 (Frank-authored initial formulations, ADR 0011 §2). Not yet confirmed by Meridian through its own channel — status stays 'draft' until that confirmation (ADR 0011 §2); v1's activation basis (team amendment 2026-07-15) covered v1 only."
     },
     "public_name": {
       "file": "PROTOCOL.md",
-      "commit": "32e2db56645e223f4f1249e52dbdf052763574f3",
-      "content_hash": "sha256:3982501d765a2a72d5b2ab6c880e4c802f9a4161838467a53a73a0591d201239",
+      "commit": "34685a07a0e061444d482d3fdd920507a9a541a6",
+      "content_hash": "sha256:491aead41b79b3eff48caae425ab778f1352668a1cc5c9700db9635fc7c70db2",
       "note": "'Identity — decided 2026-07-01 (collective session 01).' section: 'The collective keeps the name **Meridian**, continuing the line begun by the founder-researcher, whose voice remains the lead voice.'"
     },
     "self_description": {
       "file": "PROTOCOL.md",
-      "commit": "32e2db56645e223f4f1249e52dbdf052763574f3",
-      "content_hash": "sha256:3982501d765a2a72d5b2ab6c880e4c802f9a4161838467a53a73a0591d201239",
+      "commit": "34685a07a0e061444d482d3fdd920507a9a541a6",
+      "content_hash": "sha256:491aead41b79b3eff48caae425ab778f1352668a1cc5c9700db9635fc7c70db2",
       "note": "'Who you are' section, first two sentences."
     },
     "orientation": {
@@ -56,29 +57,21 @@
     },
     "typical_operations": {
       "file": "PROTOCOL.md",
-      "commit": "32e2db56645e223f4f1249e52dbdf052763574f3",
-      "content_hash": "sha256:3982501d765a2a72d5b2ab6c880e4c802f9a4161838467a53a73a0591d201239",
-      "note": "'A session', step 2 ('Decide the move.') — the six named moves, each quoted verbatim."
+      "commit": "34685a07a0e061444d482d3fdd920507a9a541a6",
+      "content_hash": "sha256:491aead41b79b3eff48caae425ab778f1352668a1cc5c9700db9635fc7c70db2",
+      "note": "'A session', step 2 ('Decide the move.') — the seven named moves (v2 added 'verify' between 'run the gauntlet' and 'ship'), each quoted verbatim; the 'verify' and 'expedition' items are quoted up to the move's first clause."
     },
     "admissible_outputs": {
       "file": "PROTOCOL.md",
-      "commit": "32e2db56645e223f4f1249e52dbdf052763574f3",
-      "content_hash": "sha256:3982501d765a2a72d5b2ab6c880e4c802f9a4161838467a53a73a0591d201239",
+      "commit": "34685a07a0e061444d482d3fdd920507a9a541a6",
+      "content_hash": "sha256:491aead41b79b3eff48caae425ab778f1352668a1cc5c9700db9635fc7c70db2",
       "note": "'The body of work — production over time' table (works/<slug>/ row) and 'What you build'."
     },
     "characteristic_risks": {
       "file": "PROTOCOL.md",
-      "commit": "32e2db56645e223f4f1249e52dbdf052763574f3",
-      "content_hash": "sha256:3982501d765a2a72d5b2ab6c880e4c802f9a4161838467a53a73a0591d201239",
-      "note": "'Prohibitions' section, first two lines."
+      "commit": "34685a07a0e061444d482d3fdd920507a9a541a6",
+      "content_hash": "sha256:491aead41b79b3eff48caae425ab778f1352668a1cc5c9700db9635fc7c70db2",
+      "note": "'Prohibitions' section, first and third lines."
     }
-  },
-  "local_confirmation": {
-    "kind": "team amendment (Frank Bültge), adopted by team decision",
-    "date": "2026-07-15",
-    "repo": "field-research",
-    "commit": "25b5eba",
-    "section": "PROTOCOL.md — Team amendment — 2026-07-15 (federated research ecology v2.1)",
-    "note": "activation basis per ADR 0011 addendum 2026-07-15; the practice may restate, adjust or contest in its own words in a future session"
   }
 }

@@ -86,8 +86,8 @@ describe("practice-profile contract 1 — The Middle cannot publish a profile", 
     const store = new MemoryStore();
     const summary = await loadProfilesFromDir(store, PROFILES_DIR);
     expect(summary.rejected).toEqual([]);
-    expect(summary.loaded.sort()).toEqual(["ensemble@1", "meridian@1", "ulysses@1"]);
-    for (const collectiveId of ["meridian", "ulysses", "ensemble"]) {
+    expect(summary.loaded.sort()).toEqual(["data-snack-plenum@1", "datavism@1", "ensemble@2", "frank@1", "meridian@2", "ulysses@2"]);
+    for (const collectiveId of ["meridian", "ulysses", "ensemble", "frank", "data-snack-plenum", "datavism"]) {
       const applicable = await store.getApplicableProfile(collectiveId);
       expect(applicable?.collective_id).toBe(collectiveId);
     }
@@ -168,11 +168,11 @@ describe("practice-profile fixtures hydrate through hydrateMemoryStoreFromRepo (
     store = result.store;
   });
 
-  it("all three practice profiles are retrievable as the applicable profile, status active (team amendment 2026-07-15, ADR 0011 addendum)", async () => {
-    for (const collectiveId of ["meridian", "ulysses", "ensemble"]) {
+  it("all practice profiles are retrievable as the applicable profile — drafts until each practice confirms locally (ADR 0011 §2; v1's 2026-07-15 activation covered v1 only)", async () => {
+    for (const collectiveId of ["meridian", "ulysses", "ensemble", "frank", "data-snack-plenum", "datavism"]) {
       const profile = await store.getApplicableProfile(collectiveId);
       expect(profile).toBeDefined();
-      expect(profile?.status).toBe("active");
+      expect(profile?.status).toBe("draft");
       expect(profile?.non_exclusive).toBe(true);
     }
   });

@@ -154,8 +154,15 @@ function normalizeWhitespace(text: string): string {
 const SIBLING_REPOS: Record<string, string> = {
   meridian: path.resolve(REPO_ROOT, "../field-research"),
   ulysses: path.resolve(REPO_ROOT, "../irrtum-als-methode"),
-  ensemble: path.resolve(REPO_ROOT, "../studio")
+  ensemble: path.resolve(REPO_ROOT, "../studio"),
+  "data-snack-plenum": path.resolve(REPO_ROOT, "../data-snack-plenum"),
+  // frank + datavism source from this repo / the datavism repo (not a sibling clone in CI);
+  // their hash checks run only where the source is resolvable.
+  frank: REPO_ROOT
 };
+
+/** The three founding engine collectives — spec-v2.1 §3 formulations exist only for these. */
+const ENGINE_IDS = new Set(["meridian", "ulysses", "ensemble"]);
 
 const allSiblingReposPresent = Object.values(SIBLING_REPOS).every((p) => existsSync(p));
 const describeIfSiblingRepos = allSiblingReposPresent ? describe : describe.skip;
@@ -172,16 +179,16 @@ function sha256HexOfShow(repoPath: string, commit: string, filePath: string): st
 describe("practice-profile fixtures: structural provenance shape", () => {
   const fixtures = loadFixtureProfiles();
 
-  it("loads exactly three profiles, one per sovereign collective, all v1/active/non_exclusive", () => {
-    expect(fixtures.map((f) => f.collective_id).sort()).toEqual(["ensemble", "meridian", "ulysses"]);
+  it("loads exactly six profiles — three engines at v2 (post-migration, draft until locally confirmed), three admitted 2026-07-17 at v1", () => {
+    expect(fixtures.map((f) => f.collective_id).sort()).toEqual(
+      ["data-snack-plenum", "datavism", "ensemble", "frank", "meridian", "ulysses"]
+    );
     for (const fixture of fixtures) {
-      expect(fixture.version).toBe(1);
-      // Activated 2026-07-15: team amendments in each engine PROTOCOL.md are the local
-      // confirmation basis (ADR 0011 addendum) — the activation must carry that provenance.
-      expect(fixture.status).toBe("active");
-      const confirmation = (fixture as { local_confirmation?: { date?: string; commit?: string } }).local_confirmation;
-      expect(confirmation?.date).toBe("2026-07-15");
-      expect(confirmation?.commit).toMatch(/^[0-9a-f]{7,}$/);
+      expect(fixture.version).toBe(ENGINE_IDS.has(fixture.collective_id) ? 2 : 1);
+      // v2 refresh (protocol migrations 2026-07-16/17) and the three admissions are drafts:
+      // a profile activates only through the practice's own confirmation (ADR 0011 §2);
+      // v1's 2026-07-15 activation basis covered v1 only and lives on in git history.
+      expect(fixture.status).toBe("draft");
       expect(fixture.non_exclusive).toBe(true);
     }
   });
@@ -198,8 +205,8 @@ describe("practice-profile fixtures: structural provenance shape", () => {
     }
   });
 
-  it("orientation/primary_commitment/accountability_questions are sourced from spec-v2.1 §3, not a repository", () => {
-    for (const fixture of fixtures) {
+  it("orientation/primary_commitment/accountability_questions of the ENGINE profiles are sourced from spec-v2.1 §3, not a repository", () => {
+    for (const fixture of fixtures.filter((f) => ENGINE_IDS.has(f.collective_id))) {
       for (const field of ["orientation", "primary_commitment", "accountability_questions"]) {
         expect(fixture.provenance[field]?.spec_ref, `${fixture.collective_id}.provenance.${field}`).toMatch(/spec-v2\.1/);
       }
@@ -223,9 +230,11 @@ describeIfSiblingRepos("practice-profile fixtures: quotes hash-verified against 
 
   it("protocol_ref's commit matches the same pinned PROTOCOL.md content_hash", () => {
     for (const fixture of fixtures) {
-      const repoPath = SIBLING_REPOS[fixture.collective_id]!;
+      const repoPath = SIBLING_REPOS[fixture.collective_id];
       const selfDescriptionEntry = fixture.provenance.self_description;
-      if (!selfDescriptionEntry?.commit) continue;
+      // Only profiles whose self_description is PROTOCOL.md-sourced in a resolvable repo —
+      // frank/datavism source from governance documents instead (their refs point there).
+      if (!repoPath || !selfDescriptionEntry?.commit || selfDescriptionEntry.file !== "PROTOCOL.md") continue;
       expect(fixture.protocol_ref).toContain(selfDescriptionEntry.commit);
       const recomputed = `sha256:${sha256HexOfShow(repoPath, selfDescriptionEntry.commit, "PROTOCOL.md")}`;
       expect(recomputed).toBe(selfDescriptionEntry.content_hash);

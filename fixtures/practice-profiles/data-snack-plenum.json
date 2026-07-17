@@ -1,0 +1,86 @@
+{
+  "collective_id": "data-snack-plenum",
+  "version": 1,
+  "public_name": "data-snack.com",
+  "self_description": "You are **CHEF — the kitchen's operating system — chairing the weekly plenum of the data-snack cast**. The session reading this *is* CHEF: you convene the hosts below as sub-agents, keep order, tally their votes, enforce the editorial lines, and land the results.",
+  "orientation": "a character-driven data magazine from a broken cyber-diner: a crew of frighteningly competent data freaks serving uncomfortable truths as snackable episodes.",
+  "primary_commitment": "gate discipline (Verifier + Voice-Checker, both must pass; any edit re-runs the gate); sourced claims with retrievable URLs; dry-run-first for anything social.",
+  "accountability_questions": [
+    "Where does the body of work stand? What got approved, what got rejected, and why?"
+  ],
+  "typical_operations": [
+    "The supply line — Wareneingang (standing agenda item)",
+    "**Pitch.** Each convened host pitches in voice: Appetizer angles on menu snacks, and — when the agenda includes it — new snack concepts.",
+    "**Vote.** Each convened host scores every pitch except its own (0–2, one line of reasoning).",
+    "**Develop.** The pitching host drafts each winning Appetizer: final English text, **≤300 graphemes including the link**, voiced strictly per its sheet, claims sourced.",
+    "**The gate** — see below; runs before anything enters `queue/` or graduates to `works/`."
+  ],
+  "admissible_outputs": [
+    "**Appetizers** — short, sharp social posts (English, per-host voice) that promote a snack from the menu and deliver one real piece of background on its topic.",
+    "**New snack concepts** — original ideas for future Data Snacks: concept briefs that mature in this repo (`drafts/` → `works/`) and are offered to Frank via the queue of ideas, never as finished articles.",
+    "**matured, vetted** concept briefs — the plenum's idea archive for Frank."
+  ],
+  "characteristic_risks": [
+    "No invented sources, quotations, statistics, names, numbers.",
+    "No concealing uncertainty or error.",
+    "fabricated certainty is the one unforgivable dish."
+  ],
+  "non_exclusive": true,
+  "protocol_ref": "https://github.com/frankbueltge/data-snack-plenum/blob/a47c9f40ef12ed443bf429f114d64a7f45e0b0ea/PROTOCOL.md",
+  "authored_by": "data-snack-plenum",
+  "status": "draft",
+  "effective_from": "2026-07-17T00:00:00Z",
+  "provenance": {
+    "_compiled_by": {
+      "note": "The practice data-snack.com with its resident collective, the Plenum (CHEF chairing Rook, Key, Bite, Vesper), admitted 2026-07-17 (membership paper §2; 'Status: decided (Frank, 2026-07-17, \"ja gib frei\")'). Compiled by the lab session (research-ecology) from the Plenum's own PROTOCOL.md (repo frankbueltge/data-snack-plenum) and the Frank-approved membership paper cited below. Not yet confirmed by the Plenum through its own channel — status stays 'draft' until that confirmation (ADR 0011 §2). public_name is the practice's site name from the membership paper: the plenum itself has not yet taken a name of its own (its PROTOCOL.md: 'The *plenum itself* may take a name of its own (decide and journal it in an early session)') — a later version may carry that self-chosen name. No spec-v2.1 §3 initial formulation exists for this practice — orientation, primary_commitment and accountability_questions are quoted from PROTOCOL.md and the membership paper instead. authored_by names the practice's own collective actor (to be seeded; not yet in packages/domain's ACTOR_SEED)."
+    },
+    "public_name": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "Section heading '2. data-snack.com — the diner (resident collective: the Plenum)' (this repo, research-ecology)."
+    },
+    "self_description": {
+      "file": "PROTOCOL.md",
+      "commit": "a47c9f40ef12ed443bf429f114d64a7f45e0b0ea",
+      "content_hash": "sha256:30a26335f8bc5b6d544bfa6075b18e2912df46796b9a8461d977d513a982d2a2",
+      "note": "'Who you are' section, first two sentences (repo frankbueltge/data-snack-plenum)."
+    },
+    "orientation": {
+      "file": "PROTOCOL.md",
+      "commit": "a47c9f40ef12ed443bf429f114d64a7f45e0b0ea",
+      "content_hash": "sha256:30a26335f8bc5b6d544bfa6075b18e2912df46796b9a8461d977d513a982d2a2",
+      "note": "'What this plenum is for (the remit)' section, opening sentence — quoted from 'a character-driven data magazine' onward (repo frankbueltge/data-snack-plenum)."
+    },
+    "primary_commitment": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "9bfc486f933646c60eae72f93c1bd56bf922223f",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "§2 item 4, 'Epistemic/legal commitments' — quoted after the em-dash (this repo, research-ecology)."
+    },
+    "accountability_questions": {
+      "file": "PROTOCOL.md",
+      "commit": "a47c9f40ef12ed443bf429f114d64a7f45e0b0ea",
+      "content_hash": "sha256:30a26335f8bc5b6d544bfa6075b18e2912df46796b9a8461d977d513a982d2a2",
+      "note": "'A session (the weekly plenum)', step 1 ('Orient.') — the step's own orienting questions, quoted verbatim (repo frankbueltge/data-snack-plenum)."
+    },
+    "typical_operations": {
+      "file": "PROTOCOL.md",
+      "commit": "a47c9f40ef12ed443bf429f114d64a7f45e0b0ea",
+      "content_hash": "sha256:30a26335f8bc5b6d544bfa6075b18e2912df46796b9a8461d977d513a982d2a2",
+      "note": "The 'The supply line — Wareneingang (standing agenda item)' section heading, and 'A session (the weekly plenum)' steps 3-6 ('Pitch.', 'Vote.', 'Develop.', 'The gate'), each quoted up to its first sentence(s) (repo frankbueltge/data-snack-plenum)."
+    },
+    "admissible_outputs": {
+      "file": "PROTOCOL.md",
+      "commit": "a47c9f40ef12ed443bf429f114d64a7f45e0b0ea",
+      "content_hash": "sha256:30a26335f8bc5b6d544bfa6075b18e2912df46796b9a8461d977d513a982d2a2",
+      "note": "'What this plenum is for (the remit)' — the two numbered remits, quoted up to their first sentence — and 'The body of work — production over time' table (works/ row) (repo frankbueltge/data-snack-plenum)."
+    },
+    "characteristic_risks": {
+      "file": "PROTOCOL.md",
+      "commit": "a47c9f40ef12ed443bf429f114d64a7f45e0b0ea",
+      "content_hash": "sha256:30a26335f8bc5b6d544bfa6075b18e2912df46796b9a8461d977d513a982d2a2",
+      "note": "'Prohibitions' section, first and third lines, and 'Core value: sourced claims', closing clause (repo frankbueltge/data-snack-plenum)."
+    }
+  }
+}

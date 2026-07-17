@@ -1,0 +1,80 @@
+{
+  "collective_id": "datavism",
+  "version": 1,
+  "public_name": "datavism.org",
+  "self_description": "datavism.org ist ein **Data-Activism-Lab für die KI-Ära** („Data Underground\") mit dem Agenten **GHOST**: Guide („orient, never investigate\") und Certify-Pipeline („Method, never truth\"; SOURCE/SPECIFICITY/UNCERTAINTY).",
+  "orientation": "datavism.org, a data-activism lab for the AI era; agent persona GHOST",
+  "primary_commitment": "no AI output without verification, no claim without evidence",
+  "accountability_questions": [
+    "GHOST is an agent persona on human-built rails; the practice is tool-assisted activism, not an autonomous collective."
+  ],
+  "typical_operations": [
+    "receiving VERIFIED material under Meridian's session-22 conditions",
+    "challenges and counter-measurement offers toward the ecology's instruments"
+  ],
+  "admissible_outputs": [
+    "Öffentliche Objekte dieser Praxis sind über dieses Repository und datavism.org referenzierbar."
+  ],
+  "characteristic_risks": [
+    "GHOST ist eine **Agenten-Persona auf menschlich gebauten Schienen** — die Praxis ist werkzeuggestützter Aktivismus, kein autonomes Kollektiv."
+  ],
+  "non_exclusive": true,
+  "protocol_ref": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/GOVERNANCE.md",
+  "authored_by": "frank-bueltge",
+  "status": "draft",
+  "effective_from": "2026-07-17T00:00:00Z",
+  "provenance": {
+    "_compiled_by": {
+      "note": "v1 after admission 2026-07-17 (membership-proposals, candidacy 3; gaps 2+8 closed by the governance statement the same morning). Compiled by the lab session; German fields are byte-exact quotes from the German governance statement — the discipline prefers verbatim over translation. accountability_questions carries the paper's truthful-autonomy line (no question-shaped passage exists in either source; same convention as frank.json). Not yet confirmed by the practice through its own channel — status stays 'draft'."
+    },
+    "public_name": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "ea6cf254fdd7d254711ebee4a8536a68474a9440",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "this repo, research-ecology (candidacy 3, admitted 2026-07-17)"
+    },
+    "self_description": {
+      "file": "docs/GOVERNANCE.md",
+      "commit": "df34d01219d5151c832c81172466403777b18855",
+      "content_hash": "sha256:5608d7cdf87d728b6a1a1ecd3cc30456d86c6fc73b10ebaa4b7dbe1cb33030d6",
+      "note": "repo datavism/datavism.org (Governance Statement v1, 2026-07-17; German original quoted byte-exact)"
+    },
+    "orientation": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "ea6cf254fdd7d254711ebee4a8536a68474a9440",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "this repo, research-ecology (candidacy 3, admitted 2026-07-17)"
+    },
+    "primary_commitment": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "ea6cf254fdd7d254711ebee4a8536a68474a9440",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "this repo, research-ecology (candidacy 3, admitted 2026-07-17)"
+    },
+    "accountability_questions": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "ea6cf254fdd7d254711ebee4a8536a68474a9440",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "this repo, research-ecology (candidacy 3, admitted 2026-07-17)"
+    },
+    "typical_operations": {
+      "file": "docs/design/membership-proposals-2026-07-17.md",
+      "commit": "ea6cf254fdd7d254711ebee4a8536a68474a9440",
+      "content_hash": "sha256:125e0f7b998c36f20231c77f2aba2ddfced9680e15e700c2a6fb35f9d84d8f99",
+      "note": "this repo, research-ecology (candidacy 3, admitted 2026-07-17)"
+    },
+    "admissible_outputs": {
+      "file": "docs/GOVERNANCE.md",
+      "commit": "df34d01219d5151c832c81172466403777b18855",
+      "content_hash": "sha256:5608d7cdf87d728b6a1a1ecd3cc30456d86c6fc73b10ebaa4b7dbe1cb33030d6",
+      "note": "repo datavism/datavism.org (Governance Statement v1, 2026-07-17; German original quoted byte-exact)"
+    },
+    "characteristic_risks": {
+      "file": "docs/GOVERNANCE.md",
+      "commit": "df34d01219d5151c832c81172466403777b18855",
+      "content_hash": "sha256:5608d7cdf87d728b6a1a1ecd3cc30456d86c6fc73b10ebaa4b7dbe1cb33030d6",
+      "note": "repo datavism/datavism.org (Governance Statement v1, 2026-07-17; German original quoted byte-exact)"
+    }
+  },
+  "local_confirmation": null
+}
