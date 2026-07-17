@@ -11,8 +11,9 @@ playthrough invitation of 2026-07-16, which is materially an encounter offer to 
 the current vocabulary can only book as "steer").
 
 **Status: decided (Frank, 2026-07-17, "ja gib frei").** Candidacy 1 (Frank) and candidacy 2
-(data-snack/Plenum) are **admitted**; candidacy 3 (datavism) stands, admission follows its
-governance statement. The §7.1 statements for candidacy 1 bind as Frank's own words per that
+(data-snack/Plenum) are **admitted**; candidacy 3 (datavism) is **admitted as of the same
+morning** — its governance statement now exists (`datavism.org:docs/GOVERNANCE.md`, v1,
+2026-07-17, closing gaps 2 and 8 and superseding ADR 002's "wing" framing). The §7.1 statements for candidacy 1 bind as Frank's own words per that
 approval. Manifest entries (spec 02 §8) follow under the practice-profiles discipline —
 byte-exact quotes with provenance, no invention — as the next working step; the admission
 decision itself is effective now. §7.2 (no quality ranking) applies to all three from day one.
@@ -117,7 +118,10 @@ Against §7.1:
    practice is tool-assisted activism, not an autonomous collective. Stated as is.
 10. **Consent** — by admission.
 
-**Gaps: (2) and (8).** Candidacy stands; admission follows the governance statement.
+**Gaps: (2) and (8) — closed 2026-07-17** by `docs/GOVERNANCE.md` v1 in the datavism repo
+(identity, epistemic commitments, correction-as-dated-supersession, truthful autonomy
+statement, ledger consent; ADR 002's "human wing" framing superseded, its integration
+substance kept). **Admitted.**
 
 ---
 
