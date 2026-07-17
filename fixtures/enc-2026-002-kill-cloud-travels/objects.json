@@ -1,0 +1,93 @@
+[
+  {
+    "id": "meridian:downstream-commitments-doc@f856a47f",
+    "collective_id": "meridian",
+    "local_object_id": "downstream-commitments-doc",
+    "object_version": "f856a47f81bb8d0f22fcb480bda3849e4220d6ad",
+    "canonical_uri": "https://github.com/frankbueltge/field-research/blob/f856a47f81bb8d0f22fcb480bda3849e4220d6ad/memory/downstream-commitments.md",
+    "media_type": "text/markdown",
+    "local_object_type": "Downstream Propagation Conditions (the file's own H1 after the 2026-07-16 reframing; Meridian's standing conditions, offered)",
+    "interoperability_class": "protocol",
+    "title_cache": "Downstream Propagation Conditions",
+    "summary_cache": "Standing conditions Meridian asks anyone reusing its VERIFIED material to honour — offered, not decreed; a sibling practice's own protocol decides how, or whether, it accepts them.",
+    "lifecycle_status": "active",
+    "local_epistemic_status": "standing conditions, self-held, offered downstream",
+    "content_hash": "sha256:d1586b83b65c65e72b20f1618476f18b83646a22a78b5061023eb9b1a3d631f5",
+    "source_commit": "f856a47f81bb8d0f22fcb480bda3849e4220d6ad",
+    "source_metadata": {
+      "pinned_file": "memory/downstream-commitments.md",
+      "local_object_type_derivation": "No meta.json exists for this document; local_object_type is the file's own H1 heading ('# Downstream Propagation Conditions') plus its own framing sentences.",
+      "version_note": "enc-2026-001 pins this same document's FOUNDING version (commit 4eb3b165, H1 'Downstream Propagation Commitments', sha256 d28f9604812fbe7edaebec0e19d4986927aad8cfdd0df43f3ced823c197db96a). The 2026-07-16 migration commit (f856a47f) reframed it as offered-not-decreed, retitled the H1, and moved the founding version to archive/protocols/downstream-commitments-founding.md; the substance of the five conditions is stated as untouched in the file's own provenance comment, with one modality change disclosed in evt-enc2026002-07's payload (condition 3 'must never' → 'should never')."
+    },
+    "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "meridian:field-map@6365640c",
+    "collective_id": "meridian",
+    "local_object_id": "field-map-cluster-2-kill-cloud",
+    "object_version": "6365640cabc6a0c21aa8b4a490c1d36566906152",
+    "canonical_uri": "https://github.com/frankbueltge/field-research/blob/6365640cabc6a0c21aa8b4a490c1d36566906152/FIELD.md",
+    "media_type": "text/markdown",
+    "local_object_type": "field map — hypothesis file (Meridian's own convention per memory/dossiers/expeditions.md: scout material may enter FIELD.md at snippet confidence, dated and attributed to the expedition)",
+    "interoperability_class": "other",
+    "title_cache": "FIELD.md — cluster 2: AI in war / \"Kill Cloud\" / algorithmic targeting",
+    "summary_cache": "The field map's kill-cloud cluster: 'sharpest edge — multi-theater since Feb 2026, no longer only Gaza-driven' — carrying the CENTCOM/Maven Epic Fury confirmation and the Airwars 'no way of knowing' lead at SNIPPET tier.",
+    "lifecycle_status": "active",
+    "local_epistemic_status": "hypothesis file; the Airwars 'no way of knowing' line explicitly tagged SNIPPET in-file; the Epic Fury/Maven claim conductor-re-checked across four independent outlets (expedition 1, session 26)",
+    "content_hash": "sha256:79e30ca42550217802a11348e61cb084dd60307598a7959fb363c1b976804cd3",
+    "source_commit": "6365640cabc6a0c21aa8b4a490c1d36566906152",
+    "source_metadata": {
+      "pinned_file": "FIELD.md",
+      "note": "content_hash covers the whole file; the object specifically denotes the cluster-2 rows and the '[exp. 2026-07-11]' update block. That update landed at commit 2be807c525d99aa78596ff637d06dc6a2b038091 (2026-07-11 19:38:52 +0200, session 26 expedition; git author 'Frank Bültge' — commits were not yet issued under persona-native identities at that point; the acting collective per the commit message is Meridian). The pin is the newest commit touching FIELD.md at encoding time (6365640c), whose cluster-2 text is what this fixture quotes.",
+      "receiver_watch_note": "This is one of the three named objects of the receiver's session-opening upstream diff during this encounter: 'Nothing touching this spine — instrument 001, 011/card 001, or the kill-cloud material.' (studio journal 2026-07-16, session 15)."
+    },
+    "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "meridian:data-art-field-archive@32e2e52f",
+    "collective_id": "meridian",
+    "local_object_id": "data-art-field-archive",
+    "object_version": "32e2e52f321608d977f6fe0b44501710545651fc",
+    "canonical_uri": "https://github.com/frankbueltge/field-research/blob/32e2e52f321608d977f6fe0b44501710545651fc/memory/dossiers/data-art-field-archive.md",
+    "media_type": "text/markdown",
+    "local_object_type": "Dossier — The Data-Art Field Archive (the file's own H1; the atlas digest: 214 source-cited field works mapped to the seven FIELD.md clusters)",
+    "interoperability_class": "source_bundle",
+    "title_cache": "The Data-Art Field Archive (the atlas digest, 214 works)",
+    "summary_cache": "A source-cited archive of 214 contemporary data-art works (the file's own rule: 'every entry has a retrievable source'); cluster 2 catalogues the Airwars investigation, aaajiao's 'Minority Algorithm' and Disruption Network Lab's 'Investigating the Kill Cloud' — the three neighbors the receiver's gate made binding.",
+    "lifecycle_status": "active",
+    "local_epistemic_status": "source-cited archive; uncertain classifications flagged ⚠unverified in-file",
+    "content_hash": "sha256:416eb5d4543ba4585aa262eef208d6ff00e6d2004a98c57f6d5fc5d5b233b372",
+    "source_commit": "32e2e52f321608d977f6fe0b44501710545651fc",
+    "source_metadata": {
+      "pinned_file": "memory/dossiers/data-art-field-archive.md",
+      "delivery_note": "The file's own header: 'Delivered by the team (Frank / the lab), 2026-07-06 — in answer to the collective's ask (2026-07-05/06 seed responses)'. Git author of the delivery commit is 'Frank Bültge' — an apparatus/conductor delivery INTO Meridian's memory, upstream of this encounter; Meridian holds and uses it as its atlas digest ('Not a canon, a map.').",
+      "local_object_type_derivation": "No meta.json exists; local_object_type is the file's own H1 and self-description."
+    },
+    "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "ensemble:no-way-of-knowing@c23d3a01",
+    "collective_id": "ensemble",
+    "local_object_id": "no-way-of-knowing",
+    "object_version": "c23d3a01e550f3de48454577dda242bdc4206fef",
+    "canonical_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/projects/no-way-of-knowing/data.json",
+    "media_type": "application/json",
+    "local_object_type": "project in production — interactive console (single self-contained index.html + canonical data.json with byte-identical embedded island; NOT yet a works/ entry)",
+    "interoperability_class": "work",
+    "title_cache": "No Way of Knowing (v2)",
+    "summary_cache": "The state at maximal confidence when it acts; the state at declared un-knowing when it harms — two sentences it said on the record, in a console that will not let you hold both at once.",
+    "lifecycle_status": "in production — increment 3 shipped; premiere-ready pending the human playthrough",
+    "local_epistemic_status": "spine SOURCED / primary-confirmed (session 14); console form IMAGINED, marked; monitoring line a dated STUDIO MONITORING STATUS; Kritiker session 17: nothing premiere-blocking",
+    "content_hash": "sha256:bd314fbcaab6b0b444211e87c51adb59f0d34edbf774fac09389c4d0cbc709e2",
+    "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+    "source_metadata": {
+      "pinned_file": "projects/no-way-of-knowing/data.json",
+      "summary_cache_derivation": "data.json's own `one_line` field at the pinned commit.",
+      "readme_content_hash": "sha256:96f48f2a80e5779232b0f5ac3ebfd2f8e984b4d4616bb034e9714408a24c16ee",
+      "readme_pinned_file": "projects/no-way-of-knowing/README.md (the living brief, same commit)",
+      "workboard_listing_fragment": "the state's own two sentences: declared confidence to strike thousands on machine recommendation vs. \"no way of knowing\" about one civilian death; a two-faced console that cannot show both; serial against the growing record",
+      "premiere_note": "Deliberately pinned at the projects/ path: the work has NOT graduated to works/ and is not mirrored to the site — the studio's path boundary keeps in-production work in the engine repo until it premieres. A works/ object reference would be a fabrication at encoding time."
+    },
+    "importer_version": "fixture-manual-1.0"
+  }
+]

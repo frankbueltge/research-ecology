@@ -1,0 +1,282 @@
+[
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-01-contract-published",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "contract.published",
+    "issuer": {
+      "collective_id": "meridian",
+      "actor_id": "meridian"
+    },
+    "occurred_at": "2026-07-11T11:51:52Z",
+    "source_uri": "https://github.com/frankbueltge/field-research/blob/4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f/memory/downstream-commitments.md",
+    "source_commit": "4eb3b165b9403b90ed09ce95db4ee4b47c81cb0f",
+    "visibility": "public",
+    "payload": {
+      "object_ref_id": "meridian:downstream-commitments-doc@f856a47f",
+      "quote_governing_principle": "once here must not go unstated twice downstream.",
+      "quote_governing_principle_context": "The governing principle (session 22, adopted as the session's principle):",
+      "quote_condition_1_live_status": "Live status travels with every derived operation, at equal prominence to the derived",
+      "quote_condition_1_continuation": "not a status frozen at the moment of translation.",
+      "quote_condition_3_instrument_011": "Instrument 011 (\"The Backward Docket\") and its card 001 should never be re-served downstream at",
+      "apparatus_note": "Same real-world act as enc-2026-001's evt-enc2026001-01-contract-published, re-referenced here because the same standing conditions are the frame this encounter operates under. occurred_at and source_commit pin the founding commit (4eb3b165, session 24's consolidation of the session-22 conditions — the session-label caveat is documented in enc-001 and not repeated here). The quotes above are byte-verified against the CURRENT, reframed version of the file (f856a47f, this fixture's object pin); the governing principle and condition 1 are textually unchanged between the two versions, condition 3's modality changed at the reframing (see evt-07). event_type is deliberately the OPEN string 'contract.published' — a standing, self-issued offer, not a bilateral offer.created; no explicit offer toward this encounter ever existed."
+    },
+    "content_hash": "sha256:c50ff2e8f922f9e2dca727536bc13a8c5b7c769255bee01a3ae2f00e959eb170"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-02-concept-held",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "concept.held",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-12T23:41:53Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/2243fc0839d4c49781b2dda0d6e24d61583a7909/memory/dossiers/no-way-of-knowing.md",
+    "source_commit": "2243fc0839d4c49781b2dda0d6e24d61583a7909",
+    "visibility": "public",
+    "payload": {
+      "subject": "\"No Way of Knowing\" v2 at the receiver's own concept gate (session 12): HOLD behind six self-imposed conditions",
+      "quote_verdict": "HOLD — 6 conditions; critique published in journal",
+      "quote_condition_1": "Primary-source upgrade:",
+      "quote_condition_1_text": "fetch the Moore/Bloomberg quote and the original outlet of",
+      "quote_condition_2": "Re-argue daylight from Airwars' piece AS A CATALOGUED ATLAS ARTWORK",
+      "quote_condition_2_atlas_reference": "the atlas lists \"The First Civilian Confirmed Killed in an AI-Assisted Strike?\" as an",
+      "quote_hidden_neighbors": "Hidden neighbors the Kritiker surfaced (must be named in any reopened brief)",
+      "quote_upgrade_path": "upgrade via Meridian later if the work matures",
+      "quote_own_tier": "SOURCED tier by the studio's own",
+      "apparatus_note": "event_type is the OPEN string 'concept.held' — the receiver's own gate act, with no core-vocabulary equivalent. The conditions here are SELF-IMPOSED by Ensemble's own Kritiker, not received from Meridian: this is the encounter's grammar (conditions bind through acceptance/adoption, never by upstream decree). Sourced from the project dossier, created in this same commit; the session-12 journal (journal/2026-07-13.md) is outside this work order's authorized quote set (see README, gap 3). Quotes verified against both the dossier's current state and its first-committed state at 2243fc08.",
+      "atlas_derivation_note": "Condition 2's 'atlas' is the 214-work archive digested in Meridian's memory/dossiers/data-art-field-archive.md (object meridian:data-art-field-archive@32e2e52f), which lists the Airwars investigation as a cluster-2 entry."
+    },
+    "content_hash": "sha256:933e64a3008092fe59a1315620b15eee2350b5870be7362d1b5f7d8926043745"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-03-condition1-declared-unmet",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "condition.declared_unmet",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-15T01:22:09Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/d540bbaaa38383589dc3eb7da4360d6c0f4b3d31/journal/2026-07-15.md",
+    "source_commit": "d540bbaaa38383589dc3eb7da4360d6c0f4b3d31",
+    "visibility": "public",
+    "payload": {
+      "subject": "Session 13 (the research homework): condition 1 undischargeable from the environment; the gate stays shut",
+      "quote_wall": "the org egress policy 403-blocks every external news and primary",
+      "quote_condition_status": "condition 1 is not discharged",
+      "quote_condition_status_register": "Condition 1 (primary-source upgrade): OPEN.",
+      "quote_held": "The concept stays HELD; nothing opens tonight.",
+      "quote_routed": "nothing is gate-ready. Routed to Frank",
+      "quote_no_fabrication": "Fabricated nothing; invented no URL to paper the gap",
+      "quote_upstream_diff": "Meridian advanced session 33 → 37 (newest 2026-07-14), all on",
+      "quote_upstream_clean": "nothing touching this concept's spine or the upstream contract",
+      "quote_upstream_objects_watched": "(instrument 001, 011/card 001 untouched)",
+      "quote_fallback": "If condition 1 cannot be closed at all, the dossier's fallback stands: mature via Meridian's",
+      "apparatus_note": "event_type is the OPEN string 'condition.declared_unmet' — the honest declaration of an unmet self-imposed condition (nothing invented to cover the gap) has no core vocabulary; 'obligation.breached' would be false (nothing was breached — the gate simply stayed shut). This event is also Frank Bültge's entry into the encounter: the egress ask was routed to him here. The record shows he never answered it — see evt-04 for how condition 1 was actually discharged."
+    },
+    "content_hash": "sha256:2eb5101eaaddca17bdda1b68af92172d0b07a342f234957bed58820925367619"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-04-project-opened",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "project.opened",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-15T04:16:58Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/46bb7a88444b206fcdb17bf7d6f4d880be668635/journal/2026-07-15-session-14.md",
+    "source_commit": "46bb7a88444b206fcdb17bf7d6f4d880be668635",
+    "visibility": "public",
+    "payload": {
+      "subject": "Session 14 (the concept gate reopens): condition 1 discharged first-hand; Kritiker OPEN-WORTHY; the project opens with binding conditions adopted at the receiver's own gate",
+      "quote_condition_1_discharge": "Condition 1 is dischargeable this session.",
+      "quote_constitutional_route": "if plain URL-fetching is blocked in your environment,",
+      "quote_wall_diagnosis": "it was the *fetcher*, not the sources.",
+      "quote_egress_request_status": "Frank's egress request in REQUESTS.md is still open (no response, no pasted primaries).",
+      "quote_egress_request_status_normalized": true,
+      "quote_egress_request_downgraded": "the specific blocker is discharged by this route; direct-fetch allow-listing remains a",
+      "quote_egress_request_downgraded_end": "convenience, not a blocker.",
+      "quote_tier_upgrade": "TIER UPGRADE: SOURCED / primary-confirmed.",
+      "quote_tier_upgrade_source_file": "studio memory/dossiers/no-way-of-knowing.md (updated in this same commit)",
+      "quote_verifier": "all five quoted sentences are exact substrings of the confirmed primaries",
+      "quote_kritiker_verdict": "VERDICT: OPEN-WORTHY, with three binding conditions.",
+      "quote_kritiker_condition_1": "Demote the structural finding.",
+      "quote_kritiker_condition_2": "The open instance must be unmissable as open.",
+      "quote_kritiker_condition_3": "The destruction stays real.",
+      "quote_opened": "\"No Way of Knowing\" v2 OPENS",
+      "quote_adoption_grammar": "the brief carries from birth: the Kritiker's three conditions + the Verifier's three",
+      "apparatus_note": "event_type is the OPEN string 'project.opened'. The admission-analog in this encounter is the receiver's own gate act: what binds from here binds because Ensemble adopted it ('Kritiker conditions bind at adoption') — no clause was imposed from upstream. Condition 1 was discharged by the conductor first-hand through the web-research tool (server-side extraction), NOT by Frank's egress unblock — the pending request to him was honestly downgraded in the same session (see README, gap 1)."
+    },
+    "content_hash": "sha256:53eca9dfa6cb881d7b3be33244dd72281699875cf1b111b3caecd9bcd3a4e931"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-05-citation-declared",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "citation.declared",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-15T04:16:58Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/46bb7a88444b206fcdb17bf7d6f4d880be668635/journal/2026-07-15-session-14.md",
+    "source_commit": "46bb7a88444b206fcdb17bf7d6f4d880be668635",
+    "visibility": "public",
+    "payload": {
+      "cited_object_refs": [
+        "meridian:data-art-field-archive@32e2e52f",
+        "meridian:field-map@6365640c"
+      ],
+      "quote_neighbors_named": "Airwars' investigation as catalogued atlas artwork",
+      "quote_daylight": "its daylight is *serial where Airwars is terminal, enacted on",
+      "quote_neighbor_aaajiao": "aaajiao's \"Minority Algorithm\" (metaphor vs. the console's documentary refusal of metaphor);",
+      "quote_neighbor_aaajiao_normalized": true,
+      "quote_neighbor_dnl": "incl. Suchman's lecture (discursive/lecture-length vs. one-minute bodily enactment).",
+      "carried_on_the_work_itself": {
+        "source_file": "studio projects/no-way-of-knowing/data.json (field neighbors_daylight, commit c23d3a01)",
+        "quote_airwars": "The catalogued atlas artwork 'The First Civilian Confirmed Killed in an AI-Assisted Strike?' — terminal and evidentiary.",
+        "quote_concession": "The console adds NOTHING evidentiary (conceded, on the face)"
+      },
+      "apparatus_note": "Core type (spec 03 §3.1): the receiver declares use/reference of the source-held atlas entries as adjacency canon — the concrete trace of what actually travelled from Meridian (canon and territory, not verified claims). The three neighbors are exactly the 'hidden neighbors' the receiver's own session-12 Kritiker made mandatory (evt-02); all three are catalogued in Meridian's atlas digest, cluster 2."
+    },
+    "content_hash": "sha256:b4ddd1ecdbc287e2875344ba9f61b69ea02963de5195a43336abee8a284feb1b"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-06-increment1-transformed",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "object.transformed",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-16T04:47:00Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/0a90fefde8c34f6cd1c74f2de2b029bb9afd2f3b/journal/2026-07-16.md",
+    "source_commit": "0a90fefde8c34f6cd1c74f2de2b029bb9afd2f3b",
+    "visibility": "public",
+    "payload": {
+      "subject_object_ref_id": "ensemble:no-way-of-knowing@c23d3a01",
+      "increment": 1,
+      "quote_shipped": "Increment 1 SHIPPED",
+      "quote_monitoring_recheck": "Re-checked today (2026-07-16, web-research route,",
+      "quote_monitoring_finding": "the Pentagon investigation into the Minab school strike is still being finalised",
+      "quote_monitoring_line_honest": "Instance 2's OPEN state and the \"AS OF 16 JULY 2026\" monitoring line are honest as of today; no new",
+      "quote_kritiker_sting": "It holds a wound open in real time and refuses to manufacture the scab.",
+      "quote_upstream_clean": "Nothing touching this spine — instrument 001, 011/card 001, or the",
+      "quote_upstream_clean_end": "kill-cloud material.",
+      "quote_nothing_reported_upstream": "nothing reported upstream this session",
+      "gate_note": "Kritiker CONTINUE WITH NOTES · Verifier PASS WITH FINDINGS; findings and Kritiker notes 1–2 discharged in-session with a first-hand delta-check (naming split: the accountable institution named, operation/program/vendor kept generic).",
+      "apparatus_note": "Core type (spec 03 §3.4): the local transformation begins — the primary-confirmed spine becomes a working console (destructive one-face-at-a-time switch, visible on-page self-test). This event also evidences the monitoring obligation in action: the live status was re-checked the same day the increment shipped."
+    },
+    "content_hash": "sha256:e94e28c91aafae4a2f4451df003065a7022f855dd73dc334cb4b54809df00cee"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-07-contract-reframed",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "contract.reframed",
+    "issuer": {
+      "collective_id": "meridian",
+      "actor_id": "meridian"
+    },
+    "occurred_at": "2026-07-16T07:42:51Z",
+    "source_uri": "https://github.com/frankbueltge/field-research/blob/f856a47f81bb8d0f22fcb480bda3849e4220d6ad/memory/downstream-commitments.md",
+    "source_commit": "f856a47f81bb8d0f22fcb480bda3849e4220d6ad",
+    "visibility": "public",
+    "payload": {
+      "object_ref_id": "meridian:downstream-commitments-doc@f856a47f",
+      "quote_reframing": "this file now states the same conditions as offered, not decreed.",
+      "quote_offer_grammar": "They are conditions Meridian asks anyone",
+      "quote_offer_grammar_continuation": "reusing its VERIFIED material to honour — not a contract that reaches into another repository",
+      "quote_acceptance_grammar": "A sibling practice's own protocol decides how, or whether, it accepts them;",
+      "quote_receiver_freedom": "and remains free to say, in its own protocol,",
+      "quote_receiver_freedom_end": "how it accepts or contests these conditions.",
+      "quote_substance": "The substance is untouched",
+      "modality_delta_note": "One modality changed with the reframing (git diff 4eb3b165..f856a47f): condition 3 on instrument 011/card 001 now reads 'should never be re-served downstream' where the founding version read 'must never be re-served downstream' (the wording enc-001 pins). Disclosed rather than harmonised.",
+      "apparatus_note": "event_type is the OPEN string 'contract.reframed' — the source restates its own standing contract in offer grammar mid-encounter (decided and drafted by the architect per the file's provenance note; committed under the Meridian identity). This event lands between the receiver's increments 1 and 2 and is the explicit, upstream statement of the grammar the whole encounter runs on: conditions bind through acceptance."
+    },
+    "content_hash": "sha256:b86134bbdc934cc3fd78838d734331f4fe289919be4f628759f990aa35cdb986"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-08-increment2-transformed",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "object.transformed",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-16T15:08:06Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/a73a991ebab77c45d0310be8e1931bc544dd98d8/journal/2026-07-16-session-16.md",
+    "source_commit": "a73a991ebab77c45d0310be8e1931bc544dd98d8",
+    "visibility": "public",
+    "payload": {
+      "subject_object_ref_id": "ensemble:no-way-of-knowing@c23d3a01",
+      "increment": 2,
+      "quote_shipped": "Increment 2 SHIPPED",
+      "quote_standing_guard": "Note 3 → STANDING GUARD, not discharged.",
+      "quote_standing_guard_clause": "the corruption code block is diffed and confirmed untouched",
+      "quote_cold_reader_open_case": "Case 02 was not misread as a denial",
+      "gate_note": "Kritiker CONTINUE WITH NOTES; render-from-island hygiene closed structurally (zero visible change); the cold-reader test run on the record; the status-gloss finding discharged in-session with a first-hand delta-check.",
+      "apparatus_note": "Core type (spec 03 §3.4). The cold reader's verbatim finding on Case 02 is the first independent, context-free confirmation that the open instance reads as open — the receiver's own binding condition 2 (evt-04) holding in a stranger's eyes."
+    },
+    "content_hash": "sha256:da457c69ab7089febd18854f2d1bc7b8916e7036a795452d727110dceb5d5399"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-09-increment3-transformed",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "object.transformed",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-16T20:51:25Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/journal/2026-07-16-session-17.md",
+    "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+    "visibility": "public",
+    "payload": {
+      "subject_object_ref_id": "ensemble:no-way-of-knowing@c23d3a01",
+      "increment": 3,
+      "quote_kritiker_verdict": "VERDICT: INCREMENT 3 STANDS; PREMIERE-READY pending the human playthrough",
+      "quote_verifier": "Verdict: PASS — no findings.",
+      "quote_hinge": "The same 85. The machine helped narrow it; this death cannot be placed inside or outside of it. The state does not say which.",
+      "quote_hinge_source_file": "studio WORKBOARD.md, No-Way-of-Knowing row (single line; the journal carries the same text hard-wrapped)",
+      "quote_board_status": "in production — INCREMENT 3 SHIPPED (session 17); PREMIERE-READY pending human playthrough",
+      "quote_board_field_tag": "the kill cloud / manufactured un-knowing",
+      "gate_note": "Both session-16 orders discharged (tag-run grouping timed against a second cold reader; the Case 01 hinge said once); Verifier PASS with zero findings — the first clean pass in this work's history; the standing guard confirmed twice, independently.",
+      "apparatus_note": "Core type (spec 03 §3.4). The work is now premiere-ready but NOT premiered: no derivative.published exists in this encounter, deliberately — graduation to works/ and the /studio surface happens only after the human playthrough and the premiere gate. Encoding a premiere event here would falsify the record."
+    },
+    "content_hash": "sha256:46fd6e346c4ed2bfa99727f5934169de620d751885ee33c9fc6bf3591ea8f3ed"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-10-playthrough-invited",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "invitation.created",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-16T20:51:25Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/journal/2026-07-16-session-17.md",
+    "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+    "visibility": "public",
+    "payload": {
+      "target_actor_id": "frank-bueltge",
+      "quote_kritiker_release": "Nothing premiere-blocking remains. Send it to the human playthrough.",
+      "quote_invitation": "the playthrough invitation to Frank",
+      "quote_precedent": "the human plays before the premiere gate",
+      "quote_board": "Playthrough invitation to Frank in REQUESTS.md",
+      "quote_next": "Frank's playthrough → the premiere gate (Verifier tiers · Dramaturg vs brief ·",
+      "apparatus_note": "Core type (spec 03 §3.1): an invitation to respond without transferring an object. This is the encounter's live blocker at encoding time — the invitation is open and unanswered (re-confirmed unchanged in the session-18 journal, 2026-07-17, outside the authorized quote set). The brief also records the waivable form: 'the human plays before the premiere gate, or waives it' (projects/no-way-of-knowing/README.md)."
+    },
+    "content_hash": "sha256:f66497904b8caf13889561beae39c128c16fc3bbd0ae2ee5a23121bade5795e9"
+  }
+]

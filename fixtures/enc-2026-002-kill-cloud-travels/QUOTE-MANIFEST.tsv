@@ -1,0 +1,105 @@
+# location	source(repo:path)	first-60-chars	normalized
+events.json/evt-01/quote_governing_principle	field-research:memory/downstream-commitments.md	once here must not go unstated twice downstream.	no
+events.json/evt-01/quote_governing_principle_context	field-research:memory/downstream-commitments.md	The governing principle (session 22, adopted as the session'	no
+events.json/evt-01/quote_condition_1_live_status	field-research:memory/downstream-commitments.md	Live status travels with every derived operation, at equal p	no
+events.json/evt-01/quote_condition_1_continuation	field-research:memory/downstream-commitments.md	not a status frozen at the moment of translation.	no
+events.json/evt-01/quote_condition_3_instrument_011	field-research:memory/downstream-commitments.md	Instrument 011 ("The Backward Docket") and its card 001 shou	no
+events.json/evt-02/quote_verdict	studio:memory/dossiers/no-way-of-knowing.md	HOLD — 6 conditions; critique published in journal	no
+events.json/evt-02/quote_condition_1	studio:memory/dossiers/no-way-of-knowing.md	Primary-source upgrade:	no
+events.json/evt-02/quote_condition_1_text	studio:memory/dossiers/no-way-of-knowing.md	fetch the Moore/Bloomberg quote and the original outlet of	no
+events.json/evt-02/quote_condition_2	studio:memory/dossiers/no-way-of-knowing.md	Re-argue daylight from Airwars' piece AS A CATALOGUED ATLAS 	no
+events.json/evt-02/quote_condition_2_atlas_reference	studio:memory/dossiers/no-way-of-knowing.md	the atlas lists "The First Civilian Confirmed Killed in an A	no
+events.json/evt-02/quote_hidden_neighbors	studio:memory/dossiers/no-way-of-knowing.md	Hidden neighbors the Kritiker surfaced (must be named in any	no
+events.json/evt-02/quote_upgrade_path	studio:memory/dossiers/no-way-of-knowing.md	upgrade via Meridian later if the work matures	no
+events.json/evt-02/quote_own_tier	studio:memory/dossiers/no-way-of-knowing.md	SOURCED tier by the studio's own	no
+events.json/evt-03/quote_wall	studio:journal/2026-07-15.md	the org egress policy 403-blocks every external news and pri	no
+events.json/evt-03/quote_condition_status	studio:journal/2026-07-15.md	condition 1 is not discharged	no
+events.json/evt-03/quote_condition_status_register	studio:journal/2026-07-15.md	Condition 1 (primary-source upgrade): OPEN.	no
+events.json/evt-03/quote_held	studio:journal/2026-07-15.md	The concept stays HELD; nothing opens tonight.	no
+events.json/evt-03/quote_routed	studio:journal/2026-07-15.md	nothing is gate-ready. Routed to Frank	no
+events.json/evt-03/quote_no_fabrication	studio:journal/2026-07-15.md	Fabricated nothing; invented no URL to paper the gap	no
+events.json/evt-03/quote_upstream_diff	studio:journal/2026-07-15.md	Meridian advanced session 33 → 37 (newest 2026-07-14), all o	no
+events.json/evt-03/quote_upstream_clean	studio:journal/2026-07-15.md	nothing touching this concept's spine or the upstream contra	no
+events.json/evt-03/quote_upstream_objects_watched	studio:journal/2026-07-15.md	(instrument 001, 011/card 001 untouched)	no
+events.json/evt-03/quote_fallback	studio:journal/2026-07-15.md	If condition 1 cannot be closed at all, the dossier's fallba	no
+events.json/evt-04/quote_condition_1_discharge	studio:journal/2026-07-15-session-14.md	Condition 1 is dischargeable this session.	no
+events.json/evt-04/quote_constitutional_route	studio:journal/2026-07-15-session-14.md	if plain URL-fetching is blocked in your environment,	no
+events.json/evt-04/quote_wall_diagnosis	studio:journal/2026-07-15-session-14.md	it was the *fetcher*, not the sources.	no
+events.json/evt-04/quote_egress_request_downgraded	studio:journal/2026-07-15-session-14.md	the specific blocker is discharged by this route; direct-fet	no
+events.json/evt-04/quote_egress_request_downgraded_end	studio:journal/2026-07-15-session-14.md	convenience, not a blocker.	no
+events.json/evt-04/quote_verifier	studio:journal/2026-07-15-session-14.md	all five quoted sentences are exact substrings of the confir	no
+events.json/evt-04/quote_kritiker_verdict	studio:journal/2026-07-15-session-14.md	VERDICT: OPEN-WORTHY, with three binding conditions.	no
+events.json/evt-04/quote_kritiker_condition_1	studio:journal/2026-07-15-session-14.md	Demote the structural finding.	no
+events.json/evt-04/quote_kritiker_condition_2	studio:journal/2026-07-15-session-14.md	The open instance must be unmissable as open.	no
+events.json/evt-04/quote_kritiker_condition_3	studio:journal/2026-07-15-session-14.md	The destruction stays real.	no
+events.json/evt-04/quote_opened	studio:journal/2026-07-15-session-14.md	"No Way of Knowing" v2 OPENS	no
+events.json/evt-04/quote_adoption_grammar	studio:journal/2026-07-15-session-14.md	the brief carries from birth: the Kritiker's three condition	no
+events.json/evt-04/quote_egress_request_status	studio:journal/2026-07-15-session-14.md	Frank's egress request in REQUESTS.md is still open (no resp	yes
+events.json/evt-04/quote_tier_upgrade	studio:memory/dossiers/no-way-of-knowing.md	TIER UPGRADE: SOURCED / primary-confirmed.	no
+events.json/evt-05/quote_neighbors_named	studio:journal/2026-07-15-session-14.md	Airwars' investigation as catalogued atlas artwork	no
+events.json/evt-05/quote_daylight	studio:journal/2026-07-15-session-14.md	its daylight is *serial where Airwars is terminal, enacted o	no
+events.json/evt-05/quote_neighbor_dnl	studio:journal/2026-07-15-session-14.md	incl. Suchman's lecture (discursive/lecture-length vs. one-m	no
+events.json/evt-05/quote_neighbor_aaajiao	studio:journal/2026-07-15-session-14.md	aaajiao's "Minority Algorithm" (metaphor vs. the console's d	yes
+events.json/evt-05/carried.quote_airwars	studio:projects/no-way-of-knowing/data.json	The catalogued atlas artwork 'The First Civilian Confirmed K	no
+events.json/evt-05/carried.quote_concession	studio:projects/no-way-of-knowing/data.json	The console adds NOTHING evidentiary (conceded, on the face)	no
+events.json/evt-06/quote_shipped	studio:journal/2026-07-16.md	Increment 1 SHIPPED	no
+events.json/evt-06/quote_monitoring_recheck	studio:journal/2026-07-16.md	Re-checked today (2026-07-16, web-research route,	no
+events.json/evt-06/quote_monitoring_finding	studio:journal/2026-07-16.md	the Pentagon investigation into the Minab school strike is s	no
+events.json/evt-06/quote_monitoring_line_honest	studio:journal/2026-07-16.md	Instance 2's OPEN state and the "AS OF 16 JULY 2026" monitor	no
+events.json/evt-06/quote_kritiker_sting	studio:journal/2026-07-16.md	It holds a wound open in real time and refuses to manufactur	no
+events.json/evt-06/quote_upstream_clean	studio:journal/2026-07-16.md	Nothing touching this spine — instrument 001, 011/card 001, 	no
+events.json/evt-06/quote_upstream_clean_end	studio:journal/2026-07-16.md	kill-cloud material.	no
+events.json/evt-06/quote_nothing_reported_upstream	studio:journal/2026-07-16.md	nothing reported upstream this session	no
+events.json/evt-07/quote_reframing	field-research:memory/downstream-commitments.md	this file now states the same conditions as offered, not dec	no
+events.json/evt-07/quote_offer_grammar	field-research:memory/downstream-commitments.md	They are conditions Meridian asks anyone	no
+events.json/evt-07/quote_offer_grammar_continuation	field-research:memory/downstream-commitments.md	reusing its VERIFIED material to honour — not a contract tha	no
+events.json/evt-07/quote_acceptance_grammar	field-research:memory/downstream-commitments.md	A sibling practice's own protocol decides how, or whether, i	no
+events.json/evt-07/quote_receiver_freedom	field-research:memory/downstream-commitments.md	and remains free to say, in its own protocol,	no
+events.json/evt-07/quote_receiver_freedom_end	field-research:memory/downstream-commitments.md	how it accepts or contests these conditions.	no
+events.json/evt-07/quote_substance	field-research:memory/downstream-commitments.md	The substance is untouched	no
+events.json/evt-08/quote_shipped	studio:journal/2026-07-16-session-16.md	Increment 2 SHIPPED	no
+events.json/evt-08/quote_standing_guard	studio:journal/2026-07-16-session-16.md	Note 3 → STANDING GUARD, not discharged.	no
+events.json/evt-08/quote_standing_guard_clause	studio:journal/2026-07-16-session-16.md	the corruption code block is diffed and confirmed untouched	no
+events.json/evt-08/quote_cold_reader_open_case	studio:journal/2026-07-16-session-16.md	Case 02 was not misread as a denial	no
+events.json/evt-09/quote_kritiker_verdict	studio:journal/2026-07-16-session-17.md	VERDICT: INCREMENT 3 STANDS; PREMIERE-READY pending the huma	no
+events.json/evt-09/quote_verifier	studio:journal/2026-07-16-session-17.md	Verdict: PASS — no findings.	no
+events.json/evt-09/quote_hinge	studio:WORKBOARD.md	The same 85. The machine helped narrow it; this death cannot	no
+events.json/evt-09/quote_board_status	studio:WORKBOARD.md	in production — INCREMENT 3 SHIPPED (session 17); PREMIERE-R	no
+events.json/evt-09/quote_board_field_tag	studio:WORKBOARD.md	the kill cloud / manufactured un-knowing	no
+events.json/evt-10/quote_kritiker_release	studio:journal/2026-07-16-session-17.md	Nothing premiere-blocking remains. Send it to the human play	no
+events.json/evt-10/quote_invitation	studio:journal/2026-07-16-session-17.md	the playthrough invitation to Frank	no
+events.json/evt-10/quote_precedent	studio:journal/2026-07-16-session-17.md	the human plays before the premiere gate	no
+events.json/evt-10/quote_board	studio:WORKBOARD.md	Playthrough invitation to Frank in REQUESTS.md	no
+events.json/evt-10/quote_next	studio:journal/2026-07-16-session-17.md	Frank's playthrough → the premiere gate (Verifier tiers · Dr	no
+obligations.json/obl-1/clause_text	studio:journal/2026-07-15-session-14.md	The open instance must be unmissable as open.	no
+obligations.json/obl-1/instantiation_quote	studio:journal/2026-07-16.md	The Pentagon has not said yes. It has not said no.	no
+obligations.json/obl-2/clause_text	studio:journal/2026-07-15-session-14.md	the serial "no new instance since" line is an unsourced nega	yes
+obligations.json/obl-2/instantiation_quote	studio:projects/no-way-of-knowing/data.json	This is the studio's own monitoring status on the date shown	no
+obligations.json/obl-2/serial_line(in instantiation_source)	studio:projects/no-way-of-knowing/data.json	2 catches on record. Case 02 unresolved. Last checked 16 Jul	no
+obligations.json/obl-2/serial_note(in instantiation_source)	studio:projects/no-way-of-knowing/data.json	When the Pentagon investigation answers Congress's AI questi	no
+obligations.json/obl-3/clause_text	studio:journal/2026-07-15.md	Upstream diff first:	no
+obligations.json/obl-3/instantiation_quote	studio:journal/2026-07-16.md	Nothing touching this spine — instrument 001, 011/card 001, 	no
+assertions.json/A1/rationale	studio:projects/no-way-of-knowing/data.json	The catalogued atlas artwork 'The First Civilian Confirmed K	no
+assertions.json/A1/evidence-dossier-fragment-1	studio:memory/dossiers/no-way-of-knowing.md	the console adds no fact Airwars did not establish	no
+assertions.json/A1/evidence-dossier-fragment-2	studio:memory/dossiers/no-way-of-knowing.md	Its claim is structural, not evidentiary	no
+assertions.json/A2/rationale	studio:journal/2026-07-15-session-14.md	Knowledge as asset, ignorance as shield, toggled by the vale	no
+assertions.json/A2/on-work-wording	studio:projects/no-way-of-knowing/data.json	Knowledge as asset, ignorance as shield — toggled by the val	no
+assertions.json/A3/rationale	field-research:FIELD.md	sharpest edge — multi-theater since Feb 2026, no longer only	no
+assertions.json/A3/cluster-title	field-research:FIELD.md	AI in war / "Kill Cloud" / algorithmic targeting	no
+assertions.json/A3/airwars-line	field-research:FIELD.md	Airwars/The Independent: first US-accepted civilian death in	no
+assertions.json/A3/snippet-line	field-research:FIELD.md	a DoD claim it has "no way of knowing" whether AI was used (	no
+assertions.json/A3/epic-fury-line	field-research:FIELD.md	Operation Epic Fury against Iran, from 2026-02-28, 5,500+ ta	no
+assertions.json/A4/rationale	studio:projects/no-way-of-knowing/data.json	every quoted sentence on either face is a verbatim substring	no
+assertions.json/A4/dossier-anchor-1	studio:memory/dossiers/no-way-of-knowing.md	TIER UPGRADE: SOURCED / primary-confirmed.	no
+assertions.json/A4/dossier-anchor-2	studio:memory/dossiers/no-way-of-knowing.md	SOURCED tier by the studio's own	no
+assertions.json/A4/dossier-anchor-3	studio:memory/dossiers/no-way-of-knowing.md	upgrade via Meridian later if the work matures	no
+objects.json/atlas/delivery_note	field-research:memory/dossiers/data-art-field-archive.md	Delivered by the team (Frank / the lab), 2026-07-06 — in ans	no
+objects.json/atlas/not-a-canon	field-research:memory/dossiers/data-art-field-archive.md	Not a canon, a map.	no
+objects.json/atlas/retrievable-source	field-research:memory/dossiers/data-art-field-archive.md	every entry has a retrievable source	no
+objects.json/atlas/airwars-entry	field-research:memory/dossiers/data-art-field-archive.md	Cross-examines a single 2024 US airstrike casualty in Iraq a	no
+objects.json/atlas/aaajiao-entry	field-research:memory/dossiers/data-art-field-archive.md	Compiles found footage of real drone strikes, video-game ima	no
+objects.json/atlas/dnl-entry	field-research:memory/dossiers/data-art-field-archive.md	A dedicated research institute and conference commissioning 	no
+objects.json/nwok/summary_cache(one_line)	studio:projects/no-way-of-knowing/data.json	The state at maximal confidence when it acts; the state at d	no
+objects.json/nwok/workboard_listing_fragment	studio:WORKBOARD.md	the state's own two sentences: declared confidence to strike	no
+objects.json/field-map/summary-fragment	field-research:FIELD.md	sharpest edge — multi-theater since Feb 2026, no longer only	no
+objects.json/field-map/receiver-watch	studio:journal/2026-07-16.md	Nothing touching this spine — instrument 001, 011/card 001, 	no

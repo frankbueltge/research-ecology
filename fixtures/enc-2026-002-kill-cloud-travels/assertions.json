@@ -1,0 +1,135 @@
+[
+  {
+    "assertion_id": "assert-enc2026002-ensemble-daylight-claim",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "author": {
+      "actor_id": "ensemble",
+      "collective_id": "ensemble"
+    },
+    "subject": {
+      "local_object_ref_id": "ensemble:no-way-of-knowing@c23d3a01",
+      "field_path": "neighbors_daylight.airwars"
+    },
+    "predicate": "claims-daylight-from-catalogued-atlas-artwork",
+    "object": {
+      "local_object_ref_id": "meridian:data-art-field-archive@32e2e52f",
+      "note": "the cluster-2 entry 'The First Civilian Confirmed Killed in an AI-Assisted Strike?' (Airwars, with The Independent, 2026)"
+    },
+    "local_epistemic_status": "concept-gate argument, Kritiker-judged (session 14); evidentiary limit conceded on the face",
+    "epistemic_status": "interpretation",
+    "rationale": "The catalogued atlas artwork 'The First Civilian Confirmed Killed in an AI-Assisted Strike?' — terminal and evidentiary. The console adds NOTHING evidentiary (conceded, on the face) but is serial where Airwars is terminal, enacts the mutual exclusion on the body, and stands inside a live, open instance Airwars is not built to hold.",
+    "evidence": [
+      {
+        "event_id": "evt-enc2026002-05-citation-declared"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/projects/no-way-of-knowing/data.json",
+        "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+        "field_path": "neighbors_daylight.airwars"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/memory/dossiers/no-way-of-knowing.md",
+        "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+        "field_path": "Condition 2 — the daylight argument (the Artist, in their own voice); honest limit conceded there verbatim: 'the console adds no fact Airwars did not establish' / 'Its claim is structural, not evidentiary'"
+      }
+    ],
+    "lifecycle_status": "active",
+    "visibility": "public",
+    "content_hash": "sha256:1f20f2a53e6dc0f0b64558075d98af774dd9896eea94b2920625f2f06d021b27"
+  },
+  {
+    "assertion_id": "assert-enc2026002-ensemble-premise-demotion",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "author": {
+      "actor_id": "ensemble",
+      "collective_id": "ensemble"
+    },
+    "subject": {
+      "local_object_ref_id": "ensemble:no-way-of-knowing@c23d3a01",
+      "field_path": "premise"
+    },
+    "predicate": "presents-as-premise-not-proven-pattern",
+    "object": "the epistemic asymmetry (knowledge as asset, ignorance as shield), shown through its first two catches — one closed, one open — and NOT presented as a proven 'repeating institutional pattern'",
+    "local_epistemic_status": "PREMISE (the work's own voice — NOT a claim of a proven structural pattern)",
+    "epistemic_status": "interpretation",
+    "rationale": "Knowledge as asset, ignorance as shield, toggled by the valence of the outcome.",
+    "evidence": [
+      {
+        "event_id": "evt-enc2026002-04-project-opened"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/projects/no-way-of-knowing/data.json",
+        "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+        "field_path": "premise.statement (the on-work wording: 'Knowledge as asset, ignorance as shield — toggled by the valence of the outcome.'; the demotion enforced in the render — session 15 verified the negated words live only in the island's premise and are never rendered on a face)"
+      }
+    ],
+    "lifecycle_status": "active",
+    "visibility": "public",
+    "content_hash": "sha256:ae6bea6da25365eef31f696e5ffee2bf39164a16523981462bcbd3876ca7f45b"
+  },
+  {
+    "assertion_id": "assert-enc2026002-meridian-cluster-framing",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "author": {
+      "actor_id": "meridian",
+      "collective_id": "meridian"
+    },
+    "subject": {
+      "local_object_ref_id": "meridian:field-map@6365640c",
+      "field_path": "FIELD.md, cluster 2 row + '[exp. 2026-07-11]' update block"
+    },
+    "predicate": "frames-as",
+    "object": "the field's sharpest edge — multi-theater since Feb 2026, no longer only Gaza-driven — with the core downstream lead ('no way of knowing') carried at SNIPPET tier",
+    "local_epistemic_status": "hypothesis-file entry; SNIPPET tier explicit in-file on the Airwars line",
+    "epistemic_status": "interpretation",
+    "rationale": "sharpest edge — multi-theater since Feb 2026, no longer only Gaza-driven",
+    "evidence": [
+      {
+        "event_id": "evt-enc2026002-01-contract-published"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/field-research/blob/6365640cabc6a0c21aa8b4a490c1d36566906152/FIELD.md",
+        "source_commit": "6365640cabc6a0c21aa8b4a490c1d36566906152",
+        "field_path": "cluster 2; in-file verbatim: 'AI in war / \"Kill Cloud\" / algorithmic targeting'; 'Airwars/The Independent: first US-accepted civilian death in an AI-assisted strike (al-Rawi,'; 'a DoD claim it has \"no way of knowing\" whether AI was used (SNIPPET,'; 'Operation Epic Fury against Iran, from 2026-02-28, 5,500+ targets struck — an officially'"
+      }
+    ],
+    "lifecycle_status": "active",
+    "visibility": "public",
+    "content_hash": "sha256:b73f4b8f310495a45d1261a0f7d76855a0615e0b660e929134a0cf185a5b1886"
+  },
+  {
+    "assertion_id": "assert-enc2026002-ensemble-spine-tier",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "author": {
+      "actor_id": "ensemble",
+      "collective_id": "ensemble"
+    },
+    "subject": {
+      "local_object_ref_id": "ensemble:no-way-of-knowing@c23d3a01",
+      "field_path": "tiers_on_this_work.SOURCED_primary_confirmed"
+    },
+    "predicate": "declares-spine-first-hand-research",
+    "object": "the work's factual spine is the studio's own primary-confirmed research — not a reuse of Meridian VERIFIED material; the receiver's local tier on the core fact exceeds the source's SNIPPET-tier lead",
+    "local_epistemic_status": "SOURCED / primary-confirmed (session 14; Verifier-checked verbatim)",
+    "epistemic_status": "interpretation",
+    "rationale": "every quoted sentence on either face is a verbatim substring of its cited primary, fetched directly (server-side) and checked at the concept gate (session 14)",
+    "evidence": [
+      {
+        "event_id": "evt-enc2026002-04-project-opened"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/memory/dossiers/no-way-of-knowing.md",
+        "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+        "field_path": "verbatim anchors: 'TIER UPGRADE: SOURCED / primary-confirmed.'; 'SOURCED tier by the studio's own' (Researcher is constitutional); 'upgrade via Meridian later if the work matures' — the fallback path that was never needed"
+      },
+      {
+        "source_uri": "https://github.com/frankbueltge/studio/blob/c23d3a01e550f3de48454577dda242bdc4206fef/projects/no-way-of-knowing/data.json",
+        "source_commit": "c23d3a01e550f3de48454577dda242bdc4206fef",
+        "field_path": "tiers_on_this_work.SOURCED_primary_confirmed"
+      }
+    ],
+    "lifecycle_status": "active",
+    "visibility": "public",
+    "content_hash": "sha256:8863c61bfacdf99d52b3972fb56d165a6ab8c923e19d102c5aab772ba87b39fc"
+  }
+]

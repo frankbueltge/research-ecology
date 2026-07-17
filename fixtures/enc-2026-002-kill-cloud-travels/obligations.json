@@ -1,0 +1,67 @@
+[
+  {
+    "id": "obl-enc2026002-open-instance-honesty",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "source_event_id": "evt-enc2026002-04-project-opened",
+    "proposer_collective_id": "ensemble",
+    "obligated_collective_id": "ensemble",
+    "clause_text": "The open instance must be unmissable as open.",
+    "clause_source": "studio journal/2026-07-15-session-14.md, the Kritiker's binding condition 2, adopted at the receiver's own concept gate (commit 46bb7a88). Full clause continues (normalized across the journal's hard wrap): a stranger completing the one-minute read on Instance 2 must never leave believing the state denied AI in the school strike; the console fabricates no denial.",
+    "instantiation_quote": "The Pentagon has not said yes. It has not said no.",
+    "instantiation_source": "studio journal/2026-07-16.md (session 15, the Dramaturg's answer-slot text, commit 0a90fefd), carried on the work itself in projects/no-way-of-knowing/data.json.",
+    "status": "active",
+    "prominence": "load_bearing",
+    "accepted_by_event_id": "evt-enc2026002-04-project-opened",
+    "evidence_events": [
+      "evt-enc2026002-04-project-opened",
+      "evt-enc2026002-06-increment1-transformed",
+      "evt-enc2026002-08-increment2-transformed",
+      "evt-enc2026002-09-increment3-transformed"
+    ],
+    "active_from": "2026-07-15T04:16:58Z",
+    "note": "SELF-IMPOSED: proposer and obligated are the same collective — the encounter's grammar is that conditions bind through adoption at the receiver's own gate, and this clause was never asked for by Meridian. Checked independently twice against context-free readers: session 16's cold reader ('Case 02 was not misread as a denial') and session 17's second reader (dossier: 'No. Not a denial. An open question.'). Still active at encoding time: the premiere gate re-runs on any change, and Instance 2 remains genuinely open in the world (the Pentagon investigation unfinalised, the congressional AI question unanswered)."
+  },
+  {
+    "id": "obl-enc2026002-monitoring-status",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "source_event_id": "evt-enc2026002-04-project-opened",
+    "proposer_collective_id": "ensemble",
+    "obligated_collective_id": "ensemble",
+    "clause_text": "the serial \"no new instance since\" line is an unsourced negative — reframe as studio **monitoring status** with the actual last-check date, and confirm the finalising Pentagon investigation produced no new confirmed instance before shipping it",
+    "clause_text_normalized": true,
+    "clause_source": "studio journal/2026-07-15-session-14.md, the Verifier's build-time obligation 1 (of three), adopted with the brief at the receiver's own gate (commit 46bb7a88); carried in the brief as binding condition 4.",
+    "instantiation_quote": "This is the studio's own monitoring status on the date shown, not a claim that none exists.",
+    "instantiation_source": "studio projects/no-way-of-knowing/data.json (commit c23d3a01), field monitoring.statement; the rendered serial line reads '2 catches on record. Case 02 unresolved. Last checked 16 July 2026.' (monitoring.serial_line) and the update commitment reads 'When the Pentagon investigation answers Congress's AI question, Instance 2's open slot updates on that cycle — or the console discloses that it has not.' (monitoring.serial_note).",
+    "status": "active",
+    "prominence": "load_bearing",
+    "accepted_by_event_id": "evt-enc2026002-04-project-opened",
+    "evidence_events": [
+      "evt-enc2026002-04-project-opened",
+      "evt-enc2026002-06-increment1-transformed",
+      "evt-enc2026002-09-increment3-transformed"
+    ],
+    "active_from": "2026-07-15T04:16:58Z",
+    "note": "SELF-IMPOSED, and the concrete mechanism by which the work's live status stays honest: the monitoring line is a dated studio status, never a world-fact; it was actually re-checked first-hand on 2026-07-16 before increment 1 shipped ('the Pentagon investigation into the Minab school strike is still being finalised'). The commitment is standing: when the world's open question closes, the work updates on that cycle or discloses that it has not. No 'submitted-but-withheld' state and no Senate deadline exist anywhere in the sources; this clause and the dated status above are the entire supported content of the live-status obligation (see README, gap 2)."
+  },
+  {
+    "id": "obl-enc2026002-upstream-watch",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "source_event_id": "evt-enc2026002-02-concept-held",
+    "proposer_collective_id": "ensemble",
+    "obligated_collective_id": "ensemble",
+    "clause_text": "Upstream diff first:",
+    "clause_source": "studio journal/2026-07-15.md (session 13, the session-opening discipline as practiced; commit d540bbaa). The practice, as evidenced across sessions 13–15: before each move, diff Meridian's public chronicle and check that nothing touched 'this concept's spine or the upstream contract (instrument 001, 011/card 001 untouched)' (session 13) / 'this spine — instrument 001, 011/card 001, or the kill-cloud material' (session 15).",
+    "instantiation_quote": "Nothing touching this spine — instrument 001, 011/card 001, or the",
+    "instantiation_source": "studio journal/2026-07-16.md (session 15, commit 0a90fefd); the sentence continues 'kill-cloud material.' on the next wrapped line.",
+    "status": "active",
+    "prominence": "standing_practice",
+    "accepted_by_event_id": "evt-enc2026002-02-concept-held",
+    "evidence_events": [
+      "evt-enc2026002-03-condition1-declared-unmet",
+      "evt-enc2026002-04-project-opened",
+      "evt-enc2026002-06-increment1-transformed"
+    ],
+    "active_from": "2026-07-12T23:41:53Z",
+    "note": "HONEST SCOPING: this is the receiver's OWN standing session discipline, not an accepted clause of Meridian's offered conditions — Meridian's conditions address reuse of its VERIFIED material, and this project's spine is the studio's own primary-confirmed research. The practice nonetheless does the work of the offered condition 1's spirit for this encounter (live status watched, never frozen at translation time): each session verified that Meridian's chronicle showed nothing touching instrument 001, 011/card 001, or the kill-cloud material before advancing. Sessions 16–17 recorded, honestly, why no re-check was run ('re-fetching it hours later would be ritual, not verification' — same-date sessions), rather than silently skipping it."
+  }
+]
