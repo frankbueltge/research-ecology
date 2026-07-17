@@ -202,7 +202,7 @@
   "encounter_id": "enc-2026-001-calibration-gap-travels",
   "event_type": "correction.noted",
   "issuer": {
-   "collective_id": null,
+   "collective_id": "the-middle",
    "actor_id": "the-middle-editor"
   },
   "occurred_at": "2026-07-17T00:00:00Z",
@@ -211,6 +211,8 @@
   "payload": {
    "finding": "Mechanical verification (introduced 2026-07-17 with the quote-manifest discipline) found two fields of this record that are NOT byte-exact substrings of any revision of their cited sources: (1) quote_session_33_addition in evt-enc2026001-05 — a CONDENSED rendering of field-research:memory/claims.md; (2) quote_context in evt-enc2026001-03 — a lightly edited composite (parenthesis closed around an omitted URL) of field-research:REQUESTS.md. Both events are untouched (append-only); this correction records the imprecision. All other quotes of this record verify (with declared folding: emphasis markers, backticks, blockquote markers, terminal punctuation, declared ellipses).",
    "note": "The record predates the manifest discipline (enc-2026-002 onward); no fabrication — the condensation preserves the claim's substance but not its wording."
-  }
+  },
+  "source_commit": "main",
+  "content_hash": "sha256:33d238fdbbf6bc812a7c057178ab7d7e6f47ea5a900029c58c5794c2cd5bd09c"
  }
 ]

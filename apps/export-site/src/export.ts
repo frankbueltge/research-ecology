@@ -506,7 +506,27 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   const lensesDir = path.join(opts.researchEcologyRoot, "lenses");
   const narrativePath = path.join(opts.researchEcologyRoot, "narratives", "enc-2026-001.json");
 
-  const { store } = await hydrateMemoryStoreFromRepo({ bundlesRootDir, fixtureDir, lensesDir });
+  const hydration = await hydrateMemoryStoreFromRepo({ bundlesRootDir, fixtureDir, lensesDir });
+  const { store } = hydration;
+  // Fail-LOUD statt still verwerfen (17.07.: ein schema-invalides Korrektur-Event verschwand
+  // lautlos aus Partitur und Entrance — der Export blieb grün, die Site blieb alt). Verworfene
+  // FIXTURE-Records sind ein Datenfehler des Registers, kein tolerierbares Rauschen: abbrechen,
+  // damit Integrate rot wird und ein Issue entsteht, statt eine stumme Lücke zu publizieren.
+  const rejectedLists: string[] = [];
+  const collect = (v: unknown): void => {
+    if (Array.isArray(v)) { v.forEach(collect); return; }
+    if (v && typeof v === "object") {
+      const rec = v as Record<string, unknown>;
+      if (Array.isArray(rec.rejected) && rec.rejected.length > 0) {
+        rejectedLists.push(...(rec.rejected as string[]).map(String));
+      }
+      Object.values(rec).forEach(collect);
+    }
+  };
+  collect(hydration);
+  if (rejectedLists.length > 0) {
+    throw new Error(`hydration rejected ${rejectedLists.length} record(s) — refusing to export a silently thinned ledger:\n${rejectedLists.join("\n")}`);
+  }
 
   const encounter = await store.getEncounter(encounterId);
   if (!encounter) throw new Error(`unknown encounter: ${encounterId}`);

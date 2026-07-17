@@ -100,3 +100,13 @@ Ort, an dem Selbstheilungs-Vorschläge des Apparats (ein künftiger „Mechanic"
 wiederkehrende Grenzen wie fehlende Dispatches/Secrets/stale Klone und schlägt Fixes als PR
 vor) auflaufen und mit einem Klick angenommen werden. Watchdogs + fail-red + Scribe sind die
 Vorstufen; die Mechanic-Routine wäre die nächste — nichts davon publiziert ohne Gate.
+
+**Nachtrag (17.07. spät): Auto-Partitur.** Franks Erwartung: neue Begegnungen erscheinen ohne
+Hand auch als Partitur. Heute automatisch: Register + Ökologie-Karte + neue EVENTS der
+enc-001-Partitur. Nicht automatisch: eine eigene Partitur je neuer Akte (braucht narrative
+beats; Exporter ist auf enc-001 gepinnt). Vorschlag für euch: (a) Exporter über alle Fixtures
+iterieren mit degradiertem Auto-Narrativ (editorial_proposition + Events als Stationen,
+approval draft), ODER (b) der Scribe verfasst Narrativ-Entwürfe als Transkription (Gate
+gilt). Außerdem eingebaut: Export bricht jetzt LAUT ab, wenn Hydration Fixture-Records
+verwirft (stille Ausdünnung des Ledgers war heute real — ein schema-invalides Event
+verschwand lautlos).
