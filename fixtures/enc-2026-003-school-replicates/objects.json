@@ -1,0 +1,20 @@
+[
+ {
+  "object_id": "datavism:adr-002",
+  "object_ref": "datavism:docs/adr/002-field-integration.md@df34d012",
+  "content_hash": "sha256:7f7daaa4f5985103187927ff23d271ef12137d93dc21e2e1b4d1e3b852a8617c",
+  "uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/adr/002-field-integration.md"
+ },
+ {
+  "object_id": "datavism:adr-003",
+  "object_ref": "datavism:docs/adr/003-field-pipeline.md@df34d012",
+  "content_hash": "sha256:06ee8740754b292f2818723e7caa7469e69b33fd0f90f67e8396c9312d28d97c",
+  "uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/adr/003-field-pipeline.md"
+ },
+ {
+  "object_id": "datavism:governance-v1",
+  "object_ref": "datavism:docs/GOVERNANCE.md@df34d012",
+  "content_hash": "sha256:5608d7cdf87d728b6a1a1ecd3cc30456d86c6fc73b10ebaa4b7dbe1cb33030d6",
+  "uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/GOVERNANCE.md"
+ }
+]

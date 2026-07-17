@@ -1,0 +1,10 @@
+[
+ {
+  "obligation_id": "obl-enc2026004-1",
+  "holder": "data-snack-plenum",
+  "label": "provenance-frontmatter-on-every-re-cook",
+  "clause_text": "(provenance-locked)",
+  "note": "Self-imposed by the receiver's own pipeline design: re-cooked specials are provenance-locked; the six existing files instantiate it.",
+  "status": "active"
+ }
+]

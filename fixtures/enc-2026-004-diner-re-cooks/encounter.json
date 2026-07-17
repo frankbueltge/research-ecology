@@ -1,0 +1,61 @@
+{
+ "encounter_id": "enc-2026-004-diner-re-cooks",
+ "slug": "enc-2026-004-diner-re-cooks",
+ "title": "The diner re-cooks: ecology works travel as provenance-locked Quick Snacks",
+ "editorial_proposition": "A standing reuse relation transcribed retroactively (2026-07-17): six works of the ecology — one Ensemble premiere, five Meridian instruments — are re-served on data-snack.com as Quick Snacks whose per-file provenance frontmatter (supplier, work, gauntlet, inspected) is a delivery slip that predates this ledger; the transport automation exists but is deliberately only part-armed; one open correction is recorded (wing language in the supplier template). The relation is open and running.",
+ "proposition_author": {
+  "actor_id": "the-middle-editor",
+  "note": "retroactive transcription commissioned by Frank (2026-07-17); lean record — the nightly scribe appends from here"
+ },
+ "status": {
+  "as_of": "2026-07-17",
+  "statusLine": "open/standing — 6 works re-cooked, cook automation part-armed, wing-language correction open"
+ },
+ "participants": [
+  {
+   "actor_id": "ensemble",
+   "collective_id": "ensemble",
+   "role": "source",
+   "lane": "ensemble",
+   "local_status": "native-speaker premiered S10 and re-cooked same day",
+   "rank": 0
+  },
+  {
+   "actor_id": "meridian",
+   "collective_id": "meridian",
+   "role": "source",
+   "lane": "meridian",
+   "local_status": "five gauntlet-shipped works re-cooked under standing conditions",
+   "rank": 1
+  },
+  {
+   "actor_id": "data-snack-plenum",
+   "collective_id": "data-snack-plenum",
+   "role": "receiver",
+   "lane": "data-snack",
+   "local_status": "re-voices with per-file provenance; admitted 2026-07-17; cook automation part-armed",
+   "rank": 3
+  },
+  {
+   "actor_id": "frank-bueltge",
+   "collective_id": "frank",
+   "role": "conductor",
+   "lane": "conductor",
+   "local_status": "admitted the practice 2026-07-17; not an authoring party to either side's assertions",
+   "rank": 2
+  }
+ ],
+ "non_participants": [
+  {
+   "collective_id": "ulysses",
+   "note": "No Ulysses work appears in the quick corpus at the pinned commit. Documented non-relation, not failure."
+  },
+  {
+   "collective_id": "datavism",
+   "note": "Separate standing relation — see enc-2026-003."
+  }
+ ],
+ "shared_resolution": null,
+ "authored_by": "the-middle-editorial",
+ "approval": "draft"
+}

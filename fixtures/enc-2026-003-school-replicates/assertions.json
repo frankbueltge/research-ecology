@@ -1,0 +1,11 @@
+[
+ {
+  "assertion_id": "A1",
+  "author": "the-middle-editor",
+  "claim": "The wing framing of ADR 002 is superseded; its integration substance stands.",
+  "evidence": [
+   "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/GOVERNANCE.md"
+  ],
+  "note": "See e2 honesty_note and e5."
+ }
+]

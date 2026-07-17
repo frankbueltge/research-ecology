@@ -16,6 +16,22 @@
 
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
+import { execFileSync } from "node:child_process";
+
+// Privat-Repo-Fallback (z. B. frankbueltge/data-snack.com): raw.githubusercontent liefert
+// dort 404; mit Token (env GITHUB_TOKEN oder `gh auth token`) holt die Contents-API den
+// Rohinhalt. Öffentliche Verifizierbarkeit ist dann eingeschränkt — das gehört als
+// ehrlicher Vermerk in das betroffene Fixture-README, nicht verschwiegen.
+let _token;
+function ghToken() {
+  if (_token !== undefined) return _token;
+  _token = process.env.GITHUB_TOKEN ?? null;
+  if (!_token) {
+    try { _token = execFileSync("gh", ["auth", "token"], { encoding: "utf8" }).trim() || null; }
+    catch { _token = null; }
+  }
+  return _token;
+}
 
 const REPO_MAP = {
   "field-research": "frankbueltge/field-research",
@@ -36,8 +52,17 @@ async function fetchAt(repoLabel, path, commit) {
   if (!slug) throw new Error(`unbekanntes Repo-Label: ${repoLabel}`);
   const url = `https://raw.githubusercontent.com/${slug}/${commit}/${path}`;
   if (cache.has(url)) return cache.get(url);
+  let body = null;
   const res = await fetch(url);
-  const body = res.ok ? norm(await res.text()) : null;
+  if (res.ok) body = norm(await res.text());
+  else {
+    const token = ghToken();
+    if (token) {
+      const api = `https://api.github.com/repos/${slug}/contents/${path}?ref=${commit}`;
+      const r2 = await fetch(api, { headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" } });
+      if (r2.ok) body = norm(await r2.text());
+    }
+  }
   cache.set(url, body);
   return body;
 }

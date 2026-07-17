@@ -1,0 +1,38 @@
+[
+ {
+  "object_id": "data-snack:quick-native-speaker",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/native-speaker.mdx@72bae294",
+  "content_hash": "sha256:99b32d468707a1fd792803d5015edbfd2b4e9a587744daf36abc600c87676fb4",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/native-speaker.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-the-detector",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/the-detector.mdx@72bae294",
+  "content_hash": "sha256:a2eac26d8d864c11de9eaf77c54baed076181023ee2c6d23d56ebb8443abfe88",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/the-detector.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-two-meters",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/two-meters.mdx@72bae294",
+  "content_hash": "sha256:80e42993cee3e657758ef92e71f4ee830822ab9a985d99dae5796e67be83743a",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/two-meters.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-the-floor",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/the-floor.mdx@72bae294",
+  "content_hash": "sha256:a0339d42f890c2bc0f05378cc3081a0636833750c4d8ef73a5737b6681d7e5d5",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/the-floor.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-split-seal",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/split-seal.mdx@72bae294",
+  "content_hash": "sha256:d7a9605ec8848228c5023803b94714d6d4422351721586d09b1597bc8cfefebe",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/split-seal.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-standing-docket",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/standing-docket.mdx@72bae294",
+  "content_hash": "sha256:e47882e289c8c4a88da5918e0a71a97b6e60cf9f25b9570e139cd80297b81621",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/standing-docket.mdx"
+ }
+]

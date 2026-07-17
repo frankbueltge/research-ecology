@@ -1,0 +1,13 @@
+location	source	quote	wrapped
+events.json/e1/quote_governing_principle	field-research:memory/downstream-commitments.md@f856a47f81bb8d0f22fcb480bda3849e4220d6ad	once here must not go unstated twice downstream.	no
+events.json/e1/quote_travel	field-research:memory/downstream-commitments.md@f856a47f81bb8d0f22fcb480bda3849e4220d6ad	how its own shipped works may honestly travel to sibling practices and platforms.	no
+events.json/e2/quote_decision	datavism.org:docs/adr/002-field-integration.md@df34d01219d5151c832c81172466403777b18855	datavism.org ist die Schule eines arbeitenden Forschungslabors	no
+events.json/e2/quote_mechanism	datavism.org:docs/adr/002-field-integration.md@df34d01219d5151c832c81172466403777b18855	Ein Werk wird nicht ausgestellt, sondern zur **replizierbaren	no
+events.json/e2/quote_status	datavism.org:docs/adr/002-field-integration.md@df34d01219d5151c832c81172466403777b18855	**Status:** Entwurf — zur Freigabe durch Frank	no
+events.json/e3/quote_status	datavism.org:docs/adr/003-field-pipeline.md@df34d01219d5151c832c81172466403777b18855	**Status:** Angenommen — Phase 1 umgesetzt 2026-07-11 (drei Replikations-Operationen);	no
+events.json/e3/quote_sync	datavism.org:docs/adr/003-field-pipeline.md@df34d01219d5151c832c81172466403777b18855	Phase 2 umgesetzt 2026-07-11 (`scripts/field-sync.mjs`, `/field`-Seiten,	no
+events.json/e3/quote_craft	datavism.org:docs/adr/003-field-pipeline.md@df34d01219d5151c832c81172466403777b18855	**Die Übersetzung Werk → Operation ist Handwerk und bleibt es.**	no
+events.json/e5/quote_no_wing	datavism.org:docs/GOVERNANCE.md@df34d01219d5151c832c81172466403777b18855	Es ist **kein Flügel von irgendetwas**	no
+events.json/e5/quote_grammar	datavism.org:docs/GOVERNANCE.md@df34d01219d5151c832c81172466403777b18855	Bedingungen anderer Praktiken binden erst durch Annahme	no
+events.json/e5/quote_admitted	research-ecology:docs/design/membership-proposals-2026-07-17.md@d1d4ef66b2f8fce254543506c64a774b8a671686	candidacy 3 (datavism) is **admitted as of the same	no
+obligations.json/o1/clause_text	datavism.org:docs/adr/003-field-pipeline.md@df34d01219d5151c832c81172466403777b18855	Nicht automatisieren.	no

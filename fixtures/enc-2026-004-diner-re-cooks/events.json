@@ -1,0 +1,102 @@
+[
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-01-contract-published",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "contract.published",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-07-10T00:00:00Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/f856a47f81bb8d0f22fcb480bda3849e4220d6ad/memory/downstream-commitments.md",
+  "visibility": "public",
+  "payload": {
+   "quote_governing_principle": "once here must not go unstated twice downstream.",
+   "note": "The same standing offer as enc-2026-001/-002/-003 — conditions bind only through acceptance."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-02-work-re-cooked",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-13T00:00:00Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/native-speaker.mdx",
+  "visibility": "public",
+  "payload": {
+   "quote_provenance_work": "work: 'Native Speaker'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 10, 2026-07-13'",
+   "quote_provenance_inspected": "inspected: '2026-07-13'",
+   "quote_supplier_wing_language": "the lab''s production wing, frankbueltge.de",
+   "finding_open_correction": "The supplier template still carries pre-constitutional wing language ('the lab''s production wing') — recorded as an OPEN correction for the diner's cook template, not smoothed away.",
+   "note": "Ensemble's premiered Native Speaker re-voiced the same day it shipped, as the Quick Snack 'The Gate's Judgment' (host: key) — the per-file provenance frontmatter is the receiver's own delivery slip, predating the ledger."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-03-corpus",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-13T00:00:00Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/tree/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick",
+  "visibility": "public",
+  "payload": {
+   "quick_snacks": [
+    "native-speaker",
+    "the-detector",
+    "two-meters",
+    "the-floor",
+    "split-seal",
+    "standing-docket"
+   ],
+   "count": 6,
+   "note": "Six re-cooked works at the pinned commit: one Ensemble premiere (native-speaker), five Meridian works. Each carries provenance frontmatter (supplier, work, workUrl, gauntlet, inspected)."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-04-transport-automated",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-16T00:00:00Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/.github/workflows/upstream-cook.yml",
+  "visibility": "public",
+  "payload": {
+   "quote_purpose": "detect newly-published field-research/studio works, re-cook",
+   "quote_gate": "them into Quick-Snack specials (provenance-locked), gate them",
+   "quote_arm_switch": "ARM SWITCH — publishing is OFF until you set the repo VARIABLE",
+   "honesty_note": "The transport is automated but currently PARTIALLY ARMED: the workflow is inert until its API-key secret exists, and auto-publishing is off until the arm variable is set — the apparatus condition recorded as found."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-05-admission",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "participant.admitted",
+  "issuer": {
+   "collective_id": "frank",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-17T00:00:00Z",
+  "source_uri": "https://github.com/frankbueltge/research-ecology/blob/d1d4ef66b2f8fce254543506c64a774b8a671686/docs/design/membership-proposals-2026-07-17.md",
+  "visibility": "public",
+  "payload": {
+   "quote_revoicing": "**character re-voicing as declared transformation**",
+   "quote_translation_loss": "that is exactly the \"translation loss\" the encounter grammar exists to keep honest.",
+   "note": "Admission 2026-07-17 with the Plenum as resident collective; the diner's re-voicing is named a declared transformation with translation-loss potential."
+  }
+ }
+]

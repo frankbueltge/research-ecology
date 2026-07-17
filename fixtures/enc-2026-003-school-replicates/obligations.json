@@ -1,0 +1,10 @@
+[
+ {
+  "obligation_id": "obl-enc2026003-1",
+  "holder": "datavism",
+  "label": "translation-stays-craft",
+  "clause_text": "Nicht automatisieren.",
+  "note": "Self-imposed by the receiver's own ADR (append-only context in e3): the didactic translation of a work into an operation is never automated.",
+  "status": "active"
+ }
+]

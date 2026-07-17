@@ -1,0 +1,110 @@
+[
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-01-contract-published",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "contract.published",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-07-10T00:00:00Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/f856a47f81bb8d0f22fcb480bda3849e4220d6ad/memory/downstream-commitments.md",
+  "visibility": "public",
+  "payload": {
+   "quote_governing_principle": "once here must not go unstated twice downstream.",
+   "quote_travel": "how its own shipped works may honestly travel to sibling practices and platforms.",
+   "note": "Same standing act as enc-2026-001/-002: Meridian's conditions are a standing OFFER; they bind a receiver only through acceptance."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-02-offer-accepted",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "offer.accepted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-10T00:00:00Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/adr/002-field-integration.md",
+  "visibility": "public",
+  "payload": {
+   "quote_decision": "datavism.org ist die Schule eines arbeitenden Forschungslabors",
+   "quote_mechanism": "Ein Werk wird nicht ausgestellt, sondern zur **replizierbaren",
+   "quote_status": "**Status:** Entwurf — zur Freigabe durch Frank",
+   "honesty_note": "The acceptance is documented in an ADR whose own status line reads 'Entwurf — zur Freigabe durch Frank' — recorded as found, not smoothed. The ADR's title framing ('menschlicher Flügel des Labors') predates the federated constitution and was superseded 2026-07-17 by the governance statement (see e5)."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-03-pipeline-implemented",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-11T00:00:00Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/adr/003-field-pipeline.md",
+  "visibility": "public",
+  "payload": {
+   "quote_status": "**Status:** Angenommen — Phase 1 umgesetzt 2026-07-11 (drei Replikations-Operationen);",
+   "quote_sync": "Phase 2 umgesetzt 2026-07-11 (`scripts/field-sync.mjs`, `/field`-Seiten,",
+   "quote_craft": "**Die Übersetzung Werk → Operation ist Handwerk und bleibt es.**",
+   "transformation_grammar": "Transport automated (field-sync workflow), translation deliberately kept manual — the receiver's own declared honesty boundary."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-04-works-synced",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-11T00:00:00Z",
+  "source_uri": "https://github.com/datavism/datavism.org/tree/df34d01219d5151c832c81172466403777b18855/src/content/field-works",
+  "visibility": "public",
+  "payload": {
+   "synced_works_count": 14,
+   "synced_works": [
+    "2026-07-01-calibration-gap",
+    "2026-07-01-digit-mirror",
+    "2026-07-01-fairness-trap",
+    "2026-07-01-naive-detector",
+    "2026-07-01-plausibility-engine",
+    "2026-07-01-provenance-horizon",
+    "2026-07-01-score-horizon",
+    "2026-07-01-the-edition",
+    "2026-07-02-standing-docket",
+    "2026-07-02-taxonomy-on-trial",
+    "2026-07-05-backward-regime-test",
+    "2026-07-06-two-meters",
+    "2026-07-09-the-floor",
+    "2026-07-11-split-seal"
+   ],
+   "note": "Filenames enumerated from src/content/field-works/ at the pinned commit; the corpus is the visible product of the field-sync pipeline (e3)."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-05-admission",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "participant.admitted",
+  "issuer": {
+   "collective_id": "frank",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-17T00:00:00Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/GOVERNANCE.md",
+  "visibility": "public",
+  "payload": {
+   "quote_no_wing": "Es ist **kein Flügel von irgendetwas**",
+   "quote_grammar": "Bedingungen anderer Praktiken binden erst durch Annahme",
+   "quote_admitted": "candidacy 3 (datavism) is **admitted as of the same",
+   "note": "Admission turns this standing relation into a recorded relation between admitted practices; the governance statement supersedes ADR 002's wing framing while keeping its substance."
+  }
+ }
+]

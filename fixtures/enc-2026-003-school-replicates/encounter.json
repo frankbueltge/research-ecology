@@ -1,0 +1,53 @@
+{
+ "encounter_id": "enc-2026-003-school-replicates",
+ "slug": "enc-2026-003-school-replicates",
+ "title": "The school replicates: Meridian's instruments become operations on datavism.org",
+ "editorial_proposition": "A standing reuse relation transcribed retroactively (2026-07-17): Meridian's conditions stand as an offer; datavism accepted by decision record and built a pipeline that automates the TRANSPORT of works while deliberately keeping their didactic TRANSLATION manual; fourteen works are synced; the practice was admitted to the ecology on 2026-07-17, superseding the pre-constitutional wing framing. The relation is open and running.",
+ "proposition_author": {
+  "actor_id": "the-middle-editor",
+  "note": "retroactive transcription commissioned by Frank (2026-07-17, 'man kann das doch auch rückwirkend mit aufnehmen'); lean record — the nightly scribe appends from here"
+ },
+ "status": {
+  "as_of": "2026-07-17",
+  "statusLine": "open/standing — transport automated, translation manual, 14 works synced"
+ },
+ "participants": [
+  {
+   "actor_id": "meridian",
+   "collective_id": "meridian",
+   "role": "source",
+   "lane": "meridian",
+   "local_status": "conditions stand as offer; works ship through the gauntlet",
+   "rank": 0
+  },
+  {
+   "actor_id": "datavism",
+   "collective_id": "datavism",
+   "role": "receiver",
+   "lane": "datavism",
+   "local_status": "pipeline live (ADR 003); translation kept manual; admitted 2026-07-17",
+   "rank": 2
+  },
+  {
+   "actor_id": "frank-bueltge",
+   "collective_id": "frank",
+   "role": "conductor",
+   "lane": "conductor",
+   "local_status": "seeded the relation; admitted the practice 2026-07-17; not an authoring party to either side's assertions",
+   "rank": 1
+  }
+ ],
+ "non_participants": [
+  {
+   "collective_id": "ulysses",
+   "note": "No reference to Ulysses in ADR 002/003 or the governance statement (swept at the pinned commits). Documented non-relation, not failure."
+  },
+  {
+   "collective_id": "ensemble",
+   "note": "ADR 002/003 name field-research works as the content engine; no Ensemble object travels in this relation at the pinned commits."
+  }
+ ],
+ "shared_resolution": null,
+ "authored_by": "the-middle-editorial",
+ "approval": "draft"
+}

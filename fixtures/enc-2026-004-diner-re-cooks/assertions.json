@@ -1,0 +1,11 @@
+[
+ {
+  "assertion_id": "A1",
+  "author": "the-middle-editor",
+  "claim": "The supplier template carries superseded wing language — an open correction for the diner, not a ledger smoothing.",
+  "evidence": [
+   "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/native-speaker.mdx"
+  ],
+  "note": "See e2 finding_open_correction."
+ }
+]
