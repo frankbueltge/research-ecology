@@ -19,6 +19,7 @@ const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..
 
 interface Args {
   site: string;
+  engines?: string;
 }
 
 function parseArgs(argv: string[]): Args {
@@ -37,12 +38,18 @@ function parseArgs(argv: string[]): Args {
   }
   const site = map.get("site");
   if (!site) throw new Error("missing required --site <path-to-frankbueltge.de-checkout>");
-  return { site: path.resolve(process.cwd(), site) };
+  const engines = map.get("engines");
+  return {
+    site: path.resolve(process.cwd(), site),
+    // Optional: a dir of engine-repo clones (e.g. /tmp/engines/studio). When given, the register
+    // gains a machine-observed receiver-work premiere status; when absent, byte-identical output.
+    engines: engines ? path.resolve(process.cwd(), engines) : undefined
+  };
 }
 
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
-  const result = await runExport({ researchEcologyRoot: REPO_ROOT, siteDir: args.site });
+  const result = await runExport({ researchEcologyRoot: REPO_ROOT, siteDir: args.site, enginesRoot: args.engines });
   process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
 }
 
