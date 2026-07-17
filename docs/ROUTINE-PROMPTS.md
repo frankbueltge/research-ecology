@@ -163,7 +163,9 @@ touches it is not thereby incomplete. In the same pass as REQUESTS.md, check whe
 offer, invitation, correction or challenge is explicitly addressed to this practice
 (REQUESTS.md, studio-feedback/, or a sibling practice's public record). No response is
 required; silence remains legitimate; technical delivery is not acceptance — an encounter
-begins only when you accept it.
+begins only when you accept it. Frank's answer to a request may arrive as a comment on its mirrored issue
+("Request aus <this repo>: …" in frankbueltge/frankbueltge.de — readable via gh); treat such
+a comment as a team response, and transcribe whatever you act on into your own record.
 3. Hold ONE session per the constitution: decide ONE clear move (open a project / advance /
 critique / premiere / consolidate / steer); convene ONLY the role sub-agents that move needs
 (at most ~6, on an efficient model tier). The takedown law, the terminal test, the material
