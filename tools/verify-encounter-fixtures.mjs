@@ -1,0 +1,125 @@
+#!/usr/bin/env node
+// tools/verify-encounter-fixtures.mjs — der mechanische Wächter des Middle-Scribe.
+// Frank (2026-07-17): der Scribe veröffentlicht OHNE menschliche Freigabe — deshalb ersetzt
+// dieses Skript die Unterschrift: Es prüft jedes Zitat jedes Encounter-Fixtures byte-exakt
+// (whitespace-normalisiert, Soft-Wrap-Konvention der practice-profiles) gegen die im
+// QUOTE-MANIFEST.tsv gepinnte Quelle (raw.githubusercontent @ Commit) und validiert alle
+// JSON-Dateien. Exit != 0 ⇒ nichts committen. Ehrlichkeit per Code, nicht per Vertrauen.
+//
+// Aufruf:  node tools/verify-encounter-fixtures.mjs [fixtures/enc-2026-00X-slug ...]
+//          (ohne Argumente: alle fixtures/enc-*-Verzeichnisse)
+// Manifest-Zeilen: ORT \t QUELLE \t ZITAT-ODER-PREFIX \t wrapped(yes/no)
+//   QUELLE = "<repo-label>:<pfad>" ; der Commit steht in den JSON-provenances — das
+//   Manifest darf ihn alternativ als viertem-Feld-Suffix "@<commit>" am Pfad tragen.
+//   Volle Zitate sind Pflicht für NEUE Zeilen des Scribe; Alt-Zeilen mit 60-Zeichen-Prefix
+//   bleiben gültig (Mindestmaß).
+
+import { readdirSync, readFileSync, existsSync } from "node:fs";
+import { join } from "node:path";
+
+const REPO_MAP = {
+  "field-research": "frankbueltge/field-research",
+  "studio": "frankbueltge/studio",
+  "irrtum-als-methode": "frankbueltge/irrtum-als-methode",
+  "data-snack-plenum": "frankbueltge/data-snack-plenum",
+  "research-ecology": "frankbueltge/research-ecology",
+  "frankbueltge.de": "frankbueltge/frankbueltge.de",
+  "datavism.org": "datavism/datavism.org",
+  "data-snack.com-from-scratch": "frankbueltge/data-snack.com",
+};
+
+const norm = (s) => s.replace(/\s+/g, " ").trim();
+const cache = new Map();
+
+async function fetchAt(repoLabel, path, commit) {
+  const slug = REPO_MAP[repoLabel];
+  if (!slug) throw new Error(`unbekanntes Repo-Label: ${repoLabel}`);
+  const url = `https://raw.githubusercontent.com/${slug}/${commit}/${path}`;
+  if (cache.has(url)) return cache.get(url);
+  const res = await fetch(url);
+  const body = res.ok ? norm(await res.text()) : null;
+  cache.set(url, body);
+  return body;
+}
+
+// Commits aus den JSON-Dateien einsammeln: source-file → Set<commit>. Zwei Formen:
+// (a) provenance-Objekte {file, commit} (practice-profiles-Stil), (b) source_uri-Blob-URLs
+// (enc-Events-Stil: github.com/<owner>/<repo>/blob/<commit>/<pfad>).
+const SLUG_TO_LABEL = Object.fromEntries(Object.entries(REPO_MAP).map(([k, v]) => [v, k]));
+function commitsFromJsons(dir) {
+  const map = new Map();
+  const add = (file, commit) => {
+    if (!file || !commit) return;
+    if (!map.has(file)) map.set(file, new Set());
+    map.get(file).add(commit);
+  };
+  const walk = (v) => {
+    if (Array.isArray(v)) return v.forEach(walk);
+    if (v && typeof v === "object") {
+      if (typeof v.file === "string" && typeof v.commit === "string") add(v.file, v.commit);
+      if (typeof v.source_file === "string" && typeof v.commit === "string") add(v.source_file, v.commit);
+      if (typeof v.repo === "string" && typeof v.path === "string" && typeof v.commit === "string")
+        add(`${v.repo}:${v.path}`, v.commit);
+      Object.values(v).forEach(walk);
+    }
+  };
+  for (const f of readdirSync(dir).filter((f) => f.endsWith(".json"))) {
+    const raw = readFileSync(join(dir, f), "utf8");
+    walk(JSON.parse(raw)); // wirft bei invalidem JSON
+    for (const m of raw.matchAll(/github\.com\/([\w.-]+\/[\w.-]+)\/blob\/([0-9a-f]{7,40})\/([^"\\]+)/g)) {
+      const label = SLUG_TO_LABEL[m[1]];
+      const path = m[3];
+      add(path, m[2]);
+      if (label) add(`${label}:${path}`, m[2]);
+    }
+  }
+  return map;
+}
+
+async function verifyDir(dir) {
+  let ok = 0, fail = 0;
+  const commitIndex = commitsFromJsons(dir); // validiert nebenbei alle JSONs
+  const manifest = join(dir, "QUOTE-MANIFEST.tsv");
+  if (!existsSync(manifest)) {
+    console.error(`FEHLT: ${manifest}`);
+    return { ok, fail: fail + 1 };
+  }
+  for (const raw of readFileSync(manifest, "utf8").split("\n")) {
+    const line = raw.trimEnd();
+    if (!line || line.startsWith("#") || /^location\t/i.test(line)) continue;
+    const [loc, src, quote] = line.split("\t");
+    if (!loc || !src || !quote) { console.error(`MANIFEST-ZEILE UNLESBAR: ${line.slice(0, 80)}`); fail++; continue; }
+    let [repoLabel, ...rest] = src.split(":");
+    let path = rest.join(":");
+    let commits = [];
+    const at = path.match(/^(.*)@([0-9a-f]{7,40})$/);
+    if (at) { path = at[1]; commits = [at[2]]; }
+    else {
+      const byBare = commitIndex.get(path) ?? commitIndex.get(`${repoLabel}:${path}`) ?? commitIndex.get(src);
+      commits = byBare ? [...byBare] : [];
+    }
+    if (!commits.length) { console.error(`KEIN COMMIT AUFFINDBAR: ${loc} → ${src}`); fail++; continue; }
+    let found = false;
+    for (const c of commits) {
+      const body = await fetchAt(repoLabel, path, c).catch((e) => (console.error(String(e)), null));
+      if (body && body.includes(norm(quote))) { found = true; break; }
+    }
+    if (found) ok++;
+    else { console.error(`NICHT-SUBSTRING: ${loc} → ${src} :: ${quote.slice(0, 60)}`); fail++; }
+  }
+  return { ok, fail };
+}
+
+const args = process.argv.slice(2);
+const dirs = args.length
+  ? args
+  : readdirSync("fixtures").filter((d) => d.startsWith("enc-")).map((d) => join("fixtures", d));
+
+let totalOk = 0, totalFail = 0;
+for (const dir of dirs) {
+  const { ok, fail } = await verifyDir(dir);
+  console.log(`${dir}: ${ok} Zitate ok, ${fail} Fehler`);
+  totalOk += ok; totalFail += fail;
+}
+console.log(`GESAMT: ${totalOk} ok, ${totalFail} Fehler`);
+process.exit(totalFail === 0 ? 0 : 1);

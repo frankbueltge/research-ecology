@@ -63,13 +63,13 @@ events.json/evt-08/quote_standing_guard_clause	studio:journal/2026-07-16-session
 events.json/evt-08/quote_cold_reader_open_case	studio:journal/2026-07-16-session-16.md	Case 02 was not misread as a denial	no
 events.json/evt-09/quote_kritiker_verdict	studio:journal/2026-07-16-session-17.md	VERDICT: INCREMENT 3 STANDS; PREMIERE-READY pending the huma	no
 events.json/evt-09/quote_verifier	studio:journal/2026-07-16-session-17.md	Verdict: PASS — no findings.	no
-events.json/evt-09/quote_hinge	studio:WORKBOARD.md	The same 85. The machine helped narrow it; this death cannot	no
-events.json/evt-09/quote_board_status	studio:WORKBOARD.md	in production — INCREMENT 3 SHIPPED (session 17); PREMIERE-R	no
-events.json/evt-09/quote_board_field_tag	studio:WORKBOARD.md	the kill cloud / manufactured un-knowing	no
+events.json/evt-09/quote_hinge	studio:WORKBOARD.md@c23d3a01e550f3de48454577dda242bdc4206fef	The same 85. The machine helped narrow it; this death cannot	no
+events.json/evt-09/quote_board_status	studio:WORKBOARD.md@c23d3a01e550f3de48454577dda242bdc4206fef	in production — INCREMENT 3 SHIPPED (session 17); PREMIERE-R	no
+events.json/evt-09/quote_board_field_tag	studio:WORKBOARD.md@c23d3a01e550f3de48454577dda242bdc4206fef	the kill cloud / manufactured un-knowing	no
 events.json/evt-10/quote_kritiker_release	studio:journal/2026-07-16-session-17.md	Nothing premiere-blocking remains. Send it to the human play	no
 events.json/evt-10/quote_invitation	studio:journal/2026-07-16-session-17.md	the playthrough invitation to Frank	no
 events.json/evt-10/quote_precedent	studio:journal/2026-07-16-session-17.md	the human plays before the premiere gate	no
-events.json/evt-10/quote_board	studio:WORKBOARD.md	Playthrough invitation to Frank in REQUESTS.md	no
+events.json/evt-10/quote_board	studio:WORKBOARD.md@c23d3a01e550f3de48454577dda242bdc4206fef	Playthrough invitation to Frank in REQUESTS.md	no
 events.json/evt-10/quote_next	studio:journal/2026-07-16-session-17.md	Frank's playthrough → the premiere gate (Verifier tiers · Dr	no
 obligations.json/obl-1/clause_text	studio:journal/2026-07-15-session-14.md	The open instance must be unmissable as open.	no
 obligations.json/obl-1/instantiation_quote	studio:journal/2026-07-16.md	The Pentagon has not said yes. It has not said no.	no
@@ -100,6 +100,6 @@ objects.json/atlas/airwars-entry	field-research:memory/dossiers/data-art-field-a
 objects.json/atlas/aaajiao-entry	field-research:memory/dossiers/data-art-field-archive.md	Compiles found footage of real drone strikes, video-game ima	no
 objects.json/atlas/dnl-entry	field-research:memory/dossiers/data-art-field-archive.md	A dedicated research institute and conference commissioning 	no
 objects.json/nwok/summary_cache(one_line)	studio:projects/no-way-of-knowing/data.json	The state at maximal confidence when it acts; the state at d	no
-objects.json/nwok/workboard_listing_fragment	studio:WORKBOARD.md	the state's own two sentences: declared confidence to strike	no
+objects.json/nwok/workboard_listing_fragment	studio:WORKBOARD.md@c23d3a01e550f3de48454577dda242bdc4206fef	the state's own two sentences: declared confidence to strike	no
 objects.json/field-map/summary-fragment	field-research:FIELD.md	sharpest edge — multi-theater since Feb 2026, no longer only	no
 objects.json/field-map/receiver-watch	studio:journal/2026-07-16.md	Nothing touching this spine — instrument 001, 011/card 001, 	no
