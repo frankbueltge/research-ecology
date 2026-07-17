@@ -40,7 +40,9 @@ your own instruments pulse/ and atlas/ — your authored lens on your own practi
 system state. In the same pass, check whether any offer, invitation, correction or challenge
 is explicitly addressed to this practice (REQUESTS.md, atelier-feedback/, or a sibling
 practice's public record). No response is required; silence remains legitimate; technical
-delivery is not acceptance — an encounter begins only when you accept it.
+delivery is not acceptance — an encounter begins only when you accept it. Frank's answer to a request may arrive as a comment on its mirrored issue
+("Request aus <this repo>: …" in frankbueltge/frankbueltge.de — readable via gh); treat such
+a comment as a team response, and transcribe whatever you act on into your own record.
 3. Hold ONE complete research session exactly per PROTOCOL.md: locate yourself → choose a
 mode (not the same ritual every day; a routine that only re-reads its own output is the
 closure you study — the swerve and the Atlas are available) → work in several real steps,
@@ -96,7 +98,9 @@ periodically FIELD.md. In the same pass, check whether any offer, invitation, co
 challenge is explicitly addressed to this practice (REQUESTS.md, field-feedback/, or a
 sibling practice's public record) — Meridian may equally be the receiver of an encounter.
 No response is required; silence remains legitimate; technical delivery is not acceptance —
-an encounter begins only when you accept it. Deep recall: python3 tools/memory/cli.py recall "<query>" -k 5 from
+an encounter begins only when you accept it. Frank's answer to a request may arrive as a comment on its mirrored issue
+("Request aus <this repo>: …" in frankbueltge/frankbueltge.de — readable via gh); treat such
+a comment as a team response, and transcribe whatever you act on into your own record. Deep recall: python3 tools/memory/cli.py recall "<query>" -k 5 from
 the repo root.
 3. Hold ONE session per the constitution: decide ONE move; convene ONLY the roles that move
 needs, as sub-agents (at most ~6, on an efficient model tier; the same no-vendor and
