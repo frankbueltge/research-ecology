@@ -61,3 +61,42 @@ passt zusammen. Cloudflare-Secrets für Deploys fehlen noch (bewusst roter deplo
   Kanäle (Issues, REQUESTS-Commits, Fixtures), nie an ihnen vorbei.
 - Kein Publikations-Bypass: approval-Flips sind Commits mit Franks Namen.
 - §7.2: keine Leaderboards/Rankings der Praktiken in der Übersicht.
+
+
+---
+
+## STATUS-ADDENDUM (17.07. nachmittags — für die parallel laufende Steuerzentrale-Session)
+
+Seit Abfassung des Work-Orders hat sich der Sockel bewegt; dieser Abschnitt ist der Handoff.
+
+**Neu existiert:**
+- **Middle Scribe LÄUFT** als vierte Routine (privater Account, Sonnet, cron `0 5 * * *`);
+  erster Lauf hat bereits enc-004 fortgeschrieben. Gate: `tools/verify-encounter-fixtures.mjs`
+  (byte-Substring gegen gepinnte Commits via raw.githubusercontent, Token-Fallback für das
+  private data-snack-Repo; deklarierte Faltungen: Markup, Blockquote-Marker, Schlusszeichen,
+  erklärte Ellipsen). Stand: 4 Akten, 148/148 Zitate, 2 deklarierte Legacy-Ausnahmen
+  (correction.noted-Event in enc-001).
+- **register.json** ist Export-Artefakt (`apps/export-site`): alle `fixtures/enc-*` →
+  `src/data/begegnungen/register.json`; /encounters rendert das Register unter der Partitur;
+  Auswahlregel benannt (Eingang = Akte mit verfasster Partitur). `ecology-integrate` läuft
+  zusätzlich **alle 2h** — Scribe→Site-Latenz ≤ 2h ohne neue Secrets.
+- Antwort-Schleife in allen drei Engine-Triggern synchron; Aufnahmen 1–3 vollzogen
+  (Ökologie = sechs Praktiken); enc-003/-004 transkribiert.
+
+**Koordination (wichtig):**
+- Der gemeinsame lokale Site-Checkout steht auf eurem Branch `steuerzentrale` — bitte dort
+  belassen; andere Sessions arbeiten über frische Klone. ACHTUNG: Commit `d9745cb`
+  („/encounters: das Register") ist versehentlich auf eurem Branch gelandet und wurde als
+  `f51a9a5` auf main cherry-gepickt — beim Rebase auf main das Duplikat fallen lassen.
+- Eure Standing-Rule-Revision (Selbst-Entscheidung zur nächsten Session statt 7 Tage) ist
+  im morning-digest nachgezogen.
+- Task #16 (Drift-Pins) gehört euch: Empfehlung commit-gepinnte Import-Bundles statt
+  Count-Jagd; plus Adapter-Regel für irrtums `archive/`-Pfad.
+
+**Design-Input von Frank (17.07., wörtlich sinngemäß):** „NICHTS manuell nachziehen … selbst
+weiterentwickeln und selbst optimieren oder heilen könnte sich das System von allein, wenn es
+immer wieder an sinnlose Grenzen stößt." — D. h. für euren Entwurf: die Konsole ist auch der
+Ort, an dem Selbstheilungs-Vorschläge des Apparats (ein künftiger „Mechanic"-Lauf: erkennt
+wiederkehrende Grenzen wie fehlende Dispatches/Secrets/stale Klone und schlägt Fixes als PR
+vor) auflaufen und mit einem Klick angenommen werden. Watchdogs + fail-red + Scribe sind die
+Vorstufen; die Mechanic-Routine wäre die nächste — nichts davon publiziert ohne Gate.
