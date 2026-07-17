@@ -44,7 +44,14 @@ const REPO_MAP = {
   "data-snack.com-from-scratch": "frankbueltge/data-snack.com",
 };
 
-const norm = (s) => s.replace(/\s+/g, " ").trim();
+// Normalisierung: Whitespace-Kollaps (Soft-Wrap-Konvention) + Markdown-Betonung (** und
+// Backticks) auf beiden Seiten gestrippt — enc-001 zitiert Wortlaut ohne Auszeichnungs-
+// zeichen (Befund 17.07.: 'headline**' vs 'headline'); Wort-Exaktheit bleibt Pflicht.
+const norm = (s) =>
+  s.replace(/\*+/g, "").replace(/`/g, "").replace(/(^|\s)>\s?/g, "$1").replace(/\s+/g, " ").trim();
+// Zusatzregel NUR für die Zitatseite: ein abschließendes ./,/… des Zitats darf fehlen
+// (enc-001 schloss abgebrochene Sätze mit '.', wo die Quelle weiterläuft).
+const normQuote = (s) => norm(s).replace(/[.,…]+$/, "");
 const cache = new Map();
 
 async function fetchAt(repoLabel, path, commit) {
@@ -127,7 +134,11 @@ async function verifyDir(dir) {
     let found = false;
     for (const c of commits) {
       const body = await fetchAt(repoLabel, path, c).catch((e) => (console.error(String(e)), null));
-      if (body && body.includes(norm(quote))) { found = true; break; }
+      if (!body) continue;
+      if (body.includes(normQuote(quote))) { found = true; break; }
+      // Erklärte Ellipse ("..."/"…"): jedes Segment muss einzeln in DERSELBEN Fassung stehen.
+      const segs = normQuote(quote).split(/\s?(?:\.\.\.|\u2026)\s?/).filter((x) => x.length > 10);
+      if (segs.length > 1 && segs.every((seg) => body.includes(seg))) { found = true; break; }
     }
     if (found) ok++;
     else { console.error(`NICHT-SUBSTRING: ${loc} → ${src} :: ${quote.slice(0, 60)}`); fail++; }
