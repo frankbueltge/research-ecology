@@ -690,7 +690,7 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
         status?: { as_of?: string; statusLine?: string } | null;
         approval?: string | null;
         authored_by?: string | null;
-        participants?: Array<{ collective_id?: string | null; actor_id?: string }>;
+        participants?: Array<{ collective_id?: string | null; actor_id?: string; role?: string }>;
       };
       return {
         encounter_id: enc.encounter_id,
@@ -698,7 +698,10 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
         status: enc.status ?? null,
         approval: enc.approval ?? null,
         authored_by: enc.authored_by ?? null,
-        participants: (enc.participants ?? []).map((p) => p.collective_id ?? p.actor_id ?? "unknown"),
+        participants: (enc.participants ?? []).map((p) => ({
+          id: p.collective_id ?? p.actor_id ?? "unknown",
+          role: (p as { role?: string }).role ?? null
+        })),
         record_url: `https://github.com/frankbueltge/research-ecology/tree/main/fixtures/${dir}`
       };
     });
