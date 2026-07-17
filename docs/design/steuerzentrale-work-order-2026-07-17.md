@@ -109,4 +109,7 @@ iterieren mit degradiertem Auto-Narrativ (editorial_proposition + Events als Sta
 approval draft), ODER (b) der Scribe verfasst Narrativ-Entwürfe als Transkription (Gate
 gilt). Außerdem eingebaut: Export bricht jetzt LAUT ab, wenn Hydration Fixture-Records
 verwirft (stille Ausdünnung des Ledgers war heute real — ein schema-invalides Event
-verschwand lautlos).
+verschwand lautlos). Und: Die enc-001-Partitur hat eine FIXE 7-Event-Geometrie — ein
+achtes OPERATIVES Event braucht die Zeit-Skalierungs-Lens (zeichengrammatik §7, noch
+ungebaut); editoriale correction.noted-Events werden wie das Assembly-Event aus der
+Partitur gefiltert (voll sichtbar bleiben sie in Fixture/Register//akte).

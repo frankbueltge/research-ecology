@@ -94,13 +94,12 @@ describe("export-site: determinism", () => {
     expect(result.valid, JSON.stringify(result.errors)).toBe(true);
   });
 
-  it("score.json carries the full ledger (8 events since the 2026-07-17 append-only correction), excluding the synthesized assembly event", () => {
+  it("score.json carries the 7 operative ledger events — editorial bookkeeping (assembly, the-middle correction.noted) excluded like the assembly event; ledger completeness lives in the fixture and the register", () => {
     const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
     const raw = readFileSync(path.join(siteA, "src/data/begegnungen", slug, "score.json"), "utf8");
     const score = JSON.parse(raw);
-    // 7 operative Events + das correction.noted vom 2026-07-17 (append-only Buchführungs-
-    // korrektur der Middle-Editorial; der Ledger DARF wachsen — nur schrumpfen darf er nie).
-    expect(score.events).toHaveLength(8);
+    expect(score.events).toHaveLength(7);
+    expect(score.events.map((e: { event_type: string }) => e.event_type)).not.toContain("correction.noted");
     expect(score.events.map((e: { event_type: string }) => e.event_type)).not.toContain("editorial.encounter_assembled");
     // 5 events are narrated (stations ①–⑤ on the map are 1,2,4,3,5 — narrative order != ledger
     // order for beats 3/4, docs/design/zeichengrammatik-2026-07-15.md §1); 2 (both

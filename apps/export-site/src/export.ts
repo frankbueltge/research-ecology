@@ -648,6 +648,13 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   // an unspecified store iteration order.
   const orderedEvents = events
     .filter((e) => e.event_id !== encounter.assembly_event_id)
+    // Gleicher Grundsatz wie beim Assembly-Event (17.07.): editoriale BUCHFÜHRUNG über den
+    // Record (correction.noted der Middle-Editorial) ist Apparat, nicht operative Geschichte
+    // zwischen den Parteien — sie bleibt vollständig in Fixture, Register und /akte, aber die
+    // Partitur (fixe 7-Event-Geometrie; mehr braucht die Zeit-Skalierungs-Lens,
+    // zeichengrammatik §7) rendert den operativen Ledger. Das as_of-Wasserzeichen zählt
+    // weiterhin ALLE Events — der Record zeigt ehrlich, wann er zuletzt berührt wurde.
+    .filter((e) => !(e.event_type === "correction.noted" && e.issuer?.collective_id === "the-middle"))
     .sort((a, b) => a.occurred_at.localeCompare(b.occurred_at));
   const score: ScoreExport = buildScoreExport(
     encounter.encounter_id,
