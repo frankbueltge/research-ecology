@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ji-YYYY-NNN",
+  "slug": "REPLACE-slug",
+  "title": "REPLACE — working title",
+  "public_summary": "REPLACE — one sentence, no success claim.",
+  "shared_problem": "REPLACE — one concrete problem, not a theme.",
+  "why_multiple_practices": "REPLACE — why one practice alone is insufficient, or why incompatibility is constitutive.",
+  "initiated_by": { "actor_id": "frank-bueltge", "actor_type": "human", "practice_id": null },
+  "minimum_participants": 2,
+  "maximum_participants": 3,
+  "invited_practice_ids": ["REPLACE"],
+  "coordination_profile": "parallel_return",
+  "status": "PROPOSED",
+  "phase": "PROPOSAL",
+  "visibility": "participants",
+  "publication_policy": "human_only",
+  "resource_envelope": {
+    "aggregate_external_cost_eur": 0,
+    "target_review_window_days": 10,
+    "max_first_moves_per_practice": 1,
+    "max_return_moves_per_practice": 1,
+    "automatic_extension": false
+  },
+  "shared_material_refs": [
+    {
+      "practice_id": "REPLACE",
+      "local_object_id": "REPLACE",
+      "version": "REPLACE",
+      "content_hash": "REPLACE",
+      "canonical_uri": null,
+      "local_type": "REPLACE",
+      "media_type": "REPLACE",
+      "title": "REPLACE — at least one versioned shared object"
+    }
+  ],
+  "source_encounter_refs": [],
+  "stop_conditions": ["REPLACE — at least one honest stop condition."],
+  "rights_summary": "REPLACE",
+  "affected_public_summary": "REPLACE",
+  "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "updated_at": null,
+  "revision": 1
+}

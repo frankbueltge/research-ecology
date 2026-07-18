@@ -62,3 +62,13 @@ einem verschmolz: Forschungsarchiv (landet automatisch, validiert), technische I
 Entscheidung, `PUBLICATION.json`). Und sie ersetzt tägliche Kontrolle durch ein stehendes
 Mandat — menschliche Verantwortlichkeit ohne tägliches Projektmanagement
 (D-ULY-01…07, `docs/design/ulysses-v4-decisions-2026-07-18.md`).
+
+**2026-07-19 — Koordination ohne Koordinator.** Die Joint-Inquiry-Spezifikation wollte
+Konzept und Maschine zugleich: Protokoll, Schemas, SQL, Adapter, Dispatcher. Übernommen
+wurde nur die Akte — Konstellationen laufen manuell über die Angebots-Kanäle, die es
+schon gibt. Die Einsicht dahinter, frisch aus der v4-Migration: Der Encounter brauchte
+nie einen Encounter-Server, und die Konstellation braucht keinen Koordinator, solange
+die Akte diszipliniert ist. Und wo doch einmal Transport nötig wird, existiert seine
+Spezifikation bereits woanders — die Föderationsschicht der Meridian Research Runtime.
+Dieselbe Maschine zweimal zu bauen wäre der eigentliche Konstruktionsfehler gewesen
+(D-JI-01…04).
