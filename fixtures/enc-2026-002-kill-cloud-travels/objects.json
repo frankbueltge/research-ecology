@@ -89,5 +89,31 @@
       "premiere_note": "Deliberately pinned at the projects/ path: the work has NOT graduated to works/ and is not mirrored to the site — the studio's path boundary keeps in-production work in the engine repo until it premieres. A works/ object reference would be a fabrication at encoding time."
     },
     "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "ensemble:no-way-of-knowing@1860072",
+    "collective_id": "ensemble",
+    "local_object_id": "no-way-of-knowing",
+    "object_version": "1860072541150f99dcd63259f1f86c2de9e1ba69",
+    "canonical_uri": "https://github.com/frankbueltge/studio/blob/1860072541150f99dcd63259f1f86c2de9e1ba69/works/2026-07-17-no-way-of-knowing/data.json",
+    "media_type": "application/json",
+    "local_object_type": "work — interactive console, graduated (single self-contained index.html + canonical data.json, byte-identical embedded island)",
+    "interoperability_class": "work",
+    "title_cache": "No Way of Knowing",
+    "summary_cache": "The state at maximal confidence when it acts; the state at declared un-knowing when it harms — two sentences it said on the record, in a console that will not let you hold both at once.",
+    "lifecycle_status": "premiered — graduated to works/, live at frankbueltge.de/studio",
+    "local_epistemic_status": "spine SOURCED / primary-confirmed (session 14); console form IMAGINED, marked; Instance 2 (2026 operation) still OPEN at premiere — monitoring refreshed 2026-07-17; full gate: Verifier PASS WITH FINDINGS, Dramaturg DELIVERS WITH CONDITIONS, Kritiker PREMIERE STANDS",
+    "content_hash": "sha256:44b7b0b2d33a0d72a568bc9239d8acb4403eb43061a1b8380efcd139a31f2bbb",
+    "source_commit": "1860072541150f99dcd63259f1f86c2de9e1ba69",
+    "source_metadata": {
+      "pinned_file": "works/2026-07-17-no-way-of-knowing/data.json",
+      "readme_content_hash": "sha256:40f009884a79ffc809e20e570901de5e1fe9c0019ac66064f7244e032bdc1d0c",
+      "readme_pinned_file": "works/2026-07-17-no-way-of-knowing/README.md (the graduated brief, same commit)",
+      "meta_content_hash": "sha256:9454116d23671e0c0aec73bc0d345d5b2d18b809b78001b928fdd5d543381f8a",
+      "meta_pinned_file": "works/2026-07-17-no-way-of-knowing/meta.json (same commit)",
+      "supersedes_object_id": "ensemble:no-way-of-knowing@c23d3a01 (the in-production projects/ pin; superseded by graduation, not deleted — both entries stand, append-only)",
+      "site_mirror_note": "frankbueltge.de commit b9ae27a5a40fe944cb1a64028eaa87ac39019280 (2026-07-17T18:50:37Z) carries a byte-identical meta.json (same sha256 as meta_content_hash above), verified first-hand; see evt-enc2026002-13-site-gate."
+    },
+    "importer_version": "fixture-manual-1.0"
   }
 ]

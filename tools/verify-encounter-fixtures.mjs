@@ -54,22 +54,38 @@ const norm = (s) =>
 const normQuote = (s) => norm(s).replace(/[.,…]+$/, "");
 const cache = new Map();
 
+// Lokaler Klon-Fallback: wenn weder raw.githubusercontent noch die Contents-API greifen
+// (Sandbox-Sitzungen ohne funktionsfähigen direkten API-Token für Privat-Repos), aber ein
+// sibling-Klon des Repos lokal vorliegt, ist `git show <commit>:<path>` genauso autoritativ
+// wie der Netz-Fetch — es liest exakt dieselben, von GitHub bezogenen Objektdaten.
+function localShow(slug, path, commit) {
+  const repoName = slug.split("/")[1];
+  for (const dir of [`../${repoName}`, `/workspace/${repoName}`]) {
+    if (!existsSync(dir)) continue;
+    try {
+      return norm(execFileSync("git", ["-C", dir, "show", `${commit}:${path}`], { encoding: "utf8" }));
+    } catch { /* commit oder Pfad in diesem lokalen Klon nicht vorhanden */ }
+  }
+  return null;
+}
+
 async function fetchAt(repoLabel, path, commit) {
   const slug = REPO_MAP[repoLabel];
   if (!slug) throw new Error(`unbekanntes Repo-Label: ${repoLabel}`);
   const url = `https://raw.githubusercontent.com/${slug}/${commit}/${path}`;
   if (cache.has(url)) return cache.get(url);
   let body = null;
-  const res = await fetch(url);
-  if (res.ok) body = norm(await res.text());
+  const res = await fetch(url).catch(() => null);
+  if (res && res.ok) body = norm(await res.text());
   else {
     const token = ghToken();
     if (token) {
       const api = `https://api.github.com/repos/${slug}/contents/${path}?ref=${commit}`;
-      const r2 = await fetch(api, { headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" } });
-      if (r2.ok) body = norm(await r2.text());
+      const r2 = await fetch(api, { headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" } }).catch(() => null);
+      if (r2 && r2.ok) body = norm(await r2.text());
     }
   }
+  if (body == null) body = localShow(slug, path, commit);
   cache.set(url, body);
   return body;
 }
