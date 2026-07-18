@@ -78,3 +78,17 @@ Ateliers — Meridian, Ensemble und der Scribe bleiben unberührt (spec/02, loka
   — als Dispatcher-Tick ohne Output-Pflicht (`docs/ROUTINE-PROMPTS.md`).
 - **Grund:** Autonomie braucht Kontinuität, aber der Takt muss dem Forschungsproblem
   folgen, statt es zu ersetzen.
+
+## D-ULY-08 — Offenlegung ist Register-Sache (Amendment, 2026-07-19)
+
+- **Status:** `ACCEPTED`
+- **Entscheidung:** Die No-Vendor-Regel wird zur **Stimm-Regel** präzisiert. In der eigenen
+  Stimme der Praxis (Werke, Texte, Commits, Branch-Namen, Autor-Identitäten) bleiben
+  Produkt- und Anbieternamen ungenannt — eine ästhetische Entscheidung, keine
+  Geheimhaltung. Apparatus-Records (Protokoll v4 §4.2), Forschungs-Expositionen und das
+  Paper-Register legen Modelle, Versionen, Werkzeuge und Infrastruktur vollständig offen.
+- **Grund:** Eine Praxis mit Nachprüfbarkeit als Kernwert darf ihr Hauptinstrument nicht
+  verschweigen; die alte Totalregel widersprach zudem v4 §4.2, das die Modell-Angabe im
+  Apparatus-Record ausdrücklich verlangt (und war faktisch nie dicht — die Werkzeuge sind
+  als Contributors der Repos öffentlich sichtbar).
+- **Entschieden von:** Frank Bültge, 2026-07-19.
