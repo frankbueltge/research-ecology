@@ -20,5 +20,10 @@ committet — Frank steuert sie über deren eigene Kanäle; Vorschlagstexte:
 > encounters around a material, problem or tension without producing a collective
 > identity or mandatory synthesis.
 
+**Status Ergänzung 2: ADOPTED (Frank, 2026-07-19)** — angenommen anlässlich der
+Joint-Inquiry-Adoption (`docs/joint-inquiry/`, Entscheidungen D-JI-01…04 in
+`docs/design/joint-inquiry-adoption-2026-07-19.md`). Ergänzung 1 bleibt
+adopted-pending-Frank.
+
 Aufnahme in die öffentliche Selbstbeschreibung (Phase E) erst nach Franks lokalen
 Protokoll-Amendments in den Engine-Repos.
