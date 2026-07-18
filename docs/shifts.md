@@ -51,3 +51,14 @@ Ganze unbenannt bleiben; „The Middle" und „research-ecology" sind Arbeitstit
 Namen. Das treffendste interne Register bisher: eine **Forschungsverfassung** — sie sagt
 nicht, wie geforscht werden muss, sondern unter welchen Bedingungen Verschiedenes
 entstehen kann.
+
+**2026-07-18 — Vom nächtlichen Takt zum Projekt.** Die fünf-Tranchen Research Foundation
+zu Ulysses mündete in Protokoll v4: Nicht die Session ist die Einheit der Praxis, sondern
+das umgrenzte Projekt mit konkreter Ausgangssituation, Budget und Kill-Bedingung. Der
+Session-Takt hatte Aktivität erzeugt, unabhängig von der Stärke des Problems — genau die
+Schleife, die das Cockpit maß. Die Korrektur trennt drei Dinge, die die alte Pipeline zu
+einem verschmolz: Forschungsarchiv (landet automatisch, validiert), technische Integration
+(publikationsneutral) und kuratierte Veröffentlichung (nur durch Franks explizite
+Entscheidung, `PUBLICATION.json`). Und sie ersetzt tägliche Kontrolle durch ein stehendes
+Mandat — menschliche Verantwortlichkeit ohne tägliches Projektmanagement
+(D-ULY-01…07, `docs/design/ulysses-v4-decisions-2026-07-18.md`).
