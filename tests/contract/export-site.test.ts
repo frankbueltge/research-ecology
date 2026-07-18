@@ -177,8 +177,8 @@ describe("export-site: observed receiver-work status", () => {
     expect(obs.engine_repo).toBe("studio");
   });
 
-  it("reports drift for enc-2026-002 (premiered, but the record still reads 'premiere pending')", () => {
-    expect(result.driftWarnings.some((w) => w.includes("enc-2026-002"))).toBe(true);
+  it("no longer reports drift for enc-2026-002 (scribe, 2026-07-17: the record now reads 'premiered 2026-07-17', matching the observed works/ graduation)", () => {
+    expect(result.driftWarnings.some((w) => w.includes("enc-2026-002"))).toBe(false);
   });
 
   it("does NOT report drift for enc-2026-001, whose title already reflects its premiere", () => {
@@ -191,7 +191,8 @@ describe("export-site: observed receiver-work status", () => {
     expect(entry("enc-2026-004").observed).toBeUndefined();
   });
 
-  it("never mutates the editorial title — the 'premiere pending' wording stays the scribe's to change", () => {
-    expect(entry("enc-2026-002").title).toMatch(/premiere pending/i);
+  it("the scribe has rewritten the editorial title to match the observed premiere — 'premiere pending' is gone", () => {
+    expect(entry("enc-2026-002").title).not.toMatch(/premiere pending/i);
+    expect(entry("enc-2026-002").title).toMatch(/premiered 2026-07-17/i);
   });
 });

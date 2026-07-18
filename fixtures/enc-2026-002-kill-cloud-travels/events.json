@@ -278,5 +278,80 @@
       "apparatus_note": "Core type (spec 03 §3.1): an invitation to respond without transferring an object. This is the encounter's live blocker at encoding time — the invitation is open and unanswered (re-confirmed unchanged in the session-18 journal, 2026-07-17, outside the authorized quote set). The brief also records the waivable form: 'the human plays before the premiere gate, or waives it' (projects/no-way-of-knowing/README.md)."
     },
     "content_hash": "sha256:f66497904b8caf13889561beae39c128c16fc3bbd0ae2ee5a23121bade5795e9"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-11-playthrough-accepted",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "invitation.accepted",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "frank-bueltge"
+    },
+    "occurred_at": "2026-07-17T14:50:57Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/e9914d46d3febad86d3bafd9a576352cf31eb655/REQUESTS.md",
+    "source_commit": "e9914d46d3febad86d3bafd9a576352cf31eb655",
+    "visibility": "public",
+    "payload": {
+      "responds_to_event_id": "evt-enc2026002-10-playthrough-invited",
+      "quote_status_enabled": "Status: enabled (2026-07-17)",
+      "quote_response": "Response (team, 2026-07-17): go",
+      "apparatus_note": "event_type is the core string 'invitation.accepted' (spec 03 §3.3). The invitation's target (evt-10, target_actor_id 'frank-bueltge') is Frank Bültge, who stands outside all three collectives (actor-seed collective_id: null) — as in enc-2026-001's delegated-conductor events, this record follows the same disclosed convention: issuer.collective_id names the channel the act structurally lands in (ensemble's own REQUESTS.md), issuer.actor_id names the actual human who acted. The commit is authored under the studio's team-response identity ('Steuerzentrale <steuerzentrale@frankbueltge.de>'), the same apparatus channel enc-2026-001 and enc-2026-002's own standing-rule commits (evt-03's delegation) already use for Frank's answers landing inside a collective's own repository."
+    },
+    "content_hash": "sha256:75e4b7aed9b7cc08a28bea5ed30d7522139d98cb59cf6e88b9c245369575a848"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-12-premiere-published",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-17T18:47:33Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/1860072541150f99dcd63259f1f86c2de9e1ba69/works/2026-07-17-no-way-of-knowing/data.json",
+    "source_commit": "1860072541150f99dcd63259f1f86c2de9e1ba69",
+    "visibility": "public",
+    "payload": {
+      "responds_to_event_id": "evt-enc2026002-11-playthrough-accepted",
+      "subject_object_ref_id": "ensemble:no-way-of-knowing@c23d3a01",
+      "graduated_object_ref_id": "ensemble:no-way-of-knowing@1860072",
+      "quote_move": "PREMIERE — \"No Way of Knowing\" v2, through the full house gate.",
+      "quote_verifier": "Verifier — PASS WITH FINDINGS (no blocking).",
+      "quote_dramaturg": "Dramaturg — DELIVERS WITH CONDITIONS.",
+      "quote_kritiker": "Kritiker — PREMIERE STANDS.",
+      "quote_world_recheck": "Instance 2's OPEN state holds; the central claim is still true.",
+      "quote_graduated": "GRADUATED → `works/2026-07-17-no-way-of-knowing/`",
+      "quote_workboard_row": "graduated to `works/`; conductor re-verified live (self-test PASS, 0 co-render / 128 samples) + world re-checked at premiere (2026 case still open); post-premiere care: enforce the serial re-check (open-questions.md)",
+      "quote_requests_close": "graduated the work to `works/2026-07-17-no-way-of-knowing/` — the",
+      "quote_requests_close_end": "refreshed the monitoring date to the day of the check. Entry closed.",
+      "quote_monitoring_refreshed": "2 catches on record. Case 02 unresolved. Last checked 17 July 2026.",
+      "gate_note": "Verifier PASS WITH FINDINGS (one NIT: \"more than 120\" vs \"120\", fixed in-session) · Dramaturg DELIVERS WITH CONDITIONS (reduced-motion timing gap closed by disclosure) · Kritiker PREMIERE STANDS (hostile critique published beside the work, not smoothed over).",
+      "apparatus_note": "Core type (spec 03 §3.4), the studio-internal graduation from `projects/no-way-of-knowing/` to its sovereign `works/` archive — the second work of the house, mirroring enc-2026-001's own studio-internal `derivative.published` event. Instance 2 (the 2026 operation) remains genuinely open at premiere: the conductor's premiere-day world re-check (WebSearch, journal/2026-07-17-session-19.md) found the Minab-school investigation still unreleased and the Pentagon's congressional AI question still unanswered, so every studio-monitoring date on the work was refreshed 2026-07-16 → 2026-07-17 rather than left stale — evidence for obl-enc2026002-monitoring-status and obl-enc2026002-open-instance-honesty, both still active. No Meridian material or kill-cloud object was touched this session (journal: 'not consulted this session ... its spine is the studio's own SOURCED research')."
+    },
+    "content_hash": "sha256:7ffa1389f4ed832415a52439e99fd1b0a4a603ff995172c600ced435ef37a9cb"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-13-site-gate",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-17T18:50:37Z",
+    "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/b9ae27a5a40fe944cb1a64028eaa87ac39019280/src/content/studio/works/2026-07-17-no-way-of-knowing/meta.json",
+    "source_commit": "b9ae27a5a40fe944cb1a64028eaa87ac39019280",
+    "visibility": "public",
+    "payload": {
+      "responds_to_event_id": "evt-enc2026002-12-premiere-published",
+      "subject_object_ref_id": "ensemble:no-way-of-knowing@1860072",
+      "quote_title": "\"title\": \"No Way of Knowing\"",
+      "quote_author": "\"author\": \"Ensemble\"",
+      "apparatus_note": "Same real-world grammar as enc-2026-001's evt-07 (row 11 of that fixture's provenance table): a distinct, later apparatus act at a different layer — the site-integration pipeline mirroring the studio's own `works/` entry onto frankbueltge.de (commit authored ~3 minutes after the studio-internal graduation), not a duplicate of the same fact. meta.json at this commit is byte-identical to the studio source (sha256 9454116d23671e0c0aec73bc0d345d5b2d18b809b78001b928fdd5d543381f8a on both sides, verified first-hand); read-only confirmation source, not one of the three sovereign engine repositories."
+    },
+    "content_hash": "sha256:80c25fa2e3a97a1e8ca49b341f7181a49c5ebf1106653fed61e2f7fcecfb4bec"
   }
 ]
