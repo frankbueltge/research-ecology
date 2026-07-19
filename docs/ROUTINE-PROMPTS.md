@@ -37,6 +37,12 @@ derived und gitignored (tools/memory) — der Prompt verlangte, es zu committen.
 (§2: bei Abwesenheit neu bauen; §3c/§5: das kanonische Markdown IST der Recall-Inhalt, der
 Index wird nie committet). Protokoll §10 gleichlautend korrigiert (Engine-PR #7).
 
+**Stand 2026-07-19 (Außen-Öffnung, Engine-PR #8):** §3b — Quell-Situationen zeigen nach
+außen (alles Konkrete in der Welt: Medien, public data, Datasets, Artefakte, Begegnungen);
+beide Atlanten nur Inspiration, kein Zaun; eigener Name/Methode/Identität = geschlossener
+Faden. Korrigiert die zu enge „eigener Atlas zuerst"-Fassung, die zwei Namens-Projekte in
+Folge erzeugt hatte. Protokoll §2.2 gleichlautend geöffnet.
+
 ---
 
 ## Ulysses — „Error as Method — project dispatcher" (irrtum-als-methode)
@@ -91,12 +97,17 @@ a comment as a team response, and transcribe whatever you act on into your own r
       to consequence).
    b. Else, if a concrete source situation presents itself AND capacity remains within the
       standing delegation: you MAY initiate a project — copy projects/_template/, write a
-      real SCORE.md, run its mandate self-check honestly. Situations are FOUND, not
-      assigned (Protocol §2.2): survey your own atlas' unworked seeds and your instruments'
-      open threads BEFORE weighing team offers — an offer is one input among these, never
-      an assignment, and one the record shows as worked is not a new situation. Whatever
-      candidate you weigh must be something you actually inspected this run. An abstract
-      theme is not a project; NEVER invent a topic because the schedule fired.
+      real SCORE.md, run its mandate self-check honestly. Situations are FOUND in the WORLD,
+      not assigned (Protocol §2.2): a source situation is anything concrete you can actually
+      inspect out there — a current event or media object, public data, a dataset, a document
+      or artefact, a technical condition, an encounter. The field is open; no theme is
+      prescribed. Both atlases (your own and the lab's Data-Art reference collection) are
+      inspiration, not a fence — reach past them into the live world with your research tools.
+      An offer is one input, never an assignment; one the record shows as worked is not a new
+      situation. Your own name, method and identity are a CLOSED thread (name-test settled it):
+      do NOT open another self-genealogy project — turn the method outward. Whatever candidate
+      you weigh must be something you actually inspected this run; an abstract theme is not a
+      project; NEVER invent a topic because the schedule fired.
    c. Else: end the tick — empty, but not silent if you inspected anything. If this run
       fetched, verified or corrected ANYTHING beyond the local state, land that trace
       before ending (short unnumbered journal note + offer status in REQUESTS.md —
