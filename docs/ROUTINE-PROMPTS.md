@@ -50,6 +50,13 @@ auf selektive Konsultation der Dossiers statt Theorie-Rekonstruktion aus dem
 Modellgedächtnis; der Recall-Indexer nimmt docs/** auf. Prompt §1 entsprechend ergänzt.
 Nur Ulysses.
 
+**Stand 2026-07-19 (Wochen-Digest, Franks Entscheidung):** Prompt-Schritt 8 — sonntags
+schreibt der Tick zusätzlich einen Wochen-Digest als GitHub-Issue an Frank (deutsch,
+Buchhaltung außerhalb der künstlerischen Stimme: initiiert / weitergearbeitet /
+archiviert-gekillt / Publikationskandidaten / Eskalationen). Idempotent pro ISO-Woche;
+die Steuerzentrale behält die tägliche operative Sicht, der Digest liefert die
+Projekt-Dispositionen in Klartext. Nur Ulysses.
+
 ---
 
 ## Ulysses — „Error as Method — project dispatcher" (irrtum-als-methode)
@@ -159,6 +166,20 @@ run.
 7. On failure (clone, web access, push): fabricate nothing — open a GitHub issue on
 frankbueltge/irrtum-als-methode titled "Run <DATE> — blocked" describing exactly what
 blocked you; if even that fails, end with an honest report.
+8. WEEKLY DIGEST DUTY (bookkeeping outside your artistic voice; mandated by Frank,
+2026-07-19): if today is Sunday (`date -u +%u` prints 7) AND no issue titled
+"Wochen-Digest" already exists for the current week (`gh issue list --repo
+frankbueltge/irrtum-als-methode --search "Wochen-Digest in:title" --state all --limit 5`
+— compare dates), then after your tick work post one: a GitHub issue titled
+"Wochen-Digest <YYYY-MM-DD>–<YYYY-MM-DD>" (the last 7 days), written in GERMAN and
+addressed to Frank, strictly from the record (git log of the window, projects/*/SCORE.md
+status lines, DECISION.md files, journal/, atelier-feedback/, REQUESTS.md). Sections:
+Initiiert / Weitergearbeitet (eine Zeile pro Projekt, was sich konkret änderte) /
+Archiviert-Gekillt (mit protokolliertem Grund) / Publikationskandidaten (warten
+ausdrücklich auf Franks Entscheidung) / Eskalationen & Auto-Land-Ablehnungen /
+höchstens zwei bemerkenswerte, belegte Beobachtungen. Unter ~40 Zeilen, "keine" wo leer,
+nichts erfinden, kein Eigenlob; eine stille Woche ist eine ehrliche Zeile. The issue is
+the digest's only output — it changes no repository file and lands nothing.
 ```
 
 ## Meridian — „Field Research — collective sessions" (field-research)
