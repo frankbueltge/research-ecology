@@ -11,3 +11,5 @@ events.json/e5/quote_no_wing	datavism.org:docs/GOVERNANCE.md@df34d01219d5151c832
 events.json/e5/quote_grammar	datavism.org:docs/GOVERNANCE.md@df34d01219d5151c832c81172466403777b18855	Bedingungen anderer Praktiken binden erst durch Annahme	no
 events.json/e5/quote_admitted	research-ecology:docs/design/membership-proposals-2026-07-17.md@d1d4ef66b2f8fce254543506c64a774b8a671686	candidacy 3 (datavism) is **admitted as of the same	no
 obligations.json/o1/clause_text	datavism.org:docs/adr/003-field-pipeline.md@df34d01219d5151c832c81172466403777b18855	Nicht automatisieren.	no
+events.json/e6/quote_title	datavism.org:src/content/field-works/2026-07-17-comparable-with-humans.md@3c3966d6898a5394a0a158f11ef4cae587e48842	title: "Comparable With Humans"	no
+events.json/e6/quote_work_url	datavism.org:src/content/field-works/2026-07-17-comparable-with-humans.md@3c3966d6898a5394a0a158f11ef4cae587e48842	workUrl: "https://github.com/frankbueltge/field-research/tree/main/works/2026-07-17-comparable-with-humans"	no

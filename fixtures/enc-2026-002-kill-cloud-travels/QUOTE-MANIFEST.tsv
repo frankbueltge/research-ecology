@@ -103,3 +103,13 @@ objects.json/nwok/summary_cache(one_line)	studio:projects/no-way-of-knowing/data
 objects.json/nwok/workboard_listing_fragment	studio:WORKBOARD.md@c23d3a01e550f3de48454577dda242bdc4206fef	the state's own two sentences: declared confidence to strike	no
 objects.json/field-map/summary-fragment	field-research:FIELD.md	sharpest edge — multi-theater since Feb 2026, no longer only	no
 objects.json/field-map/receiver-watch	studio:journal/2026-07-16.md	Nothing touching this spine — instrument 001, 011/card 001, 	no
+events.json/evt-11/quote_status	studio:REQUESTS.md@e9914d46d3febad86d3bafd9a576352cf31eb655	**Status:** enabled (2026-07-17)	no
+events.json/evt-11/quote_response	studio:REQUESTS.md@e9914d46d3febad86d3bafd9a576352cf31eb655	> **Response (team, 2026-07-17):** go	no
+events.json/evt-12/quote_verifier	studio:journal/2026-07-17-session-19.md@1860072541150f99dcd63259f1f86c2de9e1ba69	Verifier — PASS WITH FINDINGS (no blocking).	no
+events.json/evt-12/quote_dramaturg	studio:journal/2026-07-17-session-19.md@1860072541150f99dcd63259f1f86c2de9e1ba69	Dramaturg — DELIVERS WITH CONDITIONS.	no
+events.json/evt-12/quote_kritiker	studio:journal/2026-07-17-session-19.md@1860072541150f99dcd63259f1f86c2de9e1ba69	Kritiker — PREMIERE STANDS.	no
+events.json/evt-12/quote_selftest	studio:journal/2026-07-17-session-19.md@1860072541150f99dcd63259f1f86c2de9e1ba69	self-test PASS at boot and rest, 0 co-render / 128 samples, empty midpoint observed.	no
+events.json/evt-12/quote_graduation	studio:journal/2026-07-17-session-19.md@1860072541150f99dcd63259f1f86c2de9e1ba69	GRADUATED → `works/2026-07-17-no-way-of-knowing/`	no
+events.json/evt-12/quote_monitoring_refresh	studio:works/2026-07-17-no-way-of-knowing/data.json@1860072541150f99dcd63259f1f86c2de9e1ba69	Two catches as of the last check (2026-07-17): one closed pair (2024), one open question (2026, the operation against Iran, investigation being finalised — the AI question unanswered).	no
+events.json/evt-12/quote_monitoring_not_claim	studio:works/2026-07-17-no-way-of-knowing/data.json@1860072541150f99dcd63259f1f86c2de9e1ba69	This is the studio's own monitoring status on the date shown, not a claim that none exists.	no
+events.json/evt-12/quote_serial_line	studio:works/2026-07-17-no-way-of-knowing/data.json@1860072541150f99dcd63259f1f86c2de9e1ba69	2 catches on record. Case 02 unresolved. Last checked 17 July 2026.	no
