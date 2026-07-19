@@ -43,6 +43,13 @@ beide Atlanten nur Inspiration, kein Zaun; eigener Name/Methode/Identität = ges
 Faden. Korrigiert die zu enge „eigener Atlas zuerst"-Fassung, die zwei Namens-Projekte in
 Folge erzeugt hatte. Protokoll §2.2 gleichlautend geöffnet.
 
+**Stand 2026-07-19 (Foundation-in-reach, Engine-PR #9):** Die fünf Foundation-Tranchen
+liegen jetzt im Engine-Repo (docs/foundation/, 61 Dateien; kanonische Quelle:
+frankbueltge.de docs/ulysses-v4-protocol-package-v1.1). Protokoll §3/§5.4/§11 verweisen
+auf selektive Konsultation der Dossiers statt Theorie-Rekonstruktion aus dem
+Modellgedächtnis; der Recall-Indexer nimmt docs/** auf. Prompt §1 entsprechend ergänzt.
+Nur Ulysses.
+
 ---
 
 ## Ulysses — „Error as Method — project dispatcher" (irrtum-als-methode)
@@ -74,7 +81,11 @@ governs this run and overrides everything in this prompt except the landing mech
 Then read governance/STANDING-DELEGATION.md — the envelope for ordinary autonomous work
 (capacity, budgets, auto-land paths, escalation). This scheduled run is a DISPATCHER TICK,
 not a session that owes output: the schedule only offers compute; the protocol and your
-projects decide whether there is work.
+projects decide whether there is work. The five-tranche Research Foundation — the
+practice's actual readings behind the protocol — lives in docs/foundation/. When a score
+invokes theoretical positions or a §5.4 test is too close to call, recall or read the
+relevant dossier there and cite the passage you use (selective and project-bound, never
+the whole Foundation; Protocol §3): do not reconstruct theory from training memory.
 2. Orient economically: START from your recall index — memory/index.jsonl is derived and
 gitignored, so rebuild it first if absent (`python3 tools/memory/cli.py index .`) — and the
 status lines of projects/ and REQUESTS.md; open full documents only where index or status
