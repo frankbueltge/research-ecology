@@ -235,10 +235,10 @@ mkdir -p archive/protocols
 git mv PROTOCOL.md archive/protocols/PROTOCOL-v2-2026-06-28-plus-2026-07-15-amendment.md
 cp <research-ecology>/docs/drafts/protocol-rewrites/irrtum-als-methode/PROTOCOL.md PROTOCOL.md
 git add -A
-git -c user.name="Frank Bültge" -c user.email="frank@bueltge.de" commit -m "..."
+git -c user.name="Frank Bültge" -c user.email="f.bueltge@gmail.com" commit -m "..."
 git push origin protocol-v3   # branch only — never main
 ```
-Suggested commit author `Frank Bültge <frank@bueltge.de>` (matching the 2026-07-15 amendment's
+Suggested commit author `Frank Bültge <f.bueltge@gmail.com>` (matching the 2026-07-15 amendment's
 own author on this repo); suggested message: *"Migration to the federated constitution (spec
 v2/v2.1): Protocol v3 merges v2 and the 2026-07-15 amendment into one coherent text; precise
 autonomy arrangement per docs/spec/02 §5/§6; pulse/rhizome reclassified per docs/spec/08 §11 as
@@ -485,7 +485,7 @@ wants Claude Code to run it.
 ## Correction (2026-07-16, evening) — author e-mail in the irrtum apply plan
 
 This document recommended committing the irrtum migration as `Frank Bültge
-<frank@bueltge.de>`, "matching the 2026-07-15 amendment's own author on this repo". That
+<f.bueltge@gmail.com>`, "matching the 2026-07-15 amendment's own author on this repo". That
 precedent was itself a mistake: **`bueltge.de` is not Frank's domain** — GitHub maps that
 address to the unrelated account `bueltge`, which consequently appears as a contributor on
 `irrtum-als-methode` (exactly the mis-crediting the team rule exists to prevent, via the
@@ -494,7 +494,7 @@ commits in the engine repos use Frank's own verified address (`f.bueltge@gmail.c
 GitHub maps to `frankbueltge`) or his GitHub noreply; persona commits keep their
 `@<repo>.invalid` addresses. Removing the mis-attributed commits required a documented history rewrite (ADR 0009) —
 **executed 2026-07-16 evening with Frank's explicit approval**: three commits (2026-07-14
-steer, 2026-07-15 amendment, 2026-07-16 protocol-v3) re-authored from `frank@bueltge.de` to
+steer, 2026-07-15 amendment, 2026-07-16 protocol-v3) re-authored from `f.bueltge@gmail.com` to
 Frank's verified address; content byte-identical, all refs force-pushed (main ba9a2f3→256cf91),
 bundles regenerated, pins re-anchored. GitHub now lists `frankbueltge` as the sole human
 contributor. The uninvolved third party is no longer credited anywhere.
