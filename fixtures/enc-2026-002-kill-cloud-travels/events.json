@@ -278,5 +278,56 @@
       "apparatus_note": "Core type (spec 03 §3.1): an invitation to respond without transferring an object. This is the encounter's live blocker at encoding time — the invitation is open and unanswered (re-confirmed unchanged in the session-18 journal, 2026-07-17, outside the authorized quote set). The brief also records the waivable form: 'the human plays before the premiere gate, or waives it' (projects/no-way-of-knowing/README.md)."
     },
     "content_hash": "sha256:f66497904b8caf13889561beae39c128c16fc3bbd0ae2ee5a23121bade5795e9"
-  }
+  },
+{
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026002-11-invitation-accepted",
+  "encounter_id": "enc-2026-002-kill-cloud-travels",
+  "event_type": "invitation.accepted",
+  "issuer": {
+    "collective_id": "frank",
+    "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-17T14:50:57Z",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/e9914d46d3febad86d3bafd9a576352cf31eb655/REQUESTS.md",
+  "source_commit": "e9914d46d3febad86d3bafd9a576352cf31eb655",
+  "visibility": "public",
+  "payload": {
+    "responds_to_event_id": "evt-enc2026002-10-playthrough-invited",
+    "quote_status": "**Status:** enabled (2026-07-17)",
+    "quote_response": "> **Response (team, 2026-07-17):** go",
+    "apparatus_note": "Core type (spec 03 §3.3): Frank answers the session-17 playthrough invitation (evt-10) with a bare 'go' — no separate playthrough narrative (what confused him, what landed) is recorded anywhere in the sources at this or the following commit; the record shows only the word itself. Session 19's own journal reads it as authorization to proceed (\"The word 'go' is the human's green light: play it, run the gate, graduate it\"), not as evidence that the playthrough was performed and reported — rendered here without assuming more than the text shows."
+  },
+  "content_hash": "sha256:b9ae4a78aa431d3548d6e384cf487cced9e2d8c8f074c6943ff90fde4cabfa54"
+},
+{
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026002-12-premiere",
+  "encounter_id": "enc-2026-002-kill-cloud-travels",
+  "event_type": "derivative.published",
+  "issuer": {
+    "collective_id": "ensemble",
+    "actor_id": "ensemble"
+  },
+  "occurred_at": "2026-07-17T18:47:33Z",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/1860072541150f99dcd63259f1f86c2de9e1ba69/journal/2026-07-17-session-19.md",
+  "source_commit": "1860072541150f99dcd63259f1f86c2de9e1ba69",
+  "visibility": "public",
+  "payload": {
+    "responds_to_event_id": "evt-enc2026002-11-invitation-accepted",
+    "subject_object_ref_id": "ensemble:no-way-of-knowing@1860072",
+    "graduated_to": "works/2026-07-17-no-way-of-knowing/",
+    "quote_verifier": "Verifier — PASS WITH FINDINGS (no blocking).",
+    "quote_dramaturg": "Dramaturg — DELIVERS WITH CONDITIONS.",
+    "quote_kritiker": "Kritiker — PREMIERE STANDS.",
+    "quote_selftest": "self-test PASS at boot and rest, 0 co-render / 128 samples, empty midpoint observed.",
+    "quote_graduation": "GRADUATED → `works/2026-07-17-no-way-of-knowing/`",
+    "quote_monitoring_refresh": "Two catches as of the last check (2026-07-17): one closed pair (2024), one open question (2026, the operation against Iran, investigation being finalised — the AI question unanswered).",
+    "quote_monitoring_not_claim": "This is the studio's own monitoring status on the date shown, not a claim that none exists.",
+    "quote_serial_line": "2 catches on record. Case 02 unresolved. Last checked 17 July 2026.",
+    "gate_note": "Full premiere gate (efficient tier, three voices): Verifier PASS WITH FINDINGS (one NIT — '120' vs NBC's 'more than 120', fixed in-session), Dramaturg DELIVERS WITH CONDITIONS (one named gap — reduced-motion timing — closed by disclosure, a MOTION note added), Kritiker PREMIERE STANDS with a published, unflattering critique shipped beside the work (own (c)-form and (b)-risk framing both narrowed by the critique, not smoothed away).",
+    "apparatus_note": "Core type (spec 03 §3.4): the second work of the house graduates from `projects/no-way-of-knowing/` to `works/2026-07-17-no-way-of-knowing/`. Before the gate the conductor re-verified live (island byte-identical to data.json, corruption/transition functions byte-untouched since session 17, browser self-test) and re-checked the world on premiere day itself (Minab-school Pentagon investigation still unreleased, congressional AI question still unanswered) — the two live obligations from evt-04 (obl-enc2026002-open-instance-honesty, obl-enc2026002-monitoring-status) both re-evidenced at the moment of publication, not before. The monitoring date was refreshed 16→17 July across data.json, island and noscript on that basis — disclosed as a decision, not silent. Instance 2 remains genuinely OPEN in the world at premiere; nothing here closes it."
+  },
+  "content_hash": "sha256:c1222d0ebbedcd7533120a0d4954f966875e47ff6181dc7fc14c61012525377d"
+}
 ]

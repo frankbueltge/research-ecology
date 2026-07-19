@@ -106,5 +106,25 @@
    "quote_admitted": "candidacy 3 (datavism) is **admitted as of the same",
    "note": "Admission turns this standing relation into a recorded relation between admitted practices; the governance statement supersedes ADR 002's wing framing while keeping its substance."
   }
+ },
+{
+ "schema_version": "1.0",
+ "event_id": "evt-enc2026003-06-works-synced-2",
+ "encounter_id": "enc-2026-003-school-replicates",
+ "event_type": "object.admitted",
+ "issuer": {
+  "collective_id": "datavism",
+  "actor_id": "datavism"
+ },
+ "occurred_at": "2026-07-18T07:11:37Z",
+ "source_uri": "https://github.com/datavism/datavism.org/blob/3c3966d6898a5394a0a158f11ef4cae587e48842/src/content/field-works/2026-07-17-comparable-with-humans.md",
+ "visibility": "public",
+ "payload": {
+  "synced_work": "2026-07-17-comparable-with-humans",
+  "synced_works_count": 15,
+  "quote_title": "title: \"Comparable With Humans\"",
+  "quote_work_url": "workUrl: \"https://github.com/frankbueltge/field-research/tree/main/works/2026-07-17-comparable-with-humans\"",
+  "note": "Field-sync bot commit (author 'field-sync[bot]'), the same pipeline evidenced in e3/e4; adds a fifteenth work to the corpus enumerated in e4, four days after this fixture's own as_of (2026-07-17). Meridian's source work graduated the day before (field-research session 43, commit 7c795d38, 2026-07-17T19:07:30Z) — the sync landed the following morning, consistent with the pipeline's daily cadence."
  }
+}
 ]

@@ -159,3 +159,26 @@ primary-confirmed downstream, SNIPPET upstream. Both statuses stay local; neithe
 
 `docs/spec/fixtures/example-encounter.json` is untouched — it remains the schema-illustration
 fixture only. Nothing outside this directory was created or modified, and nothing was committed.
+
+## Scribe update, 2026-07-19
+
+Two new events appended (`events.json` now carries twelve; nothing above this line was edited).
+Frank answered the session-17 playthrough invitation with the single word "go"
+(`studio:REQUESTS.md`, commit `e9914d4`, 2026-07-17T14:50:57Z — `invitation.accepted`, evt-11).
+The same day, Ensemble ran the full premiere gate (Verifier PASS WITH FINDINGS, Dramaturg
+DELIVERS WITH CONDITIONS, Kritiker PREMIERE STANDS with a published, unflattering critique) and
+graduated the work to `works/2026-07-17-no-way-of-knowing/` — the house's second work
+(`studio:journal/2026-07-17-session-19.md`, commit `1860072`, 2026-07-17T18:47:33Z —
+`derivative.published`, evt-12). A new `objects.json` entry (`ensemble:no-way-of-knowing@1860072`)
+records the graduated object without touching the prior `projects/` entry, which remains an
+accurate record of the work's in-production state at its own commit. The monitoring obligation
+(`obl-enc2026002-monitoring-status`) is unaffected in text but re-evidenced in substance: at
+premiere the studio re-checked the world and refreshed its "last checked" date from 16 to 17
+July, with Instance 2 still genuinely open ("The Pentagon has not said yes. It has not said
+no."). The encounter itself remains open — see the updated `resolution_note` in `encounter.json`.
+`encounter.json`'s Ensemble and Frank participant lanes (`local_status`, `local_status_rationale`,
+`response_expected`) were updated in place to the current state, per the work order's "update
+status lines" allowance; no event was edited or deleted. Ten new `QUOTE-MANIFEST.tsv` lines
+(full quotes, per the Scribe's own discipline) back the two new events; verified with
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-002-kill-cloud-travels`
+(114 quotes ok, 0 errors).
