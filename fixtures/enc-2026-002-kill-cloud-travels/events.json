@@ -278,5 +278,78 @@
       "apparatus_note": "Core type (spec 03 §3.1): an invitation to respond without transferring an object. This is the encounter's live blocker at encoding time — the invitation is open and unanswered (re-confirmed unchanged in the session-18 journal, 2026-07-17, outside the authorized quote set). The brief also records the waivable form: 'the human plays before the premiere gate, or waives it' (projects/no-way-of-knowing/README.md)."
     },
     "content_hash": "sha256:f66497904b8caf13889561beae39c128c16fc3bbd0ae2ee5a23121bade5795e9"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-11-playthrough-accepted",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "invitation.accepted",
+    "issuer": {
+      "collective_id": "frank",
+      "actor_id": "frank-bueltge"
+    },
+    "occurred_at": "2026-07-17T14:50:57Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/e9914d46d3febad86d3bafd9a576352cf31eb655/REQUESTS.md",
+    "source_commit": "e9914d46d3febad86d3bafd9a576352cf31eb655",
+    "visibility": "public",
+    "payload": {
+      "in_response_to_event_id": "evt-enc2026002-10-playthrough-invited",
+      "quote_response": "Response (team, 2026-07-17):** go",
+      "quote_status_change": "enabled (2026-07-17)",
+      "apparatus_note": "Frank Bültge's answer to the playthrough invitation (evt-10), landed directly in the studio's own REQUESTS.md under the git identity 'Steuerzentrale <steuerzentrale@frankbueltge.de>' — the same apparatus identity that carries his replies elsewhere in this repository. event_type is the core string 'invitation.accepted' (spec 03 §3.3); this is Frank's personal act as the addressee, not a collective-level acceptance, hence issuer.collective_id = 'frank' (same convention as enc-2026-003/004's admission events) rather than 'ensemble'."
+    },
+    "content_hash": "sha256:3269da32587d645b1bbb5f9a5e6fde6f84b0b3bb2e3e79a45aff6f7e9f478ea2"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-12-derivative-published",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-17T18:47:33Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/1860072541150f99dcd63259f1f86c2de9e1ba69/works/2026-07-17-no-way-of-knowing/meta.json",
+    "source_commit": "1860072541150f99dcd63259f1f86c2de9e1ba69",
+    "visibility": "public",
+    "payload": {
+      "derivative_object_ref_id": "ensemble:no-way-of-knowing@1860072",
+      "gate_note": "PREMIERE — through the full house gate (Verifier PASS WITH FINDINGS · Dramaturg DELIVERS WITH CONDITIONS · Kritiker PREMIERE STANDS, critique published) and GRADUATED to works/2026-07-17-no-way-of-knowing/, the second work of the house",
+      "quote_gate_line": "Verifier PASS WITH FINDINGS · Dramaturg DELIVERS · Kritiker PREMIERE STANDS, critique published",
+      "quote_entry_closed": "graduated the work to `works/2026-07-17-no-way-of-knowing/`",
+      "quote_premiere_day_recheck": "Instance 2's OPEN state holds; the",
+      "preserved": [
+        "the open-instance-honesty obligation (obl-enc2026002-open-instance-honesty)",
+        "the monitoring-status obligation (obl-enc2026002-monitoring-status), re-checked and re-dated on premiere day (2026-07-16 → 2026-07-17) rather than shipped stale"
+      ],
+      "transformed": [
+        "project-in-production (projects/no-way-of-knowing/) retired; production history preserved in the dossier and the work's own README"
+      ],
+      "apparatus_note": "Core type (spec 03 §3.4), same act-class as enc-2026-001's evt-06. Triggered directly by evt-11 (Frank's 'go'); the conductor's own pre-gate verification (live self-test PASS, 0 co-render / 128 samples) and a premiere-day world re-check (Instance 2's open status re-confirmed true on 2026-07-17, not merely carried over) are recorded in journal/2026-07-17-session-19.md and folded into this event rather than modeled as a separate obligation.fulfilled — the obligations themselves remain 'active', not 'fulfilled', because they are standing commitments for the life of the work, not one-time conditions this event discharges.",
+      "quote_gate_line_normalized": true
+    },
+    "content_hash": "sha256:1ce304cf153c0688a514b664a62f1294ab46943e2b468bd689c1e4b41a93ae67"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-13-publication-site-gate",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "studio-integrate"
+    },
+    "occurred_at": "2026-07-17T18:50:37Z",
+    "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/06657906dbb714060a5140fe0d4124c0b99d76dd/src/content/studio/works/2026-07-17-no-way-of-knowing/meta.json",
+    "source_commit": "06657906dbb714060a5140fe0d4124c0b99d76dd",
+    "visibility": "public",
+    "payload": {
+      "derivative_object_ref_id": "ensemble:no-way-of-knowing@1860072",
+      "apparatus_note": "Site-integration republication, distinct from evt-12's sovereign-archive graduation — the studio-integrate.yml workflow (frankbueltge.de repo) mirrors works/ across the path boundary onto frankbueltge.de/studio, roughly 3 minutes 4 seconds after the studio's own premiere commit (1860072, 2026-07-17T18:47:33Z), same act-class as enc-2026-001's evt-07. meta.json is byte-identical between the two repositories (sha256 9454116d23671e0c0aec73bc0d345d5b2d18b809b78001b928fdd5d543381f8a); data.json is mirrored at public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json (sha256 44b7b0b2d33a0d72a568bc9239d8acb4403eb43061a1b8380efcd139a31f2bbb, matching the studio's own works/2026-07-17-no-way-of-knowing/data.json byte-for-byte).",
+      "commit_message": "studio: integrate 2026-07-17",
+      "path_boundary_note": "guard: projects/, memory/, WORKBOARD.md stay in the engine repo; only works/ travels."
+    },
+    "content_hash": "sha256:35495f01d0d7d3f8cfd19029a4115d045f26e6b951adce82665fb0c3a349ebaa"
   }
 ]

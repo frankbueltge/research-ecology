@@ -14,3 +14,11 @@ GAPs (honest): no per-file hashes for the 14 synced works (enumerated only); Mer
 session-22 journal not quoted (the reframed downstream-commitments doc is the standing
 source); ADR 002's own status is 'Entwurf — zur Freigabe durch Frank' and is recorded as
 such.
+
+**Update 2026-07-20 (Middle Scribe, append-only):** the field-sync pipeline (ADR 003) synced a
+15th work — `2026-07-17-comparable-with-humans` (Meridian's instrument 015, shipped
+field-research session 43, 2026-07-17), synced by `field-sync[bot]` the next morning (datavism.org
+commit `3c3966d6`, 2026-07-18 07:11:37 UTC). One new event (`evt-06`) and one new object
+(`datavism:field-works-comparable-with-humans`, real sha256) appended; `status.as_of` moved to
+2026-07-20 and the synced-works count to 15. No existing record edited or deleted. ADR 002 is
+still `Entwurf — zur Freigabe durch Frank`, unchanged.

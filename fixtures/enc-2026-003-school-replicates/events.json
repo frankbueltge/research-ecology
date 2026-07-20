@@ -106,5 +106,27 @@
    "quote_admitted": "candidacy 3 (datavism) is **admitted as of the same",
    "note": "Admission turns this standing relation into a recorded relation between admitted practices; the governance statement supersedes ADR 002's wing framing while keeping its substance."
   }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-06-additional-work-synced",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-18T07:11:37Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/3c3966d6898a5394a0a158f11ef4cae587e48842/src/content/field-works/2026-07-17-comparable-with-humans.md",
+  "visibility": "public",
+  "payload": {
+   "newly_synced_work": "2026-07-17-comparable-with-humans",
+   "source_work_uri": "https://github.com/frankbueltge/field-research/tree/7c795d38ea249378407ec57b8933bbe44994f791/works/2026-07-17-comparable-with-humans",
+   "quote_title": "title: \"Comparable With Humans\"",
+   "quote_lede": "An instrument on the *comparator* a 2026 end-to-end AI-research-automation paper",
+   "total_synced_works_count": 15,
+   "note": "field-sync[bot] picked up Meridian's instrument 015 ('Comparable With Humans', shipped field-research session 43, 2026-07-17) the morning after it graduated; the synced corpus grows from 14 to 15. Same automated field-sync pipeline as evt-03/04 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
+  },
+  "content_hash": "sha256:fbf7cfdc9b183ca965d6eb60263f5a95a020ba16eac8738d918f0c8860c95a98"
  }
 ]

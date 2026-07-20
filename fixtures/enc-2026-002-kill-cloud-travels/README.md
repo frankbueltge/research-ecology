@@ -146,13 +146,42 @@ primary-confirmed downstream, SNIPPET upstream. Both statuses stay local; neithe
    studio's session-18 journal, 2026-07-17, outside the quote set: "still premiere-ready, still
    waiting on Frank's playthrough"). `shared_resolution` is null by fact, not by omission.
 
+## Update 2026-07-20 (Middle Scribe, append-only)
+
+Frank answered the playthrough invitation (evt-10) the same day the DRAFT flag above was
+written: `studio:REQUESTS.md` commit `e9914d46`, 2026-07-17 16:50:57 +0200 — "**Response (team,
+2026-07-17):** go". The studio ran the full premiere gate that evening (session 19, commit
+`1860072541150f99dcd63259f1f86c2de9e1ba69`, 2026-07-17 18:47:33 UTC): Verifier PASS WITH
+FINDINGS (one NIT fixed: "more than 120" vs "120" members of Congress), Dramaturg DELIVERS WITH
+CONDITIONS (a reduced-motion timing gap closed by disclosure, not by hiding it), Kritiker
+PREMIERE STANDS with its hostile critique published beside the work. "No Way of Knowing"
+graduated to `works/2026-07-17-no-way-of-knowing/` — the studio's second work — and was mirrored
+onto frankbueltge.de/studio 3 minutes later (`frankbueltge.de` commit `06657906`, path-boundary
+guard intact: only `works/` travelled). Three new events (`evt-11` playthrough-accepted, `evt-12`
+derivative-published, `evt-13` publication-site-gate) and one new object
+(`ensemble:no-way-of-knowing@1860072`, superseding nothing — the in-production object
+`@c23d3a01` stays in the record) were appended; no existing event, object, obligation or
+assertion was edited or deleted.
+
+**The encounter is still open.** The premiere closed this encounter's former live blocker (the
+unanswered invitation) but not the encounter itself: before running the gate, the conductor
+first-hand re-checked the world on premiere day and confirmed Instance 2's open status still
+held ("Instance 2's OPEN state holds; the central claim is still true" — the Minab investigation
+still unreleased, the congressional AI question still unanswered), then re-dated the monitoring
+line 2026-07-16 → 2026-07-17 at ship time rather than shipping it stale. Both load-bearing
+obligations (open-instance-honesty, monitoring-status) remain `active`, unedited — they are
+standing commitments for the life of the work, not conditions this premiere discharges. The
+DRAFT status above is untouched: Frank's "go" answered the playthrough request specifically, not
+a read/approval of this fixture's wording, which the work order distinguishes and this update
+does not blur.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
-| `encounter.json` | The encounter, its two collective participants (Meridian/source, Ensemble/receiver) with distinct local statuses, Frank's conductor lane (apparatus and pending gate only), Ulysses' documented non-participation, and the explicit absence of any shared resolution — the encounter is open. |
-| `objects.json` | Four local object references (the standing-conditions document in its reframed version, the field map's kill-cloud cluster, the atlas digest, the No-Way-of-Knowing project) with real content hashes and pinned commits. |
-| `events.json` | Ten append-only encounter events (tables above), mixing core types with deliberately open type strings. |
+| `encounter.json` | The encounter, its two collective participants (Meridian/source, Ensemble/receiver) with distinct local statuses, Frank's conductor lane (apparatus and, as of 2026-07-20, an answered playthrough gate), Ulysses' documented non-participation, and the explicit absence of any shared resolution — the encounter is open even after the premiere. |
+| `objects.json` | Five local object references (the standing-conditions document in its reframed version, the field map's kill-cloud cluster, the atlas digest, the No-Way-of-Knowing project in production, and — appended 2026-07-20 — the premiered `works/` version) with real content hashes and pinned commits. |
+| `events.json` | Thirteen append-only encounter events (tables above plus the 2026-07-20 update), mixing core types with deliberately open type strings. |
 | `obligations.json` | Three active obligations — all adopted by the receiver at its own gate or held as its own standing practice; none imposed across the repository boundary. |
 | `assertions.json` | Four imported, authored assertions — Ensemble's daylight claim against the catalogued atlas artwork, Ensemble's premise demotion (epistemic asymmetry, not proven pattern), Meridian's live framing of the kill-cloud cluster, and Ensemble's first-hand-spine tier declaration. |
 | `QUOTE-MANIFEST.tsv` | One line per verbatim quote: fixture location, source file, first 60 characters — for mechanical substring verification. |

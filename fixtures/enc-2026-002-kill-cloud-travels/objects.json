@@ -89,5 +89,31 @@
       "premiere_note": "Deliberately pinned at the projects/ path: the work has NOT graduated to works/ and is not mirrored to the site — the studio's path boundary keeps in-production work in the engine repo until it premieres. A works/ object reference would be a fabrication at encoding time."
     },
     "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "ensemble:no-way-of-knowing@1860072",
+    "collective_id": "ensemble",
+    "local_object_id": "no-way-of-knowing",
+    "object_version": "1860072541150f99dcd63259f1f86c2de9e1ba69",
+    "canonical_uri": "https://github.com/frankbueltge/studio/blob/1860072541150f99dcd63259f1f86c2de9e1ba69/works/2026-07-17-no-way-of-knowing/data.json",
+    "media_type": "application/json",
+    "local_object_type": "work (graduated from projects/no-way-of-knowing/ — interactive console, single self-contained index.html + canonical data.json with byte-identical embedded island)",
+    "interoperability_class": "work",
+    "title_cache": "No Way of Knowing",
+    "summary_cache": "The state at maximal confidence when it acts; the state at declared un-knowing when it harms — two sentences it said on the record, in a console that will not let you hold both at once.",
+    "lifecycle_status": "premiered",
+    "local_epistemic_status": "spine SOURCED / primary-confirmed (session 14); console form IMAGINED, marked; monitoring line a dated STUDIO MONITORING STATUS, refreshed to the premiere day (2026-07-17) at ship time",
+    "content_hash": "sha256:44b7b0b2d33a0d72a568bc9239d8acb4403eb43061a1b8380efcd139a31f2bbb",
+    "source_commit": "1860072541150f99dcd63259f1f86c2de9e1ba69",
+    "source_metadata": {
+      "pinned_file": "works/2026-07-17-no-way-of-knowing/data.json",
+      "prior_object_ref": "ensemble:no-way-of-knowing@c23d3a01 (the in-production version this graduates from; superseded, not deleted)",
+      "readme_content_hash": "sha256:40f009884a79ffc809e20e570901de5e1fe9c0019ac66064f7244e032bdc1d0c",
+      "readme_pinned_file": "works/2026-07-17-no-way-of-knowing/README.md (the graduated record, same commit)",
+      "meta_content_hash": "sha256:9454116d23671e0c0aec73bc0d345d5b2d18b809b78001b928fdd5d543381f8a",
+      "site_mirror_commit": "06657906dbb714060a5140fe0d4124c0b99d76dd",
+      "site_mirror_data_path": "public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json (byte-identical, sha256 matches)"
+    },
+    "importer_version": "fixture-manual-1.0"
   }
 ]

@@ -16,5 +16,11 @@
   "object_ref": "datavism:docs/GOVERNANCE.md@df34d012",
   "content_hash": "sha256:5608d7cdf87d728b6a1a1ecd3cc30456d86c6fc73b10ebaa4b7dbe1cb33030d6",
   "uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/GOVERNANCE.md"
+ },
+ {
+  "object_id": "datavism:field-works-comparable-with-humans",
+  "object_ref": "datavism:src/content/field-works/2026-07-17-comparable-with-humans.md@3c3966d6",
+  "content_hash": "sha256:e3eb6f2748169a3162223d13df0417b52c13186c8210de0b8f459925f2917eb6",
+  "uri": "https://github.com/datavism/datavism.org/blob/3c3966d6898a5394a0a158f11ef4cae587e48842/src/content/field-works/2026-07-17-comparable-with-humans.md"
  }
 ]
