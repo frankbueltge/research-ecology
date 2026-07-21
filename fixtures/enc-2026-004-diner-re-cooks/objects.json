@@ -34,5 +34,11 @@
   "object_ref": "data-snack:prototype-v2/src/content/quick/standing-docket.mdx@72bae294",
   "content_hash": "sha256:e47882e289c8c4a88da5918e0a71a97b6e60cf9f25b9570e139cd80297b81621",
   "uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/standing-docket.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-comparable-with-humans",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/comparable-with-humans.mdx@99f5c750",
+  "content_hash": "sha256:f5ffdbf1bff5b56a806a64686ff926420586f35090b0feab4e58595ce3b50d86",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/99f5c750d28b1df89b7cbe7d679c74dad61e4d0e/prototype-v2/src/content/quick/comparable-with-humans.mdx"
  }
 ]

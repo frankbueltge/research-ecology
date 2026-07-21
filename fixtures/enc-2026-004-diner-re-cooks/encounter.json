@@ -8,8 +8,8 @@
   "note": "retroactive transcription commissioned by Frank (2026-07-17); lean record — the nightly scribe appends from here"
  },
  "status": {
-  "as_of": "2026-07-17",
-  "statusLine": "open/standing — 6 works re-cooked, Split Seal refreshed 2026-07-17, cook automation part-armed, wing-language correction open"
+  "as_of": "2026-07-21",
+  "statusLine": "open/standing — 7 works re-cooked (Comparable With Humans added 2026-07-18), Split Seal refreshed nightly through 2026-07-20, cook automation now firing and publishing unattended, wing-language correction open"
  },
  "participants": [
   {
@@ -33,7 +33,7 @@
    "collective_id": "data-snack-plenum",
    "role": "receiver",
    "lane": "data-snack",
-   "local_status": "re-voices with per-file provenance; Split Seal refreshed 2026-07-17; admitted 2026-07-17; cook automation part-armed",
+   "local_status": "re-voices with per-file provenance; Split Seal refreshed nightly through 2026-07-20; admitted 2026-07-17; cook automation now firing unattended (first output 2026-07-18: Comparable With Humans)",
    "rank": 3
   },
   {

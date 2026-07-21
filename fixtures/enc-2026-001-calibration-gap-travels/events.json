@@ -214,5 +214,25 @@
   },
   "source_commit": "main",
   "content_hash": "sha256:33d238fdbbf6bc812a7c057178ab7d7e6f47ea5a900029c58c5794c2cd5bd09c"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-10-object-transformed-2",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-07-21T08:02:20Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/ad335729d9252364fb5d52682aecd4b980dab384/works/2026-07-01-calibration-gap/data.json",
+  "source_commit": "ad335729d9252364fb5d52682aecd4b980dab384",
+  "visibility": "public",
+  "payload": {
+   "quote_before": "A PhD student expelled; student visa revoked; career and residency ended. Expulsion upheld by Minnesota Court of Appeals (Feb 2026). Federal lawsuit dismissed (Oct 2025). Believed to be the first student expelled from the University of Minnesota over alleged AI use (KARE 11).",
+   "quote_after": "A PhD student expelled; student visa revoked. Expulsion upheld by Minnesota Court of Appeals (Feb 2026). Federal lawsuit dismissed (Oct 2025). Believed to be the first student expelled from the University of Minnesota over alleged AI use (KARE 11).",
+   "note": "Legal-hygiene revision, commit message 'Personennamen aus AI-Detection-Recherche redigiert (Rechtshygiene)': Instrument 001's harm-register outcome text for the Minnesota row drops the unsupported escalation 'career and residency ended' (no source in the row supports anything beyond visa revocation). The row's own load-bearing appellate caveat — this encounter's central finding — is untouched, unedited. The same commit made companion edits outside this encounter's tracked objects (journal/2026-07-01.md moves named individuals to role-only phrasing, case captions 'Yang v. University of Minnesota' / 'Rignol v. Yale' retained as public citations per the team's own named-individuals steer of 2026-07-12; FIELD.md drops a nationality detail) and flags a still-open next step (a future git-history purge of the same names)."
+  },
+  "content_hash": "sha256:41e7f23b8a7f6274106ab44b60eb29ac595dfe1e719197c4bb25d29d433c3cd3"
  }
 ]

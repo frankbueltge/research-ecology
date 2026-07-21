@@ -42,7 +42,27 @@ const REPO_MAP = {
   "frankbueltge.de": "frankbueltge/frankbueltge.de",
   "datavism.org": "datavism/datavism.org",
   "data-snack.com-from-scratch": "frankbueltge/data-snack.com",
+  "meridian-runtime": "frankbueltge/meridian-runtime",
 };
+
+// Lokaler Sibling-Clone-Fallback: manche Sessions (Sandboxes ohne generische GitHub-API,
+// nur Git-Smart-HTTP über den Proxy) können private Repos nicht per raw.githubusercontent
+// oder Contents-API lesen, obwohl ein lokaler Klon vorliegt (Konvention der Fixture-READMEs:
+// "verified with git show <commit>:<path> in the local sibling clones"). Rein additiv: wird
+// nur versucht, wenn beide Netz-Wege leer blieben; ohne lokale Klone ändert sich nichts.
+const LOCAL_ROOTS = [process.env.MIDDLE_SCRIBE_LOCAL_REPOS, "/workspace", "..", "../.."].filter(Boolean);
+function fetchLocal(slug, path, commit) {
+  const repoDirName = slug.split("/")[1];
+  for (const root of LOCAL_ROOTS) {
+    const dir = join(root, repoDirName);
+    if (!existsSync(join(dir, ".git"))) continue;
+    try {
+      const text = execFileSync("git", ["-C", dir, "show", `${commit}:${path}`], { encoding: "utf8" });
+      return norm(text);
+    } catch { /* Pfad/Commit nicht in diesem lokalen Klon — nächste Wurzel probieren */ }
+  }
+  return null;
+}
 
 // Normalisierung: Whitespace-Kollaps (Soft-Wrap-Konvention) + Markdown-Betonung (** und
 // Backticks) auf beiden Seiten gestrippt — enc-001 zitiert Wortlaut ohne Auszeichnungs-
@@ -70,6 +90,7 @@ async function fetchAt(repoLabel, path, commit) {
       if (r2.ok) body = norm(await r2.text());
     }
   }
+  if (body === null) body = fetchLocal(slug, path, commit);
   cache.set(url, body);
   return body;
 }

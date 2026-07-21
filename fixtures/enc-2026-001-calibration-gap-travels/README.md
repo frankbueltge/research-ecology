@@ -77,13 +77,35 @@ separately in `objects.json[2].source_metadata.session_label_caveat` and in row 
 provenance table above. Disclosed here per the work order's integrity rule, rather than silently
 adjusted to make the date match.
 
+## Update 2026-07-21 (Middle Scribe, append-only)
+
+Meridian revised Instrument 001's harm-register entry for the Minnesota case again, unrelated
+to this encounter's original bilateral correction (a same-day legal-hygiene pass, commit
+message "Personennamen aus AI-Detection-Recherche redigiert (Rechtshygiene)",
+`field-research` commit `ad335729`, 2026-07-21 10:02:20 +0200): the row's "outcome" text drops
+the unsupported escalation "career and residency ended", nothing else in the row. The
+appellate caveat that is this encounter's central finding is untouched. One new event
+(`evt-enc2026001-10-object-transformed-2`) was appended; no existing event, object, obligation
+or assertion was edited or deleted. The same field-research commit made companion edits
+outside this encounter's tracked objects (`journal/2026-07-01.md`, `FIELD.md`) — out of scope
+here, not transcribed.
+
+While auditing this update the verifier was found already failing one pre-existing, unrelated
+line (`events.json[2]/payload/quote_appellate_finding`): an earlier direct edit by Frank
+(`research-ecology` commit `cd0af83`, legal hygiene) redacted "Yang's" to "[the student]'s" in
+that event's own quote, which now legitimately no longer matches the byte-exact historical
+source, but the corresponding `QUOTE-MANIFEST.tsv` line was never commented out to match. Fixed
+by commenting out that one manifest line with a LEGACY-NOTE, mirroring the file's own existing
+precedent for `quote_context` immediately below it — no event, object, obligation or assertion
+touched.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The encounter, its two participants (Meridian/source, Ensemble/receiver) with distinct, non-flattened local statuses, the conductor's apparatus-only participation, Ulysses' documented non-participation, and the explicit absence of any shared/global resolution. |
 | `objects.json` | Four local object references (instrument 001, claims-ledger row 12, the downstream-commitments standing-contract document, Native Speaker) with real content hashes and pinned commits. |
-| `events.json` | Seven append-only encounter events (§ tables above), including the deliberately open, non-core `contract.published` type. |
+| `events.json` | Nine append-only encounter events (§ tables above, plus the 2026-07-17 correction-noted and the 2026-07-21 update), including the deliberately open, non-core `contract.published` type. |
 | `obligations.json` | Two active obligations flowing from the standing contract's conditions 1 and 2, evidenced by the relevant events. |
 | `assertions.json` | Three imported, authored assertions — Ensemble's transformation claim (`DISCLOSED RECONSTRUCTION`), Ensemble's boundary-case refusal (`declines-to-carry`), and Meridian's live framing of the corrected claims row — every word of rationale copied verbatim from the source repositories. |
 

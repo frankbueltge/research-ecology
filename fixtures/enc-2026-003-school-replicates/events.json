@@ -128,5 +128,29 @@
    "note": "field-sync[bot] picked up Meridian's instrument 015 ('Comparable With Humans', shipped field-research session 43, 2026-07-17) the morning after it graduated; the synced corpus grows from 14 to 15. Same automated field-sync pipeline as evt-03/04 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
   },
   "content_hash": "sha256:fbf7cfdc9b183ca965d6eb60263f5a95a020ba16eac8738d918f0c8860c95a98"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-07-additional-work-synced",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-21T07:43:56Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/134cc45d514e388ea765619c79f75bb1e0c44d6b/src/content/field-works/2026-07-20-coverage-not-custody.md",
+  "source_commit": "134cc45d514e388ea765619c79f75bb1e0c44d6b",
+  "visibility": "public",
+  "payload": {
+   "newly_synced_work": "2026-07-20-coverage-not-custody",
+   "source_work_uri": "https://github.com/frankbueltge/field-research/tree/main/works/2026-07-20-coverage-not-custody",
+   "quote_title": "title: \"Coverage Is Not Custody\"",
+   "quote_lede": "A stratified census of what the web archive holds versus what it merely covers, with a live-control arm. Draft — session 46, 2026-07-20.",
+   "total_synced_works_count": 16,
+   "note": "field-sync[bot] picked up Meridian's 'Coverage Is Not Custody' (field-research session 46, dated 2026-07-20); the synced corpus grows from 15 to 16. Same automated field-sync pipeline as evt-03/04/06 (ADR 003, transport automated / translation deliberately manual).",
+   "gap_note": "HONEST GAP, found verifying this event: field-research's own works/ directory, as fetched for this scribe run (full history, all branches and open-PR refs), does NOT contain works/2026-07-20-coverage-not-custody at all — field-sync.mjs's own documented contract ('works that vanish upstream are removed from the mirror') means this datavism-side copy would be pruned on the pipeline's next run if that absence holds. This scribe cannot determine whether the work was retracted after the 07:43:56Z sync ran, moved, or sits on a ref this session could not reach; recorded as an open discrepancy between the two archives' current public states, not resolved here."
+  },
+  "content_hash": "sha256:3418abe6cc5ab3ae2d3d6e61281535e50ae48d9c16cf480e7dfbbfc1307abb0f"
  }
 ]

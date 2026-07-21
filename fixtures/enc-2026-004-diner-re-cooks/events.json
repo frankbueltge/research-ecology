@@ -120,5 +120,57 @@
    "quote_new_caveat": "5. **\"Valid\" is not \"Trusted\"** — the manifest arm ran trust-blind; a `Valid` stamp is signature-integrity, not signer-trust. Under the current forward official C2PA trust list none of these real signers separate from a forge today; only a discontinued legacy list (the ITL) separates them. Any re-serving of a `Valid` result must not present it as an endorsement of the signer, and must carry the today-gap, not only the legacy-list reassurance.",
    "note": "Current data-snack.com main updates the existing Split Seal Quick Snack rather than adding a seventh quick item. The open standing relation remains at six re-cooked works; this event records the refreshed re-voicing and its added load-bearing caveat."
   }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-07-automation-armed",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-18T06:33:48Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/6aabcca0fa29e49ff937c24be6905bef0fc1603b/.github/workflows/upstream-cook.yml",
+  "source_commit": "6aabcca0fa29e49ff937c24be6905bef0fc1603b",
+  "visibility": "public",
+  "payload": {
+   "quote_gate_step_name": "Publish to main (if armed) — else preview only",
+   "quote_gate_condition": "if [ \"$AUTOPUBLISH\" = \"true\" ]; then",
+   "evidentiary_note": "The workflow text itself is unchanged since evt-04 (2026-07-16) and still documents the switch as OFF by default; a GitHub Actions repository VARIABLE's live value is not file content and cannot be quoted or byte-verified the way this record verifies everything else. What changed is observable behavior: starting with commit `99f5c750` (2026-07-18T06:33:48Z, git-authored `data-snack cook bot <bot@data-snack.invalid>`), and repeating on `9a9305fa` (2026-07-19T07:12:22Z) and `607609e9` (2026-07-20T07:45:49Z), commits carrying exactly this workflow step's own commit message string ('feat(quick): auto-cooked special(s) from upstream field/studio [skip ci]') land directly on data-snack.com's main branch, with no pull request. The one and only code path in this workflow that produces such a commit is gated on `vars.PIPELINE_AUTOPUBLISH == 'true'` (the step quoted above). The part-armed state this encounter recorded on 2026-07-16 has therefore become live: the transport now runs and publishes unattended, evidenced by its own output rather than by reading the switch directly."
+  },
+  "content_hash": "sha256:b7672824fd4e1deb7680f89618f1b9463a28e68a52d2db2ce4ff9527e9d2aaac"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-08-corpus-grown",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-18T06:33:48Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/tree/6aabcca0fa29e49ff937c24be6905bef0fc1603b/prototype-v2/src/content/quick",
+  "source_commit": "6aabcca0fa29e49ff937c24be6905bef0fc1603b",
+  "visibility": "public",
+  "payload": {
+   "quote_provenance_work": "work: 'Comparable With Humans'",
+   "quote_provenance_supplier": "supplier: 'Meridian · field-research (the lab''s foundational research collective, frankbueltge.de)'",
+   "quote_provenance_gauntlet": "gauntlet: 'shipped (pre-gauntlet convention)'",
+   "quote_provenance_inspected": "inspected: '2026-07-18'",
+   "quick_snacks": [
+    "native-speaker",
+    "the-detector",
+    "two-meters",
+    "the-floor",
+    "split-seal",
+    "standing-docket",
+    "comparable-with-humans"
+   ],
+   "count": 7,
+   "note": "First corpus growth since the fixture's founding count of six (evt-03, 2026-07-13): 'Comparable With Humans' — Meridian's own instrument, shipped under the pre-gauntlet convention per field-research session 43 (2026-07-17), and separately the 15th work synced to datavism.org under this ecology's enc-2026-003 — was auto-cooked by the now-firing transport (evt-07) the following day, 2026-07-18. This is the automation's first observed real output: the diner did not wait for a human cook. Split-seal was refreshed again in the same commit and in the two nightly runs since (2026-07-19, 2026-07-20); each refresh re-dates provenance/sources and lightly rewords the teaser/hook prose, but the five numbered load-bearing caveats (including caveat 5 added at evt-06) verify unchanged across all three re-cooks — no new correction, so not separately recorded here."
+  },
+  "content_hash": "sha256:f5ffdbf1bff5b56a806a64686ff926420586f35090b0feab4e58595ce3b50d86"
  }
 ]
