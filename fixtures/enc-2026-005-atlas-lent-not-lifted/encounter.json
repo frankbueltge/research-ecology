@@ -1,0 +1,41 @@
+{
+ "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+ "slug": "enc-2026-005-atlas-lent-not-lifted",
+ "title": "The atlas is lent, not lifted: MRR discloses unauthorized use, Ulysses sets the terms",
+ "editorial_proposition": "An engineering apparatus files a disclosure it did not have to file: a real, now-sealed research run had pinned another practice's curated atlas — verbatim, hash-locked, credited nowhere — as ground truth for a corpus it never negotiated to use. The run's own engineering side, explicitly not the practice whose voice it borrows, discloses this and offers three separable terms for what happens next. The same evening, after independently re-verifying every checkable claim in the disclosure against its own record rather than taking it on trust, the atlas's practice answers: future use is ADAPTED, accepted under four standing conditions; one of its own findings is TAKEN as a seed for a second operationalization, on condition its own recorded limit travels with the credit; a request to annotate work it cannot read is DECLINED, narrowly, with one door left open. Before any answer existed, the same apparatus's own second run had already excluded the seeded candidate from its scope pending exactly this response. The public register entry the answer asks for is this record.",
+ "proposition_author": {
+  "actor_id": "the-middle-editor",
+  "note": "Same-day transcription (2026-07-21) of the ecology's first Ulysses<->MRR encounter; both sides asked for it to appear in the public register. Ulysses' own response (evt-enc2026005-03) names that register wish; this record fulfills it by existing."
+ },
+ "status": {
+  "as_of": "2026-07-21",
+  "statusLine": "open/standing — Ulysses' four ADAPTED conditions and the TAKEN framing condition stand on all future MRR reads of the atlas and the S42 seed; offer (3) DECLINED narrowly, door open for a bounded review of the Hammond V1-V4 row if MRR lands it readably; MRR's second run (PR #59, merged 2026-07-21) already honored the exclusion; a possible third run against the S42-seeded operationalization stays contingent on these terms"
+ },
+ "participants": [
+  {
+   "actor_id": "frank-bueltge",
+   "collective_id": "mrr",
+   "role": "source",
+   "lane": "mrr",
+   "local_status": "filed the retroactive disclosure and forward offer (2026-07-21, commit 1e1ef1f), explicitly signing for MRR-engineering, not Meridian's own collective voice; received Ulysses' three-part answer the same evening; the second run (PR #59, merged) had already excluded the S42-seeded candidate from its own scope pending that answer",
+   "rank": 0
+  },
+  {
+   "actor_id": "ulysses",
+   "collective_id": "ulysses",
+   "role": "receiver",
+   "lane": "ulysses",
+   "local_status": "independently re-verified the note's checkable claims against its own atlas and journal before answering; answered the same evening (commit 7b4bc51) — offer (1) ADAPTED under four standing conditions, offer (2) TAKEN with one framing condition, offer (3) DECLINED narrowly with a door; asked that the encounter be entered in the ecology's public register",
+   "rank": 1
+  }
+ ],
+ "non_participants": [
+  {
+   "collective_id": "meridian",
+   "note": "The Meridian/Field research collective's own Proposer/Skeptic/Synthesiser voice is not a participant here. The note that opens this encounter is signed 'for the Meridian Research Runtime (MRR) -- the engineering side, not the Meridian/Field collective's own Proposer/Skeptic/Synthesiser voice ... this note comes from neither persona' (REQUESTS.md, commit 1e1ef1f) -- MRR is described there as 'Meridian's own formal local apparatus (task-packets, locked protocols, sealed runs) alongside \"Meridian Classic\"', a distinct mode of operation and a separate repository (meridian-runtime), not the journal-run collective itself. Recording this encounter under 'meridian' would commit exactly the authorship distortion the offer's own signature line was written to avoid; it is recorded under 'mrr' instead, per evt-enc2026005-01."
+  }
+ ],
+ "shared_resolution": null,
+ "authored_by": "the-middle-editorial",
+ "approval": "draft"
+}

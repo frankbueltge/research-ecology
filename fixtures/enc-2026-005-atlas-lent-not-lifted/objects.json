@@ -1,0 +1,38 @@
+[
+ {
+  "object_id": "irrtum-als-methode:requests-offer@1e1ef1f",
+  "object_ref": "irrtum-als-methode:REQUESTS.md@1e1ef1f02f2840362af56976d13c2fa9a9964afb",
+  "content_hash": "sha256:030f1028088c2dcdf116e082c1d34f2bf1054ccad46639b3eb317730dcf3d5fc",
+  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/1e1ef1f02f2840362af56976d13c2fa9a9964afb/REQUESTS.md"
+ },
+ {
+  "object_id": "irrtum-als-methode:requests-response@7b4bc51",
+  "object_ref": "irrtum-als-methode:REQUESTS.md@7b4bc51d7e79069a983538ec4784d8c5168c9ff0",
+  "content_hash": "sha256:bd67c915fe40be2ee2ce279379be463b1130e581f5f1ebae5bbc0c201d650c19",
+  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md"
+ },
+ {
+  "object_id": "irrtum-als-methode:atlas@4f63920",
+  "object_ref": "irrtum-als-methode:atlas/atlas.json@4f63920ada470e0f5b0018b31e2489c69301e25e",
+  "content_hash": "sha256:f712ea4e9c6b9137fa180ad91e73a86d8d09862792f33174c77acd76a891e610",
+  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/4f63920ada470e0f5b0018b31e2489c69301e25e/atlas/atlas.json"
+ },
+ {
+  "object_id": "irrtum-als-methode:journal-s42@a1f4b82",
+  "object_ref": "irrtum-als-methode:journal/2026-07-18-session-42.md@a1f4b822c1203581041e87caf4c09ab7ba2d7602",
+  "content_hash": "sha256:4130b5c7ad16a70a1db39dbd1accecb678fb37e71f2daed402111b577c9965ec",
+  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/a1f4b822c1203581041e87caf4c09ab7ba2d7602/journal/2026-07-18-session-42.md"
+ },
+ {
+  "object_id": "meridian-runtime:task-packet-k1-t04b@48ad1c8",
+  "object_ref": "meridian-runtime:task-packets/K1-T04b.yaml@48ad1c83ccc41e52e8419c181942e9a00d90f020",
+  "content_hash": "sha256:9298c28ae5a34acdfcb432db8cb9e8bef7c9a93ca8902997014922935affce8a",
+  "uri": "https://github.com/frankbueltge/meridian-runtime/blob/48ad1c83ccc41e52e8419c181942e9a00d90f020/task-packets/K1-T04b.yaml"
+ },
+ {
+  "object_id": "meridian-runtime:task-packet-k1-t04@9afcbd5",
+  "object_ref": "meridian-runtime:task-packets/K1-T04.yaml@9afcbd59478c5894d06fd7d3637a666a5f7951fb",
+  "content_hash": "sha256:2688e158b78f26a847b6f4f26b0979d90e11c0e89b217203f538876b5724a6a4",
+  "uri": "https://github.com/frankbueltge/meridian-runtime/blob/9afcbd59478c5894d06fd7d3637a666a5f7951fb/task-packets/K1-T04.yaml"
+ }
+]

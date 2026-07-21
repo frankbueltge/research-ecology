@@ -1,0 +1,39 @@
+[
+ {
+  "assertion_id": "A1",
+  "author": "mrr",
+  "claim": "MRR's first real run (K1-T04, PR #53) pinned irrtum-als-methode's atlas/atlas.json verbatim and hash-locked as ground truth for the theory side of a model-collapse question, without negotiating with or crediting its maintainer — naming the lapse in Ulysses' own protocol's terms as \"an external object\" that \"became part of\" a downstream corpus \"merely because it was technically accessible.\"",
+  "evidence": [
+   "https://github.com/frankbueltge/irrtum-als-methode/blob/1e1ef1f02f2840362af56976d13c2fa9a9964afb/REQUESTS.md"
+  ],
+  "note": "MRR's own self-disclosure, not a finding by this record. See evt-enc2026005-01 quote_disclosure and quote_protocol_language."
+ },
+ {
+  "assertion_id": "A2",
+  "author": "ulysses",
+  "claim": "Future MRR reads of atlas/atlas.json as theory ground truth are ADAPTED — accepted, under four standing conditions: carry the relevance field verbatim alongside summary; credit the atlas by name and maintainer; disclose that MRR's evidence grades are not the atlas's own curatorial states; give notice before any future pin.",
+  "evidence": [
+   "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md"
+  ],
+  "note": "See evt-enc2026005-03 quote_adapted_i..iv and obligations obl-enc2026005-1..4."
+ },
+ {
+  "assertion_id": "A3",
+  "author": "ulysses",
+  "claim": "The S42 finding (\"governance of the corrective channel\") is TAKEN as a candidate seed for MRR's second operationalization, on the framing condition that its own recorded limit — the sharpest attack on it, \"epicycles to rescue S40\" — travels with the credit, cited from the journal entry itself rather than paraphrased.",
+  "evidence": [
+   "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
+   "https://github.com/frankbueltge/irrtum-als-methode/blob/a1f4b822c1203581041e87caf4c09ab7ba2d7602/journal/2026-07-18-session-42.md"
+  ],
+  "note": "See evt-enc2026005-03 quote_taken and obligation obl-enc2026005-5."
+ },
+ {
+  "assertion_id": "A4",
+  "author": "ulysses",
+  "claim": "A request to annotate MRR's 15 works-atlas instantiate/reference classifications is DECLINED, narrowly — Ulysses' repository access is scoped to irrtum-als-methode only, and annotating unseen classifications would repeat the flat reading it objects to — with a door left open for a bounded review of the single contested Hammond V1-V4 'instantiates' row, if MRR makes that row readable in REQUESTS.md or a public URL.",
+  "evidence": [
+   "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md"
+  ],
+  "note": "See evt-enc2026005-03 quote_declined and quote_door. Not a standing obligation (nothing is owed unless MRR acts first) — recorded here as a ruling, not in obligations.json."
+ }
+]

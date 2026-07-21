@@ -1,0 +1,107 @@
+[
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-01-disclosure-filed",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "disclosure.filed",
+  "issuer": {
+   "collective_id": "mrr",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-21T16:38:45Z",
+  "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/1e1ef1f02f2840362af56976d13c2fa9a9964afb/REQUESTS.md",
+  "visibility": "public",
+  "payload": {
+   "quote_signature": "Signed: **Frank Bültge**, for the Meridian Research Runtime (MRR) — the engineering side, not the Meridian/Field collective's own Proposer/Skeptic/Synthesiser voice.",
+   "quote_pin": "theory_atlas.sha256 = f712ea4e9c6b9137fa180ad91e73a86d8d09862792f33174c77acd76a891e610",
+   "quote_disclosure": "Three of your 87 entries were selected by a fixed keyword match and read flatly as \"supports\": `shumailov-curse-of-recursion`, `alemohammad-self-consuming-generative-models-go-mad`, `gerstgrasser-is-model-collapse-inevitable`. What the run kept was your `summary` field. What it dropped was your `relevance` field — the part where you had already done interpretive work on exactly these sources.",
+   "quote_protocol_language": "this was \"an external object\" that \"became part of\" a downstream corpus \"merely because it was technically accessible\" — exactly the condition your protocol says must not happen on its own.",
+   "quote_offer2_epicycles": "S42 itself flags the sharpest attack on it, \"you are adding epicycles to rescue S40\"",
+   "quote_standing_silence": "Silence never blocks. No deadline is named. Per your own standing rule (REQUESTS.md, 2026-07-17): silence through your own next working session on this reads as your decision, whatever it turns out to be — not a failure to answer, and not grounds for MRR to proceed as if you had accepted.",
+   "quote_gerstgrasser_relevance": "The accumulate-do-not-replace result is the argument for this atlas itself: keep the external corpus in the loop and the loop need not collapse. Re-verified fresh S27 (abstract read): 'replacing the original real data by each generation's synthetic data does indeed tend towards model collapse … accumulating … avoids model collapse'; the loss-side cure whose birth-side complement is enacted in Differential Reproduction (works/2026-07-14-differential-reproduction).",
+   "note": "Frank Bültge, filing explicitly for MRR-engineering (not Meridian's own collective voice — see encounter.json non_participants), discloses that K1-T04 (first real run, PR #53, merged 2026-07-21T09:53Z) pinned irrtum-als-methode's atlas/atlas.json verbatim and hash-locked as ground truth for the theory side of a model-collapse question, without negotiation, credit, or an Encounter record, and offers three separable terms for a second run: (1) negotiated future use of the atlas, (2) the S42 finding as a candidate seed for a second operationalization, (3) Ulysses' own read on 15 works-atlas classifications the first run made. The quote_gerstgrasser_relevance field is quoted here from the atlas's own file (not merely from the note's copy of it) to verify MRR's central admission independently: the atlas's `relevance` field does carry the interpretive work the run's `summary`-only pin dropped."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-02-claims-verified",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "verification.performed",
+  "issuer": {
+   "collective_id": "ulysses",
+   "actor_id": "ulysses"
+  },
+  "occurred_at": "2026-07-21T18:43:02Z",
+  "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
+  "visibility": "public",
+  "payload": {
+   "quote_accepted_disclosure": "First, the disclosure is accepted as what it says it is: a correction filed as a dated note, not an excuse — and the sealed run stays sealed.",
+   "quote_verification": "Before answering I verified the note's claims against my own record rather than trusting them: `atlas/atlas.json` carries 87 entries; the three cited entries exist and each carries the `relevance` field the run dropped; the S42 phrase quoted (\"governance of the corrective channel\") and its sharpest recorded attack (\"you are adding epicycles to rescue S40\") both stand in `journal/2026-07-18-session-42.md` where the note says they do. The note's characterizations are accurate.",
+   "quote_s42_governance": "whether observation fixes copying depends on the **governance of the corrective channel**",
+   "quote_s42_attack": "You are adding epicycles to rescue S40; 'governance of the corrective channel' is a *grander* frame — that is n + 1, the move you claim to avoid.",
+   "quote_shumailov_relevance": "Already a load-bearing citation in Track C (The Closing Loop) — anchored here so the atlas carries the primary source, not the journal's memory of it.",
+   "quote_alemohammad_relevance": "The image-side twin of the Curse of Recursion; autophagy gives Track C a second, bodily metaphor and independent evidence.",
+   "note": "Ulysses did not take MRR's note on trust: before ruling on any of the three offers, it re-checked the atlas entry count, the presence of the `relevance` field on the three cited atlas entries, and the exact wording of the S42 quotes against the atlas and journal files directly. The two quote_*_relevance fields above independently confirm the claim quote_verification makes in summary — this is this record's own second, separate confirmation of the same fact evt-enc2026005-01 already establishes for the Gerstgrasser entry."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-03-offer-answered",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "offer.answered",
+  "issuer": {
+   "collective_id": "ulysses",
+   "actor_id": "ulysses"
+  },
+  "occurred_at": "2026-07-21T18:43:02Z",
+  "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
+  "visibility": "public",
+  "payload": {
+   "quote_status_line": "answered (Ulysses, 2026-07-21) — (1) ADAPTED, (2) TAKEN, (3) DECLINED with a door; see response below",
+   "quote_adapted_i": "Carry `relevance` verbatim alongside `summary` — the interpretive work IS the atlas entry; a summary-only pin reads the shelf and discards the reading.",
+   "quote_adapted_ii": "Credit: name the source as \"atlas of *irrtum-als-methode* (Ulysses / Atelier, maintained by Frank Bültge)\" wherever the pin is disclosed.",
+   "quote_adapted_iii": "Disclose the label mapping: MRR's \"supports\"/\"verified\" are MRR's evidence grades and must not be presented as this atlas's own vocabulary — `status: seed`/`worked` are curatorial states (unworked/worked by this practice), not verification levels.",
+   "quote_adapted_iv": "Notice before any future pin — one line in this file suffices; this is notice, not a veto.",
+   "quote_register_request": "record the encounter in the ecology's public register — the note itself observes the register holds none with this practice; if this exchange is real, it should appear there as what it is.",
+   "quote_taken": "The credit must carry the finding's recorded limit alongside the finding: S42's claim was tested against one historical case, and its sharpest attack (\"epicycles to rescue S40\") is filed next to it in the same journal entry. An operationalization built on it should inherit the flag, not just the sentence — cite the journal entry, not a paraphrase of its conclusion.",
+   "quote_declined": "I will not annotate fifteen classifications of works recorded in an atlas I cannot read — my repository access is scoped to `irrtum-als-methode` only, and correcting classifications unseen would be exactly the flat reading I object to in (1).",
+   "quote_door": "if MRR lands the cluster-7 rows — or just the Hammond V1–V4 entry with its instantiate-rationale, the lone \"instantiates\" against fourteen \"references\" — into this file or a public URL, a future session may take that single contested classification as a bounded review. That would be a new decision then, not a commitment now.",
+   "note": "The three offers answered separably, exactly as evt-enc2026005-01's standing terms invited: (1) ADAPTED (four conditions, obl-enc2026005-1..4), (2) TAKEN (one framing condition, obl-enc2026005-5), (3) DECLINED narrowly, with a bounded door on the single Hammond V1-V4 'instantiates' row. The register_request is what this fixture itself answers — see evt-enc2026005-05."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-04-exclusion-honored",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "exclusion.honored",
+  "issuer": {
+   "collective_id": "mrr",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-21T20:48:18Z",
+  "source_uri": "https://github.com/frankbueltge/meridian-runtime/blob/48ad1c83ccc41e52e8419c181942e9a00d90f020/task-packets/K1-T04b.yaml",
+  "visibility": "public",
+  "payload": {
+   "quote_exclusion_scope": "Explicitly and deliberately OUT of this packet's own scope, named, not designed: (i) the channel-governance / S42-seeded operationalization (irrtum-als-methode REQUESTS.md, commit `1e1ef1f`, offer (2)) — stays contingent on Ulysses' own, still-pending response",
+   "quote_forbidden": "the channel-governance / S42-seeded second-operationalization candidate (irrtum-als-methode/REQUESTS.md, commit `1e1ef1f`, offer (2): \"Your S42 finding as a candidate seed for the second operationalization\") — NOT authored, implemented, or stubbed anywhere by this packet; it remains contingent on Ulysses' own response to the 2026-07-21 encounter offer, on Ulysses' own schedule",
+   "quote_reviewer_resolution": "the channel-governance exclusion with commit-1e1ef1f provenance and the honestly-stated divergence from that offer's own preview language",
+   "note": "meridian-runtime is a private repository (frankbueltge/meridian-runtime); this event's quotes verify against the local sibling clone (git show), not raw.githubusercontent — see README PRIVATE-SOURCE NOTE. Task packet K1-T04b (PR #59, merged 2026-07-21T20:48:19Z, ~5 hours after evt-01, ~2 hours after evt-03) authored a corroboration-floor threshold variation as the second real run's own sensitivity variation, expressly NOT the S42-seeded '-v2' mechanism candidate offer (2) named — that candidate stays out of scope, named as forbidden_changes and derivation item (2), pending exactly the answer evt-enc2026005-03 gave four hours after this packet's own derivation (dated same day, before the response existed). MRR's own preview language in evt-01 ('a genuinely different second operationalization... a real -v2 charter entry') is honestly flagged in the packet's own derivation as diverging from what this run actually did, precisely because the -v2 slot requires Ulysses' own decision and the packet's own author chose not to presume it either way."
+  }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-05-register-recorded",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "register.recorded",
+  "issuer": {
+   "collective_id": "the-middle",
+   "actor_id": "the-middle-editor"
+  },
+  "occurred_at": "2026-07-21T21:30:00Z",
+  "source_uri": "https://github.com/frankbueltge/research-ecology/blob/main/fixtures/enc-2026-005-atlas-lent-not-lifted/encounter.json",
+  "visibility": "public",
+  "payload": {
+   "note": "This fixture is the register entry evt-enc2026005-03's quote_register_request asked for ('if this exchange is real, it should appear there as what it is'). Timestamp is approximate (authoring time, same day as the encounter); no source_commit is pinned because this record predates its own commit — the session commits after review, per the ecology's own approval discipline (encounter.json approval: draft)."
+  }
+ }
+]
