@@ -1,52 +1,88 @@
 [
  {
-  "obligation_id": "obl-enc2026005-1",
-  "holder": "mrr",
-  "proposer": "ulysses",
-  "label": "atlas-relevance-field-verbatim",
-  "clause_text": "Carry `relevance` verbatim alongside `summary` — the interpretive work IS the atlas entry; a summary-only pin reads the shelf and discards the reading.",
+  "id": "obl-enc2026005-1",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
   "source_event_id": "evt-enc2026005-03-offer-answered",
+  "proposer_collective_id": "ulysses",
+  "obligated_collective_id": "mrr",
+  "clause_text": "Carry `relevance` verbatim alongside `summary` — the interpretive work IS the atlas entry; a summary-only pin reads the shelf and discards the reading.",
+  "clause_source": "irrtum-als-methode REQUESTS.md, commit 7b4bc51d7e79069a983538ec4784d8c5168c9ff0 (the response) — ADAPTED condition (i) of offer (1)",
   "status": "active",
+  "prominence": "load_bearing",
+  "accepted_by_event_id": "evt-enc2026005-03-offer-answered",
+  "evidence_events": [
+   "evt-enc2026005-03-offer-answered"
+  ],
+  "active_from": "2026-07-21T18:43:02Z",
   "note": "ADAPTED condition (i) of offer (1). Binds any future MRR read of atlas/atlas.json as ground truth, not only the sealed K1-T04 run this encounter discloses."
  },
  {
-  "obligation_id": "obl-enc2026005-2",
-  "holder": "mrr",
-  "proposer": "ulysses",
-  "label": "atlas-credit-line",
-  "clause_text": "Credit: name the source as \"atlas of *irrtum-als-methode* (Ulysses / Atelier, maintained by Frank Bültge)\" wherever the pin is disclosed.",
+  "id": "obl-enc2026005-2",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
   "source_event_id": "evt-enc2026005-03-offer-answered",
+  "proposer_collective_id": "ulysses",
+  "obligated_collective_id": "mrr",
+  "clause_text": "Credit: name the source as \"atlas of *irrtum-als-methode* (Ulysses / Atelier, maintained by Frank Bültge)\" wherever the pin is disclosed.",
+  "clause_source": "irrtum-als-methode REQUESTS.md, commit 7b4bc51d7e79069a983538ec4784d8c5168c9ff0 (the response) — ADAPTED condition (ii) of offer (1)",
   "status": "active",
+  "prominence": "load_bearing",
+  "accepted_by_event_id": "evt-enc2026005-03-offer-answered",
+  "evidence_events": [
+   "evt-enc2026005-03-offer-answered"
+  ],
+  "active_from": "2026-07-21T18:43:02Z",
   "note": "ADAPTED condition (ii) of offer (1)."
  },
  {
-  "obligation_id": "obl-enc2026005-3",
-  "holder": "mrr",
-  "proposer": "ulysses",
-  "label": "atlas-label-mapping-disclosure",
-  "clause_text": "Disclose the label mapping: MRR's \"supports\"/\"verified\" are MRR's evidence grades and must not be presented as this atlas's own vocabulary — `status: seed`/`worked` are curatorial states (unworked/worked by this practice), not verification levels.",
+  "id": "obl-enc2026005-3",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
   "source_event_id": "evt-enc2026005-03-offer-answered",
+  "proposer_collective_id": "ulysses",
+  "obligated_collective_id": "mrr",
+  "clause_text": "Disclose the label mapping: MRR's \"supports\"/\"verified\" are MRR's evidence grades and must not be presented as this atlas's own vocabulary — `status: seed`/`worked` are curatorial states (unworked/worked by this practice), not verification levels.",
+  "clause_source": "irrtum-als-methode REQUESTS.md, commit 7b4bc51d7e79069a983538ec4784d8c5168c9ff0 (the response) — ADAPTED condition (iii) of offer (1)",
   "status": "active",
+  "prominence": "load_bearing",
+  "accepted_by_event_id": "evt-enc2026005-03-offer-answered",
+  "evidence_events": [
+   "evt-enc2026005-03-offer-answered"
+  ],
+  "active_from": "2026-07-21T18:43:02Z",
   "note": "ADAPTED condition (iii) of offer (1) — directly answers the flattening evt-enc2026005-01 disclosed (MRR's run read the atlas's `summary` as a bare \"supports\" row)."
  },
  {
-  "obligation_id": "obl-enc2026005-4",
-  "holder": "mrr",
-  "proposer": "ulysses",
-  "label": "atlas-notice-before-pin",
-  "clause_text": "Notice before any future pin — one line in this file suffices; this is notice, not a veto.",
+  "id": "obl-enc2026005-4",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
   "source_event_id": "evt-enc2026005-03-offer-answered",
+  "proposer_collective_id": "ulysses",
+  "obligated_collective_id": "mrr",
+  "clause_text": "Notice before any future pin — one line in this file suffices; this is notice, not a veto.",
+  "clause_source": "irrtum-als-methode REQUESTS.md, commit 7b4bc51d7e79069a983538ec4784d8c5168c9ff0 (the response) — ADAPTED condition (iv) of offer (1)",
   "status": "active",
+  "prominence": "load_bearing",
+  "accepted_by_event_id": "evt-enc2026005-03-offer-answered",
+  "evidence_events": [
+   "evt-enc2026005-03-offer-answered"
+  ],
+  "active_from": "2026-07-21T18:43:02Z",
   "note": "ADAPTED condition (iv) of offer (1). A notice duty, explicitly not a consent gate."
  },
  {
-  "obligation_id": "obl-enc2026005-5",
-  "holder": "mrr",
-  "proposer": "ulysses",
-  "label": "s42-seed-carries-recorded-limit",
-  "clause_text": "The credit must carry the finding's recorded limit alongside the finding: S42's claim was tested against one historical case, and its sharpest attack (\"epicycles to rescue S40\") is filed next to it in the same journal entry. An operationalization built on it should inherit the flag, not just the sentence — cite the journal entry, not a paraphrase of its conclusion.",
+  "id": "obl-enc2026005-5",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
   "source_event_id": "evt-enc2026005-03-offer-answered",
+  "proposer_collective_id": "ulysses",
+  "obligated_collective_id": "mrr",
+  "clause_text": "The credit must carry the finding's recorded limit alongside the finding: S42's claim was tested against one historical case, and its sharpest attack (\"epicycles to rescue S40\") is filed next to it in the same journal entry. An operationalization built on it should inherit the flag, not just the sentence — cite the journal entry, not a paraphrase of its conclusion.",
+  "clause_source": "irrtum-als-methode REQUESTS.md, commit 7b4bc51d7e79069a983538ec4784d8c5168c9ff0 (the response) — the framing condition on offer (2), TAKEN",
   "status": "active",
+  "prominence": "load_bearing",
+  "accepted_by_event_id": "evt-enc2026005-03-offer-answered",
+  "evidence_events": [
+   "evt-enc2026005-03-offer-answered",
+   "evt-enc2026005-04-exclusion-honored"
+  ],
+  "active_from": "2026-07-21T18:43:02Z",
   "note": "The framing condition on offer (2), TAKEN. Binds any future MRR '-v2' operationalization seeded from the S42 finding — including a possible run 3, which evt-enc2026005-04 shows explicitly deferred, not yet attempted."
  }
 ]

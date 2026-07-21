@@ -1,38 +1,130 @@
 [
  {
-  "object_id": "irrtum-als-methode:requests-offer@1e1ef1f",
-  "object_ref": "irrtum-als-methode:REQUESTS.md@1e1ef1f02f2840362af56976d13c2fa9a9964afb",
+  "id": "irrtum-als-methode:requests-offer@1e1ef1f",
+  "collective_id": "ulysses",
+  "local_object_id": "requests-offer",
+  "object_version": "1e1ef1f02f2840362af56976d13c2fa9a9964afb",
+  "canonical_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/1e1ef1f02f2840362af56976d13c2fa9a9964afb/REQUESTS.md",
+  "media_type": "text/markdown",
+  "local_object_type": "Team note — inbox request (irrtum-als-methode's own REQUESTS.md convention); MRR's retroactive disclosure + forward offer, 2026-07-21",
+  "interoperability_class": "other",
+  "title_cache": "MRR's retroactive disclosure & forward offer (REQUESTS.md, 2026-07-21)",
+  "summary_cache": "Frank Bültge, signing for MRR-engineering, discloses that K1-T04 pinned the atlas verbatim without negotiation or credit, and offers three separable terms for a second run.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "self-disclosed by MRR-engineering; independently verified by Ulysses (evt-enc2026005-02-claims-verified)",
   "content_hash": "sha256:030f1028088c2dcdf116e082c1d34f2bf1054ccad46639b3eb317730dcf3d5fc",
-  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/1e1ef1f02f2840362af56976d13c2fa9a9964afb/REQUESTS.md"
+  "source_commit": "1e1ef1f02f2840362af56976d13c2fa9a9964afb",
+  "source_metadata": {
+   "pinned_file": "REQUESTS.md",
+   "section_note": "\"Team note — 2026-07-21 — Retroactive disclosure...\" (README.md provenance table row 1)"
+  },
+  "importer_version": "fixture-manual-1.0"
  },
  {
-  "object_id": "irrtum-als-methode:requests-response@7b4bc51",
-  "object_ref": "irrtum-als-methode:REQUESTS.md@7b4bc51d7e79069a983538ec4784d8c5168c9ff0",
+  "id": "irrtum-als-methode:requests-response@7b4bc51",
+  "collective_id": "ulysses",
+  "local_object_id": "requests-response",
+  "object_version": "7b4bc51d7e79069a983538ec4784d8c5168c9ff0",
+  "canonical_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
+  "media_type": "text/markdown",
+  "local_object_type": "Team note — inbox response (same REQUESTS.md file/section); Ulysses' three-part answer, 2026-07-21",
+  "interoperability_class": "other",
+  "title_cache": "Ulysses' three-part answer (REQUESTS.md, 2026-07-21)",
+  "summary_cache": "Ulysses answers after independently re-verifying the note's claims: offer (1) ADAPTED under four standing conditions, offer (2) TAKEN under one framing condition, offer (3) DECLINED narrowly with a bounded door.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "Ulysses' own ruling, same evening, after independent re-verification (evt-enc2026005-02-claims-verified)",
   "content_hash": "sha256:bd67c915fe40be2ee2ce279379be463b1130e581f5f1ebae5bbc0c201d650c19",
-  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md"
+  "source_commit": "7b4bc51d7e79069a983538ec4784d8c5168c9ff0",
+  "source_metadata": {
+   "pinned_file": "REQUESTS.md",
+   "section_note": "the response, appended into the same file/section (README.md provenance table row 2)"
+  },
+  "importer_version": "fixture-manual-1.0"
  },
  {
-  "object_id": "irrtum-als-methode:atlas@4f63920",
-  "object_ref": "irrtum-als-methode:atlas/atlas.json@4f63920ada470e0f5b0018b31e2489c69301e25e",
+  "id": "irrtum-als-methode:atlas@4f63920",
+  "collective_id": "ulysses",
+  "local_object_id": "atlas",
+  "object_version": "4f63920ada470e0f5b0018b31e2489c69301e25e",
+  "canonical_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/4f63920ada470e0f5b0018b31e2489c69301e25e/atlas/atlas.json",
+  "media_type": "application/json",
+  "local_object_type": "Curated source atlas (the practice's own curatorial file: 87 entries, `summary` + `relevance` fields)",
+  "interoperability_class": "source_bundle",
+  "title_cache": "irrtum-als-methode atlas (87 entries)",
+  "summary_cache": "87 curated entries pairing a `summary` field with the atlas's own interpretive `relevance` field — the field MRR's run dropped.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "curated by Ulysses/Atelier; entry count and the three cited entries' `relevance` field independently re-verified (evt-enc2026005-02-claims-verified)",
   "content_hash": "sha256:f712ea4e9c6b9137fa180ad91e73a86d8d09862792f33174c77acd76a891e610",
-  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/4f63920ada470e0f5b0018b31e2489c69301e25e/atlas/atlas.json"
+  "source_commit": "4f63920ada470e0f5b0018b31e2489c69301e25e",
+  "source_metadata": {
+   "pinned_file": "atlas/atlas.json",
+   "note": "unchanged since this commit through 2026-07-21 (README.md provenance table row 3); 87 entries"
+  },
+  "importer_version": "fixture-manual-1.0"
  },
  {
-  "object_id": "irrtum-als-methode:journal-s42@a1f4b82",
-  "object_ref": "irrtum-als-methode:journal/2026-07-18-session-42.md@a1f4b822c1203581041e87caf4c09ab7ba2d7602",
+  "id": "irrtum-als-methode:journal-s42@a1f4b82",
+  "collective_id": "ulysses",
+  "local_object_id": "journal-s42",
+  "object_version": "a1f4b822c1203581041e87caf4c09ab7ba2d7602",
+  "canonical_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/a1f4b822c1203581041e87caf4c09ab7ba2d7602/journal/2026-07-18-session-42.md",
+  "media_type": "text/markdown",
+  "local_object_type": "Journal entry — Session 42 finding and its own recorded limit",
+  "interoperability_class": "claim",
+  "title_cache": "Session 42 — governance of the corrective channel",
+  "summary_cache": "The S42 finding (\"governance of the corrective channel\") and its own recorded sharpest attack (\"epicycles to rescue S40\"), filed in the same entry.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "journal entry; exact wording independently re-verified against source (evt-enc2026005-02-claims-verified)",
   "content_hash": "sha256:4130b5c7ad16a70a1db39dbd1accecb678fb37e71f2daed402111b577c9965ec",
-  "uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/a1f4b822c1203581041e87caf4c09ab7ba2d7602/journal/2026-07-18-session-42.md"
+  "source_commit": "a1f4b822c1203581041e87caf4c09ab7ba2d7602",
+  "source_metadata": {
+   "pinned_file": "journal/2026-07-18-session-42.md",
+   "note": "the S42 finding and its own recorded limit (README.md provenance table row 4)"
+  },
+  "importer_version": "fixture-manual-1.0"
  },
  {
-  "object_id": "meridian-runtime:task-packet-k1-t04b@48ad1c8",
-  "object_ref": "meridian-runtime:task-packets/K1-T04b.yaml@48ad1c83ccc41e52e8419c181942e9a00d90f020",
+  "id": "meridian-runtime:task-packet-k1-t04b@48ad1c8",
+  "collective_id": "mrr",
+  "local_object_id": "task-packet-k1-t04b",
+  "object_version": "48ad1c83ccc41e52e8419c181942e9a00d90f020",
+  "canonical_uri": "https://github.com/frankbueltge/meridian-runtime/blob/48ad1c83ccc41e52e8419c181942e9a00d90f020/task-packets/K1-T04b.yaml",
+  "media_type": "application/x-yaml",
+  "local_object_type": "MRR task packet — second real run (PR #59), honors the S42-seed exclusion",
+  "interoperability_class": "instrument",
+  "title_cache": "K1-T04b — second real run (PR #59)",
+  "summary_cache": "The second real run, authored explicitly excluding the S42-seeded operationalization pending Ulysses' own response.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "PR #59, merged; exclusion scope self-declared, honestly flagged against MRR's own preview language (evt-enc2026005-04-exclusion-honored)",
   "content_hash": "sha256:9298c28ae5a34acdfcb432db8cb9e8bef7c9a93ca8902997014922935affce8a",
-  "uri": "https://github.com/frankbueltge/meridian-runtime/blob/48ad1c83ccc41e52e8419c181942e9a00d90f020/task-packets/K1-T04b.yaml"
+  "source_commit": "48ad1c83ccc41e52e8419c181942e9a00d90f020",
+  "source_metadata": {
+   "pinned_file": "task-packets/K1-T04b.yaml",
+   "note": "second real run, PR #59 — honors the exclusion (README.md provenance table row 5)",
+   "private_repo_note": "meridian-runtime is a PRIVATE repository — verified against the local sibling clone (git show), not raw.githubusercontent (see README.md PRIVATE-REPO NOTE)."
+  },
+  "importer_version": "fixture-manual-1.0"
  },
  {
-  "object_id": "meridian-runtime:task-packet-k1-t04@9afcbd5",
-  "object_ref": "meridian-runtime:task-packets/K1-T04.yaml@9afcbd59478c5894d06fd7d3637a666a5f7951fb",
+  "id": "meridian-runtime:task-packet-k1-t04@9afcbd5",
+  "collective_id": "mrr",
+  "local_object_id": "task-packet-k1-t04",
+  "object_version": "9afcbd59478c5894d06fd7d3637a666a5f7951fb",
+  "canonical_uri": "https://github.com/frankbueltge/meridian-runtime/blob/9afcbd59478c5894d06fd7d3637a666a5f7951fb/task-packets/K1-T04.yaml",
+  "media_type": "application/x-yaml",
+  "local_object_type": "MRR task packet — first real run (PR #53), the sealed run this encounter discloses",
+  "interoperability_class": "instrument",
+  "title_cache": "K1-T04 — first real run (PR #53)",
+  "summary_cache": "The sealed first real run that pinned the atlas as ground truth without negotiation — context only, not quoted by this fixture.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "PR #53, merged; the sealed run under disclosure — not itself re-opened by this encounter",
   "content_hash": "sha256:2688e158b78f26a847b6f4f26b0979d90e11c0e89b217203f538876b5724a6a4",
-  "uri": "https://github.com/frankbueltge/meridian-runtime/blob/9afcbd59478c5894d06fd7d3637a666a5f7951fb/task-packets/K1-T04.yaml"
+  "source_commit": "9afcbd59478c5894d06fd7d3637a666a5f7951fb",
+  "source_metadata": {
+   "pinned_file": "task-packets/K1-T04.yaml",
+   "note": "first real run, PR #53 — context only, not quoted (README.md provenance table row 6)",
+   "private_repo_note": "meridian-runtime is a PRIVATE repository (see README.md PRIVATE-REPO NOTE)."
+  },
+  "importer_version": "fixture-manual-1.0"
  }
 ]

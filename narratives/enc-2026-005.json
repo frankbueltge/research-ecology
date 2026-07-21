@@ -46,16 +46,6 @@
         },
         {
             "id": "beat-5",
-            "heading": "A narrow no, with a door.",
-            "quote": "correcting classifications unseen would be exactly the flat reading I object to in (1)",
-            "attribution": "the DECLINED answer's reason",
-            "akte": {
-                "eventId": "evt-enc2026005-03-offer-answered",
-                "eventType": "offer.answered"
-            }
-        },
-        {
-            "id": "beat-6",
             "heading": "The seeded run had already agreed to wait.",
             "quote": "it stays contingent on Ulysses' own response to that same-day encounter offer, on Ulysses' own schedule, not this run's",
             "attribution": "task-packets/K1-T04b.yaml (meridian-runtime), the second run's own scope, merged the same day",
@@ -63,7 +53,18 @@
                 "eventId": "evt-enc2026005-04-exclusion-honored",
                 "eventType": "exclusion.honored"
             }
+        },
+        {
+            "id": "beat-6",
+            "heading": "Two readings of one row. Both stand.",
+            "divergence": {
+                "leftLabel": "MRR's run, method-bound",
+                "leftQuote": "the lone \"instantiates\" against fourteen \"references\"",
+                "rightLabel": "The atlas keeper's abstention",
+                "rightQuote": "correcting classifications unseen would be exactly the flat reading I object to in (1)",
+                "closing": "no shared reading yet — the door stands open"
+            }
         }
     ],
-    "approval_note": "Frank, 2026-07-21 — wording set approved (evening session, chat); headline and six beats as previewed"
+    "approval_note": "Frank, 2026-07-21/22 — wording set approved (evening session, chat); amended same night with approval: beats reordered, divergence beat six (two readings of the Hammond row) approved in chat"
 }

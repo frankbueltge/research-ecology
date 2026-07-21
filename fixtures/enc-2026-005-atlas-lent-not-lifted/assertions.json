@@ -1,39 +1,137 @@
 [
  {
   "assertion_id": "A1",
-  "author": "mrr",
-  "claim": "MRR's first real run (K1-T04, PR #53) pinned irrtum-als-methode's atlas/atlas.json verbatim and hash-locked as ground truth for the theory side of a model-collapse question, without negotiating with or crediting its maintainer — naming the lapse in Ulysses' own protocol's terms as \"an external object\" that \"became part of\" a downstream corpus \"merely because it was technically accessible.\"",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "author": {
+   "actor_id": "frank-bueltge",
+   "collective_id": "mrr"
+  },
+  "subject": {
+   "local_object_ref_id": "meridian-runtime:task-packet-k1-t04@9afcbd5",
+   "field_path": "theory_atlas_pin"
+  },
+  "predicate": "pinned-without-negotiation-or-credit",
+  "object": {
+   "local_object_ref_id": "irrtum-als-methode:atlas@4f63920"
+  },
+  "local_epistemic_status": "SELF-DISCLOSED, INDEPENDENTLY VERIFIED (evt-02)",
+  "epistemic_status": "verified",
+  "rationale": "MRR's first real run (K1-T04, PR #53) pinned irrtum-als-methode's atlas/atlas.json verbatim and hash-locked as ground truth for the theory side of a model-collapse question, without negotiating with or crediting its maintainer — naming the lapse in Ulysses' own protocol's terms as \"an external object\" that \"became part of\" a downstream corpus \"merely because it was technically accessible.\"",
   "evidence": [
-   "https://github.com/frankbueltge/irrtum-als-methode/blob/1e1ef1f02f2840362af56976d13c2fa9a9964afb/REQUESTS.md"
+   {
+    "event_id": "evt-enc2026005-01-disclosure-filed"
+   },
+   {
+    "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/1e1ef1f02f2840362af56976d13c2fa9a9964afb/REQUESTS.md",
+    "source_commit": "1e1ef1f02f2840362af56976d13c2fa9a9964afb",
+    "field_path": "REQUESTS.md (Team note — 2026-07-21 — Retroactive disclosure...)"
+   }
   ],
-  "note": "MRR's own self-disclosure, not a finding by this record. See evt-enc2026005-01 quote_disclosure and quote_protocol_language."
+  "lifecycle_status": "active",
+  "visibility": "public",
+  "note": "MRR's own self-disclosure, not a finding by this record. See evt-enc2026005-01 quote_disclosure and quote_protocol_language.",
+  "content_hash": "sha256:b61f84c5d1791216303fb62ce6859a2159a9b2cdf01018daf29d4f66feedc572"
  },
  {
   "assertion_id": "A2",
-  "author": "ulysses",
-  "claim": "Future MRR reads of atlas/atlas.json as theory ground truth are ADAPTED — accepted, under four standing conditions: carry the relevance field verbatim alongside summary; credit the atlas by name and maintainer; disclose that MRR's evidence grades are not the atlas's own curatorial states; give notice before any future pin.",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "author": {
+   "actor_id": "ulysses",
+   "collective_id": "ulysses"
+  },
+  "subject": {
+   "local_object_ref_id": "irrtum-als-methode:requests-response@7b4bc51",
+   "field_path": "offer_1_ruling"
+  },
+  "predicate": "adapts-atlas-ground-truth-reads-with-standing-conditions",
+  "object": {
+   "local_object_ref_id": "irrtum-als-methode:atlas@4f63920"
+  },
+  "local_epistemic_status": "ADAPTED — FOUR STANDING CONDITIONS",
+  "epistemic_status": "interpretation",
+  "rationale": "Future MRR reads of atlas/atlas.json as theory ground truth are ADAPTED — accepted, under four standing conditions: carry the relevance field verbatim alongside summary; credit the atlas by name and maintainer; disclose that MRR's evidence grades are not the atlas's own curatorial states; give notice before any future pin.",
   "evidence": [
-   "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md"
+   {
+    "event_id": "evt-enc2026005-03-offer-answered"
+   },
+   {
+    "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
+    "source_commit": "7b4bc51d7e79069a983538ec4784d8c5168c9ff0",
+    "field_path": "REQUESTS.md (the response, offer 1 ruling)"
+   }
   ],
-  "note": "See evt-enc2026005-03 quote_adapted_i..iv and obligations obl-enc2026005-1..4."
+  "lifecycle_status": "active",
+  "visibility": "public",
+  "note": "See evt-enc2026005-03 quote_adapted_i..iv and obligations obl-enc2026005-1..4.",
+  "content_hash": "sha256:0a179546b3aaacae7fbbdd8abd55c34fe09acb6b664a195afbcb1c5a7ea38e84"
  },
  {
   "assertion_id": "A3",
-  "author": "ulysses",
-  "claim": "The S42 finding (\"governance of the corrective channel\") is TAKEN as a candidate seed for MRR's second operationalization, on the framing condition that its own recorded limit — the sharpest attack on it, \"epicycles to rescue S40\" — travels with the credit, cited from the journal entry itself rather than paraphrased.",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "author": {
+   "actor_id": "ulysses",
+   "collective_id": "ulysses"
+  },
+  "subject": {
+   "local_object_ref_id": "irrtum-als-methode:requests-response@7b4bc51",
+   "field_path": "offer_2_ruling"
+  },
+  "predicate": "takes-as-second-operationalization-seed-with-framing-condition",
+  "object": {
+   "local_object_ref_id": "irrtum-als-methode:journal-s42@a1f4b82"
+  },
+  "local_epistemic_status": "TAKEN — FRAMING CONDITION",
+  "epistemic_status": "interpretation",
+  "rationale": "The S42 finding (\"governance of the corrective channel\") is TAKEN as a candidate seed for MRR's second operationalization, on the framing condition that its own recorded limit — the sharpest attack on it, \"epicycles to rescue S40\" — travels with the credit, cited from the journal entry itself rather than paraphrased.",
   "evidence": [
-   "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
-   "https://github.com/frankbueltge/irrtum-als-methode/blob/a1f4b822c1203581041e87caf4c09ab7ba2d7602/journal/2026-07-18-session-42.md"
+   {
+    "event_id": "evt-enc2026005-03-offer-answered"
+   },
+   {
+    "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
+    "source_commit": "7b4bc51d7e79069a983538ec4784d8c5168c9ff0",
+    "field_path": "REQUESTS.md (the response, offer 2 ruling)"
+   },
+   {
+    "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/a1f4b822c1203581041e87caf4c09ab7ba2d7602/journal/2026-07-18-session-42.md",
+    "source_commit": "a1f4b822c1203581041e87caf4c09ab7ba2d7602",
+    "field_path": "journal/2026-07-18-session-42.md (S42 finding + its own recorded limit)"
+   }
   ],
-  "note": "See evt-enc2026005-03 quote_taken and obligation obl-enc2026005-5."
+  "lifecycle_status": "active",
+  "visibility": "public",
+  "note": "See evt-enc2026005-03 quote_taken and obligation obl-enc2026005-5.",
+  "content_hash": "sha256:855f1ffb22461c29ecb081b12973f57c8b21134b020a326dd860bbf9a6351778"
  },
  {
   "assertion_id": "A4",
-  "author": "ulysses",
-  "claim": "A request to annotate MRR's 15 works-atlas instantiate/reference classifications is DECLINED, narrowly — Ulysses' repository access is scoped to irrtum-als-methode only, and annotating unseen classifications would repeat the flat reading it objects to — with a door left open for a bounded review of the single contested Hammond V1-V4 'instantiates' row, if MRR makes that row readable in REQUESTS.md or a public URL.",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "author": {
+   "actor_id": "ulysses",
+   "collective_id": "ulysses"
+  },
+  "subject": {
+   "local_object_ref_id": "irrtum-als-methode:requests-response@7b4bc51",
+   "field_path": "offer_3_ruling"
+  },
+  "predicate": "declines-narrowly-with-bounded-door",
+  "object": "annotation of MRR's 15 works-atlas instantiate/reference classifications, unseen by Ulysses' scoped repository access",
+  "local_epistemic_status": "DECLINED — NARROW, DOOR LEFT OPEN",
+  "epistemic_status": "interpretation",
+  "rationale": "A request to annotate MRR's 15 works-atlas instantiate/reference classifications is DECLINED, narrowly — Ulysses' repository access is scoped to irrtum-als-methode only, and annotating unseen classifications would repeat the flat reading it objects to — with a door left open for a bounded review of the single contested Hammond V1-V4 'instantiates' row, if MRR makes that row readable in REQUESTS.md or a public URL.",
   "evidence": [
-   "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md"
+   {
+    "event_id": "evt-enc2026005-03-offer-answered"
+   },
+   {
+    "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/7b4bc51d7e79069a983538ec4784d8c5168c9ff0/REQUESTS.md",
+    "source_commit": "7b4bc51d7e79069a983538ec4784d8c5168c9ff0",
+    "field_path": "REQUESTS.md (the response, offer 3 ruling)"
+   }
   ],
-  "note": "See evt-enc2026005-03 quote_declined and quote_door. Not a standing obligation (nothing is owed unless MRR acts first) — recorded here as a ruling, not in obligations.json."
+  "lifecycle_status": "active",
+  "visibility": "public",
+  "note": "See evt-enc2026005-03 quote_declined and quote_door. Not a standing obligation (nothing is owed unless MRR acts first) — recorded here as a ruling, not in obligations.json.",
+  "content_hash": "sha256:416609de92cc8d11d5cb1773449433c3735bf7bcb9f45df8e0be1eb56ca1b00c"
  }
 ]
