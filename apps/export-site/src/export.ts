@@ -49,6 +49,43 @@ import {
 export const DEFAULT_ENCOUNTER_ID = "enc-2026-001-calibration-gap-travels";
 const LENS_IDS = ["provenance-v1", "ensemble-transformation-v1", "meridian-position-v1"] as const;
 
+/** The entrance selection rule the site has advertised since 17.07. ("the entrance is the
+ * encounter with an authored score … a newer one takes the entrance when its score is
+ * authored", frankbueltge.de src/config/naming.ts) — implemented here for the first time on
+ * 21.07.: until now the entrance was hardwired to enc-2026-001, so authored scores for newer
+ * encounters could never take it. Scans narratives/ for scores with `approval: "approved"`,
+ * resolves each to its full encounter_id via the matching fixtures/ directory, and returns the
+ * newest by the numeric id segment (enc-YYYY-NNN). Falls back to DEFAULT_ENCOUNTER_ID when no
+ * approved score exists (never happens today — enc-2026-001's own score is approved). */
+export function selectEntranceEncounterId(researchEcologyRoot: string): string {
+  const narrativesDir = path.join(researchEcologyRoot, "narratives");
+  const fixturesDir = path.join(researchEcologyRoot, "fixtures");
+  const fixtureIds = readdirSync(fixturesDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
+  const approved: string[] = [];
+  for (const file of readdirSync(narrativesDir).filter((name) => name.endsWith(".json"))) {
+    const narrative = JSON.parse(readFileSync(path.join(narrativesDir, file), "utf8")) as {
+      encounter_id?: string;
+      approval?: string;
+    };
+    if (narrative.approval !== "approved" || !narrative.encounter_id) continue;
+    // narratives/ files carry the FULL encounter_id in their body; the matching fixture
+    // directory must exist, otherwise the score points at nothing exportable — fail LOUD
+    // (same 17.07. lesson as the rejected-records check below: no silent gaps).
+    if (!fixtureIds.includes(narrative.encounter_id)) {
+      throw new Error(
+        `narrative ${file} is approved but has no matching fixtures/${narrative.encounter_id}/ directory`
+      );
+    }
+    approved.push(narrative.encounter_id);
+  }
+  if (approved.length === 0) return DEFAULT_ENCOUNTER_ID;
+  const numeric = (id: string): number => Number(id.split("-")[2] ?? 0);
+  approved.sort((a, b) => numeric(a) - numeric(b));
+  return approved[approved.length - 1] as string;
+}
+
 export interface ExportOptions {
   /** research-ecology repo root — where import/bundles/, fixtures/, lenses/, narratives/ and
    * packages/protocol/src live. */
@@ -619,11 +656,15 @@ export function observeReceiverWork(
 }
 
 export async function runExport(opts: ExportOptions): Promise<ExportResult> {
-  const encounterId = opts.encounterId ?? DEFAULT_ENCOUNTER_ID;
+  const encounterId = opts.encounterId ?? selectEntranceEncounterId(opts.researchEcologyRoot);
   const bundlesRootDir = path.join(opts.researchEcologyRoot, "import/bundles");
-  const fixtureDir = path.join(opts.researchEcologyRoot, "fixtures/enc-2026-001-calibration-gap-travels");
+  const fixtureDir = path.join(opts.researchEcologyRoot, "fixtures", encounterId);
   const lensesDir = path.join(opts.researchEcologyRoot, "lenses");
-  const narrativePath = path.join(opts.researchEcologyRoot, "narratives", "enc-2026-001.json");
+  const narrativePath = path.join(
+    opts.researchEcologyRoot,
+    "narratives",
+    `${shortEncounterSlug(encounterId)}.json`
+  );
 
   const hydration = await hydrateMemoryStoreFromRepo({ bundlesRootDir, fixtureDir, lensesDir });
   const { store } = hydration;
