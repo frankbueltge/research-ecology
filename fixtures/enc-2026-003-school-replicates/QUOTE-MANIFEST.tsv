@@ -13,3 +13,5 @@ events.json/e5/quote_admitted	research-ecology:docs/design/membership-proposals-
 obligations.json/o1/clause_text	datavism.org:docs/adr/003-field-pipeline.md@df34d01219d5151c832c81172466403777b18855	Nicht automatisieren.	no
 events.json/e6/quote_title	datavism.org:src/content/field-works/2026-07-17-comparable-with-humans.md@3c3966d6898a5394a0a158f11ef4cae587e48842	title: "Comparable With Humans"	no
 events.json/e6/quote_lede	datavism.org:src/content/field-works/2026-07-17-comparable-with-humans.md@3c3966d6898a5394a0a158f11ef4cae587e48842	An instrument on the *comparator* a 2026 end-to-end AI-research-automation paper	no
+events.json/e7/quote_title	datavism.org:src/content/field-works/2026-07-20-coverage-not-custody.md@134cc45d514e388ea765619c79f75bb1e0c44d6b	title: "Coverage Is Not Custody"	no
+events.json/e7/quote_lede	datavism.org:src/content/field-works/2026-07-20-coverage-not-custody.md@134cc45d514e388ea765619c79f75bb1e0c44d6b	A stratified census of what the web archive holds versus what it merely covers, with a live-control arm. Draft — session 46, 2026-07-20.	no

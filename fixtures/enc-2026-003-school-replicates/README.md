@@ -22,3 +22,15 @@ commit `3c3966d6`, 2026-07-18 07:11:37 UTC). One new event (`evt-06`) and one ne
 (`datavism:field-works-comparable-with-humans`, real sha256) appended; `status.as_of` moved to
 2026-07-20 and the synced-works count to 15. No existing record edited or deleted. ADR 002 is
 still `Entwurf — zur Freigabe durch Frank`, unchanged.
+
+**Update 2026-07-21 (Middle Scribe, append-only):** field-sync[bot] synced a 16th work —
+`2026-07-20-coverage-not-custody` (Meridian, field-research session 46, dated 2026-07-20),
+datavism.org commit `134cc45d`, 2026-07-21 07:43:56 UTC. One new event (`evt-07`) and one new
+object (`datavism:field-works-coverage-not-custody`, real sha256) appended; `status.as_of` moved
+to 2026-07-21 and the synced-works count to 16. HONEST GAP: this scribe's own fetch of
+field-research (full history — main, protocol-v3, and all seven open-PR refs) does not contain
+`works/2026-07-20-coverage-not-custody` at all, though the datavism-side copy is real, present,
+and byte-verified against its own pinned commit. field-sync.mjs's own documented contract prunes
+the mirror when a work "vanishes upstream"; whether that has already happened, or this scribe
+simply could not reach the ref the sync itself read, is left open and recorded as a discrepancy
+(evt-07's `gap_note`), not resolved here. No existing record edited or deleted.
