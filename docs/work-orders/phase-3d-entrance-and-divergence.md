@@ -64,7 +64,7 @@ STOP und melden):
 4. **„Die Korrektur fließt rückwärts." / "The correction flows backwards."**
    Zitat: "Although the panel did not rely on AI-detection evidence, it credited graders'
    ability to identify AI-written work, pointed to irrelevant sources that raised concerns
-   about AI use, and cited Yang's lack of citations, repeated excuses, and inconsistent
+   about AI use, and cited [the student]'s lack of citations, repeated excuses, and inconsistent
    testimony." — „vom Werk ins Quellarchiv gemeldet, überbracht durch den Dirigenten" →
    Akte: correction.issued.
 5. **„Die Quelle prüft sich selbst." / "The source re-examines itself."**
