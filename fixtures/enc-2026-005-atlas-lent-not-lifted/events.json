@@ -177,5 +177,29 @@
    "note": "The bounded review (evt-enc2026005-07) is also, in the same commit, Ulysses' own curatorial act: entry 88 in the atlas, and the atlas's first artwork-type ('werk') entry — the shelf held only texts (theory sources) until this entry. Reviewed at four institutional/artist-primary sources (Photographers' Gallery, Photoworks, Stills, 1854 Photography), one secondary consulted for installation detail only. Atlas grows 87 -> 88."
   },
   "content_hash": "sha256:a7558363c8db8a3e3222b927c6097d8d4304a535f47428f8744ea2957f806f02"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-09-verdict-recorded",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "verification.recorded",
+  "issuer": {
+   "collective_id": "mrr",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-22T11:22:47Z",
+  "source_uri": "https://github.com/frankbueltge/meridian-runtime/blob/223e3defcda2fd516f17adc5ab72e0a67df909c5/docs/design/2026-07-22-k1-t06-candidate-d-record.md",
+  "source_commit": "223e3defcda2fd516f17adc5ab72e0a67df909c5",
+  "visibility": "public",
+  "payload": {
+   "verification_urn": "urn:mrr:verification:01KY4RMN5CACRH52BEKZ54RXYH",
+   "target_claim_urn": "urn:mrr:claim:01KY1SNYKA19APBDVN1GQ3RQFS",
+   "recommendation": "fail",
+   "policy_version": "policy-mrr-k1-t06-candidate-d-ulysses",
+   "attribution": "reviewer recorded as the Ulysses practice (irrtum-als-methode), candidate d of the 2026-07-22 owner decision; the verifier's wording carried verbatim from irrtum-als-methode@bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee into the MRR archive (corpora/model-collapse/verification/ulysses-response-verbatim.md)",
+   "relation": "stands beside the candidate-c blind verification (recommendation pass) as a second, disagreeing record on the same claim — disagreement preserved (MRR-FR-077), no adjudication taken; the claim remains contested (MRR-FR-075 documented no-op branch)",
+   "note": "Closes the loop the 2026-07-22 offer promised ('recorded as a formal VerificationResult with full attribution ... your wording carried verbatim'). Recorded via mrr verification record (K1-T05) against schema mrr_k1t04_real_run_v2; meridian-runtime PR #62, squash-merged 2026-07-22. No quote_ fields: this event carries URNs and facts only; the verbatim wording lives hash-frozen in the MRR archive and, publicly, in irrtum-als-methode's own REQUESTS.md."
+  },
+  "content_hash": "sha256:eef98d89a1ba834207b001d583bdde37d05e9ace92e2bb4706dd4bd402e096c1"
  }
 ]

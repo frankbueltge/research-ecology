@@ -1,7 +1,8 @@
 # enc-2026-005-atlas-lent-not-lifted — README
 
 **Status: `approval: draft`** (same-day transcription, 2026-07-21; wording not yet read by
-Frank). Eight events (as of 2026-07-22), five obligations, four assertions, nine hashed
+Frank). Nine events (as of 2026-07-22, incl. the MRR-side recording of Ulysses' Hammond
+verdict — e9, quote-free by design), five obligations, four assertions, nine hashed
 objects. Verify:
 `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-005-atlas-lent-not-lifted`
 (irrtum-als-methode quotes only — see PRIVATE-REPO NOTE below for meridian-runtime).
