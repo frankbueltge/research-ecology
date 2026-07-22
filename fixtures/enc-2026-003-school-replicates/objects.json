@@ -22,5 +22,11 @@
   "object_ref": "datavism:src/content/field-works/2026-07-17-comparable-with-humans.md@3c3966d6",
   "content_hash": "sha256:e3eb6f2748169a3162223d13df0417b52c13186c8210de0b8f459925f2917eb6",
   "uri": "https://github.com/datavism/datavism.org/blob/3c3966d6898a5394a0a158f11ef4cae587e48842/src/content/field-works/2026-07-17-comparable-with-humans.md"
+ },
+ {
+  "object_id": "datavism:field-works-coverage-not-custody",
+  "object_ref": "datavism:src/content/field-works/2026-07-20-coverage-not-custody.md@134cc45d",
+  "content_hash": "sha256:3418abe6cc5ab3ae2d3d6e61281535e50ae48d9c16cf480e7dfbbfc1307abb0f",
+  "uri": "https://github.com/datavism/datavism.org/blob/134cc45d514e388ea765619c79f75bb1e0c44d6b/src/content/field-works/2026-07-20-coverage-not-custody.md"
  }
 ]

@@ -8,8 +8,8 @@
   "note": "retroactive transcription commissioned by Frank (2026-07-17, 'man kann das doch auch rückwirkend mit aufnehmen'); lean record — the nightly scribe appends from here"
  },
  "status": {
-  "as_of": "2026-07-20",
-  "statusLine": "open/standing — transport automated, translation manual, 15 works synced"
+  "as_of": "2026-07-22",
+  "statusLine": "open/standing — transport automated, translation manual, 16 works synced"
  },
  "participants": [
   {
@@ -25,7 +25,7 @@
    "collective_id": "datavism",
    "role": "receiver",
    "lane": "datavism",
-   "local_status": "pipeline live (ADR 003); translation kept manual; admitted 2026-07-17; 15 works synced as of 2026-07-18",
+   "local_status": "pipeline live (ADR 003); translation kept manual; admitted 2026-07-17; 16 works synced as of 2026-07-21",
    "rank": 2
   },
   {

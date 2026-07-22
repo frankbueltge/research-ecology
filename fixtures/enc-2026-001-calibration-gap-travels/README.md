@@ -77,13 +77,45 @@ separately in `objects.json[2].source_metadata.session_label_caveat` and in row 
 provenance table above. Disclosed here per the work order's integrity rule, rather than silently
 adjusted to make the date match.
 
+## Update 2026-07-22 (Middle Scribe, append-only)
+
+Two record-relevant changes found diffing field-research and this ledger's own history since
+the last check (2026-07-17):
+
+1. **Meridian revised instrument 001's harm register a second time** (2026-07-21, commit
+   `ad335729d9252364fb5d52682aecd4b980dab384`, `field: Personennamen aus AI-Detection-Recherche
+   redigiert (Rechtshygiene)`): the "career and residency ended" clause was dropped from the
+   Yang v. University of Minnesota register row as an escalation unsupported by the cited
+   sources (KARE 11, Minnesota Lawyer). The same commit redacted real names/nationality out of
+   `journal/2026-07-01.md` and `FIELD.md` (neither tracked by this fixture) and named
+   git-history purging as its stated next step — which is very likely why field-research's
+   `main` branch no longer shares ancestry with the commits this fixture pins; those commits
+   remain independently fetchable via `raw.githubusercontent.com` regardless (confirmed live,
+   2026-07-22), so no pinned quote in this fixture is affected. New event: `evt-enc2026001-10-
+   object-transformed-2`.
+2. **This ledger's own quote of the appellate finding no longer byte-matches its source.**
+   research-ecology's commit `cd0af835cf3ef2caae073625625c802dc4ce22f5` (2026-07-21, Frank
+   Bültge, `ecology: Nachname aus zitiertem Gerichtsbefund redigiert (Rechtshygiene)`) edited
+   `quote_appellate_finding` in `evt-enc2026001-03-correction-issued` in place — the same
+   legal-hygiene redaction Meridian made to its own record the same week, done directly by the
+   architect rather than through the Scribe's append-only process. Recorded as a correction
+   event (`evt-enc2026001-11-correction-noted-2`, mirroring `evt-enc2026001-09`'s precedent);
+   the affected `QUOTE-MANIFEST.tsv` line is commented out with a LEGACY-NOTE rather than left
+   red or silently re-matched against the doctored text.
+
+Two new `QUOTE-MANIFEST.tsv` lines (full quotes, the before/after of change 1); one manifest
+line newly exempted (change 2). `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-001-calibration-gap-travels` — 17/17 verified. No existing event, object,
+obligation, or assertion was edited or deleted; `encounter.json`'s Meridian participant
+`local_status`/rationale and `resolution_note` updated in place to the current state.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The encounter, its two participants (Meridian/source, Ensemble/receiver) with distinct, non-flattened local statuses, the conductor's apparatus-only participation, Ulysses' documented non-participation, and the explicit absence of any shared/global resolution. |
 | `objects.json` | Four local object references (instrument 001, claims-ledger row 12, the downstream-commitments standing-contract document, Native Speaker) with real content hashes and pinned commits. |
-| `events.json` | Seven append-only encounter events (§ tables above), including the deliberately open, non-core `contract.published` type. |
+| `events.json` | Nine append-only encounter events (§ tables above plus the 2026-07-22 update), including the deliberately open, non-core `contract.published` type. |
 | `obligations.json` | Two active obligations flowing from the standing contract's conditions 1 and 2, evidenced by the relevant events. |
 | `assertions.json` | Three imported, authored assertions — Ensemble's transformation claim (`DISCLOSED RECONSTRUCTION`), Ensemble's boundary-case refusal (`declines-to-carry`), and Meridian's live framing of the corrected claims row — every word of rationale copied verbatim from the source repositories. |
 

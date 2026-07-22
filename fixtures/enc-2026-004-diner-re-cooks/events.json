@@ -120,5 +120,54 @@
    "quote_new_caveat": "5. **\"Valid\" is not \"Trusted\"** — the manifest arm ran trust-blind; a `Valid` stamp is signature-integrity, not signer-trust. Under the current forward official C2PA trust list none of these real signers separate from a forge today; only a discontinued legacy list (the ITL) separates them. Any re-serving of a `Valid` result must not present it as an endorsement of the signer, and must carry the today-gap, not only the legacy-list reassurance.",
    "note": "Current data-snack.com main updates the existing Split Seal Quick Snack rather than adding a seventh quick item. The open standing relation remains at six re-cooked works; this event records the refreshed re-voicing and its added load-bearing caveat."
   }
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-07-automation-armed",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-18T06:33:48Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/commits/main/prototype-v2/src/content/quick",
+  "visibility": "public",
+  "payload": {
+   "evidence_commits": [
+    "1ee911a405ff985cf5ad3a28acb81b8328e49c28",
+    "99f5c750d28b1df89b7cbe7d679c74dad61e4d0e",
+    "9a9305fa947c1feaf609acac3677c79d3e493199",
+    "607609e927c5efd5590e7704d45c0d682f2373d6"
+   ],
+   "quote_arm_switch": "ARM SWITCH — publishing is OFF until you set the repo VARIABLE",
+   "quote_no_pr": "NO PRs, no review queue — nothing to check.",
+   "finding": "Four consecutive daily commits (2026-07-17 through 2026-07-20), all authored by 'data-snack cook bot <bot@data-snack.invalid>', land directly on data-snack.com's main with no PR and no merge commit wrapping them — the observable signature of PIPELINE_AUTOPUBLISH being set to true sometime after evt-enc2026004-04 recorded the automation as inert/partially armed (2026-07-16). The workflow file itself (.github/workflows/upstream-cook.yml) is byte-unchanged since evt-04's pin; the arm state lives in a repo variable, not in file content, so this event is evidenced by commit behavior rather than a diffable config change.",
+   "note": "The automation named 'partially armed' in evt-enc2026004-04 (inert until a secret existed; publishing off until a variable was set) has started firing and publishing unattended. This is a condition/contract-relevant change to the standing relation's own apparatus, not a new re-cooked work — see evt-enc2026004-08 for the corpus growth one of these runs produced."
+  },
+  "content_hash": "sha256:27ad30c8dc119a5dac0244fc47ac0da5e8c5b84d15ade16caecc9575f58293ee"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-08-corpus-grown",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-18T06:33:48Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/99f5c750d28b1df89b7cbe7d679c74dad61e4d0e/prototype-v2/src/content/quick/comparable-with-humans.mdx",
+  "source_commit": "99f5c750d28b1df89b7cbe7d679c74dad61e4d0e",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "title: en: 'The 0.66 Problem'",
+   "quote_provenance_work": "work: 'Comparable With Humans'",
+   "quote_provenance_gauntlet": "gauntlet: 'shipped (pre-gauntlet convention)'",
+   "quote_hook": "A paper claims its AI is ''comparable with humans (69% versus 66%)''. The numbers are not comparable. One is decision accuracy. The other is committee agreement.",
+   "total_quick_snacks_count": 7,
+   "note": "The first commit the now-armed automation (evt-enc2026004-07) actually published: Meridian's instrument 015 ('Comparable With Humans', shipped field-research session 43, 2026-07-17) re-cooked as the diner's seventh Quick Snack, re-titled 'The 0.66 Problem'. gauntlet reads 'shipped (pre-gauntlet convention)', an honest self-disclosure that the cook template's own gate has not yet run on unattended output — a standing-relation gap already flagged by evt-enc2026004-02's open correction (the supplier-template wing language) and not yet closed by this addition either."
+  },
+  "content_hash": "sha256:3c0bb3e7d4b5aa6ab144695c3d77262c8ca33a5690ed0f86d0b66bf961b20cfb"
  }
 ]

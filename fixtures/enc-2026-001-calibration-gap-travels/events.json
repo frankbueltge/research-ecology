@@ -214,5 +214,46 @@
   },
   "source_commit": "main",
   "content_hash": "sha256:33d238fdbbf6bc812a7c057178ab7d7e6f47ea5a900029c58c5794c2cd5bd09c"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-10-object-transformed-2",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-21T08:02:20Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/ad335729d9252364fb5d52682aecd4b980dab384/works/2026-07-01-calibration-gap/data.json",
+  "source_commit": "ad335729d9252364fb5d52682aecd4b980dab384",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:instrument-001@ae89e09",
+   "quote_before": "A PhD student expelled; student visa revoked; career and residency ended. Expulsion upheld by Minnesota Court of Appeals (Feb 2026). Federal lawsuit dismissed (Oct 2025). Believed to be the first student expelled from the University of Minnesota over alleged AI use (KARE 11).",
+   "quote_after": "A PhD student expelled; student visa revoked. Expulsion upheld by Minnesota Court of Appeals (Feb 2026). Federal lawsuit dismissed (Oct 2025). Believed to be the first student expelled from the University of Minnesota over alleged AI use (KARE 11).",
+   "commit_message_note": "field-research commit message (Frank Bültge, 2026-07-21, prefix 'field:', not a persona-voiced 'Research session' record): two real private individuals (students) were named in cleartext with nationality and residency status in journal/2026-07-01.md, plus an unsupported escalation ('career ended') on the shipped work; switched to role + public case caption (the same named-individuals rule already applied to works and now applied to the journal). Same commit also redacted the journal and FIELD.md's nationality mention (neither is a tracked object of this fixture, so not separately quoted here) and states the next step as purging the same real names from git history.",
+   "note": "Meridian's own legal-hygiene sweep, a direct git-identity commit with no accompanying persona session record — issuer modeled as collective_id=meridian (it is Meridian's own object being revised) but actor_id=frank-bueltge (apparatus-level maintenance, not a persona-authored research session), mirroring the disambiguation already used in evt-enc2026001-03. The removed clause ('career and residency ended') was an escalation beyond what instrument 001's own cited sources (KARE 11, Minnesota Lawyer) establish. Row 12 of claims.md, the appellate caveat, and the studio's own boundary-case text (evt-enc2026001-04) are all confirmed unchanged at field-research's and studio's current state (checked 2026-07-22)."
+  },
+  "content_hash": "sha256:62d5ae5cc6d0953e0412d5bd076a50a341d8d17f4d81b9164487472266a1ed5d"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-11-correction-noted-2",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "correction.noted",
+  "issuer": {
+   "collective_id": "the-middle",
+   "actor_id": "the-middle-editor"
+  },
+  "occurred_at": "2026-07-22T00:00:00Z",
+  "source_uri": "https://github.com/frankbueltge/research-ecology/blob/main/fixtures/enc-2026-001-calibration-gap-travels/events.json",
+  "visibility": "public",
+  "payload": {
+   "finding": "research-ecology's own commit cd0af835cf3ef2caae073625625c802dc4ce22f5 (Frank Bültge, 2026-07-21, 'ecology: Nachname aus zitiertem Gerichtsbefund redigiert (Rechtshygiene)') edited quote_appellate_finding in evt-enc2026001-03-correction-issued in place, replacing the real surname it had quoted with '[the student]' for legal-hygiene reasons — a deliberate, disclosed redaction of the ledger's own text, done directly by the architect, not by the Scribe's append-only process. As a direct consequence, that field is no longer a byte-exact substring of field-research:REQUESTS.md@5dcdb17b (which still reads the original surname): mechanical verification now fails that one manifest line.",
+   "note": "The redaction itself is not reversed or second-guessed here — Meridian made the identical redaction to its own record the same week (evt-enc2026001-10-object-transformed-2, field-research commit ad33572, and that same commit's journal/2026-07-01.md and FIELD.md edits) under the same named-individuals policy this fixture's own quotes already describe (evt-enc2026001-05's quote_session_33_addition). This event exists only to keep the mechanical gate honest: the manifest line is commented out below with a LEGACY-NOTE, mirroring evt-enc2026001-09's precedent, rather than left silently red or silently re-matched against doctored text."
+  },
+  "source_commit": "main",
+  "content_hash": "sha256:5b206637845d669f6e48071df50f9bca89b4ff990c4f61f7b95ad4d0e2112405"
  }
 ]

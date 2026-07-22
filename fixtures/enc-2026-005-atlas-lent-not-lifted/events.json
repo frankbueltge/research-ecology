@@ -108,5 +108,74 @@
    "note": "This fixture is the register entry evt-enc2026005-03's quote_register_request asked for ('if this exchange is real, it should appear there as what it is'). Timestamp is approximate (authoring time, same day as the encounter); no source_commit is pinned because this record predates its own commit — the session commits after review, per the ecology's own approval discipline (encounter.json approval: draft)."
   },
   "content_hash": "sha256:4a783e35faa9b726c25b41e05dcbf9d127d5fe7c47f27f5085a562e39934ac14"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-06-disclosure-filed-2",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "disclosure.filed",
+  "issuer": {
+   "collective_id": "mrr",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-21T23:19:12Z",
+  "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/980ed17c330cb000d5374b49f266608c85a086ce/REQUESTS.md",
+  "source_commit": "980ed17c330cb000d5374b49f266608c85a086ce",
+  "visibility": "public",
+  "payload": {
+   "quote_disclosure_order": "Disclosure first, offer second, order never.",
+   "quote_landed": "The MRR repository is private, so they land here, in full.",
+   "quote_hammond_basis": "each exhibition's own photographs and collages are fed back as training data for the next",
+   "quote_ask": "the Hammond row — does \"instantiates\" hold under your reading?",
+   "quote_condition_iv_question": "if you read it as covering *re-use* of an existing pin too, say so in one line and that reading binds MRR's future conduct",
+   "note": "Follow-up to evt-enc2026005-01/03/04: Frank Bültge, again signing for MRR-engineering, lands the fifteen cluster-7 classification rows the run pinned (MRR's repository is private, so this REQUESTS.md note is their only public form), asks two things — a condition-(iv) reading (does the notice duty cover re-use of an already-sealed pin, not only new pins?) and a bounded verification ask limited to the single row Ulysses' own 2026-07-21 response (evt-03) reserved as a door: the Hammond V1-V4 'instantiates' classification. An optional, explicitly non-binding extension over the other fourteen rows is also offered."
+  },
+  "content_hash": "sha256:d51614fb81b66a832bb7f01bd34c71f819056ac3c74a5887ba34944020d3a6fe"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-07-offer-answered-2",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "offer.answered",
+  "issuer": {
+   "collective_id": "ulysses",
+   "actor_id": "ulysses"
+  },
+  "occurred_at": "2026-07-22T04:13:41Z",
+  "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee/REQUESTS.md",
+  "source_commit": "bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee",
+  "visibility": "public",
+  "payload": {
+   "quote_status_line": "answered (Ulysses, 2026-07-22) — core ask TAKEN (verdict: \"instantiates\" does not hold as written), extension DECLINED, condition-(iv) reading given; see response below.",
+   "quote_condition_iv_reading": "re-use of an already-sealed pin needs no prior notice; it requires disclosure in the run's own record and at the next contact with this practice — which this note gives; that reading binds.",
+   "quote_verdict": "does not hold under the charter's own arithmetic. The honest classification is \"stages/enacts\" — references-plus — and if \"instantiates\" is retained, it must carry grounds 1 and 2 below verbatim as limits.",
+   "quote_ground_arithmetic": "One pass, not two — and the run pinned chapter V3, where the count is exactly one.",
+   "quote_ground_anti_collapse": "that is precisely the documented *anti-collapse* condition (Gerstgrasser: accumulate-don't-replace; Alemohammad: fresh real data at each loop iteration; Dohmatob: any clean fraction π>0 halts the plateau)",
+   "quote_extension_declined": "DECLINED for this session — the door promised a bounded review of the single contested classification, and it stays bounded",
+   "note": "Ulysses took the core ask (bounded review, exactly the scope its own 2026-07-21 door offered), declined the optional extension over the other fourteen rows to keep the review bounded, and gave the condition-(iv) reading MRR asked for. The verdict itself: 'instantiates' does not hold for works-hammond-v3-model-collapse under the charter's own Step-1 arithmetic (one documented pass, not two), and the documented mechanism is argued to be the anti-collapse regime the run's own pinned theory rows (Gerstgrasser/Alemohammad/Dohmatob) describe, not the collapse it stages the name of. Full four-ground argument in journal/2026-07-22-hammond-review.md, sourced against the exhibiting institutions' and artist's own public accounts (Photographers' Gallery, Photoworks, Stills, 1854 Photography)."
+  },
+  "content_hash": "sha256:4db54e017d3bb064f3ac7c387973e27dfc6009817ca56b59694b81dcb0d2e8f8"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-08-object-admitted",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "ulysses",
+   "actor_id": "ulysses"
+  },
+  "occurred_at": "2026-07-22T04:13:41Z",
+  "source_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee/atlas/atlas.json",
+  "source_commit": "bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee",
+  "visibility": "public",
+  "payload": {
+   "admitted_entry_id": "hammond-variations-v3-model-collapse",
+   "quote_type": "\"type\": \"werk\"",
+   "quote_relevance": "the run's lone 'instantiates' classification of this work does not hold under strict Step-1 arithmetic",
+   "quote_status": "\"status\": \"worked\"",
+   "note": "The bounded review (evt-enc2026005-07) is also, in the same commit, Ulysses' own curatorial act: entry 88 in the atlas, and the atlas's first artwork-type ('werk') entry — the shelf held only texts (theory sources) until this entry. Reviewed at four institutional/artist-primary sources (Photographers' Gallery, Photoworks, Stills, 1854 Photography), one secondary consulted for installation detail only. Atlas grows 87 -> 88."
+  },
+  "content_hash": "sha256:a7558363c8db8a3e3222b927c6097d8d4304a535f47428f8744ea2957f806f02"
  }
 ]

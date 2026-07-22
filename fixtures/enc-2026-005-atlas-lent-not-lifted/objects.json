@@ -126,5 +126,68 @@
    "private_repo_note": "meridian-runtime is a PRIVATE repository (see README.md PRIVATE-REPO NOTE)."
   },
   "importer_version": "fixture-manual-1.0"
+ },
+ {
+  "id": "irrtum-als-methode:requests-note2@980ed17",
+  "collective_id": "ulysses",
+  "local_object_id": "requests-note2",
+  "object_version": "980ed17c330cb000d5374b49f266608c85a086ce",
+  "canonical_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/980ed17c330cb000d5374b49f266608c85a086ce/REQUESTS.md",
+  "media_type": "text/markdown",
+  "local_object_type": "Team note — inbox request (same REQUESTS.md file/section); MRR's follow-up disclosure landing the fifteen rows + bounded verification ask, 2026-07-22",
+  "interoperability_class": "other",
+  "title_cache": "MRR lands the fifteen rows + bounded verification ask (REQUESTS.md, 2026-07-22)",
+  "summary_cache": "Frank Bültge, again signing for MRR-engineering, lands the cluster-7 classification rows in full and asks for a condition-(iv) reading plus a bounded review of the single Hammond row Ulysses' own 2026-07-21 response reserved as a door.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "self-filed by MRR-engineering; answered same session by Ulysses (evt-enc2026005-07-offer-answered-2)",
+  "content_hash": "sha256:c691ad5c4eed2658ff44290b8ac5b147764ecd390be342e6246184ac278b3e53",
+  "source_commit": "980ed17c330cb000d5374b49f266608c85a086ce",
+  "source_metadata": {
+   "pinned_file": "REQUESTS.md",
+   "section_note": "\"Team note — 2026-07-22 — Walking through the door you left open...\""
+  },
+  "importer_version": "fixture-manual-1.0"
+ },
+ {
+  "id": "irrtum-als-methode:requests-response2@bdb3ce7",
+  "collective_id": "ulysses",
+  "local_object_id": "requests-response2",
+  "object_version": "bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee",
+  "canonical_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee/REQUESTS.md",
+  "media_type": "text/markdown",
+  "local_object_type": "Team note — inbox response (same REQUESTS.md file/section); Ulysses' bounded Hammond-row verdict, 2026-07-22",
+  "interoperability_class": "other",
+  "title_cache": "Ulysses' bounded Hammond-row verdict (REQUESTS.md, 2026-07-22)",
+  "summary_cache": "Ulysses answers, after reviewing four institutional/artist-primary sources: the Hammond row's 'instantiates' classification does not hold under the charter's own Step-1 arithmetic; extension over the other fourteen rows declined to keep the review bounded; the condition-(iv) reading given.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "Ulysses' own ruling, same session, sourced at four institutional/artist-primary accounts (journal/2026-07-22-hammond-review.md)",
+  "content_hash": "sha256:0dec82750c273018232f30a52e454b6121d0c5beb92404550926bad497acdd5e",
+  "source_commit": "bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee",
+  "source_metadata": {
+   "pinned_file": "REQUESTS.md",
+   "section_note": "the response, appended into the same file/section beneath the 2026-07-22 MRR note"
+  },
+  "importer_version": "fixture-manual-1.0"
+ },
+ {
+  "id": "irrtum-als-methode:atlas-v2@bdb3ce7",
+  "collective_id": "ulysses",
+  "local_object_id": "atlas",
+  "object_version": "bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee",
+  "canonical_uri": "https://github.com/frankbueltge/irrtum-als-methode/blob/bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee/atlas/atlas.json",
+  "media_type": "application/json",
+  "local_object_type": "Curated source atlas (the practice's own curatorial file), grown to 88 entries",
+  "interoperability_class": "source_bundle",
+  "title_cache": "irrtum-als-methode atlas (88 entries)",
+  "summary_cache": "The atlas pinned earlier in this fixture (irrtum-als-methode:atlas@4f63920, 87 entries) grew by one: hammond-variations-v3-model-collapse, the atlas's first artwork-type ('werk') entry, admitted 2026-07-22 as part of the bounded Hammond review.",
+  "lifecycle_status": "active",
+  "local_epistemic_status": "curated by Ulysses/Atelier; the new entry's four sources independently read and cited same session",
+  "content_hash": "sha256:7592628e0726b9f95c37a21e4d05b1dc4c986a116e66a366037036c602423210",
+  "source_commit": "bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee",
+  "source_metadata": {
+   "pinned_file": "atlas/atlas.json",
+   "note": "second pin of this fixture's atlas object — the first (irrtum-als-methode:atlas@4f63920) is left untouched, append-only; this entry documents the atlas's next state, not a correction of the first."
+  },
+  "importer_version": "fixture-manual-1.0"
  }
 ]

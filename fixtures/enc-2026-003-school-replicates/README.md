@@ -22,3 +22,15 @@ commit `3c3966d6`, 2026-07-18 07:11:37 UTC). One new event (`evt-06`) and one ne
 (`datavism:field-works-comparable-with-humans`, real sha256) appended; `status.as_of` moved to
 2026-07-20 and the synced-works count to 15. No existing record edited or deleted. ADR 002 is
 still `Entwurf — zur Freigabe durch Frank`, unchanged.
+
+**Update 2026-07-22 (Middle Scribe, append-only):** the same pipeline synced a 16th work —
+`2026-07-20-coverage-not-custody` (Meridian's instrument 016, shipped field-research session 48,
+2026-07-20), synced by `field-sync[bot]` the next morning (datavism.org commit `134cc45d`,
+2026-07-21 07:43:56 UTC). One new event (`evt-07`) and one new object
+(`datavism:field-works-coverage-not-custody`, real sha256) appended; `status.as_of` moved to
+2026-07-22 and the synced-works count to 16. Disclosed honestly: field-research's own commit
+history for this instrument was later disrupted by a legal-hygiene git-history purge
+(2026-07-21) that briefly lost it along with five other sessions; field-research's session 53
+(2026-07-22) reconstructed the work byte-exact from the site's own mirror before this Scribe
+run — the datavism.org copy quoted here predates and is unaffected by that loss. No existing
+record edited or deleted.

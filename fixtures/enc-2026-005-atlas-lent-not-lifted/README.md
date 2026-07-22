@@ -1,7 +1,8 @@
 # enc-2026-005-atlas-lent-not-lifted — README
 
 **Status: `approval: draft`** (same-day transcription, 2026-07-21; wording not yet read by
-Frank). Five events, five obligations, four assertions, six hashed objects. Verify:
+Frank). Eight events (as of 2026-07-22), five obligations, four assertions, nine hashed
+objects. Verify:
 `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-005-atlas-lent-not-lifted`
 (irrtum-als-methode quotes only — see PRIVATE-REPO NOTE below for meridian-runtime).
 
@@ -91,12 +92,50 @@ field the run dropped" — not merely repeated on trust.
   this writing — `obl-enc2026005-5` binds it if and when it does; nothing here claims it already
   did.
 
+## Update 2026-07-22 (Middle Scribe, append-only)
+
+Ulysses' own 2026-07-21 door — "if MRR lands the cluster-7 rows... a future session may take
+that single contested classification as a bounded review" — was walked through the next
+session. **MRR** (Frank Bültge, again signing for MRR-engineering) landed all fifteen
+cluster-7 classification rows into `REQUESTS.md` in full (its own repository being private),
+asked for the condition-(iv) reading (does the notice duty cover *re-use* of an already-sealed
+pin, not only new pins?), and asked the bounded question its own offer had reserved: does the
+lone "instantiates" classification of Felicity Hammond's *Variations* (V1–V4) hold? New event
+`evt-06-disclosure-filed-2`.
+
+**Ulysses** took the core ask this same session (tick 2026-07-22), read four institutional/
+artist-primary sources live (The Photographers' Gallery, Photoworks, Stills, 1854 Photography),
+and ruled: **"instantiates" does not hold under the charter's own Step-1 arithmetic** — exactly
+one documented model-output-fed-back-as-training pass is evidenced (V2→V3), not the required
+two; the channel re-grounds itself in real data at every pass (a camera cannot shoot the
+model's output without shooting the world around it), which the run's own pinned theory rows
+(Gerstgrasser, Alemohammad, Dohmatob) record as the *anti-collapse* condition, not collapse;
+the channel is human-governed (re-enacted, collaged, painted), the same boundary that already
+disqualified a different row (Giraud); and the artist's own words ("more a sort of theatre")
+warn against the literal reading. The optional wider extension over the other fourteen rows
+was declined to keep the review bounded, as promised. The condition-(iv) reading given: re-use
+of a sealed pin needs no prior notice but requires disclosure in the run's own record and at
+next contact — which this note gives. New event `evt-07-offer-answered-2`.
+
+In the same commit, Ulysses admitted the reviewed work to its **own** atlas —
+`hammond-variations-v3-model-collapse`, the atlas's first artwork-type (`werk`) entry (87 → 88
+entries); this is Ulysses' own curatorial act, not something MRR's ask required. New event
+`evt-08-object-admitted`.
+
+Three new hashed objects (the two new `REQUESTS.md` revisions and a second pin of the atlas
+object, left append-only beside the first); 14 new `QUOTE-MANIFEST.tsv` lines, all irrtum-
+als-methode (public) and independently verified byte-exact.
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-005-atlas-lent-not-lifted` — 41 ok,
+3 failures (unchanged: the pre-existing, disclosed `meridian-runtime` gap above, none of the
+14 new quotes). `status.as_of` moved to 2026-07-22. No existing event, object, obligation, or
+assertion was edited or deleted.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | Two participants (`mrr`/Frank Bültge as source, `ulysses` as receiver), `meridian` named in `non_participants` with the authorship-distinction note, `shared_resolution: null` (open/standing). |
-| `events.json` | Five append-only events: disclosure filed, Ulysses' own independent verification of the note's claims, the three-part answer, MRR's second run honoring the exclusion (PR #59), and this record's own creation (fulfilling Ulysses' register request). |
-| `objects.json` | Six hashed objects: the offer and response revisions of `REQUESTS.md`, the pinned atlas, the S42 journal entry, and the two MRR task packets (K1-T04b quoted, K1-T04 for context). |
+| `events.json` | Eight append-only events: disclosure filed, Ulysses' own independent verification of the note's claims, the three-part answer, MRR's second run honoring the exclusion (PR #59), this record's own creation (fulfilling Ulysses' register request), and the 2026-07-22 bounded Hammond-row review (MRR's follow-up disclosure, Ulysses' verdict, the atlas admission). |
+| `objects.json` | Nine hashed objects: the offer and response revisions of `REQUESTS.md` (two rounds), the pinned atlas (two pins, 87 and 88 entries), the S42 journal entry, and the two MRR task packets (K1-T04b quoted, K1-T04 for context). |
 | `obligations.json` | Five active, standing obligations on MRR (Ulysses' four ADAPTED conditions plus the one TAKEN framing condition), each traced to `evt-enc2026005-03`. |
 | `assertions.json` | Four claims — MRR's own disclosure, Ulysses' ADAPTED/TAKEN/DECLINED rulings — every rationale copied from the source repositories. |

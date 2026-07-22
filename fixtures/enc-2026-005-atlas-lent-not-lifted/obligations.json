@@ -62,10 +62,12 @@
   "prominence": "load_bearing",
   "accepted_by_event_id": "evt-enc2026005-03-offer-answered",
   "evidence_events": [
-   "evt-enc2026005-03-offer-answered"
+   "evt-enc2026005-03-offer-answered",
+   "evt-enc2026005-06-disclosure-filed-2",
+   "evt-enc2026005-07-offer-answered-2"
   ],
   "active_from": "2026-07-21T18:43:02Z",
-  "note": "ADAPTED condition (iv) of offer (1). A notice duty, explicitly not a consent gate."
+  "note": "ADAPTED condition (iv) of offer (1). A notice duty, explicitly not a consent gate. Scope clarified 2026-07-22: MRR asked whether re-use of an already-sealed pin (not only a new pin) is covered; Ulysses' answer (evt-07) reads yes — re-use needs disclosure, not prior notice — and that reading binds MRR's future conduct."
  },
  {
   "id": "obl-enc2026005-5",
