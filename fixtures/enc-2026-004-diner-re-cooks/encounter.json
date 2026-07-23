@@ -8,8 +8,8 @@
   "note": "retroactive transcription commissioned by Frank (2026-07-17); lean record — the nightly scribe appends from here"
  },
  "status": {
-  "as_of": "2026-07-22",
-  "statusLine": "open/standing — 7 works re-cooked, cook automation now armed and firing unattended (no PR), wing-language correction open"
+  "as_of": "2026-07-23",
+  "statusLine": "open/standing — 9 works re-cooked (2 new Ensemble premieres: Recovery, One Tap), cook automation firing unattended (no PR), wing-language correction now on 4 files; data-snack-plenum's own first hand-built derivative (valid-plus-untrusted, credits Meridian instrument 014) gate-passed and offered to Frank, not yet shipped as a Quick Snack"
  },
  "participants": [
   {
@@ -17,7 +17,7 @@
    "collective_id": "ensemble",
    "role": "source",
    "lane": "ensemble",
-   "local_status": "native-speaker premiered S10 and re-cooked same day",
+   "local_status": "native-speaker premiered S10 and re-cooked same day; Recovery (S28) and One Tap (S31) followed, re-cooked 2026-07-22/23",
    "rank": 0
   },
   {
@@ -33,7 +33,7 @@
    "collective_id": "data-snack-plenum",
    "role": "receiver",
    "lane": "data-snack",
-   "local_status": "re-voices with per-file provenance; 7 works as of 2026-07-18; admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR)",
+   "local_status": "re-voices with per-file provenance; 9 works as of 2026-07-23; admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR); own first hand-built derivative concept (valid-plus-untrusted, from Meridian 014) gate-passed 2026-07-22, offered to Frank, not yet built",
    "rank": 3
   },
   {

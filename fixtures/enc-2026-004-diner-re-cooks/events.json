@@ -169,5 +169,80 @@
    "note": "The first commit the now-armed automation (evt-enc2026004-07) actually published: Meridian's instrument 015 ('Comparable With Humans', shipped field-research session 43, 2026-07-17) re-cooked as the diner's seventh Quick Snack, re-titled 'The 0.66 Problem'. gauntlet reads 'shipped (pre-gauntlet convention)', an honest self-disclosure that the cook template's own gate has not yet run on unattended output — a standing-relation gap already flagged by evt-enc2026004-02's open correction (the supplier-template wing language) and not yet closed by this addition either."
   },
   "content_hash": "sha256:3c0bb3e7d4b5aa6ab144695c3d77262c8ca33a5690ed0f86d0b66bf961b20cfb"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-09-corpus-grown-2",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-22T07:19:39Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/d051b41e0fd75e1d2ccb01a600ea152ec991560a/prototype-v2/src/content/quick/recovery.mdx",
+  "source_commit": "d051b41e0fd75e1d2ccb01a600ea152ec991560a",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "en: 'The Silent Score: 0,87'",
+   "quote_provenance_supplier": "supplier: 'Ensemble · studio (the lab''s production wing, frankbueltge.de)'",
+   "quote_provenance_work": "work: 'Recovery'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 28, 2026-07-21'",
+   "quote_hook": "A government self-service kiosk. Approves your childcare allowance. Then reclassifies your file as a fraud risk. In the same chrome.",
+   "total_quick_snacks_count": 8,
+   "note": "The armed automation's second real corpus growth (evt-enc2026004-07/08 the first): Ensemble's second premiere sourced independently of Meridian — 'Recovery' (studio works/2026-07-21-recovery, session 28, the Dutch childcare-benefits/toeslagenaffaire kiosk) — re-cooked as the diner's eighth Quick Snack, re-titled 'The Silent Score: 0,87'. Unlike evt-08's comparable-with-humans, gauntlet reads a real graduation ('graduated (ship), session 28') — the source premiered through Ensemble's own full hardened gate, not pre-gauntlet-convention. The supplier line still carries the same open wing-language correction flagged at evt-enc2026004-02, now reproduced on a third file."
+  },
+  "content_hash": "sha256:c67505207d12e2c39736e7a73cd06e2241c4c4d777a7eb3f6e421d538ce10b0a"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-10-corpus-grown-3",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-23T07:15:03Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/ddd4a0a2e978d87f0798109a614972e1f3a807ae/prototype-v2/src/content/quick/one-tap.mdx",
+  "source_commit": "ddd4a0a2e978d87f0798109a614972e1f3a807ae",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "en: 'The Dalles Concealment Case'",
+   "quote_provenance_supplier": "supplier: 'Ensemble · studio (the lab''s production wing, frankbueltge.de)'",
+   "quote_provenance_work": "work: 'One Tap'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 31, 2026-07-23'",
+   "quote_hook": "The number was never unknown. It was withheld. Yours, by non-disclosure. The town's, by thirteen months of litigation. The same refusal, twice.",
+   "quote_kritiker_verdict": "Kritiker: PREMIERE STANDS.",
+   "total_quick_snacks_count": 9,
+   "note": "The armed automation's third corpus growth: Ensemble's fourth house premiere — 'One Tap' (studio works/2026-07-23-one-tap, session 31, the Google/Dalles data-center water-disclosure case) — re-cooked the same day it shipped, re-titled 'The Dalles Concealment Case'. gauntlet again reads a real graduation ('graduated (ship), session 31'). The supplier line still carries the same open wing-language correction (evt-enc2026004-02), now on a fourth file, unresolved."
+  },
+  "content_hash": "sha256:f1633647df5cdfc5e3af1a04df4143024c7abc636517f305b87329fa9cb3b9b1"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-11-derived-concept-proposed",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-22T01:33:44Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack-plenum/blob/96c779a13e787c10a3c786d3eab6eb301c5d1e96/works/valid-plus-untrusted.md",
+  "source_commit": "96c779a13e787c10a3c786d3eab6eb301c5d1e96",
+  "visibility": "public",
+  "payload": {
+   "quote_logline": "C2PA — the content-provenance standard whose Steering Committee seats Google, Meta, OpenAI and Sony — cannot, under the standard body's own current recommended trust list, tell a real signed photo from a forgery.",
+   "quote_source_credit": "Meridian, work 014 \"The Split Seal\" (github.com/frankbueltge/field-research, `works/2026-07-11-split-seal`, revised 2026-07-14) re-validated six bytes-frozen 2022–2025 specimens",
+   "quote_not_rederived": "credited, not re-derived — Layer-1/Layer-3 validation was Meridian's run, on Meridian's frozen specimen bytes, not this desk's",
+   "quote_credit_condition": "Meridian's own downstream conditions (`memory/downstream-commitments.md`) ask that a caveat named load-bearing in the source travel at equal prominence into any re-voicing",
+   "quote_credit_line": "Finding: Meridian research collective, work 014 'The Split Seal' (2026-07-11, rev. 2026-07-14) — frankbueltge.de/field. This page re-cooks one finding from that work into a playable instrument; it does not re-run the underlying validation, and 'Valid' here means signature-integrity, never signer-trust.",
+   "quote_gate": "Verifier final PASS (19 passed · 5 corrected · 0 unresolved · 0 fabrications), Voice PASS, Field-Checker 3/5",
+   "quote_gate_source": "data-snack-plenum REQUESTS.md, same commit (the request entry announcing the gate result; the works/ file itself carries the finished brief, not the gate tally)",
+   "quote_grade": "graded mid-size, NOT offered against the Op-011 flagship slot",
+   "apparatus_note": "event_type is 'object.transformed' by analogy to evt-06 (a re-voicing of Meridian material within data-snack-plenum's own repository), though this is qualitatively new for the encounter: not the automated cook pipeline's verbatim republication, but the Plenum's own first hand-built derivative concept sourced from a Meridian instrument — gate-passed (Verifier/Voice/Field-Checker) and explicitly crediting Meridian's caveat #5 (the 'Valid is not Trusted' clause) by name, honoring the downstream-commitments equal-prominence condition this encounter's evt-01 already pins. NOT yet a Quick Snack: the file lives in data-snack-plenum's own works/ as a proposal offered to Frank ('No action needed unless it interests you — it waits in works/'), not in data-snack.com's public prototype-v2/src/content/quick/ surface. Recorded here as the state it actually is — gate-passed and offered, not shipped — rather than either omitted or overstated as a publication."
+  },
+  "content_hash": "sha256:95942b221d1ef33c5e72c586b9adfa899db4da67ddfc78bc58eeb3c6a14b3d45"
  }
 ]
