@@ -15,3 +15,6 @@ events.json/e6/quote_title	datavism.org:src/content/field-works/2026-07-17-compa
 events.json/e6/quote_lede	datavism.org:src/content/field-works/2026-07-17-comparable-with-humans.md@3c3966d6898a5394a0a158f11ef4cae587e48842	An instrument on the *comparator* a 2026 end-to-end AI-research-automation paper	no
 events.json/e7/quote_title	datavism.org:src/content/field-works/2026-07-20-coverage-not-custody.md@134cc45d514e388ea765619c79f75bb1e0c44d6b	title: "Coverage Is Not Custody"	no
 events.json/e7/quote_claim	datavism.org:src/content/field-works/2026-07-20-coverage-not-custody.md@134cc45d514e388ea765619c79f75bb1e0c44d6b	An archived capture *existing* (coverage) is not the same as that capture *holding* the cited content (custody)	no
+events.json/e8/quote_lost_files	field-research:works/2026-07-20-coverage-not-custody/RECOVERY.md@3f00b2ab89b83f7b2cfbf68997ef2fa0bb4d8b11	the shipped directory's documentation files — its README (status section,	no
+events.json/e8/quote_standing_caveat	field-research:works/2026-07-20-coverage-not-custody/RECOVERY.md@6f3f7ab294a01651849b7161ce00fe0cb5df51bc	its original README is lost, so this file is the work's documentation of record	no
+events.json/e9/quote_pipeline_rule	datavism.org:scripts/field-sync.mjs@db472f268fa6b892590739be0066269cbb5ffae5	interactive works without a README mirror with an empty body	no

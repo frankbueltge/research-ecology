@@ -150,5 +150,53 @@
    "note": "field-sync[bot] picked up Meridian's instrument 016 ('Coverage Is Not Custody', shipped field-research session 48, 2026-07-20) the next morning — the synced corpus grows from 15 to 16. Same automated field-sync pipeline as evt-03/04/06 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit. Disclosed honestly: field-research's own commit history for this work was later disrupted by a git-history purge (2026-07-21, legal-hygiene name scrub) that lost six sessions (46-51) including this instrument's ship commit; field-research's session 53 (2026-07-22) reconstructed works/2026-07-20-coverage-not-custody byte-exact from the site's own mirror, so source_work_uri above cites the recovery commit, not a commit that existed at sync time — the datavism.org copy quoted here predates and is unaffected by that loss."
   },
   "content_hash": "sha256:e50e41a677ff462f018da0b6f0adf93ae89e845c7f92595daef1c75818409869"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-08-readme-loss-disclosed",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-07-22T04:08:46Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/6f3f7ab294a01651849b7161ce00fe0cb5df51bc/works/2026-07-20-coverage-not-custody/RECOVERY.md",
+  "source_commit": "6f3f7ab294a01651849b7161ce00fe0cb5df51bc",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "datavism:field-works-coverage-not-custody",
+   "subject": "Meridian's own recovery note for instrument 016 discloses that the work's README.md — the exact file datavism's field-sync pipeline mirrors as a synced work's body (ADR 003) — is permanently lost to the 2026-07-21 git-history purge and was not reconstructable",
+   "quote_lost_files": "the shipped directory's documentation files — its README (status section,",
+   "quote_standing_caveat": "its original README is lost, so this file is the work's documentation of record",
+   "note": "This is disclosure, not correction: field-research names precisely what the purge cost (README.md, SUBTEST-PREREGISTRATION.md, body_subtest.py, VERIFIER-AUDIT records) and states plainly that RECOVERY.md now stands in as the work's documentation of record. Recorded here because README.md's absence is the direct, evidenced cause of evt-enc2026003-09 on the receiver side — the two events are one disclosed causal chain across a repository boundary, not two independent facts."
+  },
+  "content_hash": "sha256:fac445cd570ee0427f92cc68b32591753c0bf3ae6dbf3659a28812217c6a2936"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-09-sync-body-emptied",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "field-sync[bot]"
+  },
+  "occurred_at": "2026-07-22T07:44:14Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/db472f268fa6b892590739be0066269cbb5ffae5/src/content/field-works/2026-07-20-coverage-not-custody.md",
+  "source_commit": "db472f268fa6b892590739be0066269cbb5ffae5",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "datavism:field-works-coverage-not-custody",
+   "superseding_object_ref_id": "datavism:field-works-coverage-not-custody-stub",
+   "subject": "The next field-sync run after evt-enc2026003-07 (18 seconds later by author timestamp on the prior sync, one sync cycle later in practice) re-synced instrument 016 from a source directory that now has no README.md and, per the pipeline's own pre-existing documented behavior, wrote a frontmatter-only stub — the prose body (method, findings, scope) is gone from the public page",
+   "quote_pipeline_rule": "interactive works without a README mirror with an empty body",
+   "quote_pipeline_rule_source": "datavism.org scripts/field-sync.mjs, line 9 (comment predates this sync; not a rule written in response to it)",
+   "frontmatter_only_confirmed": true,
+   "content_hash_before": "sha256:3418abe6cc5ab3ae2d3d6e61281535e50ae48d9c16cf480e7dfbbfc1307abb0f",
+   "content_hash_after": "sha256:42777caffc0d3f845b2750bd248cbb183dff865cea7dfc9f73e1aa25115e6394",
+   "note": "Not a new bug and not an editorial act by datavism: the pipeline has always written an empty body when a source work has no README.md (evt-enc2026003-08's quote, present in the script before this run); the trigger is evt-enc2026003-08 — field-research's own recovery left this work without one. The full prose (method, the three findings, scope) still exists in field-research, relocated into work.astro rather than README.md (RECOVERY.md, evt-08) — nothing is lost from the ecology as a whole, but the datavism.org page currently shows only frontmatter, and ADR 003's own translation boundary ('the translation Werk → Operation is craft and remains it') has nothing to translate until a README.md exists again upstream, or the pipeline is told to read a different file. Nothing in this fixture claims field-sync is broken; it is behaving exactly as documented."
+  },
+  "content_hash": "sha256:3f7b20302a38b3a262cdad605ccdf2df90f1615511bb4f3364f109a45d0bad30"
  }
 ]

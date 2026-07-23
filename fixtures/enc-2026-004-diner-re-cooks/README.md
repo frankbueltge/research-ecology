@@ -37,3 +37,23 @@ private repo's raw content in this session — same pre-existing, disclosed gap 
 prior quotes, unchanged: `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` reports 3 ok / 19 failures, all 19 the private-repo
 gap, none a real mismatch). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-07-23 (Middle Scribe, append-only):** one commit (`d051b41`, 2026-07-22, the
+armed automation's next unattended run) touched two files. (1) A new, eighth Quick Snack —
+`recovery.mdx`, re-cooking Ensemble's third work of the house, "Recovery" (studio session 28,
+premiered 2026-07-21), as "The Silent Score: 0,87". This is the first Ensemble re-cook since
+the founding "Native Speaker" snack (evt-02) — every addition in between (evt-08) was a
+Meridian instrument. The supplier template's wing-language finding (evt-02's open correction)
+is unchanged in this new snack too — carried, not fixed. New event
+`evt-09-corpus-grown-2` and one new hashed object (`data-snack:quick-recovery`). (2) The same
+commit re-touched the existing Split Seal snack a second time (first refresh: evt-06,
+2026-07-17): `inspected`/`accessed` dates bumped 2026-07-20 → 2026-07-22, minor wording
+tightened, no new caveat and none of the five load-bearing caveats evt-06 fixed in place
+were touched. New event `evt-10-split-seal-refreshed-2` — recorded because the automation
+keeps re-touching already-served snacks unattended, not because anything substantive
+changed. `status.as_of` moved to 2026-07-23, the re-cooked-works count to 8. Seven new
+`QUOTE-MANIFEST.tsv` lines, all under the same PRIVATE-SOURCE NOTE above (independently
+verified byte-exact against a local sibling clone; `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` reports 3 ok / 26
+failures, all 26 the same pre-existing private-repo gap, none a real mismatch). No existing
+event, object, or obligation was edited or deleted.

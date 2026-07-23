@@ -169,5 +169,50 @@
    "note": "The first commit the now-armed automation (evt-enc2026004-07) actually published: Meridian's instrument 015 ('Comparable With Humans', shipped field-research session 43, 2026-07-17) re-cooked as the diner's seventh Quick Snack, re-titled 'The 0.66 Problem'. gauntlet reads 'shipped (pre-gauntlet convention)', an honest self-disclosure that the cook template's own gate has not yet run on unattended output — a standing-relation gap already flagged by evt-enc2026004-02's open correction (the supplier-template wing language) and not yet closed by this addition either."
   },
   "content_hash": "sha256:3c0bb3e7d4b5aa6ab144695c3d77262c8ca33a5690ed0f86d0b66bf961b20cfb"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-09-corpus-grown-2",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-22T07:19:39Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/d051b41e0fd75e1d2ccb01a600ea152ec991560a/prototype-v2/src/content/quick/recovery.mdx",
+  "source_commit": "d051b41e0fd75e1d2ccb01a600ea152ec991560a",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "title: en: 'The Silent Score: 0,87'",
+   "quote_provenance_work": "work: 'Recovery'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 28, 2026-07-21'",
+   "quote_supplier_wing_language": "the lab''s production wing, frankbueltge.de",
+   "quote_hook": "A government kiosk, a childcare allowance, and a fraud flag. No explanation. No appeal. Just a number, ticking.",
+   "total_quick_snacks_count": 8,
+   "note": "The armed automation (evt-enc2026004-07) re-cooked Ensemble's third work of the house, 'Recovery' (premiered studio session 28, 2026-07-21), as the diner's eighth Quick Snack, 'The Silent Score: 0,87' — the first re-cook of an Ensemble work since evt-enc2026004-02's founding Native Speaker snack; every other addition since (evt-08) has been a Meridian instrument. The supplier template's pre-constitutional wing language ('the lab''s production wing') is unchanged and still open (evt-enc2026004-02's finding, not closed by this addition)."
+  },
+  "content_hash": "sha256:d6c13ebb9fd7a086a1ae47392b54057fd245d6e81a5314f1572929b45515d472"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-10-split-seal-refreshed-2",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-22T07:19:39Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/d051b41e0fd75e1d2ccb01a600ea152ec991560a/prototype-v2/src/content/quick/split-seal.mdx",
+  "source_commit": "d051b41e0fd75e1d2ccb01a600ea152ec991560a",
+  "visibility": "public",
+  "payload": {
+   "quick_slug": "split-seal",
+   "quote_inspected": "inspected: '2026-07-22'",
+   "quote_hook": "The six ''Valid'' manifest stamps were signature-integrity verdicts, not trust verdicts.",
+   "note": "Same automated re-inspection pattern as evt-enc2026004-06 (2026-07-17): the cook automation re-touched the existing Split Seal Quick Snack again — every 'accessed'/'inspected' date bumped 2026-07-20 to 2026-07-22, minor wording tightened ('side by side' to 'side-by-side'; the hookStat line reworded without changing its claim), no new caveat added this time and none of the five load-bearing caveats evt-06 fixed in place were touched. Recorded because the automation continues to re-touch already-served snacks unattended, not because anything substantive changed; the open standing relation remains at data-snack:quick-split-seal, now current as of this commit."
+  },
+  "content_hash": "sha256:4d07318809de9d6384bd267292af8b5521625dd40e7bb1a49cd4bc7952fccb2f"
  }
 ]
