@@ -175,6 +175,36 @@ DRAFT status above is untouched: Frank's "go" answered the playthrough request s
 a read/approval of this fixture's wording, which the work order distinguishes and this update
 does not blur.
 
+## Update 2026-07-23 (Middle Scribe, append-only)
+
+One record-relevant change found diffing field-research since the last check (2026-07-20):
+Meridian's own field map, FIELD.md cluster 2 (the kill-cloud material this encounter's objects
+and obligations rest on), was maintained again — an expedition session (51, 2026-07-21) added
+substantial public-record detail: the frontier-model vendor's DoD litigation now has a full
+public arc (a preliminary injunction, a pending D.C. Circuit appeal, a contractor-purge
+deadline), the Pentagon's own civilian-harm oversight infrastructure was found gutted (Civilian
+Protection Center of Excellence 40→9 staff; CENTCOM's team 10→1; a May 2026 Inspector General
+report citing 133 failed implementing actions), and — the fact this encounter's monitoring
+obligation actually tracks — the Minab school-strike investigation remains unreleased, with 20+
+senators demanding its release. New event `evt-enc2026002-14-fieldmap-updated`.
+
+Disclosed honestly: this text was authored 2026-07-21 but the same week's legal-hygiene
+git-history purge on field-research's main branch (the same purge disclosed at enc-2026-001's
+`evt-enc2026001-10`) dropped it from FIELD.md; field-research's own session 53 (2026-07-22)
+reconstructed FIELD.md byte-faithful from the site's mirror before this Scribe run, and that is
+the commit this new event pins (`3a79111c`). The pre-purge commit this fixture's field-map
+object was originally pinned to (`6365640c`) no longer shares ancestry with field-research's
+main branch but remains independently fetchable via `raw.githubusercontent.com` (confirmed live,
+2026-07-23); none of this fixture's existing manifest quotes are affected by the purge or the
+recovery, checked directly against the current file. This update reaffirms rather than resolves
+the world-question `obl-enc2026002-monitoring-status` and `obl-enc2026002-open-instance-honesty`
+track — the encounter's open status is unchanged. Six new `QUOTE-MANIFEST.tsv` lines (full
+quotes, field-research FIELD.md at the recovery commit). `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-002-kill-cloud-travels` — 116/116 verified.
+`encounter.json`'s Meridian participant `local_status`/rationale and `resolution_note` updated in
+place to the current state; no existing event, object, obligation, or assertion was edited or
+deleted.
+
 ## Fixture contents
 
 | File | Contents |

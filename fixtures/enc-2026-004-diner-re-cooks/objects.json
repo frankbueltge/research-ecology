@@ -40,5 +40,11 @@
   "object_ref": "data-snack:prototype-v2/src/content/quick/comparable-with-humans.mdx@99f5c750",
   "content_hash": "sha256:f5ffdbf1bff5b56a806a64686ff926420586f35090b0feab4e58595ce3b50d86",
   "uri": "https://github.com/frankbueltge/data-snack.com/blob/99f5c750d28b1df89b7cbe7d679c74dad61e4d0e/prototype-v2/src/content/quick/comparable-with-humans.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-recovery",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/recovery.mdx@d051b41e",
+  "content_hash": "sha256:886c76b3a0c9ddb17a28da39a81694374c6677270fdb5c406ff758d548ef2ac8",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/d051b41e0fd75e1d2ccb01a600ea152ec991560a/prototype-v2/src/content/quick/recovery.mdx"
  }
 ]

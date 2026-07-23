@@ -34,3 +34,33 @@ history for this instrument was later disrupted by a legal-hygiene git-history p
 (2026-07-22) reconstructed the work byte-exact from the site's own mirror before this Scribe
 run — the datavism.org copy quoted here predates and is unaffected by that loss. No existing
 record edited or deleted.
+
+**Update 2026-07-23 (Middle Scribe, append-only):** the previous update's own "unaffected"
+finding did not hold for long. field-research's session-53 recovery (2026-07-22, commits
+`3f00b2a`/`6f3f7ab`) reconstructed instrument 016's `work.astro` and six data files from the
+site's mirror, but its own `RECOVERY.md` discloses that the README.md file was NOT among what
+survived the purge — "the shipped directory's documentation files — its README ..." are named
+as permanently lost, and the note states plainly that "its original README is lost, so this
+file [RECOVERY.md] is the work's documentation of record." New event
+`evt-08-readme-loss-disclosed`.
+
+datavism.org's `scripts/field-sync.mjs` has, since before this encounter began, documented its
+own rule in-file: "interactive works without a README mirror with an empty body." The
+pipeline's next run (commit `db472f2`, 2026-07-22 07:44:14 UTC — the sync cycle immediately
+after the one `evt-07` recorded) found instrument 016's directory with no README.md and, exactly
+per that pre-existing rule, wrote a frontmatter-only stub: the public page's prose body (method,
+the three findings, scope) is gone, sha256 changed from `3418abe6…` to `42777caf…`. New event
+`evt-09-sync-body-emptied` and one new object (`datavism:field-works-coverage-not-custody-stub`,
+kept beside the original per this ledger's append-only rule).
+
+Recorded as one disclosed causal chain across the repository boundary, not as a pipeline fault:
+the full prose still exists in field-research, relocated into `work.astro` rather than
+`README.md`; nothing is lost from the ecology as a whole, but datavism.org's own copy is
+currently a stub, and ADR 003's translation boundary has nothing to translate until a README.md
+exists upstream again or the pipeline is pointed at a different file — a live, unresolved state,
+named here rather than smoothed over. `status.as_of` moved to 2026-07-23; the receiver's
+`local_status` updated in place to reflect it. Two new `QUOTE-MANIFEST.tsv` lines from
+field-research's RECOVERY.md, one from datavism.org's own pipeline script (present before this
+sync, not written in response to it). `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-003-school-replicates` — 19/19 verified. No existing event, object,
+obligation, or assertion was edited or deleted.
