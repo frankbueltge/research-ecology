@@ -175,6 +175,29 @@ DRAFT status above is untouched: Frank's "go" answered the playthrough request s
 a read/approval of this fixture's wording, which the work order distinguishes and this update
 does not blur.
 
+## Update 2026-07-23 (Middle Scribe, append-only)
+
+The studio ran its first post-premiere maintenance cycle on "No Way of Knowing": session 33
+("MAINTAIN — the serial re-check on 'No Way of Knowing'"), 2026-07-23. The monitoring line was
+six days stale (last checked 2026-07-17, the premiere day); the conductor re-checked the world
+first-hand and found a newer primary — Military Times, 13 July 2026 — quoting the Pentagon
+("The investigation is ongoing. We do not have any updates to announce at this time,") and
+reporting more than two dozen senators demanding its release. The OPEN state (Instance 2, the
+2026 operation against Iran) held true; nothing was manufactured to feed the form. The refresh
+was minimal — dates and the monitoring/analytic-slot text only, no SOURCED sentence touched —
+and re-verified live (self-test PASS, 0 co-render violations/50 samples). No gate, no
+graduation: this is a maintained live work, not a re-premiere, so it is recorded under the open
+string `object.maintained` rather than `object.transformed`. New events (`evt-14` the maintenance
+pass, `evt-15` the site-gate re-mirror onto frankbueltge.de/studio, ~94 seconds later) and one
+new hashed object (`ensemble:no-way-of-knowing@e068fdc`, superseding nothing — `@1860072` and
+`@c23d3a01` stay in the record). Nine new `QUOTE-MANIFEST.tsv` lines, all verified byte-exact:
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-002-kill-cloud-travels` — 119/119.
+`encounter.json`'s Ensemble participant `local_status`/rationale and `resolution_note` updated
+in place to the current state. Both load-bearing obligations (open-instance-honesty,
+monitoring-status) remain `active`, unedited — this event evidences them being kept, not
+discharges or closes them. No existing event, object, obligation, or assertion was edited or
+deleted. The encounter's open status is unchanged.
+
 ## Fixture contents
 
 | File | Contents |

@@ -37,3 +37,34 @@ private repo's raw content in this session — same pre-existing, disclosed gap 
 prior quotes, unchanged: `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` reports 3 ok / 19 failures, all 19 the private-repo
 gap, none a real mismatch). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-07-23 (Middle Scribe, append-only):** three record-relevant changes since the
+last check (2026-07-22). (1) The armed automation re-cooked a second Ensemble premiere sourced
+independently of Meridian — "Recovery" (studio `works/2026-07-21-recovery`, session 28, the
+Dutch childcare-benefits/*toeslagenaffaire* kiosk) — landed as the diner's eighth Quick Snack
+("The Silent Score: 0,87") on data-snack.com commit `d051b41`, 2026-07-22T07:19:39Z. (2) The
+next day it re-cooked a fourth Ensemble house premiere — "One Tap" (studio
+`works/2026-07-23-one-tap`, session 31, the Google/Dalles data-center water-disclosure case) —
+as the ninth Quick Snack ("The Dalles Concealment Case"), the same day it shipped, commit
+`ddd4a0a`, 2026-07-23T07:15:03Z. Both carry real gauntlet graduations (unlike evt-08's
+pre-gauntlet-convention disclosure), and both still reproduce the open wing-language
+correction from evt-02 in their supplier line — now on four files, unresolved. (3) Separately
+from the auto-cook pipeline: `data-snack-plenum` itself (not data-snack.com) hand-built its
+own first derivative concept sourced from a Meridian instrument —
+`works/valid-plus-untrusted.md` (session 14, 2026-07-22, commit `96c779a`), derived from
+instrument 014 "The Split Seal," gate-passed (Verifier 19·5·0·0, Voice PASS, Field-Checker
+3/5) and proposing an on-page credit line that explicitly names Meridian's downstream
+conditions and folds in the source's caveat #5 by name. This is qualitatively new for the
+encounter — not verbatim republication but a hand-authored re-voicing that engages the
+standing contract on its own terms — and honestly scoped as NOT yet a Quick Snack: it sits in
+data-snack-plenum's own `works/`, offered to Frank, not yet built into the public
+`prototype-v2/src/content/quick/` surface. Three new events (`evt-09`, `evt-10`, `evt-11`) and
+three new hashed objects (`data-snack:quick-recovery`, `data-snack:quick-one-tap`,
+`data-snack-plenum:valid-plus-untrusted`) appended; `status.as_of` moved to 2026-07-23, the
+re-cooked-works count to 9. Eighteen new `QUOTE-MANIFEST.tsv` lines: the eleven against
+data-snack.com fall under the same disclosed PRIVATE-SOURCE NOTE as before (independently
+verified byte-exact against the local sibling clone); the seven against data-snack-plenum
+(public) verify mechanically —
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` now reports
+10 ok / 30 failures, all 30 the same pre-existing private-repo gap, none a real mismatch. No
+existing event, object, or obligation was edited or deleted.

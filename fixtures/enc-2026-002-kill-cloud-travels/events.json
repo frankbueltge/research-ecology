@@ -351,5 +351,55 @@
       "path_boundary_note": "guard: projects/, memory/, WORKBOARD.md stay in the engine repo; only works/ travels."
     },
     "content_hash": "sha256:35495f01d0d7d3f8cfd19029a4115d045f26e6b951adce82665fb0c3a349ebaa"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-14-monitoring-reaffirmed",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "object.maintained",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-23T13:24:44Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c/journal/2026-07-23-session-33.md",
+    "source_commit": "e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c",
+    "visibility": "public",
+    "payload": {
+      "subject_object_ref_id": "ensemble:no-way-of-knowing@e068fdc",
+      "quote_move": "Maintain — the serial re-check owed on a live work.",
+      "quote_stale_finding": "That date read 2026-07-17 — the premiere day, six days stale.",
+      "quote_pentagon_primary": "The investigation is ongoing. We do not have any updates to announce at this time,",
+      "quote_senators_count": "more than two dozen senators",
+      "quote_senators_demand": "There is no justification for withholding an unclassified accounting of what happened, what went wrong, and what the Department is doing to prevent recurrence.",
+      "quote_conclusion": "the OPEN state is still world-true",
+      "quote_landing": "No graduation, no gate (a live work was maintained, not re-premiered).",
+      "quote_monitoring_statement": "Two catches as of the last check (2026-07-23): one closed pair (2024), one open question (2026, the operation against Iran, investigation still unreleased — the AI question unanswered). No new confirmed confidence/denial pair since. This is the studio's own monitoring status on the date shown, not a claim that none exists.",
+      "quote_serial_line": "2 catches on record. Case 02 unresolved. Last checked 23 July 2026.",
+      "monitoring_statement_source_file": "works/2026-07-17-no-way-of-knowing/data.json (same commit)",
+      "apparatus_note": "event_type is the OPEN string 'object.maintained' — a re-check session on an already-premiered work, explicitly not a gated increment or a graduation ('No graduation, no gate' is the session's own landing line); no core type fits a maintenance pass on a live serial claim. This is the concrete discharge of both obl-enc2026002-open-instance-honesty and obl-enc2026002-monitoring-status for this cycle: the world was re-checked first-hand (Military Times, 13 July 2026, a newer primary than the pin recorded at evt-09), the OPEN state confirmed still true, and the dated monitoring line moved 2026-07-17 → 2026-07-23 rather than left stale. Six days between the invitation-answered premiere (evt-11/12/13) and this first maintenance cycle; the obligations remain 'active', standing commitments for the life of the work, not discharged/closed by this event."
+    },
+    "content_hash": "sha256:3ca72fde893ec42e2a6a4d4e04b93f50245962d18ac24d705b50d05fb2892b52"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-15-publication-site-gate-2",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "studio-integrate"
+    },
+    "occurred_at": "2026-07-23T13:26:18Z",
+    "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/576da56065809ec7a841a4445b016c5bc87fa1fe/public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json",
+    "source_commit": "576da56065809ec7a841a4445b016c5bc87fa1fe",
+    "visibility": "public",
+    "payload": {
+      "derivative_object_ref_id": "ensemble:no-way-of-knowing@e068fdc",
+      "commit_message_fragment": "studio: integrate 2026-07-23",
+      "apparatus_note": "Site-integration re-mirror of the session-33 maintenance pass, same act-class as evt-13 and enc-2026-001's evt-07: the studio-integrate.yml workflow re-synced works/ onto frankbueltge.de/studio roughly 94 seconds after the studio's own maintenance commit (e068fdc, 2026-07-23T13:24:44Z). public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json is byte-identical to the studio's own works/2026-07-17-no-way-of-knowing/data.json at this cycle (sha256 c9e6c93c3507847bcc298717684992d89318885109443575c16dde875c57178c, matching evt-14's object), confirmed by direct hash comparison of both files at their respective commits. meta.json's identity date stays 2026-07-17, unchanged — a maintenance re-check does not move a work's premiere date.",
+      "path_boundary_note": "guard: projects/, memory/, WORKBOARD.md stay in the engine repo; only works/ travels — unchanged since evt-13."
+    },
+    "content_hash": "sha256:dbf28ff717848fe6ddca4ad7e6b4282a9c609d50412c277340382f504e0eff4a"
   }
 ]
