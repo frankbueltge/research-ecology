@@ -1,3 +1,6 @@
+> **status: HISTORICAL** (dated record, banner added 2026-07-24) — kept as audit trail;
+> for what is current, see README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Session-Übergabe — Stand 2026-07-15 nachmittags
 
 **NÄCHSTE SESSION (2026-07-16, Grundsatz-Session Site-v2): zuerst

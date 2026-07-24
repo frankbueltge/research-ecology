@@ -1,3 +1,7 @@
+> **status: HISTORICAL** (implementation brief of its date, banner added 2026-07-24) — kept as
+> audit trail; the work it ordered has shipped or been superseded. For what is current, see
+> README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Work Order — Phase C1: apps/atelier — App-Gerüst + das Blatt (datengetrieben)
 
 **Grundlage (bindend):** ADR 0010 (eigene App, KEINE geteilte visuelle Grammatik),

@@ -1,3 +1,7 @@
+> **status: HISTORICAL** (implementation brief of its date, banner added 2026-07-24) — kept as
+> audit trail; the work it ordered has shipped or been superseded. For what is current, see
+> README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Work Order — Phase B: Praxisprofile (Migration 0002 + Profile + Positionsanzeige)
 
 **Grundlage:** `docs/DELTA-AUDIT-V2.1.md` §5.1–5.2, §6; `docs/spec-v2.1/01-…-DELTA.md`

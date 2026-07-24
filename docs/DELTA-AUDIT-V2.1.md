@@ -1,3 +1,6 @@
+> **status: HISTORICAL** (dated record, banner added 2026-07-24) — kept as audit trail;
+> for what is current, see README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Delta Audit — v2.1 Amendment gegen die implementierte v2
 ## Phase A des v2.1-Handoffs (docs/spec-v2.1/), Antwort auf die 10 Prüfpunkte
 

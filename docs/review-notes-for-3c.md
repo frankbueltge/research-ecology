@@ -1,3 +1,6 @@
+> **status: HISTORICAL** (dated record, banner added 2026-07-24) — kept as audit trail;
+> for what is current, see README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Review notes carried into Phase 3c (conceptual review)
 
 Collected during strongest-model review of the Sonnet work packages. None are blockers;

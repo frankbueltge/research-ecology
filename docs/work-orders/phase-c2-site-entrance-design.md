@@ -1,3 +1,7 @@
+> **status: HISTORICAL** (implementation brief of its date, banner added 2026-07-24) — kept as
+> audit trail; the work it ordered has shipped or been superseded. For what is current, see
+> README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Work Order — C2-Site: Eingang der Site in Variante-A-Qualität (Partitur)
 
 **Franks Kritik (2026-07-15 abends):** localhost:4321 ist „noch ziemlich dünn und

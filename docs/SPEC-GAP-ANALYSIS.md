@@ -1,3 +1,6 @@
+> **status: HISTORICAL** (dated record, banner added 2026-07-24) — kept as audit trail;
+> for what is current, see README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Spec Gap Analysis — Phase 0
 ## What is directly implementable, what needs repository changes, what should be revised
 

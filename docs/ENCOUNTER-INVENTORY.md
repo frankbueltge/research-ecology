@@ -1,3 +1,6 @@
+> **status: HISTORICAL** (dated record, banner added 2026-07-24) — kept as audit trail;
+> for what is current, see README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Encounter Inventory — Phase 0
 ## Real, evidenced inter-practice encounters
 

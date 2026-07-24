@@ -1,3 +1,6 @@
+> **status: HISTORICAL** (dated record, banner added 2026-07-24) — kept as audit trail;
+> for what is current, see README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Manual review checklist — Phase 3b (apps/middle-web)
 
 Spec 04 §13's twelve product-acceptance items are mapped to automated checks where the

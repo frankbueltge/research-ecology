@@ -1,3 +1,7 @@
+> **status: HISTORICAL** (implementation brief of its date, banner added 2026-07-24) — kept as
+> audit trail; the work it ordered has shipped or been superseded. For what is current, see
+> README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Work Order — C3: Apps statisch bauen + Cloudflare-Pages-Deploy vorbereiten
 
 **Entscheid (Frank „wir machen alles", 2026-07-15; Architektur: v1 read-only statisch

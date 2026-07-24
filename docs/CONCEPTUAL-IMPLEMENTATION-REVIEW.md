@@ -1,3 +1,6 @@
+> **status: HISTORICAL** (dated record, banner added 2026-07-24) — kept as audit trail;
+> for what is current, see README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Conceptual Implementation Review — v1 vertical slice
 ## Findings, remaining compromises, explicit deviations (spec 09 §10)
 

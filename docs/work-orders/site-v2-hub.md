@@ -1,3 +1,7 @@
+> **status: HISTORICAL** (implementation brief of its date, banner added 2026-07-24) — kept as
+> audit trail; the work it ordered has shipped or been superseded. For what is current, see
+> README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Work Order: site-v2 — Hub-Eingang, Nav, DE-Abbau (frankbueltge.de)
 
 **Grundlage:** `docs/design/site-v2-decisions-2026-07-16.md` (Franks Entscheidungen §1,

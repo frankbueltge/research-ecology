@@ -1,3 +1,7 @@
+> **status: HISTORICAL** (implementation brief of its date, banner added 2026-07-24) — kept as
+> audit trail; the work it ordered has shipped or been superseded. For what is current, see
+> README.md, `docs/shifts.md` and the dated `docs/design/` decisions.
+
 # Work Order: practice-surfaces — die vier Sprachen auf die Site (frankbueltge.de)
 
 **Anlass (Frank, 2026-07-16 vormittags):** „wo sind die anderen designs für atelier field
