@@ -36,7 +36,11 @@ function ghToken() {
 const REPO_MAP = {
   "field-research": "frankbueltge/field-research",
   "studio": "frankbueltge/studio",
-  "irrtum-als-methode": "frankbueltge/irrtum-als-methode",
+  // GitHub-seitig umbenannt frankbueltge/irrtum-als-methode -> frankbueltge/ulysses
+  // (bemerkt 2026-07-24: raw.githubusercontent folgt Repo-Umbenennungen nicht, alte Slug
+  // 404t). Fixture-Label bleibt "irrtum-als-methode" (append-only), nur der Slug folgt.
+  "irrtum-als-methode": "frankbueltge/ulysses",
+  "meridian-runtime": "frankbueltge/meridian-runtime",
   "data-snack-plenum": "frankbueltge/data-snack-plenum",
   "research-ecology": "frankbueltge/research-ecology",
   "frankbueltge.de": "frankbueltge/frankbueltge.de",
@@ -54,6 +58,29 @@ const norm = (s) =>
 const normQuote = (s) => norm(s).replace(/[.,…]+$/, "");
 const cache = new Map();
 
+// Zweiter Privat-Repo-Fallback: eine lokale Sibling-Clone (z.B. via `git clone` im selben
+// Arbeitsgang angelegt), wenn weder raw.githubusercontent noch die token-Contents-API greifen
+// (z.B. GitHub-App nicht für die Organisation freigeschaltet). Pfade kommen aus der JSON-Env
+// LOCAL_CLONES = {"<repo-label>": "<lokaler-pfad>"}. `git show <commit>:<path>` liest den exakt
+// gepinnten Blob; fehlt der Commit lokal, wird er einmalig nachgeholt (`git fetch <commit>`).
+let _localClones;
+function localCloneDir(repoLabel) {
+  if (_localClones === undefined) {
+    try { _localClones = JSON.parse(process.env.LOCAL_CLONES ?? "{}"); }
+    catch { _localClones = {}; }
+  }
+  return _localClones[repoLabel] ?? null;
+}
+function localShow(dir, commit, path) {
+  try { return execFileSync("git", ["-C", dir, "show", `${commit}:${path}`], { encoding: "utf8", maxBuffer: 1024 * 1024 * 64 }); }
+  catch {
+    try { execFileSync("git", ["-C", dir, "fetch", "--depth", "1", "origin", commit], { encoding: "utf8" }); }
+    catch { return null; }
+    try { return execFileSync("git", ["-C", dir, "show", `${commit}:${path}`], { encoding: "utf8", maxBuffer: 1024 * 1024 * 64 }); }
+    catch { return null; }
+  }
+}
+
 async function fetchAt(repoLabel, path, commit) {
   const slug = REPO_MAP[repoLabel];
   if (!slug) throw new Error(`unbekanntes Repo-Label: ${repoLabel}`);
@@ -68,6 +95,13 @@ async function fetchAt(repoLabel, path, commit) {
       const api = `https://api.github.com/repos/${slug}/contents/${path}?ref=${commit}`;
       const r2 = await fetch(api, { headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" } });
       if (r2.ok) body = norm(await r2.text());
+    }
+    if (!body) {
+      const dir = localCloneDir(repoLabel);
+      if (dir) {
+        const raw = localShow(dir, commit, path);
+        if (raw != null) body = norm(raw);
+      }
     }
   }
   cache.set(url, body);

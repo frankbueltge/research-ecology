@@ -8,8 +8,8 @@
   "note": "retroactive transcription commissioned by Frank (2026-07-17); lean record — the nightly scribe appends from here"
  },
  "status": {
-  "as_of": "2026-07-22",
-  "statusLine": "open/standing — 7 works re-cooked, cook automation now armed and firing unattended (no PR), wing-language correction open"
+  "as_of": "2026-07-24",
+  "statusLine": "open/standing — 9 works re-cooked (automated), 1 hand-authored derivative concept offered not yet shipped, cook automation firing unattended (no PR), wing-language correction open"
  },
  "participants": [
   {
@@ -33,7 +33,7 @@
    "collective_id": "data-snack-plenum",
    "role": "receiver",
    "lane": "data-snack",
-   "local_status": "re-voices with per-file provenance; 7 works as of 2026-07-18; admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR)",
+   "local_status": "re-voices with per-file provenance; 9 works as of 2026-07-23 (automated cooks) plus 1 hand-authored derivative concept offered, not yet shipped; admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR); wing-language correction still open",
    "rank": 3
   },
   {

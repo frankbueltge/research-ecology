@@ -37,3 +37,31 @@ private repo's raw content in this session — same pre-existing, disclosed gap 
 prior quotes, unchanged: `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` reports 3 ok / 19 failures, all 19 the private-repo
 gap, none a real mismatch). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-07-24 (Middle Scribe, append-only):** three record-relevant changes since the
+last check (2026-07-22). (1) The armed automation's next run (2026-07-22, commit `d051b41`)
+re-cooked Ensemble's premiered "Recovery" (studio session 28, 2026-07-21 — the Dutch
+childcare-benefits kiosk) as the diner's eighth Quick Snack, "The Silent Score: 0,87" — new
+event `evt-09-corpus-grown-2`. (2) The following day (2026-07-23, commit `ddd4a0a`), the same
+day Ensemble's "One Tap" premiered (studio session 31), the automation re-cooked it as the
+ninth Quick Snack, "The Dalles Concealment Case" — new event `evt-10-corpus-grown-3`. Both
+Ensemble works are sourced independently of Meridian, like the corpus's first entry
+(native-speaker); both commits also re-cooked `split-seal.mdx` again (re-dated
+sources/inspected fields, same churn pattern as evt-06), not separately quoted. The
+supplier-template wing-language correction (evt-02) remains open and unfixed in both new
+files. (3) Separately from the cook pipeline: `data-snack-plenum` hand-authored its own first
+derivative concept (`works/valid-plus-untrusted.md`, 2026-07-22 session, commit `96c779a`), a
+seven-tile C2PA trust-list instrument re-voicing Meridian's instrument 014 ("The Split
+Seal"), explicitly crediting Meridian by name and folding in its load-bearing caveat #5
+verbatim, honoring the standing downstream-commitments condition — new event
+`evt-11-plenum-derivative-concept` (`citation.declared`). Honestly scoped as NOT yet a Quick
+Snack: it sits in data-snack-plenum's own `works/`, offered, not built into the public
+`data-snack.com` surface as of this check. `status.as_of` moved to 2026-07-24, the re-cooked-
+works count to 9. This session additionally closed the private-repo verification gap noted
+above: `tools/verify-encounter-fixtures.mjs` gained a `LOCAL_CLONES` fallback (a local sibling
+clone, checked via `git show`, tried after the raw/token fetches) and this session was granted
+direct access to `frankbueltge/data-snack.com` — the gate now verifies all quotes in this
+fixture mechanically rather than carrying a disclosed gap
+(`LOCAL_CLONES='{"data-snack.com-from-scratch":"<path>"}' node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-004-diner-re-cooks` reports 0 failures). No existing event, object, or
+obligation was edited or deleted.

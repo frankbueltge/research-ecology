@@ -150,5 +150,25 @@
    "note": "field-sync[bot] picked up Meridian's instrument 016 ('Coverage Is Not Custody', shipped field-research session 48, 2026-07-20) the next morning — the synced corpus grows from 15 to 16. Same automated field-sync pipeline as evt-03/04/06 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit. Disclosed honestly: field-research's own commit history for this work was later disrupted by a git-history purge (2026-07-21, legal-hygiene name scrub) that lost six sessions (46-51) including this instrument's ship commit; field-research's session 53 (2026-07-22) reconstructed works/2026-07-20-coverage-not-custody byte-exact from the site's own mirror, so source_work_uri above cites the recovery commit, not a commit that existed at sync time — the datavism.org copy quoted here predates and is unaffected by that loss."
   },
   "content_hash": "sha256:e50e41a677ff462f018da0b6f0adf93ae89e845c7f92595daef1c75818409869"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-08-synced-work-hollowed",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "field-sync[bot]"
+  },
+  "occurred_at": "2026-07-22T07:44:14Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/db472f268fa6b892590739be0066269cbb5ffae5/src/content/field-works/2026-07-20-coverage-not-custody.md",
+  "source_commit": "db472f268fa6b892590739be0066269cbb5ffae5",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "datavism:field-works-coverage-not-custody",
+   "quote_frontmatter_retained": "labUrl: \"https://frankbueltge.de/field/werke/2026-07-20-coverage-not-custody/\"",
+   "note": "field-sync[bot]'s very next scheduled run (2026-07-22 07:44:14, one commit after evt-07) rewrote src/content/field-works/2026-07-20-coverage-not-custody.md down to its six-line frontmatter only — the entire body (title, one-line claim, method, all committed prose) was removed, 111 lines net deletion, no replacement content added. The file is not deleted; it is hollow (verified by direct read of the current file: 9 lines, frontmatter only). This lands the same day field-research's own commit history was rewritten by a legal-hygiene purge (2026-07-21) that briefly dropped this same instrument's ship commit (see evt-07's note; field-research works/2026-07-20-coverage-not-custody/RECOVERY.md, session 53, 2026-07-22) — the sync's timing relative to the purge and field-research's same-day recovery is consistent with, but not established by, available evidence as the cause; no field-sync workflow log is public. field-research's own copy is intact and complete (recovered byte-exact from the site's mirror, session 53). No re-sync commit has landed on datavism.org since (checked 2026-07-24 — db472f2 is still HEAD for this path): the reuse surface currently carries a hollow entry for a work whose source is whole. Disclosed as an open, unresolved gap — not a correction, because no compensating sync has occurred; this event records the loss honestly rather than silently carrying `total_synced_works_count: 16` as if all sixteen were intact."
+  },
+  "content_hash": "sha256:2dcd1612b6d42ca74719b244c93797f38571942d4b6e40472bbc95034f488ddb"
  }
 ]

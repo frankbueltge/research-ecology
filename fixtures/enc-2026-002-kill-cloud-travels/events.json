@@ -351,5 +351,50 @@
       "path_boundary_note": "guard: projects/, memory/, WORKBOARD.md stay in the engine repo; only works/ travels."
     },
     "content_hash": "sha256:35495f01d0d7d3f8cfd19029a4115d045f26e6b951adce82665fb0c3a349ebaa"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-14-monitoring-maintained",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "object.maintained",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "ensemble"
+    },
+    "occurred_at": "2026-07-23T13:24:44Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c/works/2026-07-17-no-way-of-knowing/data.json",
+    "source_commit": "e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c",
+    "visibility": "public",
+    "payload": {
+      "target_object_ref_id": "ensemble:no-way-of-knowing@1860072",
+      "quote_before": "2 catches on record. Case 02 unresolved. Last checked 17 July 2026.",
+      "quote_after": "2 catches on record. Case 02 unresolved. Last checked 23 July 2026.",
+      "quote_statement_before": "Two catches as of the last check (2026-07-17): one closed pair (2024), one open question (2026, the operation against Iran, investigation being finalised — the AI question unanswered). No new confirmed confidence/denial pair since. This is the studio's own monitoring status on the date shown, not a claim that none exists.",
+      "quote_statement_after": "Two catches as of the last check (2026-07-23): one closed pair (2024), one open question (2026, the operation against Iran, investigation still unreleased — the AI question unanswered). No new confirmed confidence/denial pair since. This is the studio's own monitoring status on the date shown, not a claim that none exists.",
+      "quote_new_finding": "on 13 July 2026 the Pentagon said only that it 'is ongoing' with no 'updates to announce', while more than two dozen senators demanded its release. The Pentagon has not answered the AI question either way. This console fabricates no denial. The open state is the truth it shows.",
+      "note": "Session 33 (2026-07-23), studio's first post-premiere serial re-check of Instance 2 (last checked 2026-07-17, per the standing monitoring-status obligation obl-enc2026002-monitoring-status). Instance 2's OPEN state held true in the world; no new confirmed confidence/denial pair. The refresh touched only the dated monitoring fields and the open-answer-slot text (monitoring.last_checked, monitoring.statement, monitoring.serial_line, disclosed, open_answer_slot.text/source_urls, answer_slot_label) — no SOURCED sentence changed, no gate re-run, no re-premiere. New event type 'object.maintained' (open string, spec 03 §3: 'Event types are open strings with a stable namespace'): distinct from 'object.transformed' because nothing was gated or re-shipped, only a live monitoring status re-dated against a first-hand world re-check — exactly the mechanism obl-enc2026002-monitoring-status commits to. The premiere-day site-gate mirror follows in evt-15."
+    },
+    "content_hash": "sha256:60de66f8ce0d060a8dde8561c09b241d27d22793156d30c2e2c5625a18e594b4"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-15-publication-site-gate-2",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "derivative.published",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "studio-integrate"
+    },
+    "occurred_at": "2026-07-23T13:26:18Z",
+    "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/576da56065809ec7a841a4445b016c5bc87fa1fe/public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json",
+    "source_commit": "576da56065809ec7a841a4445b016c5bc87fa1fe",
+    "visibility": "public",
+    "payload": {
+      "derivative_object_ref_id": "ensemble:no-way-of-knowing@1860072",
+      "apparatus_note": "Site-integration re-mirror of evt-14's monitoring update, same act-class as evt-13, roughly 94 seconds after the studio's own session-33 commit (e068fdc, 2026-07-23T13:24:44Z). data.json is byte-identical between the two repositories (sha256 c9e6c93c3507847bcc298717684992d89318885109443575c16dde875c57178c, both studio:works/2026-07-17-no-way-of-knowing/data.json and frankbueltge.de:public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json at these commits).",
+      "commit_message": "studio: integrate 2026-07-23",
+      "path_boundary_note": "guard: projects/, memory/, WORKBOARD.md stay in the engine repo; only works/ travels."
+    },
+    "content_hash": "sha256:79578d43ada565ab5b33c2dd2ce43183d860fcc824e1371a7db133c1d17a165d"
   }
 ]

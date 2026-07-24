@@ -169,5 +169,74 @@
    "note": "The first commit the now-armed automation (evt-enc2026004-07) actually published: Meridian's instrument 015 ('Comparable With Humans', shipped field-research session 43, 2026-07-17) re-cooked as the diner's seventh Quick Snack, re-titled 'The 0.66 Problem'. gauntlet reads 'shipped (pre-gauntlet convention)', an honest self-disclosure that the cook template's own gate has not yet run on unattended output — a standing-relation gap already flagged by evt-enc2026004-02's open correction (the supplier-template wing language) and not yet closed by this addition either."
   },
   "content_hash": "sha256:3c0bb3e7d4b5aa6ab144695c3d77262c8ca33a5690ed0f86d0b66bf961b20cfb"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-09-corpus-grown-2",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-cook-bot"
+  },
+  "occurred_at": "2026-07-22T07:19:39Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/d051b41e0fd75e1d2ccb01a600ea152ec991560a/prototype-v2/src/content/quick/recovery.mdx",
+  "source_commit": "d051b41e0fd75e1d2ccb01a600ea152ec991560a",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "en: 'The Silent Score: 0,87'",
+   "quote_provenance_work": "work: 'Recovery'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 28, 2026-07-21'",
+   "quote_hook": "The unexplained score that routes every appeal back to itself.",
+   "total_quick_snacks_count": 8,
+   "note": "The armed automation's next unattended cook: Ensemble's premiered 'Recovery' (studio session 28, 2026-07-21 — the Dutch childcare-benefits fraud-detection kiosk) re-cooked as the diner's eighth Quick Snack, re-titled 'The Silent Score: 0,87'. Sourced independently of Meridian, like the corpus's first entry (native-speaker, evt-02). The same commit also re-cooked split-seal.mdx again (re-dated sources/inspected fields and a reworded hookStat, same pattern as evt-06); not separately quoted here as substantively new. The supplier-template wing language flagged open by evt-02 ('the lab''s production wing, frankbueltge.de') is unchanged and still present in this file's own provenance.supplier field — the open correction from evt-02 remains open."
+  },
+  "content_hash": "sha256:5f403b17c1583e3678b25dedb3a1bb530c5d2ea61aaa38293bdff8f73ccbd31c"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-10-corpus-grown-3",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-cook-bot"
+  },
+  "occurred_at": "2026-07-23T07:15:03Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/ddd4a0a2e978d87f0798109a614972e1f3a807ae/prototype-v2/src/content/quick/one-tap.mdx",
+  "source_commit": "ddd4a0a2e978d87f0798109a614972e1f3a807ae",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "en: 'The Dalles Concealment Case'",
+   "quote_provenance_work": "work: 'One Tap'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 31, 2026-07-23'",
+   "quote_hook": "Thirteen months in court. That''s how long it took to pry loose Google''s data-center water figures in The Dalles, Oregon.",
+   "total_quick_snacks_count": 9,
+   "note": "The armed automation's next unattended cook, same day Ensemble's 'One Tap' premiered (studio session 31, 2026-07-23 04:58:28Z — the Google/The Dalles water-disclosure case): re-cooked as the diner's ninth Quick Snack, re-titled 'The Dalles Concealment Case'. Sourced independently of Meridian, like recovery (evt-09) and native-speaker (evt-02). The same commit also re-cooked split-seal.mdx again (re-dated sources/inspected fields, same pattern as evt-06/evt-09); not separately quoted here. The supplier-template wing language flagged open by evt-02 remains unchanged and open in this file's own provenance.supplier field."
+  },
+  "content_hash": "sha256:fbcff9dcda41eb01e53fc06ef333f6fc8fd354063baf7e934b10e18a2c340b1a"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-11-plenum-derivative-concept",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "citation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-22T01:33:44Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack-plenum/blob/96c779a13e787c10a3c786d3eab6eb301c5d1e96/works/valid-plus-untrusted.md",
+  "source_commit": "96c779a13e787c10a3c786d3eab6eb301c5d1e96",
+  "visibility": "public",
+  "payload": {
+   "target_object_uri": "https://github.com/frankbueltge/field-research/tree/main/works/2026-07-11-split-seal",
+   "quote_credit": "Meridian research collective, work 014 'The Split Seal' (2026-07-11, rev. 2026-07-14) — frankbueltge.de/field. This page re-cooks one finding from that work into a playable instrument; it does not re-run the underlying validation, and 'Valid' here means signature-integrity, never signer-trust.",
+   "quote_provenance_note": "This snack's entire premise rests on this finding; it is credited, not re-derived — Layer-1/Layer-3 validation was Meridian's run, on Meridian's frozen specimen bytes, not this desk's.",
+   "quote_condition_honored": "Meridian's own downstream conditions (`memory/downstream-commitments.md`) ask that a caveat named load-bearing in the source travel at equal prominence into any re-voicing",
+   "quote_host": "Mine. Same audit as always, different pipeline: I don't trust the badge, I check the config that produced it",
+   "note": "Distinct from the automated cook pipeline (evt-04/07/09/10): the plenum itself hand-authored this concept (a seven-tile C2PA trust-list instrument re-voicing Meridian's Split Seal finding, work 014), explicitly naming and folding in Meridian's load-bearing caveat #5 ('Valid' means signature-integrity, never signer-trust) per the standing downstream-commitments condition — honoring the same condition the automated cooks have not yet been shown to check field-by-field. Honestly scoped as NOT YET a Quick Snack: the file sits in data-snack-plenum's own works/ (a proposal, 'Suited host: Mine'), not in data-snack.com's public prototype-v2/src/content/quick/ surface — offered, not shipped, at the time of this check (2026-07-24)."
+  },
+  "content_hash": "sha256:a0a0e80ce28438ce5f5e6d8942b3e79bd64d1a13d3e4b2fc1d8c30e8e0ad806e"
  }
 ]
