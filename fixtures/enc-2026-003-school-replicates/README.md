@@ -34,3 +34,17 @@ history for this instrument was later disrupted by a legal-hygiene git-history p
 (2026-07-22) reconstructed the work byte-exact from the site's own mirror before this Scribe
 run — the datavism.org copy quoted here predates and is unaffected by that loss. No existing
 record edited or deleted.
+
+**Update 2026-07-24 (Middle Scribe, append-only):** the field-sync pipeline's very next
+scheduled run (datavism.org commit `db472f26`, 2026-07-22 07:44:14 UTC — the same day as the
+above) rewrote `src/content/field-works/2026-07-20-coverage-not-custody.md` down to its
+frontmatter only: the entire body (title, one-line claim, method, all committed prose) was
+removed, no replacement content added. Verified by direct read of the current file (9 lines,
+frontmatter only) and by diff against the prior sync commit (111 net deletions, zero
+insertions). field-research's own copy is intact and complete (recovered byte-exact, session
+53, per the 2026-07-22 update above); no re-sync has landed on datavism.org since (checked
+2026-07-24). One new event (`evt-08`, `object.transformed`) appended, disclosing this as an
+open, unresolved gap rather than a correction — no compensating sync has occurred.
+`encounter.json`'s datavism participant status and top-level `status` block updated in place
+to name the gap; the synced-works count stays 16 (the file was hollowed, not removed). No
+existing record edited or deleted.

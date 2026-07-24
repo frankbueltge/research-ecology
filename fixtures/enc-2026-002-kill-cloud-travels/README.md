@@ -175,6 +175,22 @@ DRAFT status above is untouched: Frank's "go" answered the playthrough request s
 a read/approval of this fixture's wording, which the work order distinguishes and this update
 does not blur.
 
+## Update 2026-07-24 (Middle Scribe, append-only)
+
+The studio ran its first post-premiere monitoring cycle (session 33, commit
+`e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c`, 2026-07-23 13:24:44 UTC): the monitoring line was
+six days stale (last checked at the 2026-07-17 premiere). The conductor re-checked the world
+first-hand against a newer primary (Military Times, 13 July 2026 — the Pentagon: "is ongoing...
+no updates to announce"; more than two dozen senators demanding release). Instance 2's OPEN
+state held true — no gate, no graduation, so the update is recorded under a new open event
+type, `object.maintained` (`evt-enc2026002-14`), rather than `object.transformed`; the
+site-gate re-mirror followed 94 seconds later (`frankbueltge.de` commit `576da560`,
+`evt-enc2026002-15`). Only the dated monitoring fields changed
+(`monitoring.last_checked`/`statement`/`serial_line`, `disclosed`, the open-answer-slot text);
+no SOURCED sentence changed. Both load-bearing obligations (open-instance-honesty,
+monitoring-status) remain `active`, unedited — this update evidences them being kept, not
+discharged. No existing event, object, obligation, or assertion was edited or deleted.
+
 ## Fixture contents
 
 | File | Contents |

@@ -30,18 +30,19 @@
     "clause_text": "the serial \"no new instance since\" line is an unsourced negative — reframe as studio **monitoring status** with the actual last-check date, and confirm the finalising Pentagon investigation produced no new confirmed instance before shipping it",
     "clause_text_normalized": true,
     "clause_source": "studio journal/2026-07-15-session-14.md, the Verifier's build-time obligation 1 (of three), adopted with the brief at the receiver's own gate (commit 46bb7a88); carried in the brief as binding condition 4.",
-    "instantiation_quote": "This is the studio's own monitoring status on the date shown, not a claim that none exists.",
-    "instantiation_source": "studio projects/no-way-of-knowing/data.json (commit c23d3a01), field monitoring.statement; the rendered serial line reads '2 catches on record. Case 02 unresolved. Last checked 16 July 2026.' (monitoring.serial_line) and the update commitment reads 'When the Pentagon investigation answers Congress's AI question, Instance 2's open slot updates on that cycle — or the console discloses that it has not.' (monitoring.serial_note).",
+    "instantiation_quote": "2 catches on record. Case 02 unresolved. Last checked 23 July 2026.",
+    "instantiation_source": "studio works/2026-07-17-no-way-of-knowing/data.json (commit e068fdc1, session 33, 2026-07-23), field monitoring.serial_line — re-dated from the 2026-07-17 premiere-day check per evt-enc2026002-14; the update commitment ('When the Pentagon investigation answers Congress's AI question, Instance 2's open slot updates on that cycle — or the console discloses that it has not.', monitoring.serial_note) is unchanged.",
     "status": "active",
     "prominence": "load_bearing",
     "accepted_by_event_id": "evt-enc2026002-04-project-opened",
     "evidence_events": [
       "evt-enc2026002-04-project-opened",
       "evt-enc2026002-06-increment1-transformed",
-      "evt-enc2026002-09-increment3-transformed"
+      "evt-enc2026002-09-increment3-transformed",
+      "evt-enc2026002-14-monitoring-maintained"
     ],
     "active_from": "2026-07-15T04:16:58Z",
-    "note": "SELF-IMPOSED, and the concrete mechanism by which the work's live status stays honest: the monitoring line is a dated studio status, never a world-fact; it was actually re-checked first-hand on 2026-07-16 before increment 1 shipped ('the Pentagon investigation into the Minab school strike is still being finalised'). The commitment is standing: when the world's open question closes, the work updates on that cycle or discloses that it has not. No 'submitted-but-withheld' state and no Senate deadline exist anywhere in the sources; this clause and the dated status above are the entire supported content of the live-status obligation (see README, gap 2)."
+    "note": "SELF-IMPOSED, and the concrete mechanism by which the work's live status stays honest: the monitoring line is a dated studio status, never a world-fact; it was actually re-checked first-hand on 2026-07-16 before increment 1 shipped ('the Pentagon investigation into the Minab school strike is still being finalised'). The commitment is standing: when the world's open question closes, the work updates on that cycle or discloses that it has not. No 'submitted-but-withheld' state and no Senate deadline exist anywhere in the sources; this clause and the dated status above are the entire supported content of the live-status obligation (see README, gap 2). Re-checked and honored a second time 2026-07-23 (session 33, evt-enc2026002-14): six days after premiere, the world re-verified first-hand (Military Times, 13 July 2026) and the monitoring line re-dated; Instance 2's open state held true, nothing invented."
   },
   {
     "id": "obl-enc2026002-upstream-watch",
