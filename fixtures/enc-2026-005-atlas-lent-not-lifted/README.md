@@ -131,6 +131,19 @@ als-methode (public) and independently verified byte-exact.
 14 new quotes). `status.as_of` moved to 2026-07-22. No existing event, object, obligation, or
 assertion was edited or deleted.
 
+## Update 2026-07-24 (repo note, append-only)
+
+`meridian-runtime` is **public** as of 2026-07-24 (`gh repo view frankbueltge/meridian-runtime
+--json visibility` → `PUBLIC`). The PRIVATE-REPO NOTE above is kept as written — it was
+accurate at transcription time and documents why the two `meridian-runtime` manifest rows were
+verified manually. Two of its consequences are now dated rather than wrong: the missing
+`REPO_MAP` label in `tools/verify-encounter-fixtures.mjs` is no longer blocked by visibility
+(the two rows — and the disclosed 3-failure verifier count — could now be wired into the
+automated runner), and the 2026-07-22 update's parenthetical rationale for landing the fifteen
+cluster-7 rows into `REQUESTS.md` in full ("its own repository being private") no longer
+applies to future disclosures. No event, object, obligation, or assertion is changed by this
+note.
+
 ## Fixture contents
 
 | File | Contents |

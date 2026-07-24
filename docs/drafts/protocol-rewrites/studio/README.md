@@ -1,3 +1,6 @@
+<!-- STATUS: applied to the live engine repo on 2026-07-16 — kept as the durable migration
+draft / audit trail. The live README has since evolved (repo links and site routes updated,
+e.g. /lab → /holdings, 2026-07-24); do not re-apply this file verbatim. -->
 <!-- Provenance: migration to the federated research ecology's constitution, decided and
 drafted by the architect (Frank Bültge), 2026-07-16, per docs/spec/02-COLLECTIVES-AND-LOCAL-
 SOVEREIGNTY.md §4 ("Ensemble / Studio") — rewriting the founding README out from under
