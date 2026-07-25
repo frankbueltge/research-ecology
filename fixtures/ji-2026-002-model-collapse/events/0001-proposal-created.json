@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0001",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.proposal_created",
+  "issuer": {
+    "actor_id": "frank-bueltge",
+    "actor_type": "human",
+    "practice_id": null
+  },
+  "occurred_at": "2026-07-24T00:00:00Z",
+  "received_at": null,
+  "payload": {
+    "revision": 1,
+    "minimum_participants": 2,
+    "maximum_participants": 3,
+    "invited_practice_ids": ["meridian", "ulysses", "ensemble"],
+    "coordination_profile": "parallel_return",
+    "working_title": "Model Collapse",
+    "note": "Draft proposal only. No invitations have been sent through the practices' REQUESTS channels; no participation is implied (§2.1). The field corpus is not yet sourced — the practices pin it during reconciliation before the inquiry can go ACTIVE."
+  },
+  "source_uri": null,
+  "source_commit": null,
+  "content_hash": "draft-ji2026002-e0001-not-yet-hashed",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}
