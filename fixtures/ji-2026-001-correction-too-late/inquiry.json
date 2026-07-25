@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ji-2026-001",
+  "slug": "correction-too-late",
+  "title": "The Correction That Arrives Too Late",
+  "approval": "draft",
+  "public_summary": "A temporary constellation of three sovereign practices asking what remains operative after a public claim has been corrected — measured, problematised and made experiential in parallel, with disagreement preserved and no synthesis forced.",
+  "shared_problem": "What remains operative after a public claim has been corrected? Concretely: does a correction erase the first claim, or does it arrive only as a further trace that changes but cannot lift the first — as observed reproducibly within the ecology's own versioned archives and their mirrors, not on fragile live-web surfaces.",
+  "why_multiple_practices": "Meridian can measure whether the uncorrected claim stays discoverable relative to its correction, code-anchored and reproducibly. Ulysses can problematise the asymmetry (a correction is a further statement, not an erasure) and already verifies altered/second-hand attributions with a typed verdict taxonomy. Ensemble can build a situation in which a first effect and a later correction cannot restore the prior state. The inquiry is INVALID if it collapses into a service chain (Meridian supplies facts, Ensemble visualises, Ulysses comments); incompatibility of the three readings of irreversibility is constitutive, not incidental.",
+  "initiated_by": { "actor_id": "frank-bueltge", "actor_type": "human", "practice_id": null },
+  "minimum_participants": 2,
+  "maximum_participants": 3,
+  "invited_practice_ids": ["meridian", "ulysses", "ensemble"],
+  "coordination_profile": "parallel_return",
+  "coordination_note": "parallel_return with explicit cross_examination return events (Document 10 §8): all three receive the same versioned material and produce one local first move independently; the return bundle is a mutual cross-examination — Meridian audits factual claims in Ulysses'/Ensemble's outputs, Ulysses and Ensemble challenge Meridian's categories and instrument. At most one return move per practice. No forced synchronisation that hides different rhythms.",
+  "status": "PROPOSED",
+  "phase": "PROPOSAL",
+  "visibility": "participants",
+  "publication_policy": "human_only",
+  "resource_envelope": {
+    "aggregate_external_cost_eur": 0,
+    "target_review_window_days": 10,
+    "max_first_moves_per_practice": 1,
+    "max_return_moves_per_practice": 1,
+    "automatic_extension": false
+  },
+  "shared_material_refs": [
+    {
+      "practice_id": "meridian",
+      "local_object_id": "works/2026-07-01-calibration-gap/data.json",
+      "version": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+      "content_hash": "sha256:af8557a6bd6c1047ddff50220ec7e60deb1b971dde4b63790b0887320621a36c",
+      "canonical_uri": null,
+      "local_type": "data-instrument",
+      "media_type": "application/json",
+      "title": "Calibration Certificate — instrument 001, session-33 corrected state (the claim carrying a disclosed correction history)"
+    },
+    {
+      "practice_id": "meridian",
+      "local_object_id": "REQUESTS.md#correction-report",
+      "version": "5dcdb17b4e5d7e9a287c3f2d593b97ab71564941",
+      "content_hash": "sha256:2104873a50771c98f2e5e014983cef55960d13700af73242457918d73370373d",
+      "canonical_uri": null,
+      "local_type": "correction-report",
+      "media_type": "text/markdown",
+      "title": "The correction itself — the harm-register correction report (delivered via Frank as delegated conductor, enc-2026-001 event 03)"
+    }
+  ],
+  "source_encounter_refs": [
+    "enc-2026-001-calibration-gap-travels",
+    "enc-2026-003-school-replicates",
+    "enc-2026-004-diner-re-cooks"
+  ],
+  "stop_conditions": [
+    "Kill or narrow if no real trace beyond trivial page caching or version history can be established (Document 10 §5 kill condition).",
+    "Cancel the redaction-persistence seed (the 2026-07-21 legal-hygiene git-history purge) if it cannot be studied at the structural/metadata level WITHOUT re-exposing any redacted personal data.",
+    "Any practice may accept, defer, decline, withdraw or remain silent per its local protocol (§2.1/§11); if fewer than 2 active local commitments remain, the inquiry becomes DORMANT or CANCELLED — no minimum is forced on an unwilling practice.",
+    "No automatic extension: continuation requires an explicit participant decision and a new resource envelope (§10)."
+  ],
+  "rights_summary": "No new personal or sensitive data is collected to enrich the work (Document 10 §4). The rights-sensitive seed — the 2026-07-21 legal-hygiene redaction of real names and the git-history purge that could not lift the trace via mirrors — is studied only as a STRUCTURAL persistence phenomenon; the redacted content is never re-surfaced. Meridian's own practice (redact, do not re-expose) is the model. This is a §2.8 human-review boundary (rights ambiguity, sensitive data): Frank must weigh it before this seed is foregrounded over the rights-clean calibration-gap correction history.",
+  "affected_public_summary": "Two affected classes: the individuals whose names were redacted for legal hygiene (never to be re-identified), and the subjects of the AI-detection-harm claims in the source instrument (e.g. the Yang v. University of Minnesota case, whose two incompatible framings already live in both archives). No re-identification, no new participant research; any experiential prototype uses synthetic states or informed internal participants only.",
+  "created_at": "2026-07-24T00:00:00Z",
+  "updated_at": null,
+  "revision": 1
+}
