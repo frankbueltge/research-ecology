@@ -41,13 +41,13 @@ jobs:
       - name: Clone engine repos (ground truth for the observed layer)
         run: |
           git clone --depth 1 https://github.com/frankbueltge/field-research /tmp/engines/field-research
-          git clone --depth 1 https://github.com/frankbueltge/irrtum-als-methode /tmp/engines/irrtum-als-methode
+          git clone --depth 1 https://github.com/frankbueltge/ulysses /tmp/engines/ulysses
           git clone --depth 1 https://github.com/frankbueltge/studio /tmp/engines/studio
 
       - name: Import bundles (read-only, deterministic ids — hydration needs them)
         run: |
           npx tsx apps/importer/src/cli.ts --repo /tmp/engines/field-research --collective meridian
-          npx tsx apps/importer/src/cli.ts --repo /tmp/engines/irrtum-als-methode --collective ulysses
+          npx tsx apps/importer/src/cli.ts --repo /tmp/engines/ulysses --collective ulysses
           npx tsx apps/importer/src/cli.ts --repo /tmp/engines/studio --collective ensemble
 
       - name: Derive drift (export into a throwaway dir; read driftWarnings)

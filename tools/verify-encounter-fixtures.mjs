@@ -36,7 +36,8 @@ function ghToken() {
 const REPO_MAP = {
   "field-research": "frankbueltge/field-research",
   "studio": "frankbueltge/studio",
-  "irrtum-als-methode": "frankbueltge/irrtum-als-methode",
+  "irrtum-als-methode": "frankbueltge/ulysses",
+  "ulysses": "frankbueltge/ulysses",
   "data-snack-plenum": "frankbueltge/data-snack-plenum",
   "research-ecology": "frankbueltge/research-ecology",
   "frankbueltge.de": "frankbueltge/frankbueltge.de",

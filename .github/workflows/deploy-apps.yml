@@ -41,12 +41,12 @@ jobs:
       # `import/` is gitignored (work order phase-3a: bundles are regenerated, never committed).
       # The Atelier only ever renders Ulysses' data (`ATELIER_COLLECTIVE_ID` in
       # apps/atelier/src/lib/server/store.ts), so only that one engine repo needs checking out
-      # here — irrtum-als-methode is public, so the default token is enough (no extra secret).
-      - name: Checkout irrtum-als-methode (Ulysses — the only collective the Atelier renders)
+      # here — ulysses is public, so the default token is enough (no extra secret).
+      - name: Checkout ulysses (Ulysses — the only collective the Atelier renders)
         uses: actions/checkout@v4
         with:
-          repository: frankbueltge/irrtum-als-methode
-          path: irrtum-als-methode
+          repository: frankbueltge/ulysses
+          path: ulysses
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -61,7 +61,7 @@ jobs:
 
       - name: Import Ulysses bundle (populates import/bundles/, read-only toward the engine repo)
         working-directory: research-ecology
-        run: npx tsx apps/importer/src/cli.ts --repo ../irrtum-als-methode --collective ulysses
+        run: npx tsx apps/importer/src/cli.ts --repo ../ulysses --collective ulysses
 
       - name: Build apps/atelier (adapter-static, full prerender)
         working-directory: research-ecology
