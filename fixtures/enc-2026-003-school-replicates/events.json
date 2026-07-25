@@ -172,5 +172,27 @@
    "note": "field-sync[bot] picked up Meridian's instrument 017 ('Where the Chain Breaks', shipped field-research session 59, 2026-07-24) the next morning — the synced corpus grows from 16 to 17. Same automated field-sync pipeline as evt-03/04/06/07 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
   },
   "content_hash": "sha256:3fccf785612c34b827114c67974d14cb0efa5675a6242d9f86d81d19e16eb5c8"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-09-reuse-surface-regression",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "source.status_changed",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "field-sync"
+  },
+  "occurred_at": "2026-07-22T07:44:14Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/db472f268fa6b892590739be0066269cbb5ffae5/src/content/field-works/2026-07-20-coverage-not-custody.md",
+  "source_commit": "db472f268fa6b892590739be0066269cbb5ffae5",
+  "visibility": "public",
+  "payload": {
+   "affected_local_object_id": "field-works-coverage-not-custody",
+   "quote_title_still_present": "title: \"Coverage Is Not Custody\"",
+   "note": "Observed regression on the reuse surface, not a self-declared correction: the same automated field-sync pipeline that admitted this work (evt-07, commit 134cc45d, full 111-line body present) committed a version at this commit that keeps only the seven-line YAML frontmatter and drops the entire body (111 lines, the one-line claim, the measurement writeup) — a pure deletion, no rename, no replacement content. field-research's own source for this instrument (works/2026-07-20-coverage-not-custody/work.astro) was already fully recovered by session 53 (commit 3f00b2ab, 2026-07-22T04:09:35Z) more than three hours before this sync ran, so the loss is not a pass-through of an upstream gap at sync time — it originates in the sync/transport step itself. Re-checked against the following two sync commits (aa3722e, 2026-07-24T07:43:18Z, evt-08; and any run since): this file is untouched in both, so the body loss remains unrepaired as of this check (2026-07-25). No cause diagnosed beyond what is evidenced; disclosed as an open pipeline gap for the practice, not fixed here (README, per the fixture's existing GAP-disclosure convention).",
+   "evt07_object_unaffected": "the pinned object datavism:field-works-coverage-not-custody (@134cc45d, sha256 3418abe6cc5ab3ae2d3d6e61281535e50ae48d9c16cf480e7dfbbfc1307abb0f) is a historical commit and stays exactly as recorded — only the CURRENT tip's copy of this file is degraded",
+   "current_truncated_sha256": "42777caffc0d3f845b2750bd248cbb183dff865cea7dfc9f73e1aa25115e6394"
+  },
+  "content_hash": "sha256:f1b4016562b25b84f26ac3bbf064ce147d5675daef18d6df571d7f433b8c2434"
  }
 ]

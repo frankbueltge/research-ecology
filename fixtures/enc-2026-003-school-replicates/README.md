@@ -42,3 +42,19 @@ record edited or deleted.
 (`datavism:field-works-where-the-chain-breaks`, real sha256) appended; `status.as_of` moved to
 2026-07-25 and the synced-works count to 17. No existing record edited or deleted. ADR 002 is
 still `Entwurf — zur Freigabe durch Frank`, unchanged.
+
+**Second pass, same day (Middle Scribe, append-only):** a regression, not a self-declared
+correction, found diffing back to 2026-07-22: the same field-sync pipeline that admitted
+instrument 016 (evt-07) committed a version of its mirrored page (datavism.org commit
+`db472f2`, 2026-07-22 07:44:14 UTC) that keeps only the seven-line YAML frontmatter and drops
+the entire 111-line body — a pure deletion. field-research's own source had already been
+fully recovered more than three hours earlier (session 53, commit `3f00b2ab`, 2026-07-22
+04:09:35 UTC), so the loss originates in the sync step itself, not in an upstream gap it
+passed through. Re-checked against the two sync commits since: still unrepaired. New event
+(`evt-09-reuse-surface-regression`) and one new object
+(`datavism:field-works-coverage-not-custody-regressed`, real sha256, kept alongside the
+healthy pinned `@134cc45d` object rather than overwriting it); `statusLine` now names the
+open regression. One new `QUOTE-MANIFEST.tsv` line. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — verified (with
+`SCRIBE_LOCAL_CLONES` set; datavism.org content is public so this also verifies via plain raw
+fetch). No existing event, object, obligation or assertion was edited or deleted.

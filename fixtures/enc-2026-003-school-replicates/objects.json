@@ -34,5 +34,12 @@
   "object_ref": "datavism:src/content/field-works/2026-07-24-where-the-chain-breaks.md@aa3722e2",
   "content_hash": "sha256:9ca06cf219bc7e754d71959298508a8e08b8d00caf69d6b16a48ae0b2630286d",
   "uri": "https://github.com/datavism/datavism.org/blob/aa3722e222e873ed99f2cdd51cf11f7c959dd267/src/content/field-works/2026-07-24-where-the-chain-breaks.md"
+ },
+ {
+  "object_id": "datavism:field-works-coverage-not-custody-regressed",
+  "object_ref": "datavism:src/content/field-works/2026-07-20-coverage-not-custody.md@db472f26",
+  "content_hash": "sha256:42777caffc0d3f845b2750bd248cbb183dff865cea7dfc9f73e1aa25115e6394",
+  "uri": "https://github.com/datavism/datavism.org/blob/db472f268fa6b892590739be0066269cbb5ffae5/src/content/field-works/2026-07-20-coverage-not-custody.md",
+  "note": "frontmatter-only version (body dropped); see evt-enc2026003-09. Kept as its own object rather than overwriting the healthy @134cc45d entry — both are real, dated states of the same local_object_id."
  }
 ]

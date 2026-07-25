@@ -238,5 +238,26 @@
    "note": "Recorded here, not smoothed away: the source practice's own contest of a premiere does not retroactively un-happen the re-cook, and the diner's automation has no mechanism yet to notice a source work changing under an already-cooked Quick Snack. Whether or when the diner re-cooks is the diner's own decision, not this record's to make."
   },
   "content_hash": "sha256:8eb84719388d8d2f143dc069f0267c311f9270660145da308e4102fd39810462"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-12-recook-pattern-continues",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "source.status_changed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-24T07:15:34Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c/prototype-v2/src/content/quick/native-speaker.mdx",
+  "source_commit": "d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c",
+  "visibility": "public",
+  "payload": {
+   "quick_slug": "native-speaker",
+   "quote_title_unchanged": "title: en: 'The Gate''s Judgment'",
+   "quote_teaser_reworded": "Your words, scanned live. A border gate, an AI detector''s ghost. The mechanism is documented. The consequences are real.",
+   "note": "A pattern, not a single instance: the silent re-voicing first disclosed at evt-06 (split-seal, 2026-07-17) has recurred in every one of the eight further automated runs checked this pass — dates bumped, teaser/hookStat text re-worded, no new load-bearing caveat — across commits 33fd8d5299f11ffe53936d785033ffb033dc8ec0, 99f5c750d28b1df89b7cbe7d679c74dad61e4d0e, 9a9305fa947c1feaf609acac3677c79d3e493199, 607609e927c5efd5590e7704d45c0d682f2373d6, d051b41e0fd75e1d2ccb01a600ea152ec991560a, ddd4a0a2e978d87f0798109a614972e1f3a807ae and d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c (plus 1ee911a405ff985cf5ad3a28acb81b8328e49c28, evt-06's own instance) — i.e. split-seal has been re-voiced on every single automated run since its creation, not only the two runs evt-11 names. On 2026-07-24 (commit d0bff40, same commit as evt-11's second automated run) the pattern extended to a second already-published item: native-speaker.mdx (the diner's first Quick Snack) had its teaser and hookStat text reworded (title unchanged: 'The Gate's Judgment'). Distinct from evt-11's finding (a source-side premiere later contested): this is the cook template's own re-voicing of already-published prose, with nothing in its schema marking these as corrections or versions — the only trace is git history itself. Disclosed as an open pattern, not fixed here: the receiver's own provenance-lock obligation (obl-enc2026004-1) covers presence of provenance frontmatter, not stability of the re-voiced prose against silent drift."
+  },
+  "content_hash": "sha256:25b1af9aa4c5c27a1c9d046b20520bdcd0c61e331ae5623c9028c95b702ce18e"
  }
 ]

@@ -33,3 +33,5 @@ events.json/e11/quote_contested	studio:WORKBOARD.md@e006789cb9bebdb80104268249be
 events.json/e11/quote_not_recertified	studio:WORKBOARD.md@e006789cb9bebdb80104268249beb9581bbc5396	NOT re-certified — returns to the human eye	no
 events.json/e11/quote_frank_verdict	studio:WORKBOARD.md@e006789cb9bebdb80104268249beb9581bbc5396	even worse staged than the HTML version.	no
 events.json/e11/quote_diner_carries	data-snack.com-from-scratch:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2e978d87f0798109a614972e1f3a807ae	Kritiker: PREMIERE STANDS.	no
+events.json/e12/quote_title_unchanged	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c	title: en: 'The Gate''s Judgment'	no
+events.json/e12/quote_teaser_reworded	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c	Your words, scanned live. A border gate, an AI detector''s ghost. The mechanism is documented. The consequences are real.	no

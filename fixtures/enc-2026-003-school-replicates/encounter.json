@@ -9,7 +9,7 @@
  },
  "status": {
   "as_of": "2026-07-25",
-  "statusLine": "open/standing — transport automated, translation manual, 17 works synced"
+  "statusLine": "open/standing — transport automated, translation manual, 17 works synced; one sync-pipeline content-loss regression open (instrument 016's mirrored page, unrepaired)"
  },
  "participants": [
   {

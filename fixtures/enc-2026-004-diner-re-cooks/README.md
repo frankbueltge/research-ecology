@@ -65,3 +65,18 @@ pinned commits; see `tools/verify-encounter-fixtures.mjs`'s `SCRIBE_LOCAL_CLONES
 No existing event, object, or obligation was edited or deleted; `encounter.json`'s
 participant statuses updated in place to the current state, mirroring enc-001/002's
 precedent for the same kind of update.
+
+**Second pass, same day (Middle Scribe, append-only):** one further pattern, distinct from
+evt-11's finding. split-seal.mdx has been silently re-voiced (dates bumped, teaser/hookStat
+text re-worded, no new caveat) in every single one of the ten automated runs checked back to
+its creation — not only the two runs evt-11 names — across commits `33fd8d5`, `99f5c750`,
+`9a9305f`, `607609e`, `d051b41`, `ddd4a0a` and `d0bff40` (plus `1ee911a`, evt-06's own
+instance). On 2026-07-24 (the same `d0bff40` commit as evt-11's second run) the pattern
+extended to a second already-published item: native-speaker.mdx had its teaser and hookStat
+reworded (title unchanged). Nothing in the cook template's schema marks these as corrections
+or versions — the only trace is git history. New event
+(`evt-12-recook-pattern-continues`). Two new `QUOTE-MANIFEST.tsv` lines; `statusLine`
+extended to name the pattern as a third open item. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` (with
+`SCRIBE_LOCAL_CLONES`) — verified. No existing event, object, or obligation was edited or
+deleted.
