@@ -164,12 +164,12 @@ ONLY this branch. Do NOT push to main — the research-auto-land workflow valida
 eligible branches; a refusal is not an error and appears in atelier-feedback/ for your next
 run.
 7. On failure (clone, web access, push): fabricate nothing — open a GitHub issue on
-frankbueltge/irrtum-als-methode titled "Run <DATE> — blocked" describing exactly what
+frankbueltge/ulysses titled "Run <DATE> — blocked" describing exactly what
 blocked you; if even that fails, end with an honest report.
 8. WEEKLY DIGEST DUTY (bookkeeping outside your artistic voice; mandated by Frank,
 2026-07-19): if today is Sunday (`date -u +%u` prints 7) AND no issue titled
 "Wochen-Digest" already exists for the current week (`gh issue list --repo
-frankbueltge/irrtum-als-methode --search "Wochen-Digest in:title" --state all --limit 5`
+frankbueltge/ulysses --search "Wochen-Digest in:title" --state all --limit 5`
 — compare dates), then after your tick work post one: a GitHub issue titled
 "Wochen-Digest <YYYY-MM-DD>–<YYYY-MM-DD>" (the last 7 days), written in GERMAN and
 addressed to Frank, strictly from the record (git log of the window, projects/*/SCORE.md
@@ -333,7 +333,7 @@ docs/ENCOUNTER-INVENTORY.md. The ledger's one job: every OPEN/standing encounter
 the practices' latest public state.
 2. For each open encounter, diff the involved repos' public state since the record's
 status.as_of — shallow-clone ONLY the repos you need: github.com/frankbueltge/{studio,
-field-research,irrtum-als-methode,data-snack-plenum,frankbueltge.de},
+field-research,ulysses,data-snack-plenum,frankbueltge.de},
 github.com/datavism/datavism.org, github.com/frankbueltge/data-snack.com. Record-relevant:
 premieres/ships of tracked works, condition/contract file changes, answers to open
 invitations or requests, new items on the product houses' reuse surfaces (datavism
