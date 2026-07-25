@@ -21,3 +21,15 @@ events.json/e8/quote_title	data-snack.com-from-scratch:prototype-v2/src/content/
 events.json/e8/quote_provenance_work	data-snack.com-from-scratch:prototype-v2/src/content/quick/comparable-with-humans.mdx@99f5c750d28b1df89b7cbe7d679c74dad61e4d0e	work: 'Comparable With Humans'	no
 events.json/e8/quote_provenance_gauntlet	data-snack.com-from-scratch:prototype-v2/src/content/quick/comparable-with-humans.mdx@99f5c750d28b1df89b7cbe7d679c74dad61e4d0e	gauntlet: 'shipped (pre-gauntlet convention)'	no
 events.json/e8/quote_hook	data-snack.com-from-scratch:prototype-v2/src/content/quick/comparable-with-humans.mdx@99f5c750d28b1df89b7cbe7d679c74dad61e4d0e	A paper claims its AI is ''comparable with humans (69% versus 66%)''. The numbers are not comparable. One is decision accuracy. The other is committee agreement.	no
+events.json/e9/quote_title	data-snack.com-from-scratch:prototype-v2/src/content/quick/recovery.mdx@d051b41e0fd75e1d2ccb01a600ea152ec991560a	title: en: 'The Silent Score: 0,87'	no
+events.json/e9/quote_provenance_work	data-snack.com-from-scratch:prototype-v2/src/content/quick/recovery.mdx@d051b41e0fd75e1d2ccb01a600ea152ec991560a	work: 'Recovery'	no
+events.json/e9/quote_provenance_gauntlet	data-snack.com-from-scratch:prototype-v2/src/content/quick/recovery.mdx@d051b41e0fd75e1d2ccb01a600ea152ec991560a	gauntlet: 'graduated (ship), session 28, 2026-07-21'	no
+events.json/e9/quote_hook	data-snack.com-from-scratch:prototype-v2/src/content/quick/recovery.mdx@d051b41e0fd75e1d2ccb01a600ea152ec991560a	The unexplained score that routes every appeal back to itself.	no
+events.json/e10/quote_title	data-snack.com-from-scratch:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2e978d87f0798109a614972e1f3a807ae	title: en: 'The Dalles Concealment Case'	no
+events.json/e10/quote_provenance_work	data-snack.com-from-scratch:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2e978d87f0798109a614972e1f3a807ae	work: 'One Tap'	no
+events.json/e10/quote_provenance_gauntlet	data-snack.com-from-scratch:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2e978d87f0798109a614972e1f3a807ae	gauntlet: 'graduated (ship), session 31, 2026-07-23'	no
+events.json/e10/quote_kritiker_carried	data-snack.com-from-scratch:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2e978d87f0798109a614972e1f3a807ae	Kritiker: PREMIERE STANDS.	no
+events.json/e11/quote_contested	studio:WORKBOARD.md@e006789cb9bebdb80104268249beb9581bbc5396	CONTESTED — not a settled premiere.	no
+events.json/e11/quote_not_recertified	studio:WORKBOARD.md@e006789cb9bebdb80104268249beb9581bbc5396	NOT re-certified — returns to the human eye	no
+events.json/e11/quote_frank_verdict	studio:WORKBOARD.md@e006789cb9bebdb80104268249beb9581bbc5396	even worse staged than the HTML version.	no
+events.json/e11/quote_diner_carries	data-snack.com-from-scratch:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2e978d87f0798109a614972e1f3a807ae	Kritiker: PREMIERE STANDS.	no

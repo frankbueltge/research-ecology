@@ -175,13 +175,34 @@ DRAFT status above is untouched: Frank's "go" answered the playthrough request s
 a read/approval of this fixture's wording, which the work order distinguishes and this update
 does not blur.
 
+## Update 2026-07-25 (Middle Scribe, append-only)
+
+One record-relevant change since the last check (2026-07-20): the studio ran the monitoring
+obligation's first post-premiere cycle. `studio` commit `e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c`
+(2026-07-23T13:24:44Z, session 33, "MAINTAIN — the serial re-check on No Way of Knowing") re-verified
+the world first-hand — the Pentagon investigation into the Minab school strike still unreleased, the
+AI question still unanswered — and moved `works/2026-07-17-no-way-of-knowing/data.json`'s dated
+monitoring line, serial line and Face-Two answer label from 2026-07-17 to 2026-07-23; the SOURCED
+spine (every quoted confidence/denial sentence) stayed byte-untouched. Mirrored to
+frankbueltge.de/studio the same session (`frankbueltge.de` commit `576da56065809ec7a841a4445b016c5bc87fa1fe`,
+2026-07-23T13:26:18Z, data.json byte-identical). Two new events (`evt-14-instance-remonitored`,
+`evt-15-publication-site-gate-2`) and one new object (`ensemble:no-way-of-knowing@e068fdc`,
+superseding nothing — `@1860072` stays in the record) appended; five new `QUOTE-MANIFEST.tsv` lines.
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-002-kill-cloud-travels` — 115/115
+verified. This directly evidences `obl-enc2026002-open-instance-honesty` and
+`obl-enc2026002-monitoring-status` for a second dated cycle (their `evidence_events` arrays are left
+as originally authored, per this fixture's own precedent of not rewriting obligation records after
+creation). No existing event, object, obligation or assertion was edited or deleted;
+`encounter.json`'s Ensemble participant `local_status`/rationale and `resolution_note` updated in
+place to the current state, mirroring enc-001's precedent for the same kind of update.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
-| `encounter.json` | The encounter, its two collective participants (Meridian/source, Ensemble/receiver) with distinct local statuses, Frank's conductor lane (apparatus and, as of 2026-07-20, an answered playthrough gate), Ulysses' documented non-participation, and the explicit absence of any shared resolution — the encounter is open even after the premiere. |
-| `objects.json` | Five local object references (the standing-conditions document in its reframed version, the field map's kill-cloud cluster, the atlas digest, the No-Way-of-Knowing project in production, and — appended 2026-07-20 — the premiered `works/` version) with real content hashes and pinned commits. |
-| `events.json` | Thirteen append-only encounter events (tables above plus the 2026-07-20 update), mixing core types with deliberately open type strings. |
+| `encounter.json` | The encounter, its two collective participants (Meridian/source, Ensemble/receiver) with distinct local statuses, Frank's conductor lane (apparatus and, as of 2026-07-20, an answered playthrough gate), Ulysses' documented non-participation, and the explicit absence of any shared resolution — the encounter is open even after the premiere, and after its first post-premiere monitoring cycle (2026-07-23). |
+| `objects.json` | Six local object references (the standing-conditions document in its reframed version, the field map's kill-cloud cluster, the atlas digest, the No-Way-of-Knowing project in production, the premiered `works/` version, and — appended 2026-07-25 — the re-monitored `works/` version) with real content hashes and pinned commits. |
+| `events.json` | Fifteen append-only encounter events (tables above plus the 2026-07-20 and 2026-07-25 updates), mixing core types with deliberately open type strings. |
 | `obligations.json` | Three active obligations — all adopted by the receiver at its own gate or held as its own standing practice; none imposed across the repository boundary. |
 | `assertions.json` | Four imported, authored assertions — Ensemble's daylight claim against the catalogued atlas artwork, Ensemble's premise demotion (epistemic asymmetry, not proven pattern), Meridian's live framing of the kill-cloud cluster, and Ensemble's first-hand-spine tier declaration. |
 | `QUOTE-MANIFEST.tsv` | One line per verbatim quote: fixture location, source file, first 60 characters — for mechanical substring verification. |

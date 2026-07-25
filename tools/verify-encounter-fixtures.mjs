@@ -71,6 +71,19 @@ async function fetchAt(repoLabel, path, commit) {
       if (r2.ok) body = norm(await r2.text());
     }
   }
+  // Lokaler Klon-Fallback (SCRIBE_LOCAL_CLONES): manche Sandboxen können private Repos per
+  // `git clone` (Proxy-Credentials) erreichen, aber keine authentifizierte REST/CDN-Anfrage
+  // stellen (kein echtes GITHUB_TOKEN/gh-Login). Der Commit-SHA bindet den Inhalt so oder so —
+  // `git show` gegen einen bereits geklonten Sibling ist so vertrauenswürdig wie der Fetch.
+  if (body === null) {
+    const localRoot = process.env.SCRIBE_LOCAL_CLONES;
+    const repoDirName = slug.split("/")[1];
+    if (localRoot && repoDirName) {
+      try {
+        body = norm(execFileSync("git", ["-C", join(localRoot, repoDirName), "show", `${commit}:${path}`], { encoding: "utf8" }));
+      } catch { /* no local clone or path/commit not found there — leave body null */ }
+    }
+  }
   cache.set(url, body);
   return body;
 }

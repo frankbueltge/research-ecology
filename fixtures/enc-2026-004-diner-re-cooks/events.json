@@ -169,5 +169,74 @@
    "note": "The first commit the now-armed automation (evt-enc2026004-07) actually published: Meridian's instrument 015 ('Comparable With Humans', shipped field-research session 43, 2026-07-17) re-cooked as the diner's seventh Quick Snack, re-titled 'The 0.66 Problem'. gauntlet reads 'shipped (pre-gauntlet convention)', an honest self-disclosure that the cook template's own gate has not yet run on unattended output — a standing-relation gap already flagged by evt-enc2026004-02's open correction (the supplier-template wing language) and not yet closed by this addition either."
   },
   "content_hash": "sha256:3c0bb3e7d4b5aa6ab144695c3d77262c8ca33a5690ed0f86d0b66bf961b20cfb"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-09-corpus-grown-2",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-22T07:19:39Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/d051b41e0fd75e1d2ccb01a600ea152ec991560a/prototype-v2/src/content/quick/recovery.mdx",
+  "source_commit": "d051b41e0fd75e1d2ccb01a600ea152ec991560a",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "title: en: 'The Silent Score: 0,87'",
+   "quote_provenance_work": "work: 'Recovery'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 28, 2026-07-21'",
+   "quote_hook": "The unexplained score that routes every appeal back to itself.",
+   "total_quick_snacks_count": 8,
+   "note": "The armed automation (evt-enc2026004-07) re-cooked Ensemble's instrument 'Recovery' (works/2026-07-21-recovery, the third work of the studio's house, premiered session 28, 2026-07-21) as the diner's eighth Quick Snack, re-titled 'The Silent Score: 0,87'. gauntlet reads a real ship record this time ('graduated (ship), session 28, 2026-07-21') — unlike evt-08's 'shipped (pre-gauntlet convention)' disclosure for the Meridian corpus, this Ensemble-sourced work already carries a full premiere gate at its own source."
+  },
+  "content_hash": "sha256:f3022f44a392c1f0c6051f7027ce2573eacee8c414d08eff97a292217fada8cc"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-10-corpus-grown-3",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-23T07:15:03Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/ddd4a0a2e978d87f0798109a614972e1f3a807ae/prototype-v2/src/content/quick/one-tap.mdx",
+  "source_commit": "ddd4a0a2e978d87f0798109a614972e1f3a807ae",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "title: en: 'The Dalles Concealment Case'",
+   "quote_provenance_work": "work: 'One Tap'",
+   "quote_provenance_gauntlet": "gauntlet: 'graduated (ship), session 31, 2026-07-23'",
+   "quote_kritiker_carried": "Kritiker: PREMIERE STANDS.",
+   "total_quick_snacks_count": 9,
+   "note": "The armed automation (evt-enc2026004-07) re-cooked Ensemble's instrument 'One Tap' (works/2026-07-23-one-tap, the fourth work of the studio's house, premiered session 31, 2026-07-23T04:58:28Z) as the diner's ninth Quick Snack, re-titled 'The Dalles Concealment Case', roughly two hours and sixteen minutes after the studio's own premiere commit. The cook carries the session-31 Kritiker verdict ('PREMIERE STANDS') verbatim — see evt-enc2026004-11 for what the source practice recorded about that premiere the same day, after this cook ran."
+  },
+  "content_hash": "sha256:bc24780001270649d6d14f8363e6835766498c97ff325f5510589fbc7275d16f"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-11-premiere-contested",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "correction.noted",
+  "issuer": {
+   "collective_id": "ensemble",
+   "actor_id": "ensemble"
+  },
+  "occurred_at": "2026-07-23T11:56:21Z",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/e006789cb9bebdb80104268249beb9581bbc5396/WORKBOARD.md",
+  "source_commit": "e006789cb9bebdb80104268249beb9581bbc5396",
+  "visibility": "public",
+  "payload": {
+   "quote_contested": "CONTESTED — not a settled premiere.",
+   "quote_not_recertified": "NOT re-certified — returns to the human eye",
+   "quote_frank_verdict": "even worse staged than the HTML version.",
+   "quote_diner_carries": "Kritiker: PREMIERE STANDS.",
+   "finding_open_correction": "evt-enc2026004-10's re-cook was pulled from the studio's session-31 premiere of 'One Tap' at 07:15:03Z; roughly 4 hours 41 minutes later (session 32, 11:56:21Z, the same day) Frank played the premiered restage and returned it a second time ('even worse staged than the HTML version') — the studio's own record now reads the premiere as CONTESTED, NOT re-certified, and has substantially reworked works/2026-07-23-one-tap/ in place (data.json, index.html and README.md all changed) without un-graduating it. The diner's Quick Snack 'The Dalles Concealment Case' still carries the superseded 'Kritiker: PREMIERE STANDS' verdict verbatim and has not been re-cooked since (only split-seal and native-speaker were touched by the next two automated runs, evt-enc2026004-10's own commit and the 2026-07-24 run) — an open correction for the diner's cook template, alongside the pre-existing supplier wing-language gap (evt-enc2026004-02).",
+   "note": "Recorded here, not smoothed away: the source practice's own contest of a premiere does not retroactively un-happen the re-cook, and the diner's automation has no mechanism yet to notice a source work changing under an already-cooked Quick Snack. Whether or when the diner re-cooks is the diner's own decision, not this record's to make."
+  },
+  "content_hash": "sha256:8eb84719388d8d2f143dc069f0267c311f9270660145da308e4102fd39810462"
  }
 ]

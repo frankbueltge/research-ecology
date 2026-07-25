@@ -37,3 +37,31 @@ private repo's raw content in this session — same pre-existing, disclosed gap 
 prior quotes, unchanged: `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` reports 3 ok / 19 failures, all 19 the private-repo
 gap, none a real mismatch). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-07-25 (Middle Scribe, append-only):** three record-relevant changes since the
+last check (2026-07-22). (1) The armed automation published two more re-cooks: the diner's
+eighth Quick Snack (2026-07-22, commit `d051b41e`), re-cooking Ensemble's instrument
+"Recovery" (`works/2026-07-21-recovery`, premiered session 28) as "The Silent Score: 0,87" —
+`gauntlet` reads a real ship record this time, unlike evt-08's pre-gauntlet disclosure. New
+event `evt-09-corpus-grown-2` and one new hashed object (`data-snack:quick-recovery`). (2) The
+diner's ninth Quick Snack (2026-07-23, commit `ddd4a0a2`), re-cooking Ensemble's instrument
+"One Tap" (`works/2026-07-23-one-tap`, premiered session 31, 04:58:28Z) as "The Dalles
+Concealment Case", roughly 2h16m after the studio's own premiere commit. New event
+`evt-10-corpus-grown-3` and one new hashed object (`data-snack:quick-one-tap`). (3) A new open
+correction: roughly 4h41m after that same premiere (session 32, 11:56:21Z, same day) Frank
+played the premiered restage of One Tap and returned it a second time ("even worse staged
+than the HTML version") — the studio's own record now reads the premiere as **CONTESTED —
+not a settled premiere** / **NOT re-certified**, and has substantially reworked
+`works/2026-07-23-one-tap/` in place without un-graduating it. The diner's Quick Snack still
+carries the now-superseded "Kritiker: PREMIERE STANDS" verdict verbatim and has not been
+re-cooked since (the next two automated runs touched only `split-seal` and `native-speaker`).
+New event `evt-11-premiere-contested`, issued from Ensemble's own record (the studio's
+WORKBOARD.md), alongside the pre-existing supplier wing-language gap as a second open
+correction for the diner's cook template. `status.as_of` moved to 2026-07-25, the
+re-cooked-works count to 9. Twelve new `QUOTE-MANIFEST.tsv` lines.
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — 34/34
+verified (this session resolved the private-repo gap via a local sibling clone of the same
+pinned commits; see `tools/verify-encounter-fixtures.mjs`'s `SCRIBE_LOCAL_CLONES` fallback).
+No existing event, object, or obligation was edited or deleted; `encounter.json`'s
+participant statuses updated in place to the current state, mirroring enc-001/002's
+precedent for the same kind of update.

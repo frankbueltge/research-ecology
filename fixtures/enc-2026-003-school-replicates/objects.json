@@ -28,5 +28,11 @@
   "object_ref": "datavism:src/content/field-works/2026-07-20-coverage-not-custody.md@134cc45d",
   "content_hash": "sha256:3418abe6cc5ab3ae2d3d6e61281535e50ae48d9c16cf480e7dfbbfc1307abb0f",
   "uri": "https://github.com/datavism/datavism.org/blob/134cc45d514e388ea765619c79f75bb1e0c44d6b/src/content/field-works/2026-07-20-coverage-not-custody.md"
+ },
+ {
+  "object_id": "datavism:field-works-where-the-chain-breaks",
+  "object_ref": "datavism:src/content/field-works/2026-07-24-where-the-chain-breaks.md@aa3722e2",
+  "content_hash": "sha256:9ca06cf219bc7e754d71959298508a8e08b8d00caf69d6b16a48ae0b2630286d",
+  "uri": "https://github.com/datavism/datavism.org/blob/aa3722e222e873ed99f2cdd51cf11f7c959dd267/src/content/field-works/2026-07-24-where-the-chain-breaks.md"
  }
 ]

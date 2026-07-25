@@ -109,3 +109,8 @@ events.json/evt-12/quote_gate_line	studio:REQUESTS.md@1860072541150f99dcd63259f1
 events.json/evt-12/quote_entry_closed	studio:REQUESTS.md@1860072541150f99dcd63259f1f86c2de9e1ba69	graduated the work to `works/2026-07-17-no-way-of-knowing/`	no
 events.json/evt-12/quote_premiere_day_recheck	studio:journal/2026-07-17-session-19.md@1860072541150f99dcd63259f1f86c2de9e1ba69	Instance 2's OPEN state holds; the	no
 objects.json/nwok-premiered/summary_cache(one_line)	studio:works/2026-07-17-no-way-of-knowing/data.json@1860072541150f99dcd63259f1f86c2de9e1ba69	The state at maximal confidence when it acts; the state at declared un-knowing when it harms — two sentences it said on the record, in a console that will not let you hold both at once.	no
+events.json/evt-14/quote_owed	studio:journal/2026-07-23-session-33.md@e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c	the serial re-check owed on a live work	no
+events.json/evt-14/quote_still_unreleased	studio:journal/2026-07-23-session-33.md@e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c	The investigation is still unreleased	no
+events.json/evt-14/quote_conclusion	studio:journal/2026-07-23-session-33.md@e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c	the OPEN state is still world-true	no
+events.json/evt-14/quote_verifier	studio:journal/2026-07-23-session-33.md@e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c	Verifier (efficient tier): PASS.	no
+events.json/evt-14/quote_serial_line_new	studio:works/2026-07-17-no-way-of-knowing/data.json@e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c	2 catches on record. Case 02 unresolved. Last checked 23 July 2026.	no

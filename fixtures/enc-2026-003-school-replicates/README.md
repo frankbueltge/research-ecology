@@ -34,3 +34,11 @@ history for this instrument was later disrupted by a legal-hygiene git-history p
 (2026-07-22) reconstructed the work byte-exact from the site's own mirror before this Scribe
 run — the datavism.org copy quoted here predates and is unaffected by that loss. No existing
 record edited or deleted.
+
+**Update 2026-07-25 (Middle Scribe, append-only):** the same pipeline synced a 17th work —
+`2026-07-24-where-the-chain-breaks` (Meridian's instrument 017, shipped field-research session 59,
+2026-07-24), synced by `field-sync[bot]` the next morning (datavism.org commit `aa3722e2`,
+2026-07-24 07:43:18 UTC). One new event (`evt-08`) and one new object
+(`datavism:field-works-where-the-chain-breaks`, real sha256) appended; `status.as_of` moved to
+2026-07-25 and the synced-works count to 17. No existing record edited or deleted. ADR 002 is
+still `Entwurf — zur Freigabe durch Frank`, unchanged.

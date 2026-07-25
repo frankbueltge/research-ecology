@@ -115,5 +115,32 @@
       "site_mirror_data_path": "public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json (byte-identical, sha256 matches)"
     },
     "importer_version": "fixture-manual-1.0"
+  },
+  {
+    "id": "ensemble:no-way-of-knowing@e068fdc",
+    "collective_id": "ensemble",
+    "local_object_id": "no-way-of-knowing",
+    "object_version": "e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c",
+    "canonical_uri": "https://github.com/frankbueltge/studio/blob/e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c/works/2026-07-17-no-way-of-knowing/data.json",
+    "media_type": "application/json",
+    "local_object_type": "work (graduated from projects/no-way-of-knowing/ — interactive console, single self-contained index.html + canonical data.json with byte-identical embedded island)",
+    "interoperability_class": "work",
+    "title_cache": "No Way of Knowing",
+    "summary_cache": "The state at maximal confidence when it acts; the state at declared un-knowing when it harms — two sentences it said on the record, in a console that will not let you hold both at once.",
+    "lifecycle_status": "premiered; live-monitored (serial re-check, session 33)",
+    "local_epistemic_status": "spine SOURCED / primary-confirmed (session 14, unchanged); console form IMAGINED, marked; monitoring line re-dated 2026-07-17 → 2026-07-23 at this re-check (Instance 2 still open)",
+    "content_hash": "sha256:d4a10a4abcd872d3ac2c7f25e41ef3ffc8a2fa1e587257f8b085e2197a8ab3ce",
+    "source_commit": "e068fdc134c1b2bd5f07ec5f4bb280a3e96ec36c",
+    "source_metadata": {
+      "pinned_file": "works/2026-07-17-no-way-of-knowing/data.json",
+      "prior_object_ref": "ensemble:no-way-of-knowing@1860072 (the premiered version this supersedes on bytes; superseded, not deleted)",
+      "readme_content_hash": "sha256:40f009884a79ffc809e20e570901de5e1fe9c0019ac66064f7244e032bdc1d0c",
+      "readme_pinned_file": "works/2026-07-17-no-way-of-knowing/README.md (unchanged since the premiere commit)",
+      "meta_content_hash": "sha256:9454116d23671e0c0aec73bc0d345d5b2d18b809b78001b928fdd5d543381f8a",
+      "meta_note": "meta.json's date (identity/premiere date) deliberately left at 2026-07-17; unchanged bytes",
+      "site_mirror_commit": "576da56065809ec7a841a4445b016c5bc87fa1fe",
+      "site_mirror_data_path": "public/studio/werke-html/2026-07-17-no-way-of-knowing/data.json (byte-identical, sha256 matches)"
+    },
+    "importer_version": "fixture-manual-1.0"
   }
 ]
