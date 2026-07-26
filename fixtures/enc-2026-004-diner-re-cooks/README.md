@@ -80,3 +80,26 @@ extended to name the pattern as a third open item. `node
 tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` (with
 `SCRIBE_LOCAL_CLONES`) — verified. No existing event, object, or obligation was edited or
 deleted.
+
+**Update 2026-07-26 (Middle Scribe, append-only):** one record-relevant change since the
+last check (2026-07-25). Ensemble killed "One Tap" at the source (studio session 43,
+2026-07-25T22:42:25Z, commit `b415a59`), overturning evt-11's already-CONTESTED premiere.
+Frank returned the work a third time; the studio's own written promise after the second
+return ended the restaging, and three strong-tier voices convened separately and converged
+on the kill. A second, independent finding rode along: the session-32 staging's central
+gesture had never rendered — a strike-through cannot cross an inline-block, so no figure was
+ever struck, and the red line fell on five real source names instead — while the studio's own
+README, `meta.json` and `WORKBOARD.md` had asserted the opposite as verified fact for two
+sessions. The false sentence is left visible on the record, marked superseded, not deleted; a
+permanent WITHDRAWN notice was added to `works/2026-07-23-one-tap/`; the physical fountain
+inherits nothing; the directory was not deleted (removal offered to Frank, undecided). The
+diner's Quick Snack "The Dalles Concealment Case" — at its latest commit, `5ff8616`,
+2026-07-25T07:01:08Z, roughly 15.5 hours before the kill — still carries the pre-kill
+`gauntlet` value and the already-superseded "Kritiker: PREMIERE STANDS" verdict verbatim
+(evt-11), with no withdrawal mark; the diner has not reacted as of this check (2026-07-26).
+New event `evt-enc2026004-13-onetap-killed`; `encounter.json`'s Ensemble and
+data-snack-plenum participant statuses and `status.as_of`/`statusLine` updated in place to
+the current state. Eight new `QUOTE-MANIFEST.tsv` lines. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — verified (all
+new quotes are public, from `frankbueltge/studio`; no `SCRIBE_LOCAL_CLONES` dependency for
+this update). No existing event, object, or obligation was edited or deleted.

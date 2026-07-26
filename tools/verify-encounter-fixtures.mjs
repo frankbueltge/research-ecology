@@ -39,6 +39,7 @@ const REPO_MAP = {
   "irrtum-als-methode": "frankbueltge/ulysses",
   "ulysses": "frankbueltge/ulysses",
   "data-snack-plenum": "frankbueltge/data-snack-plenum",
+  "meridian-runtime": "frankbueltge/meridian-runtime",
   "research-ecology": "frankbueltge/research-ecology",
   "frankbueltge.de": "frankbueltge/frankbueltge.de",
   "datavism.org": "datavism/datavism.org",

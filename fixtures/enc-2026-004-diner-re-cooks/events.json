@@ -259,5 +259,32 @@
    "note": "A pattern, not a single instance: the silent re-voicing first disclosed at evt-06 (split-seal, 2026-07-17) has recurred in every one of the eight further automated runs checked this pass — dates bumped, teaser/hookStat text re-worded, no new load-bearing caveat — across commits 33fd8d5299f11ffe53936d785033ffb033dc8ec0, 99f5c750d28b1df89b7cbe7d679c74dad61e4d0e, 9a9305fa947c1feaf609acac3677c79d3e493199, 607609e927c5efd5590e7704d45c0d682f2373d6, d051b41e0fd75e1d2ccb01a600ea152ec991560a, ddd4a0a2e978d87f0798109a614972e1f3a807ae and d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c (plus 1ee911a405ff985cf5ad3a28acb81b8328e49c28, evt-06's own instance) — i.e. split-seal has been re-voiced on every single automated run since its creation, not only the two runs evt-11 names. On 2026-07-24 (commit d0bff40, same commit as evt-11's second automated run) the pattern extended to a second already-published item: native-speaker.mdx (the diner's first Quick Snack) had its teaser and hookStat text reworded (title unchanged: 'The Gate's Judgment'). Distinct from evt-11's finding (a source-side premiere later contested): this is the cook template's own re-voicing of already-published prose, with nothing in its schema marking these as corrections or versions — the only trace is git history itself. Disclosed as an open pattern, not fixed here: the receiver's own provenance-lock obligation (obl-enc2026004-1) covers presence of provenance frontmatter, not stability of the re-voiced prose against silent drift."
   },
   "content_hash": "sha256:25b1af9aa4c5c27a1c9d046b20520bdcd0c61e331ae5623c9028c95b702ce18e"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-13-onetap-killed",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "correction.noted",
+  "issuer": {
+   "collective_id": "ensemble",
+   "actor_id": "ensemble"
+  },
+  "occurred_at": "2026-07-25T22:42:25Z",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/b415a59c22e004b43749a601934515a788d9f4bd/works/2026-07-23-one-tap/README.md",
+  "source_commit": "b415a59c22e004b43749a601934515a788d9f4bd",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "One Tap — WITHDRAWN (killed 2026-07-25, collective session 43)",
+   "quote_dead": "This work is dead.",
+   "quote_third_rejection": "the HTML version was better than everything you delivered afterwards. so the staging is still very bad and cheap",
+   "quote_never_rendered": "a propagated strike-through cannot cross an inline-block, so no numeral was ever struck",
+   "quote_two_sessions_false": "asserted the opposite of what the page rendered, for two sessions",
+   "quote_meta_withdrawn": "a killed work, kept as record, not a live premiere",
+   "quote_workboard_row": "DEAD — the premiere is overturned and the work is killed (session 43).",
+   "quote_standing_law": "two rejections end a body",
+   "total_quick_snacks_count": 9,
+   "note": "Ensemble killed 'One Tap' at the source (studio session 43, 2026-07-25T22:42:25Z), overturning evt-11's already-CONTESTED premiere. Frank returned the work a third time ('the html version was better than everything you delivered afterwards; the staging is still very bad and cheap' — commit message quote; README/meta.json carry the wording as a direct quotation); the studio's own written promise after the second return ended the restaging. Three strong-tier voices (Artist, Dramaturg, Kritiker), convened separately, converged on the kill. A second, independent finding: two of them opened the built page in a browser and found the session-32 staging's central gesture had never rendered — a strike-through cannot cross an inline-block, so no figure was ever struck; the red line fell on the five real source names instead. The studio's own README, meta.json and WORKBOARD.md had asserted the opposite ('0/5 answer lines live — all struck') as verified fact for two sessions, because the check read class names and a self-test, never a pixel; the false sentence is left visible on the record, marked superseded, not deleted. The rule was removed (not repaired); a permanent WITHDRAWN notice was added to works/2026-07-23-one-tap/ (README.md, meta.json, WORKBOARD.md); the physical fountain inherits nothing (its own binding condition 5 is now void); the directory was not deleted (removal offered to Frank in REQUESTS.md, undecided). The diner's Quick Snack 'The Dalles Concealment Case' (data-snack.com, commit 5ff8616, 2026-07-25T07:01:08Z — roughly 15.5 hours before the kill) still carries 'gauntlet: graduated (ship), session 31, 2026-07-23' and the already-superseded 'Kritiker: PREMIERE STANDS' verdict verbatim (evt-11), with no withdrawal mark; the diner has not re-cooked or otherwise reacted to the kill as of this check (2026-07-26) — the drift evt-11 disclosed (CONTESTED-vs-shipped) has deepened to KILLED-vs-still-live. Whether or when the diner re-cooks or removes the snack remains the diner's own decision, not this record's to make."
+  },
+  "content_hash": "sha256:3c443ca3421bd42a09c90a82a7b90ab03fc16ef3b41e1403b3b748b42f5212ec"
  }
 ]

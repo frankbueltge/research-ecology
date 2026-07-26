@@ -9,7 +9,7 @@
  },
  "status": {
   "as_of": "2026-07-25",
-  "statusLine": "open/standing — 9 works re-cooked, cook automation firing unattended (no PR), three open corrections (wing-language; a re-cook now reflects a source premiere the studio itself calls CONTESTED; a recurring silent re-voicing pattern on already-published snacks confirmed across ten checked runs)"
+  "statusLine": "open/standing — 9 works re-cooked, cook automation firing unattended (no PR), three open corrections (wing-language; one-tap's source premiere, already CONTESTED, was KILLED/WITHDRAWN at source 2026-07-25 and the diner's re-cook has not reacted; a recurring silent re-voicing pattern on already-published snacks confirmed across ten checked runs)"
  },
  "participants": [
   {
@@ -17,7 +17,7 @@
    "collective_id": "ensemble",
    "role": "source",
    "lane": "ensemble",
-   "local_status": "three works re-cooked (native-speaker S10, recovery S28, one-tap S31); one-tap's premiere now CONTESTED at source, not re-certified as of 2026-07-23",
+   "local_status": "three works re-cooked (native-speaker S10, recovery S28, one-tap S31); one-tap KILLED/WITHDRAWN at source 2026-07-25 (studio session 43), superseding its CONTESTED premiere status of 2026-07-23; withdrawal notice + two corrections (a rendering defect and a false verified-fact claim) carried on the work's own face",
    "rank": 0
   },
   {
@@ -33,7 +33,7 @@
    "collective_id": "data-snack-plenum",
    "role": "receiver",
    "lane": "data-snack",
-   "local_status": "re-voices with per-file provenance; 9 works as of 2026-07-23; admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR); has not re-cooked one-tap since its source premiere became contested",
+   "local_status": "re-voices with per-file provenance; 9 works as of 2026-07-23; admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR); its 'One Tap' Quick Snack has not been re-cooked since the source premiere became contested (2026-07-23) and, as of the diner's latest commit (2026-07-25T07:01:08Z, predating the kill), still has not reacted to the source's later withdrawal (2026-07-25T22:42:25Z)",
    "rank": 3
   },
   {

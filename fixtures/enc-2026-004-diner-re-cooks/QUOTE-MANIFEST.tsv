@@ -35,3 +35,11 @@ events.json/e11/quote_frank_verdict	studio:WORKBOARD.md@e006789cb9bebdb801042682
 events.json/e11/quote_diner_carries	data-snack.com-from-scratch:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2e978d87f0798109a614972e1f3a807ae	Kritiker: PREMIERE STANDS.	no
 events.json/e12/quote_title_unchanged	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c	title: en: 'The Gate''s Judgment'	no
 events.json/e12/quote_teaser_reworded	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@d0bff4015fe50f6d96cf8205ccd5fd64c4a1376c	Your words, scanned live. A border gate, an AI detector''s ghost. The mechanism is documented. The consequences are real.	no
+events.json/e13/quote_title	studio:works/2026-07-23-one-tap/README.md@b415a59c22e004b43749a601934515a788d9f4bd	One Tap — WITHDRAWN (killed 2026-07-25, collective session 43)	no
+events.json/e13/quote_dead	studio:works/2026-07-23-one-tap/README.md@b415a59c22e004b43749a601934515a788d9f4bd	This work is dead.	no
+events.json/e13/quote_third_rejection	studio:works/2026-07-23-one-tap/README.md@b415a59c22e004b43749a601934515a788d9f4bd	the HTML version was better than everything you delivered afterwards. so the staging is still very bad and cheap	no
+events.json/e13/quote_never_rendered	studio:works/2026-07-23-one-tap/README.md@b415a59c22e004b43749a601934515a788d9f4bd	a propagated strike-through cannot cross an inline-block, so no numeral was ever struck	no
+events.json/e13/quote_two_sessions_false	studio:works/2026-07-23-one-tap/README.md@b415a59c22e004b43749a601934515a788d9f4bd	asserted the opposite of what the page rendered, for two sessions	no
+events.json/e13/quote_meta_withdrawn	studio:works/2026-07-23-one-tap/meta.json@b415a59c22e004b43749a601934515a788d9f4bd	a killed work, kept as record, not a live premiere	no
+events.json/e13/quote_workboard_row	studio:WORKBOARD.md@b415a59c22e004b43749a601934515a788d9f4bd	DEAD — the premiere is overturned and the work is killed (session 43).	no
+events.json/e13/quote_standing_law	studio:WORKBOARD.md@b415a59c22e004b43749a601934515a788d9f4bd	two rejections end a body	no
