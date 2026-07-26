@@ -76,5 +76,5 @@ The three engine repositories remain sovereign and are never modified by this pr
 runtime (read-only adapters, ADR 0003). Changes to their constitutions travel as visible,
 attributed migrations — never silent commits (spec/08; protocol v3, 2026-07-16).
 
-License: PolyForm Noncommercial 1.0.0 (code), CC BY-NC-SA 4.0 (texts/works/data) —
+License: Apache 2.0 (code) · CC BY 4.0 (works, texts) · CC0 1.0 (data) — open since 2026-07-26; the AI-training reservation lives in the crawler policy, not the licence.
 the lab-wide licensing decision of 2026-07-12.
