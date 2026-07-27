@@ -43,3 +43,11 @@ events.json/e13/quote_two_sessions_false	studio:works/2026-07-23-one-tap/README.
 events.json/e13/quote_meta_withdrawn	studio:works/2026-07-23-one-tap/meta.json@b415a59c22e004b43749a601934515a788d9f4bd	a killed work, kept as record, not a live premiere	no
 events.json/e13/quote_workboard_row	studio:WORKBOARD.md@b415a59c22e004b43749a601934515a788d9f4bd	DEAD — the premiere is overturned and the work is killed (session 43).	no
 events.json/e13/quote_standing_law	studio:WORKBOARD.md@b415a59c22e004b43749a601934515a788d9f4bd	two rejections end a body	no
+events.json/evt-14/quote_title	data-snack.com-from-scratch:prototype-v2/src/content/quick/no-signal-to-extend.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	title: en: 'No Signal to Extend: The Homogenization Dossier'	no
+events.json/evt-14/quote_provenance_work	data-snack.com-from-scratch:prototype-v2/src/content/quick/no-signal-to-extend.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	work: 'No Signal to Extend'	no
+events.json/evt-14/quote_hook	data-snack.com-from-scratch:prototype-v2/src/content/quick/no-signal-to-extend.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	The data''s in. No anomaly. The system didn''t flag the collapse. Why not?	no
+events.json/evt-15/quote_title_reverted_back	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	title: en: 'The Gate''s Judgment'	no
+events.json/evt-15/quote_teaser_reworded_2	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	A border gate, a keyboard, and a verdict. The machine''s judgment of human words, unreviewed.	no
+events.json/evt-15/quote_hookstat_reworded_2	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	The average false-positive rate across seven AI text detectors.	no
+events.json/evt-15/quote_splitseal_title_reworded	data-snack.com-from-scratch:prototype-v2/src/content/quick/split-seal.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	title: en: 'The Split Seal: Trust-Blind Manifests'	no
+events.json/evt-15/quote_splitseal_hookstat_reworded	data-snack.com-from-scratch:prototype-v2/src/content/quick/split-seal.mdx@853b3ae923cf9f2d6babaeacb32a91b232ebda09	The six ''Valid'' manifest stamps were signature-integrity verdicts, not trust verdicts.	no

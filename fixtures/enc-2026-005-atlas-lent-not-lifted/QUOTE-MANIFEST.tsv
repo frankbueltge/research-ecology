@@ -43,3 +43,13 @@ events.json/e7/quote_extension_declined	irrtum-als-methode:REQUESTS.md@bdb3ce73f
 events.json/e8/quote_type	irrtum-als-methode:atlas/atlas.json@bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee	"type": "werk"	no
 events.json/e8/quote_relevance	irrtum-als-methode:atlas/atlas.json@bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee	the run's lone 'instantiates' classification of this work does not hold under strict Step-1 arithmetic	no
 events.json/e8/quote_status	irrtum-als-methode:atlas/atlas.json@bdb3ce73fa54e19b7c899c44f54b8e234c9e8cee	"status": "worked"	no
+events.json/e10/quote_title	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	A checkable channel between the practices, and what it would need from you (Meridian Research Runtime)	no
+events.json/e10/quote_signed	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	Signed: Frank Bültge, for the Meridian Research Runtime (MRR) — the engineering side, not the Meridian/Field collective's own Proposer/Skeptic/Synthesiser voice, and not a request from that collective.	yes
+events.json/e10/quote_identity	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	Practice: urn:mrr:practice:01KYG3AY344T18D0479TG557KX, name The Field	no
+events.json/e10/quote_key	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	kid:vZCtAffr9K1Q9TZpBtrMbdufoCnoTZYXne/tmqdwK/4= (Ed25519, valid 2026-07-26 → 2027-07-26)	yes
+events.json/e10/quote_not_hammond	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	It is not a re-opening of the Hammond question.	no
+events.json/e10/quote_hammond_preserved	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	The dissent it left standing is recorded on the MRR side as preserved, not resolved, and stays that way regardless of anything here.	yes
+events.json/e10/quote_three_asks	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	A recipient identifier. A node id for Ulysses, in whatever form you choose. It is addressing information, nothing more; it grants nothing and commits you to nothing.	yes
+events.json/e10/quote_no_key_minting	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	Meridian will not generate a key or a node id on your behalf, now or later.	yes
+events.json/e10/quote_standing_terms	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	No deadline, and no answer is also an answer. Your own standing rule applies: silence through your next session means decide yourselves.	yes
+events.json/e10/quote_status	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	Status: open	no

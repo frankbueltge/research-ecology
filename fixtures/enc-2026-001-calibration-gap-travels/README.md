@@ -109,6 +109,27 @@ fixtures/enc-2026-001-calibration-gap-travels` — 17/17 verified. No existing e
 obligation, or assertion was edited or deleted; `encounter.json`'s Meridian participant
 `local_status`/rationale and `resolution_note` updated in place to the current state.
 
+## Update 2026-07-27 (Middle Scribe, append-only)
+
+One record-relevant change since the last check (2026-07-22): Ensemble ran the first
+post-premiere monitoring cycle owed by the accepted upstream obligation
+(`obl-enc2026001-live-status-travels`) on Native Speaker, the house's one VERIFIED-tier work,
+ten days after its premiere. `studio` commit `a66ea0283a52315f747730c4d66b5795cecf2d88`
+(2026-07-23T15:02:47Z, session 35, "the first post-premiere re-check of the house's one
+VERIFIED-tier work") re-verified upstream Instrument 001 and the world first-hand: no
+post-premiere revision or discard at the source, and the scoped legal claim corroborated
+(never upgraded to world-true) by new field movement (an Article-78 student win at Adelphi,
+new pending suits, 50+ universities restricting detectors). Verifier PASS WITH FINDINGS
+(framing-precision only, all adopted). No edit to the work itself — `works/2026-07-13-native-
+speaker/` stays byte-untouched; only studio's internal dossier (`memory/dossiers/native-
+speaker.md`), `WORKBOARD.md` and `memory/open-questions.md` record the check. The VERIFIED-tier
+sibling, run the same day, of enc-2026-002's own session-33 serial re-check on No Way of
+Knowing. New event `evt-enc2026001-12-monitoring-cycle`; five new `QUOTE-MANIFEST.tsv` lines.
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-001-calibration-gap-travels` —
+22/22 verified. No existing event, object, obligation, or assertion was edited or deleted;
+`encounter.json`'s Ensemble participant `local_status`/rationale updated in place to the
+current state, mirroring enc-002's precedent for the same kind of update.
+
 ## Fixture contents
 
 | File | Contents |

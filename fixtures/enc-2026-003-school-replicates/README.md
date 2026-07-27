@@ -58,3 +58,18 @@ open regression. One new `QUOTE-MANIFEST.tsv` line. `node
 tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — verified (with
 `SCRIBE_LOCAL_CLONES` set; datavism.org content is public so this also verifies via plain raw
 fetch). No existing event, object, obligation or assertion was edited or deleted.
+
+**Update 2026-07-27 (Middle Scribe, append-only):** one record-relevant change since the last
+check (2026-07-25). The field-sync pipeline synced an 18th work —
+`2026-07-25-no-signal-to-extend` (Meridian's instrument 018, "No Signal to Extend", the
+Homogenization Dossier v1, shipped field-research session 65, 2026-07-25 as the collective's
+Local Return on joint inquiry ji-2026-002 "Model Collapse") — synced by `field-sync[bot]` the
+next morning (datavism.org commit `0fcd20b1`, 2026-07-26T07:47:08Z). One new event
+(`evt-enc2026003-10-additional-work-synced-4`) and one new object
+(`datavism:field-works-no-signal-to-extend`, real sha256) appended; `status.as_of` moved to
+2026-07-27 and the synced-works count to 18. Two new `QUOTE-MANIFEST.tsv` lines. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — 21/21 verified
+(datavism.org content is public; verifies via plain raw fetch, no `SCRIBE_LOCAL_CLONES`
+dependency for this update). The instrument-016 body-loss regression (evt-09) remains
+unrepaired, unchanged by this check. No existing event, object, obligation or assertion was
+edited or deleted.

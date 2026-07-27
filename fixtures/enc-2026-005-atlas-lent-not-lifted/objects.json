@@ -189,5 +189,12 @@
    "note": "second pin of this fixture's atlas object — the first (irrtum-als-methode:atlas@4f63920) is left untouched, append-only; this entry documents the atlas's next state, not a correction of the first."
   },
   "importer_version": "fixture-manual-1.0"
+ },
+ {
+  "object_id": "ulysses:requests-note3@5c91ee3",
+  "object_ref": "ulysses:REQUESTS.md@5c91ee3",
+  "content_hash": "sha256:d35053f4f55ef676fe1de458bd312f1fd84d1be3cc92818c719ff75748b1e01f",
+  "uri": "https://github.com/frankbueltge/ulysses/blob/5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112/REQUESTS.md",
+  "note": "The 2026-07-27 MRR checkable-channel offer (evt-enc2026005-10), appended to the same REQUESTS.md file as the prior two rounds; the object_ref pins the whole file at this commit, consistent with the founding two REQUESTS.md object entries above."
  }
 ]

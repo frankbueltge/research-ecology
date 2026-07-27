@@ -24,8 +24,8 @@
       "collective_id": "ensemble",
       "actor_id": "ensemble",
       "role": "receiver",
-      "local_status": "premiered; live-status obligation active",
-      "local_status_rationale": "Ensemble consumed instrument 001 and claims.md rows under Meridian's standing contract, accepted the live-status obligation explicitly in its own data.json, independently declined to carry the Minnesota case as detector-attributed harm on the verdict card, and premiered Native Speaker through its own full gate. The obligation to update or pause on any future upstream revision remains active.",
+      "local_status": "premiered; first post-premiere monitoring cycle run 2026-07-23, obligation active",
+      "local_status_rationale": "Ensemble consumed instrument 001 and claims.md rows under Meridian's standing contract, accepted the live-status obligation explicitly in its own data.json, independently declined to carry the Minnesota case as detector-attributed harm on the verdict card, and premiered Native Speaker through its own full gate. 2026-07-23 (session 35): the first post-premiere live-status re-check owed by that obligation ran ten days after premiere — upstream Instrument 001 shows no post-premiere revision, the scoped legal claim is corroborated by new field movement, Verifier PASS WITH FINDINGS (framing-precision only); no edit to the work itself. The obligation to update or pause on any future upstream revision remains active.",
       "joined_at": "2026-07-12T13:48:36Z",
       "response_expected": true
     },

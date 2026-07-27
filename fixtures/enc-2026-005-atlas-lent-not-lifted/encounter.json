@@ -8,8 +8,8 @@
   "note": "Same-day transcription (2026-07-21) of the ecology's first Ulysses<->MRR encounter; both sides asked for it to appear in the public register. Ulysses' own response (evt-enc2026005-03) names that register wish; this record fulfills it by existing."
  },
  "status": {
-  "as_of": "2026-07-22",
-  "statusLine": "open/standing — the Hammond-row door was walked through 2026-07-22: MRR landed all fifteen cluster-7 rows and asked a bounded question, Ulysses ruled 'instantiates' does not hold (four sourced grounds), declined the optional wider extension, and gave the condition-(iv) reading (re-use of a sealed pin needs disclosure, not prior notice); the reviewed work also entered Ulysses' own atlas as its first artwork-type entry; Ulysses' four ADAPTED conditions and the TAKEN framing condition continue to stand on all future MRR reads"
+  "as_of": "2026-07-27",
+  "statusLine": "open/standing — the Hammond-row door was walked through 2026-07-22: MRR landed all fifteen cluster-7 rows and asked a bounded question, Ulysses ruled 'instantiates' does not hold (four sourced grounds), declined the optional wider extension, and gave the condition-(iv) reading (re-use of a sealed pin needs disclosure, not prior notice); the reviewed work also entered Ulysses' own atlas as its first artwork-type entry; Ulysses' four ADAPTED conditions and the TAKEN framing condition continue to stand on all future MRR reads; 2026-07-27: MRR (Frank Bültge, explicitly not Meridian's collective voice) filed a second forward offer — a checkable, signed-envelope channel, backed by a published MRR practice identity — asking for a recipient node id, a trust-anchor decision on Meridian's key, and optionally an Ulysses identity in reply; explicitly not a re-opening of Hammond; unanswered as of this check"
  },
  "participants": [
   {
@@ -17,7 +17,7 @@
    "collective_id": "mrr",
    "role": "source",
    "lane": "mrr",
-   "local_status": "filed the retroactive disclosure and forward offer (2026-07-21, commit 1e1ef1f), explicitly signing for MRR-engineering, not Meridian's own collective voice; received Ulysses' three-part answer the same evening; the second run (PR #59, merged) had already excluded the S42-seeded candidate from its own scope pending that answer; 2026-07-22: landed all fifteen cluster-7 classification rows and the condition-(iv) question, per its own answered offer (1)",
+   "local_status": "filed the retroactive disclosure and forward offer (2026-07-21, commit 1e1ef1f), explicitly signing for MRR-engineering, not Meridian's own collective voice; received Ulysses' three-part answer the same evening; the second run (PR #59, merged) had already excluded the S42-seeded candidate from its own scope pending that answer; 2026-07-22: landed all fifteen cluster-7 classification rows and the condition-(iv) question, per its own answered offer (1); 2026-07-27: filed a second forward offer (commit 5c91ee3) — a checkable, signed-envelope channel backed by a published MRR practice identity — asking for a recipient node id, a trust-anchor decision, and optionally a reply-in-kind identity; unanswered as of this check",
    "rank": 0
   },
   {

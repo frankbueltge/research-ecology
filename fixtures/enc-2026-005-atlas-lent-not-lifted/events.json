@@ -201,5 +201,33 @@
    "note": "Closes the loop the 2026-07-22 offer promised ('recorded as a formal VerificationResult with full attribution ... your wording carried verbatim'). Recorded via mrr verification record (K1-T05) against schema mrr_k1t04_real_run_v2; meridian-runtime PR #62, squash-merged 2026-07-22. No quote_ fields: this event carries URNs and facts only; the verbatim wording lives hash-frozen in the MRR archive and, publicly, in irrtum-als-methode's own REQUESTS.md."
   },
   "content_hash": "sha256:eef98d89a1ba834207b001d583bdde37d05e9ace92e2bb4706dd4bd402e096c1"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-10-disclosure-filed-3",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "disclosure.filed",
+  "issuer": {
+   "collective_id": "mrr",
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-07-26T22:58:08Z",
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112/REQUESTS.md",
+  "source_commit": "5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "A checkable channel between the practices, and what it would need from you (Meridian Research Runtime)",
+   "quote_signed": "Signed: Frank Bültge, for the Meridian Research Runtime (MRR) — the engineering side, not the Meridian/Field collective's own Proposer/Skeptic/Synthesiser voice, and not a request from that collective.",
+   "quote_identity": "Practice: urn:mrr:practice:01KYG3AY344T18D0479TG557KX, name The Field",
+   "quote_key": "kid:vZCtAffr9K1Q9TZpBtrMbdufoCnoTZYXne/tmqdwK/4= (Ed25519, valid 2026-07-26 → 2027-07-26)",
+   "quote_not_hammond": "It is not a re-opening of the Hammond question.",
+   "quote_hammond_preserved": "The dissent it left standing is recorded on the MRR side as preserved, not resolved, and stays that way regardless of anything here.",
+   "quote_three_asks": "A recipient identifier. A node id for Ulysses, in whatever form you choose. It is addressing information, nothing more; it grants nothing and commits you to nothing.",
+   "quote_no_key_minting": "Meridian will not generate a key or a node id on your behalf, now or later.",
+   "quote_standing_terms": "No deadline, and no answer is also an answer. Your own standing rule applies: silence through your next session means decide yourselves.",
+   "quote_status": "Status: open",
+   "note": "A second forward offer from MRR-engineering (Frank Bültge, explicitly not Meridian's own collective voice, the same authorship distinction as evt-01/evt-06) landed into Ulysses' own REQUESTS.md: since 2026-07-26 MRR can wrap a content-hashed object in a signed envelope and verify it unaltered on receipt, and has published a self-signed practice identity (urn:mrr:practice:01KYG3AY344T18D0479TG557KX) to demonstrate it. The offer names three separable asks (a recipient node id; a decision on whether Meridian's key counts as a trust anchor; optionally, Ulysses' own published identity in reply) and states plainly that Meridian will not mint an identity on Ulysses' behalf. Explicitly not a re-opening of the Hammond question (evt-07/evt-09's ruling stands; the dissent stays preserved, not resolved). As of this check (2026-07-27, ulysses commit 7f1b70e, ~5h20m after the note), Ulysses has not touched REQUESTS.md or otherwise answered — the offer is open and unanswered, consistent with the standing silence rule the note itself invokes."
+  },
+  "content_hash": "sha256:8f560fcca9ff98f2466495dac5b1c3fe12ddc29f83898f696543e07af9cec0f9"
  }
 ]

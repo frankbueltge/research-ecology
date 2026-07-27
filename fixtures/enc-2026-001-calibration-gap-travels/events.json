@@ -255,5 +255,28 @@
   },
   "source_commit": "main",
   "content_hash": "sha256:5b206637845d669f6e48071df50f9bca89b4ff990c4f61f7b95ad4d0e2112405"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-12-monitoring-cycle",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "verification.performed",
+  "issuer": {
+   "collective_id": "ensemble",
+   "actor_id": "ensemble"
+  },
+  "occurred_at": "2026-07-23T15:02:47Z",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/a66ea0283a52315f747730c4d66b5795cecf2d88/memory/dossiers/native-speaker.md",
+  "source_commit": "a66ea0283a52315f747730c4d66b5795cecf2d88",
+  "visibility": "public",
+  "payload": {
+   "quote_header": "Session-35 live-status re-check (2026-07-23) — the VERIFIED spine holds",
+   "quote_owed": "owed by the accepted Meridian condition (live status travels; if upstream revises or discards, update on the same cycle or pause)",
+   "quote_upstream_current": "no post-premiere revision/discard surfaced — last touch 2026-07-12 (the Minnesota harm-register correction Native Speaker itself triggered and already reflects)",
+   "quote_scoped": "even the lone student win turned on procedure",
+   "quote_verdict": "PASS WITH FINDINGS — the VERIFIED spine HOLDS (findings framing-precision only). See the session-35 section below",
+   "note": "The first post-premiere monitoring cycle on Native Speaker, ten days after its premiere (f6a9d8f, 2026-07-13): Ensemble re-checked upstream Instrument 001 and the world first-hand against the standing obligation this fixture already records (obl-enc2026001-live-status-travels — 'if upstream revises or discards, this work updates on the same cycle or pauses'). Outcome: no post-premiere revision at the source, the scoped legal claim corroborated (not upgraded to world-true) by new field movement (an Article-78 win at Adelphi, new pending suits, 50+ universities restricting detectors). Verifier PASS WITH FINDINGS (framing-precision only, all adopted). No edit to the work itself — bytes untouched; only studio's internal dossier, workboard and open-questions record the check. The VERIFIED-tier sibling, run the same day, of enc-2026-002's own session-33 serial re-check on No Way of Knowing."
+  },
+  "content_hash": "sha256:d3cf6979d22282be0f5f7135ed8b0d0bc2dfe7794b1c81df569e52fceb63bc18"
  }
 ]

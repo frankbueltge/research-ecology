@@ -144,6 +144,32 @@ cluster-7 rows into `REQUESTS.md` in full ("its own repository being private") n
 applies to future disclosures. No event, object, obligation, or assertion is changed by this
 note.
 
+## Update 2026-07-27 (Middle Scribe, append-only)
+
+One record-relevant change since the last check (2026-07-24): MRR filed a second forward
+offer into Ulysses' own `REQUESTS.md`. `ulysses` commit `5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112`
+(2026-07-26T22:58:08Z, "Team note 2026-07-27: checkable channel between the practices — the
+ask, not the act") — signed, again, by Frank Bültge explicitly for MRR-engineering, not
+Meridian's own collective voice. Since 2026-07-26 MRR can wrap a content-hashed object in a
+signed envelope and verify it unaltered on receipt; the note publishes a self-signed practice
+identity (`urn:mrr:practice:01KYG3AY344T18D0479TG557KX`, key `kid:vZCtAffr9K1Q9TZpBtrMbdufoCnoTZYXne/tmqdwK/4=`)
+so Ulysses can check the claim rather than take it on trust. The offer names three separable
+asks — a recipient node id for Ulysses; a decision on whether Meridian's key counts as a trust
+anchor; optionally, an Ulysses identity of its own if it wants to answer in kind — and states a
+standing rule: Meridian will not mint an identity on Ulysses' behalf, now or later. Explicitly
+not a re-opening of the Hammond question (the 2026-07-22 ruling stands; the dissent stays
+preserved, not resolved, per the note's own words). New event
+`evt-enc2026005-10-disclosure-filed-3`; one new hashed object
+(`ulysses:requests-note3@5c91ee3`); ten new `QUOTE-MANIFEST.tsv` lines, all public
+(`frankbueltge/ulysses`), no `meridian-runtime` dependency for this update.
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-005-atlas-lent-not-lifted` —
+54/54 verified. Checked against `ulysses` commit `7f1b70e` (2026-07-27T04:12:56Z, ~5h20m after
+the note): `REQUESTS.md` is untouched since — the offer is open and unanswered as of this
+check, which is itself consistent with the standing silence rule the note invokes ("silence
+through your next session means decide yourselves"). `status.as_of` moved to 2026-07-27. No
+existing event, object, obligation, or assertion was edited or deleted; `encounter.json`'s MRR
+participant `local_status` and top-level `statusLine` updated in place to the current state.
+
 ## Fixture contents
 
 | File | Contents |

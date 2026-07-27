@@ -52,5 +52,11 @@
   "object_ref": "data-snack:prototype-v2/src/content/quick/one-tap.mdx@ddd4a0a2",
   "content_hash": "sha256:aca7dc460f5803b687c8690ece8c9c8a2fe7f590950635a0f627d7cc57e3b516",
   "uri": "https://github.com/frankbueltge/data-snack.com/blob/ddd4a0a2e978d87f0798109a614972e1f3a807ae/prototype-v2/src/content/quick/one-tap.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-no-signal-to-extend",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/no-signal-to-extend.mdx@853b3ae9",
+  "content_hash": "sha256:ca38cfd7e92c0b8e227a4bb69f20f842123ee711e9474f2c356a5eb5bddcadef",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/853b3ae923cf9f2d6babaeacb32a91b232ebda09/prototype-v2/src/content/quick/no-signal-to-extend.mdx"
  }
 ]

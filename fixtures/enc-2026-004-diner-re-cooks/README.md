@@ -103,3 +103,29 @@ the current state. Eight new `QUOTE-MANIFEST.tsv` lines. `node
 tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — verified (all
 new quotes are public, from `frankbueltge/studio`; no `SCRIBE_LOCAL_CLONES` dependency for
 this update). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-07-27 (Middle Scribe, append-only):** two record-relevant changes since the
+last check (2026-07-25), both from one automated cook run. (1) The armed automation
+published the diner's tenth Quick Snack (`data-snack.com` commit `853b3ae9`,
+2026-07-26T07:17:20Z), re-cooking Meridian's instrument 018 ("No Signal to Extend", the
+Homogenization Dossier v1, shipped field-research session 65, 2026-07-25 as the collective's
+Local Return on joint inquiry ji-2026-002 "Model Collapse") — its `gauntlet` field again
+honestly reads a pre-gauntlet-convention disclosure. New event
+`evt-enc2026004-14-corpus-grown-4` and one new hashed object
+(`data-snack:quick-no-signal-to-extend`). (2) The same commit re-voiced two already-published
+items yet again — extending evt-06/evt-12's pattern, and disclosing something those events did
+not catch: native-speaker.mdx's title had already flipped once, undisclosed, from evt-12's
+"The Gate's Judgment" back to the original "The Machine's Judgment" at an intervening commit
+(`5ff8616`, 2026-07-25T07:01:08Z), and this run flips it back again — three titles now on
+record for one Quick Snack. split-seal.mdx was re-voiced more substantially than any prior
+instance: title changed, teaser reworded, and `hookStatBig` — the headline number itself —
+changed from "15" (specimen count) to "6" (Valid-stamp count), a different quantity from the
+same work, not only prose. New event `evt-enc2026004-15-recook-pattern-continues-2`. Neither
+run touched the diner's "One Tap" Quick Snack, which still carries the pre-kill gauntlet value
+and the superseded "Kritiker: PREMIERE STANDS" verdict, unreacted to roughly 32.5 hours after
+the source kill. Eight new `QUOTE-MANIFEST.tsv` lines. `node tools/verify-encounter-
+fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` set) — 52/52
+verified. `status.as_of` moved to 2026-07-27, the re-cooked-works count to 10.
+`encounter.json`'s Ensemble/Meridian/data-snack-plenum participant statuses and
+`statusLine` updated in place to the current state. No existing event, object, or obligation
+was edited or deleted.

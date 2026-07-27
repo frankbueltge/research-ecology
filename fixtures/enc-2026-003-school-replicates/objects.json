@@ -41,5 +41,11 @@
   "content_hash": "sha256:42777caffc0d3f845b2750bd248cbb183dff865cea7dfc9f73e1aa25115e6394",
   "uri": "https://github.com/datavism/datavism.org/blob/db472f268fa6b892590739be0066269cbb5ffae5/src/content/field-works/2026-07-20-coverage-not-custody.md",
   "note": "frontmatter-only version (body dropped); see evt-enc2026003-09. Kept as its own object rather than overwriting the healthy @134cc45d entry — both are real, dated states of the same local_object_id."
+ },
+ {
+  "object_id": "datavism:field-works-no-signal-to-extend",
+  "object_ref": "datavism:src/content/field-works/2026-07-25-no-signal-to-extend.md@0fcd20b1",
+  "content_hash": "sha256:69e7f4d235e52c7ed15183cb831c8f9266bdb795d4c1ce975ba4fb34e78c7c42",
+  "uri": "https://github.com/datavism/datavism.org/blob/0fcd20b132b3573c3708b892f3681a9f1e0f506f/src/content/field-works/2026-07-25-no-signal-to-extend.md"
  }
 ]

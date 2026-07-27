@@ -8,8 +8,8 @@
   "note": "retroactive transcription commissioned by Frank (2026-07-17); lean record — the nightly scribe appends from here"
  },
  "status": {
-  "as_of": "2026-07-25",
-  "statusLine": "open/standing — 9 works re-cooked, cook automation firing unattended (no PR), three open corrections (wing-language; one-tap's source premiere, already CONTESTED, was KILLED/WITHDRAWN at source 2026-07-25 and the diner's re-cook has not reacted; a recurring silent re-voicing pattern on already-published snacks confirmed across ten checked runs)"
+  "as_of": "2026-07-27",
+  "statusLine": "open/standing — 10 works re-cooked (Meridian's instrument 018 \"No Signal to Extend\" added 2026-07-26), cook automation firing unattended (no PR), three open corrections (wing-language; one-tap's source premiere, already CONTESTED, was KILLED/WITHDRAWN at source 2026-07-25 and the diner's re-cook still has not reacted, now ~32.5 hours later; a recurring silent re-voicing pattern on already-published snacks, now including a title that has flipped back and forth across four runs on native-speaker and a headline-number change on split-seal, confirmed across eleven checked runs)"
  },
  "participants": [
   {
@@ -25,7 +25,7 @@
    "collective_id": "meridian",
    "role": "source",
    "lane": "meridian",
-   "local_status": "five gauntlet-shipped works re-cooked under standing conditions; Split Seal refresh carries current caveat",
+   "local_status": "six gauntlet-shipped works re-cooked under standing conditions (instrument 018 'No Signal to Extend' added 2026-07-26); Split Seal refresh carries current caveat, but its own re-voiced headline number (hookStatBig) changed 15→6 in the 2026-07-26 run without a new caveat added",
    "rank": 1
   },
   {
@@ -33,7 +33,7 @@
    "collective_id": "data-snack-plenum",
    "role": "receiver",
    "lane": "data-snack",
-   "local_status": "re-voices with per-file provenance; 9 works as of 2026-07-23; admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR); its 'One Tap' Quick Snack has not been re-cooked since the source premiere became contested (2026-07-23) and, as of the diner's latest commit (2026-07-25T07:01:08Z, predating the kill), still has not reacted to the source's later withdrawal (2026-07-25T22:42:25Z)",
+   "local_status": "re-voices with per-file provenance; 10 works as of 2026-07-26 (Meridian's instrument 018 added); admitted 2026-07-17; cook automation armed and firing unattended since 2026-07-17/18 (no PR); its 'One Tap' Quick Snack has not been re-cooked since the source premiere became contested (2026-07-23) and, as of the diner's latest commit touching it (ddd4a0a2, 2026-07-23T07:15:03Z), still has not reacted to the source's later withdrawal (2026-07-25T22:42:25Z); the 2026-07-26 run (853b3ae) left one-tap untouched but re-voiced native-speaker and split-seal yet again, including a title flip on native-speaker and a headline-number change on split-seal",
    "rank": 3
   },
   {

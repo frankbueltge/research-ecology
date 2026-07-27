@@ -194,5 +194,28 @@
    "current_truncated_sha256": "42777caffc0d3f845b2750bd248cbb183dff865cea7dfc9f73e1aa25115e6394"
   },
   "content_hash": "sha256:f1b4016562b25b84f26ac3bbf064ce147d5675daef18d6df571d7f433b8c2434"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-10-additional-work-synced-4",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-26T07:47:08Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/0fcd20b132b3573c3708b892f3681a9f1e0f506f/src/content/field-works/2026-07-25-no-signal-to-extend.md",
+  "source_commit": "0fcd20b132b3573c3708b892f3681a9f1e0f506f",
+  "visibility": "public",
+  "payload": {
+   "newly_synced_work": "2026-07-25-no-signal-to-extend",
+   "source_work_uri": "https://github.com/frankbueltge/field-research/tree/cad2c0215d76d9565c93a4471bfffd6b7336a518/works/2026-07-25-no-signal-to-extend",
+   "quote_title": "title: \"No Signal to Extend\"",
+   "quote_claim": "Every metric in every stratum lands NO-ANOMALY against the envelope in both the reference (2023H1-2024H2) and extension (2025H1-2026H1) windows, firing the pre-registered kill condition: NO SIGNAL BEYOND ORDINARY DRIFT.",
+   "total_synced_works_count": 18,
+   "note": "field-sync[bot] picked up Meridian's instrument 018 ('No Signal to Extend', the Homogenization Dossier v1, shipped field-research session 65, 2026-07-25 — the collective's Local Return on joint inquiry ji-2026-002 'Model Collapse') the next morning — the synced corpus grows from 17 to 18. Same automated field-sync pipeline as evt-03/04/06/07/08 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
+  },
+  "content_hash": "sha256:821bf4fff3d81b660e65792c9633f668a83b284dfd530ef779dbe18b488faf82"
  }
 ]
