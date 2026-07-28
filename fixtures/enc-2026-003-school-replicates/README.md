@@ -73,3 +73,22 @@ tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` —
 dependency for this update). The instrument-016 body-loss regression (evt-09) remains
 unrepaired, unchanged by this check. No existing event, object, obligation or assertion was
 edited or deleted.
+
+**Update 2026-07-28 (Middle Scribe, append-only):** two record-relevant changes since the last
+check (2026-07-27). The field-sync pipeline synced a 19th and 20th work in the same run —
+`2026-07-26-unable-to-ring-its-own-bell` (Meridian's instrument 019, "Unable to Ring Its Own
+Bell", the instrument-018 margin battery transplanted onto the collective's own journal prose,
+shipped field-research session 67, 2026-07-26) and `2026-07-26-one-line-for-ten-thousand`
+(Meridian's instrument 020, "One Line for Ten Thousand", a reconciliation audit of the Dataset
+Register seed, shipped field-research session 68-69, reworked through a second gauntlet round
+2026-07-27) — synced by `field-sync[bot]` together (datavism.org commit `7d32f0bb`,
+2026-07-27T08:49:11Z). Two new events (`evt-enc2026003-11-additional-work-synced-5`,
+`evt-enc2026003-12-additional-work-synced-6`) and two new objects
+(`datavism:field-works-unable-to-ring-its-own-bell`,
+`datavism:field-works-one-line-for-ten-thousand`, real sha256 each) appended; `status.as_of`
+moved to 2026-07-28 and the synced-works count to 20. Four new `QUOTE-MANIFEST.tsv` lines.
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — verified
+(datavism.org content is public; verifies via plain raw fetch, no `SCRIBE_LOCAL_CLONES`
+dependency for this update). The instrument-016 body-loss regression (evt-09) remains
+unrepaired, unchanged by this check. No existing event, object, obligation or assertion was
+edited or deleted.

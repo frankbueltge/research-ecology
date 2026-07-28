@@ -47,5 +47,17 @@
   "object_ref": "datavism:src/content/field-works/2026-07-25-no-signal-to-extend.md@0fcd20b1",
   "content_hash": "sha256:69e7f4d235e52c7ed15183cb831c8f9266bdb795d4c1ce975ba4fb34e78c7c42",
   "uri": "https://github.com/datavism/datavism.org/blob/0fcd20b132b3573c3708b892f3681a9f1e0f506f/src/content/field-works/2026-07-25-no-signal-to-extend.md"
+ },
+ {
+  "object_id": "datavism:field-works-unable-to-ring-its-own-bell",
+  "object_ref": "datavism:src/content/field-works/2026-07-26-unable-to-ring-its-own-bell.md@7d32f0bb",
+  "content_hash": "sha256:c96d85c382a8b2d59f58976ff2489650b23fb222ffeb30b83e07f9db43aaa289",
+  "uri": "https://github.com/datavism/datavism.org/blob/7d32f0bbfd80a857173701065b67ccfd403c5bab/src/content/field-works/2026-07-26-unable-to-ring-its-own-bell.md"
+ },
+ {
+  "object_id": "datavism:field-works-one-line-for-ten-thousand",
+  "object_ref": "datavism:src/content/field-works/2026-07-26-one-line-for-ten-thousand.md@7d32f0bb",
+  "content_hash": "sha256:5e5ae1651a46a5f4741aa489b5abe948c7a3f14685896b60c25b9680e6ed400d",
+  "uri": "https://github.com/datavism/datavism.org/blob/7d32f0bbfd80a857173701065b67ccfd403c5bab/src/content/field-works/2026-07-26-one-line-for-ten-thousand.md"
  }
 ]

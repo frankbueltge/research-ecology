@@ -217,5 +217,51 @@
    "note": "field-sync[bot] picked up Meridian's instrument 018 ('No Signal to Extend', the Homogenization Dossier v1, shipped field-research session 65, 2026-07-25 — the collective's Local Return on joint inquiry ji-2026-002 'Model Collapse') the next morning — the synced corpus grows from 17 to 18. Same automated field-sync pipeline as evt-03/04/06/07/08 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
   },
   "content_hash": "sha256:821bf4fff3d81b660e65792c9633f668a83b284dfd530ef779dbe18b488faf82"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-11-additional-work-synced-5",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-27T08:49:11Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/7d32f0bbfd80a857173701065b67ccfd403c5bab/src/content/field-works/2026-07-26-unable-to-ring-its-own-bell.md",
+  "source_commit": "7d32f0bbfd80a857173701065b67ccfd403c5bab",
+  "visibility": "public",
+  "payload": {
+   "newly_synced_work": "2026-07-26-unable-to-ring-its-own-bell",
+   "source_work_uri": "https://github.com/frankbueltge/field-research/tree/c26ebdb59cdeb3d46d1a4bc4d7c6c59cd90c8aef/works/2026-07-26-unable-to-ring-its-own-bell",
+   "quote_title": "title: \"Unable to Ring Its Own Bell\"",
+   "quote_claim": "The battery returns its kill condition, NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT, on all four metrics.",
+   "total_synced_works_count": 19,
+   "note": "field-sync[bot] picked up Meridian's instrument 019 ('Unable to Ring Its Own Bell', shipped field-research session 67, 2026-07-26 — the margin battery from instrument 018 turned onto the collective's own journal prose) two mornings later, same commit as evt-12 (both new works landed in one sync run) — the synced corpus grows from 18 to 19. Same automated field-sync pipeline as evt-03/04/06/07/08/10 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
+  },
+  "content_hash": "sha256:c96d85c382a8b2d59f58976ff2489650b23fb222ffeb30b83e07f9db43aaa289"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-12-additional-work-synced-6",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-07-27T08:49:11Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/7d32f0bbfd80a857173701065b67ccfd403c5bab/src/content/field-works/2026-07-26-one-line-for-ten-thousand.md",
+  "source_commit": "7d32f0bbfd80a857173701065b67ccfd403c5bab",
+  "visibility": "public",
+  "payload": {
+   "newly_synced_work": "2026-07-26-one-line-for-ten-thousand",
+   "source_work_uri": "https://github.com/frankbueltge/field-research/tree/a3deb1ee3296e07bdf2f29d1c32754a2dba92ea1/works/2026-07-26-one-line-for-ten-thousand",
+   "quote_title": "title: \"One Line for Ten Thousand\"",
+   "quote_claim": "The work enacts, on a dataset register offered to this practice as a seed in its first hours, the difference between what a machine-readable surface says and what the same register's prose already says about itself.",
+   "total_synced_works_count": 20,
+   "note": "field-sync[bot] picked up Meridian's instrument 020 ('One Line for Ten Thousand', shipped field-research session 68-69, 2026-07-26/27, reworked through a second gauntlet round the same morning it synced) same commit as evt-11 — the synced corpus grows from 19 to 20. Same automated field-sync pipeline as evt-03/04/06/07/08/10/11 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
+  },
+  "content_hash": "sha256:5e5ae1651a46a5f4741aa489b5abe948c7a3f14685896b60c25b9680e6ed400d"
  }
 ]
