@@ -58,5 +58,11 @@
   "object_ref": "data-snack:prototype-v2/src/content/quick/no-signal-to-extend.mdx@853b3ae9",
   "content_hash": "sha256:ca38cfd7e92c0b8e227a4bb69f20f842123ee711e9474f2c356a5eb5bddcadef",
   "uri": "https://github.com/frankbueltge/data-snack.com/blob/853b3ae923cf9f2d6babaeacb32a91b232ebda09/prototype-v2/src/content/quick/no-signal-to-extend.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-one-line-for-ten-thousand",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/one-line-for-ten-thousand.mdx@83efcdd1f",
+  "content_hash": "sha256:aae9b3be27df3e5549a55453a3671580c659b33e5f6ac939d4b48ad1a560b6a8",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9/prototype-v2/src/content/quick/one-line-for-ten-thousand.mdx"
  }
 ]

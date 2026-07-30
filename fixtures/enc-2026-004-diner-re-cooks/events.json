@@ -333,5 +333,53 @@
    "note": "The same commit that grew the corpus to ten (evt-enc2026004-14) also re-voiced two already-published items yet again, extending the pattern evt-06/evt-12 disclosed. native-speaker.mdx's title had already flipped once from evt-12's 'The Gate's Judgment' back to the original 'The Machine's Judgment' at commit 5ff8616 (2026-07-25T07:01:08Z, between evt-12's check and this one) -- undisclosed in any prior event -- and this run (853b3ae) flips it back again to 'The Gate's Judgment', plus rewords teaser and hookStat and bumps the date to 2026-07-26: three titles recorded for this one Quick Snack across the record now ('The Machine's Judgment' at birth, 'The Gate's Judgment' at evt-12, back to 'The Machine's Judgment' at 5ff8616, forward to 'The Gate's Judgment' again here). split-seal.mdx was re-voiced again in the same run, and more substantially than prior instances: title changed from 'The Split Seal: Two Authenticity Infrastructures, Cross-Examined' to 'The Split Seal: Trust-Blind Manifests', teaser reworded, and hookStatBig -- the headline number itself -- changed from '15' (specimen count) to '6' (Valid-stamp count), a different quantity from the same work, not only prose. Neither carries a new load-bearing caveat; nothing in the cook template's schema marks any of this as a correction or a version -- the only trace remains git history itself. The diner's 'One Tap' Quick Snack ('The Dalles Concealment Case') was not touched by this run -- it still carries the pre-kill gauntlet value and the superseded 'Kritiker: PREMIERE STANDS' verdict (evt-11/evt-13), unreacted to as of this check (2026-07-27), roughly 32.5 hours after the source kill (evt-13, 2026-07-25T22:42:25Z)."
   },
   "content_hash": "sha256:c83e16ede24a051776c2ec980d48cc9efbd40e49f6cfeab10bfa476115107a45"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-16-corpus-grown-5",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-29T07:27:25Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9/prototype-v2/src/content/quick/one-line-for-ten-thousand.mdx",
+  "source_commit": "83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9",
+  "visibility": "public",
+  "payload": {
+   "quote_title": "title: en: 'The 65-Record Discrepancy'",
+   "quote_provenance_work": "work: 'One Line for Ten Thousand'",
+   "quote_provenance_gauntlet": "gauntlet: 'shipped (pre-gauntlet convention); chronicle notes move ''rework and a second gauntlet — the audit of the ecology''s dataset register ships, after three more of its own claims were taken off it''/verdict ''shipped as instrument 020, through two full rounds of review — with three of the practice''s own claims withdrawn along the way and a live check, deliberately kept out of the evidence, showing that a confirmed link can lead to something the host says is gone'', session 69, 2026-07-27'",
+   "quote_hook": "The register's own material. It tells us what it says. And what it doesn't.",
+   "total_quick_snacks_count": 11,
+   "note": "The armed automation (evt-enc2026004-07) re-cooked Meridian's instrument 020 ('One Line for Ten Thousand', a reconciliation audit of the Dataset Register seed, shipped field-research sessions 68–69, reworked through a second gauntlet round 2026-07-27) as the diner's eleventh Quick Snack. Like evt-08/evt-14's instrument re-cooks, gauntlet reads an honest pre-gauntlet-convention disclosure, quoting the chronicle's own two-part verdict wording verbatim. Same automated cook run (commit 83efcdd1f) that produced evt-enc2026004-17's further re-voicing finding."
+  },
+  "content_hash": "sha256:2fa639b1f57651b7493493d4a511ea6cbf180e068ea7a29a02808c00e748f0fa"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-17-recook-pattern-continues-3",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "source.status_changed",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-29T07:27:25Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9/prototype-v2/src/content/quick/native-speaker.mdx",
+  "source_commit": "83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9",
+  "visibility": "public",
+  "payload": {
+   "quick_slug": "native-speaker",
+   "quote_title_reverted_again": "title: en: 'The Machine''s Judgment'",
+   "quote_teaser_reworded_3": "A border gate, a keyboard, and a score. The system processes your words, not your intent. The numbers are in.",
+   "quote_hookstat_reworded_3": "The average false-positive rate across seven AI text detectors. The machine flags, the human pays.",
+   "quote_body_rewritten": "It stamps you ADMITTED or FLAGGED AS MACHINE.",
+   "quote_splitseal_teaser_reworded_2": "Its ''Valid'' stamps? Signature integrity. Not signer trust.",
+   "quote_splitseal_hookstat_reworded_2": "specimens were tested across two authenticity infrastructures.",
+   "note": "The same commit that grew the corpus to eleven (evt-enc2026004-16) re-voiced native-speaker.mdx and split-seal.mdx yet again, extending the pattern evt-06/evt-12/evt-15 disclosed. native-speaker.mdx's title flips back to 'The Machine's Judgment', reversing evt-15's flip to 'The Gate's Judgment' — a fourth flip across the record since birth (birth: 'The Machine's Judgment'; evt-12 checked it unchanged as 'The Gate's Judgment'; 5ff8616 flipped it to 'The Machine's Judgment', undisclosed until evt-15; evt-15/853b3ae9 flipped it back to 'The Gate's Judgment'; this run, 83efcdd1f, flips it back once more). Teaser and hookStat are reworded again, and — new to this pattern — the body prose itself was substantially rewritten a second time (first silently reworded at 853b3ae9/evt-15's own commit without disclosure, now again here), not only the frontmatter fields evt-12/evt-15 named. split-seal.mdx's headline number (hookStatBig) flips back from '6' (Valid-stamp count, set at evt-15/853b3ae9) to '15' (specimen count, its original value); title is unchanged this run ('The Split Seal: Trust-Blind Manifests'), but teaser and hookStat are reworded again. Neither carries a new load-bearing caveat; nothing in the cook template's schema marks any of this as a correction or a version — the only trace remains git history itself. The diner's 'One Tap' Quick Snack ('The Dalles Concealment Case') was not touched by this run either — it still carries the pre-kill gauntlet value and the superseded 'Kritiker: PREMIERE STANDS' verdict (evt-11/evt-13), unreacted to as of this check (2026-07-30), roughly four and a half days after the source kill (evt-13, 2026-07-25T22:42:25Z)."
+  },
+  "content_hash": "sha256:991faa5af0c0290768bb66a969b690916481ae1a0d0a0d0c208e92fa79e94c68"
  }
 ]
