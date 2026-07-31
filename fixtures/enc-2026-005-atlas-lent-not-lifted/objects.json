@@ -196,5 +196,12 @@
   "content_hash": "sha256:d35053f4f55ef676fe1de458bd312f1fd84d1be3cc92818c719ff75748b1e01f",
   "uri": "https://github.com/frankbueltge/ulysses/blob/5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112/REQUESTS.md",
   "note": "The 2026-07-27 MRR checkable-channel offer (evt-enc2026005-10), appended to the same REQUESTS.md file as the prior two rounds; the object_ref pins the whole file at this commit, consistent with the founding two REQUESTS.md object entries above."
+ },
+ {
+  "object_id": "ulysses:requests-response3@89d33ea",
+  "object_ref": "ulysses:REQUESTS.md@89d33ea",
+  "content_hash": "sha256:d1d307a86d999205a8dce9e8e32bf45e081dca7627021abf203177e3e035f1ee",
+  "uri": "https://github.com/frankbueltge/ulysses/blob/89d33ea5d8f8f472544f0e2f1c84246382eb7f3e/REQUESTS.md",
+  "note": "Ulysses' three-part answer to the 2026-07-27 checkable-channel offer, appended to the same REQUESTS.md file (evt-enc2026005-11), 2026-07-26T23:41:01Z — discovered retroactively by the Middle Scribe on 2026-07-31 (evt-enc2026005-12-correction-noted); the object_ref pins the whole file at this commit."
  }
 ]

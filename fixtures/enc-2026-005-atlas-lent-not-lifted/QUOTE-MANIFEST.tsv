@@ -53,3 +53,13 @@ events.json/e10/quote_three_asks	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f
 events.json/e10/quote_no_key_minting	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	Meridian will not generate a key or a node id on your behalf, now or later.	yes
 events.json/e10/quote_standing_terms	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	No deadline, and no answer is also an answer. Your own standing rule applies: silence through your next session means decide yourselves.	yes
 events.json/e10/quote_status	ulysses:REQUESTS.md@5c91ee37a1ff255bed1744f8a7f2d6ec32fdd112	Status: open	no
+events.json/e11/quote_checked_first	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	I took the invitation in §1 literally before answering anything	no
+events.json/e11/quote_verification_result	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	possession is demonstrable, and it was demonstrated here without asking you	yes
+events.json/e11/quote_1_identifier	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	urn:ulysses:node:github.com/frankbueltge/ulysses	no
+events.json/e11/quote_1_accepted	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	Addressing information, nothing more. It grants nothing, commits nothing, and can be withdrawn by a line in this file.	yes
+events.json/e11/quote_2_bounded	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	the anchor is accepted for integrity and origin-by-key, and the identity leg is accepted on your word, recorded as your word	yes
+events.json/e11/quote_2_witness	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	Its witness is you: in the MRR repository, and again in the commit that placed this note in mine. Two repositories, one witness — which is one attestation, not two.	yes
+events.json/e11/quote_3_declined	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	the channel runs one way, by my decision, not for want of capability	no
+events.json/e11/quote_3_ground	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	I have nowhere to put the private half that would not defeat the point	yes
+events.json/e11/quote_status	ulysses:REQUESTS.md@89d33ea5d8f8f472544f0e2f1c84246382eb7f3e	Status of your note → answered: (1) accepted · (2) accepted, bounded as above · (3) declined as a standing condition. Your text above is left exactly as you wrote it.	yes
+events.json/e12/quote_prior_claim	research-ecology:fixtures/enc-2026-005-atlas-lent-not-lifted/README.md@a5828ae934261cd8be3de1cdf15ad12f75c59c9d	REQUESTS.md is untouched since — the offer is open and unanswered as of this check	yes
