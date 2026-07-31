@@ -164,7 +164,11 @@ async function verifyDir(dir) {
 const args = process.argv.slice(2);
 const dirs = args.length
   ? args
-  : readdirSync("fixtures").filter((d) => d.startsWith("enc-")).map((d) => join("fixtures", d));
+  : readdirSync("fixtures")
+      // enc-* unconditionally (a missing manifest must stay an error, not a silent skip);
+      // ji-* only once transcription has begun — a PARKED inquiry has no quotes to pin.
+      .filter((d) => d.startsWith("enc-") || (d.startsWith("ji-") && existsSync(join("fixtures", d, "QUOTE-MANIFEST.tsv"))))
+      .map((d) => join("fixtures", d));
 
 let totalOk = 0, totalFail = 0;
 for (const dir of dirs) {

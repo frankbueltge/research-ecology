@@ -329,7 +329,13 @@ product, company, or tool vendor may EVER appear; refer to tools generically. Wr
 EVERYTHING in English. You start with no memory except this Git repo (research-ecology).
 
 1. Orient: read fixtures/enc-*/README.md and encounter.json (status blocks), plus
-docs/ENCOUNTER-INVENTORY.md. The ledger's one job: every OPEN/standing encounter reflects
+docs/ENCOUNTER-INVENTORY.md — AND fixtures/ji-*/README.md and inquiry.json: joint
+inquiries are ledger objects too. When a practice's own channel shows a Local Commitment,
+a return/outcome, a decline or a recorded silence for an open ji fixture, transcribe it
+(commitments/, positions/, events/, status per docs/joint-inquiry/PROTOCOL.md §7) in the
+same append-only way. (Added 2026-07-31 after ji-2026-002 sat six days as "no practice has
+accepted" while all three practices had delivered — the routine only knew encounters.)
+The ledger's one job: every OPEN/standing encounter AND joint inquiry reflects
 the practices' latest public state.
 2. For each open encounter, diff the involved repos' public state since the record's
 status.as_of — shallow-clone ONLY the repos you need: github.com/frankbueltge/{studio,
