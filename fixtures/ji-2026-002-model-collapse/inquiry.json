@@ -7,14 +7,22 @@
   "public_summary": "A temporary constellation of three sovereign practices asking whether a shared body of knowledge, increasingly made of machine output, measurably loses its margins — or re-grounds itself in the world — worked in parallel as measurement, concept and experience, with the disagreement preserved.",
   "shared_problem": "When a shared body of knowledge is increasingly made of material that machines produce from machine output, does it measurably lose its margins — diversity, rare cases, outliers — or does it re-ground itself in the world; and by what sign could the difference be told before it is irreversible? The concrete case: human writing beginning to carry the statistical signature of the models trained on it — the loop closing — measured on a real, dated text corpus, NOT by the unreliable route of labelling individual items 'AI', but by the reliable fingerprint of collapse (shrinking lexical diversity/variance, the rise of a declared marker set).",
   "why_multiple_practices": "Meridian can measure the fingerprint of homogenization on a declared, dated corpus, reproducibly and code-anchored — deliberately not the brittle 'detect AI' route. Ulysses can problematise the loop (the world starting to sound like the machine trained on the world) and the loss of the margin/outlier/error it holds precious, and it already measured self-consuming loops in a controlled setting. Ensemble can build a situation in which the disappearance of a particular voice into smooth model-average becomes experiential, not didactic. The inquiry is INVALID if it collapses into a service chain (Meridian charts, Ensemble illustrates, Ulysses comments); the three readings of whether shrinking diversity is loss or mere convergence are constitutively incompatible, and that disagreement is the subject.",
-  "initiated_by": { "actor_id": "frank-bueltge", "actor_type": "human", "practice_id": null },
+  "initiated_by": {
+    "actor_id": "frank-bueltge",
+    "actor_type": "human",
+    "practice_id": null
+  },
   "minimum_participants": 2,
   "maximum_participants": 3,
-  "invited_practice_ids": ["meridian", "ulysses", "ensemble"],
+  "invited_practice_ids": [
+    "meridian",
+    "ulysses",
+    "ensemble"
+  ],
   "coordination_profile": "parallel_return",
   "coordination_note": "parallel_return with explicit cross_examination return events: all three receive the same dated corpus and the reference demonstration, produce one local first move independently, then a mutual cross-examination return — Meridian audits factual claims in Ulysses'/Ensemble's outputs, Ulysses and Ensemble challenge Meridian's metric and its 'collapse vs convergence' framing. At most one return move per practice.",
-  "status": "PROPOSED",
-  "phase": "PROPOSAL",
+  "status": "REVIEW",
+  "phase": "REVIEW",
   "visibility": "participants",
   "publication_policy": "human_only",
   "resource_envelope": {
@@ -36,7 +44,7 @@
       "title": "Attractor — Ulysses' existing self-consuming loop (16 texts recursively self-trained, collapse measured against a control): the reproducible reference demonstration of the mechanism, NOT a division of labour."
     }
   ],
-  "field_corpus_to_source": "The empirical target is a real, dated, openly-licensed text corpus spanning before and after model-generated text entered the commons (candidates to reconcile: dated abstracts from an open scientific index; a dated open news/forum/review corpus). It is NOT yet sourced or pinned — the participating practices source and pin the exact versioned corpus during reconciliation, before the inquiry goes ACTIVE (Document-10 pattern). No fabricated reference is placed here in the meantime.",
+  "field_corpus_to_source": "The empirical target is a real, dated, openly-licensed text corpus spanning before and after model-generated text entered the commons (candidates to reconcile: dated abstracts from an open scientific index; a dated open news/forum/review corpus). It is NOT yet sourced or pinned — the participating practices source and pin the exact versioned corpus during reconciliation, before the inquiry goes ACTIVE (Document-10 pattern). No fabricated reference is placed here in the meantime. — UPDATE 2026-07-31 (scribe transcription): no shared cross-practice corpus was reconciled; each practice worked its own material per its Local Commitment. Meridian pinned its corpus inside its own pre-registration before any fetch (arXiv OAI-PMH harvest, 338,151 records, three strata 2015–2026H1; pre-registration locked at field-research commit 5e17bf1); Ulysses read two primaries (Kobak et al. 2025; Fitterer et al. 2025); Ensemble used synthetic states and cited public-domain material only, per its bounds. Meridian's commitment holds its instrument available for a shared corpus 'if the sibling practices converge' — none was needed for the first moves.",
   "source_encounter_refs": [],
   "stop_conditions": [
     "Kill or narrow if no reliable signal beyond ordinary language change or fashion can be established (the measurement must survive its own null model of normal drift).",
@@ -47,6 +55,6 @@
   "rights_summary": "Measurement uses only public, openly-licensed text at the aggregate/statistical level. No personal or sensitive data is collected to enrich the work; no individual writer is targeted, profiled or re-identified; the marker/diversity metrics run over the corpus in aggregate, never as a claim about any named person. Any experiential prototype uses synthetic states or informed internal participants only.",
   "affected_public_summary": "Writers whose public text sits in the chosen corpus. They are present only in aggregate statistics, never named or singled out. The work makes no claim that any particular person 'writes like a model'.",
   "created_at": "2026-07-24T00:00:00Z",
-  "updated_at": null,
-  "revision": 1
+  "updated_at": "2026-07-31T22:40:39Z",
+  "revision": 2
 }

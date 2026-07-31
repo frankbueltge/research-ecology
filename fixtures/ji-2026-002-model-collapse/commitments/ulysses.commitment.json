@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "commitment_id": "ji-2026-002-c-ulysses",
+  "version": 1,
+  "inquiry_id": "ji-2026-002",
+  "practice_id": "ulysses",
+  "issued_by": {
+    "actor_id": "ulysses",
+    "actor_type": "practice",
+    "practice_id": "ulysses"
+  },
+  "local_project_ref": "projects/2026-07-25-signature-in-the-world/",
+  "local_question": "When the world's own writing begins to carry the measurable statistical signature of the models trained on it — Kobak et al.'s excess-vocabulary shift as the concrete instance — the field's whole literature on avoiding collapse rests on one remedy: keep fresh real data in the loop. That remedy assumes the injected 'real data' is outside the loop. The local question is whether that assumption survives its own success: once the humans supplying the re-grounding data already write in the model's register, is re-grounding still a counter-force, or has it become a consolation — the same closing loop wearing the name of its cure?",
+  "method_or_operation": "Source-reading and the practice's own prior findings used as instruments — no generation whose provenance is the subject, no new external cost. The practice's founding method is error-made-legible; model collapse is its inverse, error (the margin, the tail, the outlier) made silently invisible. The compose gate stays (§5.4 non-replaceability): not a dashboard, not a decorated thesis; the default output is a research note, or a negative result.",
+  "first_move": "Read Kobak, D. et al., 'Delving into LLM-assisted writing in biomedical publications through excess vocabulary' (Science Advances 2024; arXiv:2406.07016) at the primary — one full-text extraction budgeted, load-bearing. Extract, verbatim where it carries weight: (a) exactly what is measured against what control; (b) whether the paper documents the outlier/margin dissolving or only frequency shifts of common style-words; (c) whether it speaks to re-grounding at all. Then judge whether the 're-grounding as consolation' thesis has a measurable anchor in this present or is, at present, conjecture — and mark it as whichever it is.",
+  "admitted_input_refs": [
+    {
+      "practice_id": "ulysses",
+      "local_object_id": "works/2026-07-04-attractor/meta.json",
+      "version": "cfb6a108eac41c603fae29dd85e01b0e9ad17416",
+      "content_hash": "sha256:61f3b012ac4bb7114de2c1e09bf44851e048ebc269ae82c569a81a2e8ffde1ee",
+      "canonical_uri": null,
+      "local_type": "reference-demonstration",
+      "media_type": "application/json",
+      "title": "Attractor — verified to exist before acceptance (part of the S15–S16 self-consuming-loop trilogy)"
+    }
+  ],
+  "conditions_and_refusals": [
+    "Accepted under the encounter clause amended into PROTOCOL v5 §3 the same day: an accepted encounter may open one additional work-line beyond the cap, so collaboration never crowds out the practice's own line (negative-parallax rests as PUBLICATION_CANDIDATE, blocking nothing).",
+    "Move budget as offered: one first move, at most one return move; the return move conditionally specified in advance.",
+    "No generation whose provenance is the subject; no new external cost.",
+    "The thesis is defeasible, not an illustration — it can lose against the primaries."
+  ],
+  "change_conditions": [
+    "The thesis stands or falls on what the primaries show about the margin/outlier dissolving versus mere frequency shifts of common style-words — the two are not the same, and the thesis needs the former."
+  ],
+  "planned_output_types": [
+    "research note or negative result (default; whether a work is warranted stays open until earned)"
+  ],
+  "max_autonomous_moves": 2,
+  "resource_budget": {
+    "aggregate_external_cost_eur": 0,
+    "note": "one full-text extraction budgeted for the first move; second primary (return move) conditionally pre-specified"
+  },
+  "return_obligation": "One conditional return move, specified in advance and spent as tick 2 (Fitterer et al. 2025, NOW news corpus 2018 vs 2024) — the condition was tested rather than reinterpreted.",
+  "escalation_triggers": [],
+  "local_publication_policy": "Human-gated publication per Protocol v5 §2.3; this encounter earned no publication candidate — 'no work earned' recorded as a result rather than manufacturing one.",
+  "status": "COMPLETED",
+  "status_note": "Both granted moves spent 2026-07-25; typed outcome reported; disposition ARCHIVE_AS_STUDY — 'nothing here failed'; findings composted into the 2026-07-23-negative-parallax work-line. A further round would be a new encounter under §3.",
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/23fd96ef22b6b98e956d95fd8ab544eee81180ac/projects/2026-07-25-signature-in-the-world/SCORE.md",
+  "issued_at": "2026-07-25T00:00:00Z",
+  "issued_at_note": "Date from the practice's record; intra-day time not recorded there.",
+  "content_hash": "sha256:c6f5350b12386fd0d07a9db0bc5f6140e606c881d3de1f975531d007916a1def",
+  "content_hash_of": "ulysses:projects/2026-07-25-signature-in-the-world/SCORE.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac — the full source file at the pinned commit; the commitment is its section 'Local Commitment — The signature in the world (encounter ji-2026-002)'. Transcribed by the Middle Scribe 2026-07-31; the practice's own record is authoritative."
+}

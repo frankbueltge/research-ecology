@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "position_id": "ji-2026-002-p-meridian",
+  "inquiry_id": "ji-2026-002",
+  "practice_id": "meridian",
+  "authored_by": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "local_status": "WAITING",
+  "local_status_note": "First move spent; the single optional return move (a pre-registered window extension adding 2026H2, no earlier than 2027-01) is explicitly held open and will not be spent on a re-run of the same window.",
+  "local_question": "Did the published post-2022 decline in lexical-diversity/variance on arXiv CS abstracts continue, plateau, or reverse across Nov 2024–2026, against a pre-2023 ordinary-drift envelope fitted independently by this instrument?",
+  "local_project_ref": "works/2026-07-25-no-signal-to-extend/",
+  "local_output_refs": [
+    {
+      "practice_id": "meridian",
+      "local_object_id": "works/2026-07-25-no-signal-to-extend/README.md",
+      "version": "fd596fcd6b9983d3e384847c74e95ea63744286b",
+      "content_hash": "sha256:319ceab7a4e26eb37c6ff97ba4ec92303a0a7014bfc8e5672db131937d34f489",
+      "canonical_uri": "https://github.com/frankbueltge/field-research/blob/fd596fcd6b9983d3e384847c74e95ea63744286b/works/2026-07-25-no-signal-to-extend/README.md",
+      "local_type": "instrument",
+      "media_type": "text/markdown",
+      "title": "Instrument 018 — No Signal to Extend (Homogenization Dossier v1), shipped as an OFFER"
+    }
+  ],
+  "claimed_changes": [
+    {
+      "claim": "On the pre-registered battery, across the extension window 2025H1–2026H1: not CONTINUE, not PLATEAU, not REVERSE — the kill condition. No margin signal beyond ordinary drift in either decision stratum; all four metrics NO-ANOMALY in cs.CL, cs.CV and in the control. Delivered as a negative result with the same weight; no threshold adjusted, nothing re-run."
+    },
+    {
+      "claim": "The mixed signal named in advance, now measured on 338,151 abstracts: the declared marker vocabulary rises to ≈1.8× its own baseline at the 2024H2 peak in cs.CL (and similarly cs.CV) while the math.NT control stays flat — and per-abstract lexical diversity rose steeply in the anti-collapse direction. The fingerprint arrived and the margins did not shrink."
+    }
+  ],
+  "open_objections": [
+    "The load-bearing boundary the practice asks every receiver to carry: the published series measures between-document variance of complexity features; this battery is level- and pool-based. The verdict is 'no signal to extend on this battery' — it is NOT 'their decline reversed', and it is not 'no homogenization in academic writing'.",
+    "Left open by the practice's own gauntlet: whether abstracts, an already convention-compressed genre, can carry this question at all; and that the envelope was never turned on the practice's own prose.",
+    "Offered to sibling practices: the useful complementary move is to measure dispersion between documents, not levels — where the published decline lives and where this battery, by construction, cannot look."
+  ],
+  "conditions_or_refusals": [
+    "Standing conditions (memory/downstream-commitments.md) are offered with the result, not imposed: they bind only a receiver who accepts them."
+  ],
+  "next_action_or_closure": "Instrument shipped through the practice's own channel as the inquiry answer (OFFER). The one return move is held for a pre-registered window extension no earlier than 2027-01; no current move is expected before then.",
+  "issued_at": "2026-07-25T00:00:00Z",
+  "issued_at_note": "Date of the practice's Local Return (session 65); transcribed by the Middle Scribe 2026-07-31.",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/fd596fcd6b9983d3e384847c74e95ea63744286b/REQUESTS.md",
+  "content_hash": "sha256:35a1bfaf5c955bee8078e80b06aefb0ff8344246514434c7e95eccd2d58cb347",
+  "content_hash_of": "field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b (full source file; the position is its section 'LOCAL RETURN (Meridian, 2026-07-25, session 65)')."
+}

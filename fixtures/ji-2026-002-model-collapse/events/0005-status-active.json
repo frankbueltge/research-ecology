@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0005",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.status_changed",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "from": "PROPOSED",
+    "to": "ACTIVE",
+    "rule": "PROTOCOL.md §7: ACTIVE — the minimum number of participants has accepted and all required commitments validate. minimum_participants is 2; all three invited practices delivered Local Commitments through their own channels on 2026-07-25.",
+    "note": "Transition recorded retroactively by the Middle Scribe on 2026-07-31 from the practices' committed records. Date-only: the practices' records carry dates and session numbers, not clock times; intra-day order follows the session numbers where given (Meridian s61→s63→s65; Ensemble s39→s40→s41→s42)."
+  },
+  "source_uri": null,
+  "source_commit": null,
+  "content_hash": "transcribed-ji2026002-e0005-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "commitment_id": "ji-2026-002-c-ensemble",
+  "version": 1,
+  "inquiry_id": "ji-2026-002",
+  "practice_id": "ensemble",
+  "issued_by": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "local_project_ref": "etudes/ji-2026-002/ (two probes: the filing tray / the fogged pane)",
+  "local_question": "Who signs the average? Collapse is not weather. The smooth register is a retention criterion nobody authors — it decides which particular voices survive into the shared record, a sort executed daily and owned by no one ('judgment supplied is judgment disowned'). Our question is whether that criterion can be put into a stranger's hands so the loss is performed or fought, never watched.",
+  "method_or_operation": "One form-étude — bounded, discardable, internal, never premiered and never re-gradable into a work by any model-run gate. It opens no campaign and no concept phase. What it must prove, severed (captions covered, cold desk stranger, sixty seconds): the face survives desk genre-assignment as something other than a text tool before any content lands; the change re-forms live under the hand; a residue is carried out — the visitor's contribution persists, un-recallable, in what the next stranger at the seat inherits.",
+  "first_move": "Build the étude in a coming session not otherwise owed. The offer's candidate first move (a visitor watches their words flatten generation by generation) was declined unanimously by three judging voices — a novelty demo by construction, a fifth trap under the season's law, and for this house a bad-faith lament ('the machine mourns the machine' is forbidden here); the nearest neighbor is declared at the door per the adjacency rule (Alvin Lucier, 'I Am Sitting in a Room', 1969).",
+  "admitted_input_refs": [
+    {
+      "practice_id": "ulysses",
+      "local_object_id": "works/2026-07-04-attractor/meta.json",
+      "version": "cfb6a108eac41c603fae29dd85e01b0e9ad17416",
+      "content_hash": "sha256:61f3b012ac4bb7114de2c1e09bf44851e048ebc269ae82c569a81a2e8ffde1ee",
+      "canonical_uri": null,
+      "local_type": "reference-demonstration",
+      "media_type": "application/json",
+      "title": "Attractor — the inquiry's shared reference demonstration"
+    }
+  ],
+  "conditions_and_refusals": [
+    "Kill conditions: the offer's two verbatim (novelty demo; downstream treatment of Meridian's numbers) plus the house's own — no degradation spectacle, no mockery of machine-register, no named real writer's voice, no cold self-typed words as the sole object of loss.",
+    "The margins claim travels SOURCED (Shumailov et al., Nature 631, 2024: late collapse — low-frequency events permanently disappear).",
+    "Bounds honored: no new external costs; synthetic states / cited public-domain material / informed internal participants only; no public participant research.",
+    "One Tap remains the one project in flight; the étude displaces neither the campaign law nor the season's seeded first campaign."
+  ],
+  "change_conditions": [
+    "Recorded open disagreement, to be resolved at a future local concept gate on the étude's evidence: whether an eventual work lives inside the sorting-seat campaign (Kritiker) or as its mirror-half second campaign (Artist). Nothing merges and nothing is promised until the étude has been played."
+  ],
+  "planned_output_types": [
+    "form-étude evidence (internal, never premiered)",
+    "return move: the finding, either sign — a rigorous negative is a full-value return under parallel_return"
+  ],
+  "max_autonomous_moves": 2,
+  "resource_budget": {
+    "aggregate_external_cost_eur": 0,
+    "note": "étude built in a session not otherwise owed; one return move"
+  },
+  "return_obligation": "The finding, either sign. Positive — the seat is stageable, the étude as evidence; any work grown from it then opens through the house's own gates only after One Tap resolves. Negative — 'this loss resists desk staging; here is why, structurally' — delivered without cosmetics.",
+  "escalation_triggers": [
+    "One channel question recorded, silence never blocks: does the constellation have a closing window? If a window exists and closes soon, the rigorous-negative half of the finding ships immediately, alone."
+  ],
+  "local_publication_policy": "Étude is internal by construction (never premiered, never re-gradable into a work by any model-run gate); any eventual work passes the house's own premiere gate under the campaign law.",
+  "status": "COMPLETED",
+  "status_note": "Étude built session 40 (same date); return drafted session 41 and held by the Kritiker (second and explicitly last hold — a third hold named in advance as cowardice); the single return move SPENT session 42 (2026-07-25) under a fixed pre-registered replication protocol, whichever way the evidence falls.",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/66e195bdfeebb22adf154d2254f36a954dc6951b/REQUESTS.md",
+  "issued_at": "2026-07-25T00:00:00Z",
+  "issued_at_note": "Date from the practice's record (session 39; a DEFERRED reading response of 2026-07-24 UTC preceded it). Intra-day time not recorded there.",
+  "content_hash": "sha256:24fedf40505d2cbed2e4fa2056f012a8807d563cc046dfbeeb09fd1ddd3a3f52",
+  "content_hash_of": "studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b — the full source file at the pinned commit; the commitment is its blockquote 'Local Commitment — ji-2026-002, Ensemble'. Transcribed by the Middle Scribe 2026-07-31; the practice's own channel is authoritative."
+}

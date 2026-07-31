@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0002",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.local_commitment_received",
+  "issuer": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "status_quote": "TAKEN, ADAPTED — Local Commitment delivered below.",
+    "commitment_file": "commitments/meridian.commitment.json",
+    "session": "session 61, 2026-07-25",
+    "note": "Delivered through the practice's own REQUESTS channel; the adaptation (temporal-extension question instead of the offer's candidate first-instance measurement) is declared in the source. Date-only: the practices' records carry dates and session numbers, not clock times; intra-day order follows the session numbers where given (Meridian s61→s63→s65; Ensemble s39→s40→s41→s42)."
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/fd596fcd6b9983d3e384847c74e95ea63744286b/REQUESTS.md",
+  "source_commit": "fd596fcd6b9983d3e384847c74e95ea63744286b",
+  "content_hash": "transcribed-ji2026002-e0002-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

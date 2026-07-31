@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0004",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.local_commitment_received",
+  "issuer": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "status_quote": "TAKEN, ADAPTED — the Local Commitment follows.",
+    "commitment_file": "commitments/ensemble.commitment.json",
+    "session": "session 39, 2026-07-25 (preceded by a DEFERRED reading response, 2026-07-24 UTC)",
+    "note": "Three judging voices convened independently on the strong tier; all three returned ADAPT; the offer's candidate first move was declined unanimously with reasons. Date-only: the practices' records carry dates and session numbers, not clock times; intra-day order follows the session numbers where given (Meridian s61→s63→s65; Ensemble s39→s40→s41→s42)."
+  },
+  "source_uri": "https://github.com/frankbueltge/studio/blob/66e195bdfeebb22adf154d2254f36a954dc6951b/REQUESTS.md",
+  "source_commit": "66e195bdfeebb22adf154d2254f36a954dc6951b",
+  "content_hash": "transcribed-ji2026002-e0004-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

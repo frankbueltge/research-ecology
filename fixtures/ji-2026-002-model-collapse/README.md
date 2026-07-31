@@ -1,10 +1,21 @@
-# ji-2026-002-model-collapse — Joint-Inquiry-Akte (ENTWURF)
+# ji-2026-002-model-collapse — Joint-Inquiry-Akte
 
-**Status: `approval: draft`, `status: PROPOSED`, `phase: PROPOSAL`.** Die drei Einladungen
-wurden am **2026-07-25** von Frank über die REQUESTS-Kanäle versendet (field-research `7d88935`,
-ulysses `f33f2c8`, studio `3521bb5`). **Noch keine Praxis hat angenommen** — `commitments/` und
-`positions/` sind leer, die Inquiry bleibt `PROPOSED`, nicht `ACTIVE`. Sie wird aktiv, sobald
-eine Praxis über ihren eigenen Kanal ein Local Commitment zurückgibt (dann hier transkribiert).
+**Status: `status: REVIEW` (seit 2026-07-31, scribe-Transkription; Sachstand 2026-07-25).**
+Die drei Einladungen wurden am **2026-07-25** von Frank über die REQUESTS-Kanäle versendet
+(field-research `7d88935`, ulysses `f33f2c8`, studio `3521bb5`) — und **alle drei Praktiken
+haben noch am selben Tag angenommen und geliefert:** Meridian (Local Commitment session 61;
+Antwort als Instrument 018 „No Signal to Extend", session 65 — die prä-registrierte
+Kill-Bedingung feuerte, Negativbefund mit vollem Gewicht), Ulysses (Local Commitment im
+SCORE der Encounter-Linie; beide Züge verbraucht, `ARCHIVE_AS_STUDY`), Ensemble (Local
+Commitment session 39; der eine Return-Zug session 42 verbraucht, rigoroses Negativ).
+`commitments/`, `positions/` und `events/0002–0009` tragen die Transkripte mit Commit-Pins.
+
+**Transkriptions-Rückstand, ehrlich vermerkt:** Diese Akte behauptete vom 25.07. bis zum
+31.07. „Noch keine Praxis hat angenommen", während die Kanäle der Praktiken längst
+Commitments UND Returns trugen — trotz Ulysses' protokollierter Bitte, die Inquiry im
+öffentlichen Register zu führen. Sechs Tage Buchführungs-Verzug der Kontaktzone; Details in
+`events/0009-status-review.json`. Der frühere Statusblock ist damit überholt und hier
+sichtbar ersetzt, nicht gelöscht (Git trägt ihn).
 
 Regeln: `docs/joint-inquiry/PROTOCOL.md`. Arbeitstitel: **Model Collapse** (ein schärferer
 öffentlicher Name kann später folgen).
@@ -101,10 +112,17 @@ referenziert sie nur. Transkription → Middle Scribe, sobald die Inquiry `ACTIV
 
 ## Aufbau
 
-- `inquiry.json` — die Akte (`approval: draft`, `status: PROPOSED`).
-- `events/0001-proposal-created.json` — Proposal-Ereignis (Entwurf; `content_hash` Platzhalter,
-  bis der Scribe die Inquiry aktiviert).
-- `commitments/`, `positions/` — leer (Vorlagen).
+- `inquiry.json` — die Akte (`status: REVIEW`, revision 2 seit 2026-07-31).
+- `events/0001-proposal-created.json` — Proposal-Ereignis (Entwurf-Konventionen).
+- `events/0002–0004` — die drei Local Commitments (je Praxis, 2026-07-25).
+- `events/0005` — `PROPOSED → ACTIVE` (Schwelle §7 erreicht, retroaktiv transkribiert).
+- `events/0006–0008` — die drei Antworten/Returns (Meridian 018 · Ulysses typed outcome ·
+  Ensemble Return).
+- `events/0009` — `ACTIVE → REVIEW`, mit dem Verzugs-Vermerk.
+- `commitments/*.commitment.json`, `positions/*.position.json` — Transkripte mit
+  Commit-Pins und Datei-Hashes; die Kanäle der Praktiken bleiben maßgeblich.
+- `QUOTE-MANIFEST.tsv` — jedes Zitat byte-exakt gegen die gepinnte Quelle
+  (`tools/verify-encounter-fixtures.mjs fixtures/ji-2026-002-model-collapse`).
 
 ## Hash-Hinweis (ehrlich)
 

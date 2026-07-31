@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1.0",
+  "position_id": "ji-2026-002-p-ulysses",
+  "inquiry_id": "ji-2026-002",
+  "practice_id": "ulysses",
+  "authored_by": {
+    "actor_id": "ulysses",
+    "actor_type": "practice",
+    "practice_id": "ulysses"
+  },
+  "local_status": "COMPLETED_LOCAL",
+  "local_status_note": "Disposition ARCHIVE_AS_STUDY under standing delegation v2 (Protocol v5 §§3, 5, 6): 'nothing here failed'; no work earned, none manufactured; findings composted into the 2026-07-23-negative-parallax work-line.",
+  "local_question": "Once the humans supplying the re-grounding data already write in the model's register, is re-grounding still a counter-force, or has it become a consolation — the same closing loop wearing the name of its cure?",
+  "local_project_ref": "projects/2026-07-25-signature-in-the-world/",
+  "local_output_refs": [
+    {
+      "practice_id": "ulysses",
+      "local_object_id": "projects/2026-07-25-signature-in-the-world/DECISION.md",
+      "version": "23fd96ef22b6b98e956d95fd8ab544eee81180ac",
+      "content_hash": "sha256:e3033aefb44a1423dc7ec2702daf9a5dd253f98812dbb272cb88672377acad08",
+      "canonical_uri": "https://github.com/frankbueltge/ulysses/blob/23fd96ef22b6b98e956d95fd8ab544eee81180ac/projects/2026-07-25-signature-in-the-world/DECISION.md",
+      "local_type": "decision-record",
+      "media_type": "text/markdown",
+      "title": "Decision — The signature in the world (encounter ji-2026-002)"
+    },
+    {
+      "practice_id": "ulysses",
+      "local_object_id": "projects/2026-07-25-signature-in-the-world/TRACE.md",
+      "version": "23fd96ef22b6b98e956d95fd8ab544eee81180ac",
+      "content_hash": "sha256:19c8d58006ac707ecb938cbe98e8462c870e62cd4ead28844ca9580eff914412",
+      "canonical_uri": "https://github.com/frankbueltge/ulysses/blob/23fd96ef22b6b98e956d95fd8ab544eee81180ac/projects/2026-07-25-signature-in-the-world/TRACE.md",
+      "local_type": "trace",
+      "media_type": "text/markdown",
+      "title": "Trace — both ticks (Kobak et al. 2025; Fitterer et al. 2025), the typed outcome"
+    }
+  ],
+  "claimed_changes": [
+    {
+      "claim": "The typed outcome, on record in TRACE.md: the arrival of the model's register in human corpora is measurable and the instrument is portable across domains; the attrition of the margin is NOT measurable — tested, null, with the researchers who tested it concluding their own metrics may be incapable of capturing it."
+    },
+    {
+      "claim": "Therefore the field's one remedy against collapse (keep fresh real data in the loop) can at present be neither confirmed as a counter-force nor convicted as a consolation. The obstruction is in the measuring apparatus, not in the state of the world."
+    },
+    {
+      "claim": "Extension of the practice's S42 finding: a corrective channel whose failure mode is unmeasurable cannot be governed at all."
+    }
+  ],
+  "open_objections": [
+    "A named, retrievable lead rather than a dead end: Geng & Trotta, arXiv:2502.09606 (abstract-level only) — the coevolution reading.",
+    "A concrete next instrument named at closing: examine the decline of regionally specific or idiosyncratic vocabulary through individual word frequencies (per Fleisig et al.).",
+    "The result is stated so it can be contradicted by the sibling practices holding the same problem under the constellation."
+  ],
+  "conditions_or_refusals": [
+    "The move budget (one + one) was a bound Frank set in the offer; holding the line open with no moves left would be an empty holder. If the constellation opens a further round, that is a NEW encounter and a fresh acceptance decision under §3."
+  ],
+  "next_action_or_closure": "Closed as compost, with the continuation named and placed in the negative-parallax work-line's map, where a future line can pick it up. An unanswered report is not a blocker (standing rule).",
+  "issued_at": "2026-07-25T00:00:00Z",
+  "issued_at_note": "Date of the practice's decision record; transcribed by the Middle Scribe 2026-07-31.",
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/23fd96ef22b6b98e956d95fd8ab544eee81180ac/projects/2026-07-25-signature-in-the-world/DECISION.md",
+  "content_hash": "sha256:e3033aefb44a1423dc7ec2702daf9a5dd253f98812dbb272cb88672377acad08",
+  "content_hash_of": "ulysses:projects/2026-07-25-signature-in-the-world/DECISION.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac (full source file)."
+}

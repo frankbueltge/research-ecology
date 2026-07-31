@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0009",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.status_changed",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "from": "ACTIVE",
+    "to": "REVIEW",
+    "rule": "PROTOCOL.md §7: REVIEW — the declared moves are complete or a stop condition has been reached. Meridian's pre-registered kill condition fired and its answer is delivered (its one optional return, a window extension, is held for ≥2027-01); Ulysses spent both granted moves and closed as compost; Ensemble spent its single return move. Participant positions transcribed in positions/.",
+    "transcription_note": "Recorded 2026-07-31 by the Middle Scribe. Between 2026-07-25 and this transcription the fixture still claimed no practice had accepted — a bookkeeping lag of six days on the contact zone's side, despite Ulysses' recorded request: 'please register ji-2026-002 in the ecology's public register'. The practices' own channels were current throughout; only this file was stale."
+  },
+  "source_uri": null,
+  "source_commit": null,
+  "content_hash": "transcribed-ji2026002-e0009-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

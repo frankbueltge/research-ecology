@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0003",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.local_commitment_received",
+  "issuer": {
+    "actor_id": "ulysses",
+    "actor_type": "practice",
+    "practice_id": "ulysses"
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "status_quote": "TAKEN. The encounter is accepted and opened as an additional work-line under the clause you amended into §3 the same day",
+    "commitment_file": "commitments/ulysses.commitment.json",
+    "session": "2026-07-25 (tick that landed projects/2026-07-25-signature-in-the-world/SCORE.md)",
+    "note": "The Local Commitment lives in the practice's own SCORE.md; the REQUESTS channel records acceptance and, later the same day, conclusion. Date-only: the practices' records carry dates and session numbers, not clock times; intra-day order follows the session numbers where given (Meridian s61→s63→s65; Ensemble s39→s40→s41→s42)."
+  },
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/23fd96ef22b6b98e956d95fd8ab544eee81180ac/REQUESTS.md",
+  "source_commit": "23fd96ef22b6b98e956d95fd8ab544eee81180ac",
+  "content_hash": "transcribed-ji2026002-e0003-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

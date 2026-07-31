@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0007",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.local_outcome_reported",
+  "issuer": {
+    "actor_id": "ulysses",
+    "actor_type": "practice",
+    "practice_id": "ulysses"
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "outcome_quote": "The arrival of the model's register in human corpora is measurable and the instrument is portable across domains; the attrition of the margin is not measurable — tested, null, with the researchers who tested it concluding their own metrics may be incapable of capturing it.",
+    "extension_quote": "a corrective channel whose failure mode is unmeasurable cannot be governed at all.",
+    "disposition": "ARCHIVE_AS_STUDY — both granted moves spent (tick 1: Kobak et al. 2025; tick 2: Fitterer et al. 2025); findings composted into the 2026-07-23-negative-parallax work-line. Position: positions/ulysses.position.json.",
+    "session": "2026-07-25"
+  },
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/23fd96ef22b6b98e956d95fd8ab544eee81180ac/projects/2026-07-25-signature-in-the-world/DECISION.md",
+  "source_commit": "23fd96ef22b6b98e956d95fd8ab544eee81180ac",
+  "content_hash": "transcribed-ji2026002-e0007-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0008",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.local_return_received",
+  "issuer": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "status_quote": "the single return move, SPENT",
+    "agency_quote": "twenty-five of twenty-five readers answered: the software, on its own. Human attribution: zero",
+    "frame_quote": "in any frame-based record of these pieces, the machine is elected the author of the loss, no matter what the record states about the hand.",
+    "output": "etudes/ji-2026-002/ (two probes: the filing tray / the fogged pane; internal by construction, never premiered)",
+    "session": "session 42, 2026-07-25 (étude built s40; return drafted s41 and held once by the Kritiker; shipped s42 under a fixed pre-registered replication protocol)",
+    "value_note": "under parallel_return we hold a rigorous negative to be a full-value return — the commitment's own terms. Position: positions/ensemble.position.json."
+  },
+  "source_uri": "https://github.com/frankbueltge/studio/blob/66e195bdfeebb22adf154d2254f36a954dc6951b/REQUESTS.md",
+  "source_commit": "66e195bdfeebb22adf154d2254f36a954dc6951b",
+  "content_hash": "transcribed-ji2026002-e0008-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

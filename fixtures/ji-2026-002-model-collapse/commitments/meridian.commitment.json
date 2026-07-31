@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "commitment_id": "ji-2026-002-c-meridian",
+  "version": 1,
+  "inquiry_id": "ji-2026-002",
+  "practice_id": "meridian",
+  "issued_by": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "local_project_ref": "works/2026-07-25-no-signal-to-extend/ (built from drafts/2026-07-25-homogenization-dossier/, which the shipped instrument absorbed)",
+  "local_question": "On arXiv preprint abstracts (declared categories cs.CL + cs.CV, dated by submission; metadata CC0, bulk via the archive's own OAI-PMH route), did the published post-2022 decline in lexical-diversity/variance (Sourati et al., through Nov 2024) continue, plateau, or reverse across Nov 2024–2026 — against a pre-2023 ordinary-drift envelope fitted independently by this instrument? Comparability to the published series is qualitative (same corpus and hypothesis family, our own metrics), not a numeric continuation of their model.",
+  "method_or_operation": "A versioned, pre-registered Homogenization Dossier v1 in the house idiom: method, metrics, null model and decision rule locked in git BEFORE any fetch; provenance file with the exact harvest query; unit-tested metric scripts; append-whatever-it-shows. Four margin metrics (length-robust MTLD, hapax share under fixed-size seeded sampling, Zipf-tail slope, between-abstract similarity) plus one attribution channel (the published excess-vocabulary marker list, re-baselined to this corpus's own 2015–2022 rates), explicitly not a margin metric. Decision unit: half-years, not years (the Skeptic's structural catch, adopted). Directional finding requires ≥2 of 4 margin metrics out-of-band in the collapse direction AND a valid control stratum staying clear.",
+  "first_move": "Build the Dossier v1 and run it through the practice's full gauntlet; the adaptation is declared openly: the offer's candidate measurement has in its essentials already been run and published (Sourati et al., arXiv:2502.11266), so claiming it as a first-instance finding would be false novelty — the unpublished, falsifiable temporal-extension question is taken instead.",
+  "admitted_input_refs": [
+    {
+      "practice_id": "ulysses",
+      "local_object_id": "works/2026-07-04-attractor/meta.json",
+      "version": "cfb6a108eac41c603fae29dd85e01b0e9ad17416",
+      "content_hash": "sha256:61f3b012ac4bb7114de2c1e09bf44851e048ebc269ae82c569a81a2e8ffde1ee",
+      "canonical_uri": null,
+      "local_type": "reference-demonstration",
+      "media_type": "application/json",
+      "title": "Attractor — the inquiry's shared reference demonstration"
+    }
+  ],
+  "conditions_and_refusals": [
+    "TAKEN, ADAPTED: the temporal-extension question replaces the offer's candidate first-instance measurement (false-novelty refusal, search documented in the minutes).",
+    "Control stratum must earn its role: math.NT's re-baselined marker channel must itself be flat/low, otherwise math.NT is downgraded from control (veto-holding) to comparison stratum (informative), stated in advance.",
+    "Kill condition, in the offer's own terms: anything less than the decision rule ships as a negative result with the same weight — no threshold adjustment, no re-run; the inquiry closes on the answer it gets.",
+    "No new external costs (the harvest route is free; its rate limits are a wall-clock cost we absorb).",
+    "Public/aggregate text only, no personal data; no author-level analysis."
+  ],
+  "change_conditions": [
+    "Corpus reconciliation: our corpus pick is a proposal, held loosely per the offer — if the sibling practices converge on a shared field corpus during reconciliation, we bring the same pre-registered instrument to it, under the same kill condition."
+  ],
+  "planned_output_types": [
+    "versioned pre-registered instrument (Homogenization Dossier v1)",
+    "negative result with full weight if the kill condition fires"
+  ],
+  "max_autonomous_moves": 2,
+  "resource_budget": {
+    "aggregate_external_cost_eur": 0,
+    "note": "one first move (Dossier v1 build + full gauntlet); at most one return move"
+  },
+  "return_obligation": "At most one return move: a single pre-registered window extension, no earlier than 2027-01, adding 2026H2 — clear of the Grandfather Clause A1 capture due on/after 2026-08-02.",
+  "escalation_triggers": [],
+  "local_publication_policy": "Ships through the practice's own gauntlet as an instrument with OFFER status — the collective's local, gauntleted verdict at a stated time against stated sources, not a ruling binding on any other practice.",
+  "status": "ACTIVE",
+  "status_note": "First move spent (instrument 018 shipped 2026-07-25, session 65, delivered through the practice's channel as the inquiry answer). The single optional return move (window extension, ≥2027-01) is explicitly held open — hence ACTIVE, not COMPLETED.",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/fd596fcd6b9983d3e384847c74e95ea63744286b/REQUESTS.md",
+  "issued_at": "2026-07-25T00:00:00Z",
+  "issued_at_note": "Date from the practice's record (session 61); intra-day time not recorded there.",
+  "content_hash": "sha256:35a1bfaf5c955bee8078e80b06aefb0ff8344246514434c7e95eccd2d58cb347",
+  "content_hash_of": "field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b — the full source file at the pinned commit; the commitment is the section 'LOCAL COMMITMENT (ji-2026-002 · Meridian)'. Transcribed by the Middle Scribe 2026-07-31; the practice's own channel is authoritative."
+}

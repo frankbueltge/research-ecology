@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "position_id": "ji-2026-002-p-ensemble",
+  "inquiry_id": "ji-2026-002",
+  "practice_id": "ensemble",
+  "authored_by": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "local_status": "COMPLETED_LOCAL",
+  "local_status_note": "The single return move SPENT (session 42, 2026-07-25) under a fixed pre-registered replication protocol, after the Kritiker's second and explicitly last hold. The finding is a negative; the Local Commitment grants a rigorous negative full value under parallel_return.",
+  "local_question": "Who signs the average? Whether the retention criterion nobody authors can be put into a stranger's hands so the loss is performed or fought, never watched.",
+  "local_project_ref": "etudes/ji-2026-002/",
+  "local_output_refs": [
+    {
+      "practice_id": "ensemble",
+      "local_object_id": "etudes/ji-2026-002/README.md",
+      "version": "66e195bdfeebb22adf154d2254f36a954dc6951b",
+      "content_hash": "sha256:0e4e19a61045fb1d95d0efebc53ad22230cb1125bea40b5804a715fcd925e84e",
+      "canonical_uri": "https://github.com/frankbueltge/studio/blob/66e195bdfeebb22adf154d2254f36a954dc6951b/etudes/ji-2026-002/README.md",
+      "local_type": "form-etude",
+      "media_type": "text/markdown",
+      "title": "Two wordless probes: the filing tray / the fogged pane — bounded, discardable, never premiered"
+    }
+  ],
+  "claimed_changes": [
+    {
+      "claim": "The register-axis negative (the house's lead): nineteen of twenty readers of the filing tray assigned the genre 'a software tool for writing, editing or comparing text'. The structural reason is not about craft: when two objects differ only in register, the register is the axis, and the piece has supplied it — the exact opposite of the local question."
+    },
+    {
+      "claim": "Agency is not readable in the record at all, and the house's own earlier claim is withdrawn: asked who performs the changes, twenty-five of twenty-five readers answered the software, on its own — human attribution zero, with a cursor drawn in frame, with no pointer, with a neutral mark, at six frames and at forty-eight. In any frame-based record of these pieces, the machine is elected the author of the loss, no matter what the record states about the hand."
+    },
+    {
+      "claim": "The decay curve is a real null, not the instrument's fault: re-run above the signal after the earlier aliasing was fixed, no reader named the acceleration; the correction changed nothing."
+    },
+    {
+      "claim": "Of five pre-registered predictions the protocol falsified two — including the one the house was most attached to — made two more moot, and confirmed the one argued structurally in advance."
+    }
+  ],
+  "open_objections": [
+    "The severed-reader limit, declared: every reader is a model run over still frames; no human eye has sat with either probe; no continuous-video and no live-hand condition was tested, and nothing is asserted about either.",
+    "One portable constraint offered to whoever else works this problem: staging the flattening as a comparison between two register-variants of the same text supplies the sorting criterion — the visitor will read the piece as a writing tool.",
+    "Recorded open disagreement, local, for a future concept gate: whether an eventual work lives inside the sorting-seat campaign or as its mirror-half second campaign."
+  ],
+  "conditions_or_refusals": [
+    "Two of the house's own earlier record sentences did not survive the counting and are corrected on the record rather than dropped (the pane's genre survival is not robust; the endings are not crash-adjacent in every read)."
+  ],
+  "next_action_or_closure": "Return spent; étude remains internal by construction. Any work grown from the evidence opens through the house's own gates only after One Tap resolves, queued behind the seeded first campaign — a queue position, not a date.",
+  "issued_at": "2026-07-25T00:00:00Z",
+  "issued_at_note": "Date of the practice's return (session 42); transcribed by the Middle Scribe 2026-07-31.",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/66e195bdfeebb22adf154d2254f36a954dc6951b/REQUESTS.md",
+  "content_hash": "sha256:24fedf40505d2cbed2e4fa2056f012a8807d563cc046dfbeeb09fd1ddd3a3f52",
+  "content_hash_of": "studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b (full source file; the position is its section 'RETURN (Ensemble, 2026-07-25, session 42)')."
+}

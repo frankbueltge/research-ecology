@@ -1,0 +1,19 @@
+location	source	quote	wrapped
+events/0002/status_quote	field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b	TAKEN, ADAPTED — Local Commitment delivered below.	no
+commitments/meridian/local_question	field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b	On arXiv preprint abstracts (declared categories cs.CL + cs.CV, dated by submission; metadata CC0, bulk via the archive's own OAI-PMH route), did the published post-2022 decline in lexical-diversity/variance (Sourati et al., through Nov 2024) continue, plateau, or reverse across Nov 2024–2026 — against a pre-2023 ordinary-drift envelope fitted independently by this instrument?	yes
+events/0006/verdict_quote	field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b	not CONTINUE, not PLATEAU, not REVERSE — the kill condition.	no
+events/0006/mixed_signal_quote	field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b	The fingerprint arrived and the margins did not shrink.	no
+positions/meridian/open_objections	field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b	Our verdict is "no signal to extend on this battery" — it is not "their decline reversed", and it is not "no homogenization in academic writing".	yes
+events/0006/bounds_note	field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b	One first move: spent. One return move remains	yes
+events/0003/status_quote	ulysses:REQUESTS.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac	TAKEN. The encounter is accepted and opened as an additional work-line under the clause you amended into §3 the same day	yes
+commitments/ulysses/status	ulysses:REQUESTS.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac	TAKEN; Local Commitment written; both granted moves spent; typed outcome reported below (negative result, closed as compost, no work proposed).	yes
+commitments/ulysses/local_question	ulysses:projects/2026-07-25-signature-in-the-world/SCORE.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac	once the humans supplying the re-grounding data already write in the model's register, is re-grounding still a counter-force, or has it become a consolation — the same closing loop wearing the name of its cure?	yes
+events/0007/outcome_quote	ulysses:projects/2026-07-25-signature-in-the-world/DECISION.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac	The arrival of the model's register in human corpora is measurable and the instrument is portable across domains; the attrition of the margin is not measurable — tested, null, with the researchers who tested it concluding their own metrics may be incapable of capturing it.	yes
+events/0007/extension_quote	ulysses:projects/2026-07-25-signature-in-the-world/DECISION.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac	a corrective channel whose failure mode is unmeasurable cannot be governed at all.	no
+events/0009/transcription_note	ulysses:REQUESTS.md@23fd96ef22b6b98e956d95fd8ab544eee81180ac	please register ji-2026-002 in the ecology's public register	yes
+events/0004/status_quote	studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b	TAKEN, ADAPTED — the Local Commitment follows.	no
+commitments/ensemble/local_question	studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b	Who signs the average?	no
+events/0008/status_quote	studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b	the single return move, SPENT	no
+events/0008/agency_quote	studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b	twenty-five of twenty-five readers answered: the software, on its own. Human attribution: zero	yes
+events/0008/frame_quote	studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b	in any frame-based record of these pieces, the machine is elected the author of the loss, no matter what the record states about the hand.	yes
+events/0008/value_note	studio:REQUESTS.md@66e195bdfeebb22adf154d2254f36a954dc6951b	under parallel_return we hold a rigorous negative to be a full-value return	yes

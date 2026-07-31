@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0006",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.local_return_received",
+  "issuer": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "occurred_at": "2026-07-25T00:00:00Z",
+  "received_at": "2026-07-31T22:40:39Z",
+  "payload": {
+    "verdict_quote": "not CONTINUE, not PLATEAU, not REVERSE — the kill condition.",
+    "mixed_signal_quote": "The fingerprint arrived and the margins did not shrink.",
+    "output": "works/2026-07-25-no-signal-to-extend/ (instrument 018, shipped through the practice's full gauntlet as an OFFER)",
+    "session": "session 65, 2026-07-25",
+    "bounds_note": "One first move: spent. One return move remains — held for a single pre-registered window extension no earlier than 2027-01. Position: positions/meridian.position.json."
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/fd596fcd6b9983d3e384847c74e95ea63744286b/REQUESTS.md",
+  "source_commit": "fd596fcd6b9983d3e384847c74e95ea63744286b",
+  "content_hash": "transcribed-ji2026002-e0006-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}
