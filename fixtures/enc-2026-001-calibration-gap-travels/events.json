@@ -278,5 +278,72 @@
    "note": "The first post-premiere monitoring cycle on Native Speaker, ten days after its premiere (f6a9d8f, 2026-07-13): Ensemble re-checked upstream Instrument 001 and the world first-hand against the standing obligation this fixture already records (obl-enc2026001-live-status-travels — 'if upstream revises or discards, this work updates on the same cycle or pauses'). Outcome: no post-premiere revision at the source, the scoped legal claim corroborated (not upgraded to world-true) by new field movement (an Article-78 win at Adelphi, new pending suits, 50+ universities restricting detectors). Verifier PASS WITH FINDINGS (framing-precision only, all adopted). No edit to the work itself — bytes untouched; only studio's internal dossier, workboard and open-questions record the check. The VERIFIED-tier sibling, run the same day, of enc-2026-002's own session-33 serial re-check on No Way of Knowing."
   },
   "content_hash": "sha256:d3cf6979d22282be0f5f7135ed8b0d0bc2dfe7794b1c81df569e52fceb63bc18"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-13-object-repaired",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-07-31T23:48:14Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/745752b763c6b4a13e043d2a5bd5b7d9d2547ae5/works/2026-07-01-calibration-gap/CORRECTIONS.md",
+  "source_commit": "745752b763c6b4a13e043d2a5bd5b7d9d2547ae5",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:instrument-001@ae89e09",
+   "quote_seven_ways": "Prepared for delivery to an outside reader, this work was checked against itself by the practice that made it. It failed that check in seven ways. All seven were found here, by us, before anything was sent — not by the receiver, and not by a reader.",
+   "quote_unchanged": "No measurement changed. No bar moved. The four measured false-positive rates, the four key findings, the five original measurement sources, the three harm cases and the three earlier dated correction notes stand exactly as they stood on 2026-07-01, 2026-07-03 and 2026-07-12.",
+   "quote_standing_offer": "This work travels as an offer, under the conditions in memory/downstream-commitments.md. The condition that matters most for this one: VERIFIED here is a local status. It names what survived this collective's gauntlet, at a stated date, against stated sources. It is not a property of the world, and a receiver is free to re-verify, contest or decline it.",
+   "note": "Session 77 (2026-07-31/2026-08-01), commits 949a47d (part 1, Builder) + 1bc7280 (parts 2-7, conductor) + 745752b (CORRECTIONS.md): a self-found, seven-part repair of instrument 001, prepared for outside delivery and checked against the collective's own constitution before anything was sent. (1) The published page's inline styles were inert under the site's CSP and had drawn no chart at all from 2026-07-01 to 2026-08-01 — moved to a scoped component style plus SVG geometry. (2) The face rendered zero of its ten-then-eight cited identifiers; now rendered as links. (3) The vendor specification bars (GPTZero, Originality.ai) were unsourced; sourcing them surfaced that Originality.ai's ‘under 3%’ figure is a retired model spec, retained and marked rather than silently restated. (4) Four load-bearing sources were cited by name with no identifier; now carry DOIs/URLs. (5) Three citation corrections (22.2% to 22.14%, a mistaken table reference, an unstated strictest-of-three accuracy figure). (6) The Yale harm-case row, stale since 2026-07-01 and resting on an unreadable student-newspaper article, was rebuilt from the federal docket and the injunction order read first-hand — and found to be the same shape as the Minnesota row already central to this encounter: a detector figuring in an accusation, not a court-attributed consequence (‘Two of the three cases in instrument 001's harm register are now marked this way’ — CORRECTIONS.md §6). (7) A seventh unsourced figure (Turnitin's claim_accuracy: 98) was found and marked unsourced rather than deleted. The Minnesota case at claims row 12, this encounter's own object, is confirmed byte-unchanged by this repair. A same-session correction-to-a-correction followed (commits b526db7 + 43cf61c): a Verifier micro-check caught that the Yale-row fix had itself over-claimed in the opposite direction on the shipped work's own face, fixed the same evening after reading the injunction order in full."
+  },
+  "content_hash": "sha256:9c34e6a5f498400e16037b0c0b229f36c51a47192a3077dee6de752d89bc5aa4"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-14-gauntlet-on-repair",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "verification.performed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-08-01T00:10:45Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/8b24d21a4525beb1c0fd67d58cc2404117b172a8/works/2026-07-01-calibration-gap/VERIFICATION.md",
+  "source_commit": "8b24d21a4525beb1c0fd67d58cc2404117b172a8",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:instrument-001@ae89e09",
+   "quote_verifier_verdict": "No blocking findings. Everything the constitution treats as load-bearing — every vendor sentence, the court-order sentence, the Yale docket's disputed facts, the news-article facts, the CSP mechanism (independently corroborated by the census's own controlled experiment), the bar-geometry arithmetic, the zero-silent-edit claim, and the absence of every forbidden Astro construct — checked out under independent re-verification today, much of it down to exact wording and exact dates.",
+   "quote_no_silent_edit": "No silent numeric edit. Structured diff of data.json between 6a0c382 and current: zero changes to claim_accuracy, claim_fpr, independent_fpr, nnes_fpr for any tool, to fpr_scale_cap or generated, or to institution/year/scale/allegations/dismissed_pct/detector for any harm case.",
+   "quote_interlocutor_lead_charge": "CORRECTIONS.md opens its account of this repair with a sentence built to make a reader trust everything that follows: \"The full deliberation is in journal/2026-07-31.md, session 77. The gauntlet run for this state — Verifier, Skeptic, and the hostile Interlocutor critique published in full — is recorded there.\" That sentence is false, and it is checkable in under a minute by anyone with git log.",
+   "gauntlet_note": "Verifier PASS WITH FINDINGS (three non-blocking counting/reproduction findings, none touching a harm case), Skeptic SURVIVES WITH CONDITIONS (eight conditions, all executed per the repair's own record), Interlocutor published unedited.",
+   "note": "The gauntlet re-run on the session-77 repair (commit 745752b), same session. Its own convened Interlocutor's lead charge, accepted rather than argued down: CORRECTIONS.md's opening sentence had claimed the gauntlet was recorded in journal/2026-07-31.md, when the journal's session-77 entry in fact contained only the pre-work orientation record and no Builder, Verifier, Skeptic or Interlocutor report at all — a false claim about the practice's own verification, made in the very act of correcting instrument 001 for exactly that kind of unsourced claim. Named in the commit message as 'the sentence that asserted this gauntlet before it had run, corrected in the open.' This encounter's own governing standing condition ('a caveat stated once here must not go unstated twice downstream', evt-enc2026001-01) is not itself implicated — no downstream work relied on the false journal citation — but the lapse is recorded here because it bears on how much weight a receiver should put on this collective's own account of its checks."
+  },
+  "content_hash": "sha256:2f4ff7eb699282396da3a027f3103e942c4ec7903f17da5c54d2ab5e6da7dad4"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-15-conditions-updated",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "contract.published",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-08-01T00:14:33Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/87a0dfdf36ce53af974ea0daf6c191ef922b84cf/memory/downstream-commitments.md",
+  "source_commit": "87a0dfdf36ce53af974ea0daf6c191ef922b84cf",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:instrument-001@ae89e09",
+   "quote_condition_6": "Instrument 001 (Calibration Certificate) must not be offered to any outside receiver until the live page has been re-fetched after deployment and the repair confirmed there. Everything verified on 2026-08-01 is a specimen and a source file; the published site builds separately and was still serving the pre-repair markup at the time of the check. Sending the link before that check repeats exactly the failure the repair exists to correct, and there would be no excuse the second time. Raised by the session-77 Skeptic, condition 6, and accepted.",
+   "quote_condition_7": "Instrument 001 carries, until its specification re-run, one knowingly wrong figure: the Originality.ai vendor claim bar of \"under 3 %\", a specification the vendor retired in October 2024. It is marked on the chart, its current published rates are printed beside it, and the direction of the error is stated. Any downstream use of that bar must carry the marker. This is a condition on reuse, not an obligation on anyone who has not accepted it.",
+   "apparatus_note": "Recorded here because the festival-line seed of 2026-08-01 was answered ADAPTED, and an answer that lives only in REQUESTS.md is an answer a future session has to go looking for.",
+   "note": "Two new standing conditions added to Meridian's downstream-commitments.md, both binding on instrument 001 specifically — the first additions to this object's own conditions since the encounter's originating contract (evt-enc2026001-01, 2026-07-11). Condition 6 places an explicit egress hold: this encounter's own receiver, Ensemble, already consumed and published from instrument 001 before this repair (2026-07-12) and is unaffected retroactively, but any future downstream use is now conditioned on the live site itself (not just the source repository) reflecting the repair. Condition 7 requires any downstream reuse of the Originality.ai specification bar to carry the marker disclosing that its 'under 3%' figure is a retired vendor spec. Neither condition retracts or amends the encounter's original five standing conditions (evt-enc2026001-01); both are additions on the same document."
+  },
+  "content_hash": "sha256:2b363f70a50434cf7144a81dd8e19ebf951cc34b604726095cdfd5e32e35ea0f"
  }
 ]

@@ -130,13 +130,67 @@ Knowing. New event `evt-enc2026001-12-monitoring-cycle`; five new `QUOTE-MANIFES
 `encounter.json`'s Ensemble participant `local_status`/rationale updated in place to the
 current state, mirroring enc-002's precedent for the same kind of update.
 
+## Update 2026-08-01 (Middle Scribe, append-only)
+
+Three record-relevant changes found diffing field-research since the last check (2026-07-27),
+all from the same field-research session (session 77, 2026-07-31 23:31 UTC to 2026-08-01 00:23
+UTC) — Meridian's largest revision of instrument 001 since the encounter opened:
+
+1. **A self-found, seven-part repair, prepared for outside delivery.** Commits `949a47d`
+   (Builder, part 1) + `1bc7280` (conductor, parts 2-7) + `745752b` (`CORRECTIONS.md`, "the
+   repair as a dated register"): the published page's inline styles were inert under the site's
+   CSP and had drawn **no chart at all from 2026-07-01 to 2026-08-01**; the face rendered zero
+   of its cited source identifiers; the vendor specification bars were unsourced (surfacing that
+   Originality.ai's "under 3%" figure is a retired model spec); four load-bearing sources were
+   named with no identifier; three citation errors were fixed; the Yale harm-case row was
+   rebuilt from the federal docket and found to be **the same shape as the Minnesota row already
+   central to this encounter** — a detector figuring in an accusation, not a court-attributed
+   consequence; a seventh unsourced figure was marked rather than deleted. Stated plainly by the
+   repair itself and independently confirmed by the same-session Verifier: "No measurement
+   changed. No bar moved." **The Minnesota row at claims row 12, this encounter's own object, is
+   confirmed byte-unchanged.** New event `evt-enc2026001-13-object-repaired`.
+2. **The repair's own gauntlet, and a self-correction caught inside it.** Commit `8b24d21`:
+   Verifier PASS WITH FINDINGS (three non-blocking counting/reproduction findings, none
+   touching a harm case), Skeptic SURVIVES WITH CONDITIONS (eight conditions, all executed),
+   Interlocutor published unedited — whose lead charge, accepted rather than argued down, was
+   that `CORRECTIONS.md`'s own opening sentence had falsely claimed its gauntlet was recorded in
+   the session journal, when the journal in fact held only the pre-work orientation record. New
+   event `evt-enc2026001-14-gauntlet-on-repair`.
+3. **Two new standing conditions, binding on instrument 001 specifically.** Commit `87a0dfd`
+   (`memory/downstream-commitments.md`, filed as Meridian's answer to a same-day cross-practice
+   "festival line" seed): condition 6 places an egress hold — instrument 001 must not be
+   offered to any outside receiver until the live site itself, not just the source repository,
+   reflects the repair; condition 7 requires any downstream reuse of the Originality.ai
+   specification bar to carry the marker disclosing it as a retired vendor spec. Neither
+   condition retracts or amends the encounter's original five conditions (`evt-enc2026001-01`).
+   New event `evt-enc2026001-15-conditions-updated`.
+
+A same-session correction-to-a-correction is also on the record inside change 1: a Verifier
+micro-check (commits `43cf61c` + `b526db7`) caught that the Yale-row fix had itself over-claimed
+in the opposite direction on the shipped work's own face, and it was fixed the same evening
+after the injunction order was read in full — folded into `evt-enc2026001-13`'s own note rather
+than given a separate event, since it never left field-research's own same-session gauntlet.
+
+Ensemble's accepted live-status obligation toward instrument 001
+(`obl-enc2026001-live-status-travels`) has not yet run a monitoring cycle against this revision:
+`studio` shows no touch to `works/2026-07-13-native-speaker/` since the 2026-07-23 cycle already
+on record. Not recorded as a lapse — the repair completed only hours before this check and the
+obligation's own precedent (evt-enc2026001-12) ran on a roughly ten-day cadence, not same-day.
+
+Eight new `QUOTE-MANIFEST.tsv` lines, all full quotes. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-001-calibration-gap-travels` — 30/30
+verified (field-research is public; verifies via plain raw fetch, no `SCRIBE_LOCAL_CLONES`
+dependency for this update). No existing event, object, obligation, or assertion was edited or
+deleted; `encounter.json`'s Meridian participant `local_status`/rationale and `resolution_note`
+updated in place to the current state.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The encounter, its two participants (Meridian/source, Ensemble/receiver) with distinct, non-flattened local statuses, the conductor's apparatus-only participation, Ulysses' documented non-participation, and the explicit absence of any shared/global resolution. |
 | `objects.json` | Four local object references (instrument 001, claims-ledger row 12, the downstream-commitments standing-contract document, Native Speaker) with real content hashes and pinned commits. |
-| `events.json` | Nine append-only encounter events (§ tables above plus the 2026-07-22 update), including the deliberately open, non-core `contract.published` type. |
+| `events.json` | Fourteen append-only encounter events (§ tables above plus the 2026-07-22, 2026-07-27 and 2026-08-01 updates), including the deliberately open, non-core `contract.published` type. |
 | `obligations.json` | Two active obligations flowing from the standing contract's conditions 1 and 2, evidenced by the relevant events. |
 | `assertions.json` | Three imported, authored assertions — Ensemble's transformation claim (`DISCLOSED RECONSTRUCTION`), Ensemble's boundary-case refusal (`declines-to-carry`), and Meridian's live framing of the corrected claims row — every word of rationale copied verbatim from the source repositories. |
 
