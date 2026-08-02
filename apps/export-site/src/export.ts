@@ -566,6 +566,16 @@ function writeJsonFile(filePath: string, data: unknown): void {
 // directory's own <YYYY-MM-DD> name prefix, not Date.now().
 // ------------------------------------------------------------------------------------------
 
+/** Drift = an observed premiere the editorial record has not caught up to. A signal, never an
+ * edit: it clears itself the moment the scribe rewrites the "premiere pending" wording, which
+ * is exactly what happened to enc-2026-002 on 2026-08-01. Extracted from `runExport` on
+ * 2026-08-02 so both directions can be asserted directly — the previous tests could only watch
+ * the positive case through a fixture that was expected to stay stale, so they turned red when
+ * the scribe did the right thing, i.e. they reported the mechanism WORKING as a failure. */
+export function driftsOnPremiere(title: string | null | undefined, premiered: boolean): boolean {
+  return premiered && /premiere pending/i.test(title ?? "");
+}
+
 export interface ObservedReceiverWork {
   receiver_collective: string;
   engine_repo: string;
@@ -964,9 +974,7 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
           const observed = observeReceiverWork(fixtureDir, receiverCollectives, opts.enginesRoot);
           if (observed) {
             entry.observed = observed;
-            // Drift = observed premiere the editorial record hasn't caught up to. Signal only;
-            // it clears itself once the scribe rewrites the "premiere pending" wording.
-            if (observed.premiered && /premiere pending/i.test(enc.title ?? "")) {
+            if (driftsOnPremiere(enc.title, observed.premiered)) {
               driftWarnings.push(
                 `${enc.encounter_id}: receiver work premiered (${observed.engine_repo}/works/${observed.work_dir}) ` +
                   `but the record still reads "premiere pending" — scribe should record the premiere`

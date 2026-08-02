@@ -7,7 +7,7 @@
  */
 
 import { describe, it, expect, beforeAll } from "vitest";
-import { mkdirSync, mkdtempSync, readFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -16,6 +16,7 @@ import {
   shortEncounterSlug,
   selectEntranceEncounterId,
   listApprovedEncounterIds,
+  driftsOnPremiere,
   DEFAULT_ENCOUNTER_ID,
   type ExportResult
 } from "../../apps/export-site/src/export.js";
@@ -35,7 +36,7 @@ beforeAll(async () => {
   siteA = mkdtempSync(path.join(tmpdir(), "export-site-a-"));
   siteB = mkdtempSync(path.join(tmpdir(), "export-site-b-"));
   // siteC pins enc-2026-001 explicitly: the content-specific suite below documents THAT
-  // encounter's editorial projection (7 events, lanes, divergence beat) and must not drift
+  // encounter's editorial projection (its lanes, flows and divergence beat) and must not drift
   // when the rule-driven entrance advances to a newer scored encounter.
   siteC = mkdtempSync(path.join(tmpdir(), "export-site-c-"));
   runA = await runExport({ researchEcologyRoot: REPO_ROOT, siteDir: siteA });
@@ -143,11 +144,22 @@ describe("export-site: determinism", () => {
     expect(result.valid, JSON.stringify(result.errors)).toBe(true);
   });
 
-  it("score.json carries the 7 operative ledger events — editorial bookkeeping (assembly, the-middle correction.noted) excluded like the assembly event; ledger completeness lives in the fixture and the register", () => {
+  it("score.json carries the operative ledger — editorial bookkeeping (assembly, the-middle correction.noted) excluded; ledger completeness lives in the fixture and the register", () => {
     const slug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
     const raw = readFileSync(path.join(siteC, "src/data/begegnungen", slug, "score.json"), "utf8");
     const score = JSON.parse(raw);
-    expect(score.events).toHaveLength(7);
+    // The count is DERIVED from the fixture, not pinned: this ledger is append-only, and the
+    // literal 7 it once held made the scribe's honest appends read as a regression. What the
+    // score owes is the fixture's events minus the editorial bookkeeping — say that, and the
+    // assertion survives every future append while still catching a silently thinned ledger.
+    const fixtureEvents = JSON.parse(
+      readFileSync(path.join(REPO_ROOT, "fixtures", DEFAULT_ENCOUNTER_ID, "events.json"), "utf8")
+    ) as Array<{ event_type: string; issuer?: { collective_id?: string } }>;
+    const bookkeeping = fixtureEvents.filter(
+      (e) => e.event_type === "correction.noted" && e.issuer?.collective_id === "the-middle"
+    ).length;
+    expect(bookkeeping).toBeGreaterThan(0); // else this test proves nothing about the exclusion
+    expect(score.events).toHaveLength(fixtureEvents.length - bookkeeping);
     expect(score.events.map((e: { event_type: string }) => e.event_type)).not.toContain("correction.noted");
     expect(score.events.map((e: { event_type: string }) => e.event_type)).not.toContain("editorial.encounter_assembled");
     // 5 events are narrated (stations ①–⑤ on the map are 1,2,4,3,5 — narrative order != ledger
@@ -226,13 +238,26 @@ describe("export-site: observed receiver-work status", () => {
     expect(obs.engine_repo).toBe("studio");
   });
 
-  it("reports drift for enc-2026-002 (premiered, but the record still reads 'premiere pending')", () => {
-    expect(result.driftWarnings.some((w) => w.includes("enc-2026-002"))).toBe(true);
+  it("the drift rule fires on a premiered work whose record still reads 'premiere pending'", () => {
+    // Asserted on the rule itself, not through a fixture. The old test watched enc-2026-002
+    // for the positive case, which meant it only stayed green while that record stayed WRONG;
+    // when the scribe recorded the premiere on 2026-08-01 — the mechanism doing its job — the
+    // test went red. A drift detector must be tested on its own inputs.
+    expect(driftsOnPremiere("… — premiere pending", true)).toBe(true);
+    expect(driftsOnPremiere("… — PREMIERE PENDING", true)).toBe(true);
+    expect(driftsOnPremiere("… — premiere pending", false)).toBe(false); // not premiered yet
+    expect(driftsOnPremiere("… — premiered 2026-07-17", true)).toBe(false); // record caught up
+    expect(driftsOnPremiere(null, true)).toBe(false);
   });
 
-  it("does NOT report drift for enc-2026-001, whose title already reflects its premiere", () => {
-    expect(entry("enc-2026-001").observed!.premiered).toBe(true);
-    expect(result.driftWarnings.some((w) => w.includes("enc-2026-001"))).toBe(false);
+  it("reports no drift once a record has caught up to its premiere — the signal clears itself", () => {
+    // Both enc-2026-001 and enc-2026-002 have premiered receiver works AND records that now
+    // say so (enc-2026-002's caught up on 2026-08-01). Nothing should be prompting the scribe.
+    for (const id of ["enc-2026-001", "enc-2026-002"]) {
+      expect(entry(id).observed!.premiered).toBe(true);
+      expect(entry(id).title).not.toMatch(/premiere pending/i);
+      expect(result.driftWarnings.some((w) => w.includes(id))).toBe(false);
+    }
   });
 
   it("leaves non-engine receivers (datavism, data-snack) unobserved rather than guessed", () => {
@@ -240,7 +265,16 @@ describe("export-site: observed receiver-work status", () => {
     expect(entry("enc-2026-004").observed).toBeUndefined();
   });
 
-  it("never mutates the editorial title — the 'premiere pending' wording stays the scribe's to change", () => {
-    expect(entry("enc-2026-002").title).toMatch(/premiere pending/i);
+  it("never mutates the editorial title — the register carries each fixture's own wording verbatim", () => {
+    // The claim is "the export does not rewrite the scribe's prose", so compare against the
+    // fixture rather than against one remembered sentence: the old test pinned enc-2026-002's
+    // then-current "premiere pending" wording, so it failed the moment the scribe legitimately
+    // rewrote it — testing the sentence instead of the rule.
+    for (const dir of readdirSync(path.join(REPO_ROOT, "fixtures")).filter((d) => d.startsWith("enc-"))) {
+      const fixture = JSON.parse(
+        readFileSync(path.join(REPO_ROOT, "fixtures", dir, "encounter.json"), "utf8")
+      ) as { encounter_id: string; title?: string };
+      expect(entry(fixture.encounter_id).title).toBe(fixture.title ?? null);
+    }
   });
 });
