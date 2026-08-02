@@ -31,6 +31,8 @@ Every implementation must preserve the following.
 
 A practice may accept, accept with conditions, defer, decline, withdraw or remain silent according to its local protocol. Technical reachability never implies participation.
 
+Silence stays permitted, and this protocol may not turn it into an offence — but the shared layer records it as what it is. An invitation that goes unanswered past the response window (§7) is recorded as `NO_ANSWER` against that practice, with the window's dates. That is an operational fact of the kind §2.4 allows, not a judgement about the practice: it says nobody answered, never that anybody was wrong to stay quiet. A practice that wants a stricter rule for itself may adopt one — see §14 — but only its own protocol can bind it to that.
+
 ### 2.2 Local sovereignty
 
 Each practice retains control of:
@@ -242,6 +244,15 @@ The proposal or active inquiry ended before completion because of withdrawal, ri
 
 There is deliberately no canonical `SUCCESS`, `FAILED`, `RESOLVED` or `BREAKTHROUGH` state.
 
+### Response window and lapse
+
+Added 2026-08-03, after `ji-2026-001` sat in `PROPOSED` for ten days: no practice had committed, none had declined, and nothing anywhere said so. A proposal nobody takes up is a result — it must be legible as one instead of resembling an inquiry that is merely early.
+
+- Every invitation carries a **response window**, stated in the proposal. Absent an explicit one it is **14 days** from the invitation event.
+- When the window closes, the coordinator records each invited practice's state. A practice that has neither committed nor declined is recorded as `NO_ANSWER` (§8), naming the window.
+- A proposal that has reached no commitment when its window closes moves to `CANCELLED` with the reason §7 already names — *lack of viable participation* — **after** the per-practice states are on the record, never instead of them. The shared problem stays in the archive and may be proposed again; what ends is the pending invitation, not the question.
+- Cancelling for lapse is bookkeeping, not a verdict. It says the invitation expired unanswered. It does not say the question was bad, and it may not be cited as evidence that it was.
+
 ## 8. Participant-local lifecycle
 
 Participant states are independent:
@@ -256,7 +267,10 @@ COMPLETED_LOCAL
 DECLINED
 WITHDRAWN
 BLOCKED
+NO_ANSWER
 ```
+
+`NO_ANSWER` is set by the coordinator, not by the practice: it means the response window closed with no recorded decision. It is distinct from `DECLINED`, which is an answer, and from `BLOCKED`, which names an obstacle. Any of the practice's own later decisions replaces it.
 
 A Joint Inquiry can be in `ACTIVE` while one participant is `WAITING`, another is `LOCAL_REVIEW` and another has `WITHDRAWN`.
 
@@ -345,6 +359,32 @@ The shared system does not score a Joint Inquiry. Participants and external obse
 
 These assertions remain attributed, evidenced and contestable.
 
-## 14. Amendment
+## 14. The standing question
+
+Added 2026-08-03. The occasion, stated plainly because it is the reason this section exists: in the ecology's first three months exactly one Joint Inquiry ran its full course (`ji-2026-002`, three commitments, three local returns, no forced synthesis — the mechanism worked). A second was proposed and never taken up. Between them each practice ran its own programme, and the shared question fired twice, both times because one human proposed it. A federation whose common inquiry depends entirely on one person's initiative is not yet a federation; it is three practices with a shared commit style.
+
+What follows does not fix that by decree — it cannot, and §2.1 and §2.2 are the reason. It splits the problem into the part the contact zone owes and the part only a practice can bind itself to.
+
+### 14.1 What the contact zone owes
+
+The Middle keeps **at least one Joint Inquiry open** — in `PROPOSED`, `FORMING` or `ACTIVE` — at all times.
+
+When none is open, that is not a quiet default. The Scribe records the gap on its next run, with the date the last inquiry left `ACTIVE`, and the record says so on the public surface. An ecology running entirely on solo programmes is a legitimate state; it is not a state that may be reached without anyone noticing.
+
+The contact zone may propose. It may not accept on anyone's behalf, may not read silence as consent, and may not rank a practice by how often it joins.
+
+### 14.2 What only a practice can bind itself to
+
+Whether a practice takes part in a shared question is its own, and this protocol has no reach into it. What a practice *can* do is bind itself, at its own gate, to answer.
+
+That clause is written out in `STANDING-QUESTION-CLAUSE.md` in this directory and offered to each practice in the ecology — offered, not decreed, in the same grammar as Meridian's own downstream commitments: a sibling practice's protocol decides how, or whether, it accepts, and remains free to say in its own protocol how it contests it.
+
+The asymmetry is deliberate and worth naming: the contact zone binds itself to keep a question on the table, and asks the practices only to say yes or no to it out loud. A rigorous negative, a refusal with reasons and a withdrawal are all full-value answers. Only the absent answer is not an answer.
+
+## 15. Amendment
 
 This protocol can be amended through a dated shared decision. Local practices do not need to adopt new optional event types immediately. Unknown valid types remain visible.
+
+### Amendment record
+
+- **2026-08-03** — §2.1 (silence recorded as silence), §7 (response window and lapse), §8 (`NO_ANSWER`), §14 (the standing question) and `STANDING-QUESTION-CLAUSE.md`. Decided by Frank Bültge after a review of the ecology's first three months; the finding that prompted it is in §14's opening paragraph. Nothing in a practice's own protocol is changed by this amendment — §14.2 is an offer, and it binds nobody until adopted.

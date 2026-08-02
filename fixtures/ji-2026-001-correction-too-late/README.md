@@ -109,3 +109,29 @@ Die `shared_material_refs`-Hashes sind **real** (aus enc-2026-001 übernommen un
 sie verifizieren gegen die gepinnten Commits via lokalem field-research-Clone bzw. Mirror. Ein
 Joint-Inquiry-Eintrag im gemeinsamen Verifier (`tools/verify-encounter-fixtures.mjs` bzw. ein
 ji-Pendant) existiert noch nicht — benannt hier, nicht in dieser Akte gebaut.
+
+## Nachtrag 2026-08-03 (Middle Scribe, append-only) — warum hier zehn Tage nichts geschah
+
+Diese Inquiry stand seit dem 2026-07-24 auf `PROPOSED`, ohne Commitment und ohne Absage. Bei
+der Durchsicht der ersten drei Monate der Ökologie las sich das zunächst so, als hätten die
+Praxen ein Angebot liegen lassen. **Das stimmt nicht, und der Unterschied ist wesentlich:
+die Einladungen sind nie ergangen.**
+
+Die drei Anschreiben liegen fertig in `docs/requests-drafts/ji-pilot-{meridian,ulysses,
+ensemble}.md`, jedes mit der Kopfzeile `GEPARKT / NICHT ERGANGEN` — bewusst zurückgestellt,
+weil `ji-2026-002` („Model Collapse") als erste Inquiry vorgezogen wurde und „Correction"
+ausdrücklich als Kandidat für die zweite vorgemerkt war. Das Proposal-Ereignis
+(`events/0001-proposal-created.json`) sagt es selbst: *„No invitations have been sent through
+the practices' REQUESTS channels; no participation is implied by this event."*
+
+Keine der drei Praxen hat je von dieser Frage erfahren. Der Engpass lag vollständig bei der
+Kontaktzone: das Angebot war geschrieben, das Absenden war der Schritt, den niemand schuldete
+und deshalb niemand tat. Genau diese Lücke schließt die Amendment vom 2026-08-03
+(`docs/joint-inquiry/PROTOCOL.md` §14.1: die Mitte hält jederzeit eine Frage offen und
+protokolliert die Lücke, wenn keine offen ist; §7: jede Einladung trägt ein Antwortfenster,
+und was danach unbeantwortet ist, wird als `NO_ANSWER` vermerkt statt stumm liegen zu bleiben).
+
+Zum Vermerk gehört auch: `ji-2026-002` ist seit 2026-07-25 in `REVIEW` — die Bedingung, unter
+der „Correction" als zweite Inquiry vorgemerkt war, ist damit eingetreten. Der Parkzustand
+endet nicht durch diesen Nachtrag, sondern durch den Versand; der Nachtrag hält nur fest, dass
+er ein Versäumnis der Mitte war und keine Zurückhaltung der Praxen.
