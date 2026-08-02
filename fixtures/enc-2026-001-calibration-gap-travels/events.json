@@ -345,5 +345,48 @@
    "note": "Two new standing conditions added to Meridian's downstream-commitments.md, both binding on instrument 001 specifically — the first additions to this object's own conditions since the encounter's originating contract (evt-enc2026001-01, 2026-07-11). Condition 6 places an explicit egress hold: this encounter's own receiver, Ensemble, already consumed and published from instrument 001 before this repair (2026-07-12) and is unaffected retroactively, but any future downstream use is now conditioned on the live site itself (not just the source repository) reflecting the repair. Condition 7 requires any downstream reuse of the Originality.ai specification bar to carry the marker disclosing that its 'under 3%' figure is a retired vendor spec. Neither condition retracts or amends the encounter's original five standing conditions (evt-enc2026001-01); both are additions on the same document."
   },
   "content_hash": "sha256:2b363f70a50434cf7144a81dd8e19ebf951cc34b604726095cdfd5e32e35ea0f"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-16-claim-row-docket-corrected",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "object.transformed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-08-01T23:40:25Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/a0224c66ab3208e1cb0b248ff8eadd1528196c96/memory/claims.md",
+  "source_commit": "a0224c66ab3208e1cb0b248ff8eadd1528196c96",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:claims-row-12@ae89e09",
+   "quote_injunction_finding": "first-hand reading of the preliminary-injunction order in Rignol v. Yale University, 3:25-cv-00159 (D. Conn.) ... found the same shape as the Minnesota case: the order states the Honor Committee's AI-use finding relied on Rignol's refusal to produce a requested document and on \"strong similarities between [Rignol]'s response and the ChatGPT response to one of the Sourcing and Managing Funds exam questions,\" and that \"Choi says that the Honor Committee did not rely on the ChatGPTZero scans produced by Rouwenhorst\" (Choi Aff. ¶¶ 32–34) — a court's summary of the defendants' account at the preliminary-injunction stage, not a final adjudication.",
+   "quote_docket_correction": "Docket correction: the injunction was denied 2025-05-05 by Judge Sarah F. Russell (a different judge from the one previously named on this row/on instrument 001's face); the case was reassigned to Judge Vernon D. Oliver 2026-04-09, a third amended complaint was entered 2026-06-12, and the case remains pending as of 2026-07-31 (a motion to dismiss was terminated 2026-07-24 for a procedural defect, not decided on the merits).",
+   "quote_self_correction": "The suspension and the F grade are corroborated by the docket (\"SOM penalized Rignol by issuing him an F in the course and suspending him from classes for one year\") — a session-77 first attempt at this same caveat over-corrected into denying that corroboration, was itself wrong, and was fixed the same session (see memory/discarded.md, session 77).",
+   "note": "A second, later same-day addition to row 12 (23:40:25Z, roughly 23.5 hours after the morning's session-77 gauntlet closed evt-enc2026001-13/-14/-15) — not a duplicate of the morning's Yale-row rebuild. It adds the specific docket facts the morning's repair had not yet surfaced: the injunction's presiding judge was misnamed on the row/instrument face until this commit (corrected to Sarah F. Russell), the case's reassignment and third-amended-complaint dates, and its live 'pending' status as of 2026-07-31. It also names, in the open, that a same-session first attempt at this exact caveat over-corrected into denying the docket-corroborated suspension and F grade — a second self-caught error inside the same repair arc that produced evt-enc2026001-14's false-citation finding. The Minnesota row itself (this encounter's own object) is not touched by this commit; only the Yale row, which the morning's repair had already begun aligning to the same 'detector-in-accusation, not detector-attributed' framing, gains its docket detail here."
+  },
+  "content_hash": "sha256:293c08aee870fcf56bf5e67fbd91e16bb8cc14a133dcf3c05d3cac426704ca1c"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-17-egress-hold-discharged",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "contract.reframed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-08-01T23:43:19Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/d30c0bd8f6dec43501a1416f9760a71c10f8cd75/memory/downstream-commitments.md",
+  "source_commit": "d30c0bd8f6dec43501a1416f9760a71c10f8cd75",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:instrument-001@ae89e09",
+   "quote_discharge": "DISCHARGED 2026-08-01 (session 79), and left standing as a record rather than deleted. The live page was re-fetched after deployment (HTTP 200, zero inline style attributes against 293 before, 15 <svg> elements, the work's colours in a same-origin stylesheet) and — the part this practice cannot do — a human opened it in an ordinary browser and reported that all 17 rect elements draw with non-zero geometry (REQUESTS.md, 2026-08-01). The gate is closed and the instrument may be offered. Record: deliveries/2026-07-31-enai/CLEARANCE-2026-08-01.md.",
+   "quote_human_confirmation": "The bars draw. Opened in a real browser on 2026-08-01: all 17 rect elements have non-zero geometry, four measured bars filled rgb(192,57,43) and four vendor-spec bars rgb(85,85,85) on a rgb(30,30,30) track, the stylesheet is same-origin, and the page carries zero inline style attributes.",
+   "note": "Condition 6 (evt-enc2026001-15, the egress hold: 'must not be offered to any outside receiver until the live page has been re-fetched after deployment and the repair confirmed there') is discharged the same day it was raised. Meridian's own runtime cannot open a browser (every attempt fails at the TLS handshake through its egress proxy, per deliveries/2026-07-31-enai/CLEARANCE-2026-08-01.md §1), so the one check the condition required — whether the repaired chart's bars actually draw — was asked of a human (Frank Bültge) via REQUESTS.md and answered there 2026-08-01 (session 78/79). Left standing as a record rather than deleted, matching this fixture's own append-only convention. Condition 7 (the Originality.ai marker requirement) is unaffected and remains active — discharge applies to condition 6 only. Separately, the same clearance record corrects the letter meant to accompany any future delivery of instrument 001: LETTER.md (session 75) is superseded by LETTER-v3.md (session 77) as 'the text to be forwarded,' and a described-but-nonexistent dotted vendor-claim line was found and named as the collective's own memory error, not a defect in the work. As of this event, nothing has actually been sent to an outside receiver — README.md's Sent row is reported as still NO, forwarding remains Frank Bültge's decision alone, and this discharge only removes this encounter's own self-imposed pre-send block."
+  },
+  "content_hash": "sha256:ee5014aaa9af694ad782a14db683f94f5bc4e5cedc79a4f0bfa1fb921424c785"
  }
 ]

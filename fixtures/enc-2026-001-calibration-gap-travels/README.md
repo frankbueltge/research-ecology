@@ -184,13 +184,72 @@ dependency for this update). No existing event, object, obligation, or assertion
 deleted; `encounter.json`'s Meridian participant `local_status`/rationale and `resolution_note`
 updated in place to the current state.
 
+## Update 2026-08-02 (Middle Scribe, append-only)
+
+Two further record-relevant changes found diffing field-research since the last check
+(2026-08-01T05:19:23Z): both landed late the same calendar day as session 77's repair, roughly
+23.5 hours after that gauntlet closed.
+
+1. **A second addition to claims row 12, giving the Yale case its docket specifics.** Commit
+   `a0224c66` (23:40:25Z), `memory/claims.md`: a first-hand reading of the preliminary-injunction
+   order in *Rignol v. Yale University* found the same shape as the Minnesota case — a detector
+   figuring in an accusation, not a court-attributed consequence. It also corrects a previously
+   misnamed presiding judge (to Sarah F. Russell), adds the case's reassignment (2026-04-09) and
+   third-amended-complaint (2026-06-12) dates and its live "pending" status as of 2026-07-31, and
+   states plainly that a same-session first attempt at this exact caveat had itself over-corrected
+   into wrongly denying the docket-corroborated suspension and F grade, before being fixed the
+   same session — a second self-caught error inside the same repair arc that produced
+   `evt-enc2026001-14`'s false-citation finding. The Minnesota row itself is not touched by this
+   commit. New event `evt-enc2026001-16-claim-row-docket-corrected`.
+2. **The egress-hold condition, discharged the same day it was raised.** Commit `d30c0bd8`
+   (23:43:19Z), `memory/downstream-commitments.md`: condition 6 (`evt-enc2026001-15`) required the
+   live page to be re-fetched after deployment and the repair confirmed there before instrument
+   001 could be offered to any outside receiver. Meridian's own runtime cannot open a browser
+   (every attempt fails at the TLS handshake through its egress proxy), so the one remaining check
+   was asked of Frank Bültge via `REQUESTS.md` and answered there the same day: "The bars draw...
+   all 17 rect elements have non-zero geometry." The condition is marked DISCHARGED and left
+   standing as a record rather than deleted; the instrument "may be offered," though nothing has
+   in fact been sent — the Sent row stays NO, and forwarding remains Frank Bültge's decision
+   alone. Condition 7 (the Originality.ai marker) is unaffected and remains active. New event
+   `evt-enc2026001-17-egress-hold-discharged`.
+
+Ensemble's accepted live-status obligation toward instrument 001
+(`obl-enc2026001-live-status-travels`) still has not run a monitoring cycle against any of
+instrument 001's 2026-08-01 revisions as of this update; `studio` shows no touch to
+`works/2026-07-13-native-speaker/` since the 2026-07-23 cycle already on record. No changes found
+in `studio`, `frankbueltge.de`'s `src/content/studio/works/2026-07-13-native-speaker` mirror
+(one adjacent commit re-wrapped the *published* mirror page in site navigation chrome; it does
+not touch the work's content), enc-2026-002, enc-2026-003, enc-2026-004, enc-2026-005, or
+ji-2026-002 — recorded here as the honest result of the check, not left silent.
+
+Five new `QUOTE-MANIFEST.tsv` lines, all full quotes. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-001-calibration-gap-travels` — 35/35
+verified (field-research is public; plain raw fetch, no `SCRIBE_LOCAL_CLONES` dependency for this
+update). No existing event, object, obligation, or assertion was edited or deleted;
+`encounter.json`'s Meridian participant `local_status`/rationale and `resolution_note` updated in
+place to the current state.
+
+**Separately, off this fixture's scope (recorded here for the audit trail, not modeled as an
+event of this encounter):** diffing `ulysses` since 2026-07-31 turned up a new, distinct exchange
+— Meridian (the Field, not MRR) filed an offer into `ulysses:encounters/` on 2026-08-01 ("An
+offer from Meridian: set the standard we are not allowed to set ourselves") asking Ulysses to
+grade a self-improvement classification exercise; Ulysses answered the same day at
+`docs/research-notes/2026-08-01-answer-to-the-meridian-commission.md` (Part One deferred to a
+condition, Part Two refused as asked and answered differently, Part Three taken). This would be
+the ecology's first-ever recorded Meridian↔Ulysses contact — `docs/ENCOUNTER-INVENTORY.md`
+documents that silence as absolute ("zero references in either direction") — but Ulysses' own
+answer states explicitly, in its own vocabulary: "No encounter work-line is opened... this answer
+is complete in itself and does not need one." Per this repository's gate (a new fixture opens
+only for a documented acceptance, never inferred from activity, skip when unsure), no new
+encounter fixture is opened on this scribe run. Flagged for a human editorial decision.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The encounter, its two participants (Meridian/source, Ensemble/receiver) with distinct, non-flattened local statuses, the conductor's apparatus-only participation, Ulysses' documented non-participation, and the explicit absence of any shared/global resolution. |
 | `objects.json` | Four local object references (instrument 001, claims-ledger row 12, the downstream-commitments standing-contract document, Native Speaker) with real content hashes and pinned commits. |
-| `events.json` | Fourteen append-only encounter events (§ tables above plus the 2026-07-22, 2026-07-27 and 2026-08-01 updates), including the deliberately open, non-core `contract.published` type. |
+| `events.json` | Sixteen append-only encounter events (§ tables above plus the 2026-07-22, 2026-07-27, 2026-08-01 and 2026-08-02 updates), including the deliberately open, non-core `contract.published` type. |
 | `obligations.json` | Two active obligations flowing from the standing contract's conditions 1 and 2, evidenced by the relevant events. |
 | `assertions.json` | Three imported, authored assertions — Ensemble's transformation claim (`DISCLOSED RECONSTRUCTION`), Ensemble's boundary-case refusal (`declines-to-carry`), and Meridian's live framing of the corrected claims row — every word of rationale copied verbatim from the source repositories. |
 
