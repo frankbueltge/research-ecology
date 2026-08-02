@@ -14,7 +14,8 @@
   "payload": {
    "quote_governing_principle": "once here must not go unstated twice downstream.",
    "note": "The same standing offer as enc-2026-001/-002/-003 — conditions bind only through acceptance."
-  }
+  },
+  "content_hash": "sha256:2950b16aa22723cafe26a089b1359c78591ff97af4c15497fa87f897030ed956"
  },
  {
   "schema_version": "1.0",
@@ -35,7 +36,8 @@
    "quote_supplier_wing_language": "the lab''s production wing, frankbueltge.de",
    "finding_open_correction": "The supplier template still carries pre-constitutional wing language ('the lab''s production wing') — recorded as an OPEN correction for the diner's cook template, not smoothed away.",
    "note": "Ensemble's premiered Native Speaker re-voiced the same day it shipped, as the Quick Snack 'The Gate's Judgment' (host: key) — the per-file provenance frontmatter is the receiver's own delivery slip, predating the ledger."
-  }
+  },
+  "content_hash": "sha256:6f3e2fb7bd444a7fbccaacdedbbfbf469ed08e18b353cd148716488abc2d7941"
  },
  {
   "schema_version": "1.0",
@@ -60,7 +62,8 @@
    ],
    "count": 6,
    "note": "Six re-cooked works at the pinned commit: one Ensemble premiere (native-speaker), five Meridian works. Each carries provenance frontmatter (supplier, work, workUrl, gauntlet, inspected)."
-  }
+  },
+  "content_hash": "sha256:636dc8ead04b3e9d7c89c2119e1d42b6b3203d01e6ab328d7e21093e7f752a60"
  },
  {
   "schema_version": "1.0",
@@ -79,7 +82,8 @@
    "quote_gate": "them into Quick-Snack specials (provenance-locked), gate them",
    "quote_arm_switch": "ARM SWITCH — publishing is OFF until you set the repo VARIABLE",
    "honesty_note": "The transport is automated but currently PARTIALLY ARMED: the workflow is inert until its API-key secret exists, and auto-publishing is off until the arm variable is set — the apparatus condition recorded as found."
-  }
+  },
+  "content_hash": "sha256:37dc3bc93a61e236bc1ad6b94bc6f67c5b51ec12753e1367566822cee5079f97"
  },
  {
   "schema_version": "1.0",
@@ -97,7 +101,8 @@
    "quote_revoicing": "**character re-voicing as declared transformation**",
    "quote_translation_loss": "that is exactly the \"translation loss\" the encounter grammar exists to keep honest.",
    "note": "Admission 2026-07-17 with the Plenum as resident collective; the diner's re-voicing is named a declared transformation with translation-loss potential."
-  }
+  },
+  "content_hash": "sha256:4ec475434d694ed6e2828a3bea7d8321239a9bbaf04928119296ad76b7bba250"
  },
  {
   "schema_version": "1.0",
@@ -119,7 +124,8 @@
    "quote_caveat_count": "Any derived, re-voiced, or republished form of this work must preserve all five, by name:",
    "quote_new_caveat": "5. **\"Valid\" is not \"Trusted\"** — the manifest arm ran trust-blind; a `Valid` stamp is signature-integrity, not signer-trust. Under the current forward official C2PA trust list none of these real signers separate from a forge today; only a discontinued legacy list (the ITL) separates them. Any re-serving of a `Valid` result must not present it as an endorsement of the signer, and must carry the today-gap, not only the legacy-list reassurance.",
    "note": "Current data-snack.com main updates the existing Split Seal Quick Snack rather than adding a seventh quick item. The open standing relation remains at six re-cooked works; this event records the refreshed re-voicing and its added load-bearing caveat."
-  }
+  },
+  "content_hash": "sha256:6e60ca6943b5c669178e155d3c43e15c07e10e02140fbe813f380087f1a30397"
  },
  {
   "schema_version": "1.0",

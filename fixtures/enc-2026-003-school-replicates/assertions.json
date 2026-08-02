@@ -1,11 +1,36 @@
 [
  {
   "assertion_id": "A1",
-  "author": "the-middle-editor",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "author": {
+   "actor_id": "the-middle-editor",
+   "collective_id": "the-middle"
+  },
+  "subject": {
+   "local_object_ref_id": "datavism:adr-002",
+   "field_path": "the pre-constitutional wing framing ('menschlicher Flügel des Labors') carried by ADR 002"
+  },
+  "predicate": "reads-as-superseded-in-framing-while-standing-in-substance",
+  "object": "the governance statement of 2026-07-17 supersedes ADR 002's wing framing; the integration substance the ADR decided is untouched by that supersession",
   "claim": "The wing framing of ADR 002 is superseded; its integration substance stands.",
+  "epistemic_status": "interpretation",
+  "local_epistemic_status": "editorial reading by The Middle, not a party's own declaration; ADR 002's own status line still reads 'Entwurf — zur Freigabe durch Frank' and is recorded as found",
   "evidence": [
-   "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/GOVERNANCE.md"
+   {
+    "event_id": "evt-enc2026003-02-offer-accepted"
+   },
+   {
+    "event_id": "evt-enc2026003-05-admission"
+   },
+   {
+    "source_uri": "https://github.com/datavism/datavism.org/blob/df34d01219d5151c832c81172466403777b18855/docs/GOVERNANCE.md",
+    "source_commit": "df34d01219d5151c832c81172466403777b18855",
+    "field_path": "the governance statement; the in-file anchors are quoted verbatim at evt-enc2026003-05-admission (quote_no_wing, quote_grammar) and verified in QUOTE-MANIFEST.tsv"
+   }
   ],
-  "note": "See e2 honesty_note and e5."
+  "lifecycle_status": "active",
+  "visibility": "public",
+  "note": "See e2 honesty_note and e5.",
+  "content_hash": "sha256:1847c54d6057378bdd4f1a72d9dacb721660113c3ae92b7f0db9a8ec5bac79dd"
  }
 ]

@@ -1,11 +1,33 @@
 [
  {
   "assertion_id": "A1",
-  "author": "the-middle-editor",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "author": {
+   "actor_id": "the-middle-editor",
+   "collective_id": "the-middle"
+  },
+  "subject": {
+   "local_object_ref_id": "data-snack:quick-native-speaker",
+   "field_path": "the supplier line of the cook template's provenance frontmatter"
+  },
+  "predicate": "carries-superseded-wing-language-as-an-open-correction",
+  "object": "the diner's cook template still describes its supplier in pre-constitutional wing language; the finding is recorded as an open correction for the diner's own template, not repaired in this record",
   "claim": "The supplier template carries superseded wing language — an open correction for the diner, not a ledger smoothing.",
+  "epistemic_status": "interpretation",
+  "local_epistemic_status": "editorial reading by The Middle, not a party's own declaration; the fix belongs in the diner's cook template, in the diner's own repository (README, GAPs)",
   "evidence": [
-   "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/native-speaker.mdx"
+   {
+    "event_id": "evt-enc2026004-02-work-re-cooked"
+   },
+   {
+    "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/72bae294d923585ff62772406767d00d979444cf/prototype-v2/src/content/quick/native-speaker.mdx",
+    "source_commit": "72bae294d923585ff62772406767d00d979444cf",
+    "field_path": "provenance frontmatter, supplier line; the in-file anchor is quoted verbatim at evt-enc2026004-02-work-re-cooked (quote_supplier_wing_language) and verified in QUOTE-MANIFEST.tsv"
+   }
   ],
-  "note": "See e2 finding_open_correction."
+  "lifecycle_status": "active",
+  "visibility": "public",
+  "note": "See e2 finding_open_correction.",
+  "content_hash": "sha256:69704c2b5dee78de422b99011652a068f62b1b38a7d780583455481242aad968"
  }
 ]

@@ -92,3 +92,25 @@ moved to 2026-07-28 and the synced-works count to 20. Four new `QUOTE-MANIFEST.t
 dependency for this update). The instrument-016 body-loss regression (evt-09) remains
 unrepaired, unchanged by this check. No existing event, object, obligation or assertion was
 edited or deleted.
+
+**Correction 2026-08-02 (schema repair, not a re-reading).** Authoring this encounter's
+narrative made it exportable for the first time, and the loader's schema gate rejected six of
+its records — a fixture is only validated once it becomes exportable, so these gaps had been
+sitting undisclosed since the retroactive transcription. Both repaired here, additively:
+
+1. **`content_hash` missing on `evt-01`…`evt-05`.** Backfilled with the repository's own
+   `contentHash()` (`packages/protocol/src/hash.ts`: sha256 over each record's canonical JSON
+   minus its own hash field) — computed by the same function every later event in this file was
+   hashed with, not hand-typed. No payload, quote, timestamp or source pin was touched.
+2. **Assertion `A1` carried the pre-schema lean shape** (`author` a bare string, `evidence` a
+   bare URI list, no `subject`/`predicate`/`object`/`epistemic_status`/`content_hash`). Lifted
+   into the schema's shape WITHOUT changing what it claims: the original `author` string
+   survives verbatim as `author.actor_id`, the original evidence URI as
+   `evidence[].source_uri`, and the original `claim` and `note` strings stand unedited beside
+   the new fields. No `rationale` was added — in this ecology that field carries byte-verified
+   source quotes (enc-2026-002's convention), while this assertion is The Middle's own
+   editorial reading and owes no manifest line; it is marked as such in
+   `local_epistemic_status`.
+
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — 25/25
+verified, unchanged by the repair. No event, obligation or object record was edited or deleted.

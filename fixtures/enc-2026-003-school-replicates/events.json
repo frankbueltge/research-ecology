@@ -15,7 +15,8 @@
    "quote_governing_principle": "once here must not go unstated twice downstream.",
    "quote_travel": "how its own shipped works may honestly travel to sibling practices and platforms.",
    "note": "Same standing act as enc-2026-001/-002: Meridian's conditions are a standing OFFER; they bind a receiver only through acceptance."
-  }
+  },
+  "content_hash": "sha256:1f540abc4edd26fee2365fa3140c38378f5b8f499842487469c478a4ebf34a77"
  },
  {
   "schema_version": "1.0",
@@ -34,7 +35,8 @@
    "quote_mechanism": "Ein Werk wird nicht ausgestellt, sondern zur **replizierbaren",
    "quote_status": "**Status:** Entwurf — zur Freigabe durch Frank",
    "honesty_note": "The acceptance is documented in an ADR whose own status line reads 'Entwurf — zur Freigabe durch Frank' — recorded as found, not smoothed. The ADR's title framing ('menschlicher Flügel des Labors') predates the federated constitution and was superseded 2026-07-17 by the governance statement (see e5)."
-  }
+  },
+  "content_hash": "sha256:2d5f49775abdef158a679ef0c76e54e2119e5d377978ddd694185f14aefdf5d6"
  },
  {
   "schema_version": "1.0",
@@ -53,7 +55,8 @@
    "quote_sync": "Phase 2 umgesetzt 2026-07-11 (`scripts/field-sync.mjs`, `/field`-Seiten,",
    "quote_craft": "**Die Übersetzung Werk → Operation ist Handwerk und bleibt es.**",
    "transformation_grammar": "Transport automated (field-sync workflow), translation deliberately kept manual — the receiver's own declared honesty boundary."
-  }
+  },
+  "content_hash": "sha256:965d17ef433aea85b47f417fe91ccd6c2a71f8c40e3dda2b7710204edba3e819"
  },
  {
   "schema_version": "1.0",
@@ -86,7 +89,8 @@
     "2026-07-11-split-seal"
    ],
    "note": "Filenames enumerated from src/content/field-works/ at the pinned commit; the corpus is the visible product of the field-sync pipeline (e3)."
-  }
+  },
+  "content_hash": "sha256:792424f75eaae4fc39418d0c24df330390d1c998599ade9c95c6ddf0a31c54c3"
  },
  {
   "schema_version": "1.0",
@@ -105,7 +109,8 @@
    "quote_grammar": "Bedingungen anderer Praktiken binden erst durch Annahme",
    "quote_admitted": "candidacy 3 (datavism) is **admitted as of the same",
    "note": "Admission turns this standing relation into a recorded relation between admitted practices; the governance statement supersedes ADR 002's wing framing while keeping its substance."
-  }
+  },
+  "content_hash": "sha256:b8c30c1a191fb7bf7a697761b41da671a902e420b07fce31dbf9ebe8179bc4fd"
  },
  {
   "schema_version": "1.0",
