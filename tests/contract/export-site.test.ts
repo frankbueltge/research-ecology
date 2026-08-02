@@ -15,6 +15,7 @@ import {
   runExport,
   shortEncounterSlug,
   selectEntranceEncounterId,
+  listApprovedEncounterIds,
   DEFAULT_ENCOUNTER_ID,
   type ExportResult
 } from "../../apps/export-site/src/export.js";
@@ -59,6 +60,33 @@ describe("export-site: determinism", () => {
     expect(runA.files).toContain(`src/data/begegnungen/${slug}/score.json`);
     const mapFiles = runA.files.filter((f) => f.includes(`${slug}/maps/`));
     expect(mapFiles).toHaveLength(3);
+  });
+
+  it("draws EVERY approved encounter, not only the one holding the entrance", () => {
+    // Until 2026-08-02 the export wrote per-encounter artefacts for the entrance alone. An
+    // encounter that a newer one had already overtaken could therefore gain an approved
+    // narrative and still never get a score.json — a silently unreachable drawing, exactly the
+    // kind of quiet gap the rejected-records check above refuses to tolerate elsewhere. The
+    // site's ledger glob reads src/data/begegnungen/*/score.json, so "approved" must mean
+    // "drawn".
+    const approved = listApprovedEncounterIds(REPO_ROOT);
+    expect(approved.length).toBeGreaterThan(1);
+    for (const encounterId of approved) {
+      const slug = shortEncounterSlug(encounterId);
+      expect(runA.files, `${encounterId} has an approved narrative but no score`).toContain(
+        `src/data/begegnungen/${slug}/score.json`
+      );
+      expect(runA.files).toContain(`src/data/begegnungen/${slug}/narrative.json`);
+      expect(runA.files.filter((f) => f.includes(`${slug}/maps/`))).toHaveLength(3);
+    }
+  });
+
+  it("a pinned encounterId still exports that one encounter alone", () => {
+    // runC pins enc-2026-001; the runbook's single-encounter run and the content suite below
+    // both depend on the pin meaning "only this one", not "this one plus everything approved".
+    const pinnedSlug = shortEncounterSlug(DEFAULT_ENCOUNTER_ID);
+    const scores = runC.files.filter((f) => f.endsWith("/score.json"));
+    expect(scores).toEqual([`src/data/begegnungen/${pinnedSlug}/score.json`]);
   });
 
   it("every written file is byte-identical across two independent runs", () => {

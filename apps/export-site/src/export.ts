@@ -57,7 +57,7 @@ const LENS_IDS = ["provenance-v1", "ensemble-transformation-v1", "meridian-posit
  * resolves each to its full encounter_id via the matching fixtures/ directory, and returns the
  * newest by the numeric id segment (enc-YYYY-NNN). Falls back to DEFAULT_ENCOUNTER_ID when no
  * approved score exists (never happens today — enc-2026-001's own score is approved). */
-export function selectEntranceEncounterId(researchEcologyRoot: string): string {
+export function listApprovedEncounterIds(researchEcologyRoot: string): string[] {
   const narrativesDir = path.join(researchEcologyRoot, "narratives");
   const fixturesDir = path.join(researchEcologyRoot, "fixtures");
   const fixtureIds = readdirSync(fixturesDir, { withFileTypes: true })
@@ -80,9 +80,13 @@ export function selectEntranceEncounterId(researchEcologyRoot: string): string {
     }
     approved.push(narrative.encounter_id);
   }
-  if (approved.length === 0) return DEFAULT_ENCOUNTER_ID;
   const numeric = (id: string): number => Number(id.split("-")[2] ?? 0);
-  approved.sort((a, b) => numeric(a) - numeric(b));
+  return approved.sort((a, b) => numeric(a) - numeric(b));
+}
+
+export function selectEntranceEncounterId(researchEcologyRoot: string): string {
+  const approved = listApprovedEncounterIds(researchEcologyRoot);
+  if (approved.length === 0) return DEFAULT_ENCOUNTER_ID;
   return approved[approved.length - 1] as string;
 }
 
@@ -655,8 +659,20 @@ export function observeReceiverWork(
   };
 }
 
-export async function runExport(opts: ExportOptions): Promise<ExportResult> {
-  const encounterId = opts.encounterId ?? selectEntranceEncounterId(opts.researchEcologyRoot);
+/** Everything one encounter owns on the site: its three map versions, its narrative copy and
+ * its score. Called once per APPROVED encounter (see `runExport`) — until 2026-08-02 only the
+ * entrance encounter was ever exported, which silently made a score unreachable for any
+ * encounter a newer one had already overtaken: enc-2026-002/-003/-004 could gain approved
+ * narratives and still never get a drawing. The entrance-only artefacts (entrance.json,
+ * README, register.json) stay in `runExport`; this function writes only per-encounter files.
+ * The `SiteEntrance` object is built for EVERY encounter (the score derives its headline,
+ * as_of, status line and record link from it, and validating it everywhere catches a bad
+ * narrative at its own encounter rather than only when it reaches the entrance) — but written
+ * to disk only for the one encounter that currently holds the entrance. */
+async function exportEncounterArtefacts(
+  opts: ExportOptions,
+  encounterId: string
+): Promise<{ encounterId: string; watermark: string; files: string[]; entrance: SiteEntrance }> {
   const bundlesRootDir = path.join(opts.researchEcologyRoot, "import/bundles");
   const fixtureDir = path.join(opts.researchEcologyRoot, "fixtures", encounterId);
   const lensesDir = path.join(opts.researchEcologyRoot, "lenses");
@@ -788,11 +804,8 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
 
   const entranceValidation = validateSiteEntrance(entrance);
   if (!entranceValidation.valid) {
-    throw new Error(`generated entrance.json failed site-entrance.schema.json: ${JSON.stringify(entranceValidation.errors)}`);
+    throw new Error(`${encounterId}: generated entrance object failed site-entrance.schema.json: ${JSON.stringify(entranceValidation.errors)}`);
   }
-  const entranceFile = path.join(begegnungenDir, "entrance.json");
-  writeJsonFile(entranceFile, entrance);
-  filesWritten.push(path.relative(opts.siteDir, entranceFile));
 
   // -- score.json (work order phase-c2-site-entrance-design.md §1) ----------------------------
   // Exclude the synthesized `editorial.encounter_assembled` event (The Middle's own 2026-07-14
@@ -837,6 +850,42 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   const scoreFile = path.join(encounterDir, "score.json");
   writeJsonFile(scoreFile, score);
   filesWritten.push(path.relative(opts.siteDir, scoreFile));
+
+  return { encounterId, watermark, files: filesWritten, entrance };
+}
+
+export async function runExport(opts: ExportOptions): Promise<ExportResult> {
+  const entranceId = opts.encounterId ?? selectEntranceEncounterId(opts.researchEcologyRoot);
+  // A pinned `encounterId` means "export exactly this one" (the contract test's enc-2026-001
+  // projection, the runbook's manual single-encounter run). Unpinned, every encounter with an
+  // APPROVED narrative is exported, newest last — the site's ledger glob
+  // (src/lib/begegnungen/index.ts, `import.meta.glob('/src/data/begegnungen/*/score.json')`)
+  // then shows all of them, with the entrance still the newest scored one.
+  const approved = listApprovedEncounterIds(opts.researchEcologyRoot);
+  const encounterIds = opts.encounterId
+    ? [opts.encounterId]
+    : approved.length > 0
+      ? approved
+      : [entranceId];
+
+  const filesWritten: string[] = [];
+  let entranceExport: { encounterId: string; watermark: string; files: string[]; entrance: SiteEntrance } | null = null;
+  for (const id of encounterIds) {
+    const exported = await exportEncounterArtefacts(opts, id);
+    filesWritten.push(...exported.files);
+    if (id === entranceId) entranceExport = exported;
+  }
+  if (!entranceExport) {
+    throw new Error(`entrance encounter ${entranceId} was not among the exported encounters (${encounterIds.join(", ")})`);
+  }
+  const { entrance, watermark } = entranceExport;
+  const encounter = { encounter_id: entranceExport.encounterId };
+  const begegnungenDir = path.join(opts.siteDir, "src", "data", "begegnungen");
+
+  // -- entrance.json --------------------------------------------------------------------------
+  const entranceFile = path.join(begegnungenDir, "entrance.json");
+  writeJsonFile(entranceFile, entrance);
+  filesWritten.push(path.relative(opts.siteDir, entranceFile));
 
   // -- provenance README ----------------------------------------------------------------------
   const commit = resolveResearchEcologyCommit(opts.researchEcologyRoot);
