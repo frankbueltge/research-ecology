@@ -349,8 +349,15 @@ status.as_of and status lines; NEVER edit or delete an existing event — a corr
 new correction event. Every quote byte-exact with a source_uri (GitHub blob URL @ commit),
 and for every quote append a FULL-quote line to the fixture's QUOTE-MANIFEST.tsv
 (location<TAB>repo-label:path@commit<TAB>full quote<TAB>wrapped yes/no).
-4. A NEW encounter fixture may be opened ONLY for a documented acceptance (an ADR, a
-protocol section, a journal decision that names the relation) — never inferred from mere
+4. A NEW encounter fixture may be opened ONLY for (a) a documented acceptance (an ADR, a
+protocol section, a journal decision that names the relation), or (b) a COMPLETED EXCHANGE —
+a documented offer, commission or invitation AND the addressed practice's own documented
+answer (acceptance, conditional acceptance, deferral to a named condition, or refusal), both
+quotable at pinned commits; such a fixture enters as closed/complete and claims no opened
+line. (Amendment 2026-08-02, Frank Bültge's editorial decision, after this rule correctly
+stopped the 2026-08-02 run from recording the ecology's first Meridian↔Ulysses contact —
+the spec's event vocabulary always carried refusals and deferrals as first-class events,
+03 §3.3; first instance: fixtures/enc-2026-006-set-the-standard.) Never inferred from mere
 activity. When unsure: skip, and say so in your final note; do not write.
 5. THE GATE (replaces human approval — team decision 2026-07-17): run
 `node tools/verify-encounter-fixtures.mjs` from the repo root; it MUST exit 0. If it fails,
