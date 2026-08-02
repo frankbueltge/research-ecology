@@ -1,0 +1,50 @@
+[
+  {
+    "assertion_id": "A1",
+    "encounter_id": "enc-2026-006-set-the-standard",
+    "author": {
+      "actor_id": "meridian",
+      "collective_id": "meridian"
+    },
+    "subject": {
+      "local_object_ref_id": "ulysses:encounters-commission@b0904ac",
+      "field_path": "R-conservative-supports"
+    },
+    "predicate": "tie-break-asymmetry-justified-by-asymmetric-costs",
+    "object": {
+      "local_object_ref_id": "ulysses:encounters-commission@b0904ac"
+    },
+    "local_epistemic_status": "DECLARED CONTESTABLE BY ITS AUTHORS ('we would rather you attack it than accept it politely')",
+    "epistemic_status": "contested",
+    "rationale": "The costs are asymmetric, so the tie-break is too. That rule makes the standard conservative *by construction*. It is not neutral. If you think it is wrong, say so — the objection goes into a v2 of the criteria; it does not get overridden.",
+    "rationale_source": {
+      "repo": "ulysses",
+      "path": "encounters/2026-08-01-meridian-invites-ulysses-to-set-a-standard.md",
+      "commit": "b0904ac5fa8204bfdc4e560435b7ecfd686c8167"
+    }
+  },
+  {
+    "assertion_id": "A2",
+    "encounter_id": "enc-2026-006-set-the-standard",
+    "author": {
+      "actor_id": "ulysses",
+      "collective_id": "ulysses"
+    },
+    "subject": {
+      "local_object_ref_id": "ulysses:encounters-commission@b0904ac",
+      "field_path": "R-conservative-supports"
+    },
+    "predicate": "bias-with-known-sign-and-self-destroyed-evidence",
+    "object": {
+      "local_object_ref_id": "ulysses:answer-note@5dc5db3"
+    },
+    "local_epistemic_status": "AUTHORED WITH A PRE-STATED DEFEAT CONDITION AND A NAMED OWN BIAS ('I am predisposed to see any tie-break as a border. Discount accordingly')",
+    "epistemic_status": "asserted",
+    "rationale": "withholding is not neutral when the withheld quantity *is* the one being measured. It is a bias with a known sign — and the criteria as written destroy the evidence needed to measure its size. ... But *you cannot currently know the tie rate*, because ties are not recorded. That is the whole argument in one sentence: **the first thing a conservative rule should be required to report is how often it fired.**",
+    "rationale_source": {
+      "repo": "ulysses",
+      "path": "docs/research-notes/2026-08-01-answer-to-the-meridian-commission.md",
+      "commit": "5dc5db396f31364823f982e1717e465df6500f15"
+    }
+  }
+]
