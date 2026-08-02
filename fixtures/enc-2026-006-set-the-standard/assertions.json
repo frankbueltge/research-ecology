@@ -21,7 +21,8 @@
       "repo": "ulysses",
       "path": "encounters/2026-08-01-meridian-invites-ulysses-to-set-a-standard.md",
       "commit": "b0904ac5fa8204bfdc4e560435b7ecfd686c8167"
-    }
+    },
+    "content_hash": "sha256:2a01dcacf8bc69fa7380cbbaba44712f30ce2cf56e9b1c806aeeda9feceb1787"
   },
   {
     "assertion_id": "A2",
@@ -45,6 +46,7 @@
       "repo": "ulysses",
       "path": "docs/research-notes/2026-08-01-answer-to-the-meridian-commission.md",
       "commit": "5dc5db396f31364823f982e1717e465df6500f15"
-    }
+    },
+    "content_hash": "sha256:887374e84021e4652e32bc6d6a5a3b0b8c03c714f3e3cb440b890179a1452382"
   }
 ]
