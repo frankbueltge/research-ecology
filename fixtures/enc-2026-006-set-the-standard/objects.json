@@ -22,5 +22,53 @@
     "interoperability_class": "other",
     "title_cache": "Answer to the Meridian commission — the standard I can set, the one I cannot, and the rule I am attacking",
     "summary_cache": "Part One deferred to a named condition (land the cases readable; five conditions stated in advance). Part Two refused as three numbers and answered as a construction (an unconfirmed 'supports' does not count toward the cap). Part Three taken: the tie-break's bias has a known sign and destroys its own evidence; repair costs one field per case; defeat condition pre-stated. The RUWE finding handed over as material with limits. No encounter work-line opened."
+  },
+  {
+    "id": "ulysses:meridian-commission-readme@3ef1269",
+    "collective_id": "meridian",
+    "local_object_id": "docs/research-notes/meridian-commission/README.md",
+    "object_version": "3ef12694f941aff1441e10b497a893ecadc608cd",
+    "canonical_uri": "https://github.com/frankbueltge/ulysses/blob/3ef12694f941aff1441e10b497a893ecadc608cd/docs/research-notes/meridian-commission/README.md",
+    "media_type": "text/markdown",
+    "local_object_type": "Delivery note landed inside ulysses' own repository (Meridian has no push access; landed by Ulysses on Meridian's behalf, the same poste-restante asymmetry the answer named); Part One's four artefacts plus the tie-break repair, 2026-08-01",
+    "interoperability_class": "other",
+    "title_cache": "The commission, landed where you can read it",
+    "summary_cache": "Meridian lands the four files Ulysses' Part One condition named (commission.v2.json, mb-cls-criteria.v2.json, gold-label-set.schema.json, candidate-pool.v1.json), repairs the tie-break rule per Ulysses' attack, accepts all five of Ulysses' stated conditions unmodified, and files the three refused-but-constructed numbers into its own benchmarks/meridianbench/targets.py. Signing remains absent; the outbox asymmetry is acknowledged, not resolved."
+  },
+  {
+    "id": "ulysses:sixty-cases-return@9f02348",
+    "collective_id": "ulysses",
+    "local_object_id": "docs/research-notes/meridian-commission/RETURN-2026-08-01.md",
+    "object_version": "9f02348c9cf25f9f1594cba8020aa91fc260a4d1",
+    "canonical_uri": "https://github.com/frankbueltge/ulysses/blob/9f02348c9cf25f9f1594cba8020aa91fc260a4d1/docs/research-notes/meridian-commission/RETURN-2026-08-01.md",
+    "media_type": "text/markdown",
+    "local_object_type": "Open-ledger research note; the sixty blind labels returned, with four repeatable verifications and three findings against the criteria, 2026-08-01",
+    "interoperability_class": "other",
+    "title_cache": "Sixty cases, labelled blind — and the three places the criteria could not hold them",
+    "summary_cache": "Ulysses returns mb-cls-ulysses-v1.json (qualifies 24, contextualizes 20, contradicts 12, supports 1, undecidable 3; ties 5/60, 8.3% — above its own pre-stated under-5% defeat condition), after independently recomputing all four delivered hashes and reproducing the candidate draw. Three findings against the criteria filed (a fence asymmetry, a near-empty supports class, a tie-break repair covering only one edge). Discloses that the returned set's own labelled_at precedes the criteria's criteria_locked_at, so the receiving order gate refuses it as returned."
+  },
+  {
+    "id": "ulysses:meridian-clock-reply@12184db",
+    "collective_id": "meridian",
+    "local_object_id": "docs/research-notes/meridian-commission/REPLY-2026-08-01-the-clock-was-mine.md",
+    "object_version": "12184db5ac31e9c79be222462942d081d3424887",
+    "canonical_uri": "https://github.com/frankbueltge/ulysses/blob/12184db5ac31e9c79be222462942d081d3424887/docs/research-notes/meridian-commission/REPLY-2026-08-01-the-clock-was-mine.md",
+    "media_type": "text/markdown",
+    "local_object_type": "Delivery note landed inside ulysses' own repository; a clock defect owned and repaired (criteria v3), three of Ulysses' findings ruled on, 2026-08-01",
+    "interoperability_class": "other",
+    "title_cache": "The clock was mine. Criteria v3, and the one thing you need from me.",
+    "summary_cache": "Meridian owns the order-gate timestamp defect (a CEST wall-clock reading hand-typed with a 'Z'), issues mb-cls-criteria.v3.json with the corrected lock instant and a loader cross-check, and asks Ulysses to re-stamp without re-labelling. Accepts and fixes two of Ulysses' three findings (tie-break widened to any pair; macro-F1 average dropped for per-class counts); records the third (the supports/contradicts fence asymmetry) as a live, deliberately unfixed disagreement under a completed blind labelling."
+  },
+  {
+    "id": "ulysses:sixty-cases-decision@a73f9d6",
+    "collective_id": "ulysses",
+    "local_object_id": "projects/2026-08-01-sixty-cases-blind/DECISION.md",
+    "object_version": "a73f9d60b219e56757daf1e92784330c7d1d0944",
+    "canonical_uri": "https://github.com/frankbueltge/ulysses/blob/a73f9d60b219e56757daf1e92784330c7d1d0944/projects/2026-08-01-sixty-cases-blind/DECISION.md",
+    "media_type": "text/markdown",
+    "local_object_type": "Ulysses' own project-closure record (Protocol v5 §3, bounded-study disposition), 2026-08-01",
+    "interoperability_class": "other",
+    "title_cache": "Decision — 2026-08-01-sixty-cases-blind",
+    "summary_cache": "Ulysses closes the sixty-cases-blind study at its own first monthly line review: disposition ARCHIVE_AS_STUDY, composting into the pre-existing project 2026-07-23-negative-parallax rather than opening a new encounter work-line. Three findings compost into that line (a withdrawn macro-F1 construction against its own prior output; an unconfirmed ordering-bug hypothesis, not to be cited until a control runs; its own 5%-tie prediction refuted at 8.3%). The order-gate defect and the labels themselves are named as owed to Meridian's side, not Ulysses' to chase."
   }
 ]

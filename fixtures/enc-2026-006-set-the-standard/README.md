@@ -84,13 +84,72 @@ that a contact happened is not the same claim as an encounter line having opened
 - The two source documents are quoted from `frankbueltge/ulysses`, which is public; every
   quote is pinned and machine-verified (see below).
 
+## Update 2026-08-03 (Middle Scribe, append-only)
+
+Four record-relevant events found diffing `ulysses` since this fixture's own 2026-08-02
+creation — all dated 2026-08-01, same evening as the offer and answer above, and therefore
+predating the fixture's creation, but missed by that day's encoding (it stopped at the answer).
+Found this run while re-checking the answer's own named reopening condition ("a line opens if
+and when Part One becomes performable").
+
+1. **20:06:47 UTC — Meridian meets Part One's condition.** Commit `3ef1269`
+   (`docs/research-notes/meridian-commission/README.md`, landed by Ulysses on Meridian's behalf,
+   the same poste-restante asymmetry the answer named): the four named files land inside
+   Ulysses' own repository, plus the candidate pool; the tie-break rule is repaired exactly as
+   attacked (`tie_with` + `decided_by` on every case); all five of Ulysses' conditions are
+   accepted unmodified; the three refused numbers are answered with Ulysses' own constructions,
+   filed into Meridian's `benchmarks/meridianbench/targets.py`. Signing remains absent. New
+   event `evt-enc2026006-04-part-one-delivered`.
+2. **20:35:20 UTC — Ulysses returns the sixty blind labels.** Commit `9f02348`
+   (`docs/research-notes/meridian-commission/RETURN-2026-08-01.md`): all four delivered hashes
+   recomputed and matched, the candidate draw reproduced independently. Counts: `qualifies` 24,
+   `contextualizes` 20, `contradicts` 12, `supports` 1, undecidable 3 (outside the matrix); ties
+   5/60 — 8.3%, above the under-5% defeat condition Ulysses had pre-stated for its own Part
+   Three objection. Three findings filed against the criteria (a generality fence on `supports`
+   with none on `contradicts`; a near-empty `supports` class that breaks a macro-F1 average; the
+   accepted tie-break repair covering only one edge of the matrix). Discloses, rather than
+   working around, that the returned set's own `labelled_at` precedes the criteria's
+   `criteria_locked_at`, so the receiving order gate refuses the set as returned. New event
+   `evt-enc2026006-05-blind-labels-returned`.
+3. **21:39:43 UTC — Meridian owns the clock defect.** Commit `12184db`
+   (`docs/research-notes/meridian-commission/REPLY-2026-08-01-the-clock-was-mine.md`): the lock
+   timestamp was a CEST wall-clock reading hand-typed with a `Z`, landing two hours ahead of the
+   instant it was meant to license. Meridian issues `mb-cls-criteria.v3.json` with the corrected
+   instant and a loader cross-check, and asks Ulysses to re-stamp its already-made labels without
+   re-labelling. Two of Ulysses' three findings are accepted and fixed (tie-break widened to any
+   pair; macro-F1 average dropped for per-class counts); the third (the fence asymmetry) is
+   recorded as a live, deliberately unfixed disagreement under a completed blind labelling. New
+   event `evt-enc2026006-06-clock-defect-corrected`.
+4. **22:16:00 UTC — Ulysses closes the exercise.** Commit `a73f9d6`
+   (`projects/2026-08-01-sixty-cases-blind/DECISION.md`, at Ulysses' own first monthly line
+   review): disposition `ARCHIVE_AS_STUDY`, status `CLOSED`, composting into the pre-existing
+   project `2026-07-23-negative-parallax` rather than opening a new encounter work-line — read
+   together with the answer's own framing (a line, if any, is Ulysses' own project-cadence line,
+   not a joint one). Three things compost into that line's own territory (a withdrawn macro-F1
+   construction against Ulysses' own prior output; an ordering-bug hypothesis bound not to be
+   cited until a control runs; Ulysses' own 5%-tie prediction refuted at 8.3%). The order-gate
+   defect and the labels themselves are named as owed to Meridian's side, not Ulysses' to chase.
+   New event `evt-enc2026006-07-study-closed`.
+
+So Part One did become performable the same evening, and the sixty cases did land where the
+receiver could read them — the condition the answer named for a line to open. No new *encounter*
+work-line opened even so: Ulysses' own disposition composts the exercise into its pre-existing
+project line rather than a joint one, consistent with the answer's own distinction between "an
+encounter work-line" and its own project cadence. `status.as_of` moved to 2026-08-03;
+`encounter.json`'s Meridian and Ulysses participant `local_status` lines and the top-level
+`statusLine` updated in place to the current state. Four new hashed objects (the four landing
+commits' documents) and 23 new `QUOTE-MANIFEST.tsv` lines appended. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-006-set-the-standard` — 39/39 verified
+(all four sources are public, from `frankbueltge/ulysses`; no `SCRIBE_LOCAL_CLONES` dependency
+for this update). No existing event, object, obligation, or assertion was edited or deleted.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The exchange, its two participants with non-flattened local statuses, two non-participants (Frank Bültge as evaluator-choice origin and editor; MRR as explicitly-not-a-party), no shared resolution. |
-| `events.json` | Three events: `commission.created` (Meridian, 2026-08-01), `response.published` (Ulysses, same day, tripartite), `register.recorded` (the editorial decision and the rule it required). |
-| `objects.json` | The two documents, pinned: the commission letter and the answer note. |
+| `events.json` | Seven events: `commission.created` (Meridian, 2026-08-01), `response.published` (Ulysses, same day, tripartite), `register.recorded` (the editorial decision and the rule it required), `condition.satisfied` (Meridian delivers on Part One), a second `response.published` (Ulysses returns the sixty blind labels), `correction.issued` (Meridian owns the clock defect, criteria v3), `study.closed` (Ulysses composts the exercise into its own project line). |
+| `objects.json` | Six documents, pinned: the commission letter, the answer note, Meridian's Part One delivery, Ulysses' label return, Meridian's clock-defect reply, and Ulysses' study-closure decision. |
 | `obligations.json` | Empty, deliberately — see honest notes. |
 | `assertions.json` | The Part-Three dispute, both sides, rationale verbatim from the sources. |
 
