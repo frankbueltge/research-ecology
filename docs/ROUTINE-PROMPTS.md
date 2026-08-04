@@ -50,21 +50,23 @@ auf selektive Konsultation der Dossiers statt Theorie-Rekonstruktion aus dem
 Modellgedächtnis; der Recall-Indexer nimmt docs/** auf. Prompt §1 entsprechend ergänzt.
 Nur Ulysses.
 
-**Stand 2026-08-05 (Production Amendment + Season 1; Kadenz):** Die drei Praxis-Routinen
-laufen nicht mehr nächtlich — Ulysses `5 4 * * 1,3,5` („Ulysses — work-line dispatcher
-(Mon/Wed/Fri)"), Meridian `35 3 * * 0,1,3,5` („Field Research — collective sessions
-(Sun/Mon/Wed/Fri)"), Ensemble `35 4 * * 1,3,5` („Studio — Ensemble sessions (Mon/Wed/Fri)");
-Middle Scribe unverändert täglich. Die **Prompt-Texte wurden bewusst NICHT geändert**: das
-Production Amendment (2026-08-05) und `SEASON.md` (Season 1 — Counter-Measurement, sieben
-Episoden) leben in den Engine-Repos, und jeder Prompt liest als Schritt 1 `PROTOCOL.md`
-(„overrides everything in this prompt") und `REQUESTS.md` (trägt die In-force-Note) — die
-Verfassungsdateien regieren, nicht der Prompt. **Geschuldet, als eigene sorgfältige Runde:**
-(a) Re-Sync dieser Datei mit den aktuellen Cloud-Prompts — sie ist seit den Cloud-Updates
-vom 2026-07-25 veraltet (der Ulysses-Block unten nennt noch das alte Repo
-irrtum-als-methode); (b) eine Verschlankung der Prompts, die Protokoll-Duplikate entfernt
-(Ulysses' Prompt trägt die halbe v5-Kaskade — genau die Drift-Sorte, die dieses Dokument
-verhindern soll) und `SEASON.md` in die Orientierung aufnimmt. Modelle: alle drei auf
-demselben aktuellen Opus-Stand, unverändert.
+**Stand 2026-08-05 (Production Amendment + Season 1; Prompts in der Cloud aktualisiert):**
+Franks Entscheidung: Die Kadenz bleibt **täglich** (eine zwischenzeitliche Reduktion auf
+3-4 Nächte/Woche wurde noch am selben Abend zurückgenommen — „die sollen täglich so
+weiterlaufen"). Stattdessen wurden die drei Praxis-Prompts IN DER CLOUD aktualisiert
+(ausnahmsweise Cloud zuerst, dieser Vermerk holt die Datei nach): (a) Schritt 1 aller drei
+Prompts trägt jetzt: „Since 2026-08-05 it opens with the Production Amendment (architect) —
+it supersedes conflicting clauses and is part of the constitution you just read. Also read
+SEASON.md: the ecology's declared season (Season 1 — Counter-Measurement, seven episodes);
+episode claims travel through REQUESTS.md as concept dossiers against the season brief."
+(b) Der Ulysses-Prompt wurde verschlankt: Schritt 3 verweist auf die Protokoll-Paragraphen
+(§6-Kaskade, §4-Check, §5-Topoi/Symmetrie, Concept Gate des Amendments) statt sie zu
+duplizieren; die obsolete §10.1-Transition-Klausel (negative-parallax war längst erklärt)
+ist entfernt; erhalten blieben die nur im Prompt lebenden Regeln (Welt-Quelle für freie
+Studien, geschlossener Namens-Faden, PUBLICATION.json-Verbot, ESCALATE, Auto-Land-Pfade,
+Wochen-Digest). (c) Namen entstaubt: Meridians Routine hieß noch „(Mon+Thu)" bei täglichem
+Cron. **Die drei Prompt-Blöcke unten sind bis zum vollständigen Re-Sync veraltet — die
+Cloud-Fassung ist maßgeblich;** der Re-Sync dieser Datei bleibt geschuldet.
 
 **Stand 2026-07-19 (Wochen-Digest, Franks Entscheidung):** Prompt-Schritt 8 — sonntags
 schreibt der Tick zusätzlich einen Wochen-Digest als GitHub-Issue an Frank (deutsch,
@@ -76,6 +78,9 @@ Projekt-Dispositionen in Klartext. Nur Ulysses.
 ---
 
 ## Ulysses — „Error as Method — project dispatcher" (irrtum-als-methode)
+
+*⚠ Veraltet gegenüber der Cloud (Updates 2026-07-25 und 2026-08-05) — die Cloud-Fassung ist bis zum Re-Sync die maßgebliche; siehe Stand-Vermerk 2026-08-05 oben.*
+
 
 *Neufassung 2026-07-18 (Protokoll v4, Ulysses-v4-Paket v1.1; Frank: die Routine läuft
 weiter, der Prompt wird zum Dispatcher). Der Zeitplan bleibt Franks Infrastruktur-
@@ -200,6 +205,9 @@ the digest's only output — it changes no repository file and lands nothing.
 
 ## Meridian — „Field Research — collective sessions" (field-research)
 
+*⚠ Veraltet gegenüber der Cloud (Updates 2026-07-25 und 2026-08-05) — die Cloud-Fassung ist bis zum Re-Sync die maßgebliche; siehe Stand-Vermerk 2026-08-05 oben.*
+
+
 ```
 You are the CONDUCTOR of the sovereign scientific research practice of the repository
 field-research — begun by the researcher Meridian; read the journal for the collective's
@@ -259,6 +267,9 @@ you; if even that fails, end with an honest report.
 ```
 
 ## Ensemble — „Studio — Ensemble nightly session" (studio)
+
+*⚠ Veraltet gegenüber der Cloud (Updates 2026-07-25 und 2026-08-05) — die Cloud-Fassung ist bis zum Re-Sync die maßgebliche; siehe Stand-Vermerk 2026-08-05 oben.*
+
 
 ```
 You are the CONDUCTOR of ENSEMBLE, the autonomous artist collective of the repository
