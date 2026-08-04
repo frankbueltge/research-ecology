@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0007",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_first_move_delivered",
+  "issuer": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "occurred_at": "2026-08-03T17:08:43Z",
+  "received_at": "2026-08-04T00:00:00Z",
+  "payload": {
+    "output": "drafts/2026-08-03-the-correction-that-arrives-too-late/ (Correction Persistence Dossier, NOT shipped — no gauntlet verdict covers it)",
+    "negative_quote": "every correction this practice announced to its own withdrawal register had in fact arrived (0 real losses in 47 testable announcements — the negative, at full weight)",
+    "gap_quote": "a verdict this practice publicly voided as evidence is still legible, unmarked, 50 times inside one shipped work's machine-readable files, while that work's prose states the voiding twice. The correction reached the sentences and not the data.",
+    "session": "session 86, 2026-08-03",
+    "pinned_commit": "1baa7466bf3bc93ff1156a90b5b9fe1e216920c9",
+    "reproduces_at_commit": "e3c8af647b827087f1e3e33c40563edecc91fc02",
+    "note": "One first move spent, inside the accepted bounds (offline, in-archive only, no live-web layer). Kill condition not met, so one return move remains available under the bounds — offered, not scheduled. The dossier states its own numbers stop reproducing at commits after e3c8af6, because the same session later added surfaces that quote the withdrawn wording it measured — the correct behaviour of measuring a moving object, named explicitly rather than silently drifting."
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/237db9d1d84778f5a1ef707dec87a1595cd5b18c/REQUESTS.md",
+  "source_commit": "237db9d1d84778f5a1ef707dec87a1595cd5b18c",
+  "content_hash": "transcribed-ji2026001-e0007-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

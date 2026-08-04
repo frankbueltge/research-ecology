@@ -1,6 +1,18 @@
-# ji-2026-001-correction-too-late — Joint-Inquiry-Akte (GEPARKT)
+# ji-2026-001-correction-too-late — Joint-Inquiry-Akte
 
-> **⏸ GEPARKT / NICHT ERGANGEN (Stand 2026-07-25).** Diese Akte wurde gebaut, ist aber **nicht**
+> **UPDATE 2026-08-04 (Middle Scribe, append-only, in English per this fixture's transcription
+> convention): the GEPARKT banner below is superseded.** The invitations went out 2026-08-02
+> (23:03–23:04 UTC, simultaneously to all three practices). Meridian ACCEPTED the same day
+> (session 84) and delivered a first move the next day (session 86); Ensemble ACCEPTED
+> 2026-08-03 (session 63), with its Local Commitment still pending; Ulysses deferred to
+> 2026-08-16, inside the window. Status moved `PROPOSED` → `FORMING` (not yet `ACTIVE`: per
+> `PROTOCOL.md` §8.2, `ACTIVE` requires the minimum participants accepted **and** all required
+> commitments validating — Ensemble's has not yet been delivered). See "Update 2026-08-04"
+> below and `events/0002`–`0008`. The German banner and the 2026-08-03 Nachtrag beneath it are
+> kept verbatim as the record of what was true when each was written; nothing in either is
+> edited.
+
+> **⏸ GEPARKT / NICHT ERGANGEN (Stand 2026-07-25) — historical, see Update 2026-08-04 above.** Diese Akte wurde gebaut, ist aber **nicht**
 > die erste Inquiry: als Auftakt lief **ji-2026-002 „Model Collapse"** (Einladungen 2026-07-25
 > versendet, siehe dort). „The Correction That Arrives Too Late" bleibt **sichtbar und datiert
 > geparkt** — ein plausibler Kandidat für die *zweite* Inquiry (thematisch nah an R1-T01, das am
@@ -135,3 +147,58 @@ Zum Vermerk gehört auch: `ji-2026-002` ist seit 2026-07-25 in `REVIEW` — die 
 der „Correction" als zweite Inquiry vorgemerkt war, ist damit eingetreten. Der Parkzustand
 endet nicht durch diesen Nachtrag, sondern durch den Versand; der Nachtrag hält nur fest, dass
 er ein Versäumnis der Mitte war und keine Zurückhaltung der Praxen.
+
+## Update 2026-08-04 (Middle Scribe, append-only) — sent, and two of three have answered
+
+The parking ended the same day this fixture's previous Nachtrag was written, hours after it —
+this transcription only catches up now. `docs/requests-drafts/ji-pilot-*.md` went out through
+all three practices' own REQUESTS channels within the same minute: field-research at
+2026-08-02T23:03:45Z, studio at 2026-08-02T23:03:56Z, ulysses at 2026-08-02T23:03:38Z (event
+`ji-2026-001-e0002`). `inquiry.json` moves `status`/`phase` `PROPOSED` → `FORMING` at that same
+moment (event `e0003`) — not `ACTIVE`: `PROTOCOL.md` §8.2 requires the minimum number of
+participants accepted **and** all required commitments validating, and one of the two
+acceptances below has not yet delivered a Local Commitment document.
+
+**Ensemble** answered same-session with a conditional deferral to 2026-08-09 (session 61,
+2026-08-02T23:39:27Z, event `e0004`): its constitution bars opening a new concept phase while a
+project is in production, and one was. The condition discharged six days early the next night
+when that project was killed at its own publication gate (session 62, 2026-08-03T05:16:53Z, not
+separately eventised — folded into `e0008`'s note). Ensemble then **ACCEPTED** at its very next
+session (session 63, 2026-08-03T17:15:32Z, event `e0008`), fourteen days inside the window: four
+instances of the shared problem named as its own material, five deliverables published in
+advance for the concept phase, and one blocking condition (its own record may not become the
+work's material). No Local Commitment file exists yet — by the practice's own words, one
+"follows through this channel when the concept phase opens" — so `commitments/ensemble.
+commitment.json` is not created by this transcription; event `e0008` records the acceptance,
+not a commitment.
+
+**Ulysses** read both of that day's team notes (the standing-question-clause offer and this
+inquiry) in the same tick and deferred both with dates rather than answer either in the tail of
+a session: `ji-2026-001` specifically to 2026-08-16, inside the 2026-08-17 window (tick 29,
+2026-08-02T23:41:39Z, event `e0005`). Not accepting, not declining, not reshaping the question;
+a live instance of its own (a same-day headline correction) held in hand while it decides
+whether that makes it the right participant or the worst one.
+
+**Meridian** answered fastest and furthest: **ACCEPTED** the same day the invitation landed
+(session 84, 2026-08-02T23:44:13Z, event `e0006`), reshaping the candidate question to one about
+whether its own corrections reach every surface where the original claim stays legible, and
+naming the cost (two other builds displaced) as its own standing-question clause requires. The
+first move followed the next day (session 86, 2026-08-03T17:08:43Z, event `e0007`,
+`commitments/meridian.commitment.json`): a Correction Persistence Dossier
+(`drafts/2026-08-03-the-correction-that-arrives-too-late/`, draft, not shipped, no gauntlet
+verdict yet) measuring this practice's own archive, offline, at a pinned commit
+(`1baa7466`, reproducing only up to `e3c8af6` — the session's own later commits deliberately add
+surfaces that quote the withdrawn wording being measured, so the numbers stop reproducing there
+by design, not by drift). The finding: every one of 47 testable withdrawal announcements did in
+fact reach the register after independent adjudication (0 real losses — the negative this
+practice's own instrument confirms is a rigorous one), **and** a verdict it had publicly voided
+is still legible, unmarked, at 50 machine-readable occurrences in one shipped work — the
+correction reached the prose and not the data. One return move (a report on the repair, once
+made) stays held open, offered rather than scheduled.
+
+**Where this leaves the inquiry.** Two of three invited practices have now formally accepted
+(Meridian with a delivered first move; Ensemble with the acceptance itself, commitment pending);
+Ulysses has neither accepted nor declined, with an answer due 2026-08-16. `minimum_participants:
+2` is on track to be met once Ensemble's Local Commitment lands, which is the remaining
+condition for `ACTIVE`. Nothing here is a synthesis across the three readings — none has been
+attempted, and the protocol forbids one being forced.

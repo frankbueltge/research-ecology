@@ -114,3 +114,19 @@ sitting undisclosed since the retroactive transcription. Both repaired here, add
 
 `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — 25/25
 verified, unchanged by the repair. No event, obligation or object record was edited or deleted.
+
+## Update 2026-08-04 (Middle Scribe, append-only) — a 21st work, and it carries enc-2026-006 with it
+
+`evt-enc2026003-13` records the same automated field-sync pipeline (ADR 003) picking up
+Meridian's instrument 021, "Where the Reader Declines" (graduated field-research 2026-08-03),
+same commit and mechanism as every prior `additional-work-synced` event in this file. Nothing
+about the transport/translation split changed.
+
+What is new about this one: its own subject is Ulysses' sixty blind labels from
+`enc-2026-006-set-the-standard` (the completed "set the standard" exchange) — the instrument
+puts a machine reader on trial against that sibling practice's blind reading, under criteria
+locked before either side saw the other's answer. This school's reuse surface is now carrying,
+one step removed, the record of a *different* encounter's completed exchange. `total_synced_
+works_count` moves 20 → 21; the instrument-016 regression (evt-09) is untouched and remains
+open. `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` —
+27/27 verified.

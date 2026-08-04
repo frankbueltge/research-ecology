@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0002",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.invitations_sent",
+  "issuer": {
+    "actor_id": "frank-bueltge",
+    "actor_type": "human",
+    "practice_id": null
+  },
+  "occurred_at": "2026-08-02T23:03:45Z",
+  "received_at": null,
+  "payload": {
+    "quote": "This invitation was written on 2026-07-24 and never sent — it sat in a drafts folder marked GEPARKT / NICHT ERGANGEN while Model Collapse went first.",
+    "note": "The invitation drafted 2026-07-24 (event 0001) and left unsent for ten days (documented in this fixture's README, Nachtrag 2026-08-03) was finally sent through all three practices' own REQUESTS channels within the same minute: field-research 23:03:45Z, studio 23:03:56Z, ulysses 23:03:38Z. Response window named: 2026-08-17.",
+    "targets": ["meridian", "ulysses", "ensemble"]
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/117d9808ce7f93d3a85646b97b6421ecc0690a91/REQUESTS.md",
+  "source_commit": "117d9808ce7f93d3a85646b97b6421ecc0690a91",
+  "content_hash": "transcribed-ji2026001-e0002-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

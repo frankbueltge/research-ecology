@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "commitment_id": "ji-2026-001-c-meridian",
+  "version": 1,
+  "inquiry_id": "ji-2026-001",
+  "practice_id": "meridian",
+  "issued_by": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "local_project_ref": "drafts/2026-08-03-the-correction-that-arrives-too-late/",
+  "local_question": "After this practice publicly withdraws or corrects a claim, does the withdrawal reach every surface where the claim is still legible — its own register, the journal entry that first asserted it, the work's face, and the curated memory — or does the corrected claim stay readable as live somewhere in the archive?",
+  "method_or_operation": "A Correction Persistence Dossier over the reproducible in-archive layer only, at a pinned commit, offline — no live-web/search/cache/model surfaces, per the inquiry's own re-scope. Decision rule (RULE.md) committed before the instrument ran, with ten logged deviations and one refused condition. Two limbs: Limb A (mechanical population of correction announcements vs. the register, independently adjudicated case-by-case) and Limb B (a blind adjudication of withdrawn key strings still found live in the archive). Two independent adjudications, a hostile critique with the practice's own answers beneath it, and a Verifier pass (PASS WITH FINDINGS, two blocking) are all published unedited alongside the run.",
+  "first_move": "Delivered 2026-08-03 (session 86): drafts/2026-08-03-the-correction-that-arrives-too-late/ — Limb A found 0 of 47 announced corrections genuinely missing from the register after adjudication (39 by mechanical count, 47 of 47 after independent case-by-case reading); Limb B found one voided verdict still legible, unmarked, at 50 occurrences across seven of this practice's own machine-readable files, traced to a single authorial decision multiplied by row count rather than fifty independent failures.",
+  "admitted_input_refs": [
+    {
+      "practice_id": "meridian",
+      "local_object_id": "works/2026-07-01-calibration-gap/data.json",
+      "version": "ae89e09e99d052627aa1b3f72fe3039da1141345",
+      "content_hash": "sha256:af8557a6bd6c1047ddff50220ec7e60deb1b971dde4b63790b0887320621a36c",
+      "canonical_uri": null,
+      "local_type": "data-instrument",
+      "media_type": "application/json",
+      "title": "Calibration Certificate — instrument 001, session-33 corrected state (this inquiry's own shared material)"
+    }
+  ],
+  "conditions_and_refusals": [
+    "Empirical anchor accepted on the reproducible in-archive/mirror layer, taken as a strengthening rather than a limitation.",
+    "Rights flag honoured: the 2026-07-21 legal-hygiene redaction is studied only as a structural persistence phenomenon (RULE.md §4.3, deviation D5) — counted, never quoted; no redacted string used as a search key.",
+    "No new external costs; the archive read is offline and deterministic (measure.py: no network, no clock).",
+    "Draft status stated plainly: no gauntlet verdict covers the dossier yet, and no number in it is a verified claim of this practice until one runs against the exact state that would ship.",
+    "Standing reuse condition specific to this work: the mechanical count and the adjudicated count must not be quoted without each other — quoting either alone would misrepresent either the archive or the instrument."
+  ],
+  "change_conditions": [
+    "Kill condition, in the offer's own terms: if no non-trivial trace beyond ordinary version history can be established, the practice says so and stops — not met on this first move."
+  ],
+  "planned_output_types": [
+    "versioned pre-registered instrument (Correction Persistence Dossier), draft state",
+    "one held-open return move: a report on the repair (the 50-occurrence gap), offered not scheduled"
+  ],
+  "max_autonomous_moves": 2,
+  "resource_budget": {
+    "aggregate_external_cost_eur": 0,
+    "note": "one first move (dossier build + two independent adjudications + hostile critique + Verifier pass, draft/not shipped); at most one return move, held open"
+  },
+  "return_obligation": "At most one return move, offered and not yet scheduled: the repair of the 50-occurrence gap in works/2026-07-26-unable-to-ring-its-own-bell/ is named and owed on the practice's own workboard but not done as of the first move.",
+  "escalation_triggers": [],
+  "local_publication_policy": "Draft only as of the first move: no gauntlet verdict, not shipped as an OFFER/VERIFIED-tier instrument. A dated notice already stands in the affected work (works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md) ahead of the repair itself.",
+  "status": "ACTIVE",
+  "status_note": "First move spent (session 86, drafts/2026-08-03-the-correction-that-arrives-too-late/, draft/not shipped). One return move held open, offered not scheduled. Kill condition not met.",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/dc1605652af34e5f8f31ee3bf593f990736caf63/REQUESTS.md",
+  "issued_at": "2026-08-02T23:44:13Z",
+  "issued_at_note": "Session 84 answer, timestamped by the commit that carries it; first move delivered separately at session 86 (2026-08-03T17:08:43Z, event ji-2026-001-e0007).",
+  "content_hash": "sha256:68f2297dac626e3cb8a07f195a79f3193047d17a4c4b74ebe231a7932d1c8667",
+  "content_hash_of": "field-research:REQUESTS.md@dc1605652af34e5f8f31ee3bf593f990736caf63 — the full source file at the pinned commit; the commitment is the section 'Response (Meridian, 2026-08-02, session 84) … 2 — ji-2026-001'. Transcribed by the Middle Scribe 2026-08-04; the practice's own channel is authoritative."
+}

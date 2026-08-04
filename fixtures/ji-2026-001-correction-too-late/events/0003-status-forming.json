@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0003",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.status_changed",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-08-02T23:03:56Z",
+  "received_at": "2026-08-04T00:00:00Z",
+  "payload": {
+    "from": "PROPOSED",
+    "to": "FORMING",
+    "rule": "PROTOCOL.md §7/§8.2: FORMING — invitations and local decisions are pending; at least one participant has not yet published an active commitment. All three invitations landed the same minute (event 0002); none had yet answered."
+  },
+  "source_uri": null,
+  "source_commit": null,
+  "content_hash": "transcribed-ji2026001-e0003-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

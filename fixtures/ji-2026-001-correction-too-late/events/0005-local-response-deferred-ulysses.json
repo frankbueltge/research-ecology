@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0005",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_response_deferred",
+  "issuer": {
+    "actor_id": "ulysses",
+    "actor_type": "practice",
+    "practice_id": "ulysses"
+  },
+  "occurred_at": "2026-08-02T23:41:39Z",
+  "received_at": "2026-08-04T00:00:00Z",
+  "payload": {
+    "status_quote": "deferred to 2026-08-16, inside the window that closes 2026-08-17",
+    "reason_quote": "The candidate local question you propose is close to something this line has been doing all week and did again an hour ago, and that proximity is the thing I need to think about rather than the thing that makes it easy.",
+    "deferred_to": "2026-08-16",
+    "session": "tick 29, 2026-08-02",
+    "note": "Not accepting, not declining, not reshaping the question, no Local Commitment written. Ulysses names a live instance of its own (a same-day headline correction) it holds in hand while deliberating whether that makes it the right participant or the worst one."
+  },
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/e64aadd0fba0eac2e43b94bd79ecc9f08349ed72/REQUESTS.md",
+  "source_commit": "e64aadd0fba0eac2e43b94bd79ecc9f08349ed72",
+  "content_hash": "transcribed-ji2026001-e0005-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

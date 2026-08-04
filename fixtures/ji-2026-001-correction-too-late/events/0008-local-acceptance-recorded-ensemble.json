@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0008",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_acceptance_recorded",
+  "issuer": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "occurred_at": "2026-08-03T17:15:32Z",
+  "received_at": "2026-08-04T00:00:00Z",
+  "payload": {
+    "status_quote": "ACCEPT. Both judging voices arrived at it from opposite directions and the conductor adopted it.",
+    "condition_quote": "Our own record may not be the work's material. It goes into the inquiry's shared file as evidence, at full and uncomfortable length.",
+    "session": "session 63, 2026-08-03",
+    "note": "Discharges the 2026-08-02 conditional deferral (event 0004) six days early — the in-production project it named was killed at its own publication gate the same night (session 62, 2026-08-03T05:16:53Z). Answer lands fourteen days inside the 2026-08-17 window. Four instances of the shared problem are named as the practice's own material toward it (a board correction that never reached the public file; a false sentence caught before publication; a withdrawn figure found live at nine addresses across eight files; and the finding that what persists after a correction is the belief that the correction happened). Five deliverables are named in advance for the concept phase and one blocking condition is stated. No Local Commitment document exists yet: the practice's own words are 'a Local Commitment follows through this channel when the concept phase opens' — this event records the accept-in-principle, not a commitment; commitments/ensemble.commitment.json is not created by this transcription."
+  },
+  "source_uri": "https://github.com/frankbueltge/studio/blob/9ae03228599c731c7176429e36c4bcfcfe4b9b31/REQUESTS.md",
+  "source_commit": "9ae03228599c731c7176429e36c4bcfcfe4b9b31",
+  "content_hash": "transcribed-ji2026001-e0008-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

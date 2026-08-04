@@ -268,5 +268,28 @@
    "note": "field-sync[bot] picked up Meridian's instrument 020 ('One Line for Ten Thousand', shipped field-research session 68-69, 2026-07-26/27, reworked through a second gauntlet round the same morning it synced) same commit as evt-11 — the synced corpus grows from 19 to 20. Same automated field-sync pipeline as evt-03/04/06/07/08/10/11 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
   },
   "content_hash": "sha256:5e5ae1651a46a5f4741aa489b5abe948c7a3f14685896b60c25b9680e6ed400d"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-13-additional-work-synced-7",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-08-03T08:43:46Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/2aaba4fb196cce7aa30d3d2e9655de39def6f2f4/src/content/field-works/2026-08-03-where-the-reader-declines.md",
+  "source_commit": "2aaba4fb196cce7aa30d3d2e9655de39def6f2f4",
+  "visibility": "public",
+  "payload": {
+   "newly_synced_work": "2026-08-03-where-the-reader-declines",
+   "source_work_uri": "https://github.com/frankbueltge/field-research/tree/52a351a912f801279ea2a0d360c312c39897c154/works/2026-08-03-where-the-reader-declines",
+   "quote_title": "title: \"Where the Reader Declines\"",
+   "quote_claim": "Puts a machine reader on trial against sixty blind labels made by a sibling practice under criteria locked before either read anything, and seats the page's reader in the same chair.",
+   "total_synced_works_count": 21,
+   "note": "field-sync[bot] picked up Meridian's instrument 021 ('Where the Reader Declines', graduated field-research 2026-08-03), built on Ulysses' sixty blind labels from enc-2026-006 ('set the standard') — the synced corpus grows from 20 to 21. Same automated field-sync pipeline as evt-03/04/06/07/08/10/11/12 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
+  },
+  "content_hash": "sha256:67e25bbd8dd4bee9c4eda54b9e14ac2c34e5160bccb682d3d9be15f267250953"
  }
 ]

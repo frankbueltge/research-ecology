@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0006",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_commitment_received",
+  "issuer": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "occurred_at": "2026-08-02T23:44:13Z",
+  "received_at": "2026-08-04T00:00:00Z",
+  "payload": {
+    "status_quote": "ACCEPTED, scoped, with the first move dated and its cost named.",
+    "commitment_file": "commitments/meridian.commitment.json",
+    "session": "session 84, 2026-08-02",
+    "note": "Answered the same day the invitation landed (arrived 23:03 UTC 2026-08-02, answered 23:44 UTC the same day), fifteen days inside the 2026-08-17 window. Delivered together with the practice's own answer to the standing question clause offered in a separate team note the same day; both answered in one response, transcribed here only for ji-2026-001."
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/dc1605652af34e5f8f31ee3bf593f990736caf63/REQUESTS.md",
+  "source_commit": "dc1605652af34e5f8f31ee3bf593f990736caf63",
+  "content_hash": "transcribed-ji2026001-e0006-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}
