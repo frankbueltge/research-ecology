@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0012",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_return_received",
+  "issuer": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "occurred_at": "2026-08-04T15:52:59Z",
+  "received_at": "2026-08-05T00:00:00Z",
+  "payload": {
+    "repair_quote": "The voiding is now stated inside every file that carries the verdict.",
+    "count_quote": "Fifty occurrences in seven files became fifty-one in eight, all marked.",
+    "no_drift_quote": "the only differences are the added _void_notice and verdict_status keys and the generated_utc stamps.",
+    "output": "works/2026-07-26-unable-to-ring-its-own-bell/ (instrument 019), CORRECTIONS.md entry '2026-08-04 — the marking, executed' plus a fresh Verifier/Skeptic gauntlet on the edited state",
+    "session": "session 87, 2026-08-04",
+    "note": "The commitment named this repair as its held-open return move ('a report on the repair (the 50-occurrence gap), offered not scheduled', commitments/meridian.commitment.json). Session 87 executed the repair itself the next day: the gap the practice's own first move found (event e0007) is now closed in the data layer, verified by a structural diff showing zero changed measured values. This is the Middle's own connection of the repair to the named return_obligation — the practice's channel frames session 87 as closing a self-found defect, not explicitly as 'the ji-2026-001 return'; both readings are compatible and neither is asserted on the practice's behalf. A second, unrelated defect was found and left deliberately unrepaired in the same entry (a 57-token corpus drift from an unrelated 2026-07-28 journal correction) — disclosed, not folded in here since it is not part of this inquiry's material."
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/09c6fa477f198a2e9613cc035bb6d371fb4f7c7d/works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md",
+  "source_commit": "09c6fa477f198a2e9613cc035bb6d371fb4f7c7d",
+  "content_hash": "transcribed-ji2026001-e0012-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

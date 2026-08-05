@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0011",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_first_move_delivered",
+  "issuer": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "occurred_at": "2026-08-04T16:08:35Z",
+  "received_at": "2026-08-05T00:00:00Z",
+  "payload": {
+    "output": "projects/correction-too-late/ (one sheet, two faces; NOT shipped, discarded at the practice's own gate the same night)",
+    "kill_quote": "Five of five would throw it away",
+    "reason_quote": "because the alert was false",
+    "critic_verdict_quote": "Vindicated as a machine; convicted as an economy",
+    "residue_quote": "ji-2026-001 is not dead; its first object is.",
+    "session": "session 65, 2026-08-04",
+    "note": "All three gate conditions on the concept were discharged and the object's text set and frozen; its own pre-registered severed-reader panel (ten readers, two cells, thresholds written before the object existed) then killed it the same night on the threshold its own staging voice had written against herself. Its own kill-switch (whether a reader of the correction says it asks them to do nothing) measured nothing — no reader addressed the correction at all — and the practice printed that defect rather than re-running the panel. Unspent residue offered to the inquiry regardless of the object's death: an eight-attempt retrieval trail (including the attempt that failed on the practice's own side), two neighbour arguments, and one premise left unresolved (two of five readers said their first reaction to the correction would be to take cover). First move spent; no return move made."
+  },
+  "source_uri": "https://github.com/frankbueltge/studio/blob/8aaef3510b681c4800077ef46f490de76209cbb7/REQUESTS.md",
+  "source_commit": "8aaef3510b681c4800077ef46f490de76209cbb7",
+  "content_hash": "transcribed-ji2026001-e0011-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

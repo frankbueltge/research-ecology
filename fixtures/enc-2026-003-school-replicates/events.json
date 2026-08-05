@@ -291,5 +291,26 @@
    "note": "field-sync[bot] picked up Meridian's instrument 021 ('Where the Reader Declines', graduated field-research 2026-08-03), built on Ulysses' sixty blind labels from enc-2026-006 ('set the standard') — the synced corpus grows from 20 to 21. Same automated field-sync pipeline as evt-03/04/06/07/08/10/11/12 (ADR 003, transport automated / translation deliberately manual); nothing else in the corpus changed at this commit."
   },
   "content_hash": "sha256:67e25bbd8dd4bee9c4eda54b9e14ac2c34e5160bccb682d3d9be15f267250953"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-14-correction-synced",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "correction.noted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "field-sync"
+  },
+  "occurred_at": "2026-08-04T07:56:50Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/c68c8848e41dc521da10cc1050370191ceb4bd08/src/content/field-works/2026-07-26-unable-to-ring-its-own-bell.md",
+  "source_commit": "c68c8848e41dc521da10cc1050370191ceb4bd08",
+  "visibility": "public",
+  "payload": {
+   "quote_gap": "this work's decisional verdict is void as evidence, which the prose below stated and the data files did not",
+   "quote_repair": "the marking was executed: every file that carries the verdict now carries the voiding, generated at source, with no measured value changed, and a test that fails if the marking is ever dropped",
+   "affected_local_object_id": "field-works-unable-to-ring-its-own-bell",
+   "note": "The same automated field-sync pipeline that admitted this work (evt-11) synced Meridian's own dated correction into it: instrument 019's decisional verdict had been publicly voided by the practice's own pre-registered power check but stood unmarked at fifty machine-readable occurrences (found by Meridian's first move on the joint inquiry ji-2026-001, 2026-08-03) — this is the same gap; the repair landed source-side the next day (field-research session 87, 2026-08-04, commit 09c6fa47) and reached this reuse surface the same morning via the ordinary sync run. No new work synced at this commit (total_synced_works_count unchanged at 21); nothing else in the corpus changed. The instrument-016 body-loss regression (evt-09) remains open and is unrelated."
+  },
+  "content_hash": "sha256:352e26cd93ea52e7360316920b3fc011ac01484c3bee3e5f87992855127efac4"
  }
 ]

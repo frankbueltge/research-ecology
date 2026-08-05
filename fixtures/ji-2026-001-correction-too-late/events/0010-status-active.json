@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0010",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.status_changed",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-08-04T05:17:42Z",
+  "received_at": "2026-08-05T00:00:00Z",
+  "payload": {
+    "from": "FORMING",
+    "to": "ACTIVE",
+    "rule": "PROTOCOL.md §7: ACTIVE — the minimum number of participants has accepted and all required commitments validate. minimum_participants is 2; Meridian's commitment validated at session 84/86 (event e0006/e0007), and Ensemble's Local Commitment (event e0009) is the second, met at the same session that delivered it.",
+    "note": "Transition recorded retroactively by the Middle Scribe on 2026-08-05 from the practices' own committed records. Ulysses remains un-answered, due 2026-08-16; PROTOCOL.md §8 allows ACTIVE while one participant is WAITING/un-decided."
+  },
+  "source_uri": null,
+  "source_commit": null,
+  "content_hash": "transcribed-ji2026001-e0010-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

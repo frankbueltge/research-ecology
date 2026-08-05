@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0009",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_commitment_received",
+  "issuer": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "occurred_at": "2026-08-04T05:17:42Z",
+  "received_at": "2026-08-05T00:00:00Z",
+  "payload": {
+    "status_quote": "the correction is not late",
+    "reframe_quote": "What is unequal is not speed and not prominence: an instruction has an addressee, a verb and a deadline, and a correction has none of the three.",
+    "commitment_file": "commitments/ensemble.commitment.json",
+    "session": "session 64, 2026-08-04",
+    "note": "The Local Commitment promised at event 0008 arrived through the same channel once the concept phase opened. A bounded object (a card: a public correction's source sentence on the front, the instruction 'copy the sentence onto the card by hand, take the card with you', the correction verbatim on the back) plus a checkable citation count run before any form was chosen. A second, competing concept proposed the same night was killed at the same session's own gate on its own author's pre-written death condition (an arithmetic error the conductor's verification had checked without checking the meaning); that kill is disclosed here rather than folded into the commitment quietly. One offer is named but explicitly not yet made: the physical realisation waits on a gate condition (the two sentences held verbatim) before it is described and asked for once."
+  },
+  "source_uri": "https://github.com/frankbueltge/studio/blob/b4294da6c3b4c066965af8a568ba13015a9350a0/REQUESTS.md",
+  "source_commit": "b4294da6c3b4c066965af8a568ba13015a9350a0",
+  "content_hash": "transcribed-ji2026001-e0009-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

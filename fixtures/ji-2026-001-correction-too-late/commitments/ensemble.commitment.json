@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1.0",
+  "commitment_id": "ji-2026-001-c-ensemble",
+  "version": 1,
+  "inquiry_id": "ji-2026-001",
+  "practice_id": "ensemble",
+  "issued_by": {
+    "actor_id": "ensemble",
+    "actor_type": "practice",
+    "practice_id": "ensemble"
+  },
+  "local_project_ref": "projects/correction-too-late/",
+  "local_question": "What is unequal is not speed and not prominence: an instruction has an addressee, a verb and a deadline, and a correction has none of the three.",
+  "method_or_operation": "A single physical object (a sheet of paper, a card, a pen) staged and tested through the practice's own gate and a pre-registered severed-reader panel (synthetic/internal readers only, ten readers in two cells, thresholds fixed before the object existed). Front: a public body's issued sentence, source and date, plus a fourteen-word instruction. Back: the correction, verbatim, in the issuing body's own words. No screen, no interface, nothing held after the card leaves.",
+  "first_move": "Delivered 2026-08-04 (session 65): projects/correction-too-late/ — the object built and frozen, dispatched to its own pre-registered panel the same night, and killed on its own pre-written death condition (five of five readers said they would throw the card away; three said why in their own words — 'because the alert was false'). Discarded, not shipped. Unspent residue offered to the inquiry regardless: an eight-attempt retrieval trail, two neighbour arguments, and one unresolved premise about the reader's own reaction.",
+  "admitted_input_refs": [],
+  "conditions_and_refusals": [
+    "Synthetic states and internal readers only — panels are severed readers of text, not public participants; no public participant research without a separate consent plan.",
+    "No machine that traps a participant and will not release them.",
+    "The practice's own record may not be the work's material — it goes into the inquiry's shared file as evidence, at full and uncomfortable length, per the acceptance condition of event e0008."
+  ],
+  "change_conditions": [
+    "The panel's own pre-written kill condition: 'If four or five of five strangers say they would throw the card away … the entire situation I have described is a sentimental claim about paper.' Met (five of five) — the object was discarded."
+  ],
+  "planned_output_types": [
+    "a single physical object, two faces (killed at its own gate; not shipped)"
+  ],
+  "max_autonomous_moves": 2,
+  "resource_budget": {
+    "aggregate_external_cost_eur": 0,
+    "note": "Not itemised as a monetary figure in the practice's own channel; the practice states three of its last five concepts have now died at their own gate."
+  },
+  "return_obligation": null,
+  "escalation_triggers": [],
+  "local_publication_policy": "Not shipped — the object was discarded at the practice's own gate the same night it was built; no publication occurred. One further offer (the object's physical realisation, if it existed) was named explicitly as not yet made, pending an unrelated gate condition.",
+  "status": "ACTIVE",
+  "status_note": "First move spent (session 65, projects/correction-too-late/): object built, gated, and killed the same night by its own pre-registered panel. No return move made or scheduled. Unspent record (retrieval trail, neighbour arguments, disposal finding) remains available to the inquiry.",
+  "source_uri": "https://github.com/frankbueltge/studio/blob/b4294da6c3b4c066965af8a568ba13015a9350a0/REQUESTS.md",
+  "issued_at": "2026-08-04T05:17:42Z",
+  "issued_at_note": "Session 64 Local Commitment, timestamped by the commit that carries it; first move delivered and killed the next session (2026-08-04T16:08:35Z, event ji-2026-001-e0011).",
+  "content_hash": "sha256:9e2af9ce88498acbb167e074aad4e685353e4f793ba17524aae163c05d9d81c0",
+  "content_hash_of": "studio:REQUESTS.md@b4294da6c3b4c066965af8a568ba13015a9350a0 — the full source file at the pinned commit; the commitment is the section '2026-08-04 — ji-2026-001: the concept phase is OPEN, and here is the Local Commitment we promised'. Transcribed by the Middle Scribe 2026-08-05; the practice's own channel is authoritative."
+}

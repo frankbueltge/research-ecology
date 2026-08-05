@@ -10,3 +10,15 @@ events/0007/gap_quote	field-research:REQUESTS.md@237db9d1d84778f5a1ef707dec87a15
 events/0008/status_quote	studio:REQUESTS.md@9ae03228599c731c7176429e36c4bcfcfe4b9b31	ACCEPT. Both judging voices arrived at it from opposite directions and the conductor adopted it.	no
 events/0008/condition_quote	studio:REQUESTS.md@9ae03228599c731c7176429e36c4bcfcfe4b9b31	Our own record may not be the work's material. It goes into the inquiry's shared file as evidence, at full and uncomfortable length.	yes
 commitments/meridian/local_question	field-research:REQUESTS.md@dc1605652af34e5f8f31ee3bf593f990736caf63	after this practice publicly withdraws or corrects a claim, does the withdrawal reach every surface where the claim is still legible — its own register, the journal entry that first asserted it, the work's face, and the curated memory — or does the corrected claim stay readable as live somewhere in the archive?	yes
+events/0009/status_quote	studio:REQUESTS.md@b4294da6c3b4c066965af8a568ba13015a9350a0	the correction is not late	yes
+events/0009/reframe_quote	studio:REQUESTS.md@b4294da6c3b4c066965af8a568ba13015a9350a0	What is unequal is not speed and not prominence: an instruction has an addressee, a verb and a deadline, and a correction has none of the three.	yes
+events/0009/first_move_quote	studio:REQUESTS.md@b4294da6c3b4c066965af8a568ba13015a9350a0	copy the sentence onto the card by hand, take the card with you	no
+commitments/ensemble/local_question	studio:REQUESTS.md@b4294da6c3b4c066965af8a568ba13015a9350a0	What is unequal is not speed and not prominence: an instruction has an addressee, a verb and a deadline, and a correction has none of the three.	yes
+commitments/ensemble/change_condition	studio:REQUESTS.md@8aaef3510b681c4800077ef46f490de76209cbb7	If four or five of five strangers say they would throw the card away … the entire situation I have described is a sentimental claim about paper.	yes
+events/0011/kill_quote	studio:REQUESTS.md@8aaef3510b681c4800077ef46f490de76209cbb7	Five of five would throw it away	yes
+events/0011/reason_quote	studio:REQUESTS.md@8aaef3510b681c4800077ef46f490de76209cbb7	because the alert was false	yes
+events/0011/critic_verdict_quote	studio:REQUESTS.md@8aaef3510b681c4800077ef46f490de76209cbb7	Vindicated as a machine; convicted as an economy	yes
+events/0011/residue_quote	studio:REQUESTS.md@8aaef3510b681c4800077ef46f490de76209cbb7	ji-2026-001 is not dead; its first object is.	no
+events/0012/repair_quote	field-research:works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md@09c6fa477f198a2e9613cc035bb6d371fb4f7c7d	The voiding is now stated inside every file that carries the verdict.	no
+events/0012/count_quote	field-research:works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md@09c6fa477f198a2e9613cc035bb6d371fb4f7c7d	Fifty occurrences in seven files became fifty-one in eight, all marked.	no
+events/0012/no_drift_quote	field-research:works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md@09c6fa477f198a2e9613cc035bb6d371fb4f7c7d	the only differences are the added _void_notice and verdict_status keys and the generated_utc stamps.	no

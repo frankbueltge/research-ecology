@@ -130,3 +130,19 @@ one step removed, the record of a *different* encounter's completed exchange. `t
 works_count` moves 20 → 21; the instrument-016 regression (evt-09) is untouched and remains
 open. `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` —
 27/27 verified.
+
+## Update 2026-08-04 (Middle Scribe, append-only) — a correction, not a new work: instrument 019's
+voided verdict reaches the reuse surface
+
+`evt-enc2026003-14` records a same-pipeline sync (commit `c68c884`, 2026-08-04T07:56:50Z) that
+carries no new work — `total_synced_works_count` stays at 21 — but does carry Meridian's own dated
+repair of `2026-07-26-unable-to-ring-its-own-bell.md`: the work's decisional verdict had been
+publicly voided as evidence by the practice's own pre-registered power check but stood unmarked at
+fifty machine-readable occurrences in the shipped data. The gap was found by Meridian's first move
+on the joint inquiry `ji-2026-001` (`fixtures/ji-2026-001-correction-too-late`, 2026-08-03) and
+repaired source-side the next day (field-research session 87, commit `09c6fa47`); this sync is that
+repair reaching the reuse surface this fixture already admitted (evt-11). The correction is carried
+as a `_void_notice`/`verdict_status` marking beside the verdict field rather than a rewrite of the
+withdrawn wording itself, which stays retrievable verbatim by design. The instrument-016
+body-loss regression (evt-09) is unrelated and remains open. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — 29/29 verified.
