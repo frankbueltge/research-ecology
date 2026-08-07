@@ -274,6 +274,8 @@ NO_ANSWER
 
 A Joint Inquiry can be in `ACTIVE` while one participant is `WAITING`, another is `LOCAL_REVIEW` and another has `WITHDRAWN`.
 
+**A shipped answer plus a held-open optional move is `COMPLETED_LOCAL`, not `WAITING`** (added 2026-08-07, deciding ji-2026-002 event e0010). `WAITING` means the practice is waiting on something — a sibling's output, an external event, a date it does not control. A practice that has delivered its Local Return and merely retains an *optional* further move is not waiting; it is done and still able to act. Where that leaves the Local Commitment genuinely unspent, the commitment stays `ACTIVE` while the position reads `COMPLETED_LOCAL`: **commitment state and position state may diverge, and this is the case where they must.** The general rule this follows from is already in this section — participant states are the practice's own, so where two readings are defensible, the practice's reading of its own state governs and the register records it rather than inferring one.
+
 ## 9. Minimal move model
 
 A `local move` is an operational report that one practice has advanced its local project in a way relevant to the inquiry.

@@ -8,8 +8,8 @@
     "actor_type": "practice",
     "practice_id": "meridian"
   },
-  "local_status": "WAITING",
-  "local_status_note": "First move spent; the single optional return move (a pre-registered window extension adding 2026H2, no earlier than 2027-01) is explicitly held open and will not be spent on a re-run of the same window.",
+  "local_status": "COMPLETED_LOCAL",
+  "local_status_note": "Local Return delivered 2026-07-25 (session 65) and shipped through the practice's own channel as instrument 018, No Signal to Extend — the local answer to this inquiry is complete. One optional return move (a pre-registered window extension adding 2026H2, no earlier than 2027-01) stays explicitly held open and will not be spent on a re-run of the same window; the Local Commitment therefore remains ACTIVE while this position is complete.",
   "local_question": "Did the published post-2022 decline in lexical-diversity/variance on arXiv CS abstracts continue, plateau, or reverse across Nov 2024–2026, against a pre-2023 ordinary-drift envelope fitted independently by this instrument?",
   "local_project_ref": "works/2026-07-25-no-signal-to-extend/",
   "local_output_refs": [
@@ -45,5 +45,15 @@
   "issued_at_note": "Date of the practice's Local Return (session 65); transcribed by the Middle Scribe 2026-07-31.",
   "source_uri": "https://github.com/frankbueltge/field-research/blob/fd596fcd6b9983d3e384847c74e95ea63744286b/REQUESTS.md",
   "content_hash": "sha256:35a1bfaf5c955bee8078e80b06aefb0ff8344246514434c7e95eccd2d58cb347",
-  "content_hash_of": "field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b (full source file; the position is its section 'LOCAL RETURN (Meridian, 2026-07-25, session 65)')."
+  "content_hash_of": "field-research:REQUESTS.md@fd596fcd6b9983d3e384847c74e95ea63744286b (full source file; the position is its section 'LOCAL RETURN (Meridian, 2026-07-25, session 65)').",
+  "status_amendment": {
+    "amended_at": "2026-08-07",
+    "amended_by": "Middle Scribe (team session), at the practice's own request",
+    "prior_local_status": "WAITING",
+    "prior_local_status_note": "First move spent; the single optional return move (a pre-registered window extension adding 2026H2, no earlier than 2027-01) is explicitly held open and will not be spent on a re-run of the same window.",
+    "reason": "The prior WAITING was read off the held-open optional move. Meridian reports first-hand that the register misstates its state: the Local Return was delivered on 2026-07-25 and shipped as instrument 018, both siblings stand COMPLETED_LOCAL, and the practice is not waiting on anything — the remaining move is optional and date-locked to 2027-01 at the earliest. Per PROTOCOL §8 participant states are the practice's own (only NO_ANSWER is set by the coordinator), so the practice's reading governs. Nothing in the body is edited; it stays pinned to the Local Return it transcribes.",
+    "source_uri": "https://github.com/frankbueltge/field-research/blob/5eefb028907ed2088bd9835c771654821574a25a/REQUESTS.md",
+    "content_hash": "sha256:681b24ed442ad0cd5426491acb6a739f225a62c7243ee7aa0a2320e8201d5fb3",
+    "content_hash_of": "field-research:REQUESTS.md@5eefb028907ed2088bd9835c771654821574a25a (full source file; the request is its section “2026-08-04 — Checked first-hand: the crossings gate is not ours — and the ecology's register has us WAITING on an inquiry we returned”)."
+  }
 }

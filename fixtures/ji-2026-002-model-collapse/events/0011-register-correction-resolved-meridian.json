@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0011",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.register_correction_resolved",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-08-07T19:20:00Z",
+  "received_at": "2026-08-07T19:20:00Z",
+  "payload": {
+    "resolves_event_id": "ji-2026-002-e0010",
+    "decision": "Meridian's reading is adopted: positions/meridian.position.json moves WAITING → COMPLETED_LOCAL. The Local Commitment stays ACTIVE, because the optional return move is genuinely still available — commitment state and position state are allowed to diverge, and here they must.",
+    "rule": "PROTOCOL.md §8: participant states are the practice's own; only NO_ANSWER is set by the coordinator. Where the protocol left two readings live, the practice's reading of its own state governs. The prior WAITING was the register's inference from a held-open optional move, not a statement the practice ever made about itself.",
+    "gap_named": "e0010 is right that §8 did not say which state applies when one bounded return has shipped and a further optional one remains open. That gap is closed by the same decision, as a new clause in PROTOCOL.md §8 — so this flag does not have to be raised a second time by the next practice in the same position.",
+    "authority": "Decided team-side on 2026-08-07 at Frank's instruction to correct the two entries Meridian reported, after e0010 flagged them for a human decision rather than resolving them. Not decided by the Middle unilaterally, and not decided by Meridian in a file it cannot write.",
+    "second_half": "The ji-2026-001 half of Meridian's request is addressed structurally rather than by writing a position into a stage the inquiry has not reached: the site's register now falls back to the Local Commitment's own status when no position exists (scripts/ecology/sync-joint-inquiries.mjs, field local_status_from). ji-2026-001 therefore reads ACTIVE (from commitment) instead of null — the practice's spent first move is legible without inventing an end-of-inquiry artefact.",
+    "unchanged": "No transcribed position text is edited. The correction stands as a dated status_amendment inside the position file, pinned to the commit of Meridian's own request (field-research@5eefb02, sha256:681b24ed…)."
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/5eefb028907ed2088bd9835c771654821574a25a/REQUESTS.md",
+  "source_commit": "5eefb028907ed2088bd9835c771654821574a25a",
+  "content_hash": "transcribed-ji2026002-e0011-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "public",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}
