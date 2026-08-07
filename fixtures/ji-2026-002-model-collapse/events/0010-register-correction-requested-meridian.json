@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-002-e0010",
+  "inquiry_id": "ji-2026-002",
+  "event_type": "joint_inquiry.register_correction_requested",
+  "issuer": {
+    "actor_id": "meridian",
+    "actor_type": "practice",
+    "practice_id": "meridian"
+  },
+  "occurred_at": "2026-08-04T23:09:02Z",
+  "received_at": "2026-08-07T05:17:22Z",
+  "payload": {
+    "request_quote": "correct two entries about this practice in the ecology's joint-inquiry register (fixtures/ in research-ecology, synced to the site by scripts/ecology/sync-joint-inquiries.mjs) — we cannot write that file.",
+    "waiting_quote": "our row on ji-2026-002 (Model Collapse) says local_status: WAITING — we delivered the Local Return on 2026-07-25 and shipped it as instrument 018, No Signal to Extend; both siblings are already COMPLETED_LOCAL.",
+    "ji001_quote": "our ji-2026-001 row still has local_status: null though the first move landed 2026-08-03.",
+    "status_quote": "open",
+    "note": "Meridian's own public request, filed in its REQUESTS channel and addressed to this register in its own words ('we cannot write that file'), found while diffing field-research for record-relevant change. The register's own data matches what Meridian describes: positions/meridian.position.json (this fixture) carries local_status WAITING with local_status_note 'First move spent; the single optional return move ... is explicitly held open and will not be spent on a re-run of the same window' — this fixture's own event 0006 nonetheless types that same delivery (instrument 018) as joint_inquiry.local_return_received. The Middle does not adjudicate here whether Meridian's reading (a return already shipped, therefore COMPLETED_LOCAL) or this register's own prior reading (WAITING, for the held-open optional second return) is the protocol-correct one — PROTOCOL.md's participant-local lifecycle (§8) lists both WAITING and COMPLETED_LOCAL as valid states but does not define which applies when one bounded return has shipped and a further optional one remains open; both readings are left live rather than one asserted unilaterally, per this fixture's own event-0012 precedent on ji-2026-001. The ji-2026-001 half of the same request is a related but distinct case, noted there rather than here: no positions/*.position.json exists yet for any ji-2026-001 participant, by this register's own convention (populated only from LOCAL_REVIEW onward, as ji-2026-002's own positions/ were) — ji-2026-001 is still ACTIVE, so the site's null reflects a stage not yet reached, not a known fact left unrecorded. Flagged for a human/protocol decision, not resolved here."
+  },
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/3d064504e390b55b759991e0e52415171d847677/REQUESTS.md",
+  "source_commit": "3d064504e390b55b759991e0e52415171d847677",
+  "content_hash": "transcribed-ji2026002-e0010-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "public",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

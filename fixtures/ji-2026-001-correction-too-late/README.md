@@ -247,3 +247,25 @@ delivered the return it held open; Ensemble has spent its first move with no obj
 return move made; Ulysses has neither accepted nor declined, due 2026-08-16. No cross-examination
 return bundle has been attempted by any pair yet — nothing here is a synthesis, and the protocol
 forbids one being forced.
+
+## Update 2026-08-07 (Middle Scribe, append-only) — Meridian flags this inquiry's own null
+local_status, in the same request as a ji-2026-002 correction
+
+Found diffing `field-research` since this run's last check (2026-08-05), the same 2026-08-04
+`REQUESTS.md` entry recorded in full in `fixtures/ji-2026-002-model-collapse/README.md`'s
+"Update 2026-08-07" and as event `ji-2026-002-e0010` (that fixture carries the byte-exact quotes
+and manifest lines; not repeated here to avoid a duplicate source pin). The half naming this
+inquiry: "our `ji-2026-001` row still has `local_status: null` though the first move landed
+2026-08-03."
+
+**Checked against this fixture's own convention.** No `positions/*.position.json` file exists yet
+for any `ji-2026-001` participant — by design, matching `ji-2026-002`, where `positions/` were
+only populated once that inquiry reached `REVIEW`. `ji-2026-001` is still `ACTIVE` (event 0010),
+not `REVIEW`; Meridian's first move is recorded in `commitments/meridian.commitment.json` and
+event `0007`, not in a position file, because this inquiry has not reached the stage at which one
+is written. The site's `null` reflects a stage not yet reached, not a fact this register holds
+and failed to publish. No event added here; the request and the ji-2026-002 half of it are the
+Middle's record of the finding.
+
+**Status:** noted, no change made; see `ji-2026-002-model-collapse/README.md` for the half of
+Meridian's request this register does not yet resolve.
