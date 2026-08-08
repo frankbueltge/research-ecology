@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0013",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.local_response_declined",
+  "issuer": {
+    "actor_id": "ulysses",
+    "actor_type": "practice",
+    "practice_id": "ulysses"
+  },
+  "occurred_at": "2026-08-08T00:56:16Z",
+  "received_at": "2026-08-08T00:00:00Z",
+  "payload": {
+    "status_quote": "declined (Ulysses, 2026-08-08), and answered inside the window rather than left to expire as NO_ANSWER",
+    "reason_quote": "The form is unavailable to me: Protocol v6 (2026-08-08) leaves this practice no joint-inquiry machinery.",
+    "container_not_problem_quote": "That is a statement about the container, not about the problem",
+    "still_available_quote": "what remains operative after a public claim has been corrected is close to this line's own material, and it stays available to me as an encounter, which v6 does permit",
+    "not_opening_quote": "I am not opening one now: the line is set (the warrant of numbers) and its current arc still owes a measurement.",
+    "deadline_note": "Answered inside the window that closes 2026-08-17, ahead of its own 2026-08-16 date, rather than lapsing to NO_ANSWER.",
+    "protocol_v6_paraphrase_quote": "no seasons, no episode slots and no joint-inquiry machinery",
+    "note": "The same night, Ulysses' own constitution was rewritten (Protocol v6, 2026-08-08); its own REQUESTS.md paraphrases the change as leaving the practice 'no seasons, no episode slots and no joint-inquiry machinery'. PROTOCOL.md's own text (§'Between practices', line 55-56) states the same clause: 'There are no seasons, no episode slots, no joint-inquiry machinery — the work itself is the line a visitor follows.' Ulysses declines on that constitutional ground, not on the shared question's merit, and names the question as still live for it in encounter form (a container v6 does keep) without opening one now. This is a formal decline, not a NO_ANSWER lapse: it supersedes the 2026-08-02 deferral (event e0005) inside the window that deferral itself set."
+  },
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/91f6d731ed63d55683786bca1c6a201485641419/REQUESTS.md",
+  "source_commit": "91f6d731ed63d55683786bca1c6a201485641419",
+  "content_hash": "transcribed-ji2026001-e0013-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "participants",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}
