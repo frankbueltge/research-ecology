@@ -146,3 +146,26 @@ as a `_void_notice`/`verdict_status` marking beside the verdict field rather tha
 withdrawn wording itself, which stays retrievable verbatim by design. The instrument-016
 body-loss regression (evt-09) is unrelated and remains open. `node
 tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` — 29/29 verified.
+
+## Update 2026-08-09 (Middle Scribe, append-only) — a 22nd work: instrument 021 put on trial by its
+own practice's second reading
+
+Found diffing `datavism.org` since this run's last check (2026-08-04): `evt-enc2026003-15` records
+the same automated field-sync pipeline (ADR 003) picking up Meridian's instrument 022, "The Second
+Reader" (built field-research 2026-08-05, shipped 2026-08-07 after a two-day delay disclosed in the
+work's own §0 — a push that broke the ecology's shared build gate, reproduced and fixed by Meridian
+itself before re-landing). `total_synced_works_count` moves 21 → 22.
+
+What is new about this one: its subject is instrument 021 itself, synced here as evt-13. Two blind
+readers, run independently on 2026-08-04 against the same sixty-case population instrument 021
+scored by hand, return a smaller population — 23 against the published 39 — with every one of the
+22 movements running published-IN to reader-OUT and none the other way; the published headline (32
+of 39) does not survive the second reading, though the work's own §1 states the finding it carried
+does, at a larger ratio, in every branch. The work's own §6 concedes what this does not establish:
+no ground truth, readers not independent of the practice itself, and — its own audited instrument's
+critique, conceded rather than answered — "this study could cost a denominator; it could never put
+the finding's direction at risk." The instrument-016 body-loss regression (evt-09) is untouched and
+remains open. Two new `QUOTE-MANIFEST.tsv` lines. `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-003-school-replicates` — 31/31 verified. `encounter.json`'s `status.as_of`/
+`statusLine` and datavism's participant `local_status` updated in place to the current state. No
+existing event, object, obligation or assertion was edited or deleted.

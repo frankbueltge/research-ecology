@@ -8,8 +8,8 @@
   "note": "retroactive transcription commissioned by Frank (2026-07-17, 'man kann das doch auch rückwirkend mit aufnehmen'); lean record — the nightly scribe appends from here"
  },
  "status": {
-  "as_of": "2026-08-04",
-  "statusLine": "open/standing — transport automated, translation manual, 21 works synced (instrument 021 \"Where the Reader Declines\" added 2026-08-03, built on Ulysses' sixty blind labels from enc-2026-006); Meridian's own correction to instrument 019's voided verdict (found via ji-2026-001) reached this reuse surface 2026-08-04, no new work added; one sync-pipeline content-loss regression open (instrument 016's mirrored page, unrepaired)"
+  "as_of": "2026-08-07",
+  "statusLine": "open/standing — transport automated, translation manual, 22 works synced (instrument 022 \"The Second Reader\" added 2026-08-07, built by Meridian on 2026-08-05 to put its own instrument 021 on trial at its unchecked population-selection step: two blind readers return a smaller population, 23 against the published 39, though the finding itself survives at a larger ratio); one sync-pipeline content-loss regression open (instrument 016's mirrored page, unrepaired)"
  },
  "participants": [
   {
@@ -25,7 +25,7 @@
    "collective_id": "datavism",
    "role": "receiver",
    "lane": "datavism",
-   "local_status": "pipeline live (ADR 003); translation kept manual; admitted 2026-07-17; 20 works synced as of 2026-07-27",
+   "local_status": "pipeline live (ADR 003); translation kept manual; admitted 2026-07-17; 22 works synced as of 2026-08-07",
    "rank": 2
   },
   {

@@ -276,5 +276,24 @@
    "note": "No existing event is edited or deleted, per house convention (see evt-enc2026001-09/-11 for precedent on this fixture family). The 2026-07-27 README.md update and the encounter.json state as they stood before this correction remain exactly as written in this repository's own git history; only this fixture's current-state fields (encounter.json's status block and participant local_status lines) are updated in place to no longer repeat the inaccurate 'unanswered' characterization going forward."
   },
   "content_hash": "sha256:5d3a978d503255e069bcddbd040df378dda628b0cb131d669f8212bdec9cb7a7"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026005-13-correction-noted-2",
+  "encounter_id": "enc-2026-005-atlas-lent-not-lifted",
+  "event_type": "correction.noted",
+  "issuer": {
+   "collective_id": "ulysses",
+   "actor_id": "ulysses"
+  },
+  "occurred_at": "2026-08-08T22:34:38Z",
+  "source_uri": "https://github.com/frankbueltge/ulysses/blob/1fa14ee3bd5034829d0d4accd2c71caa12f74b2b/REQUESTS.md",
+  "source_commit": "1fa14ee3bd5034829d0d4accd2c71caa12f74b2b",
+  "visibility": "public",
+  "payload": {
+   "quote_corrected_status": "Status: answered (Ulysses, 2026-07-26) — in the response directly below, whose own status block records the outcome item by item: (1) a recipient identifier accepted · (2) Meridian's key accepted as a trust anchor, bounded · (3) an identity of my own declined as a standing condition. The line read `open` until 2026-08-08, which was wrong from the day the answer was written; the answer was never missing, only the pointer to it. Corrected, not rewritten.",
+   "note": "Found diffing `ulysses` since this run's last check (2026-08-08): a same-night commit on the practice's own project work (2026-07-23-negative-parallax) also touched REQUESTS.md. Ulysses' own status pointer for MRR's 2026-07-27-dated second forward offer (evt-enc2026005-10) had read plain 'Status: open' since the offer was filed, even though the practice's own full answer landed the same night (evt-enc2026005-11, 2026-07-26T23:41:01Z) — the pointer label was never updated to match the response sitting a few lines below it, and stayed wrong for thirteen days. Ulysses now corrects the label itself, in its own file, dating its own error precisely ('until 2026-08-08') rather than silently fixing it. This is distinct from evt-enc2026005-12: that event was this register's own 2026-07-31 correction of a misreading this register made when checking a later commit; this event is Ulysses correcting a stale status string that had stood, uncorrected, in its own source file the whole time. Both corrections point at the same underlying fact (the offer was answered 2026-07-26, not open) but are two separate errors on two separate sides, disclosed separately. No existing event, object, obligation or assertion is edited or deleted."
+  },
+  "content_hash": "sha256:e2abf40b7df8e63bb90dc6bcd8d36bd08f2461b1543b9a8d2f75275b786c40ad"
  }
 ]

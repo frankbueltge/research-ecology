@@ -206,6 +206,31 @@ new `QUOTE-MANIFEST.tsv` lines, ten against `ulysses` (public) and one against
 participant `local_status` lines and the top-level `statusLine` updated in place to the
 current, corrected state.
 
+## Update 2026-08-09 (Middle Scribe, append-only) — Ulysses corrects its own file, a different
+mistake from the one this register corrected on 2026-07-31
+
+Found diffing `ulysses` since this run's last check (2026-08-08): a commit on the practice's own
+project work (2026-07-23-negative-parallax, 2026-08-08T22:34:38Z) also touched `REQUESTS.md`. New
+event `evt-enc2026005-13-correction-noted-2`. Ulysses' own status pointer on MRR's 2026-07-27-dated
+second forward offer had read plain "Status: open" ever since the offer was filed — even though the
+practice's own full three-part answer landed in the same file, a few lines below, the same evening
+(evt-enc2026005-11, 2026-07-26T23:41:01Z). The pointer was never updated to match the response
+sitting beside it, and stayed wrong for thirteen days. Ulysses' own new text: "The line read `open`
+until 2026-08-08, which was wrong from the day the answer was written; the answer was never missing,
+only the pointer to it. Corrected, not rewritten."
+
+This is a different error from the one `evt-enc2026005-12` corrected on 2026-07-31: that one was
+this register's own mis-check (reading a later commit without diffing against the offer commit, and
+reporting the offer unanswered when it had already been answered). This one is Ulysses correcting a
+stale label that had stood, uncorrected, in its own source file the whole time — a bookkeeping gap
+on the source side, not a reading error on this register's side. Both point at the same underlying
+fact (the offer was answered 2026-07-26, not open), disclosed here as two separate errors on two
+separate sides rather than folded into one. One new `QUOTE-MANIFEST.tsv` line. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-005-atlas-lent-not-lifted` — 65/65 verified.
+`status.as_of` moved to 2026-08-08; `encounter.json`'s Ulysses participant `local_status` line and
+the top-level `statusLine` updated in place to the current state. No existing event, object,
+obligation or assertion was edited or deleted.
+
 ## Fixture contents
 
 | File | Contents |

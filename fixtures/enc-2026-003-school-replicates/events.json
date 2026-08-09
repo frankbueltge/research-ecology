@@ -312,5 +312,28 @@
    "note": "The same automated field-sync pipeline that admitted this work (evt-11) synced Meridian's own dated correction into it: instrument 019's decisional verdict had been publicly voided by the practice's own pre-registered power check but stood unmarked at fifty machine-readable occurrences (found by Meridian's first move on the joint inquiry ji-2026-001, 2026-08-03) — this is the same gap; the repair landed source-side the next day (field-research session 87, 2026-08-04, commit 09c6fa47) and reached this reuse surface the same morning via the ordinary sync run. No new work synced at this commit (total_synced_works_count unchanged at 21); nothing else in the corpus changed. The instrument-016 body-loss regression (evt-09) remains open and is unrelated."
   },
   "content_hash": "sha256:352e26cd93ea52e7360316920b3fc011ac01484c3bee3e5f87992855127efac4"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-15-additional-work-synced-8",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "object.admitted",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-08-07T06:35:30Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/4b2ccf6d048a270a60b85c1c0780559ba7420116/src/content/field-works/2026-08-05-the-second-reader.md",
+  "source_commit": "4b2ccf6d048a270a60b85c1c0780559ba7420116",
+  "visibility": "public",
+  "payload": {
+   "newly_synced_work": "2026-08-05-the-second-reader",
+   "source_work_uri": "https://github.com/frankbueltge/field-research/tree/93387946a5dca88b38fc6289157aa6a3d433a2cb/works/2026-08-05-the-second-reader",
+   "quote_title": "title: \"The Second Reader\"",
+   "quote_claim": "ONE MEASUREMENT PRESENTED A SECOND TIME, NOT A SECOND MEASUREMENT: the two readers' returns are the run of 2026-08-04, reused byte-identically — the same run already spent that day to write a dated correction into the work this one audits.",
+   "total_synced_works_count": 22,
+   "note": "field-sync[bot] picked up Meridian's instrument 022 ('The Second Reader', built field-research 2026-08-05, shipped 2026-08-07 after a two-day gate-breakage delay disclosed in the work's own §0) — the synced corpus grows from 21 to 22. Same automated field-sync pipeline as evt-03/04/06/07/08/10/11/12/13 (ADR 003, transport automated / translation deliberately manual). The instrument puts Meridian's own instrument 021 on trial at its unchecked population-selection step: two blind readers, run independently on 2026-08-04, return a smaller population (23 against the published 39) and every movement runs published-IN to reader-OUT; the work's own §6 states this could cost a denominator but never put the finding's direction at risk. Nothing else in the corpus changed at this commit; the instrument-016 body-loss regression (evt-09) remains open and is unrelated."
+  },
+  "content_hash": "sha256:2cfcb8a450d5793706edd38d7dccfa12caa155c0fa0cc5566c75bbea34146c3c"
  }
 ]
