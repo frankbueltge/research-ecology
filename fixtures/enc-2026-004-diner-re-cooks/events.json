@@ -387,5 +387,28 @@
    "note": "The same commit that grew the corpus to eleven (evt-enc2026004-16) re-voiced native-speaker.mdx and split-seal.mdx yet again, extending the pattern evt-06/evt-12/evt-15 disclosed. native-speaker.mdx's title flips back to 'The Machine's Judgment', reversing evt-15's flip to 'The Gate's Judgment' — a fourth flip across the record since birth (birth: 'The Machine's Judgment'; evt-12 checked it unchanged as 'The Gate's Judgment'; 5ff8616 flipped it to 'The Machine's Judgment', undisclosed until evt-15; evt-15/853b3ae9 flipped it back to 'The Gate's Judgment'; this run, 83efcdd1f, flips it back once more). Teaser and hookStat are reworded again, and — new to this pattern — the body prose itself was substantially rewritten a second time (first silently reworded at 853b3ae9/evt-15's own commit without disclosure, now again here), not only the frontmatter fields evt-12/evt-15 named. split-seal.mdx's headline number (hookStatBig) flips back from '6' (Valid-stamp count, set at evt-15/853b3ae9) to '15' (specimen count, its original value); title is unchanged this run ('The Split Seal: Trust-Blind Manifests'), but teaser and hookStat are reworded again. Neither carries a new load-bearing caveat; nothing in the cook template's schema marks any of this as a correction or a version — the only trace remains git history itself. The diner's 'One Tap' Quick Snack ('The Dalles Concealment Case') was not touched by this run either — it still carries the pre-kill gauntlet value and the superseded 'Kritiker: PREMIERE STANDS' verdict (evt-11/evt-13), unreacted to as of this check (2026-07-30), roughly four and a half days after the source kill (evt-13, 2026-07-25T22:42:25Z)."
   },
   "content_hash": "sha256:991faa5af0c0290768bb66a969b690916481ae1a0d0a0d0c208e92fa79e94c68"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-18-cook-silently-stalled",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-07-30T07:17:15Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/blob/bf3e977d0c1640ef3214457d04b160c4fbb7c320/prototype-v2/scripts/pipeline/run.ts",
+  "visibility": "public",
+  "payload": {
+   "quote_schedule": "cron: '37 4 * * *' # daily 04:37 UTC (after brain-ingest at 04:17)",
+   "quote_no_sources": "no sources cited",
+   "quote_exit_guard": "if (write && hardFails.length > 0) process.exitCode = 1;",
+   "evidence_commits": ["83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9"],
+   "blocking_upstream_work": "field-research/2026-07-26-unable-to-ring-its-own-bell",
+   "finding": "The automation named 'armed' at evt-enc2026004-07 is still scheduled and still running daily (.github/workflows/upstream-cook.yml, unchanged cron) but has published nothing to prototype-v2/src/content/quick/ since evt-enc2026004-17's commit (83efcdd1f, 2026-07-29T07:27:25Z) — checked directly against the workflow's own run history (frankbueltge/data-snack.com, workflow 'upstream-auto-cook'): every scheduled run from 2026-07-30 through 2026-08-10 (12 consecutive runs) shows its 'Cook passing specials' step failing, and every step after it (gates, publish, deploy) skipped as a result. The cause is a single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, whose README carries a load-bearing caveat (passing the detect-stage gate at evt-04/evt-08's fail-safe) but cites no sources — failing validate.ts's separate sources check ('no sources cited', validate.ts:100) — while the orchestrator's own exit-code guard (run.ts, quoted above) fails the whole script the moment any one work hard-fails, not only that work. The 2026-08-10 run's own console output (not itself a git-tracked file, so quoted here only as a paraphrase, not pinned as a manifest line) shows the script itself finding two otherwise-ready items on that run alone — a further native-speaker correction and field-research's newly published instrument 022 'The Second Reader' (already synced to datavism.org's reuse surface, enc-2026-003) — and writing their files to the runner's working tree before the batch-level exit code discards the run: neither file exists in the repository at its current commit (bf3e977, 2026-08-10). No PR, no issue, and no line in this repository's own committed record flags the stall; it is visible only in the workflow's run history.",
+   "note": "A fourth, distinct open item alongside evt-11/evt-12/evt-15/evt-17's already-recorded corrections: not a content-quality problem but a publish failure — the diner's own fail-safe design (one bad upstream work blocks the whole batch, not just that work) has silently held back every otherwise-ready re-cook for at least twelve days as of this check (2026-08-11), with no human-visible signal beyond the Actions tab. Whether or how to fix the batching (e.g. isolating hard-fails per work rather than per run) is the diner's own decision, not this record's to make."
+  },
+  "content_hash": "sha256:bc6e1d6ede701bb43ea40dce9f6d1be63ffc551363f0bb110fe50f080fc77ffd"
  }
 ]

@@ -60,3 +60,6 @@ events.json/evt17/quote_hookstat_reworded_3	data-snack.com-from-scratch:prototyp
 events.json/evt17/quote_body_rewritten	data-snack.com-from-scratch:prototype-v2/src/content/quick/native-speaker.mdx@83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9	It stamps you ADMITTED or FLAGGED AS MACHINE.	no
 events.json/evt17/quote_splitseal_teaser_reworded_2	data-snack.com-from-scratch:prototype-v2/src/content/quick/split-seal.mdx@83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9	Its ''Valid'' stamps? Signature integrity. Not signer trust.	no
 events.json/evt17/quote_splitseal_hookstat_reworded_2	data-snack.com-from-scratch:prototype-v2/src/content/quick/split-seal.mdx@83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9	specimens were tested across two authenticity infrastructures.	no
+events.json/evt18/quote_schedule	data-snack.com-from-scratch:.github/workflows/upstream-cook.yml@bf3e977d0c1640ef3214457d04b160c4fbb7c320	cron: '37 4 * * *' # daily 04:37 UTC (after brain-ingest at 04:17)	no
+events.json/evt18/quote_no_sources	data-snack.com-from-scratch:prototype-v2/scripts/pipeline/validate.ts@bf3e977d0c1640ef3214457d04b160c4fbb7c320	no sources cited	no
+events.json/evt18/quote_exit_guard	data-snack.com-from-scratch:prototype-v2/scripts/pipeline/run.ts@bf3e977d0c1640ef3214457d04b160c4fbb7c320	if (write && hardFails.length > 0) process.exitCode = 1;	no

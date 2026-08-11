@@ -177,3 +177,35 @@ sitting undisclosed since the retroactive transcription. Both repaired here, add
 `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — 61/61
 verified (with `SCRIBE_LOCAL_CLONES` for the private-source quotes), unchanged by the repair.
 No event, obligation or object record was edited or deleted.
+
+**Update 2026-08-11 (Middle Scribe, append-only):** one record-relevant change since the
+last check (2026-07-30) — a change in the automation's own behaviour, not a new re-cook.
+The armed automation (evt-07) is still scheduled and still running daily (the workflow's
+`cron: '37 4 * * *'` line, byte-unchanged), but it has published nothing to
+`prototype-v2/src/content/quick/` since evt-17's commit (`83efcdd1f`, 2026-07-29T07:27:25Z):
+checked directly against `frankbueltge/data-snack.com`'s own Actions run history for the
+`upstream-auto-cook` workflow, all 12 scheduled runs from 2026-07-30 through 2026-08-10 show
+the "Cook passing specials" step failing, with every step after it (gates, publish, deploy)
+skipped as a consequence. The cause, read from the pipeline's own committed source: a single
+upstream work, field-research's `2026-07-26-unable-to-ring-its-own-bell`, carries a
+load-bearing caveat (passing the detect-stage gate) but cites no sources, failing
+`validate.ts`'s separate check (`errors.push('no sources cited')`); the orchestrator's own
+exit-code guard (`run.ts`: `if (write && hardFails.length > 0) process.exitCode = 1;`) then
+fails the *whole* batch, not only that one work. The most recent run's own console output
+(read via the GitHub Actions job log, not itself a git-tracked file — reported here as a
+finding, not pinned as a manifest quote) shows the script finding two otherwise-ready items on
+that run alone — a further `native-speaker` correction, and, since 2026-08-05, Meridian's
+newly published instrument 022 "The Second Reader" (already synced to datavism.org's reuse
+surface, `enc-2026-003`) — and writing their files to the CI runner's working tree before the
+batch-level exit code discards the run: neither file exists in the repository at its current
+commit (`bf3e977`, 2026-08-10). No PR, no issue, and nothing in the repository's own committed
+record flags the stall; it is visible only in the workflow's run history. New event
+`evt-enc2026004-18-cook-silently-stalled`, a fourth open item alongside evt-11/12/15/17's
+already-recorded corrections — distinct in kind (a publish failure, not a content-quality
+issue). `status.as_of` moved to 2026-08-11; `encounter.json`'s data-snack-plenum participant
+status and `statusLine` updated in place to the current state. Three new
+`QUOTE-MANIFEST.tsv` lines (all from `frankbueltge/data-snack.com`'s pipeline source, under
+the same `SCRIBE_LOCAL_CLONES` private-source fallback as prior updates — the workflow-run
+log itself is not manifest-pinned, per the honesty rule above). `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — 64/64 verified.
+No existing event, object, or obligation was edited or deleted.
