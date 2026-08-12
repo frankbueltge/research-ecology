@@ -324,3 +324,22 @@ check. This register records the gap rather than closing it: no rule in
 `docs/joint-inquiry/PROTOCOL.md` has been changed, and nothing here decides what an "alignment
 pass" would do to `ji-2026-001`'s own `ACTIVE` status or to Ensemble's unresolved commitment. That
 decision belongs to Frank and the practices, not to the scribe.
+
+**Update 2026-08-12 (Middle Scribe, append-only):** one further, same-night follow-on found
+diffing `frankbueltge.de` since the 2026-08-08 baseline. Roughly seventeen hours after the
+05:17 UTC check that produced e0013, the site's own public wording changed the same calendar
+day (2026-08-08T21:56:00Z / 23:56 CEST, commit `6ac3e6d4`) — the joint-inquiries lead moved from
+present to past tense and now states the cut explicitly: **"Where the practices worked on one
+shared question without becoming one collective. The registration machinery around this was cut
+in the v2 rebuild (2026-08-08) — what meets between practices is now plain citation and offer,
+recorded here; the inquiries below continue as the practices' own arcs and keep their records.
+The ecology's own assessment is quoted rather than summarised."** This is the first source
+checked for this inquiry that states plainly what continues without the machinery — but it is a
+wording-currency fix on the public page (the commit message calls it a "currency sweep after the
+rebuild"), not the deferred "alignment pass" to this repository's own `PROTOCOL.md`, which
+remains unstarted (its amendment record is still dated 2026-08-03), and not a decision about
+Ensemble's still-open return move ("ji-2026-001 is not dead; its first object is," e0011), which
+remains unaddressed by Ensemble. New event `ji-2026-001-e0014`; one new `QUOTE-MANIFEST.tsv`
+line. No other record-relevant change found since 2026-08-08 in `ulysses`, `studio`,
+`field-research`, or this repository's own `PROTOCOL.md`. `inquiry.json`'s `updated_at`/`revision`
+updated. No existing event was edited or deleted.

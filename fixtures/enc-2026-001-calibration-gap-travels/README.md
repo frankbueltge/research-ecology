@@ -243,13 +243,37 @@ is complete in itself and does not need one." Per this repository's gate (a new 
 only for a documented acceptance, never inferred from activity, skip when unsure), no new
 encounter fixture is opened on this scribe run. Flagged for a human editorial decision.
 
+**Update 2026-08-12 (Middle Scribe, append-only):** one record-relevant change since the last
+check (2026-08-02), on the egress side rather than the instrument itself. A 2026-08-07
+field-research commit (`3ae923f0`) enters the delivery packet already referenced at
+evt-enc2026001-17 (`deliveries/2026-07-31-enai/`, built 2026-07-31/2026-08-01, before this
+fixture's own baseline) into a machine-readable `packet.json` beside it, naming for the first
+time in this record a specific prospective receiver — the European Network for Academic
+Integrity (ENAI), an institutional public channel (`academicintegrity.eu`) — with status
+`prepared`. The Sent field is unchanged, still NO: `packet.json`'s own governing rule states
+plainly that status "may reach 'prepared' or 'withheld' but never 'sent'" — only the human who
+actually forwards the letter may set that. The same commit answers an unrelated 2026-08-06
+`REQUESTS.md` request (a route to one outside reader) with a standing rule that also governs
+this packet: "All communication that leaves this house collects in the post office first, and
+I decide what actually goes out" — a *not yet, not a never*, named because the ecology is in a
+development phase. No instrument content, claims-row text, or standing condition (6 or 7) is
+touched by this commit; it is a governance/apparatus event on the egress channel itself,
+consistent with Frank's conductor-only role in this encounter. New event
+`evt-enc2026001-18-packet-ledgered`; six new `QUOTE-MANIFEST.tsv` lines. Neither repo shows any
+other record-relevant change since 2026-08-02 (field-research's instrument 001/claims-row-12/
+downstream-commitments paths untouched beyond this commit; studio's native-speaker paths
+untouched, no new monitoring cycle since 2026-07-23). `encounter.json`'s Meridian participant
+`local_status` and `resolution_note` updated in place to the current state. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-001-calibration-gap-travels` — 41/41
+verified. No existing event, object, obligation, or assertion was edited or deleted.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The encounter, its two participants (Meridian/source, Ensemble/receiver) with distinct, non-flattened local statuses, the conductor's apparatus-only participation, Ulysses' documented non-participation, and the explicit absence of any shared/global resolution. |
 | `objects.json` | Four local object references (instrument 001, claims-ledger row 12, the downstream-commitments standing-contract document, Native Speaker) with real content hashes and pinned commits. |
-| `events.json` | Sixteen append-only encounter events (§ tables above plus the 2026-07-22, 2026-07-27, 2026-08-01 and 2026-08-02 updates), including the deliberately open, non-core `contract.published` type. |
+| `events.json` | Seventeen append-only encounter events (§ tables above plus the 2026-07-22, 2026-07-27, 2026-08-01, 2026-08-02 and 2026-08-07/2026-08-12 updates), including the deliberately open, non-core `contract.published` type. |
 | `obligations.json` | Two active obligations flowing from the standing contract's conditions 1 and 2, evidenced by the relevant events. |
 | `assertions.json` | Three imported, authored assertions — Ensemble's transformation claim (`DISCLOSED RECONSTRUCTION`), Ensemble's boundary-case refusal (`declines-to-carry`), and Meridian's live framing of the corrected claims row — every word of rationale copied verbatim from the source repositories. |
 

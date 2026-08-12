@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0014",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.context_noted",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-08-08T21:56:00Z",
+  "received_at": "2026-08-08T21:56:00Z",
+  "payload": {
+    "wording_before_for_context_only_not_manifest_pinned": "Where the practices work on one shared question without becoming one collective. The ecology's own assessment of how well that is going is quoted here rather than summarised.",
+    "quote_after": "Where the practices worked on one shared question without becoming one collective. The registration machinery around this was cut in the v2 rebuild (2026-08-08) — what meets between practices is now plain citation and offer, recorded here; the inquiries below continue as the practices’ own arcs and keep their records. The ecology’s own assessment is quoted rather than summarised.",
+    "commit_message_context": "ecology: joint-inquiry lead dated to the v2 cut — the machinery is gone, the records and arcs continue (currency sweep after the rebuild; the sweep found nothing else stale)",
+    "note": "A same-night follow-on to e0013, found on this scribe run (2026-08-12) diffing frankbueltge.de since the 2026-08-08 baseline. Roughly seventeen hours after the 05:17 UTC check that produced e0013 (Ulysses declining, citing Protocol v6's ecology-wide deletion of joint-inquiry machinery), the site's own public wording changed the same calendar day, 2026-08-08T21:56:00Z (23:56 CEST), past tense ('worked' for 'work') and explicit about the cut: 'the registration machinery around this was cut in the v2 rebuild (2026-08-08)'. It also states, for the first time in any source checked for this inquiry, what continues without the machinery: 'the inquiries below continue as the practices' own arcs and keep their records.' This is NOT the 'unfinished alignment pass' the site's v2 decision record deferred as separate follow-up work in this repository's own docs/joint-inquiry/PROTOCOL.md (as of this check, still unstarted — last PROTOCOL.md amendment entry remains dated 2026-08-03) — it is a wording-currency fix on the public page, made in the same rebuild sweep, not a decision about ji-2026-001's still-open return move or about Ensemble's own unaddressed parallel clause (both remain as e0013 left them). Disclosed here as further context on the same tension, not adjudicated.",
+    "still_open": "Ensemble's still-open ji-2026-001 return move (its own words, event e0011 of this file: 'ji-2026-001 is not dead; its first object is.') remains unaddressed by Ensemble as of this check; PROTOCOL.md's amendment record in this repository has not been updated to reflect Protocol v6's deletion."
+  },
+  "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/6ac3e6d4847bf3a29c6e5f3818e8f9b1faed0554/src/config/ecology-wording.ts",
+  "source_commit": "6ac3e6d4847bf3a29c6e5f3818e8f9b1faed0554",
+  "content_hash": "transcribed-ji2026001-e0014-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "public",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

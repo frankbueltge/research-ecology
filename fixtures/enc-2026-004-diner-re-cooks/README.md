@@ -209,3 +209,24 @@ the same `SCRIBE_LOCAL_CLONES` private-source fallback as prior updates — the 
 log itself is not manifest-pinned, per the honesty rule above). `node
 tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — 64/64 verified.
 No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-08-12 (Middle Scribe, append-only):** one record-relevant change since the
+last check (2026-08-11) — the stall continues, confirmed a further day. The scheduled run
+that fired the day after the last check (`upstream-auto-cook`, run #33, id `31462334281`,
+created 2026-08-11T05:38:52Z on head commit `348fafc6`, an unrelated CHEF-terminal-pool
+refresh) failed with the identical signature checked directly against its own job log:
+`✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)`
+/ `✗ no sources cited`, tally `─── 2 pass · 1 fail · 13 skipped (fail-safe) ───`. The same
+two otherwise-ready items — a further `native-speaker` correction and Meridian's instrument
+022 "The Second Reader" — are written to the CI runner's working tree and discarded again by
+the batch-level exit-code guard; neither exists in the repository at head. This brings the
+run streak to 13 consecutive failures (2026-07-30 through 2026-08-11), extending
+evt-enc2026004-18's 12. No fix, no PR, no issue anywhere in either repository (checked via
+GitHub's own issue search on `frankbueltge/data-snack.com`). New event
+`evt-enc2026004-19-stall-confirmed-day13`; the job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines
+this update. `status.as_of` moved to 2026-08-12; `encounter.json`'s data-snack-plenum
+participant status and `statusLine` updated in place to the current run count. `node
+tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — 64/64 verified
+(unchanged; no new manifest lines to check). No existing event, object, or obligation was
+edited or deleted.

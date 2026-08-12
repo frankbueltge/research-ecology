@@ -388,5 +388,30 @@
    "note": "Condition 6 (evt-enc2026001-15, the egress hold: 'must not be offered to any outside receiver until the live page has been re-fetched after deployment and the repair confirmed there') is discharged the same day it was raised. Meridian's own runtime cannot open a browser (every attempt fails at the TLS handshake through its egress proxy, per deliveries/2026-07-31-enai/CLEARANCE-2026-08-01.md §1), so the one check the condition required — whether the repaired chart's bars actually draw — was asked of a human (Frank Bültge) via REQUESTS.md and answered there 2026-08-01 (session 78/79). Left standing as a record rather than deleted, matching this fixture's own append-only convention. Condition 7 (the Originality.ai marker requirement) is unaffected and remains active — discharge applies to condition 6 only. Separately, the same clearance record corrects the letter meant to accompany any future delivery of instrument 001: LETTER.md (session 75) is superseded by LETTER-v3.md (session 77) as 'the text to be forwarded,' and a described-but-nonexistent dotted vendor-claim line was found and named as the collective's own memory error, not a defect in the work. As of this event, nothing has actually been sent to an outside receiver — README.md's Sent row is reported as still NO, forwarding remains Frank Bültge's decision alone, and this discharge only removes this encounter's own self-imposed pre-send block."
   },
   "content_hash": "sha256:ee5014aaa9af694ad782a14db683f94f5bc4e5cedc79a4f0bfa1fb921424c785"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-18-packet-ledgered",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "delivery.declared",
+  "issuer": {
+   "collective_id": null,
+   "actor_id": "frank-bueltge"
+  },
+  "occurred_at": "2026-08-07T21:56:55Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/3ae923f045919440da29adf33a12c21d303c5d64/deliveries/2026-07-31-enai/packet.json",
+  "source_commit": "3ae923f045919440da29adf33a12c21d303c5d64",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:instrument-001@ae89e09",
+   "quote_receiver": "\"receiver\": \"European Network for Academic Integrity (ENAI)\",",
+   "quote_status": "\"status\": \"prepared\",",
+   "quote_not_sent": "Not sent: that row stays NO until a date can be entered.",
+   "quote_governance_clause": "only the human who actually forwarded the letter can set that, site-side.",
+   "quote_requests_standing_rule": "All communication that leaves this house collects in the post office first, and I decide what actually goes out.",
+   "quote_requests_field_note": "status is yours to set as far as prepared or withheld; sent is not, and that is the only field where I keep the pen.",
+   "note": "Discharge of the egress hold (evt-enc2026001-17, 2026-08-01) left instrument 001 in the abstract state 'may be offered... nothing has in fact been sent.' This event names the first concrete step since: the delivery packet already referenced at evt-17 (deliveries/2026-07-31-enai/, built 2026-07-31–2026-08-01, before this fixture's own baseline) is entered into a machine-readable packet.json the same commit adds beside it, naming a specific prospective receiver — the European Network for Academic Integrity (ENAI), an institutional public channel — with status 'prepared'. The Sent field is unchanged: still NO, and by the packet.json's own governing rule (quoted above) only the human who actually forwards the letter may set it, never the practice's own file. The same commit answers an unrelated 2026-08-06 request (a route to one outside reader) with a standing rule that also governs this packet: 'All communication that leaves this house collects in the post office first, and I decide what actually goes out—because the ecology is in a development phase.' Frank names this a 'not yet, not a never.' No instrument content, claims-row text, or standing condition (6 or 7) is touched by this commit — it is a governance/apparatus event on the egress channel itself, consistent with Frank's conductor-only role in this encounter (transport, not an authoring party to either side's assertions)."
+  },
+  "content_hash": "sha256:f8e2823b208ead106990d57a42a57cf69ad0e40220ae4ee726433ca6d0648951"
  }
 ]
