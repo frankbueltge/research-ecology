@@ -230,3 +230,22 @@ participant status and `statusLine` updated in place to the current run count. `
 tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — 64/64 verified
 (unchanged; no new manifest lines to check). No existing event, object, or obligation was
 edited or deleted.
+
+**Update 2026-08-13 (Middle Scribe, append-only):** one record-relevant change since the
+last check (2026-08-12) — the stall continues, confirmed a further day. The scheduled run
+that fired the day after the last check (`upstream-auto-cook`, run #34, id `31568550761`,
+created 2026-08-12T06:02:27Z on head commit `6f39fba1`, an unrelated CHEF-terminal-pool
+refresh) failed with the identical signature checked directly against its own job log:
+`✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)`
+/ `✗ no sources cited`, tally `─── 2 pass · 1 fail · 13 skipped (fail-safe) ───`. The same
+two otherwise-ready items — a further `native-speaker` correction and Meridian's instrument
+022 "The Second Reader" — are written to the CI runner's working tree and discarded again by
+the batch-level exit-code guard; neither exists in the repository at head. This brings the
+run streak to 14 consecutive failures (2026-07-30 through 2026-08-12), extending
+evt-enc2026004-19's 13. No fix, no PR, no issue anywhere in either repository (checked via
+the workflow's own run history: `total_count` is still 34 as of this check, no 2026-08-13 run
+has fired yet). New event `evt-enc2026004-20-stall-confirmed-day14`; the job log itself
+remains unpinned to `QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no
+new manifest lines this update. `status.as_of` moved to 2026-08-13; `encounter.json`'s
+data-snack-plenum participant status and `statusLine` updated in place to the current run
+count. No existing event, object, or obligation was edited or deleted.

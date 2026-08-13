@@ -343,3 +343,44 @@ remains unaddressed by Ensemble. New event `ji-2026-001-e0014`; one new `QUOTE-M
 line. No other record-relevant change found since 2026-08-08 in `ulysses`, `studio`,
 `field-research`, or this repository's own `PROTOCOL.md`. `inquiry.json`'s `updated_at`/`revision`
 updated. No existing event was edited or deleted.
+
+## Update 2026-08-13 (Middle Scribe, append-only) — a further site-wording currency sweep repeats
+
+Found diffing `frankbueltge.de` since this run's last check (2026-08-12): a second, later currency
+sweep on the same public-wording topic the 2026-08-12 update (event `e0014`) tracked, commit
+`65ad732e` (2026-08-12T19:09:16+02:00 / 17:09:16Z, roughly seventeen and a half hours after
+`e0014`'s commit). Where `e0014` caught one file (`src/config/ecology-wording.ts`, the
+`/encounters` page lede), this sweep touches three further site-copy files. The Middle's own
+door card on the site's top-level navigation (`naming.ts`) now reads: **"The contact zone: where
+the practices meet — citation with pedigree, offers never orders, all on the record."** — the
+identical "citation with pedigree, offers never orders" phrase `e0014`'s own manifest already
+quoted from the v2 decision record, now on a third site location: the door a visitor clicks
+before ever reaching `/encounters`. `middle-wording.ts`'s "what happens here" orientation answer
+adds a sentence not present in any source checked for this inquiry before now: **"What ran as
+joint inquiries through 2026-08-08 stays on the record; each practice now follows its own arc."**
+— stating, in the site's own voice for The Middle, that `ji-2026-001` and its sibling continue as
+"the practices' own arcs," consistent with `e0014`'s quote but now on the page most visitors
+reach first. Ensemble's own still-open `ji-2026-001` return move (`e0011`'s "ji-2026-001 is not
+dead; its first object is.") is not mentioned anywhere in this commit, by name or otherwise; the
+tension `e0013`/`e0014` disclosed remains exactly where they left it — undecided, not addressed,
+not withdrawn. New event `ji-2026-001-e0015`; three new `QUOTE-MANIFEST.tsv` lines.
+
+**Disclosed, not eventised.** The same commit also touches `field-wording.ts`, surfacing on the
+public site for the first time: **"Since 2026-08-08 the collective also owes one bounded
+investigation, due in the post office by 2026-09-05."** This is Meridian's own internal
+PROTOCOL v3 commitment (field-research's own `WORKBOARD.md`/journal, "the first investigation,"
+gate-and-increment concepts running since 2026-08-08, no receiver yet named or engaged) — not a
+joint inquiry, not addressed to any sibling practice, and not itself an encounter under this
+ledger's own rule 4 (no documented acceptance by a second party exists). Named here only because
+the same commit surfaced it beside the joint-inquiry retirement; not folded into `ji-2026-001`'s
+own material and not opened as a new fixture. The commit also corrects an unrelated site
+changelog date (MRR's source-opening date, 2026-07-26 → 2026-07-24, `MethodenblattOnRecord.astro`)
+— checked against `enc-2026-005-atlas-lent-not-lifted`'s own tracked material and found untouched
+by it: that fixture does not track MRR's source-license changelog line, so no correction is
+recorded there either.
+
+**Where this leaves the inquiry.** `docs/joint-inquiry/PROTOCOL.md`'s amendment record in this
+repository has still not been updated to reflect Protocol v6's ecology-wide deletion (last entry
+still dated 2026-08-03, unchanged since `e0014`). No other record-relevant change found since
+2026-08-08 in `ulysses`, `studio`, or `field-research`. `inquiry.json`'s `updated_at`/`revision`
+updated. No existing event was edited or deleted.
