@@ -69,9 +69,18 @@ Beide Namen sind im Workflow schon referenziert (`secrets.CLOUDFLARE_API_TOKEN`,
 1. Secrets setzen (oben).
 2. Workflow manuell auslösen: GitHub → Actions → „Deploy apps (Cloudflare Pages)" →
    „Run workflow" (oder einfach etwas unter `apps/atelier/**` auf `main` pushen).
-3. `wrangler-action` legt das Cloudflare-Pages-Projekt `ecology-atelier` beim ersten Lauf
-   automatisch an, falls es noch nicht existiert — kein manuelles Vorab-Anlegen im Dashboard
-   nötig.
+3. Das Cloudflare-Pages-Projekt `ecology-atelier` muss existieren, bevor deployt wird. Der
+   Workflow legt es seit 2026-08-13 selbst an (Schritt „Ensure the Pages project exists"), also
+   ist hier nichts zu tun — der Punkt steht nur noch da, damit die alte Behauptung nicht
+   wiederkehrt.
+
+   > **Korrektur 2026-08-13.** Hier stand bis heute: „`wrangler-action` legt das Projekt beim
+   > ersten Lauf automatisch an — kein manuelles Vorab-Anlegen nötig." Das ist falsch. Wrangler 4
+   > fragt beim Anlegen interaktiv nach, und in einem CI-Lauf antwortet niemand; der Deploy
+   > bricht ab mit `Project not found … [code: 8000007]`. Die Annahme war nie geprüft, weil
+   > dieser Workflow von seinem ersten Tag an „prepared, not triggered" war und bis 2026-08-13
+   > nie einen Token hatte, mit dem er so weit gekommen wäre. Der erste echte Lauf ist genau
+   > hier gescheitert.
 4. Nach dem ersten erfolgreichen Deploy bekommt das Projekt eine `*.pages.dev`-Adresse
    automatisch. Custom Domain (z. B. `atelier.frankbueltge.de`) danach im Cloudflare-Dashboard
    unter dem Pages-Projekt → „Custom domains" → „Set up a custom domain" anbinden — das ist ein
