@@ -1,9 +1,10 @@
 name: Deploy apps (Cloudflare Pages)
 
-# Work order docs/work-orders/phase-c3-apps-static-deploy.md §2: prepared, not triggered. No
-# CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secret is set on this repo yet, so a real run of
-# this workflow will get as far as the build + smoke check and then fail at the wrangler step —
-# on purpose, until Frank adds those two secrets. See docs/runbooks/apps-deploy.md.
+# Work order docs/work-orders/phase-c3-apps-static-deploy.md §2. Live since 2026-08-13: both
+# secrets are set and apps/atelier deploys to https://ecology-atelier.pages.dev. Until that day
+# this header said "prepared, not triggered … will fail at the wrangler step on purpose, until
+# Frank adds those two secrets" — true while it lasted, and the reason nothing below the build
+# had ever actually run. See docs/runbooks/apps-deploy.md.
 #
 # Only apps/atelier has a job below. apps/middle-web is NOT included: it cannot currently be
 # built with `@sveltejs/adapter-static` at all (confirmed by an actual build attempt, not just
@@ -70,6 +71,21 @@ jobs:
       - name: Smoke-check the static output
         working-directory: research-ecology
         run: npm run smoke --workspace=@research-ecology/atelier
+
+      # `pages deploy` does NOT create a missing project in CI: wrangler 4 asks interactively,
+      # and a runner has nobody to answer, so the deploy dies on
+      # `Project not found … [code: 8000007]`. The runbook claimed the opposite until 2026-08-13
+      # — the claim survived a year unchallenged because no run before then had a token to get
+      # this far. Creating the project here makes a first deploy under a new name work on its
+      # own. `continue-on-error` because an already-existing project makes this step fail, which
+      # is the ordinary case: the deploy below stays the one step that decides.
+      - name: Ensure the Pages project exists (wrangler will not create one in CI)
+        uses: cloudflare/wrangler-action@v3
+        continue-on-error: true
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create ecology-atelier --production-branch main
 
       - name: Deploy to Cloudflare Pages (ecology-atelier)
         uses: cloudflare/wrangler-action@v3
