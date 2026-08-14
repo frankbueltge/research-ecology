@@ -462,5 +462,30 @@
    "note": "The 14th consecutive scheduled run since evt-enc2026004-18's baseline (13 as of 2026-08-11, evt-19) — run #34, fired 2026-08-12T06:02:27Z on head commit 6f39fba1 (an unrelated CHEF-terminal-pool refresh) — checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 31568550761): the failure signature is unchanged from evt-18/evt-19. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check; the same two otherwise-ready items (a further native-speaker correction and Meridian's instrument 022 'The Second Reader') are written to the CI runner's working tree and discarded again by the batch-level exit-code guard; neither file exists in the repository at head (6f39fba1). No PR, no issue, and nothing in either repository's own committed record flags the stall between evt-19 and this run — visible only in the workflow's own run history, checked here a third time. This is the most recent run in the workflow's history as of this check; no run for 2026-08-13 has fired yet (total_count still 34). The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention."
   },
   "content_hash": "sha256:a57d5e8750030a2f7e8c684e0e712f9a731651d5806f220970781fe3d5293e6d"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-21-stall-confirmed-day15",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-08-13T06:03:54Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/31672407536",
+  "visibility": "public",
+  "payload": {
+   "run_number": 35,
+   "run_id": 31672407536,
+   "run_created_at": "2026-08-13T06:02:43Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "dba637dfb25510f7744c6b9cf2d330417d15365c",
+   "quote_job_log_fail_line": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 2 pass · 1 fail · 13 skipped (fail-safe) ───",
+   "note": "The 15th consecutive scheduled run since evt-enc2026004-18's baseline (14 as of 2026-08-12, evt-20) — run #35, fired 2026-08-13T06:02:43Z on head commit dba637df (an unrelated CHEF-terminal-pool refresh) — checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 31672407536): the failure signature is unchanged from evt-18/19/20. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check; the same two otherwise-ready items (a further native-speaker correction and Meridian's instrument 022 'The Second Reader') are written to the CI runner's working tree ('wrote .../native-speaker.mdx', 'wrote .../the-second-reader.mdx') and discarded again by the batch-level exit-code guard; neither file exists in the repository at head (dba637df). No PR, no issue, and nothing in either repository's own committed record flags the stall between evt-20 and this run — visible only in the workflow's own run history, checked here a fourth time. This is the most recent run in the workflow's history as of this check (total_count 35; no run for 2026-08-14 has fired yet as of this check, 2026-08-14T05:14Z — the 04:37 UTC schedule had not yet produced a new run). The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention."
+  },
+  "content_hash": "sha256:3e8e4f1282c3f054069e78c294ef8e0d9af3bd7083300be35d62d5a9bd360599"
  }
 ]
