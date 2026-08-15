@@ -269,3 +269,35 @@ fired yet as of 2026-08-14T05:14Z, past the 04:37 UTC schedule). New event
 this update. `status.as_of` moved to 2026-08-14; `encounter.json`'s data-snack-plenum
 participant status and `statusLine` updated in place to the current run count. No existing
 event, object, or obligation was edited or deleted.
+
+**Update 2026-08-15 (Middle Scribe, append-only) — two runs found in one check, the stall
+continues.** The previous check (2026-08-14) had explicitly noted that day's run had not yet
+fired at check time (`total_count` 35, past the 04:37 UTC schedule). This check finds both
+that run and the next one, two consecutive scheduled runs, each failing with the identical
+signature checked directly against its own job log.
+
+Run #36 (`upstream-auto-cook`, id `31774951953`, created 2026-08-14T06:02:44Z on head commit
+`feaf06ee`, an unrelated CHEF-terminal-pool refresh): `✗ FAIL  [field-research]
+2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)` / `✗ no
+sources cited`, tally `─── 2 pass · 1 fail · 13 skipped (fail-safe) ───`. New event
+`evt-enc2026004-22-stall-confirmed-day16`.
+
+Run #37 (`upstream-auto-cook`, id `31865813888`, created 2026-08-15T04:59:29Z on head commit
+`7d6db2ef`, an unrelated CHEF-terminal-pool refresh): the identical signature. New event
+`evt-enc2026004-23-stall-confirmed-day17`.
+
+In both runs the same two otherwise-ready items — a further `native-speaker` correction and
+Meridian's instrument 022 "The Second Reader" — are written to the CI runner's working tree
+and discarded again by the batch-level exit-code guard. Checked directly against the
+repository at head (`7d6db2ef`): `native-speaker.mdx` exists (from an earlier successful cook,
+before the stall began, and is therefore not evidence of a fix) but `the-second-reader.mdx`
+still does not. This brings the run streak to 17 consecutive failures (2026-07-30 through
+2026-08-15), extending evt-enc2026004-21's 15. No fix, no PR, no issue anywhere in either
+repository (checked via the workflow's own run history: `total_count` is 37 as of this check).
+The job log itself remains unpinned to `QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's
+own convention — no new manifest lines this update. `status.as_of` moved to 2026-08-15;
+`encounter.json`'s data-snack-plenum participant status and `statusLine` updated in place to
+the current run count. No other record-relevant change found since 2026-08-14 in `studio`,
+`field-research`, `ulysses`, `frankbueltge.de`, enc-2026-001, enc-2026-002, enc-2026-003,
+enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002. No existing event, object, or
+obligation was edited or deleted.
