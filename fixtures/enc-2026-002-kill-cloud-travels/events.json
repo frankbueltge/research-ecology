@@ -398,5 +398,27 @@
       "path_boundary_note": "guard unchanged: projects/, memory/, WORKBOARD.md stay in the engine repo; only works/ travelled."
     },
     "content_hash": "sha256:e31add991b35b6933c6f4133f16b1960bfbf40c703b7284dc8cf53256c3339b7"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "evt-enc2026002-16-object-transformed-redaction",
+    "encounter_id": "enc-2026-002-kill-cloud-travels",
+    "event_type": "object.transformed",
+    "issuer": {
+      "collective_id": "ensemble",
+      "actor_id": "frank-bueltge"
+    },
+    "occurred_at": "2026-08-16T00:24:21Z",
+    "source_uri": "https://github.com/frankbueltge/studio/blob/253c20986be422929025158e96a378e7be612731/REQUESTS-ARCHIVE.md",
+    "source_commit": "253c20986be422929025158e96a378e7be612731",
+    "visibility": "public",
+    "payload": {
+      "target_object_ref_id": "ensemble:no-way-of-knowing@e068fdc",
+      "quote_before": "Response (team, 2026-07-17):** go",
+      "quote_after_paraphrase": "Response (Frank, 2026-07-17 — wording private): approval given; the studio may run the gate.",
+      "commit_message_note": "studio commit 253c20986be422929025158e96a378e7be612731 (Frank Bültge, 2026-08-16, 'redaction: the record paraphrases the architect's messages instead of quoting them (#19)'): third pass of a standing privacy rule adopted 2026-08-15 — verbatim quotation from Frank's own messages no longer stands anywhere in repo contents; decisions are recorded as dated, neutral paraphrase instead. The sweep touched REQUESTS.md, REQUESTS-ARCHIVE.md, WORKBOARD.md, memory/, several journal entries and works/2026-07-17-no-way-of-knowing/README.md (the same-word 'go' this fixture's evt-11 apparatus_note quotes, and the README line this fixture does not manifest-pin).",
+      "note": "This fixture's own quote_response (evt-11, events.json) and QUOTE-MANIFEST.tsv line 106 are pinned to studio:REQUESTS.md@e9914d46d3febad86d3bafd9a576352cf31eb655, a historical commit unaffected by this redaction — verified directly (`git show e9914d46:REQUESTS.md`) still reads 'Response (team, 2026-07-17):** go' byte-for-byte, so mechanical verification of this fixture is unaffected. This event exists only to keep the record honest about the source: the same sentence no longer appears anywhere in studio's current REQUESTS.md/REQUESTS-ARCHIVE.md/journal at HEAD, replaced there by the paraphrase quoted above. Mirrors the disclosure already made for the analogous case in enc-2026-001 (evt-enc2026001-10/-11, Meridian's own named-individuals redaction of the same week's kind). The redaction is not reversed or second-guessed here; the same privacy rule swept studio, field-research, ulysses and frankbueltge.de over 2026-08-08 through 2026-08-16 (checked directly in each repository's own commit log) and is disclosed at the point it first touches this fixture's own quoted material, not narrated in full."
+    },
+    "content_hash": "sha256:8b889e0b5fab8c961bfa6bb8bf861ce0cf90b1869ea1ad8c5fb7ebe93af75bb1"
   }
 ]

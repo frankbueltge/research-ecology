@@ -301,3 +301,42 @@ the current run count. No other record-relevant change found since 2026-08-14 in
 `field-research`, `ulysses`, `frankbueltge.de`, enc-2026-001, enc-2026-002, enc-2026-003,
 enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002. No existing event, object, or
 obligation was edited or deleted.
+
+**Update 2026-08-16 (Middle Scribe, append-only) — the stall continues, and its backlog
+grows by one.** The scheduled run that fired the day after the last check (`upstream-auto-cook`,
+run #38, id `31928104736`, created 2026-08-16T05:03:30Z on head commit `48dee704`, an unrelated
+CHEF-terminal-pool refresh) failed with the identical signature checked directly against its own
+job log: `✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)`
+/ `✗ no sources cited`. This brings the run streak to 18 consecutive failures (2026-07-30 through
+2026-08-16), extending evt-enc2026004-23's 17. No fix, no PR, no issue anywhere in either
+repository (checked via the workflow's own run history: `total_count` is 38 as of this check).
+
+The batch tally moved for the first time since evt-18: `─── 2 pass · 1 fail · 13 skipped ───` →
+`─── 3 pass · 1 fail · 14 skipped ───`. A third otherwise-ready item now joins the discarded
+backlog alongside the native-speaker correction and Meridian's instrument 022 "The Second
+Reader": studio's own premiere "STILL DARK" (`works/2026-08-15-still-dark`, premiered
+2026-08-15, session 96) is a new published+verified work with an extractable caveat, written to
+the CI runner's working tree (`wrote .../still-dark.mdx`) and discarded again by the same
+exit-code guard. Checked directly against the repository at head (`48dee704`):
+`native-speaker.mdx` exists (from an earlier successful cook, before the stall began, not
+evidence of a fix); `the-second-reader.mdx` and `still-dark.mdx` do not.
+
+Checked and found NOT record-relevant: the same run's job log labels the `one-tap` correction
+"session 99 (2026-08-16)", where prior runs said "session 35 (2026-07-23)" for
+native-speaker's correction. Checked against studio's own repository directly:
+`works/2026-07-23-one-tap/meta.json` and `data.json` are untouched since the 2026-07-25
+withdrawal (commit `b415a59`, already on this record); the only 2026-08-16 commit touching that
+path (`253c209`) is the ecology-wide privacy-redaction sweep paraphrasing Frank's quoted words
+across several repositories (studio, field-research, ulysses, frankbueltge.de all show matching
+same-week "wording private" commits), not a new correction to the work itself. The session-99
+label is read as a pipeline artefact of that unrelated sweep, not a new upstream event; no event
+is opened for it.
+
+New event `evt-enc2026004-24-stall-confirmed-day18`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines this
+update. `status.as_of` moved to 2026-08-16; `encounter.json`'s data-snack-plenum participant
+status and `statusLine` updated in place to the current run count and backlog size. No other
+record-relevant change found since 2026-08-15 in `studio`, `field-research`, `ulysses`,
+`frankbueltge.de`, enc-2026-001, enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or
+ji-2026-002 (enc-2026-002 is separately updated today — see that fixture's own README). No
+existing event, object, or obligation was edited or deleted.

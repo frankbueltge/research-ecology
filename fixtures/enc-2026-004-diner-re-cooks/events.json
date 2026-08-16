@@ -537,5 +537,30 @@
    "note": "The 17th consecutive scheduled run since evt-enc2026004-18's baseline (16 as of evt-22, this same check) — run #37, fired 2026-08-15T04:59:29Z on head commit 7d6db2ef (an unrelated CHEF-terminal-pool refresh) — checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 31865813888): the failure signature is unchanged from evt-18 through evt-22. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check; the same two otherwise-ready items (a further native-speaker correction and Meridian's instrument 022 'The Second Reader') are written to the CI runner's working tree and discarded again by the batch-level exit-code guard; native-speaker.mdx exists in the repository at head (from an earlier successful cook, before the stall began) but the-second-reader.mdx still does not. No PR, no issue, and nothing in either repository's own committed record flags the stall between evt-22 and this run — visible only in the workflow's own run history, checked here a sixth time. This is the most recent run in the workflow's history as of this check (total_count 37). The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention."
   },
   "content_hash": "sha256:56d298995f34939a2ac76342d92b2b9b209f0600c9a08d5e6aa02c8522f7ca7e"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-24-stall-confirmed-day18",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-08-16T05:04:33Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/31928104736",
+  "visibility": "public",
+  "payload": {
+   "run_number": 38,
+   "run_id": 31928104736,
+   "run_created_at": "2026-08-16T05:03:30Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "48dee704b65405e7d662a1c0bf88ed4d57386079",
+   "quote_job_log_fail_line": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 3 pass · 1 fail · 14 skipped (fail-safe) ───",
+   "note": "The 18th consecutive scheduled run since evt-enc2026004-18's baseline (17 as of evt-23) — run #38, fired 2026-08-16T05:03:30Z on head commit 48dee704 (an unrelated CHEF-terminal-pool refresh) — checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 31928104736): the failure signature is unchanged from evt-18 through evt-23. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check. The tally moves for the first time since evt-18 (2 pass · 1 fail · 13 skipped → 3 pass · 1 fail · 14 skipped): a third otherwise-ready item now joins the discarded backlog. Studio's 'STILL DARK' (works/2026-08-15-still-dark, premiered 2026-08-15, session 96) is a new published+verified work with an extractable caveat and is written to the CI runner's working tree ('wrote .../still-dark.mdx') alongside the already-known native-speaker correction and Meridian's instrument 022 'The Second Reader' — all three discarded again by the batch-level exit-code guard. Checked directly against the repository at head (48dee704): native-speaker.mdx exists (from an earlier successful cook, before the stall began, not evidence of a fix); the-second-reader.mdx and still-dark.mdx do not. Separately checked and found NOT record-relevant: the same run's job log now labels the 'one-tap' correction 'session 99 (2026-08-16)' where prior runs said 'session 35 (2026-07-23)' for native-speaker's correction — checked against studio's own repository, works/2026-07-23-one-tap/meta.json and data.json are untouched since the 2026-07-25 withdrawal (commit b415a59, already on this record); the only 2026-08-16 commit touching that path (253c209) is the ecology-wide privacy redaction sweep paraphrasing Frank's quoted words, not a new correction. The session-99 label is read as a pipeline artefact, not a new upstream event, and no event is opened for it. No fix, no PR, no issue anywhere in either repository (checked via the workflow's own run history: total_count is 38 as of this check). The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention — no new manifest lines this update."
+  },
+  "content_hash": "sha256:44a5e1cafc75504fc917abb14472a5bfd657975944cb93ed2f350adb7d2c9e35"
  }
 ]

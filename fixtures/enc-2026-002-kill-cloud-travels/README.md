@@ -196,13 +196,38 @@ creation). No existing event, object, obligation or assertion was edited or dele
 `encounter.json`'s Ensemble participant `local_status`/rationale and `resolution_note` updated in
 place to the current state, mirroring enc-001's precedent for the same kind of update.
 
+**Update 2026-08-16 (Middle Scribe, append-only) — a source redaction touches this fixture's
+own quoted material, verified not to break it.** Found diffing `studio` since this fixture's
+last check (2026-07-25): commit `253c2098` (2026-08-16T02:24:21+02:00, "redaction: the record
+paraphrases the architect's messages instead of quoting them (#19)"), the third pass of a
+standing privacy rule adopted 2026-08-15 ("verbatim quotation from the architect's own messages
+never stands in repo contents"). Among the files it touched: `REQUESTS.md`,
+`REQUESTS-ARCHIVE.md`, `WORKBOARD.md`, several journal entries, and
+`works/2026-07-17-no-way-of-knowing/README.md` — which this fixture's `evt-11` apparatus_note
+quotes as "Response (team, 2026-07-17): go", and which now reads, at HEAD, "Response (Frank,
+2026-07-17 — wording private): approval given; the studio may run the gate."
+
+Checked directly: this fixture's own `quote_response` (`evt-11`) and `QUOTE-MANIFEST.tsv` line
+106 are pinned to `studio:REQUESTS.md@e9914d46`, a historical commit the redaction did not
+touch — `git show e9914d46:REQUESTS.md` still reads "Response (team, 2026-07-17):** go"
+byte-for-byte. Mechanical verification of this fixture is unaffected. This entry exists only
+to disclose that the same sentence has left studio's current-HEAD record, mirroring the
+disclosure already made for the analogous case in `enc-2026-001` (`evt-enc2026001-10/-11`,
+Meridian's own named-individuals redaction the same week last month). The same privacy rule
+was found sweeping `studio`, `field-research`, `ulysses` and `frankbueltge.de` between
+2026-08-08 and 2026-08-16 (checked directly in each repository's own commit log); it is
+disclosed here only at the point it first touches this fixture's own quoted material, not
+narrated in full. New event `evt-enc2026002-16-object-transformed-redaction`; no new
+`QUOTE-MANIFEST.tsv` line (nothing in this fixture's own manifest changed). No existing event,
+object, obligation or assertion was edited or deleted.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The encounter, its two collective participants (Meridian/source, Ensemble/receiver) with distinct local statuses, Frank's conductor lane (apparatus and, as of 2026-07-20, an answered playthrough gate), Ulysses' documented non-participation, and the explicit absence of any shared resolution — the encounter is open even after the premiere, and after its first post-premiere monitoring cycle (2026-07-23). |
 | `objects.json` | Six local object references (the standing-conditions document in its reframed version, the field map's kill-cloud cluster, the atlas digest, the No-Way-of-Knowing project in production, the premiered `works/` version, and — appended 2026-07-25 — the re-monitored `works/` version) with real content hashes and pinned commits. |
-| `events.json` | Fifteen append-only encounter events (tables above plus the 2026-07-20 and 2026-07-25 updates), mixing core types with deliberately open type strings. |
+| `events.json` | Sixteen append-only encounter events (tables above plus the 2026-07-20, 2026-07-25 and 2026-08-16 updates), mixing core types with deliberately open type strings. |
 | `obligations.json` | Three active obligations — all adopted by the receiver at its own gate or held as its own standing practice; none imposed across the repository boundary. |
 | `assertions.json` | Four imported, authored assertions — Ensemble's daylight claim against the catalogued atlas artwork, Ensemble's premise demotion (epistemic asymmetry, not proven pattern), Meridian's live framing of the kill-cloud cluster, and Ensemble's first-hand-spine tier declaration. |
 | `QUOTE-MANIFEST.tsv` | One line per verbatim quote: fixture location, source file, first 60 characters — for mechanical substring verification. |
