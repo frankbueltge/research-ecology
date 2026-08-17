@@ -384,3 +384,44 @@ repository has still not been updated to reflect Protocol v6's ecology-wide dele
 still dated 2026-08-03, unchanged since `e0014`). No other record-relevant change found since
 2026-08-08 in `ulysses`, `studio`, or `field-research`. `inquiry.json`'s `updated_at`/`revision`
 updated. No existing event was edited or deleted.
+
+## Update 2026-08-17 (Middle Scribe, append-only) — studio deletes its own half of the tension,
+and does not replace it
+
+Found diffing `studio` since this run's last check (2026-08-13): commit `e75d9bc8`
+(2026-08-16T02:00:38+02:00, PR #18, "Protocol v3: the bar moves to the concept, and the form has
+a floor"), in force by Frank's decision the same day, replaces studio's entire `PROTOCOL.md`
+wholesale (v2 archived, dated). The deleted text includes the exact clause this fixture already
+tracks as Ensemble's own parallel to Ulysses' Protocol-v6 decline ground (pinned at
+`studio:PROTOCOL.md@2ecebadb`, quoted in event `0013`'s own manifest): the §"Between practices"
+section stating "citation with pedigree, offers never orders," the guest-voice provision, and
+**"There are no seasons, no episode slots, no joint-inquiry machinery — the work itself is the
+line a visitor follows."**
+
+v3 as first committed only cited that section's title rather than reproducing it — which, because
+v3 replaced the whole file, sent its own reader looking for a text the same commit had just
+deleted. A same-night follow-up 27 minutes later, `b9205766` (02:27:36+02:00, PR #20, "v3 carries
+its own mandate instead of pointing at a section it deleted"), fixed exactly that self-reference
+by reproducing §"The line (floor)" — the machine-advantage mandate only — verbatim as the new §0:
+**"*(Ratified 2026-08-08 as v2's own §"The line (floor)"; reproduced here word for word so v3
+contains its own mandate rather than a reference to one.)*"** No §"Between practices" equivalent
+was restored in either commit. Checked directly against the file at HEAD (unchanged since
+`b9205766` — no later `PROTOCOL.md` commit exists): §7 ("What is deliberately not here") lists "No
+season. No campaign. No arcs..." — a different, unrelated exclusion about banked debts and
+scorecards, not sibling relations — and no other section names Meridian, Ulysses, a sibling, a
+guest voice, an encounter, or a joint inquiry, by any wording. Checked directly against
+`REQUESTS.md` and `WORKBOARD.md` at HEAD: no entry since 2026-08-13 addresses Ensemble's own
+still-open `ji-2026-001` return move (event `0011`'s "ji-2026-001 is not dead; its first object
+is.") by name or otherwise.
+
+This does not decide anything the register has left open — it changes what is left to decide.
+Ensemble's own declination ground, previously stated in its own words, now exists nowhere in its
+constitution, in either form: not carried forward, not replaced, not addressed. New event
+`ji-2026-001-e0016`; two new `QUOTE-MANIFEST.tsv` lines (the deleted v2 clause, pinned at its last
+surviving commit; the v3 §0 carryover note, pinned at `b9205766`).
+`node tools/verify-encounter-fixtures.mjs fixtures/ji-2026-001-correction-too-late` — 38/38
+verified. No other record-relevant change found since 2026-08-13 in `ulysses`, `field-research`,
+or `frankbueltge.de` (the naming.ts/accessibility/privacy-guard commits found there in this window
+touch unrelated wording — checked directly, none change the three site strings `e0014`/`e0015`
+already quote). `inquiry.json`'s `updated_at`/`revision` updated. No existing event was edited or
+deleted.
