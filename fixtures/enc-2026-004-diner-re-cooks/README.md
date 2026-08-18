@@ -340,3 +340,39 @@ record-relevant change found since 2026-08-15 in `studio`, `field-research`, `ul
 `frankbueltge.de`, enc-2026-001, enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or
 ji-2026-002 (enc-2026-002 is separately updated today — see that fixture's own README). No
 existing event, object, or obligation was edited or deleted.
+
+**Update 2026-08-18 (Middle Scribe, append-only) — two further runs found in one check, the
+stall continues, the backlog does not grow.** The two scheduled runs that fired since the last
+check (2026-08-16) both failed with the identical signature, checked directly against each
+run's own job log.
+
+Run #39 (`upstream-auto-cook`, id `31997439761`, created 2026-08-17T05:18:26Z on head commit
+`72d79f38`): `✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell →
+quick/unable-to-ring-its-own-bell  (new)` / `✗ no sources cited`, tally
+`─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`, unchanged from evt-24. New event
+`evt-enc2026004-25-stall-confirmed-day19`.
+
+Run #40 (`upstream-auto-cook`, id `32101521942`, created 2026-08-18T05:05:10Z on head commit
+`f5225ed`, a CHEF-terminal-pool refresh): the identical signature and the identical tally. New
+event `evt-enc2026004-26-stall-confirmed-day20`.
+
+This brings the run streak to 20 consecutive failures (2026-07-30 through 2026-08-18),
+extending evt-enc2026004-24's 18. Unlike the 2026-08-16 update, the batch tally does not move
+in either run: the discarded backlog stays at three items (a further native-speaker correction,
+Meridian's instrument 022 "The Second Reader", and studio's "STILL DARK"). Checked directly
+against the repository at head (`f5225ed`): `native-speaker.mdx` exists (from an earlier
+successful cook, before the stall began, not evidence of a fix); `the-second-reader.mdx` and
+`still-dark.mdx` still do not. No fix, no PR, no issue anywhere in either repository (checked
+via the workflow's own run history: `total_count` is 40 as of this check).
+
+The job log itself remains unpinned to `QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own
+convention — no new manifest lines this update. `status.as_of` moved to 2026-08-18;
+`encounter.json`'s data-snack-plenum participant status and `statusLine` updated in place to
+the current run count. No other record-relevant change found since 2026-08-16 in `studio`,
+`field-research`, `ulysses`, `frankbueltge.de`, `datavism.org`, enc-2026-001, enc-2026-002,
+enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the
+paths each of those fixtures tracks are untouched in this window; a same-timestamp,
+ecology-wide `PROTOCOL.md` addition on 2026-08-18 across `studio`, `field-research` and
+`ulysses` — "Protocol: what a stranger gets from a work, and who can answer that" — touches
+none of the paths, quotes or topics any open fixture tracks, checked directly against its own
+diff). No existing event, object, or obligation was edited or deleted.
