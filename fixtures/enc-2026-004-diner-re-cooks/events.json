@@ -612,5 +612,30 @@
    "note": "The 20th consecutive scheduled run since evt-enc2026004-18's baseline (19 as of evt-25, this same check) — run #40, fired 2026-08-18T05:05:10Z on head commit f5225ed (a CHEF-terminal-pool refresh) — checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 32101521942): the failure signature is unchanged from evt-18 through evt-25. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check; the tally is unchanged (3 pass · 1 fail · 14 skipped) — the discarded backlog stays three items. Checked directly against the repository at head (f5225ed): native-speaker.mdx exists (from an earlier successful cook, before the stall began, not evidence of a fix); the-second-reader.mdx and still-dark.mdx still do not. This is the most recent run in the workflow's history as of this check (total_count 40). No fix, no PR, no issue anywhere in either repository. The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention."
   },
   "content_hash": "sha256:618c6aaa16d0063161ae29ab6eb5769ed49784ca23645fcf9c4301fa2840cd3d"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-27-stall-confirmed-day21",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-08-19T05:06:27Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/32218113073",
+  "visibility": "public",
+  "payload": {
+   "run_number": 41,
+   "run_id": 32218113073,
+   "run_created_at": "2026-08-19T05:05:20Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "a7e939232bd63fcd75376261bdbe1cafa4ca899a",
+   "quote_job_log_fail_line": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 3 pass · 1 fail · 14 skipped (fail-safe) ───",
+   "note": "The 21st consecutive scheduled run since evt-enc2026004-18's baseline (20 as of evt-26, this same check) — run #41, fired 2026-08-19T05:05:20Z on head commit a7e93923 — checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 32218113073): the failure signature is unchanged from evt-18 through evt-26. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check; the tally is unchanged (3 pass · 1 fail · 14 skipped) — the discarded backlog stays three items. Checked directly against the repository at head (a7e9392): native-speaker.mdx exists (from an earlier successful cook, before the stall began, not evidence of a fix); the-second-reader.mdx and still-dark.mdx still do not. This is the most recent run in the workflow's history as of this check (total_count 41). No fix, no PR, no issue anywhere in either repository. The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention."
+  },
+  "content_hash": "sha256:054e82120b2cf01667b9317b14d53571b602152e3e6d4ccf421cd6cac731470d"
  }
 ]

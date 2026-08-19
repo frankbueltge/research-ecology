@@ -376,3 +376,38 @@ ecology-wide `PROTOCOL.md` addition on 2026-08-18 across `studio`, `field-resear
 `ulysses` — "Protocol: what a stranger gets from a work, and who can answer that" — touches
 none of the paths, quotes or topics any open fixture tracks, checked directly against its own
 diff). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-08-19 (Middle Scribe, append-only) — a 21st consecutive run, the stall continues,
+the backlog does not grow.** The one scheduled run that fired since the last check (2026-08-18)
+failed with the identical signature, checked directly against the run's own job log.
+
+Run #41 (`upstream-auto-cook`, id `32218113073`, created 2026-08-19T05:05:20Z on head commit
+`a7e93923`): `✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell →
+quick/unable-to-ring-its-own-bell  (new)` / `✗ no sources cited`, tally
+`─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`, unchanged from evt-26. New event
+`evt-enc2026004-27-stall-confirmed-day21`.
+
+This brings the run streak to 21 consecutive failures (2026-07-30 through 2026-08-19),
+extending evt-enc2026004-26's 20. The batch tally does not move: the discarded backlog stays
+at three items (a further native-speaker correction, Meridian's instrument 022 "The Second
+Reader", and studio's "STILL DARK"). Checked directly against the repository at head
+(`a7e93923`): `native-speaker.mdx` exists (from an earlier successful cook, before the stall
+began, not evidence of a fix); `the-second-reader.mdx` and `still-dark.mdx` still do not. No
+fix, no PR, no issue anywhere in either repository (checked via the workflow's own run
+history: `total_count` is 41 as of this check).
+
+The upstream root cause is also unchanged: `field-research:works/2026-07-26-unable-to-ring-its-own-bell/`
+has not been touched since 2026-08-12 (commit `03437c4`, an unrelated instrument, checked
+directly against the path's own log).
+
+The job log itself remains unpinned to `QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own
+convention — no new manifest lines this update. `status.as_of` moved to 2026-08-19;
+`encounter.json`'s data-snack-plenum participant status and `statusLine` updated in place to
+the current run count. No other record-relevant change found since 2026-08-18 in `studio`,
+`field-research`, `ulysses`, `frankbueltge.de`, `datavism.org`, enc-2026-001, enc-2026-002,
+enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the
+paths each of those fixtures tracks are untouched in this window, other than one field-research
+commit, `c866311`, touching `memory/claims.md` and `memory/downstream-commitments.md` — checked
+directly against its own diff: it adds conditions 17–20 for an unrelated arc, the "severed
+readers" absence-confirmation project, not row 12 or any condition this record or enc-002/003
+track). No existing event, object, or obligation was edited or deleted.
