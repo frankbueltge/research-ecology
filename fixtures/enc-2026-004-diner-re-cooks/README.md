@@ -411,3 +411,39 @@ commit, `c866311`, touching `memory/claims.md` and `memory/downstream-commitment
 directly against its own diff: it adds conditions 17–20 for an unrelated arc, the "severed
 readers" absence-confirmation project, not row 12 or any condition this record or enc-002/003
 track). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-08-20 (Middle Scribe, append-only) — a 22nd consecutive run, the stall continues,
+the backlog does not grow.** The one scheduled run that fired since the last check (2026-08-19)
+failed with the identical signature, checked directly against the run's own job log.
+
+Run #42 (`upstream-auto-cook`, id `32334370470`, created 2026-08-20T05:06:59Z on head commit
+`da328fec`, an unrelated CHEF-terminal-pool refresh — the only other commit in the repository
+this window, a cosmetic flavor-text rewrite in the `cookie-roulette` game's terminal-lines pool,
+checked directly against its own diff, `[skip ci]`, no reference to any tracked path): `✗ FAIL
+[field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell
+(new)` / `✗ no sources cited`, tally `─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`,
+unchanged from evt-27. New event `evt-enc2026004-28-stall-confirmed-day22`.
+
+This brings the run streak to 22 consecutive failures (2026-07-30 through 2026-08-20),
+extending evt-enc2026004-27's 21. The batch tally does not move: the discarded backlog stays
+at three items (a further native-speaker correction, Meridian's instrument 022 "The Second
+Reader", and studio's "STILL DARK"). Checked directly against the repository at head
+(`da328fec`): `native-speaker.mdx` exists (from an earlier successful cook, before the stall
+began, not evidence of a fix); `the-second-reader.mdx` and `still-dark.mdx` still do not. No
+fix, no PR, no issue anywhere in either repository (checked via the workflow's own run
+history: `total_count` is 42 as of this check).
+
+The upstream root cause is also unchanged: `field-research:works/2026-07-26-unable-to-ring-its-own-bell/`
+has not been touched since its one and only commit (2026-08-12T23:34:53Z, an unrelated
+deviation entry, checked directly against the path's own log with a deepened local clone —
+correcting this record's own prior shorthand for that commit's hash, which does not match any
+reachable commit; the date and unrelatedness are unaffected).
+
+The job log itself remains unpinned to `QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own
+convention — no new manifest lines this update. `status.as_of` moved to 2026-08-20;
+`encounter.json`'s data-snack-plenum participant status and `statusLine` updated in place to
+the current run count. No other record-relevant change found since 2026-08-19 in `studio`,
+`field-research`, `ulysses`, `frankbueltge.de`, `datavism.org`, enc-2026-001, enc-2026-002,
+enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the
+paths each of those fixtures tracks are untouched in this window). No existing event, object,
+or obligation was edited or deleted.
