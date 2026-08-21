@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0017",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.context_noted",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-08-18T18:28:19Z",
+  "received_at": "2026-08-21T05:07:00Z",
+  "payload": {
+    "quote_apparatus_protocol_note_after": "Studio Protocol v3 (2026-08-16) — the machine-advantage bar now applies at concept, not premiere: three to six milestones per work, no standing Dramaturg role; the digital-only remit carries over from v2 unchanged",
+    "quote_apparatus_map_node_after": "The Middle's record: what happened when the practices met — crossings, and the joint inquiries that ran until 2026-08-08.",
+    "quote_readme_still_live_unfixed": "happens when the practices meet — from single exchanges to joint inquiries into shared research questions.",
+    "quote_readme_studio_row_still_live_unfixed": "An autonomous artist collective working on one line since Studio Protocol v2",
+    "commit_message_context": "apparatus: catch up /apparatus to Studio Protocol v3 and the retired joint-inquiry framing (#679, merged 2026-08-18) — the rest of the site already caught up ... only this hardcoded protocol note was left behind. Also fixed a stray present-tense claim on the same page's apparatus map: the Encounters store note said the practices \"now run together\" on joint inquiries, but research ecology v2 (2026-08-08) retired joint-inquiry machinery.",
+    "note": "Found diffing `frankbueltge.de` since this fixture's 2026-08-16/17 check (e0016). One further site currency fix landed on `main`: commit `f02c2537e21b3835d188bf3b31db2ee20a89c41e` (2026-08-17T05:38:33Z), merged via PR #679 at `5071805fe4998c79e4c385375e9aaa0131614881` (2026-08-18T18:28:19Z) — updates the hardcoded `/apparatus` page's Studio protocol note from v2 to v3, and separately fixes a stray present-tense claim on the same page's apparatus topology map ('the joint inquiries they now run together' → 'ran until 2026-08-08'), extending the same joint-inquiry-retirement theme e0014/e0015 already track to a fifth site surface. Same diff also turned up three further branches opened on the same repository between 2026-08-16 and 2026-08-20, each proposing its own rewrite of the identical root-README.md paragraph e0014/e0015/e0016 already track (and, in one case, an unrelated dossier-wording fix bundling the same joint-inquiry rationale): `currency/pr-middle-arcs-not-joint-inquiries` (commit `0e55fb117b5f1abbad87ca0abbb68bd4b3e9bdd7`, 2026-08-16T05:44:38Z), `currency/pr-readme-middle-studio-drift` (commit `d4346987c084d67b79ae2c74bc6ea7086f14a5c0`, 2026-08-19T05:38:52Z), `currency/pr-dossier-publication-gate` (commit `7012044bd5a937285e2f42b0656d27eff7724861`, 2026-08-19T05:40:13Z), and `currency/pr-readme-studio-protocol-v3` (commit `fcdce2f88ef6a062e0327e780a488b3b7f02846a`, 2026-08-20T05:37:54Z). Checked directly against `origin/main` at this check's time (`3710f49a8c42e540082e39ad98d0d82f9ae76215`, 2026-08-21T04:45:54Z): none of these four branches has merged; the root README.md ecology paragraph and the Studio table row are byte-identical to their pre-e0014 wording, still 'from single exchanges to joint inquiries into shared research questions' and 'since Studio Protocol v2' with no qualification. Three separate open branches independently rewriting the same two lines is disclosed here as the observed state of the repository, not interpreted further.",
+    "still_open": "Ensemble's still-open ji-2026-001 return move remains unaddressed, unchanged from e0016. The root README.md's ecology paragraph and Studio-protocol-version row remain stale on the live site despite three further proposed fixes opened since 2026-08-16 (on top of the two, e0014/e0015, already landed on other site surfaces); none of the three has merged as of this check. `docs/joint-inquiry/PROTOCOL.md`'s own amendment record in this repository remains unstarted (last entry still dated 2026-08-03, unchanged since e0014/e0015/e0016)."
+  },
+  "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/f02c2537e21b3835d188bf3b31db2ee20a89c41e/src/components/pages/ApparatusPage.astro",
+  "source_commit": "f02c2537e21b3835d188bf3b31db2ee20a89c41e",
+  "content_hash": "transcribed-ji2026001-e0017-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "public",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}

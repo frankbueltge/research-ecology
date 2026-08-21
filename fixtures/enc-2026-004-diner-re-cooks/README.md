@@ -447,3 +447,44 @@ the current run count. No other record-relevant change found since 2026-08-19 in
 enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the
 paths each of those fixtures tracks are untouched in this window). No existing event, object,
 or obligation was edited or deleted.
+
+**Update 2026-08-21 (Middle Scribe, append-only) — a 23rd consecutive run, the stall continues,
+the backlog does not grow.** The one scheduled run that fired since the last check (2026-08-20)
+failed with the identical signature, checked directly against the run's own job log.
+
+Run #43 (`upstream-auto-cook`, id `32449400138`, created 2026-08-21T05:07:40Z on head commit
+`c329a6f`, an unrelated CHEF-terminal-pool refresh — the only other commit in the repository
+this window, `[skip ci]`, no reference to any tracked path): `✗ FAIL [field-research]
+2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell (new)` / `✗ no
+sources cited`, tally `─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`, unchanged from
+evt-28. New event `evt-enc2026004-29-stall-confirmed-day23`.
+
+This brings the run streak to 23 consecutive failures (2026-07-30 through 2026-08-21),
+extending evt-enc2026004-28's 22. The batch tally does not move: the discarded backlog stays
+at three items (a further native-speaker correction, Meridian's instrument 022 "The Second
+Reader", and studio's "STILL DARK"). Checked directly against the repository at head
+(`c329a6f`): `native-speaker.mdx` exists (from an earlier successful cook, before the stall
+began, not evidence of a fix); `the-second-reader.mdx` and `still-dark.mdx` still do not. No
+fix, no PR, no issue anywhere in either repository (checked via the workflow's own run
+history: `total_count` is 43 as of this check).
+
+The upstream root cause is also unchanged. Checked directly against a full local clone of
+`field-research:works/2026-07-26-unable-to-ring-its-own-bell/`'s own commit log: the path's
+most recent commit remains `95a20553` (2026-08-05T04:15:02Z, "Landing reconciliation, the
+final fetch state, and what the conductor's own commits did to a role"), unrelated to this
+work's sources gate. This scribe run could not independently confirm evt-28/evt-27's stated
+`2026-08-12T23:34:53Z` figure against any commit reachable on this path — flagged here rather
+than repeated, not corrected (no certainty exists yet as to which figure, if either, is the
+error); the underlying fact both checks agree on — no touch to this path since well before the
+stall began, still unrelated — is unaffected either way.
+
+The job log itself remains unpinned to `QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own
+convention — no new manifest lines this update. `status.as_of` moved to 2026-08-21;
+`encounter.json`'s data-snack-plenum participant status and `statusLine` updated in place to
+the current run count. This same check also produced a new event on `ji-2026-001` (`e0017`,
+its own README, its own eight `QUOTE-MANIFEST.tsv` lines) — see that fixture. No other
+record-relevant change found since 2026-08-20 in `studio`, `field-research`, `ulysses`,
+`frankbueltge.de`, `datavism.org`, `data-snack-plenum`, enc-2026-001, enc-2026-002,
+enc-2026-003, enc-2026-005, enc-2026-006, or ji-2026-002 (checked directly: the paths each of
+those fixtures tracks are untouched in this window). No existing event, object, or obligation
+was edited or deleted.

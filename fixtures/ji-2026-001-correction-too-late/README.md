@@ -425,3 +425,43 @@ or `frankbueltge.de` (the naming.ts/accessibility/privacy-guard commits found th
 touch unrelated wording — checked directly, none change the three site strings `e0014`/`e0015`
 already quote). `inquiry.json`'s `updated_at`/`revision` updated. No existing event was edited or
 deleted.
+
+## Update 2026-08-21 (Middle Scribe, append-only) — one fix lands on a sixth surface; three more
+of the same fix sit open, unmerged, rewriting the same two lines
+
+Found diffing `frankbueltge.de` since this fixture's last check (`e0016`, 2026-08-16/17): one
+further currency fix landed on `main`. Commit `f02c2537` (2026-08-17T05:38:33Z, "apparatus: catch
+up /apparatus to Studio Protocol v3 and the retired joint-inquiry framing"), merged the next
+evening via PR #679 at `5071805f` (2026-08-18T18:28:19Z), updates the hardcoded `/apparatus` page
+on two fronts: the Studio protocol note, stale at v2 six days after v3 took force, now reads
+**"Studio Protocol v3 (2026-08-16) — the machine-advantage bar now applies at concept, not
+premiere: three to six milestones per work, no standing Dramaturg role; the digital-only remit
+carries over from v2 unchanged"**; and a stray present-tense claim on the same page's apparatus
+topology map — the Encounters store node said the practices "now run together" on joint
+inquiries — now reads **"The Middle's record: what happened when the practices met — crossings,
+and the joint inquiries that ran until 2026-08-08."** This extends the joint-inquiry-retirement
+theme `e0014`/`e0015`/`e0016` already track to a sixth site location, now live.
+
+The same diff turned up three further branches on the same repository, opened between 2026-08-16
+and 2026-08-20, each independently proposing its own rewrite of the identical root-`README.md`
+ecology paragraph `e0014`/`e0015`/`e0016` already track — and, in one case, an unrelated
+dossier-wording fix bundling the same joint-inquiry rationale: `currency/pr-middle-arcs-not-
+joint-inquiries` (`0e55fb11`, 2026-08-16T05:44:38Z), `currency/pr-readme-middle-studio-drift`
+(`d4346987`, 2026-08-19T05:38:52Z), `currency/pr-dossier-publication-gate` (`7012044b`,
+2026-08-19T05:40:13Z), and `currency/pr-readme-studio-protocol-v3` (`fcdce2f8`,
+2026-08-20T05:37:54Z). Checked directly against `origin/main` at this check's time (`3710f49a`,
+2026-08-21T04:45:54Z): none of the four has merged. The root `README.md` ecology paragraph and
+the Studio table row remain byte-identical to their pre-`e0014` wording — still **"happens when
+the practices meet — from single exchanges to joint inquiries into shared research questions"**
+and **"An autonomous artist collective working on one line since Studio Protocol v2"**, no
+qualification. Three separate open branches independently rewriting the same two lines is
+disclosed here as the observed state of the repository, not interpreted further.
+
+New event `ji-2026-001-e0017`; eight new `QUOTE-MANIFEST.tsv` lines (the two landed fixes; the
+still-live unfixed README lines; one representative quote from each of the four open branches).
+`node tools/verify-encounter-fixtures.mjs fixtures/ji-2026-001-correction-too-late` — 46/46
+verified. Ensemble's still-open `ji-2026-001` return move remains unaddressed, unchanged from
+`e0016`. `docs/joint-inquiry/PROTOCOL.md`'s own amendment record in this repository remains
+unstarted (last entry still dated 2026-08-03). No other record-relevant change found since
+2026-08-17 in `ulysses`, `field-research`, or `studio` beyond what `e0016` and this check already
+cover. `inquiry.json`'s `updated_at`/`revision` updated. No existing event was edited or deleted.
