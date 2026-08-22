@@ -60,6 +60,6 @@
   "rights_summary": "No new personal or sensitive data is collected to enrich the work (Document 10 §4). The rights-sensitive seed — the 2026-07-21 legal-hygiene redaction of real names and the git-history purge that could not lift the trace via mirrors — is studied only as a STRUCTURAL persistence phenomenon; the redacted content is never re-surfaced. Meridian's own practice (redact, do not re-expose) is the model. This is a §2.8 human-review boundary (rights ambiguity, sensitive data): Frank must weigh it before this seed is foregrounded over the rights-clean calibration-gap correction history.",
   "affected_public_summary": "Two affected classes: the individuals whose names were redacted for legal hygiene (never to be re-identified), and the subjects of the AI-detection-harm claims in the source instrument (e.g. the Yang v. University of Minnesota case, whose two incompatible framings already live in both archives). No re-identification, no new participant research; any experiential prototype uses synthetic states or informed internal participants only.",
   "created_at": "2026-07-24T00:00:00Z",
-  "updated_at": "2026-08-18T18:28:19Z",
-  "revision": 8
+  "updated_at": "2026-08-21T22:41:27Z",
+  "revision": 9
 }

@@ -488,3 +488,37 @@ record-relevant change found since 2026-08-20 in `studio`, `field-research`, `ul
 enc-2026-003, enc-2026-005, enc-2026-006, or ji-2026-002 (checked directly: the paths each of
 those fixtures tracks are untouched in this window). No existing event, object, or obligation
 was edited or deleted.
+
+## Update 2026-08-22 (Middle Scribe, append-only) — day 24, same signature, backlog unchanged
+
+Checked directly against the workflow's own run history (`frankbueltge/data-snack.com`,
+`upstream-auto-cook`): run #44 fired 2026-08-22T05:02:23Z on head commit `ef0a4d8`, another
+unrelated CHEF-terminal-pool refresh, and failed with the identical signature: `✗ FAIL
+[field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell
+(new)` / `✗ no sources cited`, tally `─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`.
+
+This brings the run streak to 24 consecutive failures (2026-07-30 through 2026-08-22),
+extending evt-enc2026004-29's 23. The batch tally does not move: the discarded backlog stays
+at three items (a further native-speaker correction, Meridian's instrument 022 "The Second
+Reader", and studio's "STILL DARK"). Checked directly against the repository at head
+(`ef0a4d8`): `native-speaker.mdx` exists (from an earlier successful cook, before the stall
+began, not evidence of a fix); `the-second-reader.mdx` and `still-dark.mdx` still do not. No
+fix, no PR, no issue anywhere in either repository (checked via the workflow's own run
+history: `total_count` is 44 as of this check).
+
+The upstream root cause is also unchanged. Checked directly against a full local clone of
+`field-research:works/2026-07-26-unable-to-ring-its-own-bell/`'s own commit log: the path's
+most recent commit remains `95a20553` (2026-08-05T04:15:02Z), unrelated to this work's sources
+gate.
+
+New event `evt-enc2026004-30-stall-confirmed-day24`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines
+this update. `status.as_of` moved to 2026-08-22; `encounter.json`'s data-snack-plenum
+participant status and `statusLine` updated in place to the current run count. This same check
+also produced a new event on `ji-2026-001` (`e0018`, its own README, its own four
+`QUOTE-MANIFEST.tsv` lines) — see that fixture; the fixture's long-tracked README/dossier
+currency fixes finally landed there. No other record-relevant change found since 2026-08-21 in
+`studio`, `field-research`, `ulysses`, `frankbueltge.de`, `datavism.org`, `data-snack-plenum`,
+enc-2026-001, enc-2026-002, enc-2026-003, enc-2026-005, enc-2026-006, or ji-2026-002 (checked
+directly: the paths each of those fixtures tracks are untouched in this window). No existing
+event, object, or obligation was edited or deleted.

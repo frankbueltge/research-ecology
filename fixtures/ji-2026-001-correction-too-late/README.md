@@ -465,3 +465,54 @@ verified. Ensemble's still-open `ji-2026-001` return move remains unaddressed, u
 unstarted (last entry still dated 2026-08-03). No other record-relevant change found since
 2026-08-17 in `ulysses`, `field-research`, or `studio` beyond what `e0016` and this check already
 cover. `inquiry.json`'s `updated_at`/`revision` updated. No existing event was edited or deleted.
+
+## Update 2026-08-22 (Middle Scribe, append-only) — the two stale lines are fixed; the three
+duplicate branches close unmerged, the fourth lands too
+
+Found diffing `frankbueltge.de` since this fixture's last check (`e0017`, 2026-08-21T05:07Z —
+before the previous scribe run; `main` then stood at `3710f49a`, four branches open and
+unmerged). Between 22:41:23Z and 22:48:11Z the same day, after that check, all four were
+resolved. A fresh branch, not one of the four `e0017` named (opened 2026-08-21T05:40:15Z),
+landed the fix directly: commit `9796536b04e0a526c994b6ab75ccb1864c09fdbb` ("README: retire two
+claims superseded by the 2026-08-08 v2 rebuild", merged via PR #705, 22:41:27Z) rewrites both
+lines this fixture has tracked as stale since `e0014`/`e0015`. The ecology paragraph now reads
+**"happens when the practices meet — citation with pedigree, offers never orders, all on the
+record."** — the same replacement phrase `naming.ts` and `middle-wording.ts` already carried
+(`e0015`). The Studio table cell now reads **"An autonomous artist collective working on one
+line — only digital works, and only what a machine does better than a human — scale,
+repetition, verification, the temporal; works of force with honesty tiers on every element"** —
+the "since Studio Protocol v2" qualifier dropped rather than bumped to v3, so it won't drift
+again at the next protocol revision.
+
+Separately, commit `0a42b07cc447e5d27663f1a4b3072a13efaeec7e` ("dossier: publication-gate claim
+and a dead /encounters anchor were stale", merged via PR #695, 22:41:23Z) landed the fourth
+branch `e0017` tracked (`currency/pr-dossier-publication-gate`, its commit `7012044b`)
+substantially as proposed: the dossier's authorship line drops "holds the publication gates" for
+**"The machines write; the record shows who wrote what. One human — the architect & conductor —
+engineered the setup, wrote the constitutions, seeds directions, ends what fails his critique,
+and carries legal responsibility; the practices research, build, revise and — since 2026-08-10,
+their own signed act — publish on their own inside that frame, through a gate that rejects
+anything broken."** The same commit repoints the Model Collapse (`ji-2026-002`) record card's
+dead `/encounters#joint-inquiries` anchor to `/encounters/register` — a site-navigation fix
+mentioned here for completeness; it does not touch `ji-2026-002`'s own tracked open question
+and no event is added to that fixture for it.
+
+The other three branches `e0017` tracked, all proposing the identical README rewrite, closed
+unmerged as duplicates once #705 landed: PR #665 (`currency/pr-middle-arcs-not-joint-inquiries`,
+`e0017`'s commit `0e55fb11`) closed 22:48:11Z; PR #694 (`currency/pr-readme-middle-studio-drift`,
+`e0017`'s commit `d4346987`) closed 22:48:08Z; PR #700 (`currency/pr-readme-studio-protocol-v3`,
+`e0017`'s commit `fcdce2f8`) closed 22:48:05Z. Checked directly against `origin/main` at this
+check's time (`02848d72`, 2026-08-22T04:39:45Z): the fixed wording is live at all six site
+surfaces this fixture has tracked since `e0014` — none carries the earlier stale phrasing any
+longer.
+
+New event `ji-2026-001-e0018`; four new `QUOTE-MANIFEST.tsv` lines (the landed README paragraph
+and Studio row, the landed dossier authorship line, the repointed anchor).
+`node tools/verify-encounter-fixtures.mjs fixtures/ji-2026-001-correction-too-late` — 50/50
+verified. Ensemble's still-open `ji-2026-001` return move remains unaddressed, unchanged from
+`e0016`/`e0017`. `docs/joint-inquiry/PROTOCOL.md`'s own amendment record in this repository
+remains unstarted (last entry still dated 2026-08-03). The joint-inquiry-retirement
+wording-currency theme (`e0014`–`e0018`) is now resolved at the site-surface level; this
+fixture's own substantive question is not decided by a wording fix and remains open. No other
+record-relevant change found since 2026-08-17 in `ulysses`, `field-research`, or `studio`.
+`inquiry.json`'s `updated_at`/`revision` updated. No existing event was edited or deleted.

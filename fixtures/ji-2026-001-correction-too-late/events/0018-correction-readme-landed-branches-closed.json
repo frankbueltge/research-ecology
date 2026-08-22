@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "event_id": "ji-2026-001-e0018",
+  "inquiry_id": "ji-2026-001",
+  "event_type": "joint_inquiry.context_noted",
+  "issuer": {
+    "actor_id": "middle-scribe",
+    "actor_type": "scribe",
+    "practice_id": null
+  },
+  "occurred_at": "2026-08-21T22:41:27Z",
+  "received_at": "2026-08-22T00:00:00Z",
+  "payload": {
+    "quote_readme_joint_inquiries_after": "happens when the practices meet — citation with pedigree, offers never orders, all on the record.",
+    "quote_readme_studio_row_after": "An autonomous artist collective working on one line — only digital works, and only what a machine does better than a human — scale, repetition, verification, the temporal; works of force with honesty tiers on every element",
+    "quote_dossier_authorship_after": "The machines write; the record shows who wrote what. One human — the architect & conductor — engineered the setup, wrote the constitutions, seeds directions, ends what fails his critique, and carries legal responsibility; the practices research, build, revise and — since 2026-08-10, their own signed act — publish on their own inside that frame, through a gate that rejects anything broken.",
+    "quote_dossier_anchor_after": "href: '/encounters/register',",
+    "note": "Found diffing `frankbueltge.de` since this fixture's last check (e0017, 2026-08-21T05:07Z — before the previous scribe run, the last commit on `main` was `3710f49a`, four branches still open and unmerged). Between 2026-08-21T22:41:23Z and 22:48:11Z — same calendar day as e0017's check but after it — the root README.md's ecology paragraph and Studio-protocol-version row, the two lines e0014 through e0017 tracked as stale across six site surfaces, were finally fixed on `main`: commit `9796536b04e0a526c994b6ab75ccb1864c09fdbb` (\"README: retire two claims superseded by the 2026-08-08 v2 rebuild\", merged via PR #705, opened fresh 2026-08-21T05:40:15Z — a new branch, not one of the four e0017 named) rewrites both lines. Separately, commit `0a42b07cc447e5d27663f1a4b3072a13efaeec7e` (\"dossier: publication-gate claim and a dead /encounters anchor were stale\", merged via PR #695) landed the fourth branch e0017 tracked (`currency/pr-dossier-publication-gate`, commit `7012044b`) essentially as originally proposed: the dossier's authorship line drops \"holds the publication gates\" and the Model Collapse (ji-2026-002) record card's dead `/encounters#joint-inquiries` anchor now points at `/encounters/register`. The other three branches e0017 tracked, all proposing the identical README fix, closed unmerged as duplicates/superseded by #705: PR #665 (`currency/pr-middle-arcs-not-joint-inquiries`, e0017's commit `0e55fb11`) closed 2026-08-21T22:48:11Z; PR #694 (`currency/pr-readme-middle-studio-drift`, e0017's commit `d4346987`) closed 2026-08-21T22:48:08Z; PR #700 (`currency/pr-readme-studio-protocol-v3`, e0017's commit `fcdce2f8`) closed 2026-08-21T22:48:05Z. Checked directly against `origin/main` at HEAD (`02848d72`, 2026-08-22T04:39:45Z): the README's ecology paragraph and Studio row, and the dossier's authorship/anchor lines, all carry the fixed wording quoted above; no earlier stale wording remains at any of the six site surfaces this fixture has tracked since e0014.",
+    "still_open": "Ensemble's still-open ji-2026-001 return move remains unaddressed, unchanged from e0016/e0017. `docs/joint-inquiry/PROTOCOL.md`'s own amendment record in `frankbueltge.de` remains unstarted (last entry still dated 2026-08-03, unchanged since e0014). The joint-inquiry-retirement wording-currency theme itself (e0014–e0018) is now resolved at the site-surface level across all six locations found; this fixture's own open substantive question — what a correction leaves operative once made — is not decided by a wording fix and remains open."
+  },
+  "source_uri": "https://github.com/frankbueltge/frankbueltge.de/blob/9796536b04e0a526c994b6ab75ccb1864c09fdbb/README.md",
+  "source_commit": "9796536b04e0a526c994b6ab75ccb1864c09fdbb",
+  "content_hash": "transcribed-ji2026001-e0018-no-hash-chain",
+  "previous_event_hash": null,
+  "visibility": "public",
+  "validation_state": "pending",
+  "corrects_event_id": null
+}
