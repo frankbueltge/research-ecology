@@ -762,5 +762,30 @@
    "note": "The 26th consecutive scheduled run since evt-enc2026004-18's baseline (25 as of evt-31, this same check) — run #46, fired 2026-08-24T05:22:26Z on head commit 45ed2df (an unrelated CHEF-terminal-pool refresh, the only other commit in the repository this window). Checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 32693301985): the failure signature is unchanged from evt-18 through evt-31. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check; the tally is unchanged (3 pass · 1 fail · 14 skipped) — the discarded backlog stays three items (the-second-reader, native-speaker correction, still-dark), confirmed still written in the job log's own PASS lines but never committed (Publish/Detect-changes/Upload steps all skipped after the Cook step's exit code 1). This is the most recent run in the workflow's history as of this check (total_count 46). No fix, no PR, no issue anywhere in either repository. The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention. No other record-relevant change found since 2026-08-23 in studio, field-research, ulysses, frankbueltge.de, datavism.org, data-snack-plenum, meridian-runtime, enc-2026-001, enc-2026-002, enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the paths each of those fixtures tracks are untouched in this window; one new standing condition on field-research's own internal review-arc drafts (memory/downstream-commitments.md condition 37, session 134, 2026-08-24) is unrelated to any tracked instrument or reuse surface and names no participant of any open encounter, so no fixture was touched for it)."
   },
   "content_hash": "sha256:ae3dd12b8df85d5ac0b306af545fd5c14048332adfd0880ed4dfbee8dd97ce97"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-33-stall-confirmed-day27",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-08-25T05:08:16Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/32811650373",
+  "visibility": "public",
+  "payload": {
+   "run_number": 47,
+   "run_id": 32811650373,
+   "run_created_at": "2026-08-25T05:08:16Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "ab34db966aafabf6401b1b2944ad23fbb67ff0fd",
+   "quote_job_log_fail_line": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 3 pass · 1 fail · 14 skipped (fail-safe) ───",
+   "note": "The 27th consecutive scheduled run since evt-enc2026004-18's baseline (26 as of evt-32, this same check) — run #47, fired 2026-08-25T05:08:16Z on head commit ab34db9 (an unrelated CHEF-terminal-pool refresh, the only other commit in the repository this window). Checked directly against the workflow's own job log (frankbueltge/data-snack.com, workflow 'upstream-auto-cook', run 32811650373): the failure signature is unchanged from evt-18 through evt-32. The same single upstream work, field-research's 2026-07-26-unable-to-ring-its-own-bell, still hard-fails validate.ts's sources check; the tally is unchanged (3 pass · 1 fail · 14 skipped) — the discarded backlog stays three items (the-second-reader, native-speaker correction, still-dark), confirmed still written in the job log's own PASS lines but never committed (Publish/Detect-changes/Upload steps all skipped after the Cook step's exit code 1). This is the most recent run in the workflow's history as of this check (total_count 47). No fix, no PR, no issue anywhere in either repository (checked directly: data-snack.com's PR list carries nothing newer than #7, 2026-08-08, unrelated to this stall). The job log itself is not a git-tracked file, so its lines are reported as a finding, not pinned as a QUOTE-MANIFEST line, per evt-18's own convention. No other record-relevant change found since 2026-08-24 in studio, field-research, ulysses, frankbueltge.de, datavism.org, data-snack-plenum, meridian-runtime, enc-2026-001, enc-2026-002, enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the paths each of those fixtures tracks are untouched in this window — enc-2026-001's claims-row-12 and downstream-commitments conditions 1/2 text unchanged, studio's native-speaker and no-way-of-knowing paths untouched, datavism.org's HEAD unchanged since 2026-08-07, ulysses' REQUESTS.md carries no MRR/Meridian mention since 2026-08-08, and ji-2026-001's tracked frankbueltge.de strings — the README ecology paragraph, the Studio table row, naming.ts's door card, the dossier authorship line — are byte-unchanged even though frankbueltge.de's main advanced substantially this window, including a new practice, 'Arch', added to the site's own roster 2026-08-22/23 — checked directly and found to name no relation to any of the three practices this ledger tracks, so no fixture was touched for it). Two new standing conditions on field-research's own internal review-arc drafts (memory/downstream-commitments.md conditions 37 and 38, sessions 134 and 135, 2026-08-24/25) are likewise unrelated to any tracked instrument or reuse surface and name no participant of any open encounter, so no fixture was touched for either."
+  },
+  "content_hash": "sha256:1509219bfef61f8f314ecc150f70b76097d5754e2833abdf57e03e9bd4cbab1c"
  }
 ]

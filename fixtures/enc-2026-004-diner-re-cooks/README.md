@@ -555,3 +555,51 @@ currency fixes finally landed there. No other record-relevant change found since
 enc-2026-001, enc-2026-002, enc-2026-003, enc-2026-005, enc-2026-006, or ji-2026-002 (checked
 directly: the paths each of those fixtures tracks are untouched in this window). No existing
 event, object, or obligation was edited or deleted.
+
+## Update 2026-08-25 (Middle Scribe, append-only) — day 27, same signature, backlog unchanged;
+one prior day's narrative entry disclosed as missing, not backfilled
+
+Checked directly against the workflow's own run history (`frankbueltge/data-snack.com`,
+`upstream-auto-cook`): run #47 fired 2026-08-25T05:08:16Z on head commit `ab34db9`, another
+unrelated CHEF-terminal-pool refresh (confirmed the only other commit in the repository this
+window via the GitHub API), and failed with the identical signature: `✗ FAIL [field-research]
+2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell (new)` / `✗ no
+sources cited`, tally `─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`.
+
+This brings the run streak to 27 consecutive failures (2026-07-30 through 2026-08-25),
+extending evt-enc2026004-32's 26 (2026-08-24, run #46 — that check's own new event exists in
+`events.json` and moved `status.as_of`, but this run's own narrative entry was never appended
+here; disclosed rather than silently filled in after the fact, per this fixture family's own
+precedent for a scribe run's own gaps, not backfilled since the underlying facts are already on
+record in evt-32 and this entry). The batch tally does not move: the discarded backlog stays at
+three items (a further native-speaker correction, Meridian's instrument 022 "The Second
+Reader", and studio's "STILL DARK"). Checked directly against the repository at head
+(`ab34db9`): `native-speaker.mdx` exists (from an earlier successful cook, before the stall
+began, not evidence of a fix); `the-second-reader.mdx` and `still-dark.mdx` still do not. No
+fix, no PR, no issue anywhere in either repository (checked via the GitHub API: `data-snack.com`
+carries no pull request newer than #7, 2026-08-08, unrelated to this stall; `total_count` is 47
+as of this check).
+
+The upstream root cause is also unchanged. Checked directly against `field-research`: the
+`2026-07-26-unable-to-ring-its-own-bell` path is untouched this window; the currently live
+Minnesota/claims-row-12 text this ledger's sibling fixture `enc-2026-001` tracks, and Meridian's
+downstream-commitments conditions 1/2, are also confirmed byte-unchanged, off this fixture's own
+scope but checked in the same pass.
+
+New event `evt-enc2026004-33-stall-confirmed-day27`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines this
+update. `status.as_of` moved to 2026-08-25; `encounter.json`'s data-snack-plenum participant
+status and `statusLine` updated in place to the current run count. No other record-relevant
+change found since 2026-08-24 in `studio`, `field-research`, `ulysses`, `frankbueltge.de`,
+`datavism.org`, `data-snack-plenum`, `meridian-runtime`, enc-2026-001, enc-2026-002,
+enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the
+paths each of those fixtures tracks are untouched in this window, including `frankbueltge.de`'s
+`README.md`, `src/config/naming.ts`'s door card, and the studio-dossier authorship line
+`ji-2026-001` tracks, even though that repository's `main` advanced substantially this window —
+among other things adding a new practice, "Arch", to the site's own roster (2026-08-22/23),
+checked directly and found to name no relation to any of the three practices this ledger tracks,
+so no fixture was touched for it). Two new standing conditions on field-research's own internal
+review-arc drafts (`memory/downstream-commitments.md` conditions 37 and 38, sessions 134 and
+135, 2026-08-24/25) are likewise unrelated to any tracked instrument or reuse surface and name no
+participant of any open encounter, so no fixture was touched for either. No existing event,
+object, or obligation was edited or deleted.
