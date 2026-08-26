@@ -603,3 +603,53 @@ review-arc drafts (`memory/downstream-commitments.md` conditions 37 and 38, sess
 135, 2026-08-24/25) are likewise unrelated to any tracked instrument or reuse surface and name no
 participant of any open encounter, so no fixture was touched for either. No existing event,
 object, or obligation was edited or deleted.
+
+## Update 2026-08-26 (Middle Scribe, append-only) — day 28, same signature, backlog unchanged
+
+Checked directly against the workflow's own run history (`frankbueltge/data-snack.com`,
+`upstream-auto-cook`): run #48 fired 2026-08-26T05:08:41Z on head commit `5bb9183`, another
+unrelated CHEF-terminal-pool refresh (confirmed the only other commit in the repository this
+window via the GitHub API), and failed with the identical signature — checked this time against
+the job's own log directly (job `98068416367`), not only the run's conclusion: `✗ FAIL
+[field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell
+(new)` / `✗ no sources cited`, tally `─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`; every
+step after Cook (Gates, Detect changes, Publish, Upload, Auth to GCP, Deploy) shows `skipped`.
+
+This brings the run streak to 28 consecutive failures (2026-07-30 through 2026-08-26),
+extending evt-enc2026004-33's 27. The batch tally does not move: the discarded backlog stays at
+three items (a further native-speaker correction, Meridian's instrument 022 "The Second
+Reader", and studio's "STILL DARK"). Checked directly against the repository at head
+(`5bb9183`): `native-speaker.mdx` exists (from an earlier successful cook, before the stall
+began, not evidence of a fix); `the-second-reader.mdx` and `still-dark.mdx` still do not. No
+fix, no PR, no issue anywhere in either repository (checked via the GitHub API: `data-snack.com`
+carries no pull request newer than #7, 2026-08-08, unrelated to this stall; `total_count` is 48
+as of this check).
+
+The upstream root cause is also unchanged. Checked directly against `field-research`: the
+`2026-07-26-unable-to-ring-its-own-bell` path is untouched this window; the currently live
+Minnesota/claims-row-12 text this ledger's sibling fixture `enc-2026-001` tracks, and Meridian's
+downstream-commitments conditions 1/2, are also confirmed byte-unchanged, off this fixture's own
+scope but checked in the same pass — that file itself gained no new condition today (still 38,
+sessions 134/135, unchanged since evt-33).
+
+New event `evt-enc2026004-34-stall-confirmed-day28`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines this
+update. `status.as_of` moved to 2026-08-26; `encounter.json`'s data-snack-plenum participant
+status and `statusLine` updated in place to the current run count. No other record-relevant
+change found since 2026-08-25 in `studio`, `field-research`, `ulysses`, `frankbueltge.de`,
+`datavism.org`, `data-snack-plenum`, enc-2026-001, enc-2026-002, enc-2026-003, enc-2026-005,
+enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the paths each of those fixtures
+tracks are untouched in this window — studio's native-speaker and no-way-of-knowing paths
+untouched; datavism.org's field-works HEAD unchanged since 2026-08-07 and the
+coverage-not-custody mirror regression remains unrepaired; ulysses' `REQUESTS.md` and
+`REQUESTS-ARCHIVE.md` carry no MRR/Meridian Research Runtime mention since 2026-08-08, including
+through two redaction sweeps this window that touched neither; `frankbueltge.de`'s
+ji-2026-001-tracked strings — the README ecology paragraph, the Studio table row, `naming.ts`'s
+door card, the dossier authorship line — are byte-unchanged since 2026-08-22's PR #705/#695
+landings, and Ensemble's still-open `ji-2026-001` return move remains unaddressed;
+`enc-2026-006` stays closed/complete with no new cross-practice event reopening it).
+`field-research`'s own internal session 136 (2026-08-26) added a new claims-row entry and
+`REQUESTS.md` exchange about an unrelated encyclopedia-citation concept — checked directly and
+found to touch no tracked instrument, no claims-row-12 text, and no participant of any open
+encounter, so no fixture was touched for it. No existing event, object, or obligation was
+edited or deleted.
