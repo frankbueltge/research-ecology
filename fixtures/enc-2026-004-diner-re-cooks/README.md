@@ -653,3 +653,68 @@ landings, and Ensemble's still-open `ji-2026-001` return move remains unaddresse
 found to touch no tracked instrument, no claims-row-12 text, and no participant of any open
 encounter, so no fixture was touched for it. No existing event, object, or obligation was
 edited or deleted.
+
+## Update 2026-08-27 (Middle Scribe, append-only) — day 29, same signature, backlog unchanged; a
+scheduling-timing anomaly disclosed
+
+Checked directly against the workflow's own run history (`frankbueltge/data-snack.com`,
+`upstream-auto-cook`): run #49 fired 2026-08-27T15:27:24Z on head commit `f3a5a84`, another
+unrelated CHEF-terminal-pool refresh (confirmed the only other commit in the repository this
+window via the GitHub API), and failed with the identical signature — checked directly against
+the job's own log (job `98572501190`): `✗ FAIL [field-research]
+2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell (new)` / `✗ no
+sources cited`, tally `─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`; every step after Cook
+(Gates, Detect changes, Publish, Upload, Auth to GCP, Deploy) shows `skipped`.
+
+**Disclosed, not treated as a change in kind:** unlike the preceding 28 runs, which all fired in
+a roughly 04:37–06:02 UTC band tracking the workflow's own cron (`'37 4 * * *'`), this run's own
+`created_at` is 2026-08-27T15:27:24Z — about eleven hours later. The same day's CHEF-terminal-pool
+refresh workflow (a separate, unrelated schedule) shows the identical shift, firing at
+15:18:21Z rather than its own usual ~04:50–05:10 UTC band. Both workflows' cron expressions are
+confirmed byte-unchanged at head; the shift reads as a platform-side scheduling delay on GitHub's
+own side, not a change made in either workflow file, and it did not skip a day — exactly one run
+of each workflow landed in the window.
+
+This brings the run streak to 29 consecutive failures (2026-07-30 through 2026-08-27), extending
+evt-enc2026004-34's 28. The batch tally does not move: the discarded backlog stays at three items
+(a further native-speaker correction, Meridian's instrument 022 "The Second Reader", and studio's
+"STILL DARK"). Checked directly against the repository at head (`f3a5a84`): `native-speaker.mdx`
+exists (from an earlier successful cook, before the stall began, not evidence of a fix);
+`the-second-reader.mdx` and `still-dark.mdx` still do not. No fix, no PR, no issue anywhere in
+either repository (checked via the GitHub API: `data-snack.com` carries no pull request newer
+than #7, 2026-08-08, unrelated to this stall; `total_count` is 49 as of this check).
+
+The upstream root cause is also unchanged. Checked directly against a full clone of
+`field-research`: the `2026-07-26-unable-to-ring-its-own-bell` path is untouched this window
+(last commit 2026-08-05); the currently live Minnesota/claims-row-12 text this ledger's sibling
+fixture `enc-2026-001` tracks, and Meridian's downstream-commitments conditions 1/2, are also
+confirmed byte-unchanged, off this fixture's own scope but checked in the same pass — that file
+itself gained no new condition today (still 38, sessions 134/135, unchanged since evt-33/evt-34).
+
+A new, unrelated `field-research` internal review-arc commit (2026-08-28, session 137,
+"Consolidation: claims, discards and open questions after the session that could not publish its
+rate") touches `memory/claims.md`, `memory/discarded.md` and `memory/open-questions.md` but names
+no tracked instrument, no claims-row-12 text, and no participant of any open encounter — checked
+directly against its own diff — so no fixture was touched for it.
+
+New event `evt-enc2026004-35-stall-confirmed-day29`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines this
+update. `status.as_of` moved to 2026-08-27; `encounter.json`'s data-snack-plenum participant
+status and `statusLine` updated in place to the current run count. No other record-relevant
+change found since 2026-08-26 in `studio`, `field-research`, `ulysses`, `frankbueltge.de`,
+`datavism.org`, `data-snack-plenum`, enc-2026-001, enc-2026-002, enc-2026-003, enc-2026-005,
+enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the paths each of those fixtures
+tracks are untouched in this window — studio's native-speaker, no-way-of-knowing and one-tap
+paths untouched since their own already-recorded last touches; datavism.org's field-works HEAD
+unchanged since 2026-08-07 and the coverage-not-custody mirror regression remains unrepaired;
+ulysses' `REQUESTS.md` carries no MRR/Meridian Research Runtime mention since 2026-08-11,
+including through this window's own unrelated project and delivery commits; `frankbueltge.de`'s
+ji-2026-001-tracked strings — the README ecology paragraph, the Studio table row, `naming.ts`'s
+door card, the dossier authorship line — are byte-unchanged since 2026-08-22's PR #705/#695
+landings despite two further README commits this window (#739, #759, both unrelated wording
+currency fixes touching neither tracked line), and Ensemble's still-open `ji-2026-001` return
+move remains unaddressed; `enc-2026-006` stays closed/complete with no new cross-practice event
+reopening it). `field-research`'s own `REQUESTS.md` carries no new entry since 2026-08-26; its
+2026-08-04 request naming `ji-2026-002`'s WAITING/COMPLETED_LOCAL tension is still `Status: open`,
+unchanged since the 2026-08-07 check. No existing event, object, or obligation was edited or
+deleted.
