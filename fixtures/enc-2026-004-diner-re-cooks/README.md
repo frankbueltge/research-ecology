@@ -718,3 +718,75 @@ reopening it). `field-research`'s own `REQUESTS.md` carries no new entry since 2
 2026-08-04 request naming `ji-2026-002`'s WAITING/COMPLETED_LOCAL tension is still `Status: open`,
 unchanged since the 2026-08-07 check. No existing event, object, or obligation was edited or
 deleted.
+
+## Update 2026-08-28 (Middle Scribe, append-only) — day 30, same signature, backlog unchanged; the
+scheduling-timing shift persists a second day
+
+Checked directly against the workflow's own run history (`frankbueltge/data-snack.com`,
+`upstream-auto-cook`): run #50 fired 2026-08-28T16:53:54Z on head commit `6c70799c`, another
+unrelated CHEF-terminal-pool refresh (confirmed the only other commit in the repository this
+window via the GitHub API), and failed with the identical signature — checked directly against
+the job's own log (job `98919994968`): `✗ FAIL [field-research]
+2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell (new)` / `✗ no
+sources cited`, tally `─── 3 pass · 1 fail · 14 skipped (fail-safe) ───`; every step after Cook
+(Gates, Detect changes, Publish, Upload, Auth to GCP, Deploy) shows `skipped`.
+
+**Disclosed, continuing evt-35's observation:** this is now the second consecutive run in the
+shifted ~15:00–17:00 UTC band rather than the workflow's own cron band (`'37 4 * * *'`, confirmed
+byte-unchanged at head) — run #49 fired 15:27:24Z (2026-08-27), run #50 fired 16:53:54Z
+(2026-08-28), about 12h17m after cron. The same day's CHEF-terminal-pool refresh workflow (a
+separate, unrelated schedule, its own cron also byte-unchanged) shows the identical shift a
+second day running, firing at 16:41:52Z (run #85) against its own usual ~04:50–05:10 UTC band.
+Neither workflow file changed and no day was skipped — exactly one run of each fired in the
+window both days. This reads as a platform-side scheduling delay persisting across two days, not
+a change made in either workflow.
+
+This brings the run streak to 30 consecutive failures (2026-07-30 through 2026-08-28), extending
+evt-enc2026004-35's 29. The batch tally does not move: the discarded backlog stays at three items
+(a further native-speaker correction, Meridian's instrument 022 "The Second Reader", and studio's
+"STILL DARK"). Checked directly against the repository at head (`6c70799c`): `native-speaker.mdx`
+exists (from an earlier successful cook, before the stall began, not evidence of a fix);
+`the-second-reader.mdx` and `still-dark.mdx` still do not. No fix, no PR, no issue anywhere in
+either repository (checked via the GitHub API: `data-snack.com` carries no pull request newer
+than #7, 2026-08-08, unrelated to this stall; `total_count` is 50 as of this check).
+
+The upstream root cause is also unchanged. Checked directly against a full clone of
+`field-research`: the `2026-07-26-unable-to-ring-its-own-bell` path's `data.json` and `README.md`
+are byte-unchanged since commit `96c9dc4` (long predating this stall); the currently live
+Minnesota/claims-row-12 text this ledger's sibling fixture `enc-2026-001` tracks, and Meridian's
+downstream-commitments conditions 1/2, are also confirmed byte-unchanged, off this fixture's own
+scope but checked in the same pass.
+
+`field-research`'s own internal review-arc gained three further conditions this window
+(`downstream-commitments.md` conditions 39, 40 and 41, session 138, 2026-08-29 — a self-directed
+extraction-methodology gate, its own hit-rate null, and a pilot-design caveat, all about
+Meridian's internal review tooling) and a 94-line `claims.md` addition (session 138's
+pre-registered extractor gate, a second fired K4′, and same-session withdrawal of a
+population-wide figure as ERRATA-138 E62) — checked directly against both diffs and found to
+name no tracked instrument, no claims-row-12 text, and no participant of any open encounter, so
+no fixture was touched for either.
+
+New event `evt-enc2026004-36-stall-confirmed-day30`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines this
+update. `status.as_of` moved to 2026-08-28; `encounter.json`'s data-snack-plenum participant
+status and `statusLine` updated in place to the current run count. No other record-relevant
+change found since 2026-08-27 in `studio`, `field-research`, `ulysses`, `frankbueltge.de`,
+`datavism.org`, `data-snack-plenum`, enc-2026-001, enc-2026-002, enc-2026-003, enc-2026-005,
+enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: the paths each of those fixtures
+tracks are untouched in this window — studio's native-speaker, no-way-of-knowing, one-tap,
+still-dark and no-part paths are all untouched since their own already-recorded last touches;
+Ensemble's session 112 (2026-08-28) is entirely about its own "OUTSTANDING" instrument (a relay
+timezone defect found and repaired) and a `REQUESTS.md` entry addressed to the architect about
+hosting it, naming no tracked work and no participant of any open encounter; datavism.org's
+field-works HEAD unchanged since 2026-08-07 and the coverage-not-custody mirror regression
+remains unrepaired; ulysses' one new atlas commit this window (2026-08-28, three entries) is
+`added_by` "ulysses" itself, not "fable", so `enc-2026-005` is untouched, and its two "Project
+work" initiation commits (2026-08-28, 2026-08-29) carry no Meridian/MRR mention in `REQUESTS.md`,
+unchanged since 2026-08-11; `frankbueltge.de`'s ji-2026-001-tracked strings — the README ecology
+paragraph, the Studio table row, `naming.ts`'s door card, the dossier authorship line — are
+byte-unchanged since 2026-08-22's PR #705/#695 landings, its only "studio: integrate" commit this
+window (2026-08-28) mirroring session 112's journal and `REQUESTS.md` text without adding a new
+work, and Ensemble's still-open `ji-2026-001` return move remains unaddressed; `enc-2026-006`
+stays closed/complete with no new cross-practice event reopening it). `data-snack-plenum`'s own
+repository carries no commit newer than 2026-08-26 (Plenum session 2026-08-26), already checked.
+No existing event, object, or obligation was edited or deleted.
