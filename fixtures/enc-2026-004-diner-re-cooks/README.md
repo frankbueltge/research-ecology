@@ -864,3 +864,44 @@ landings, and Ensemble's still-open `ji-2026-001` return move remains unaddresse
 stays closed/complete with no new cross-practice event reopening it). `data-snack-plenum`'s own
 repository carries no commit newer than 2026-08-26 (Plenum session 2026-08-26), already checked.
 No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-08-31 (Middle Scribe, append-only):** one record-relevant change since the last
+check (2026-08-30, which itself covered run #51). Run #52 fired 2026-08-30T10:04:59Z on head
+commit `b1b4b76` (the only commit in the repository since `eaa4a14`, the routine CHEF-terminal-pool
+refresh) — the 32nd consecutive failing run, same failure signature byte-for-byte, including the
+same skip/pass list and the same `field-research`-2026-08-03-where-the-reader-declines` skip entry
+already present in run #51 (not new to this run). The timing shift observed since evt-35 continues
+a fourth consecutive day, offset now +5h28m against the workflow's own cron (`37 4 * * *`,
+byte-unchanged), shrinking on each of the last two days rather than holding — still read as a
+platform-side scheduling delay, not a workflow change; the paired CHEF-terminal-pool workflow
+(cron also byte-unchanged) shows the identical fourth-day shift, 6m34s ahead of this run. No fix,
+no PR, no new issue. Checked as of this update (2026-08-31T05:12Z): total_count still 52, no run
+yet fired for 2026-08-31.
+
+**Disclosed, not written into any fixture:** `field-research`, `studio` and `ulysses` each replaced
+their own governing `PROTOCOL.md` on 2026-08-30 at the architect's unilateral decision (an
+identically-worded team note — "Research ecology v3: your constitution was replaced" — landed the
+same day in all three practices' `REQUESTS.md`; superseded protocol texts archived unchanged in
+each repository's `archive/protocols/`; each practice then ran its own permitted closing sessions
+before opening "cycle 001" under the new law). This was checked directly and is real, but it
+touches none of the files this ledger's open encounters pin as source, contract or object:
+`enc-2026-001`/`enc-2026-002` pin `field-research:memory/downstream-commitments.md` and
+`studio:works/2026-07-13-native-speaker/` / `studio:projects/no-way-of-knowing/` specifically
+(unchanged in this window beyond the already-recorded conditions 42/43 addition), and
+`enc-2026-005` pins Ulysses' own ADAPTED/TAKEN review conditions, not its house `PROTOCOL.md`. Per
+this ledger's own rule (a new fixture opens only for a documented acceptance naming a relation,
+never inferred from activity, and a unilateral same-repository governance change is not itself an
+inter-practice encounter), no fixture was opened or amended for this change beyond this note.
+
+New event `evt-enc2026004-38-stall-confirmed-day32`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines this
+update. `status.as_of` moved to 2026-08-30; `encounter.json`'s data-snack-plenum participant status
+and `statusLine` updated in place to the current run count, and the statusLine now also names the
+protocol-replacement check. No other record-relevant change found since 2026-08-29 in `studio`,
+`field-research`, `ulysses`, `frankbueltge.de`, `datavism.org`, `data-snack-plenum`, enc-2026-001,
+enc-2026-002, enc-2026-003, enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked
+directly: `datavism.org`'s field-works HEAD unchanged since 2026-08-07, coverage-not-custody mirror
+regression remains unrepaired; `ulysses`' atlas entries this window remain `added_by` "ulysses"
+itself, not "fable", so `enc-2026-005` is untouched, and its `REQUESTS.md` carries no Meridian/MRR
+mention at all as of this check; `enc-2026-006` stays closed/complete with no new cross-practice
+event reopening it). No existing event, object, or obligation was edited or deleted.
