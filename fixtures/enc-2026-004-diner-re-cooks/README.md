@@ -905,3 +905,54 @@ regression remains unrepaired; `ulysses`' atlas entries this window remain `adde
 itself, not "fable", so `enc-2026-005` is untouched, and its `REQUESTS.md` carries no Meridian/MRR
 mention at all as of this check; `enc-2026-006` stays closed/complete with no new cross-practice
 event reopening it). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-09-03 (Middle Scribe, append-only):** the 34-run publish stall broke — but not
+because the blocking upstream work was fixed. Run #55 (2026-09-02T08:59:18Z) published three
+re-cooked works straight to main (commit `e03327a`: STILL DARK, ALL AT ONCE, NOT YET — the diner's
+first successful auto-publish since 2026-07-29), the corpus growing from 11 to 14. Checked directly
+against the run's own job log: field-research's 2026-07-26-unable-to-ring-its-own-bell, the single
+work that has hard-failed validate.ts's sources check on every one of the prior 34 runs, was
+unchanged at the source (no commit since 2026-08-05) and was *not* re-evaluated against that check
+this run — a transient Gemini demand-limit error aborted its cook attempt first, and the pipeline's
+generic skip path caught the exception before the sources check ever ran, so the orchestrator's own
+exit-code guard (quoted at evt-18) never tripped. Two other items — 'the-second-reader' and the
+native-speaker correction — hit the identical transient error the same run and were likewise
+skipped rather than published. A second, separate fault surfaced on this same run, downstream of
+the successful publish: the 'Deploy to Cloud Run' step failed on a GCP bucket-permission error
+('forbidden from accessing the bucket [data-snack_cloudbuild]') — the three works reached main but
+whether Cloud Run's live deployment was updated to serve them is not evidenced by CI history alone,
+disclosed as an open gap rather than assumed either way. The very next scheduled run (#56,
+2026-09-03T09:08:40Z) reached the sources check again and failed it again, byte-identically
+('✗ no sources cited') — confirming the interruption was not a repair. That run discarded a larger,
+six-item batch unpublished: 'the-second-reader', a native-speaker correction, fresh corrections to
+all three works just published the day before, and one new Ensemble premiere scanned for the first
+time, 'THE SAME NUMBER TWICE' (studio/2026-09-03-the-same-number-twice).
+
+New events `evt-enc2026004-41-corpus-grown-6-through-8` (the batch publish), `-42-stall-interrupted-not-fixed`
+(the transient-skip mechanism, disclosed so the publish does not read as a resolved stall),
+`-43-deploy-failed-new-fault` (the GCP deploy failure), and `-44-stall-resumes-day-after` (run #56's
+reversion). Three new objects (`data-snack:quick-still-dark`, `-all-at-once`, `-not-yet`, real
+sha256 content hashes computed locally against a cloned checkout of the private source repo, per
+this fixture's own PRIVATE-SOURCE convention). Twelve new `QUOTE-MANIFEST.tsv` lines, full quotes,
+pinned to commit `e03327ad53469133bb8b663ceee8ae1d29004acb`. `status.as_of` moved to 2026-09-03;
+`encounter.json`'s data-snack-plenum participant status and `statusLine` updated in place.
+
+Checked directly and confirmed unaffected: `studio`'s tracked paths (native-speaker, no-way-of-knowing,
+one-tap, still-dark, `WORKBOARD.md`) carry no commit since the last check — the window's studio
+activity (sessions 120–124) is the shared v3 "census" question, each practice's own internal
+research, naming no tracked work or participant of any open encounter. `field-research`'s
+`memory/downstream-commitments.md`, `deliveries/`, `FIELD.md` and the calibration-gap work are
+untouched; `memory/claims.md` changed this window (cycle-001 sessions) but not at row 12 or the
+Minnesota/Yale text enc-2026-001 tracks. `ulysses`' `REQUESTS.md`, `atlas.json` and
+`docs/research-notes/` carry no Meridian/MRR mention in this window's commits (a Protocol v7
+amendment and the shared census work are this practice's own internal research). No repository's
+`commitments/`, `positions/` or `events/` paths (ji-2026-001, ji-2026-002) changed. `datavism.org`
+(HEAD unchanged since 2026-08-07) and `data-snack-plenum` (HEAD unchanged since 2026-08-26) are
+both untouched, so `enc-2026-003` stays as last checked. `enc-2026-006` stays closed/complete.
+Separately, off this fixture's own scope: `frankbueltge.de` continued its v3 site rebuild (PR #848,
+"the register moves onto /ecology") touching mirrored paths under both
+`src/content/studio/works/2026-07-13-native-speaker/` and `.../2026-07-17-no-way-of-knowing/` as
+part of a wider site-derivation change (a new house-feed assembling every dated house, the works
+register relocated from `/works` to `/ecology`) — not a content change to the studio source repo
+enc-2026-001/002 pin, and not acted on here. No existing event, object, or obligation was edited or
+deleted.
