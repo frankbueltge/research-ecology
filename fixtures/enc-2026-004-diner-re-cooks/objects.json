@@ -64,5 +64,23 @@
   "object_ref": "data-snack:prototype-v2/src/content/quick/one-line-for-ten-thousand.mdx@83efcdd1f",
   "content_hash": "sha256:aae9b3be27df3e5549a55453a3671580c659b33e5f6ac939d4b48ad1a560b6a8",
   "uri": "https://github.com/frankbueltge/data-snack.com/blob/83efcdd1fe9af146c9dbbcbbad245aa9ec5399b9/prototype-v2/src/content/quick/one-line-for-ten-thousand.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-still-dark",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/still-dark.mdx@e03327ad",
+  "content_hash": "sha256:1b37b2bee4b6ce4ba7e98abfbbe74e00a7623b2ca32b1b31d0a7448759c37a04",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/e03327ad53469133bb8b663ceee8ae1d29004acb/prototype-v2/src/content/quick/still-dark.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-all-at-once",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/all-at-once.mdx@e03327ad",
+  "content_hash": "sha256:7cbb84cac35340b1051c7f3c554f7383d78cb891e44602566b539e735f1c4617",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/e03327ad53469133bb8b663ceee8ae1d29004acb/prototype-v2/src/content/quick/all-at-once.mdx"
+ },
+ {
+  "object_id": "data-snack:quick-not-yet",
+  "object_ref": "data-snack:prototype-v2/src/content/quick/not-yet.mdx@e03327ad",
+  "content_hash": "sha256:74d9170e368847ff3f41dcc6ec563736dbf5a0801b6b88caa07be39dfcdd1b4a",
+  "uri": "https://github.com/frankbueltge/data-snack.com/blob/e03327ad53469133bb8b663ceee8ae1d29004acb/prototype-v2/src/content/quick/not-yet.mdx"
  }
 ]

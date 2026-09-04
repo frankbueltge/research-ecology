@@ -905,3 +905,105 @@ regression remains unrepaired; `ulysses`' atlas entries this window remain `adde
 itself, not "fable", so `enc-2026-005` is untouched, and its `REQUESTS.md` carries no Meridian/MRR
 mention at all as of this check; `enc-2026-006` stays closed/complete with no new cross-practice
 event reopening it). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-09-04 (Middle Scribe, append-only): the 34-day stall was interrupted, not fixed —
+and a second, unrelated failure surfaced behind it.** Covers run #55 (2026-09-02) and run #56
+(2026-09-03), the two runs since the last check (2026-09-02, which covered run #54).
+
+Run #55 fired 2026-09-02T08:59:18Z (offset +4h22m18s against the workflow's own cron `37 4 * * *`,
+byte-unchanged, continuing the shrinking trend from run #54's +4h57m03s) and is the first run since
+evt-18's baseline (2026-07-30) whose Cook step did not fail. This is not a fix: `field-research`'s
+`2026-07-26-unable-to-ring-its-own-bell` — the item that has hard-failed `validate.ts`'s sources
+check on all 34 prior runs, confirmed still byte-unchanged since 2026-08-05 — was never reached at
+that check this run. It, `the-second-reader` and `native-speaker` (correction) each instead hit a
+different, transient failure ahead of `validate.ts`: three failed LLM caveat-extraction attempts,
+each returning "This model is currently experiencing high demand." The run's own tally reads
+`3 pass · 0 fail · 19 skipped (fail-safe)` — the first zero-fail tally recorded — because the
+known hard-failer happened to be skipped for an unrelated reason, not because its defect was
+addressed. Three other items — studio's `STILL DARK` (in the backlog since evt-19-era) and two
+2026-09-01 studio premieres, `ALL AT ONCE` and `NOT YET` (already noted built-but-uncommitted at
+evt-39/-40) — extracted cleanly and passed. With zero hard fails the script's own exit-code guard
+(evt-18's `quote_exit_guard`) did not fire, and `Publish to main` committed all three
+(`PIPELINE_AUTOPUBLISH=true`, no PR) as commit `e03327ad53469133bb8b663ceee8ae1d29004acb`
+(2026-09-02T09:02:08Z, 6 files — 3 `.mdx` + 3 `.captions.yaml` — 348 insertions, no deletions):
+the first content this automation has actually committed since its 2026-07-29 run, 35 days prior.
+Object admission recorded (`objects.json`: `data-snack:quick-still-dark`,
+`data-snack:quick-all-at-once`, `data-snack:quick-not-yet`; title/hook quotes pinned to
+`QUOTE-MANIFEST.tsv` at commit `e03327ad`); total quick-snack count 11 → 14.
+
+But run #55's own GitHub-reported conclusion is still `failure`: for the first time in this
+fixture's tracked history the pipeline reached `Deploy to Cloud Run` at all (every prior run's
+Cook-step failure had left Gates/Detect/Publish/Auth/Deploy all skipped), and that step failed on
+a GCP permissions error unrelated to content — `ERROR: (gcloud.builds.submit) The user is
+forbidden from accessing the bucket [data-snack_cloudbuild]` — an org-policy/IAM condition,
+checked directly against the job log. No PR, no issue, no fix filed for it anywhere (GitHub API:
+no PR newer than #7; only open issue is #5, unrelated). Whether the three newly-committed snacks
+are live on `https://data-snack.com` is therefore honestly unresolved by this record: they are in
+the repository's `main` branch, but the deploy that would serve them failed, and no later
+successful deploy is evidenced as of this check.
+
+Run #56 fired 2026-09-03T09:08:40Z (offset +4h31m40s against the same byte-unchanged cron; the
+paired CHEF-terminal-pool workflow, cron also byte-unchanged, fired 10m11s earlier, continuing the
+same platform-side pairing pattern evt-35 onward) and reverts to the historical signature:
+`unable-to-ring-its-own-bell` reaches `validate.ts` this time and hard-fails it with the same
+reported line, `no sources cited` — the work's own path confirmed still byte-unchanged since
+2026-08-05. Exit code 1; the exit-code guard discarded the whole batch again, so nothing committed
+despite six items passing extraction: `the-second-reader` and `native-speaker` (correction) — both
+blocked only by run #55's transient model-overload skip, not by any real defect — plus a brand-new
+studio premiere, `THE SAME NUMBER TWICE` (studio/2026-09-03-the-same-number-twice, session 122,
+commit `7d71773`), scanned and passed for the first time; plus `still-dark`/`all-at-once`/`not-yet`,
+each re-flagged `(correction)` rather than `(new)`.
+
+That correction flag does not hold up under a direct check. The job log names specific studio
+sessions as the source of each correction — session 99 (2026-08-16) for `still-dark`; sessions 119
+(2026-09-01) and 121 (2026-09-02) for `all-at-once`; sessions 118 (2026-09-01) and 121 (2026-09-02)
+for `not-yet` — but checked directly against a full clone of `studio`, none of those sessions'
+commits touch `works/2026-08-15-still-dark/`, `works/2026-09-01-all-at-once/`, or
+`works/2026-09-01-not-yet/` at all: session 99 (`9089441`) is a site build-gate repair naming none
+of these works; sessions 119 (`3a1f311`) and 118 (`b3e1f377`) are each work's own single creation
+commit, already reflected in run #55's cook; session 121 (`1243675`/`c88fcc2`) is studio's
+unrelated premiere `THE SECOND PARTY`. Each of the three work directories carries exactly the one
+commit already accounted for — no second, later touch exists anywhere in `studio`. The pipeline's
+own correction-detection therefore appears to be citing session numbers that do not correspond to
+any commit on the named work's own path. Disclosed as an open, unexplained discrepancy in the
+automation's own bookkeeping, not resolved here — possibly connected to the job log's own disclosed
+parse failure on `field-research`'s `chronicle.json` ("could not parse chronicle.json ... proceeding
+without chronicle enrichment"), though that failure names a different repository's file and the
+link is not confirmed.
+
+Discarded backlog (built in CI, never committed) now stands at six items: `the-second-reader`,
+`native-speaker` (correction), `still-dark`/`all-at-once`/`not-yet` (disputed correction), and
+`the-same-number-twice` (new). Skip count 16, down from run #55's 19 as three items moved out of
+skip into pass/fail; no skip item is new beyond `the-same-number-twice`. `upstream published+
+verified works` moved 32→33 and `detector` signals 22→23 between the two runs, tracking the one new
+studio premiere; no other new upstream item is named in the pass/fail/skip breakdown. No fix, no
+PR, no issue anywhere in either repository for the sources-cited failure or the deploy failure as
+of this check (2026-09-04; workflow-run `total_count` is 56, no further run yet fired).
+
+New events `evt-enc2026004-41-cook-succeeds-day35` (`object.admitted`) and
+`evt-enc2026004-42-stall-resumes-day36` (`automation.declared`). The job log itself remains
+unpinned to `QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention; six new manifest
+lines were added for the three newly-committed `.mdx` files' own title/hook text at commit
+`e03327ad` (git-tracked, so pinnable). `status.as_of` moved to 2026-09-03; `encounter.json`'s
+data-snack-plenum participant `local_status` and `statusLine` updated in place.
+
+No other record-relevant change found since 2026-09-02 in `studio`, `field-research`, `ulysses`,
+`frankbueltge.de`, `datavism.org`, `data-snack-plenum`, enc-2026-001, enc-2026-002, enc-2026-003,
+enc-2026-005, enc-2026-006, ji-2026-001, or ji-2026-002 (checked directly: `field-research`'s
+`memory/downstream-commitments.md`, `memory/claims.md`'s Minnesota/row-12 text, and
+`works/2026-07-01-calibration-gap/` are byte-unchanged despite extensive unrelated internal
+`claims.md`/`REQUESTS.md` churn under the shared v3 question; `REQUESTS.md`'s `ji-2026-002`-tracked
+correction request still reads `Status: open`, unchanged; `studio`'s `works/2026-07-13-native-
+speaker/`, `projects/no-way-of-knowing/`, `works/2026-07-17-no-way-of-knowing/`,
+`works/2026-07-23-one-tap/` and `works/2026-07-30-no-part/` are untouched; `ulysses`' atlas stays
+at 77 `fable`-attributed entries of 260 total, and its `REQUESTS.md` carries no Meridian/MRR
+mention, so `enc-2026-005` is untouched; `frankbueltge.de`'s
+`src/content/studio/works/2026-07-13-native-speaker/` and `.../2026-07-17-no-way-of-knowing/` are
+byte-unchanged despite continuing v3 site churn again touching `src/config/naming.ts` and
+`ApparatusPage.astro` — `ji-2026-001`'s own tracked material, already disclosed off-scope at
+evt-40, not re-verified byte-for-byte again here; `datavism.org` carries no commit since
+2026-08-07; `data-snack-plenum`'s own repository — the separate cast/planning engine, not this
+automation — carries one new routine "feedback: build 2026-09-03 red" commit touching only
+`plenum-feedback/2026-09-03.md`, off this fixture's tracked scope; `enc-2026-006` stays
+closed/complete with no new cross-practice event reopening it). No existing event, object, or
+obligation was edited or deleted.
