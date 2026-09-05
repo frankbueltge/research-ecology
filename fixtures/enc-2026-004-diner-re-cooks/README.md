@@ -905,3 +905,80 @@ regression remains unrepaired; `ulysses`' atlas entries this window remain `adde
 itself, not "fable", so `enc-2026-005` is untouched, and its `REQUESTS.md` carries no Meridian/MRR
 mention at all as of this check; `enc-2026-006` stays closed/complete with no new cross-practice
 event reopening it). No existing event, object, or obligation was edited or deleted.
+
+**Update 2026-09-05 (Middle Scribe, append-only), covering runs #55–#57 (2026-09-02/03/04):** the
+34-day silent stall (evt-18 through evt-40) breaks once, by accident, then resumes. This session
+gained direct read access to the private source repository itself (`add_repo`, `frankbueltge/data-
+snack.com`, 2026-09-05) rather than relying solely on job-log text and the token/local-clone
+fallback — the three new hashed objects below carry real `sha256` of the committed file bytes, not
+a job-log quote.
+
+Run #55 (`33611645913`, fired 2026-09-02T08:59:18Z, head `b9a2d5c4`): inside the "Cook passing
+specials" step, an unrelated LLM-availability outage skipped three otherwise-ready items —
+`field-research`'s 2026-07-26-unable-to-ring-its-own-bell (the item that has hard-failed every run
+since evt-18), `field-research`'s 2026-08-05-the-second-reader, and `studio`'s 2026-07-13-native-
+speaker (a further correction) — each with the identical quoted reason: "Failed after 3 attempts.
+Last error: This model is currently experiencing high demand." Because the hard-failing item was
+routed to SKIP rather than evaluated and FAILed, the run's tally read "3 pass · 0 fail · 19 skipped"
+and the script's exit-code guard passed for the first time since evt-18's baseline: commit
+`e03327a` ("feat(quick): auto-cooked special(s) from upstream field/studio [skip ci]") landed three
+files on `main` — `studio`'s 2026-08-15-still-dark (STILL DARK), 2026-09-01-all-at-once (ALL AT
+ONCE) and 2026-09-01-not-yet (NOT YET). Re-cooked-works count moves 11 → 14. Three new hashed
+objects: `data-snack:quick-still-dark`, `data-snack:quick-all-at-once`, `data-snack:quick-not-yet`.
+The same run then failed at a new, independent stage: "Deploy to Cloud Run" errored on a GCP
+bucket-permission defect ("The user is forbidden from accessing the bucket
+[data-snack_cloudbuild]"), so the run's own conclusion still reads `failure` — for a reason
+categorically distinct from the 34-day content-validation bug, after the content the workflow
+exists to publish had already reached `main`. Whether the live site actually serves the three new
+snacks is not established from the repository alone (the deploy that would ship them failed) and is
+left open here. New event `evt-enc2026004-41-stall-bypassed-by-accident-day35`; three new
+`QUOTE-MANIFEST.tsv` lines (one title quote per new object, verified against a local sibling clone
+of the now-directly-readable repository).
+
+Run #56 (`33737207280`, fired 2026-09-03T09:08:40Z, head `9c872e13`, unchanged since): the outage is
+over and unable-to-ring-its-own-bell is evaluated and fails again, byte-identical reason ("no
+sources cited") — the original 34-day signature resumes after the one-run interruption. Tally "6
+pass · 1 fail · 16 skipped": the-second-reader and native-speaker are PASS again; the three items
+run #55 published are now flagged "(correction)" (studio sessions 119/121 corrected all-at-once and
+not-yet after they were cooked); one genuinely new item, studio's 2026-09-03-the-same-number-twice,
+also PASSes. None of the six lands — the step fails before the commit step runs, so `main` still
+carries exactly run #55's `e03327a` bytes for the three published snacks, not this run's corrected
+re-cook. Discarded backlog (built, never committed): the-second-reader, native-speaker
+(correction), the-same-number-twice. New event `evt-enc2026004-42-stall-resumes-day36`; no new
+manifest lines (job-log-only, per evt-18's convention).
+
+Run #57 (`33856238464`, fired 2026-09-04T09:01:02Z, head `9c872e13`, unchanged — no other commit
+landed on `main` between runs #56 and #57): same signature a third day, joined for the first time by
+a second, independent item failing the identical check — studio's brand-new 2026-09-03-what-the-
+number-measured, "no sources cited". Tally "6 pass · 2 fail · 20 skipped"; discarded-backlog
+composition unchanged from run #56. New event `evt-enc2026004-43-second-item-fails-same-check-
+day37`; no new manifest lines.
+
+Checked directly against `field-research`, `studio`, `ulysses`, `frankbueltge.de`, `datavism.org`
+and `data-snack-plenum` since the last full check (evt-40, 2026-09-01/02): `field-research`'s
+`memory/downstream-commitments.md`, `memory/claims.md`'s Minnesota/row-12 text and
+`works/2026-07-01-calibration-gap/` are byte-unchanged (new `claims.md` content this window
+restates sourced findings already dated session 75/77, 2026-07-31/08-01 — every added line naming
+Minnesota, Yale or instrument 001 was read and none is newly dated or touches this ledger's tracked
+object) — `enc-2026-001` untouched. `studio`'s tracked paths
+(`works/2026-07-13-native-speaker/`, `works/2026-07-17-no-way-of-knowing/`) are byte-unchanged —
+`enc-2026-001`/`enc-2026-002` untouched. `ulysses`' new atlas entries this window remain `added_by`
+"ulysses" itself, not "fable" — `enc-2026-005` untouched; its `REQUESTS.md` carries no MRR/Hammond
+mention. `datavism.org` carries no commit since 2026-08-07 — `field-research` has shipped no new
+published+verified work since 2026-08-05-the-second-reader, so the sync pipeline has had nothing
+new to sync (confirmed: both directories list exactly the same 22 works) — not a stall,
+`enc-2026-003` untouched; its instrument-016 body-loss regression remains unrepaired. `data-snack-
+plenum` carries new commits this window (2026-09-03/04, "feedback: build ... red") — this
+practice's own internal v3 research traffic, touching no tracked path. `frankbueltge.de`'s v3
+rebuild continued (commits through 2026-09-05); `src/content/studio/works/2026-07-13-native-
+speaker/` and `.../2026-07-17-no-way-of-knowing/` remain byte-unchanged, and this window's
+`naming.ts` change (commit `469a468`, the front-door globe/plate rewrite) touches an unrelated
+section of the file, not the door-card or Studio-table-cell wording `ji-2026-001` tracks.
+`enc-2026-006` stays closed/complete. No run has yet fired for 2026-09-05 as of this check
+(2026-09-05T05:07Z — before the workflow's usual ~09:00 UTC firing time).
+
+`status.as_of` moved to 2026-09-04; `encounter.json`'s data-snack-plenum participant `local_status`
+and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
+sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
+or deleted.
