@@ -982,3 +982,49 @@ and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
 sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
 or deleted.
+
+**Update 2026-09-06 (Middle Scribe, append-only), covering run #58 (2026-09-05):** one
+record-relevant change since the last check (evt-43, 2026-09-04/05). Run #58 (`33955560409`,
+fired 2026-09-05T08:32:52Z, head `82d1db1c`) resumes the 34-day signature a third day running:
+field-research's 2026-07-26-unable-to-ring-its-own-bell fails `Cook passing specials` on the same
+line as every run since evt-18, `✗ no sources cited`; every downstream step is skipped again, no
+commit lands, re-cooked-works count stays at 14. The extraction-service outage named at evt-41
+returns this run, wider than its first occurrence — it skips five otherwise-ready items rather
+than three (the-second-reader, native-speaker (correction), all-at-once (correction), not-yet
+(correction), and evt-43's newly-failing item, studio's 2026-09-03-what-the-number-measured) —
+so the outage pre-empts validate.ts's own check on what-the-number-measured this run: its evt-43
+"no sources cited" fail is neither confirmed nor cleared, only left exactly where evt-43 stated
+it. Two items PASS but are not committed (the step fails before the commit step runs): still-dark
+(correction) and the-same-number-twice; the discarded backlog is otherwise unchanged from evt-43.
+Tally: `─── 2 pass · 1 fail · 26 skipped (fail-safe) ───`, the lowest pass-count of any run in this
+window. One new studio work enters the skip list for the first time, published the same day as the
+check: 2026-09-05-sixty-ways-to-count (routine no-caveat-extractable skip, no bearing on the
+stall). No run had yet fired for 2026-09-06 as of this check (2026-09-06T05:06Z, before the
+workflow's usual ~09:00 UTC firing time).
+
+New event `evt-enc2026004-44-stall-continues-day38`. The job log itself remains unpinned to
+`QUOTE-MANIFEST.tsv` (not git-tracked), per evt-18's own convention — no new manifest lines this
+update.
+
+Checked directly against `field-research`, `studio`, `ulysses`, `frankbueltge.de`, `datavism.org`
+and `data-snack-plenum` since the last full check (evt-43): `field-research`'s
+`memory/downstream-commitments.md`, `memory/claims.md` and `works/2026-07-01-calibration-gap/` are
+byte-unchanged — `enc-2026-001` untouched. `studio`'s tracked paths (`works/2026-07-13-native-
+speaker/`, `works/2026-07-17-no-way-of-knowing/`) are byte-unchanged — `enc-2026-001`/`enc-2026-002`
+untouched. `ulysses`' newest atlas commit remains 2026-09-04 (five entries, `added_by: "ulysses"`,
+not `"fable"`) with no further atlas commit through 2026-09-06 — `enc-2026-005` untouched; its one
+touch to `REQUESTS.md` this window (commit `765e883`, 2026-08-10) moved the already-answered,
+already-corrected MRR/Hammond sections verbatim into `REQUESTS-ARCHIVE.md` — a housekeeping
+reorganisation, not a new fact: the two status pointers (2026-07-21 offer, 2026-07-27 offer) carry
+across the move exactly as evt-enc2026005-11/-13 already corrected them, no quoted text changed,
+checked directly and not written into `enc-2026-005`. `datavism.org` carries no commit since
+2026-08-07 — `enc-2026-003` untouched, its instrument-016 body-loss regression remains unrepaired.
+`data-snack-plenum` carries a new commit this window (2026-09-06, "feedback: build ... red") — this
+practice's own internal v3 research traffic, touching no path this ledger tracks. `frankbueltge.de`'s
+`src/config/naming.ts`, `README.md` and its studio mirror paths are byte-unchanged since evt-43's
+check. `enc-2026-006` stays closed/complete with no new cross-practice event reopening it.
+
+`status.as_of` moved to 2026-09-05; `encounter.json`'s data-snack-plenum participant `local_status`
+and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-004-diner-re-cooks` — verified. No existing event, object, or obligation was
+edited or deleted.
