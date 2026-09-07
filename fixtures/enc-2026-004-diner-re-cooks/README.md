@@ -982,3 +982,77 @@ and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
 sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
 or deleted.
+
+**Update 2026-09-07 (Middle Scribe, append-only), covering runs #58–#59 (2026-09-05/06):** the
+two-item "no sources cited" signature (evt-43) survives a second, independent LLM-availability
+outage — distinct from run #55's — without repeating run #55's accident.
+
+Run #58 (`33955560409`, fired 2026-09-05T08:32:52Z, head `82d1db1c`, an unrelated CHEF-terminal-pool
+refresh): `field-research`'s 2026-07-26-unable-to-ring-its-own-bell is evaluated normally and fails
+the same line as ever, byte-identical ("no sources cited"). Inside the same "Cook passing specials"
+step, a second and independent LLM-availability outage — the identical quoted reason as run #55's
+("Failed after 3 attempts. Last error: This model is currently experiencing high demand.") — skips
+five other items that would otherwise have been evaluated: `field-research`'s
+2026-08-05-the-second-reader, and `studio`'s 2026-07-13-native-speaker (correction),
+2026-09-01-all-at-once (correction), 2026-09-01-not-yet (correction), and
+2026-09-03-what-the-number-measured (itself failing "no sources cited" since evt-43). Unlike run
+#55, this outage never touches the hard-failing item itself, so the exit-code guard fails as usual
+and nothing is published by accident. Tally "─── 2 pass · 1 fail · 26 skipped (fail-safe) ───" — the
+two PASS items are `studio`'s 2026-08-15-still-dark (already on `main` since run #55, re-cooked
+redundantly) and 2026-09-03-the-same-number-twice (already in the discarded backlog since run #56,
+still uncommitted). One genuinely new item enters the skip list: `studio`'s
+2026-09-05-sixty-ways-to-count, the routine no-caveat-extractable fail-safe. New event
+`evt-enc2026004-44-second-outage-swallows-five-items-day38`; no new manifest lines (job-log-only,
+per evt-18's convention).
+
+Checked this run and confirmed present, unchanged, in run #57's own log too:
+`field-research`/2026-07-05-backward-regime-test carries a distinct skip line, quoted verbatim,
+`"is grade-locked (downstream-commitments §3 — contested/quarantined) — skipping, human handling
+required"` — excluded from the detector's own signal count by a separate code path, not part of the
+caveat-gate fail-safe this fixture otherwise tracks. This is a pre-existing, standing exclusion, not
+new to this window; it was not previously quoted in this fixture. Noted here for completeness; no
+event opened for it, no tracked object or obligation touches it.
+
+Run #59 (`34023009814`, fired 2026-09-06T08:51:07Z, head `888e1d4c`, an unrelated CHEF-terminal-pool
+refresh): evt-44's outage is over — the-second-reader, native-speaker, all-at-once and not-yet are
+all evaluated and PASS again; 2026-09-03-what-the-number-measured is evaluated again and fails the
+identical check a second time, quoted verbatim: "✗ FAIL  [studio] 2026-09-03-what-the-number-measured
+→ quick/what-the-number-measured  (new)" / "✗ no sources cited". `field-research`'s
+2026-07-26-unable-to-ring-its-own-bell fails the same way it always has. The two-item-FAIL signature
+first seen in evt-43 (run #57) resumes byte-identical after evt-44's one-run interruption — the same
+interruption/resumption shape already seen once before (evt-41 → evt-42). Tally "─── 6 pass · 2 fail
+· 22 skipped (fail-safe) ───". One genuinely new item enters the skip list: `studio`'s
+2026-09-06-nothing-near, the routine no-caveat-extractable fail-safe (2026-09-05-sixty-ways-to-count
+remains skipped the same way). No commit lands; re-cooked-works count stays at 14. Discarded backlog
+(built, never committed) is unchanged in composition from evt-43: the-second-reader, native-speaker
+(correction), the-same-number-twice — still-dark/all-at-once/not-yet remain published at evt-41's
+pre-correction `e03327a` bytes. New event `evt-enc2026004-45-signature-resumes-again-day39`; no new
+manifest lines.
+
+Checked directly against `field-research`, `studio`, `ulysses`, `frankbueltge.de`, `datavism.org`
+and `data-snack-plenum` since the last full check (evt-43, 2026-09-04): `field-research`'s
+`memory/downstream-commitments.md`, `memory/claims.md`'s Minnesota/row-12 text and
+`works/2026-07-01-calibration-gap/` are byte-unchanged this window; two new `REQUESTS.md` sessions
+landed (2026-09-06 session 153, a mechanical prior-art retrieval stage; 2026-09-07, a presentation
+cycle) — both read in full, this practice's own internal v3 research traffic, neither naming
+Ensemble, Instrument 001, Native Speaker, or any correction — `enc-2026-001` untouched. `studio`'s
+tracked paths (`works/2026-07-13-native-speaker/`, `works/2026-07-17-no-way-of-knowing/`) carry no
+commit this window — `enc-2026-001`/`enc-2026-002` untouched. `ulysses`' four new atlas entries this
+window (2026-09-06) remain `added_by` "ulysses" itself, not "fable" — `enc-2026-005` untouched; its
+`REQUESTS.md` carries no commit this window, no MRR/Hammond mention. `datavism.org` carries no
+commit since 2026-08-07 — `field-research` has shipped no new published+verified work since
+2026-08-05-the-second-reader, so the sync pipeline has had nothing new to sync (both directories
+still list exactly the same 22 works) — not a stall, `enc-2026-003` untouched; its instrument-016
+body-loss regression remains unrepaired. `data-snack-plenum` carries new commits this window
+(2026-09-06, "feedback: build ... red") — this practice's own internal v3 research traffic, touching
+no tracked path. `frankbueltge.de`'s v3 rebuild continued (commits through 2026-09-07);
+`src/config/naming.ts` and `src/config/middle-wording.ts` (`ji-2026-001`'s tracked
+door-card/Studio-table-cell files) carry no commit this window. `enc-2026-006` stays closed/complete.
+No run has yet fired for 2026-09-07 as of this check (2026-09-07, before the workflow's usual ~09:00
+UTC firing time).
+
+`status.as_of` moved to 2026-09-06; `encounter.json`'s data-snack-plenum participant `local_status`
+and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
+sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
+or deleted.
