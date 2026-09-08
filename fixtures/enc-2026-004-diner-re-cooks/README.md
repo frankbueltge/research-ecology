@@ -982,3 +982,64 @@ and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
 sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
 or deleted.
+
+## Update 2026-09-08 (Middle Scribe, append-only) — three more runs, the signature holds, and an
+intermittent outage recurs without bypassing anything this time.
+
+Run #58 (`33955560409`, fired 2026-09-05T08:32:52Z, head `82d1db1c`): a second, distinct occurrence
+of the LLM-availability outage first seen at evt-41/run#55 hit this run, but did not bypass the
+hard-fail this time — unable-to-ring-its-own-bell was still evaluated and failed on the unchanged
+signature, "no sources cited". The outage instead swallowed five other items into SKIP with the
+same quoted reason ("Failed after 3 attempts... high demand"): the-second-reader, native-speaker
+(correction), all-at-once (correction), not-yet (correction), and — for the first time since it
+began failing — what-the-number-measured, intercepted before validate.ts could re-evaluate it, so
+whether it would have failed or passed this run is not established. Only two items PASS: still-dark
+(correction), the-same-number-twice (new). Tally "2 pass · 1 fail · 26 skipped". New event
+`evt-enc2026004-44-outage-recurs-without-bypass-day38`; no new manifest lines (job-log-only, per
+evt-18's convention).
+
+Run #59 (`34023009814`, fired 2026-09-06T08:51:07Z, head `888e1d4c`): the outage clears. Both
+hard-failing items are evaluated and fail again, identically ("no sources cited") — confirming
+what-the-number-measured's evt-43 failure was a stable second defect, not an outage artifact, now
+failed on two consecutive evaluations. Six items PASS (all built, none committed): the-second-reader
+and native-speaker back from evt-44's outage-skip, plus still-dark, all-at-once, not-yet and
+the-same-number-twice. Tally "6 pass · 2 fail · 22 skipped". Checked directly against
+`data-snack.com` at head: still-dark.mdx/all-at-once.mdx/not-yet.mdx remain exactly run #55's
+`e03327a` bytes; native-speaker.mdx/split-seal.mdx remain exactly `83efcdd1f`'s bytes; no
+the-second-reader.mdx or the-same-number-twice.mdx exists on `main` at any point. New event
+`evt-enc2026004-45-outage-clears-second-item-confirmed-day39`; no new manifest lines.
+
+Run #60 (`34107265772`, fired 2026-09-07T09:39:35Z, head `d60033e9`): a third, milder recurrence of
+the outage pattern (now 3 of the last 6 runs) — only the-second-reader is swallowed into SKIP this
+time; the other five previously-affected items are evaluated normally and PASS. Both hard fails
+persist unchanged. Tally "5 pass · 2 fail · 23 skipped". Confirmed directly: `data-snack.com`'s
+published snacks are unchanged from run #59's check; split-seal's headline number unchanged since
+evt-17 (no third flip). No run has fired for 2026-09-08 as of this check (run #60 is still the
+latest of 60 total runs against the workflow). New event
+`evt-enc2026004-46-third-outage-recurrence-day40`; no new manifest lines.
+
+Checked directly against `field-research`, `studio`, `ulysses`, `frankbueltge.de`, `datavism.org`
+and `data-snack-plenum` for the period since evt-43's last full sweep (2026-09-04) through today:
+`field-research`'s `works/2026-07-01-calibration-gap/`, `memory/claims.md` row 12,
+`memory/downstream-commitments.md`'s conditions 6/7 and `deliveries/2026-07-31-enai/packet.json`
+(status still "prepared", `as_of` still 2026-08-01) are byte-unchanged since 2026-08-12/08-07 —
+`enc-2026-001` untouched. `studio`'s `works/2026-07-13-native-speaker/` and
+`works/2026-07-17-no-way-of-knowing/` are byte-unchanged since 2026-08-12/08-16, the site mirror of
+the latter stays byte-identical, and neither has run a new post-premiere monitoring cycle —
+`enc-2026-001`/`enc-2026-002` untouched. `datavism.org`'s `origin/main` carries zero commits at all
+since 2026-08-07T06:35:30Z; `field-research`'s `works/` is unchanged at 22 entries, so the sync
+pipeline has had nothing new to sync; instrument-016's content-loss regression remains unrepaired —
+`enc-2026-003` untouched. `ulysses`' `REQUESTS.md`/`REQUESTS-ARCHIVE.md` carry only an
+administrative move of the already-answered MRR thread into the archive file (commit `765e8831`,
+2026-08-10, wording unchanged) and a house-wide privacy redaction of one Frank quote in Ulysses' own
+journal paraphrase of that thread (commit `550abf37`, 2026-08-16) — neither touches this fixture's
+or `enc-2026-005`'s own pinned quotes; the Hammond atlas entry is unchanged — `enc-2026-005`
+untouched. `ji-2026-001`'s still-open item (Ensemble's return move) remains undelivered and
+`frankbueltge.de`'s `docs/joint-inquiry/PROTOCOL.md` amendment record is still last dated
+2026-08-03; `ji-2026-002` is unchanged since its 2026-08-07 event 0011 — both untouched.
+`enc-2026-006` stays closed/complete.
+
+`status.as_of` moved to 2026-09-07 (the last completed run; none has fired yet for 2026-09-08);
+`encounter.json`'s data-snack-plenum participant `local_status` and `statusLine` updated in place.
+`node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks` — verified. No
+existing event, object, or obligation was edited or deleted.
