@@ -169,3 +169,52 @@ remains open. Two new `QUOTE-MANIFEST.tsv` lines. `node tools/verify-encounter-f
 fixtures/enc-2026-003-school-replicates` — 31/31 verified. `encounter.json`'s `status.as_of`/
 `statusLine` and datavism's participant `local_status` updated in place to the current state. No
 existing event, object, obligation or assertion was edited or deleted.
+
+## Update 2026-09-11 (Middle Scribe, append-only) — the mirror itself is retired: transport ends,
+translation and the Atlas stand
+
+Found diffing `datavism.org` since this fixture's last check (2026-08-09): on 2026-09-08
+(commit `7b9abb3`, PR #33 "chore/remove-field-mirror", merged into `main` 2026-09-10T08:28:52Z as
+`3ba263b`) datavism retired the automated field-sync mirror this fixture has tracked since evt-01 —
+not paused, removed outright, on Frank's instruction ("Entfernt auf Franks Anweisung vom
+2026-09-08", wording of the instruction itself kept private per the commit message). One commit
+deletes `.github/workflows/field-sync.yml`, `scripts/field-sync.mjs`, `src/pages/field/` and all 22
+files under `src/content/field-works/`; `/field` and `/field/<slug>` now 301-redirect to
+`frankbueltge.de/field` and `.../field/werke/<slug>` respectively (declared in `vercel.json`; this
+check could not re-fetch the live site to confirm the redirect actually fires in production, and
+leaves that open). Both governing documents carry dated retraction notes rather than being quietly
+rewritten: ADR 002 gets a "Teil-Ablösung 2026-09-08" preamble, ADR 003 a "Phase 2 zurückgenommen"
+one, each stating plainly that Phase 1 (`derivedFrom` in the Command-Center operations) and Phase 3
+(the Atlas snapshot) "bleiben unverändert in Kraft" — this encounter's other two standing relations
+are explicitly unaffected.
+
+This ends the TRANSPORT half of the very grammar this fixture's own editorial proposition names
+("automates the TRANSPORT of works while deliberately keeping their didactic TRANSLATION manual") —
+the automated half stops; the manual half (never automated to begin with, per `obl-enc2026003-1`)
+is untouched because it was never the thing removed. The synced-works count is now frozen
+permanently at 22 (evt-15's count) — no further sync can run to raise or correct it. This also
+moots evt-09's long-open instrument-016 content-loss regression: the file it named
+(`src/content/field-works/2026-07-20-coverage-not-custody.md`) no longer exists on this reuse
+surface at all, so the regression can neither be repaired nor recur; recorded here as
+moot-by-removal, not repaired — evt-09 itself is left exactly as it stood, per the append-only
+rule. New event `evt-enc2026003-16-pipeline-retired`; three new `QUOTE-MANIFEST.tsv` lines (two
+from ADR 003, one from ADR 002; the commit message itself is cited in the event's
+`commit_message_note` field but not manifest-verified, since a commit message is not fetchable file
+content). `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates` —
+34/34 verified. `encounter.json`'s `status.as_of`/`statusLine` and datavism's participant
+`local_status` updated in place to the current state. No existing event, object, obligation, or
+assertion was edited or deleted.
+
+Checked directly against `field-research`, `studio`, `ulysses` and `frankbueltge.de` since the last
+full ecology-wide check (2026-09-05, `enc-2026-004`'s evt-43): no change record-relevant to
+`enc-2026-001` (Meridian's `works/2026-07-01-calibration-gap/`, `memory/claims.md`,
+`memory/downstream-commitments.md`; Ensemble's `works/2026-07-13-native-speaker/`) or
+`enc-2026-002` (Ensemble's `works/2026-07-17-no-way-of-knowing/`) — both paths byte-unchanged.
+Ulysses' atlas entries added this window remain `added_by: "ulysses"` itself, not "fable" —
+`enc-2026-005` untouched; its `REQUESTS.md` carries no MRR/Hammond mention. `enc-2026-006` stays
+closed/complete. `frankbueltge.de`'s most recent commits are dated automated mirrors ("nightly
+line", "puls", "attention", "n-1") of the practices' own bulletin traffic — the site's v3-era
+derived day-to-day, not this ledger's to transcribe — but the wider window since `ji-2026-001`'s
+own last check (2026-08-22) also carries substantive site rewrites (the v3 front-door/Apparatus-page
+rebuild, PRs up to #911) that moved the exact wording `ji-2026-001` tracks; that drift is recorded
+under `ji-2026-001` itself, not here, since it is that fixture's own tracked object, not this one's.

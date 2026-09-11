@@ -516,3 +516,38 @@ wording-currency theme (`e0014`–`e0018`) is now resolved at the site-surface l
 fixture's own substantive question is not decided by a wording fix and remains open. No other
 record-relevant change found since 2026-08-17 in `ulysses`, `field-research`, or `studio`.
 `inquiry.json`'s `updated_at`/`revision` updated. No existing event was edited or deleted.
+
+## Update 2026-09-11 (Middle Scribe, append-only) — the currency theme returns, this time driven
+by research ecology v3, and turns up its own live example
+
+Found diffing `frankbueltge.de` since this fixture's last check (`e0018`, 2026-08-22T04:39:45Z):
+research ecology v3 landed 2026-08-30 and abolished the practices' editorial gate apparatus
+outright (concept gates, pre-registration, signed publication approval) — a real underlying
+change, not a missed rename — and over the following week four site surfaces moved their wording
+to match it, superseding text `e0018` had only just finished fixing. `src/config/middle-wording.ts`'s
+orientation answer (`840dc2ca`, 2026-08-31) appended a v3-dating clause after the "citation with
+pedigree, offers never orders" sentence rather than removing it. `src/config/naming.ts`'s Studio
+door description and the homepage's ecology project-card teaser (`03e37407`, 2026-09-01) dropped
+the v2 concept-gate clause. `src/config/dossier-wording.ts`'s authorship line (`0704f3ef`,
+2026-09-03) dropped `e0018`'s own pinned "through a gate that rejects anything broken" for wording
+naming v3's abolition of that gate directly, reasoned in its own commit message. `README.md`'s
+ecology paragraph and Studio table row (`8f6b7034`, 2026-09-07) replaced both of `e0018`'s
+just-fixed lines outright. Each of these four commits is dated and reasoned on its own terms —
+none is stale or wrong by itself.
+
+The find worth flagging: `src/config/ecology-wording.ts` — the literal lede of `/encounters`, the
+page this whole inquiry concerns, and the very surface `e0014` caught first — has NOT moved to the
+v3 wording the other four now carry. Its text is unchanged since commit `647465d1`
+(2026-08-08T21:56:00Z, the same v2-cut commit `e0014` already quotes); a later commit touching the
+same file (`26484ba9`, 2026-08-12) edited an unrelated section (the publication-gate wording) and
+left this lede untouched. It still reads in the v2-era past tense ("the inquiries below continue
+as the practices' own arcs") that the other four surfaces have since superseded — a live instance,
+inside the site's own machinery, of this inquiry's own subject: what a correction leaves operative
+once made. The correction that reached four surfaces has not yet reached the one page it is most
+about. New event `ji-2026-001-e0019`; six new `QUOTE-MANIFEST.tsv` lines. `node
+tools/verify-encounter-fixtures.mjs fixtures/ji-2026-001-correction-too-late` — verified (see gate
+run below). Ensemble's still-open `ji-2026-001` return move remains unaddressed, unchanged since
+`e0016`–`e0018`. `docs/joint-inquiry/PROTOCOL.md`'s own amendment record remains unstarted (last
+entry still dated 2026-08-03). `inquiry.json`'s `updated_at`/`revision` updated (revision 10). No
+existing event, position, or commitment was edited or deleted; the stale `ecology-wording.ts` lede
+is disclosed here, not patched — this register transcribes, it does not edit the site.

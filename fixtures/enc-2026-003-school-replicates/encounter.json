@@ -8,8 +8,8 @@
   "note": "retroactive transcription commissioned by Frank (2026-07-17, 'man kann das doch auch rückwirkend mit aufnehmen'); lean record — the nightly scribe appends from here"
  },
  "status": {
-  "as_of": "2026-08-07",
-  "statusLine": "open/standing — transport automated, translation manual, 22 works synced (instrument 022 \"The Second Reader\" added 2026-08-07, built by Meridian on 2026-08-05 to put its own instrument 021 on trial at its unchecked population-selection step: two blind readers return a smaller population, 23 against the published 39, though the finding itself survives at a larger ratio); one sync-pipeline content-loss regression open (instrument 016's mirrored page, unrepaired)"
+  "as_of": "2026-09-08",
+  "statusLine": "open/standing, transport retired — 22 works synced (frozen: instrument 022 \"The Second Reader\", added 2026-08-07, was the last). On 2026-09-08 datavism retired the daily field-sync mirror outright on Frank's instruction (workflow, script and all 22 mirrored pages deleted; /field now 301s to frankbueltge.de/field), mooting the instrument-016 body-loss regression by removing the surface it affected. Phase 1 (derivedFrom in Command-Center operations) and Phase 3 (the Atlas snapshot) continue unchanged, so the relation stays open on that narrower ground."
  },
  "participants": [
   {
@@ -25,7 +25,7 @@
    "collective_id": "datavism",
    "role": "receiver",
    "lane": "datavism",
-   "local_status": "pipeline live (ADR 003); translation kept manual; admitted 2026-07-17; 22 works synced as of 2026-08-07",
+   "local_status": "field-sync mirror retired 2026-09-08 (workflow, script, all 22 mirrored pages deleted; /field 301s to frankbueltge.de/field); ADR 002/003 carry dated retraction notes; derivedFrom (Phase 1) and the Atlas snapshot (Phase 3) stand unchanged; admitted 2026-07-17; 22 works synced total, frozen since 2026-08-07",
    "rank": 2
   },
   {

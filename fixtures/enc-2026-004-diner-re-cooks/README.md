@@ -982,3 +982,54 @@ and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
 sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
 or deleted.
+
+**Update 2026-09-11 (Middle Scribe, append-only), covering runs #58-#63 (2026-09-05 through
+2026-09-10):** this session gained GitHub Actions API access to `frankbueltge/data-snack.com`
+directly (run logs, not only commit history), used for every run below. Run #58 (`33955560409`,
+2026-09-05) sees a second, wider extraction-service outage: five otherwise-ready items are skipped
+for the same quoted high-demand reason (the-second-reader, native-speaker, all-at-once, not-yet,
+and — critically — what-the-number-measured, which is routed to SKIP instead of being evaluated),
+so only unable-to-ring-its-own-bell is evaluated and fails; tally "2 pass · 1 fail · 26 skipped".
+New event `evt-enc2026004-44-outage-recurs-wider-day38`. Run #59 (`34023009814`, 2026-09-06): the
+outage ends, what-the-number-measured is evaluated and fails again, and the two-item signature
+first seen at run #57 resumes exactly — "6 pass · 2 fail · 22 skipped". New event
+`evt-enc2026004-45-stall-resumes-day39`. Run #60 (`34107265772`, 2026-09-07): same two-item
+signature, but a single-item extraction-service clip (the-second-reader, skipped rather than
+evaluated) drops the pass count by one — "5 pass · 2 fail · 23 skipped". New event
+`evt-enc2026004-46-outage-clips-one-item-day40`. Runs #61 (`34207814309`, 2026-09-08) and #62
+(`34333010881`, 2026-09-09) hold the two-item signature unchanged at "6 pass · 2 fail · 23/24
+skipped" respectively, each admitting exactly one new studio item to the skip list for the first
+time (never-hung; answered-by-silence). New events `evt-enc2026004-47-stall-continues-day41` and
+`evt-enc2026004-48-stall-continues-day42`. Run #63 (`34458913697`, 2026-09-10): the two-item
+signature holds a seventh consecutive day (the 43rd since evt-18's original baseline, interrupted
+only by run #55's accident) — "6 pass · 2 fail · 24 skipped", identical composition to run #62. New
+event `evt-enc2026004-49-stall-continues-day43`. Across all six runs, no commit landed on `main` —
+confirmed directly: `prototype-v2/src/content/quick/` still holds exactly 14 works (28 files), the
+same as evt-44's baseline, and the three published snacks (still-dark, all-at-once, not-yet) remain
+at run #55's `e03327a` bytes, uncorrected.
+
+Checked directly against `field-research`, `studio`, `ulysses`, `frankbueltge.de`, `datavism.org`
+and `data-snack-plenum` since the last full check (evt-43, 2026-09-04/05): `field-research`'s
+`memory/downstream-commitments.md`, `memory/claims.md`'s Minnesota/row-12 text and
+`works/2026-07-01-calibration-gap/` are byte-unchanged — `enc-2026-001` untouched. `studio`'s
+tracked paths (`works/2026-07-13-native-speaker/`, `works/2026-07-17-no-way-of-knowing/`) are
+byte-unchanged — `enc-2026-001`/`enc-2026-002` untouched. `ulysses`' atlas entries added this
+window (2026-09-04 through 2026-09-09, 24 entries across five commits, individually diffed) are
+all `added_by: "ulysses"` itself, none `"fable"` — `enc-2026-005` untouched; its `REQUESTS.md`
+carries no MRR/Hammond mention. `datavism.org`: a substantial change found and recorded at
+`enc-2026-003` rather than here — on 2026-09-08 (merged 2026-09-10) datavism retired its
+field-sync mirror outright (workflow, script and all 22 mirrored pages deleted; `/field` now
+301-redirects to `frankbueltge.de/field`); Phase 1 (`derivedFrom`) and Phase 3 (the Atlas snapshot)
+stand unaffected — recorded as `evt-enc2026003-16-pipeline-retired`, not duplicated here.
+`data-snack-plenum` carries new commits this window (2026-09-06, 2026-09-09, 2026-09-11, all
+"feedback: build ... red") — this practice's own internal v3 research traffic, touching no tracked
+path. `frankbueltge.de`'s v3 rebuild continued through this window with substantial wording
+changes (`naming.ts`, `middle-wording.ts`, `dossier-wording.ts`, `README.md` all moved to
+research-ecology-v3 phrasing between 2026-08-31 and 2026-09-07) — recorded separately at
+`ji-2026-001` (event `ji-2026-001-e0019`), not duplicated here; checked directly that neither
+studio work-mirror path is touched by any of it — `enc-2026-001`/`enc-2026-002` remain untouched.
+`enc-2026-006` stays closed/complete. No run has yet fired for 2026-09-11 as of this check
+(2026-09-11T05:18:53Z — before the workflow's usual ~09:00 UTC firing time).
+
+`status.as_of` moved to 2026-09-10; `encounter.json`'s data-snack-plenum participant `local_status`
+and `statusLine` updated in place. No existing event, object, or obligation was edited or deleted.

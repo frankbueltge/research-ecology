@@ -1038,5 +1038,162 @@
    "note": "Run #57 fired 2026-09-04T09:01:02Z on head commit 9c872e13 (unchanged since evt-42 — no other commit landed on main in between). Same signature a third day: 'Cook passing specials' fails on field-research's 2026-07-26-unable-to-ring-its-own-bell, '✗ no sources cited', unchanged. New this run: a second item now fails the identical check — studio's brand-new 2026-09-03-what-the-number-measured, '✗ FAIL  [studio] 2026-09-03-what-the-number-measured → quick/what-the-number-measured  (new)' / '✗ no sources cited' — the same validate.ts rule, a second independent source item hitting it for the first time. Tally: '─── 6 pass · 2 fail · 20 skipped (fail-safe) ───'. The discarded backlog (built, not committed) is unchanged in composition from evt-42 — the-second-reader, native-speaker (correction), the-same-number-twice — still-dark/all-at-once/not-yet remain published at evt-41's pre-correction bytes. Four new studio works appear in the skip/fail list for the first time this run (2026-09-03-the-fourth-cell, 2026-09-03-the-second-address, 2026-09-03-white-on-white, 2026-09-04-where-someone-looked), three skipped for the routine no-caveat-extractable fail-safe and one (what-the-number-measured) newly failing on sources. No commit; re-cooked-works count stays at 14.\n\nChecked directly against field-research, studio, ulysses, frankbueltge.de, datavism.org and data-snack-plenum since the last full check (evt-40, 2026-09-01/02): field-research's memory/downstream-commitments.md, memory/claims.md's Minnesota/row-12 text and works/2026-07-01-calibration-gap/ are byte-unchanged (new claims.md/downstream-commitments.md content added this window restates and cross-references sourced findings already dated session 75/77, 2026-07-31/08-01 — confirmed by reading every added line naming Minnesota, Yale, or instrument 001; none is newly dated, none touches this ledger's own tracked object) — enc-2026-001 untouched. studio's tracked paths (works/2026-07-13-native-speaker/, works/2026-07-17-no-way-of-knowing/) are byte-unchanged — enc-2026-001/enc-2026-002 untouched. ulysses' new atlas entries this window (2026-09-04, five entries) remain added_by 'ulysses' itself, not 'fable' — enc-2026-005 untouched; its REQUESTS.md carries no MRR/Hammond mention since evt for enc-2026-005's own 2026-08-08 baseline. datavism.org carries no commit since 2026-08-07 (field-research has shipped no new published+verified work since 2026-08-05-the-second-reader, so the sync pipeline has had nothing new to sync — not a stall) — enc-2026-003 untouched; its own instrument-016 body-loss regression remains unrepaired, unchanged. data-snack-plenum carries new commits this window (2026-09-03, 2026-09-04, both 'feedback: build ... red') — this practice's own internal v3 research traffic, touching no path this ledger tracks. frankbueltge.de's v3 rebuild continued this window (commits through 2026-09-05) — checked directly: src/content/studio/works/2026-07-13-native-speaker/ and .../2026-07-17-no-way-of-knowing/ remain byte-unchanged, and the naming.ts changes in this window (the front-door globe/plate rewrite, commit 469a468) touch an unrelated section of the file, not the door-card or Studio-table-cell wording ji-2026-001 tracks. enc-2026-006 stays closed/complete. No run has yet fired for 2026-09-05 as of this check (2026-09-05T05:07Z; the workflow's cron has not reached its usual ~09:00 UTC firing time)."
   },
   "content_hash": "sha256:2d6a05f4270f642ad19b678317e3619d5fbc56103137d7bf8b97dbf0a99a5b81"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-44-outage-recurs-wider-day38",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-09-05T08:32:52Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/33955560409",
+  "visibility": "public",
+  "payload": {
+   "run_number": 58,
+   "run_id": 33955560409,
+   "run_created_at": "2026-09-05T08:32:52Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "82d1db1c69b998c02853f2412124fb1e3c067168",
+   "quote_job_log_fail_line": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_skip_reason": "skipped: Failed after 3 attempts. Last error: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "quote_job_log_tally": "─── 2 pass · 1 fail · 26 skipped (fail-safe) ───",
+   "note": "Run #58 fired 2026-09-05T08:32:52Z on head commit 82d1db1c (unrelated CHEF-terminal-pool refresh). The extraction-service outage returns, wider than evt-41's: five items are skipped for the identical quoted reason ('skipped: Failed after 3 attempts. Last error: This model is currently experiencing high demand...') instead of being evaluated — field-research's the-second-reader, studio's native-speaker (correction), all-at-once (correction), not-yet (correction), and studio's what-the-number-measured, which had failed on sources every run since evt-43. Because what-the-number-measured was routed to SKIP instead of being evaluated and failing, only unable-to-ring-its-own-bell was evaluated and failed this run (unchanged: '✗ no sources cited'). Tally: '─── 2 pass · 1 fail · 26 skipped (fail-safe) ───' — still-dark (correction) and the-same-number-twice (new) PASS but do not land (the step fails before the commit step runs). One new studio item appears in the skip list for the first time: 2026-09-05-sixty-ways-to-count (routine no-caveat-extractable skip). No commit; re-cooked-works count stays at 14."
+  },
+  "content_hash": "sha256:8b6e80d77ba6be28335edf22ea12850c6dfcd515936764b3408fa526c17f6fff"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-45-stall-resumes-day39",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-09-06T08:51:07Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/34023009814",
+  "visibility": "public",
+  "payload": {
+   "run_number": 59,
+   "run_id": 34023009814,
+   "run_created_at": "2026-09-06T08:51:07Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "888e1d4cca0f32bc348f68eb578e08e056571b68",
+   "quote_job_log_fail_line_1": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_fail_line_2": "✗ FAIL  [studio] 2026-09-03-what-the-number-measured → quick/what-the-number-measured  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 6 pass · 2 fail · 22 skipped (fail-safe) ───",
+   "note": "Run #59 fired 2026-09-06T08:51:07Z on head commit 888e1d4c (unrelated CHEF-terminal-pool refresh). The outage of evt-44 is over: what-the-number-measured is evaluated again and fails on the same check as unable-to-ring-its-own-bell, both '✗ no sources cited' — the two-item failing signature evt-43 first established resumes unchanged. Tally: '─── 6 pass · 2 fail · 22 skipped (fail-safe) ───'. One new studio item appears in the skip list for the first time: 2026-09-06-nothing-near (routine no-caveat-extractable skip). Discarded backlog composition (built, never committed) unchanged from evt-43: the-second-reader, native-speaker (correction), the-same-number-twice, still-dark (correction), all-at-once (correction), not-yet (correction). No commit; re-cooked-works count stays at 14."
+  },
+  "content_hash": "sha256:bdec33d90776700dd18ad1f2287dbf2f11c0c19627b75989239e3559e5b2fb32"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-46-outage-clips-one-item-day40",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-09-07T09:39:35Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/34107265772",
+  "visibility": "public",
+  "payload": {
+   "run_number": 60,
+   "run_id": 34107265772,
+   "run_created_at": "2026-09-07T09:39:35Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "d60033e9d5618d777f4e141aa0d4995c116e1ab0",
+   "quote_job_log_fail_line_1": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_fail_line_2": "✗ FAIL  [studio] 2026-09-03-what-the-number-measured → quick/what-the-number-measured  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_skip_reason": "skipped: Failed after 3 attempts. Last error: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "quote_job_log_tally": "─── 5 pass · 2 fail · 23 skipped (fail-safe) ───",
+   "note": "Run #60 fired 2026-09-07T09:39:35Z on head commit d60033e9 (unrelated commit). Same two-item failing signature as evt-45 (unable-to-ring-its-own-bell, what-the-number-measured, both '✗ no sources cited'), but the extraction-service outage clips one item this run: field-research's the-second-reader is skipped for the quoted high-demand reason rather than evaluated, so the pass count drops by one. Tally: '─── 5 pass · 2 fail · 23 skipped (fail-safe) ───'. No new dated item appears in the skip/fail list this run — the same items as evt-45 plus the routine caveat-gate skips. No commit; re-cooked-works count stays at 14."
+  },
+  "content_hash": "sha256:c2bbf298f5d5ba9f97d0185e530876c81b8d2237b10f4d63697bd13fd476ad4e"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-47-stall-continues-day41",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-09-08T09:02:45Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/34207814309",
+  "visibility": "public",
+  "payload": {
+   "run_number": 61,
+   "run_id": 34207814309,
+   "run_created_at": "2026-09-08T09:02:45Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "097615f745a44bbf4e882d7e8ace427fc03651b7",
+   "quote_job_log_fail_line_1": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_fail_line_2": "✗ FAIL  [studio] 2026-09-03-what-the-number-measured → quick/what-the-number-measured  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 6 pass · 2 fail · 23 skipped (fail-safe) ───",
+   "note": "Run #61 fired 2026-09-08T09:02:45Z on head commit 097615f7 (unrelated commit). Same two-item failing signature as evt-45/evt-46; the-second-reader passes again (evt-46's outage clip was a single-run event). Tally: '─── 6 pass · 2 fail · 23 skipped (fail-safe) ───'. One new studio item appears in the skip list for the first time: 2026-09-08-never-hung (routine no-caveat-extractable skip). No commit; re-cooked-works count stays at 14."
+  },
+  "content_hash": "sha256:7265b4ecc5b6a272a31e5166351017e4c5e2b4ae0fc8a211d2b0ffdd79df2529"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-48-stall-continues-day42",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-09-09T09:08:20Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/34333010881",
+  "visibility": "public",
+  "payload": {
+   "run_number": 62,
+   "run_id": 34333010881,
+   "run_created_at": "2026-09-09T09:08:20Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "5949c5c5f00eecef949a435eeac9f5783b704a01",
+   "quote_job_log_fail_line_1": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_fail_line_2": "✗ FAIL  [studio] 2026-09-03-what-the-number-measured → quick/what-the-number-measured  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 6 pass · 2 fail · 24 skipped (fail-safe) ───",
+   "note": "Run #62 fired 2026-09-09T09:08:20Z on head commit 5949c5c5 (unrelated commit). Same two-item failing signature, unchanged. Tally: '─── 6 pass · 2 fail · 24 skipped (fail-safe) ───'. One new studio item appears in the skip list for the first time: 2026-09-09-answered-by-silence (routine no-caveat-extractable skip). No commit; re-cooked-works count stays at 14."
+  },
+  "content_hash": "sha256:0a89483e91c0efa3f75999422cf5e4ba1149ab66847309d51ff168a325f30d89"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026004-49-stall-continues-day43",
+  "encounter_id": "enc-2026-004-diner-re-cooks",
+  "event_type": "automation.declared",
+  "issuer": {
+   "collective_id": "data-snack-plenum",
+   "actor_id": "data-snack-plenum"
+  },
+  "occurred_at": "2026-09-10T09:07:40Z",
+  "source_uri": "https://github.com/frankbueltge/data-snack.com/actions/runs/34458913697",
+  "visibility": "public",
+  "payload": {
+   "run_number": 63,
+   "run_id": 34458913697,
+   "run_created_at": "2026-09-10T09:07:40Z",
+   "run_conclusion": "failure",
+   "evidence_commit": "fee7b3eafb832addf2d39ce51a3b13e6b6afb0ea",
+   "quote_job_log_fail_line_1": "✗ FAIL  [field-research] 2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)",
+   "quote_job_log_fail_line_2": "✗ FAIL  [studio] 2026-09-03-what-the-number-measured → quick/what-the-number-measured  (new)",
+   "quote_job_log_reason": "✗ no sources cited",
+   "quote_job_log_tally": "─── 6 pass · 2 fail · 24 skipped (fail-safe) ───",
+   "note": "Run #63 fired 2026-09-10T09:07:40Z on head commit fee7b3ea (unrelated commit, the studio keynote-cut op-011 work landing on data-snack.com's main via unrelated project traffic). Same two-item failing signature, unchanged, 43rd consecutive day since evt-18's original baseline (interrupted once, by accident, at evt-44/run#55/day35). Tally: '─── 6 pass · 2 fail · 24 skipped (fail-safe) ───' — identical composition to evt-48, no new dated item this run. Discarded backlog (built across runs #59-63, never committed) unchanged in membership: the-second-reader, native-speaker (correction), the-same-number-twice, still-dark (correction), all-at-once (correction), not-yet (correction). `main` still carries exactly evt-44's e03327a bytes for the three published snacks (still-dark, all-at-once, not-yet); confirmed directly against prototype-v2/src/content/quick/ — 14 works (28 files), unchanged since evt-44. No commit; re-cooked-works count stays at 14.\n\nChecked directly against field-research, studio, ulysses, frankbueltge.de, datavism.org and data-snack-plenum since the last full check (evt-43, 2026-09-04/05): field-research's memory/downstream-commitments.md, memory/claims.md's Minnesota/row-12 text and works/2026-07-01-calibration-gap/ are byte-unchanged — enc-2026-001 untouched. studio's tracked paths (works/2026-07-13-native-speaker/, works/2026-07-17-no-way-of-knowing/) are byte-unchanged — enc-2026-001/enc-2026-002 untouched. ulysses' atlas entries added this window (2026-09-04 through 2026-09-09, 24 entries across five commits) are all added_by 'ulysses' itself, none 'fable' — enc-2026-005 untouched; its REQUESTS.md carries no MRR/Hammond mention. datavism.org: a substantial change found and recorded separately, at enc-2026-003 rather than here — on 2026-09-08 (merged 2026-09-10) datavism retired its field-sync mirror outright (workflow, script, all 22 mirrored pages deleted; /field now redirects to frankbueltge.de/field); Phase 1 (derivedFrom) and Phase 3 (Atlas snapshot) stand unaffected — recorded as evt-enc2026003-16-pipeline-retired, not duplicated here. data-snack-plenum carries new commits this window (2026-09-06, 2026-09-09, 2026-09-11, all 'feedback: build ... red') — this practice's own internal v3 research traffic, touching no path this ledger tracks. frankbueltge.de's v3 rebuild continued through this window with substantial wording changes (naming.ts, middle-wording.ts, dossier-wording.ts, README.md all moved to research-ecology-v3 phrasing between 2026-08-31 and 2026-09-07) — recorded separately at ji-2026-001 (event ji-2026-001-e0019), not duplicated here, since that fixture is the one that already tracks this exact wording; checked directly that neither studio work-mirror path (works/2026-07-13-native-speaker/, works/2026-07-17-no-way-of-knowing/) is touched by any of it — enc-2026-001/enc-2026-002 remain untouched. enc-2026-006 stays closed/complete. No run has yet fired for 2026-09-11 as of this check (2026-09-11T05:18:53Z; the workflow's cron has not reached its usual ~09:00 UTC firing time)."
+  },
+  "content_hash": "sha256:691e3fcb9efa446627fbe616e31d2d96c1384652c1bec783d9d23d1209c12404"
  }
 ]

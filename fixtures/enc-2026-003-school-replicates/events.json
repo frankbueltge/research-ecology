@@ -335,5 +335,30 @@
    "note": "field-sync[bot] picked up Meridian's instrument 022 ('The Second Reader', built field-research 2026-08-05, shipped 2026-08-07 after a two-day gate-breakage delay disclosed in the work's own §0) — the synced corpus grows from 21 to 22. Same automated field-sync pipeline as evt-03/04/06/07/08/10/11/12/13 (ADR 003, transport automated / translation deliberately manual). The instrument puts Meridian's own instrument 021 on trial at its unchecked population-selection step: two blind readers, run independently on 2026-08-04, return a smaller population (23 against the published 39) and every movement runs published-IN to reader-OUT; the work's own §6 states this could cost a denominator but never put the finding's direction at risk. Nothing else in the corpus changed at this commit; the instrument-016 body-loss regression (evt-09) remains open and is unrelated."
   },
   "content_hash": "sha256:2cfcb8a450d5793706edd38d7dccfa12caa155c0fa0cc5566c75bbea34146c3c"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-16-pipeline-retired",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "contract.reframed",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-09-08T21:03:02Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/7b9abb30bb6abf05d1fd37426278aaec9a1c4dda/docs/adr/003-field-pipeline.md",
+  "source_commit": "7b9abb30bb6abf05d1fd37426278aaec9a1c4dda",
+  "visibility": "public",
+  "payload": {
+   "quote_phase2_withdrawn": "Phase 2 zurückgenommen 2026-09-08 (Frank, Wortlaut privat). Der Werke-Spiegel (scripts/field-sync.mjs, src/pages/field/, src/content/field-works/, .github/workflows/field-sync.yml) ist entfernt; /field und /field/<slug> leiten per 301 auf frankbueltge.de/field bzw. .../field/werke/<slug>.",
+   "quote_phase1_phase3_stand": "Phase 1 (derivedFrom) und Phase 3 (Atlas-Snapshot) bleiben unverändert in Kraft — die Operationen zitieren ihre Meridian-Quelle weiterhin direkt gegen das Repo, ohne Umweg über eine gespiegelte Seite.",
+   "quote_adr002_note": "Teil-Ablösung 2026-09-08 (Frank, Wortlaut privat — Kern: der Werke-Spiegel unter /field ergibt auf dieser Site keinen Sinn und wird entfernt).",
+   "commit_message_note": "Commit 7b9abb3's own message (not manifest-verified — commit messages are not file content, so the mechanical gate cannot fetch them): 'Der Werke-Spiegel unter /field hat auf datavism.org keinen Zweck: Meridians Record steht kanonisch auf frankbueltge.de/field und im öffentlichen Repo field-research — die gespiegelte Zweitfassung war eine dritte Adresse für denselben Text.'",
+   "removed_paths": [".github/workflows/field-sync.yml", "scripts/field-sync.mjs", "src/pages/field/", "src/content/field-works/ (22 files)"],
+   "redirect_note": "vercel.json now 301s /field → https://frankbueltge.de/field/ and /field/:slug → https://frankbueltge.de/field/werke/:slug/ (declared in config; not independently re-fetched live from this check).",
+   "merged_via": "PR #695 on datavism.org superseded — actual retirement is PR #33 (frankbueltge/datavism.org), branch chore/remove-field-mirror, commit 7b9abb30bb6abf05d1fd37426278aaec9a1c4dda authored 2026-09-08T21:03:02Z, merged into main 2026-09-10T08:28:52Z (merge commit 3ba263bd23e2ddd7b354592291b02d03678a0f2d).",
+   "note": "The automated TRANSPORT half of this encounter's whole relation — the daily field-sync workflow and its rendered /field mirror this fixture has tracked since evt-01/evt-02 (22 works synced, evt-03 through evt-15) — is retired outright on Frank's instruction (2026-09-08, wording private per commit message), not merely paused: the workflow file, the sync script and all 22 mirrored files are deleted in one commit, and both ADR 002 and ADR 003 carry dated retraction notes rather than being silently rewritten. /field and /field/<slug> now 301-redirect to the canonical record on frankbueltge.de/field and the public field-research repo instead of serving a third copy. Untouched: Phase 1 (Command-Center operations still cite Meridian works directly via derivedFrom) and Phase 3 (the Atlas snapshot) — so the encounter's OTHER standing relation (Meridian works as source material for datavism's own operations and atlas) continues; only the literal page-mirror and its daily automation end. This moots evt-09's open instrument-016 body-loss regression: the file it concerned (src/content/field-works/2026-07-20-coverage-not-custody.md) no longer exists on this reuse surface, so the regression cannot be repaired or recur — recorded as moot-by-removal, not repaired. The synced-works count is now frozen permanently at 22 (evt-15's count), since no further sync can run. This check could not re-fetch /field live to confirm the 301 fires in production (declared in vercel.json only); left open here. No existing event, object, or obligation was edited or deleted."
+  },
+  "content_hash": "sha256:d50270d009c7fa7546eae82d487a48fb76a8f3c5e59e654796eb9740229202ec"
  }
 ]
