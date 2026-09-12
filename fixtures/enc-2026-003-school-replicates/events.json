@@ -335,5 +335,28 @@
    "note": "field-sync[bot] picked up Meridian's instrument 022 ('The Second Reader', built field-research 2026-08-05, shipped 2026-08-07 after a two-day gate-breakage delay disclosed in the work's own §0) — the synced corpus grows from 21 to 22. Same automated field-sync pipeline as evt-03/04/06/07/08/10/11/12/13 (ADR 003, transport automated / translation deliberately manual). The instrument puts Meridian's own instrument 021 on trial at its unchecked population-selection step: two blind readers, run independently on 2026-08-04, return a smaller population (23 against the published 39) and every movement runs published-IN to reader-OUT; the work's own §6 states this could cost a denominator but never put the finding's direction at risk. Nothing else in the corpus changed at this commit; the instrument-016 body-loss regression (evt-09) remains open and is unrelated."
   },
   "content_hash": "sha256:2cfcb8a450d5793706edd38d7dccfa12caa155c0fa0cc5566c75bbea34146c3c"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026003-16-mirror-withdrawn",
+  "encounter_id": "enc-2026-003-school-replicates",
+  "event_type": "contract.reframed",
+  "issuer": {
+   "collective_id": "datavism",
+   "actor_id": "datavism"
+  },
+  "occurred_at": "2026-09-08T21:03:02Z",
+  "source_uri": "https://github.com/datavism/datavism.org/blob/7b9abb30bb6abf05d1fd37426278aaec9a1c4dda/docs/adr/003-field-pipeline.md",
+  "source_commit": "7b9abb30bb6abf05d1fd37426278aaec9a1c4dda",
+  "visibility": "public",
+  "payload": {
+   "quote_adr_note": "Phase 2 zurückgenommen 2026-09-08 (Frank, Wortlaut privat). Der Werke-Spiegel (`scripts/field-sync.mjs`, `src/pages/field/`, `src/content/field-works/`, `.github/workflows/field-sync.yml`) ist entfernt; `/field` und `/field/<slug>` leiten per 301 auf `frankbueltge.de/field` bzw. `.../field/werke/<slug>`.",
+   "quote_adr_unaffected": "Phase 1 (`derivedFrom`) und Phase 3 (Atlas-Snapshot) bleiben unverändert in Kraft — die Operationen zitieren ihre Meridian-Quelle weiterhin direkt gegen das Repo, ohne Umweg über eine gespiegelte Seite.",
+   "removed": ["src/pages/field/", "src/content/field-works/ (22 works)", "the fieldWorks content collection", "scripts/field-sync.mjs", "the daily field-sync workflow", "both nav entries (SiteHeader, Command Center)"],
+   "final_synced_works_count": 22,
+   "redirect": "/field and /field/<slug> now 301 to frankbueltge.de/field and .../field/werke/<slug> respectively",
+   "note": "datavism.org commit 7b9abb3 ('Take the Meridian works mirror off the site (/field)', Frank Bültge, 2026-09-08T21:03:02Z) withdraws ADR 003's Phase 2 — the automated daily mirror this fixture's own statusLine has tracked since birth ('transport automated, translation manual'). The commit's own stated reason: the mirror had no independent purpose on datavism.org once Meridian's record stands canonically on frankbueltge.de/field and in the public field-research repository — the mirrored second copy was a third address for the same text, not a new one. The 22 works synced by the pipeline (evt-01 through evt-15) are the mirror's final, unchanging count; the corresponding files (src/content/field-works/*.md) no longer exist on main as of this commit, superseded by a 301 redirect to frankbueltge.de/field. Phase 1 (datavism's own hand-translated Command-Center operations, which cite their Meridian source directly via `derivedFrom` against the field-research repo) and Phase 3 (the committed atlas snapshot) are explicitly named as unaffected and remain in force — this is a withdrawal of the mirror surface, not of the relation itself. The obligation this fixture tracks (obl-enc2026003-1, 'translation stays craft, not automated') is unaffected: it was never a property of the mirror. Frank's own instruction behind the withdrawal is disclosed as 'Wortlaut privat' (wording private) in the source commit itself, under the same standing privacy rule already applied elsewhere in this ledger (enc-2026-001 evt-11, enc-2026-002 evt-16) — no wording is invented to fill the gap. No existing event, object, obligation or assertion is edited or deleted; the 22 already-recorded object entries (evt-01 through evt-15) remain valid historical citations of files at their own pinned commits, unaffected by the files' later removal from the live tree."
+  },
+  "content_hash": "sha256:d50270d009c7fa7546eae82d487a48fb76a8f3c5e59e654796eb9740229202ec"
  }
 ]

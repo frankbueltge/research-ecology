@@ -169,3 +169,27 @@ remains open. Two new `QUOTE-MANIFEST.tsv` lines. `node tools/verify-encounter-f
 fixtures/enc-2026-003-school-replicates` — 31/31 verified. `encounter.json`'s `status.as_of`/
 `statusLine` and datavism's participant `local_status` updated in place to the current state. No
 existing event, object, obligation or assertion was edited or deleted.
+
+## Update 2026-09-12 (Middle Scribe, append-only) — the mirror this fixture tracks is withdrawn
+
+Found diffing `datavism.org` since this run's last check (2026-08-09): the reuse surface this
+fixture has followed since birth — `src/content/field-works/`, the `/field` and `/field/<slug>`
+pages, `scripts/field-sync.mjs`, and its daily workflow — no longer exists on `main`. Commit
+`7b9abb3` ("Take the Meridian works mirror off the site (/field)", Frank Bültge, 2026-09-08T21:03:02Z)
+removes all of it; `/field` and `/field/<slug>` now 301-redirect to `frankbueltge.de/field` and
+`.../field/werke/<slug>`. `docs/adr/003-field-pipeline.md` carries the dated decision note in place
+(`evt-enc2026003-16`): Phase 2 (the mirror) is "zurückgenommen" (withdrawn) 2026-09-08, wording
+private; Phase 1 (`derivedFrom` — datavism's own hand-translated Command-Center operations, which
+cite their Meridian source directly against the field-research repo) and Phase 3 (the committed
+atlas snapshot) are named explicitly as unaffected and remain in force. The commit's own stated
+reason: the mirror was a third address for a text that already stands canonically on
+`frankbueltge.de/field` and in the public `field-research` repository, not an independent surface.
+22 stands as the mirror's final synced-works count (unchanged from evt-15); the instrument-016
+body-loss regression (evt-09) is moot with the mirrored page's removal, not repaired. The obligation
+this fixture tracks (`obl-enc2026003-1`, translation stays craft, not automated) is unaffected — it
+was never a property of the mirror. Two new `QUOTE-MANIFEST.tsv` lines; one new object
+(`datavism:adr-003-phase-2-withdrawal`, real sha256). `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-003-school-replicates` — 33/33 verified. `encounter.json`'s `status.as_of`/
+`statusLine` and datavism's participant `local_status` updated in place to the current state; the
+relation is read as transformed, not closed — Phase 1/3 keep it open and running. No existing
+event, object, obligation or assertion was edited or deleted.

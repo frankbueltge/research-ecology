@@ -59,5 +59,11 @@
   "object_ref": "datavism:src/content/field-works/2026-07-26-one-line-for-ten-thousand.md@7d32f0bb",
   "content_hash": "sha256:5e5ae1651a46a5f4741aa489b5abe948c7a3f14685896b60c25b9680e6ed400d",
   "uri": "https://github.com/datavism/datavism.org/blob/7d32f0bbfd80a857173701065b67ccfd403c5bab/src/content/field-works/2026-07-26-one-line-for-ten-thousand.md"
+ },
+ {
+  "object_id": "datavism:adr-003-phase-2-withdrawal",
+  "object_ref": "datavism:docs/adr/003-field-pipeline.md@7b9abb30",
+  "content_hash": "sha256:d50270d009c7fa7546eae82d487a48fb76a8f3c5e59e654796eb9740229202ec",
+  "uri": "https://github.com/datavism/datavism.org/blob/7b9abb30bb6abf05d1fd37426278aaec9a1c4dda/docs/adr/003-field-pipeline.md"
  }
 ]
