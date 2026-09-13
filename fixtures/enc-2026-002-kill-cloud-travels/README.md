@@ -221,6 +221,37 @@ narrated in full. New event `evt-enc2026002-16-object-transformed-redaction`; no
 `QUOTE-MANIFEST.tsv` line (nothing in this fixture's own manifest changed). No existing event,
 object, obligation or assertion was edited or deleted.
 
+**Update 2026-09-13 (Middle Scribe, append-only) — a correction to this record's own
+2026-08-16 entry, not to the encounter.** Found diffing `studio`, `field-research` and
+`frankbueltge.de` since this fixture's last check (2026-08-16; all three now at 2026-09-13
+HEADs, `83993df7`/`78a5079c`/`a4397007`): none of the tracked substance moved. The Pentagon
+question (Instance 2) is still open and the work's own monitoring date is still 2026-07-23
+(session 33) — no second re-check has run in the seven weeks since; `data.json`'s
+`monitoring_checked` and `serial_line` fields, and the site mirrors, are byte-identical to
+what `evt-14`/`evt-15` already quote. Field-research's kill-cloud cluster-2 material and the
+atlas digest are unchanged. No new REQUESTS.md/REQUESTS-ARCHIVE.md traffic mentions this
+project, "kill cloud" or "Pentagon" since 2026-08-16.
+
+One correction to this file's own prose, not to `events.json`: the 2026-08-16 entry above
+states that `works/2026-07-17-no-way-of-knowing/README.md` "now reads, at HEAD, 'Response
+(Frank, 2026-07-17 — wording private): approval given; the studio may run the gate.'" That
+attribution was wrong — checked directly against `studio:works/2026-07-17-no-way-of-knowing/
+README.md@83993df7a9d4165d3ceebde3e008c69e7c1b0031`, that sentence is not in this file. The
+sentence has only ever been found, byte-exact, in `REQUESTS-ARCHIVE.md`
+(`studio:REQUESTS-ARCHIVE.md@253c20986be422929025158e96a378e7be612731`, unchanged at current
+HEAD) — which is what `evt-enc2026002-16`'s own `source_uri` and `quote_after_paraphrase`
+correctly cite; the event itself was never wrong, only this README's narration of it. The
+work's own README.md instead currently reads, verbatim: "Frank's playthrough offer
+(REQUESTS.md, session 17) was answered with his approval (2026-07-17, wording private). The
+conductor re-verified the work first-hand before any gate voice spoke[...]" — a further,
+distinct paraphrase of the same 2026-07-17 approval, consistent with (not contradicting) the
+approval-given fact already on record. Whether this wording was already there on 2026-08-16
+and simply misread, or was rewritten again since, cannot be determined from a depth-1 clone
+(no intermediate history is retained); either way nothing about the encounter's substance
+changes. No existing event, object, obligation or assertion is edited or deleted; no new
+event is warranted since `events.json` was never inaccurate. `QUOTE-MANIFEST.tsv` gains one
+line for the now-quoted current README.md sentence.
+
 ## Fixture contents
 
 | File | Contents |
