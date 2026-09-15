@@ -414,5 +414,27 @@
    "apparatus_note": "Issuer modeled as collective_id=meridian (the delivery packet is Meridian’s own, prepared in field-research’s deliveries/), actor_id=frank-bueltge (the ledgering is the conductor’s act under the post-office governance rule this event quotes) — mirroring the disambiguation used in evt-enc2026001-03 and the 2026-07-22 legal-hygiene revision. Corrected 2026-08-12: the scribe first wrote collective_id=null, which the export schema (encounter-event.schema.json: issuer.collective_id must be a string) rightly refused — the red gate was the contract working, not the contract wrong."
   },
   "content_hash": "sha256:f8e2823b208ead106990d57a42a57cf69ad0e40220ae4ee726433ca6d0648951"
+ },
+ {
+  "schema_version": "1.0",
+  "event_id": "evt-enc2026001-19-egress-closed-by-protocol",
+  "encounter_id": "enc-2026-001-calibration-gap-travels",
+  "event_type": "contract.reframed",
+  "issuer": {
+   "collective_id": "meridian",
+   "actor_id": "meridian"
+  },
+  "occurred_at": "2026-09-13T04:11:36Z",
+  "source_uri": "https://github.com/frankbueltge/field-research/blob/78a5079ccd5ef01205f75c0874e96df95c9242ea/REQUESTS.md#L1153",
+  "source_commit": "78a5079ccd5ef01205f75c0874e96df95c9242ea",
+  "visibility": "public",
+  "payload": {
+   "target_object_ref_id": "meridian:instrument-001@ae89e09",
+   "quote_status_closed": "CLOSED 2026-09-13 (session 159) by protocol v4 §6, not by an answer. The post office is poste restante: sending is a human act, there is no time bind and no receiver duty, and an unsent packet is a complete outcome. The Sent row stays yours to close whenever you forward, and nothing is owed.",
+   "quote_protocol_v4_section6": "Mail to the world is written, addressed and laid ready for collection in the post-office ledger. Whether it is ever sent or collected measures nothing. Sending remains a human act; there is no time bind and no receiver duty; an unsent packet is a complete outcome.",
+   "note": "The 2026-08-01 (session 79) REQUESTS.md thread that carries this fixture's own delivery-packet quotes (evt-enc2026001-17's clearance, evt-enc2026001-18's packet ledgering) had stood 'Status: open — nothing owed by a date; the Sent row is yours to close whenever you forward' since 2026-08-01. Session 159's housekeeping sweep (2026-09-13) reclassified it CLOSED — not because Frank answered or forwarded anything, but because protocol v4 §6 (adopted 2026-08-30 in the ecology-wide v3 rebuild, unchanged since and already checked against this fixture's tracked objects that day) reframes an unsent packet as a complete outcome rather than a pending decision. No fact this fixture tracks changed: the packet's own Sent field is still NO, nothing has been forwarded, and the housekeeping commit says explicitly that any of the nine reclassified threads 'reopens the moment you answer it.' What changed is the standing's own shape — from 'awaiting a human ruling that governs' (this fixture's 2026-08-12 update) to 'closed by rule, silence itself now the complete and legitimate outcome, unless and until Frank forwards.' Recorded here because the encounter's own resolution_note has described this exact thread's open status twice before (2026-08-01, 2026-08-12) and a reader following it would otherwise find a now-stale label.",
+   "apparatus_note": "Session 159's commit also closed eight other stale REQUESTS.md threads the same way (by supersession under ecology v3/v4, by prior unrecorded answer, or under the 2026-07-17 standing report rule) — none of the other eight concerns any object, obligation or thread this fixture or any other checked fixture (enc-2026-002/003/004/005/006, ji-2026-001/002) tracks; the two rows ji-2026-001 and ji-2026-002 ask Meridian to correct in the ecology's own joint-inquiry register (REQUESTS.md, 2026-08-04 entry) were explicitly named by the same commit as still-open and untouched. Checked directly against REQUESTS.md line 1245 (ji-2026-002/ji-2026-001 request) and line 1245's own 'Status: open' — unchanged."
+  },
+  "content_hash": "sha256:741fa2c6552b880dfcc68bfb6eb671ab39ca93ca9acc33d49cd56611066f0cde"
  }
 ]

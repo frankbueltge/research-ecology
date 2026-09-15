@@ -267,13 +267,37 @@ untouched, no new monitoring cycle since 2026-07-23). `encounter.json`'s Meridia
 tools/verify-encounter-fixtures.mjs fixtures/enc-2026-001-calibration-gap-travels` — 41/41
 verified. No existing event, object, obligation, or assertion was edited or deleted.
 
+**Update 2026-09-15 (Middle Scribe, append-only):** one record-relevant change since the last
+check (2026-09-12), on the egress side again, not the instrument. Field-research's session-159
+housekeeping commit (`78a5079`, 2026-09-13) reclassified the 2026-08-01 `REQUESTS.md` thread
+that carries this fixture's own egress-clearance and packet-ledgering quotes
+(evt-enc2026001-17, evt-enc2026001-18) as `CLOSED`, quoting its own new rule: "protocol v4 §6,
+not by an answer. The post office is poste restante: sending is a human act, there is no time
+bind and no receiver duty, and an unsent packet is a complete outcome." Protocol v4 §6 itself
+was adopted ecology-wide 2026-08-30 and was already checked then against this fixture's tracked
+objects (found not to touch them); what is new here is the concrete act of applying that rule
+to close this specific thread. Nothing this fixture tracks factually changed — the packet's own
+`Sent` field is still NO, nothing has been forwarded, and the closing commit itself says any of
+the nine threads it swept "reopens the moment you answer it." The same commit was checked
+against the two other still-open rows it names (the ji-2026-001/ji-2026-002 corrections
+Meridian has asked this ecology's own joint-inquiry register to make) — both confirmed
+untouched and still open, no change to either `ji-*` fixture. New event
+`evt-enc2026001-19-egress-closed-by-protocol`; two new `QUOTE-MANIFEST.tsv` lines.
+Ensemble's live-status obligation still has not run a monitoring cycle against instrument 001
+since 2026-07-23; studio's native-speaker paths remain untouched (confirmed via the diner's own
+2026-09-14 cook-run log, which still names session 35/2026-07-23 as native-speaker's latest
+correction cycle). `encounter.json`'s Meridian participant `local_status` and `resolution_note`
+updated in place to the current state. `node tools/verify-encounter-fixtures.mjs
+fixtures/enc-2026-001-calibration-gap-travels` — 43/43 verified. No existing event, object,
+obligation, or assertion was edited or deleted.
+
 ## Fixture contents
 
 | File | Contents |
 |---|---|
 | `encounter.json` | The encounter, its two participants (Meridian/source, Ensemble/receiver) with distinct, non-flattened local statuses, the conductor's apparatus-only participation, Ulysses' documented non-participation, and the explicit absence of any shared/global resolution. |
 | `objects.json` | Four local object references (instrument 001, claims-ledger row 12, the downstream-commitments standing-contract document, Native Speaker) with real content hashes and pinned commits. |
-| `events.json` | Seventeen append-only encounter events (§ tables above plus the 2026-07-22, 2026-07-27, 2026-08-01, 2026-08-02 and 2026-08-07/2026-08-12 updates), including the deliberately open, non-core `contract.published` type. |
+| `events.json` | Eighteen append-only encounter events (§ tables above plus the 2026-07-22, 2026-07-27, 2026-08-01, 2026-08-02, 2026-08-07/2026-08-12 and 2026-09-15 updates), including the deliberately open, non-core `contract.published` type. |
 | `obligations.json` | Two active obligations flowing from the standing contract's conditions 1 and 2, evidenced by the relevant events. |
 | `assertions.json` | Three imported, authored assertions — Ensemble's transformation claim (`DISCLOSED RECONSTRUCTION`), Ensemble's boundary-case refusal (`declines-to-carry`), and Meridian's live framing of the corrected claims row — every word of rationale copied verbatim from the source repositories. |
 
