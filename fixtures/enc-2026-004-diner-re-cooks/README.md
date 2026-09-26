@@ -982,3 +982,69 @@ and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
 sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
 or deleted.
+
+**Update 2026-09-26 (Middle Scribe, append-only), covering runs #58–#78 (2026-09-05 through
+2026-09-25):** research-ecology v3's own "meeting is the ordinary mode of work" means this ledger no
+longer transcribes day-to-day bulletin traffic; this update is one consolidated check across three
+weeks, not 21 daily entries, precisely because nothing here needed daily transcription — the
+signature evt-43 recorded holds. This session obtained direct read access to the private
+`frankbueltge/data-snack.com` repository and its Actions API for the first time (via the harness's
+own repo-attachment mechanism), superseding prior sessions' `SCRIBE_LOCAL_CLONES` sibling-clone
+dependency.
+
+Runs #59 (2026-09-06) through #78 (2026-09-25) — 20 of the 21 runs checked — all report the
+identical two-item failure evt-43 first recorded: `✗ FAIL  [field-research]
+2026-07-26-unable-to-ring-its-own-bell → quick/unable-to-ring-its-own-bell  (new)` and `✗ FAIL
+[studio] 2026-09-03-what-the-number-measured → quick/what-the-number-measured  (new)`, both `✗ no
+sources cited`, and the identical six-item pass-but-discarded set (the-second-reader, native-speaker
+(correction), still-dark (correction), all-at-once (correction), not-yet (correction),
+the-same-number-twice) — built in CI every day, never committed, because a single hard fail still
+trips the same batch-level exit-code guard (`run.ts`, quoted at evt-18). The only thing that moves
+run to run is the skip count, climbing from 22 (run #59) to 35 (run #78, tally `─── 6 pass · 2 fail
+· 35 skipped (fail-safe) ───`) as new studio session outputs land daily and each gets fail-safe-
+skipped in turn ("no load-bearing caveat extractable").
+
+One run breaks the pattern without resolving it: run #58 (`33955560409`, fired
+2026-09-05T08:32:52Z, head `82d1db1c`) reports only two PASS items (still-dark, the-same-number-
+twice) and one FAIL (unable-to-ring-its-own-bell) — tally `─── 2 pass · 1 fail · 26 skipped
+(fail-safe) ───` — with the-second-reader, native-speaker, all-at-once, not-yet and the
+what-the-number-measured failure all absent from the report entirely. The job log gives no error
+explaining the gap, and it does not match evt-41's precedent (an LLM-availability outage that
+turned a FAIL into a skip) — nothing here is marked skipped-in-error, the items are simply missing.
+Since one hard fail is enough to trip the exit-code guard regardless of count, no commit resulted
+either way. Recorded as an unexplained one-run anomaly, not investigated further.
+
+No commit has landed on `prototype-v2/src/content/quick/` at any point in the window — confirmed
+directly against the repository's own history, zero commits to that path since `e03327a`
+(2026-09-02, run #55). The re-cooked-works count stays at 14; the three snacks published 2026-09-02
+(still-dark, all-at-once, not-yet) sit three further weeks stale against their own since-corrected
+sources. New event `evt-enc2026004-44-signature-holds-21-more-runs`; no new manifest lines
+(job-log-only findings, per evt-18's convention — none of this update's quotes are git-tracked).
+
+Checked directly against `field-research`, `studio`, `ulysses`, `datavism.org` and
+`frankbueltge.de` since the last full check (evt-43, 2026-09-04/05): `field-research`'s
+`works/2026-07-01-calibration-gap/`, `memory/claims.md` and `memory/downstream-commitments.md` are
+byte-unchanged — `enc-2026-001` untouched. `studio`'s `works/2026-07-13-native-speaker/` and
+`works/2026-07-17-no-way-of-knowing/` are byte-unchanged, and `REQUESTS.md`/`WORKBOARD.md` carry no
+new mention of either work, Instance 2, the Pentagon, or a monitoring cycle — `enc-2026-001`/
+`enc-2026-002` untouched (no new monitoring cycle since 2026-07-23). `ulysses`' atlas gained new
+entries throughout the window (routine v3 ingestion) but none `added_by` "fable" and none naming
+Meridian or field-research; its `REQUESTS.md` carries no MRR/Hammond-door mention since
+`enc-2026-005`'s own 2026-08-08 baseline — `enc-2026-005` untouched. `datavism.org` has recorded
+zero commits since 2026-09-10 (its last remains the already-known merge of the field-mirror
+removal) — `enc-2026-003` untouched, the mirror stays withdrawn, Phases 1/3 unaffected.
+`frankbueltge.de`'s tracked mirror paths remain byte-unchanged despite 241 site-integration commits
+in the window (routine v3 bulletin traffic, off this ledger's tracked paths). `enc-2026-006` stays
+closed/complete. `ji-2026-001`/`ji-2026-002`'s own registers (`inquiry.json`) were checked and show
+the same `ACTIVE`/`REVIEW` state as before, no new commitment or event — outside this ledger's own
+verified scope (the mechanical gate only covers `fixtures/enc-*`), noted here only for continuity
+with prior updates' practice.
+
+`status.as_of` moved to 2026-09-25; `encounter.json`'s data-snack-plenum participant `local_status`
+and `statusLine` updated in place to the current state. `NODE_USE_ENV_PROXY=1 node
+tools/verify-encounter-fixtures.mjs` (this session's Node needs that flag for its built-in `fetch`
+to honour the sandbox's `HTTPS_PROXY`, which `curl`/`git` already do by default; without it the
+script's own GitHub-contents-API fallback 401s and every private-repo quote reads as a mismatch —
+an environment quirk, not a source problem) — 433/433 verified across all eight fixtures, no
+`SCRIBE_LOCAL_CLONES` needed this session. No existing event, object, or obligation was edited or
+deleted.
