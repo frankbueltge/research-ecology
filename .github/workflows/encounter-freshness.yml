@@ -12,10 +12,12 @@ name: Encounter freshness
 # It NEVER edits a record. The byte-verified editorial ledger stays the scribe's to write; this
 # job only makes the drift loud and self-clears the issue once the wording no longer says
 # "premiere pending". Reuses apps/export-site verbatim (single source of the drift logic).
+#
+# 2026-10-05: no longer scheduled. The encounter ledger is archived and the scribe this job
+# prompted is retired (docs/2026-10-05-middle-becomes-relay.md), so a nightly issue asking for
+# ledger updates would ask for something nobody does any more. It can still be run by hand.
 
 on:
-  schedule:
-    - cron: '20 5 * * *'   # 07:20 Berlin — after the engine nightlies and the site's integrates
   workflow_dispatch: {}
 
 permissions:
