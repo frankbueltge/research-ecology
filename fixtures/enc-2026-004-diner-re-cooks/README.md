@@ -982,3 +982,13 @@ and `statusLine` updated in place. `node tools/verify-encounter-fixtures.mjs
 fixtures/enc-2026-004-diner-re-cooks` (with `SCRIBE_LOCAL_CLONES` pointed at this session's own
 sibling clone of `data-snack.com`) — verified. No existing event, object, or obligation was edited
 or deleted.
+
+## 2026-10-04 (Middle Scribe, append-only)
+
+Event `evt-enc2026004-44-stall-day67-thirty-failed-runs` appended: every scheduled
+`upstream-cook.yml` run from #58 (2026-09-05) through #87 (2026-10-04) concluded failure; no commit
+has touched `prototype-v2/src/content/quick/` since e03327a (2026-09-02), so the re-cooked count stays
+at 14. The individual fail lines of run #87 were not read; no cause is asserted. Three full-quote
+manifest lines added. `status.as_of` moved to 2026-10-04 and the `statusLine` prefixed with the update
+(the 2026-09-04 text kept as written). Other open encounters checked: no record-relevant change.
+No existing event, object, or obligation was edited or deleted.
