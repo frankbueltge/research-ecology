@@ -1,4 +1,5 @@
-# Lands the Middle Relay's nightly branches onto main, so nobody has to merge them by hand.
+# Lands the Middle Relay's nightly branches onto main, so nobody has to merge them by hand. It lands
+# relay/relay.json and nothing else: any other change in this repository is reviewed by a person.
 # Modelled on frankbueltge/studio's auto-land. Until 2026-10-05 this repository had no lander, and
 # the Middle Scribe's runs sat on claude/* branches that nothing ever merged (PRs #2, #7, #12–#15,
 # #20–#28 — see docs/2026-10-05-middle-becomes-relay.md). Two branch shapes:
@@ -55,8 +56,8 @@ jobs:
           failed=0
           summary=""
           # one machine-readable line per branch:
-          #   outcome <branch> <landed|skipped_no_pr|skipped_draft_pr|archived_ledger|
-          #                     retired_superseded|retire_failed|relay_invalid|conflict|push_failed>
+          #   outcome <branch> <landed|skipped_no_pr|skipped_draft_pr|skipped_not_relay|archived_ledger|
+          #                     out_of_scope|retired_superseded|retire_failed|relay_invalid|conflict|push_failed>
           note() {
             echo "outcome $1 $2"
             summary="${summary}| \`$1\` | $2 |"$'\n'
@@ -98,6 +99,21 @@ jobs:
             if printf '%s\n' "$changed" | grep -qE '^fixtures/(enc|ji)-'; then
               failed=$((failed+1)); note "$name" archived_ledger
               echo "::error::$name writes to the archived encounter ledger (fixtures/enc-*, fixtures/ji-*) — not landed, branch kept. The Middle Scribe is retired; see docs/2026-10-05-middle-becomes-relay.md"
+              echo "::endgroup::"; continue
+            fi
+            # THE SCOPE. This lander exists for the relay's nightly file and nothing else: a branch
+            # that changes anything beside relay/relay.json is never landed by machine (this
+            # repository also holds apps, packages and tools, whose changes are reviewed by a person).
+            # A relay night that wrote more than its file turns this job red — a routine gone off its
+            # prompt; a branch that does not touch relay/relay.json at all is a change meant for
+            # review and is skipped without noise.
+            if [ -n "$changed" ] && [ "$changed" != "relay/relay.json" ]; then
+              if printf '%s\n' "$changed" | grep -qx 'relay/relay.json'; then
+                failed=$((failed+1)); note "$name" out_of_scope
+                echo "::error::$name changes files beside relay/relay.json — not landed, branch kept: $(printf '%s ' $changed)"
+              else
+                note "$name" skipped_not_relay
+              fi
               echo "::endgroup::"; continue
             fi
             if [ "$changed" = "relay/relay.json" ]; then

@@ -5,7 +5,7 @@ PROTOCOL.md die tatsächliche höchste Instruktion (Audit-Frage §5.1). Diese Da
 versionierte Quelle der Prompts — Änderungen passieren HIER und werden dann in die
 Routinen-Config übertragen; die Cloud-Config allein ist kein Archiv.
 
-**Stand 2026-07-16 (Frank: „sinnvoll aktualisieren … einfach korrekt"):** Neufassung nach
+**Stand 2026-07-16 (Franks Auftrag, Wortlaut privat — Kern: die Prompts sachlich richtig nachziehen):** Neufassung nach
 der Protocol-v3-Migration. Raus: wing-Sprache („studio wing", „research wing"),
 unqualifiziertes „FULL AUTONOMY", der Pflicht-Upstream-Diff im Studio-Prompt (v3 macht ihn
 ausdrücklich optional). Rein: das präzise Arrangement (spec/02 §5/§6), Angebots-Grammatik,
@@ -52,8 +52,7 @@ Nur Ulysses.
 
 **Stand 2026-08-05 (Production Amendment + Season 1; Prompts in der Cloud aktualisiert):**
 Franks Entscheidung: Die Kadenz bleibt **täglich** (eine zwischenzeitliche Reduktion auf
-3-4 Nächte/Woche wurde noch am selben Abend zurückgenommen — „die sollen täglich so
-weiterlaufen"). Stattdessen wurden die drei Praxis-Prompts IN DER CLOUD aktualisiert
+3-4 Nächte/Woche wurde noch am selben Abend zurückgenommen; Wortlaut privat). Stattdessen wurden die drei Praxis-Prompts IN DER CLOUD aktualisiert
 (ausnahmsweise Cloud zuerst, dieser Vermerk holt die Datei nach): (a) Schritt 1 aller drei
 Prompts trägt jetzt: „Since 2026-08-05 it opens with the Production Amendment (architect) —
 it supersedes conflicting clauses and is part of the constitution you just read. Also read
