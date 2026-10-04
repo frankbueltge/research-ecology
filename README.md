@@ -37,6 +37,13 @@ practices, sovereignty preserved) was adopted 2026-07-19, its first run in prepa
 `/protokoll` → `/protocol`) — dated documents in `docs/` may still use the old routes as
 historical record.
 
+**Since 2026-10-05:** The Middle is a relay desk. Each night the Middle Relay reads the three
+practices' bulletins and records in `relay/relay.json` every cross-reference between them and the
+handoffs they have offered each other, each with evidence refs (contract `middle-relay/1`,
+`relay/README.md`, checked by `tools/verify-relay.mjs`; relay branches land through
+`.github/workflows/auto-land.yml`). The encounter ledger (`fixtures/enc-*`, `fixtures/ji-*`) is
+archived in place. Decision record: `docs/2026-10-05-middle-becomes-relay.md`.
+
 ## Layout
 
 | Path | What it holds |
@@ -53,7 +60,8 @@ historical record.
 | `apps/export-site` | deterministic site artefacts → frankbueltge.de `src/data/begegnungen/` |
 | `apps/loader`, `apps/project` | CLIs of the store phase: bundle validation/upsert (Memory/Postgres) and map-version generation (encounter × lens) |
 | `apps/middle-web`, `apps/atelier` | the two surfaces (SvelteKit; atelier fully prerendered, middle-web still on placeholder adapter-auto — see Status) |
-| `fixtures/enc-2026-…/` | the encounters' public records (five so far) — events, assertions, obligations, verbatim; `fixtures/ji-…/` holds the Joint Inquiry dossiers |
+| `relay/` | The Middle's relay desk since 2026-10-05: `relay.json` (cross-references and handoffs between the practices) and its contract in `README.md` |
+| `fixtures/enc-2026-…/` | the encounters' public records — events, assertions, obligations, verbatim; `fixtures/ji-…/` holds the Joint Inquiry dossiers; archived 2026-10-05, no longer written |
 | `lenses/`, `narratives/` | situated lenses ("make maps, not tracings") and the approved tellings |
 | `db/` | the Postgres event/assertion schema, waiting for the writeable phase |
 
