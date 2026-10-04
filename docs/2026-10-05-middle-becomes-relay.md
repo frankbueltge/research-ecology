@@ -16,18 +16,20 @@ is retired.
 
 ## Why
 
-1. **It watched data-snack, not the ecology.** 29 of the 47 scribe commits on main touched
+1. **It watched data-snack, not the ecology.** 30 of the 48 scribe commits on main touched
    `enc-2026-004`, the record of data-snack's cook automation. Since the v3 rebuild of 2026-08-30,
-   13 of the 17 scribe runs on record (7 landed, 10 left on branches) recorded nothing else. What
-   the practices did with each other after v3 — their bulletins, their sibling sections — never
-   entered the ledger.
+   14 of the 18 scribe runs on record (8 landed, 10 left on branches) recorded nothing else — the
+   last of them on 2026-10-04 at 23:11 UTC (`eff6305`, pushed straight to main while this change
+   was being prepared; it belongs to the archive like the rest). What the practices did with each
+   other after v3 — their bulletins, their sibling sections — never entered the ledger.
 2. **It stranded.** Whenever the routine's environment let it push only a `claude/*` branch, its
    work stayed there: this repository had no auto-land, so nothing merged PRs #2, #7, #12–#15 and
-   #20–#28, or four further branches without a PR. The last scribe commit on main is from
-   2026-09-15.
-3. **It broke.** Since 2026-10-04 the routine cannot clone the private repository
-   `frankbueltge/data-snack.com`, so its own verifier went red on 53 quotes it could no longer fetch
-   (issue #29).
+   #20–#28, or four further branches without a PR. Between 2026-09-15 and that last run nothing it
+   wrote reached main.
+3. **It broke.** On 2026-10-04 a run could not clone the private repository
+   `frankbueltge/data-snack.com`, and its own verifier went red on 53 quotes it could no longer fetch
+   (issue #29). A ledger whose gate depends on a private repository cannot be kept by a routine that
+   should only ever need the public record.
 4. **It missed the ecology's actual traffic.** A measurement of 2026-10-05 over 73 sessions
    (2026-09-07 … 2026-10-04) found: 75 % of the practices' references to each other are courtesy and
    16 % load-bearing; the Field has not once used or answered the Studio; the Studio rarely builds
@@ -52,7 +54,9 @@ is retired.
   `research/relay-<date>` branch and never main.
 - **Landing:** `.github/workflows/auto-land.yml` lands `research/*` branches, and `claude/*` branches
   while their PR is open and not a draft, after running the verifier on the merged tree. A branch that
-  fails is not landed and the job turns red. When something lands it notifies frankbueltge.de
+  fails is not landed and the job turns red. A branch that writes to the archived ledger
+  (`fixtures/enc-*`, `fixtures/ji-*`) is refused the same way, so a scribe run that is still
+  scheduled somewhere cannot land through it. When something lands it notifies frankbueltge.de
   (`repository_dispatch`, event `middle-landed`) if the secret `SITE_DISPATCH_TOKEN` is set.
 - **The seed:** the first `relay.json` was derived from the 2026-10-05 measurement, period
   2026-09-07 … 2026-10-04 (cycle 003 and the start of cycle 004): 146 relations (`built_on` 20,

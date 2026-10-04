@@ -1,7 +1,7 @@
 > **ARCHIVED 2026-10-05.** The encounter ledger this inventory founded (`fixtures/enc-*`,
 > `fixtures/ji-*`) is no longer written. It watched data-snack's automation rather than the
-> ecology, its nightly runs stranded on unmerged branches, and since 2026-10-04 they failed outright
-> on a private repository they could not clone. The Middle is now a relay desk: `relay/relay.json`
+> ecology, its nightly runs stranded on unmerged branches, and on 2026-10-04 a run failed outright
+> on a private repository it could not clone. The Middle is now a relay desk: `relay/relay.json`
 > records the practices' cross-references and their open handoffs. Decision record:
 > [`docs/2026-10-05-middle-becomes-relay.md`](2026-10-05-middle-becomes-relay.md). Nothing below
 > has been changed.

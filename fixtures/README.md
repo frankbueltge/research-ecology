@@ -6,7 +6,7 @@ Scribe routine that wrote them is retired.
 
 Why: the ledger mostly tracked data-snack's failing cook automation (`enc-2026-004`), not what the
 three practices do with each other; since the ecology's v3 rebuild (2026-08-30) it ignored their
-collaboration; its nightly runs stranded on branches nothing merged; and since 2026-10-04 they failed
+collaboration; its nightly runs stranded on branches nothing merged; and on 2026-10-04 a run failed
 because the private data-snack repository could not be cloned.
 
 What replaces it: The Middle is now a relay desk. `relay/relay.json` (contract `middle-relay/1`,

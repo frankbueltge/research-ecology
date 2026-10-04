@@ -8,8 +8,9 @@
 #                   declined PR is never resurrected onto main
 # Triggers: the push itself, the PR events (a cloud session pushes first and opens its PR after),
 # a daily safety net, and a manual run.
-# HONESTY RULE: an eligible branch that fails to merge, fails the contract guard or fails to push
-# turns this job RED. A green run means "everything eligible landed", never "errors were echoed away".
+# HONESTY RULE: an eligible branch that fails to merge, fails the contract guard, writes to the
+# archived encounter ledger or fails to push turns this job RED. A green run means "everything
+# eligible landed", never "errors were echoed away".
 name: Auto-land relay runs
 
 on:
@@ -54,8 +55,8 @@ jobs:
           failed=0
           summary=""
           # one machine-readable line per branch:
-          #   outcome <branch> <landed|skipped_no_pr|skipped_draft_pr|retired_superseded|
-          #                     retire_failed|relay_invalid|conflict|push_failed>
+          #   outcome <branch> <landed|skipped_no_pr|skipped_draft_pr|archived_ledger|
+          #                     retired_superseded|retire_failed|relay_invalid|conflict|push_failed>
           note() {
             echo "outcome $1 $2"
             summary="${summary}| \`$1\` | $2 |"$'\n'
@@ -90,6 +91,15 @@ jobs:
             mb="$(git merge-base origin/main "$b" 2>/dev/null || true)"
             changed=""
             if [ -n "$mb" ]; then changed="$(git diff --name-only "$mb" "$b" || true)"; fi
+            # THE ARCHIVE. The encounter ledger is archived as of 2026-10-05 and no longer written
+            # (docs/2026-10-05-middle-becomes-relay.md). The retired Middle Scribe may still be
+            # scheduled somewhere, so a branch that writes to the ledger is refused, kept, and turns
+            # this job red: a loud sign that a routine still needs switching, never a silent landing.
+            if printf '%s\n' "$changed" | grep -qE '^fixtures/(enc|ji)-'; then
+              failed=$((failed+1)); note "$name" archived_ledger
+              echo "::error::$name writes to the archived encounter ledger (fixtures/enc-*, fixtures/ji-*) — not landed, branch kept. The Middle Scribe is retired; see docs/2026-10-05-middle-becomes-relay.md"
+              echo "::endgroup::"; continue
+            fi
             if [ "$changed" = "relay/relay.json" ]; then
               bto="$(relay_to "$b")"; mto="$(relay_to origin/main)"
               if [ -n "$bto" ] && [ -n "$mto" ] && [[ ! "$bto" > "$mto" ]]; then
