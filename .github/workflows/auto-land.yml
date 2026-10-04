@@ -1,0 +1,172 @@
+# Lands the Middle Relay's nightly branches onto main, so nobody has to merge them by hand.
+# Modelled on frankbueltge/studio's auto-land. Until 2026-10-05 this repository had no lander, and
+# the Middle Scribe's runs sat on claude/* branches that nothing ever merged (PRs #2, #7, #12–#15,
+# #20–#28 — see docs/2026-10-05-middle-becomes-relay.md). Two branch shapes:
+#   • research/*  — the routine's own branch (research/relay-<date>); no PR needed, always eligible
+#   • claude/*    — a cloud session that may only push its own claude/* branch opens a PR instead;
+#                   such a branch lands only while that PR is OPEN and not a draft, so a closed or
+#                   declined PR is never resurrected onto main
+# Triggers: the push itself, the PR events (a cloud session pushes first and opens its PR after),
+# a daily safety net, and a manual run.
+# HONESTY RULE: an eligible branch that fails to merge, fails the contract guard or fails to push
+# turns this job RED. A green run means "everything eligible landed", never "errors were echoed away".
+name: Auto-land relay runs
+
+on:
+  push:
+    branches: ['research/**', 'claude/**']
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+  schedule:
+    - cron: '45 7 * * *'   # 07:45 UTC — after the relay routine, which runs after the practices' nights
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: read   # to see whether a claude/* branch still has an open PR
+
+concurrency:
+  group: auto-land
+  cancel-in-progress: false
+
+jobs:
+  land:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Merge research/* and claude/* branches into main
+        id: land
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "Middle Relay"
+          git config user.email "relay@research-ecology.invalid"
+          git fetch origin '+refs/heads/research/*:refs/remotes/origin/research/*' \
+                           '+refs/heads/claude/*:refs/remotes/origin/claude/*' || true
+          landed=0
+          failed=0
+          summary=""
+          # one machine-readable line per branch:
+          #   outcome <branch> <landed|skipped_no_pr|skipped_draft_pr|retired_superseded|
+          #                     retire_failed|relay_invalid|conflict|push_failed>
+          note() {
+            echo "outcome $1 $2"
+            summary="${summary}| \`$1\` | $2 |"$'\n'
+          }
+          # period.to of relay/relay.json at a ref; empty when absent or unreadable
+          relay_to() {
+            git show "$1:relay/relay.json" 2>/dev/null | node -e '
+              let s = ""; process.stdin.on("data", (d) => (s += d)).on("end", () => {
+                try { process.stdout.write(String(JSON.parse(s).period.to || "")); } catch {}
+              });' || true
+          }
+          # Newest first. A relay night re-reads every bulletin since main's period.to, so when two
+          # relay branches wait (one failed, or the lander did not run in between), the newer one
+          # lands and the older one is superseded below, instead of being merged on top of it.
+          for b in $(git branch -r | sed 's/^[* ] *//' | grep -E '^origin/(research|claude)/' | sort -r || true); do
+            name="${b#origin/}"
+            echo "::group::$name"
+            case "$name" in
+              claude/*)
+                pr_state=$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$name" --state open \
+                  --json isDraft --jq 'if length == 0 then "none" elif .[0].isDraft then "draft" else "open" end' 2>/dev/null || echo none)
+                if [ "$pr_state" = "none" ]; then
+                  note "$name" skipped_no_pr; echo "::endgroup::"; continue
+                elif [ "$pr_state" = "draft" ]; then
+                  note "$name" skipped_draft_pr; echo "::endgroup::"; continue
+                fi ;;
+            esac
+            # SUPERSEDED (narrow and provable): the branch changes nothing but relay/relay.json and
+            # its period.to is not later than main's. A newer night has re-read the same bulletins,
+            # so deleting the branch loses nothing; merging it would fail the append-only guard
+            # every night and teach everyone to ignore a red lander.
+            mb="$(git merge-base origin/main "$b" 2>/dev/null || true)"
+            changed=""
+            if [ -n "$mb" ]; then changed="$(git diff --name-only "$mb" "$b" || true)"; fi
+            if [ "$changed" = "relay/relay.json" ]; then
+              bto="$(relay_to "$b")"; mto="$(relay_to origin/main)"
+              if [ -n "$bto" ] && [ -n "$mto" ] && [[ ! "$bto" > "$mto" ]]; then
+                if git push origin --delete "$name"; then
+                  note "$name" retired_superseded
+                else
+                  failed=$((failed+1)); note "$name" retire_failed
+                  echo "::error::$name is superseded by main (period.to $mto) but could not be deleted"
+                fi
+                echo "::endgroup::"; continue
+              fi
+            fi
+            base_file="$(mktemp)"
+            git show origin/main:relay/relay.json > "$base_file" 2>/dev/null || : > "$base_file"
+            if git merge --no-edit "$b"; then
+              # THE CONTRACT GUARD. The site reads relay/relay.json and shows its open handoffs to
+              # the practices at session open, so a broken file must never reach main. The verifier
+              # runs on the MERGED tree — exactly the state that would land — append-only against
+              # main's version, and checks online that the night's new evidence refs exist (a rate
+              # limit or network failure is a warning there, never a red). A branch that fails is
+              # not landed and NOT deleted: the work stays on origin for the next run to repair.
+              # Absent verifier or absent relay file = no guard, never a block.
+              if [ -f tools/verify-relay.mjs ] && [ -f relay/relay.json ]; then
+                args=(--online)
+                if [ -s "$base_file" ]; then args+=(--base "$base_file"); fi
+                if ! out="$(node tools/verify-relay.mjs "${args[@]}" 2>&1)"; then
+                  printf '%s\n' "$out"
+                  failed=$((failed+1)); note "$name" relay_invalid
+                  echo "::error::$name fails tools/verify-relay.mjs — not landed, branch kept. $(printf '%s\n' "$out" | grep -m1 '^error:' || true)"
+                  git reset --hard origin/main
+                  echo "::endgroup::"; continue
+                fi
+                printf '%s\n' "$out"
+              fi
+              if git push origin main && git push origin --delete "$name"; then
+                landed=$((landed+1)); note "$name" landed
+              else
+                failed=$((failed+1)); note "$name" push_failed
+                git reset --hard origin/main   # keep later merges off the unpushed state
+              fi
+            else
+              failed=$((failed+1)); note "$name" conflict
+              git merge --abort || true
+            fi
+            echo "::endgroup::"
+          done
+          if [ -z "$summary" ]; then summary="| (none) | nothing eligible |"$'\n'; fi
+          printf '## Auto-land\n\n| branch | outcome |\n|---|---|\n%s\n**%s landed, %s failed**\n' \
+            "$summary" "$landed" "$failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "landed=$landed" >> "$GITHUB_OUTPUT"
+          if [ "$failed" -gt 0 ]; then
+            echo "::error::$failed eligible branch(es) failed to land — see the outcome lines above"
+            exit 1
+          fi
+
+      # Promptness: once a relay night has landed, tell the site at once instead of waiting for its
+      # own schedule. Cross-repo needs repository_dispatch and a token with contents:write on
+      # frankbueltge/frankbueltge.de in the secret SITE_DISPATCH_TOKEN (the built-in GITHUB_TOKEN
+      # does not reach across repositories). Without the secret the step skips cleanly. It runs
+      # even when the land step went red: what did land must still reach the site.
+      - name: Notify the site (middle-landed)
+        if: ${{ !cancelled() && steps.land.outputs.landed != '' && steps.land.outputs.landed != '0' }}
+        env:
+          SITE_DISPATCH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$SITE_DISPATCH_TOKEN" ]; then
+            echo "::notice::SITE_DISPATCH_TOKEN is not set — no dispatch; the site reads the relay on its own schedule"
+            exit 0
+          fi
+          code=$(curl -sS -o /dev/null -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer $SITE_DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/frankbueltge/frankbueltge.de/dispatches \
+            -d '{"event_type":"middle-landed"}')
+          if [ "$code" = "204" ]; then
+            echo "dispatch ok (HTTP 204): middle-landed sent to frankbueltge.de"
+          else
+            echo "::warning::dispatch failed (HTTP $code) — the site reads the relay on its own schedule"
+          fi
