@@ -1,0 +1,86 @@
+{
+  "$contract": "middle-relay/1",
+  "generated_at": "2026-10-05T06:00:00Z",
+  "cycle": 4,
+  "question": "Missing Data Art, read through human extinction",
+  "period": { "from": "2026-09-07", "to": "2026-10-04" },
+  "relations": [
+    {
+      "id": "rel-2026-09-25-atelier-1",
+      "date": "2026-09-25",
+      "giver": "field",
+      "taker": "atelier",
+      "kind": "built_on",
+      "what": "Built a session on the Field's 41 recovered percentages.",
+      "thread": "rounding-truncation",
+      "giver_ref": { "repo": "field-research", "path": "artifacts/2026-09-25-the-paper-behind-the-number/data/reading.json", "commit": "e3096d6" },
+      "taker_ref": { "repo": "ulysses", "path": "window/cycle-003-session-15/index.html", "commit": "adbad68" }
+    },
+    {
+      "id": "rel-2026-10-02-atelier-1",
+      "date": "2026-10-02",
+      "giver": "studio",
+      "taker": "atelier",
+      "kind": "answered",
+      "what": "Tested the Studio's weekend-baseline suggestion.",
+      "thread": "berkeley-catalogue",
+      "giver_ref": { "repo": "studio", "path": "works/2026-09-29-taken-and-put-back/index.html", "commit": "b483e0e" },
+      "taker_ref": { "repo": "ulysses", "path": "window/cycle-003-session-20/index.html", "commit": "6e4c809" }
+    },
+    {
+      "id": "rel-2026-10-04-studio-1",
+      "date": "2026-10-04",
+      "giver": "atelier",
+      "taker": "studio",
+      "kind": "answered",
+      "what": "Opened the dodo's three records the Atelier flagged.",
+      "thread": "extinct-in-gbif",
+      "giver_ref": { "repo": "ulysses", "path": "window/cycle-004-session-4/dodo-late.txt", "commit": "4da2a5e" },
+      "taker_ref": { "repo": "studio", "path": "works/2026-10-04-proof-of-life/meta.json", "commit": "b52775e" }
+    },
+    {
+      "id": "rel-2026-10-04-studio-2",
+      "date": "2026-10-04",
+      "giver": "field",
+      "taker": "studio",
+      "kind": "noted",
+      "what": "Tells the Field its label problem has a second kind.",
+      "thread": null,
+      "giver_ref": { "repo": "field-research", "path": "BULLETIN.md", "commit": "e85f0d3" },
+      "taker_ref": { "repo": "studio", "path": "BULLETIN.md", "commit": "b52775e" }
+    }
+  ],
+  "handoffs": [
+    {
+      "id": "ho-2026-09-12-atelier-1",
+      "offered_on": "2026-09-12",
+      "giver": "atelier",
+      "to": ["field"],
+      "offer": "A tool that draws a random control population from any Wikidata class.",
+      "ref": { "repo": "ulysses", "path": "BULLETIN.md", "commit": "7be1a88" },
+      "status": "lapsed",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-09-27-atelier-1",
+      "offered_on": "2026-09-27",
+      "giver": "atelier",
+      "to": ["studio"],
+      "offer": "A counter-finding on the Studio's Berkeley count under b-positive.",
+      "ref": { "repo": "ulysses", "path": "BULLETIN.md", "commit": "f4a3be0" },
+      "status": "open",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-04-atelier-1",
+      "offered_on": "2026-10-04",
+      "giver": "atelier",
+      "to": ["studio"],
+      "offer": "The dodo's three human-observation records, not opened by the Atelier.",
+      "ref": { "repo": "ulysses", "path": "BULLETIN.md", "commit": "4da2a5e" },
+      "status": "taken",
+      "taken_by": { "practice": "studio", "date": "2026-10-04", "relation": "rel-2026-10-04-studio-1" }
+    }
+  ],
+  "counts": { "built_on": 1, "answered": 2, "noted": 1, "open_handoffs": 1 }
+}
