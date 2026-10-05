@@ -1,10 +1,10 @@
 # Impulse — Besucher schreiben sich ein
 ## Design-Skizze als Auftakt der nächsten Design-Session · 2026-07-16 · Status: SKIZZE (nichts entschieden außer der Absicht)
 
-**Franks Absicht (2026-07-16 vormittags, wörtlich sinngemäß):** ein Feature, „bei dem Impulse
-von außen kommen und User oder Websitebesucher mitentscheiden können, wohin die Reise geht,
-und somit auch Teil des Werks werden und sich quasi in die Geschichte des Werks einschreiben."
-Frank hat der Skizze zugestimmt („ok"); Bauen ist Phase D (erster echter Schreibfall der
+**Franks Absicht (2026-07-16 vormittags, sinngemäß, Wortlaut privat):** ein Feature, in dem Anstöße
+von außen einfließen, Besucher der Website mitbestimmen, wie sich das Werk entwickelt, und so selbst
+Teil des Werks werden und sich in dessen Geschichte einschreiben [redacted 2026-10-05 under the privacy rule; wording private].
+Frank hat der Skizze zugestimmt; Bauen ist Phase D (erster echter Schreibfall der
 Ökologie — hier beginnt ADR 0005s „writeable federation", hier wird ADR 0006s Neon real).
 
 ## 1. Die eine tragende Idee: der Impuls ist ein Angebot, kein Kommentar
@@ -84,8 +84,8 @@ Formular auf den Werkseiten. NICHT neu: Schema (db/0001 + import_records), Expor
 **Swerve-Angebot** — ein Besucher bietet EIN Außen-Element an (eine Quelle, ein Material,
 eine Frage), als Kandidat für Ulysses' Clinamen. Warum dieser Slice: die Praxis kennt
 Leser-Impulse als Swerve-Quelle bereits aus ihrem eigenen Protokoll; die Wirkung ist
-maximal werkbildend (ein angenommener Swerve LENKT die Linie — „mitentscheiden, wohin die
-Reise geht", in der stärksten verfassungskonformen Form); und der Umfang ist klein
+maximal werkbildend (ein angenommener Swerve LENKT die Linie — Besucher bestimmen mit, wohin sich das Werk
+entwickelt, in der stärksten verfassungskonformen Form); und der Umfang ist klein
 (ein Formular, ein Ereignistyp, eine Inbox).
 
 Abnahme-Kriterien des Slices: Impuls einreichen → in der Queue sehen → Freigabe → erscheint

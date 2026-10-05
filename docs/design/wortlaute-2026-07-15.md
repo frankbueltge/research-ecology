@@ -1,7 +1,7 @@
 # Wortlaute — Architektur & Vorschläge (2026-07-15 abends)
 
-Franks Frage: „Müssen die statisch sein, oder können die auch passend zur jeweiligen
-Karte geschrieben werden?" — Antwort: **Beides existiert, und die Grenze verläuft
+Franks Frage (ob diese Texte statisch sein müssen oder auch passend zur jeweiligen
+Karte geschrieben werden können [redacted 2026-10-05 under the privacy rule; wording private]) — Antwort: **Beides existiert, und die Grenze verläuft
 genau zwischen Grammatik und Erzählung.**
 
 ## 1. Die Zwei-Schichten-Regel
@@ -53,7 +53,7 @@ Künftige Begegnungen: Überschriften werden je Encounter neu geschrieben (edito
 pending) — Stil-Leitplanke: kurz, konkret, keine Metaphern ohne Datendeckung, das
 Zitat trägt die Beweislast, die Überschrift nur die Neugier.
 
-## 5. Status — ENTSCHIEDEN (Frank, 2026-07-15 abends: „nimm deine Vorschläge")
+## 5. Status — ENTSCHIEDEN (Frank, 2026-07-15 abends: alle Vorschläge wie entworfen freigegeben [redacted 2026-10-05 under the privacy rule; wording private])
 
 **Alle Wortlaute freigegeben**, Bestand plus die drei Vorschläge dieses Dokuments:
 §2 Middle-Datenkante = „here ends what the ledger knows" (+ as-of-Randnotat),

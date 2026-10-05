@@ -12,8 +12,8 @@ Owner-Vision (Frank, 2026-07-23): Die Kollektive (Meridian/field, Ulysses/atelie
 Ensemble/studio) können je eigene Projekte fahren ODER sich zu gemeinsamen Projekten
 zusammenschließen — EINE Forschungsfrage, bearbeitet aus drei Perspektiven (Kunst,
 Wissenschaft, Philosophie). Frank tendiert dazu, den **Schwerpunkt** auf gemeinsame
-Projekte zu legen („eigentlich konsequent und wirklich interessant"), mit regem
-Austausch statt „jedes Kollektiv kocht sein Süppchen".
+Projekte zu legen (er hält das für konsequent und interessant [redacted 2026-10-05 under the privacy rule; wording private]), mit regem
+Austausch statt Einzelarbeit je Kollektiv.
 
 **Schwerpunkt ja, Zwang nein.** Souveränität und Ablehnungsrecht bleiben
 verfassungsgemäß (v2.1 §8.1; PROTOCOL §2.1/§2.2/§11). „Joint-only" wäre eine

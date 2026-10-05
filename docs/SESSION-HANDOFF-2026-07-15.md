@@ -20,7 +20,7 @@ Atelier-Oberfläche für Ulysses als eigene App, versionierte Praxisprofile mit 
 Verpflichtungen, Forschungskonstellationen, Transduktion). Das geforderte Phase-A-Audit
 ist FERTIG: `docs/DELTA-AUDIT-V2.1.md` — Verdikt: vollständig additiv, Phasen B–E dort
 skizziert. **Architektur-Go ERTEILT (2026-07-15 nachmittags):** Frank hat die
-Freigabe-Entscheidung an die Session delegiert („dein Architektur-Go zum Audit");
+Freigabe-Entscheidung an die Session delegiert [redacted 2026-10-05 under the privacy rule; wording private];
 ADR 0010 (Zwei Produkte, ein Kernel) und ADR 0011 (Profile lokal autorisiert) sind
 ACCEPTED. **Phase B ist FERTIG und reviewt (2026-07-15 ~15:20):** Migration 0002,
 Profil-Schema/Validator, Store-Parität + ADR-0011-Sentinel (Loader UND Store-Put),
@@ -48,7 +48,7 @@ Franks Detail-Kritik. Wortlaute weiter pending (Chips auf allen Artefakten).
 **Phase C1 FERTIG + reviewt, Wortlaute UMGESETZT (2026-07-15 spätabends):**
 apps/atelier läuft (Port 5174, datengetriebenes Blatt, ADR-0010-Guard-Test, Suiten:
 root 153, atelier 15 unit + 16 e2e, middle-web 47+114 unverändert grün). Franks
-Wortlaut-Freigabe („nimm deine Vorschläge") ist durchgezogen: Narrative approved
+Wortlaut-Freigabe (alle Vorschläge wie entworfen) [redacted 2026-10-05 under the privacy rule; wording private] ist durchgezogen: Narrative approved
 (Beat 4 „flows upstream"), „Held accountable to:", Ledger-Kanten-Formel in den
 Design-Seiten, Tests bewusst aktualisiert (Badge-Test jetzt zustandsbewusst),
 Site-Export auf ecology-restructure committet (04e62e5; Site-Tests 287 grün; main
@@ -76,7 +76,7 @@ Phase D (Fable→Atlas-Encounter + Konstellation + Transduktion).
   `/lab`. **main ist unberührt** (HEAD f1f93ac + evtl. neuere fremde Commits). Franks
   uncommittete Dateien (Logos, docs/federated-research-ecology/) NIE anfassen.
   ⚠️ Das lokale Checkout steht evtl. noch auf dem Branch (`git switch main` zum Zurück).
-- **Frank hat die Struktur gesehen und gesagt: „sieht gut aus."** Das ist eine
+- **Frank hat die Struktur gesehen und im Grundsatz gebilligt** [redacted 2026-10-05 under the privacy rule; wording private]. Das ist eine
   Struktur-Abnahme, KEINE Freigabe der offenen Punkte unten.
 
 ## Dev-Server starten (die alten sind mit der Session gestorben)
@@ -91,8 +91,8 @@ cd ~/Documents/GitHub/frankbueltge.de && git switch ecology-restructure && npm r
 1. **Design-Session (Task #11, eigene Session):** Kernstück ist die ZEICHENGRAMMATIK —
    visuelles Vokabular pro Ereignistyp, deterministischer Karten-Generator pro Begegnung
    (aktuelles Tableau-SVG ist handgemacht für enc-2026-001, bewusster Interimszustand).
-   Dazu 2–3 gebaute Art-Direction-Varianten (Frank fand die bisherige Optik „billig" —
-   die Latte ist „weckt Neugier", spektakulär durch Material/Typo/Maßstab, kein Neon).
+   Dazu 2–3 gebaute Art-Direction-Varianten (Frank fand die bisherige Optik zu wenig wertig [redacted 2026-10-05 under the privacy rule; wording private] —
+   die Latte: spektakulär durch Material/Typo/Maßstab, kein Neon).
    Referenzen: Franks Atlas (site: src/data/atlas/werke.json, 214 Werke) + Beispiele, die
    Frank noch nennt. Ergebnis gilt für App UND Site gleichzeitig.
 2. **Franks Freigaben einholen** (blockieren Deploy, nicht Entwicklung): Encounter

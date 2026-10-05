@@ -1,11 +1,10 @@
 # Site-v2 — Briefing für die Grundsatz-Session (ab 2026-07-16, ~00:30)
 
-**Franks Auftrag (2026-07-15, 23:20, wörtlich sinngemäß):** Keine oberflächliche
+**Franks Auftrag (2026-07-15, 23:20, sinngemäß, Wortlaut privat):** Keine oberflächliche
 Ergänzung. Es geht um **eine Einstiegsseite / einen Hub für das gesamte Projekt** —
-und das Gesamtprojekt braucht vermutlich **eine Bezeichnung**. Messlatte: *„Stell dir
-vor, du kommst als Mensch zum ersten Mal auf die Site — du verstehst einfach null und
-bist sofort wieder weg."* Gründlich planen: Struktur, Header-Navigation, was mit /lab
-passiert. Und: **„Ich will meine Joy-Division-Header-Animation zurück."**
+und das Gesamtprojekt braucht vermutlich **eine Bezeichnung**. Messlatte: Wer als Mensch zum ersten Mal auf die Site kommt, darf sie nicht
+als unverständlich erleben und sofort wieder verlassen [redacted 2026-10-05 under the privacy rule; wording private]. Gründlich planen: Struktur, Header-Navigation, was mit /lab
+passiert. Und: **die Joy-Division-Header-Animation soll zurückkommen** [redacted 2026-10-05 under the privacy rule; wording private].
 
 ## 1. Die Kernfragen (in dieser Reihenfolge denken)
 
@@ -39,7 +38,7 @@ passiert. Und: **„Ich will meine Joy-Division-Header-Animation zurück."**
    heute Alt-Index mit Hinweis. Entscheiden: /lab → Redirect auf /bestaende? Oder
    /lab = das LABOR als vierte Praxis (Manifest, war ohnehin geplant — Handoff
    „Labor als vierte Praxis")? Nicht zwei halbgare Sammelseiten behalten.
-6. **Atlas-Dualität** (Frank: „2 Atlanten machen keinen Sinn"): Franks Atlas
+6. **Atlas-Dualität** (Frank hält zwei Atlanten nicht für sinnvoll [redacted 2026-10-05 under the privacy rule; wording private]): Franks Atlas
    (214 Datenkunst-Werke, /atlas) = Referenzsammlung des Labors, bleibt /atlas.
    Ulysses' Papers-Regal (Artistic-Research-Quellen aus irrtum-als-methode/atlas/)
    = Material der Praxis → /atelier/material (IA aus atelier-aesthetik §5), vom
@@ -86,9 +85,8 @@ stärkstes Modell fürs Denken/Design, Sonnet für die Umsetzung.
 Befund heute Nacht: **Atelier-Integrate war seit 14.07. rot** — Ulysses führte neue
 Kanten-Kinds ein (continues/complement/grounds), das Cockpit-Gate lehnte ehrlich ab,
 und niemand bemerkte es → Werke fehlten tagelang live. Fix ist deployt (ed9ea9a,
-Werke wieder live). Franks Anforderung: *„sicherstellen, dass alles, was in den
-Routinen produziert wird, auch wirklich auf der Live-Site erscheint — zukünftig ohne
-manuelle Nacharbeit."* Meridian/Studio vermutlich ebenfalls nicht taufrisch —
+Werke wieder live). Franks Anforderung: Alles, was die Routinen produzieren, muss auch tatsächlich
+auf der Live-Site erscheinen, künftig ohne manuelles Nachziehen [redacted 2026-10-05 under the privacy rule; wording private]. Meridian/Studio vermutlich ebenfalls nicht taufrisch —
 Integration NACH dem Redesign, aber die Kette gehört zum Paket:
 
 1. **Sichtbarkeit statt Stille:** Jeder rote Integrate-/Nightly-Run muss ALARM

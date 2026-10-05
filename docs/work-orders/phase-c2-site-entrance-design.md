@@ -4,9 +4,8 @@
 
 # Work Order — C2-Site: Eingang der Site in Variante-A-Qualität (Partitur)
 
-**Franks Kritik (2026-07-15 abends):** localhost:4321 ist „noch ziemlich dünn und
-sollte genauso professionell und ästhetisch ansprechend sein wie die anderen Sachen,
-die wir heute designed haben." Ziel: Der Site-Eingang wird die Partitur (Richtung A,
+**Franks Kritik (2026-07-15 abends):** localhost:4321 wirkt noch dünn und soll so professionell und
+ästhetisch überzeugen wie die übrigen heute entworfenen Teile [redacted 2026-10-05 under the privacy rule; wording private]. Ziel: Der Site-Eingang wird die Partitur (Richtung A,
 von Frank gewählt) — kein Skelett mehr.
 
 **Bindend:** `docs/design/zeichengrammatik-2026-07-15.md` (Zeichen, §7),

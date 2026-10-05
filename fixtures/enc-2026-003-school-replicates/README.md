@@ -1,8 +1,9 @@
 # enc-2026-003-school-replicates — README
 
 **Status: retroactive transcription, `approval: draft`** (Frank commissioned 2026-07-17 —
-"man kann das doch auch rückwirkend mit aufnehmen" — wording not yet read by him). A LEAN
-record by design: five events, one obligation; the nightly Middle Scribe appends from here.
+a retroactive entry for this relation [redacted 2026-10-05 under the privacy rule; wording
+private] — wording not yet read by him). A LEAN record by design: five events, one
+obligation; the nightly Middle Scribe appends from here.
 Discipline as in enc-2026-002: every quote in QUOTE-MANIFEST.tsv is a byte-exact
 (whitespace-normalized) substring of its pinned source; verify with
 `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-003-school-replicates`.

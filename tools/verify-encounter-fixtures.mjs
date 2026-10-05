@@ -13,6 +13,17 @@
 //   Manifest darf ihn alternativ als viertem-Feld-Suffix "@<commit>" am Pfad tragen.
 //   Volle Zitate sind Pflicht für NEUE Zeilen des Scribe; Alt-Zeilen mit 60-Zeichen-Prefix
 //   bleiben gültig (Mindestmaß).
+//
+// REDACTION (2026-10-05). Verbatim quotations of Frank's messages must not stay in repository
+// content (privacy rule of 2026-08-15, wording private). When such a quote is removed from a
+// fixture, its manifest line keeps its location and its source pin, and the quote field becomes
+// a dated redaction marker:
+//     [redacted YYYY-MM-DD under the privacy rule; wording private]
+// There are no words left to compare, so this verifier does not fetch the source for such a
+// line: it is counted on its own ("redacted"), never as "ok", and it never fails the run. The
+// marker must keep exactly this shape, because a line with any other text is still checked
+// byte-for-byte like every other quote. Never invent a source for a redacted line, and never
+// use the marker for a quote that is not Frank's own message.
 
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
@@ -55,6 +66,9 @@ const norm = (s) =>
 // (enc-001 schloss abgebrochene Sätze mit '.', wo die Quelle weiterläuft).
 const normQuote = (s) => norm(s).replace(/[.,…]+$/, "");
 const cache = new Map();
+
+// The only shape a redacted quote may take in QUOTE-MANIFEST.tsv (see REDACTION above).
+const REDACTED_QUOTE = /^\[redacted \d{4}-\d{2}-\d{2} under the privacy rule; wording private\]$/;
 
 async function fetchAt(repoLabel, path, commit) {
   const slug = REPO_MAP[repoLabel];
@@ -124,18 +138,20 @@ function commitsFromJsons(dir) {
 }
 
 async function verifyDir(dir) {
-  let ok = 0, fail = 0;
+  let ok = 0, fail = 0, redacted = 0;
   const commitIndex = commitsFromJsons(dir); // validiert nebenbei alle JSONs
   const manifest = join(dir, "QUOTE-MANIFEST.tsv");
   if (!existsSync(manifest)) {
     console.error(`FEHLT: ${manifest}`);
-    return { ok, fail: fail + 1 };
+    return { ok, fail: fail + 1, redacted };
   }
   for (const raw of readFileSync(manifest, "utf8").split("\n")) {
     const line = raw.trimEnd();
     if (!line || line.startsWith("#") || /^location\t/i.test(line)) continue;
     const [loc, src, quote] = line.split("\t");
     if (!loc || !src || !quote) { console.error(`MANIFEST-ZEILE UNLESBAR: ${line.slice(0, 80)}`); fail++; continue; }
+    // A redacted quote has no words left to compare: counted on its own, never as "ok".
+    if (REDACTED_QUOTE.test(quote.trim())) { redacted++; continue; }
     let [repoLabel, ...rest] = src.split(":");
     let path = rest.join(":");
     let commits = [];
@@ -158,7 +174,7 @@ async function verifyDir(dir) {
     if (found) ok++;
     else { console.error(`NICHT-SUBSTRING: ${loc} → ${src} :: ${quote.slice(0, 60)}`); fail++; }
   }
-  return { ok, fail };
+  return { ok, fail, redacted };
 }
 
 const args = process.argv.slice(2);
@@ -170,11 +186,11 @@ const dirs = args.length
       .filter((d) => d.startsWith("enc-") || (d.startsWith("ji-") && existsSync(join("fixtures", d, "QUOTE-MANIFEST.tsv"))))
       .map((d) => join("fixtures", d));
 
-let totalOk = 0, totalFail = 0;
+let totalOk = 0, totalFail = 0, totalRedacted = 0;
 for (const dir of dirs) {
-  const { ok, fail } = await verifyDir(dir);
-  console.log(`${dir}: ${ok} Zitate ok, ${fail} Fehler`);
-  totalOk += ok; totalFail += fail;
+  const { ok, fail, redacted } = await verifyDir(dir);
+  console.log(`${dir}: ${ok} Zitate ok, ${fail} Fehler${redacted ? `, ${redacted} redacted (privacy rule, not checkable)` : ""}`);
+  totalOk += ok; totalFail += fail; totalRedacted += redacted;
 }
-console.log(`GESAMT: ${totalOk} ok, ${totalFail} Fehler`);
+console.log(`GESAMT: ${totalOk} ok, ${totalFail} Fehler${totalRedacted ? `, ${totalRedacted} redacted` : ""}`);
 process.exit(totalFail === 0 ? 0 : 1);

@@ -11,11 +11,12 @@ Five `EpistemicPracticeProfile` versions, one per sovereign practice:
   each v2 awaits its practice's own confirmation (ADR 0011 §2). The v1 versions, including
   their `local_confirmation` blocks, live in this repo's git history.
 - **Two new `v1` drafts** (`frank.json`, `data-snack-plenum.json`) after the admissions of
-  2026-07-17 (`docs/design/membership-proposals-2026-07-17.md`, decided by Frank, "ja gib
-  frei"): Frank Bültge as the human practice, and data-snack.com with its resident collective,
-  the Plenum. A third practice, datavism.org, was admitted the same morning but has no profile
-  here yet — its sources (its own repo's governance statement) are not available to this
-  working copy, and inventing one is not an option.
+  2026-07-17 (`docs/design/membership-proposals-2026-07-17.md`, decided by Frank, go-ahead given
+  [redacted 2026-10-05 under the privacy rule; wording private]): Frank Bültge as the human
+  practice, and data-snack.com with its resident collective, the Plenum. A third practice,
+  datavism.org, was admitted the same morning but has no profile here yet — its sources (its
+  own repo's governance statement) are not available to this working copy, and inventing one
+  is not an option.
 
 **Nothing here is invented.** `orientation`, `primary_commitment` and `accountability_questions`
 are copied verbatim from `docs/spec-v2.1/01-FEDERATED-ECOLOGY-V2.1-IMPLEMENTATION-DELTA.md` §3
@@ -78,6 +79,13 @@ practice of reusing the bundle `local_object_ref` hashes does not carry over: th
 protocols are newer than any ingested bundle. `orientation`/`primary_commitment`/
 `accountability_questions` of the three engine collectives keep their v1 `spec_ref` provenance
 (`docs/spec-v2.1/`, not a repository commit).
+
+Note of 2026-10-05: the status line of the membership paper carries one redacted passage now
+(`docs/design/membership-proposals-2026-07-17.md`, privacy rule; the wording of the go-ahead is
+private). The pins above still verify against their pinned commits, which keep the earlier text,
+so for the two `research-ecology` rows the working tree and the pin now differ in that one line.
+The notes inside `frank.json` and `data-snack-plenum.json` that quote the status line carry the
+redacted form.
 
 `apps/middle-web/tests/unit/practice-profiles.test.ts` re-derives every `PROTOCOL.md` quote's
 `content_hash` from the pinned commit in the local sibling clones and checks every quoted

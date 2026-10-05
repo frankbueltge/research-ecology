@@ -1,9 +1,8 @@
 # Redesign nach der ersten Kritik — Eintritt durch Material
 ## Drei Ebenen statt einer Akte am Eingang
 
-**Datum:** 2026-07-15 · **Anlass:** Franks Review des v1-Slice ("man wird von
-Informationen erschlagen, die aber doch irgendwie relevant und wichtig sind"; Compare
-zerschossen; "glaube nicht, dass sich das so überhaupt jemand anschaut") + die Prinzipien
+**Datum:** 2026-07-15 · **Anlass:** Franks Review des v1-Slice (die Informationsfülle wirkt erdrückend, obwohl alles relevant ist; Compare
+zerschossen; Zweifel, dass sich das überhaupt jemand ansieht [redacted 2026-10-05 under the privacy rule; wording private]) + die Prinzipien
 aus seinem externen Gespräch (siehe `docs/shifts.md`, 2026-07-15).
 **Status der Diagnose:** Der Slice hat die *Akte* gebaut — vollständig, ehrlich, geprüft —
 und sie als *Eingang* verwendet. Die Informationen bleiben; ihre Schichtung fehlt.

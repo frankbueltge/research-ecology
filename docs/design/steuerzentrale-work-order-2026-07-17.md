@@ -1,7 +1,7 @@
 # Work Order — Steuerzentrale (Franks Konsole) · 2026-07-17
 
-Für eine frische Session mit vollem Kontextbudget. Frank: „ein ausgeklügeltes System mit
-Web-UI, wo ich direkt antworten und interagieren kann oder Seeds reingebe."
+Für eine frische Session mit vollem Kontextbudget. Franks Auftrag (sinngemäß): ein durchdachtes System mit Web-UI, in dem er direkt antworten,
+interagieren und Seeds einspeisen kann [redacted 2026-10-05 under the privacy rule; wording private].
 
 ## Was bereits existiert (die GitHub-Schicht — Sockel, nicht Ziel)
 
@@ -93,9 +93,9 @@ Seit Abfassung des Work-Orders hat sich der Sockel bewegt; dieser Abschnitt ist 
 - Task #16 (Drift-Pins) gehört euch: Empfehlung commit-gepinnte Import-Bundles statt
   Count-Jagd; plus Adapter-Regel für irrtums `archive/`-Pfad.
 
-**Design-Input von Frank (17.07., wörtlich sinngemäß):** „NICHTS manuell nachziehen … selbst
-weiterentwickeln und selbst optimieren oder heilen könnte sich das System von allein, wenn es
-immer wieder an sinnlose Grenzen stößt." — D. h. für euren Entwurf: die Konsole ist auch der
+**Design-Input von Frank (17.07., sinngemäß, Wortlaut privat):** Manuelles Nachziehen soll entfallen;
+das System könnte sich selbst weiterentwickeln, optimieren und heilen, wenn es immer wieder an
+sinnlose Grenzen stößt [redacted 2026-10-05 under the privacy rule; wording private]. — D. h. für euren Entwurf: die Konsole ist auch der
 Ort, an dem Selbstheilungs-Vorschläge des Apparats (ein künftiger „Mechanic"-Lauf: erkennt
 wiederkehrende Grenzen wie fehlende Dispatches/Secrets/stale Klone und schlägt Fixes als PR
 vor) auflaufen und mit einem Klick angenommen werden. Watchdogs + fail-red + Scribe sind die

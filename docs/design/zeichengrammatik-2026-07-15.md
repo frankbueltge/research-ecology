@@ -106,7 +106,7 @@ Dichte der Randnotate. Varianten in `docs/design/variants-2026-07-15/`:
 gleichzeitig). Das Atelier bekommt ausdrücklich eine EIGENE Bildsprache —
 eigener Entwurf, eigene Session-Etappe, nicht dieses Dokument.
 
-## 7. Zeit-Skalierung (Franks Frage 2026-07-15: „funktioniert das über Monate/Jahre?")
+## 7. Zeit-Skalierung (Franks Frage 2026-07-15: ob das über Monate und Jahre trägt [redacted 2026-10-05 under the privacy rule; wording private])
 
 Die Grammatik skaliert; die Projektion braucht dafür vier deklarierte Regeln
 (Nachweis: `variants-2026-07-15/specimen-19-monate.html` — 19 Monate, 82 Wochen-Bins,

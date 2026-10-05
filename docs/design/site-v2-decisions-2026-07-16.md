@@ -24,7 +24,7 @@ Begründungen der Kandidaten stehen im Session-Verlauf. Mockup: `variants-2026-0
    Auswahlregel der Begegnung sichtbar (spec §4.3/§7.3: der Hub RAHMT den Eingang).
 4. **/lab → 301 auf /bestaende.** Keine zwei Sammelseiten; das „Labor als vierte
    Praxis"-Manifest ist ein eigenes späteres Paket.
-5. **Deutsch fliegt komplett raus** („erstmal raus", Frank 00:55): alle /de-Routen
+5. **Deutsch fliegt komplett raus** (zunächst, Frank 00:55 [redacted 2026-10-05 under the privacy rule; wording private]): alle /de-Routen
    weg, Sprach-Toggle weg, i18n-Vereinfachung; /de/* bekommt Redirects auf die
    EN-Pendants. (Verschärft den English-only-Entscheid aus shifts.md.)
 6. **Projects bleibt Projects** (kein „Work"): Seiten-Projekte, die mit der Ökologie
@@ -38,8 +38,7 @@ Noch offen: Kernfrage 6 (Atlas-Dualität — als Vorschlag im Mockup, Franks Zus
 aussteht), Kernfrage 7 (Praxis-Seiten statisch vs. App-Links), Wortlaut-Redaktion
 (alles im Mockup ist DRAFT), „Holdings" als englisches Bestände-Label.
 
-**Nachtrag 16.07. vormittags — alles Offene geschlossen** (Frank: „wortlaute sind
-freigegeben. bitte durchziehen und selber entscheiden"): Wortlaute approved
+**Nachtrag 16.07. vormittags — alles Offene geschlossen** (Frank gab die Wortlaute frei und überließ Umsetzung und Einzelentscheidungen der Session [redacted 2026-10-05 under the privacy rule; wording private]): Wortlaute approved
 (`naming.ts`, ein Fix: Holdings nennt „The Policy" statt „Police"); Kernfrage 6 wie
 vorgeschlagen entschieden (Franks Atlas bleibt /atlas als Referenzsammlung; Ulysses'
 Papers-Regal zieht in einem späteren Paket nach /atelier/material, beide verweisen
