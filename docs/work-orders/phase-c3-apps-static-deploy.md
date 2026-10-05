@@ -4,7 +4,7 @@
 
 # Work Order — C3: Apps statisch bauen + Cloudflare-Pages-Deploy vorbereiten
 
-**Entscheid (Frank „wir machen alles", 2026-07-15; Architektur: v1 read-only statisch
+**Entscheid (Frank: alles umsetzen [redacted 2026-10-05 under the privacy rule; wording private], 2026-07-15; Architektur: v1 read-only statisch
 = ADR 0005/0006-konform, kein Neon nötig):** middle-web und atelier werden statisch
 prerendered und via Cloudflare Pages ausgeliefert (Subdomains, DNS macht Frank im
 CF-Dashboard). Dieses Paket macht beide Apps prerender-fähig, baut sie nachweislich,

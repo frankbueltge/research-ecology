@@ -4,8 +4,8 @@ Supersedes the state assertions of `docs/REPOSITORY-SEMANTIC-ALIGNMENT.md` (Work
 same day, morning). That document stays unaltered as the audit record; **this document says
 what actually happened afterwards** — what was adopted, what was adapted, what was
 deliberately not done, and which commits carry the current state. Authorized directly by
-Frank ("go für alles" for the P0 repairs; "umsetzen wo sinnvoll … zieh durch" for the
-consistency work), same evening.
+Frank (a go for all the P0 repairs, and a free hand to implement what makes sense for the
+consistency work [redacted 2026-10-05 under the privacy rule; wording private]), same evening.
 
 ## Adopted (from the drafted rewrites)
 

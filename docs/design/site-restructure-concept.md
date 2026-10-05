@@ -1,5 +1,5 @@
 # frankbueltge.de — Neustrukturierung um die Ökologie
-## Konzept (Frank-Mandat 2026-07-15: „komplett neu strukturieren"; Eingang spektakulär)
+## Konzept (Frank-Mandat 2026-07-15: die Site von Grund auf neu strukturieren [redacted 2026-10-05 under the privacy rule; wording private]; Eingang spektakulär)
 
 **Status:** Konzept beschlossen, Umsetzung auf Branch; nichts geht ohne Franks Blick live.
 

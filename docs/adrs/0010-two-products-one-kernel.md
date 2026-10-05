@@ -1,7 +1,7 @@
 # ADR 0010 — Two products, one kernel (Atelier as its own app)
 
 **Status:** ACCEPTED (2026-07-15). Frank delegated the architecture decision on the
-Phase-A delta audit to the lab session ("dein Architektur-Go zum Audit", 2026-07-15);
+Phase-A delta audit to the lab session (2026-07-15 [redacted 2026-10-05 under the privacy rule; wording private]);
 this ADR records that go after review of `docs/DELTA-AUDIT-V2.1.md` against
 `docs/spec-v2.1/`.
 

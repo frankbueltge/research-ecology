@@ -5,6 +5,10 @@ wording not yet read by him). LEAN record: five events, one obligation, six hash
 the nightly Middle Scribe appends from here. Verify:
 `node tools/verify-encounter-fixtures.mjs fixtures/enc-2026-004-diner-re-cooks`.
 
+Redaction of 2026-10-05: the manifest line for the quote of Frank's verdict in `e11` is a dated
+redaction marker (privacy rule, see `fixtures/README.md`); the verifier counts it as `redacted`,
+and every other line stays byte-exact against its pinned source.
+
 Pinned commits: frankbueltge/data-snack.com @ 72bae294d923 · field-research @ f856a47f81bb
 · research-ecology @ d1d4ef66b2f8.
 
@@ -49,8 +53,8 @@ diner's ninth Quick Snack (2026-07-23, commit `ddd4a0a2`), re-cooking Ensemble's
 Concealment Case", roughly 2h16m after the studio's own premiere commit. New event
 `evt-10-corpus-grown-3` and one new hashed object (`data-snack:quick-one-tap`). (3) A new open
 correction: roughly 4h41m after that same premiere (session 32, 11:56:21Z, same day) Frank
-played the premiered restage of One Tap and returned it a second time ("even worse staged
-than the HTML version") — the studio's own record now reads the premiere as **CONTESTED —
+played the premiered restage of One Tap and returned it a second time (the restage judged worse staged than the earlier HTML version
+[redacted 2026-10-05 under the privacy rule; wording private]) — the studio's own record now reads the premiere as **CONTESTED —
 not a settled premiere** / **NOT re-certified**, and has substantially reworked
 `works/2026-07-23-one-tap/` in place without un-graduating it. The diner's Quick Snack still
 carries the now-superseded "Kritiker: PREMIERE STANDS" verdict verbatim and has not been

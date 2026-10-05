@@ -923,8 +923,9 @@ export async function runExport(opts: ExportOptions): Promise<ExportResult> {
   // Listed straight from the fixtures' own encounter.json files — deterministic (sorted by
   // directory name), no timestamps beyond each record's own status.as_of. The entrance keeps
   // the one encounter with an authored score; the register names every recorded encounter so
-  // the site never silently under-reports the ledger (Frank, 2026-07-17: "warum wurde die
-  // encounter karte noch nicht aktualisiert??").
+  // the site never silently under-reports the ledger (prompted by Frank's complaint of
+  // 2026-07-17 that the encounter map was not yet up to date [redacted 2026-10-05 under the
+  // privacy rule; wording private]).
   const fixturesRoot = path.join(opts.researchEcologyRoot, "fixtures");
   const driftWarnings: string[] = [];
   const register = readdirSync(fixturesRoot)

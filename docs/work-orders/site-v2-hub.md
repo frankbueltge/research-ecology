@@ -69,7 +69,7 @@ TopBar: [Frank Bültge → /] · Encounters /begegnungen · Atelier /atelier · 
 About /about. Sprach-Toggle entfernt. Footer: Contact, Impressum, Datenschutz,
 Lizenz-Zeile, GitHub.
 
-### 6. DE-Abbau (Frank: „überall de erstmal raus")
+### 6. DE-Abbau (Frank: Deutsch zunächst überall entfernen [redacted 2026-10-05 under the privacy rule; wording private])
 - `src/pages/de/**` löschen; Sprach-Toggle und hasAlternate-Logik aus TopBar;
   astro-i18n-Konfiguration entfernen bzw. auf en-only reduzieren; `t()`/
   getRelativeLocaleUrl-Aufrufe auf EN-Strings vereinfachen (mechanisch, Route für

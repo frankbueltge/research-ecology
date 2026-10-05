@@ -2,7 +2,8 @@
 
 Ein Protokoll der Denk-Verschiebungen, nicht der Ergebnisse. Angeregt durch Franks
 Gespräch mit einem anderen KI-System (2026-07-15, auszugsweise im Repo-Gedächtnis):
-*„Dokumentiere diese Entwicklung. Nicht nur die Ergebnisse. Auch die Verschiebungen."*
+die Anregung, die Entwicklung zu dokumentieren — nicht nur die Ergebnisse, auch die
+Verschiebungen [redacted 2026-10-05 under the privacy rule; wording private].
 Diese Momente sind Teil der Forschung — hier wird sichtbar, wie die Ökologie selbst
 entstanden ist.
 

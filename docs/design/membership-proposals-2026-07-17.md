@@ -10,7 +10,7 @@ Meridian's accepted downstream conditions toward datavism.org and data-snack.com
 playthrough invitation of 2026-07-16, which is materially an encounter offer to Frank that
 the current vocabulary can only book as "steer").
 
-**Status: decided (Frank, 2026-07-17, "ja gib frei").** Candidacy 1 (Frank) and candidacy 2
+**Status: decided (Frank, 2026-07-17, go-ahead given [redacted 2026-10-05 under the privacy rule; wording private]).** Candidacy 1 (Frank) and candidacy 2
 (data-snack/Plenum) are **admitted**; candidacy 3 (datavism) is **admitted as of the same
 morning** — its governance statement now exists (`datavism.org:docs/GOVERNANCE.md`, v1,
 2026-07-17, closing gaps 2 and 8 and superseding ADR 002's "wing" framing). The §7.1 statements for candidacy 1 bind as Frank's own words per that

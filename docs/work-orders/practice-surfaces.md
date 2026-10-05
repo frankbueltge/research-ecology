@@ -4,8 +4,8 @@
 
 # Work Order: practice-surfaces — die vier Sprachen auf die Site (frankbueltge.de)
 
-**Anlass (Frank, 2026-07-16 vormittags):** „wo sind die anderen designs für atelier field
-studio? das ist doch alles noch beim alten und die histories etc." — Die Designsprachen sind
+**Anlass (Frank, 2026-07-16 vormittags):** die Frage, wo die Designs für Atelier, Field und
+Studio bleiben, da dort noch alles beim Alten sei, auch die Histories [redacted 2026-10-05 under the privacy rule; wording private] — Die Designsprachen sind
 seit dem 15.07. entworfen (Design-Docs + gebaute Mockups + Generatoren), aber die Site rendert
 /atelier /field /studio noch als alte EnginePage. Dieses Paket bringt sie auf die Site.
 

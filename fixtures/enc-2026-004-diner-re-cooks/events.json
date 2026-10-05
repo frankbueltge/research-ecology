@@ -238,12 +238,12 @@
   "payload": {
    "quote_contested": "CONTESTED — not a settled premiere.",
    "quote_not_recertified": "NOT re-certified — returns to the human eye",
-   "quote_frank_verdict": "even worse staged than the HTML version.",
+   "quote_frank_verdict": "[redacted 2026-10-05 under the privacy rule; wording private]",
    "quote_diner_carries": "Kritiker: PREMIERE STANDS.",
-   "finding_open_correction": "evt-enc2026004-10's re-cook was pulled from the studio's session-31 premiere of 'One Tap' at 07:15:03Z; roughly 4 hours 41 minutes later (session 32, 11:56:21Z, the same day) Frank played the premiered restage and returned it a second time ('even worse staged than the HTML version') — the studio's own record now reads the premiere as CONTESTED, NOT re-certified, and has substantially reworked works/2026-07-23-one-tap/ in place (data.json, index.html and README.md all changed) without un-graduating it. The diner's Quick Snack 'The Dalles Concealment Case' still carries the superseded 'Kritiker: PREMIERE STANDS' verdict verbatim and has not been re-cooked since (only split-seal and native-speaker were touched by the next two automated runs, evt-enc2026004-10's own commit and the 2026-07-24 run) — an open correction for the diner's cook template, alongside the pre-existing supplier wing-language gap (evt-enc2026004-02).",
+   "finding_open_correction": "evt-enc2026004-10's re-cook was pulled from the studio's session-31 premiere of 'One Tap' at 07:15:03Z; roughly 4 hours 41 minutes later (session 32, 11:56:21Z, the same day) Frank played the premiered restage and returned it a second time (the restage judged worse staged than the earlier HTML version [redacted 2026-10-05 under the privacy rule; wording private]) — the studio's own record now reads the premiere as CONTESTED, NOT re-certified, and has substantially reworked works/2026-07-23-one-tap/ in place (data.json, index.html and README.md all changed) without un-graduating it. The diner's Quick Snack 'The Dalles Concealment Case' still carries the superseded 'Kritiker: PREMIERE STANDS' verdict verbatim and has not been re-cooked since (only split-seal and native-speaker were touched by the next two automated runs, evt-enc2026004-10's own commit and the 2026-07-24 run) — an open correction for the diner's cook template, alongside the pre-existing supplier wing-language gap (evt-enc2026004-02).",
    "note": "Recorded here, not smoothed away: the source practice's own contest of a premiere does not retroactively un-happen the re-cook, and the diner's automation has no mechanism yet to notice a source work changing under an already-cooked Quick Snack. Whether or when the diner re-cooks is the diner's own decision, not this record's to make."
   },
-  "content_hash": "sha256:8eb84719388d8d2f143dc069f0267c311f9270660145da308e4102fd39810462"
+  "content_hash": "sha256:e73566a9ae81eccddb0c945d34ec81305ceb8cad16b5e84252d9ef87763d0f7a"
  },
  {
   "schema_version": "1.0",
