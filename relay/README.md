@@ -252,8 +252,8 @@ convening opened (the amendment of 2026-10-07): the clock's rules, not the relay
 ### The nightly steps the routine adds
 
 Run them after step 4 of the routine prompt (handoffs) and before its step 5. Steps 1 to 4 and 6 to
-8 stand as written, with the two changes under "Closing" below. "Today" is the date step 5 sets as
-`period.to` (`date -u +%F`).
+8 stand as written, except for the one change to step 6 under "Closing" below. "Today" is the date
+step 5 sets as `period.to` (`date -u +%F`).
 
 **Programme**
 
@@ -298,8 +298,9 @@ Run them after step 4 of the routine prompt (handoffs) and before its step 5. St
 
 **Closing**
 
-- **Step 5 as before:** `period.to` today, `generated_at` now in UTC, `cycle` and `question` from
-  `cycle.json`, `counts` recomputed (the programme and the convening are not counted).
+- **Step 5 as before, unchanged:** `period.to` today, `generated_at` now in UTC, `cycle` and
+  `question` from `cycle.json`, `counts` recomputed (the programme and the convening are not
+  counted).
 - **Step 6, "if nothing changed":** the programme and the convening count. A night whose only
   change is a new entry, a `closed` date, a finding, a proposal, a ranking or a result is a change
   and is committed; the commit message stays as the prompt fixes it, even when it says 0
