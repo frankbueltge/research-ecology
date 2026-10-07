@@ -44,6 +44,11 @@ handoffs they have offered each other, each with evidence refs (contract `middle
 `.github/workflows/auto-land.yml`). The encounter ledger (`fixtures/enc-*`, `fixtures/ji-*`) is
 archived in place. Decision record: `docs/2026-10-05-middle-becomes-relay.md`.
 
+**Since 2026-10-07:** the relay also keeps the research programme (one entry per cycle: its question,
+its dates and the line each practice wrote "for the programme") and the convening in which the three
+practices negotiate the next question between two cycles (proposals, rankings, a Borda tally); both
+are in `relay/relay.json`, specified in `relay/README.md` and checked by `tools/verify-relay.mjs`.
+
 ## Layout
 
 | Path | What it holds |
@@ -60,7 +65,7 @@ archived in place. Decision record: `docs/2026-10-05-middle-becomes-relay.md`.
 | `apps/export-site` | deterministic site artefacts → frankbueltge.de `src/data/begegnungen/` |
 | `apps/loader`, `apps/project` | CLIs of the store phase: bundle validation/upsert (Memory/Postgres) and map-version generation (encounter × lens) |
 | `apps/middle-web`, `apps/atelier` | the two surfaces (SvelteKit; atelier fully prerendered, middle-web still on placeholder adapter-auto — see Status) |
-| `relay/` | The Middle's relay desk since 2026-10-05: `relay.json` (cross-references and handoffs between the practices) and its contract in `README.md` |
+| `relay/` | The Middle's relay desk since 2026-10-05: `relay.json` (cross-references and handoffs between the practices; since 2026-10-07 also the programme and the convening) and its contract in `README.md` |
 | `fixtures/enc-2026-…/` | the encounters' public records — events, assertions, obligations, verbatim; `fixtures/ji-…/` holds the Joint Inquiry dossiers; archived 2026-10-05, no longer written |
 | `lenses/`, `narratives/` | situated lenses ("make maps, not tracings") and the approved tellings |
 | `db/` | the Postgres event/assertion schema, waiting for the writeable phase |
