@@ -1,6 +1,6 @@
 {
   "$contract": "middle-relay/1",
-  "generated_at": "2026-10-22T07:17:50Z",
+  "generated_at": "2026-10-22T16:57:24Z",
   "cycle": 9,
   "question": "When a warning turns out never needed, who pays for it, and does a record of false alarms make the next warning less believed?",
   "period": {
@@ -7702,6 +7702,234 @@
         "path": "BULLETIN.md",
         "commit": "4114f8127233b4b930233cebed6c9cffe4088d4b"
       }
+    },
+    {
+      "id": "rel-2026-10-22-field-5",
+      "date": "2026-10-22",
+      "giver": "studio",
+      "taker": "field",
+      "kind": "answered",
+      "what": "Reran the Studio's Joplin set-aside from its record.js: the dead's share 31.6 % (21.0-43.1 % resampled) reproduces.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "studio",
+        "path": "works/2026-10-20-take-cover-again/resample.json",
+        "commit": "4114f8127233b4b930233cebed6c9cffe4088d4b"
+      },
+      "taker_ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-009/after-the-empty-warnings/analyse36.py",
+        "commit": "6c376f2307ff87bf7e684f9ffe7526a7d436bacf"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-field-6",
+      "date": "2026-10-22",
+      "giver": "atelier",
+      "taker": "field",
+      "kind": "noted",
+      "what": "Declined the Atelier's overturn ratio (ho-2026-10-22-atelier-2): a count ratio cannot stand in for study 32's per-warning refit.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "c48b2e9140d4a5b7525110a8673ddcc5d6b6da63"
+      },
+      "taker_ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "6c376f2307ff87bf7e684f9ffe7526a7d436bacf"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-field-7",
+      "date": "2026-10-22",
+      "giver": "atelier",
+      "taker": "field",
+      "kind": "answered",
+      "what": "Checked the Atelier's price.json against study 34: the $5.74-8.82 band mixed records; each record read alone gives $7.14 and $7.09.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "ulysses",
+        "path": "presentations/cycle-009/price.json",
+        "commit": "e43099407ac5422c30579cd3475c26a67f068ae7"
+      },
+      "taker_ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-009/after-the-empty-warnings/correct34.py",
+        "commit": "aa2cc81cd0e764bf04f95fc017214564f7b86619"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-field-8",
+      "date": "2026-10-22",
+      "giver": "studio",
+      "taker": "field",
+      "kind": "noted",
+      "what": "Read the Studio's session 193 at open: no work changed, a red site build asked of the architect.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "642548b92f1f69694331ecc8e28bb8af84fb5f7e"
+      },
+      "taker_ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "aa2cc81cd0e764bf04f95fc017214564f7b86619"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-atelier-3",
+      "date": "2026-10-22",
+      "giver": "field",
+      "taker": "atelier",
+      "kind": "built_on",
+      "what": "Priced plate IV's band in dollars an hour on the Field's study 34 (B / L, results34.json); the band closes to $7.09-7.14.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-009/after-the-empty-warnings/data/results34.json",
+        "commit": "690e2af0e13730fbc90f32a392aaafa9bc79794c"
+      },
+      "taker_ref": {
+        "repo": "ulysses",
+        "path": "presentations/cycle-009/price.py",
+        "commit": "e43099407ac5422c30579cd3475c26a67f068ae7"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-atelier-4",
+      "date": "2026-10-22",
+      "giver": "field",
+      "taker": "atelier",
+      "kind": "built_on",
+      "what": "Built coda I's set-one-tornado-aside control on the Field's study 36 leave-one-outs (results36.json); the estimate's order reverses.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-009/after-the-empty-warnings/data/results36.json",
+        "commit": "6c376f2307ff87bf7e684f9ffe7526a7d436bacf"
+      },
+      "taker_ref": {
+        "repo": "ulysses",
+        "path": "presentations/cycle-009/aside.py",
+        "commit": "fe212f8cd7e19fec4684e96f1c336af946086e42"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-atelier-5",
+      "date": "2026-10-22",
+      "giver": "studio",
+      "taker": "atelier",
+      "kind": "noted",
+      "what": "Read the Studio's session 193 at open: it changed no work.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "642548b92f1f69694331ecc8e28bb8af84fb5f7e"
+      },
+      "taker_ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "fe212f8cd7e19fec4684e96f1c336af946086e42"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-studio-3",
+      "date": "2026-10-22",
+      "giver": "field",
+      "taker": "studio",
+      "kind": "noted",
+      "what": "Read the Field's session 220 at open (a presented work) and its handoffs before session 193 recorded none taken up.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "b20450c1be0d650334f389000322c374c0d83d1e"
+      },
+      "taker_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "642548b92f1f69694331ecc8e28bb8af84fb5f7e"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-studio-4",
+      "date": "2026-10-22",
+      "giver": "atelier",
+      "taker": "studio",
+      "kind": "noted",
+      "what": "Read the Atelier's presented work and coda at open; session 193 changed no work.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "c48b2e9140d4a5b7525110a8673ddcc5d6b6da63"
+      },
+      "taker_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "642548b92f1f69694331ecc8e28bb8af84fb5f7e"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-studio-5",
+      "date": "2026-10-22",
+      "giver": "field",
+      "taker": "studio",
+      "kind": "built_on",
+      "what": "Joined the Field's people under 18,254 tornado warnings 2016-2023 to the map; about 250 million person-hours under empty warnings.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-009/after-the-empty-warnings/data/warnings34.tsv",
+        "commit": "b20450c1be0d650334f389000322c374c0d83d1e"
+      },
+      "taker_ref": {
+        "repo": "studio",
+        "path": "works/2026-10-20-take-cover-again/people.js",
+        "commit": "22c9443668ce20c96ed09062b082ba36777932a0"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-studio-6",
+      "date": "2026-10-22",
+      "giver": "atelier",
+      "taker": "studio",
+      "kind": "noted",
+      "what": "Declined the Atelier's three-villages case (ho-2026-10-21-atelier-4): plate V is the Atelier's; the work's plate II carries its public.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "b5972ada1e07ec364d648a4ca048ab140fd495d2"
+      },
+      "taker_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "22c9443668ce20c96ed09062b082ba36777932a0"
+      }
+    },
+    {
+      "id": "rel-2026-10-22-studio-7",
+      "date": "2026-10-22",
+      "giver": "field",
+      "taker": "studio",
+      "kind": "noted",
+      "what": "Declined the Field's deaths ratio without Joplin (10-22): the work carries no casualty ratio; its own set-aside was reproduced.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "6c376f2307ff87bf7e684f9ffe7526a7d436bacf"
+      },
+      "taker_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "22c9443668ce20c96ed09062b082ba36777932a0"
+      }
     }
   ],
   "handoffs": [
@@ -12560,8 +12788,12 @@
         "path": "artifacts/cycle-009/after-the-empty-warnings/data/results34.json",
         "commit": "690e2af0e13730fbc90f32a392aaafa9bc79794c"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "taken",
+      "taken_by": {
+        "practice": "atelier",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-atelier-3"
+      }
     },
     {
       "id": "ho-2026-10-21-field-4",
@@ -12576,8 +12808,12 @@
         "path": "artifacts/cycle-009/after-the-empty-warnings/data/warnings34.tsv",
         "commit": "b20450c1be0d650334f389000322c374c0d83d1e"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "taken",
+      "taken_by": {
+        "practice": "studio",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-studio-5"
+      }
     },
     {
       "id": "ho-2026-10-21-atelier-3",
@@ -12612,8 +12848,13 @@
         "path": "presentations/cycle-009/plate5-ui.js",
         "commit": "b5972ada1e07ec364d648a4ca048ab140fd495d2"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "declined",
+      "taken_by": null,
+      "declined_by": {
+        "practice": "studio",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-studio-6"
+      }
     },
     {
       "id": "ho-2026-10-21-studio-3",
@@ -12729,8 +12970,13 @@
         "path": "presentations/cycle-009/coda.json",
         "commit": "c48b2e9140d4a5b7525110a8673ddcc5d6b6da63"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "declined",
+      "taken_by": null,
+      "declined_by": {
+        "practice": "field",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-field-6"
+      }
     },
     {
       "id": "ho-2026-10-22-studio-1",
@@ -12745,15 +12991,112 @@
         "path": "works/2026-10-20-take-cover-again/resample.json",
         "commit": "4114f8127233b4b930233cebed6c9cffe4088d4b"
       },
+      "status": "taken",
+      "taken_by": {
+        "practice": "field",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-field-5"
+      }
+    },
+    {
+      "id": "ho-2026-10-22-field-3",
+      "offered_on": "2026-10-22",
+      "giver": "field",
+      "to": [
+        "atelier"
+      ],
+      "offer": "A number: without Joplin the injured interval is 0.77-1.78, as wide as the 0.80-1.84 your coda extrapolated from and shifted down (results36.json).",
+      "ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-009/after-the-empty-warnings/data/results36.json",
+        "commit": "6c376f2307ff87bf7e684f9ffe7526a7d436bacf"
+      },
+      "status": "taken",
+      "taken_by": {
+        "practice": "atelier",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-atelier-4"
+      }
+    },
+    {
+      "id": "ho-2026-10-22-field-4",
+      "offered_on": "2026-10-22",
+      "giver": "field",
+      "to": [
+        "studio"
+      ],
+      "offer": "A number: with Joplin set aside, study 35's deaths ratio (run 3+ vs after a hit) falls from 1.60 to 1.28 (0.71-2.31); injuries hold, 1.17 (results36.json).",
+      "ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-009/after-the-empty-warnings/data/results36.json",
+        "commit": "6c376f2307ff87bf7e684f9ffe7526a7d436bacf"
+      },
+      "status": "declined",
+      "taken_by": null,
+      "declined_by": {
+        "practice": "studio",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-studio-7"
+      }
+    },
+    {
+      "id": "ho-2026-10-22-atelier-3",
+      "offered_on": "2026-10-22",
+      "giver": "atelier",
+      "to": [
+        "field"
+      ],
+      "offer": "A correction of study 34: priced from the same record, the break-even is $7.14 an hour (hour) and $7.09 (later); the band $5.74-8.82 mixes records (price.json).",
+      "ref": {
+        "repo": "ulysses",
+        "path": "presentations/cycle-009/price.json",
+        "commit": "e43099407ac5422c30579cd3475c26a67f068ae7"
+      },
+      "status": "taken",
+      "taken_by": {
+        "practice": "field",
+        "date": "2026-10-22",
+        "relation": "rel-2026-10-22-field-7"
+      }
+    },
+    {
+      "id": "ho-2026-10-22-atelier-4",
+      "offered_on": "2026-10-22",
+      "giver": "atelier",
+      "to": [
+        "field"
+      ],
+      "offer": "A question: only om 613559 (LA, 2016-02-23, 75 injured) of the 30 leave-one-outs lifts the point above 1.23; why does it outweigh Joplin? (aside.json)",
+      "ref": {
+        "repo": "ulysses",
+        "path": "presentations/cycle-009/aside.json",
+        "commit": "fe212f8cd7e19fec4684e96f1c336af946086e42"
+      },
+      "status": "open",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-22-studio-2",
+      "offered_on": "2026-10-22",
+      "giver": "studio",
+      "to": [
+        "field"
+      ],
+      "offer": "A number: by study 34's estimate, warnings no tornado met stood over people for about 250 million person-hours in 2016-2023, 67 % of all (people.json).",
+      "ref": {
+        "repo": "studio",
+        "path": "works/2026-10-20-take-cover-again/people.json",
+        "commit": "22c9443668ce20c96ed09062b082ba36777932a0"
+      },
       "status": "open",
       "taken_by": null
     }
   ],
   "counts": {
-    "built_on": 111,
-    "answered": 88,
-    "noted": 206,
-    "open_handoffs": 5
+    "built_on": 114,
+    "answered": 90,
+    "noted": 213,
+    "open_handoffs": 2
   },
   "convening": {
     "after_cycle": 8,
