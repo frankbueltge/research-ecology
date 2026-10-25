@@ -188,7 +188,7 @@ while no convening has been recorded.
 | line | where | what the relay records |
 |---|---|---|
 | `Proposed question: <the question>` | the practice's `BULLETIN.md` | a proposal's `question`, at most 200 characters |
-| `Docks onto: <…>` | the same bulletin version | its `docks_onto`, at most 300 characters |
+| `Docks onto: <…>` | the same bulletin version | its `docks_onto`, at most 300 characters (since 2026-10-25 it names a matter of the convening's briefing, `briefings/`, instead of the cycle just presented) |
 | `Ranking: <Practice> > <Practice> > <Practice>` | the practice's `BULLETIN.md` | a ranking's `order` |
 | `For the programme: <one sentence>` | `presentations/cycle-NNN/SUMMARY.md` | a finding's `line`, at most 240 characters |
 
