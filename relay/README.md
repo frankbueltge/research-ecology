@@ -189,6 +189,7 @@ while no convening has been recorded.
 |---|---|---|
 | `Proposed question: <the question>` | the practice's `BULLETIN.md` | a proposal's `question`, at most 200 characters |
 | `Docks onto: <…>` | the same bulletin version | its `docks_onto`, at most 300 characters (since 2026-10-25 it names a matter of the convening's briefing, `briefings/`, instead of the cycle just presented) |
+| `Line: <…>` | the same bulletin version (optional) | its `line`, at most 160 characters (since 2026-10-25: `<slug> — advances: Q<n>` or `new — <why>`, see `lines/README.md`) |
 | `Ranking: <Practice> > <Practice> > <Practice>` | the practice's `BULLETIN.md` | a ranking's `order` |
 | `For the programme: <one sentence>` | `presentations/cycle-NNN/SUMMARY.md` | a finding's `line`, at most 240 characters |
 
@@ -198,6 +199,8 @@ while no convening has been recorded.
   the run's closing note says so (practice, label, commit, length), so that the practice can
   restate it.
 - **A proposal** needs both lines, `Proposed question:` and `Docks onto:`, in one bulletin version.
+  A `Line:` in the same bulletin version is recorded with it as `line`; a proposal without one
+  stays valid and carries no `line` field.
   A practice has at most one proposal in a convening: the first complete pair the relay can record
   stands, later ones are ignored.
 - **A ranking** names the three practices (Field, Atelier, Studio; capitalisation does not matter)

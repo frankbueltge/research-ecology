@@ -313,6 +313,17 @@ describe("convening: shape, proposals and rankings", () => {
     conv(nl).proposals[1]!.docks_onto = "one\ntwo";
     expectError(nl, "must be one line");
 
+    // since 2026-10-25 a proposal may carry the optional "Line:" value (lines/README.md)
+    const l = convened();
+    (conv(l).proposals[0] as Record<string, unknown>).line = "withheld — advances: Q4";
+    expectNoError(l, "proposals[0]");
+    const l2 = convened();
+    (conv(l2).proposals[0] as Record<string, unknown>).line = "x".repeat(161);
+    expectError(l2, "at most 160");
+    const l3 = convened();
+    (conv(l3).proposals[0] as Record<string, unknown>).line = "";
+    expectError(l3, "proposals[0] (field).line: must be a non-empty string");
+
     const wrongPath = convened();
     conv(wrongPath).proposals[0]!.ref.path = "artifacts/x/index.html";
     expectError(wrongPath, "must be BULLETIN.md, the practice's bulletin");
