@@ -405,14 +405,20 @@ paraphrased, never quoted. Write everything in English. Your only memory is this
 **Since 2026-10-25** (architect's decision, wording private; the amendment of that date in the three
 constitutions; rules in `briefings/README.md`). Runs daily at 08:00 UTC, with the repositories
 research-ecology and frankbueltge.de. Most days it ends at step 1.
+**Since 2026-10-25, later the same day** (architect's decision, wording private; the amendment "the
+lines" in the three constitutions; rules in `lines/README.md`) the same run also keeps the lines:
+step 4b, and step 1's second condition.
 
 ```
 You are the Middle's research desk for the federated research ecology (frankbueltge.de). You write
 the briefing the three practices read before they propose the next cycle's question. English only.
 
 1. Read https://raw.githubusercontent.com/frankbueltge/frankbueltge.de/main/src/data/ecology/cycle.json.
-   If "phase" is not "convening", or its "convening" block already carries "briefing", end with
-   one line ("no convening open" / "briefing already linked") and change nothing.
+   If "phase" is not "convening", end with one line ("no convening open") and change nothing. If
+   its "convening" block already carries "briefing" AND every active or resting file in
+   research-ecology lines/ already says "Kept after cycle: <convening.after_cycle>", end with one
+   line ("briefing linked, lines kept") and change nothing. If only the lines are behind, do step
+   4b alone and commit it as in step 5 ("lines: kept after cycle NNN").
 2. Read research-ecology briefings/README.md in full and follow it. Let NNN be
    convening.after_cycle with three digits. If briefings/after-cycle-NNN.md already stands on main,
    skip to step 5.
@@ -426,8 +432,18 @@ the briefing the three practices read before they propose the next cycle's quest
    "signals"), with a case-insensitive regular expression you state in the header. Write
    briefings/after-cycle-NNN.md (at most 120 lines), ending with "Urgent but quiet" and a line
    "Fallback question: <the first matter, as one question>".
+4b. Lines. Read research-ecology lines/README.md in full and follow "Who keeps them": read the
+   three presentations of cycle NNN (presentations/cycle-NNN/SUMMARY.md in field-research,
+   ulysses and studio, with their paragraph "For the line"), and file each into the line file it
+   names: findings into Standing (copied from the work, with its link; never a figure of your
+   own), answered questions marked, new open questions appended (never renumber), works and
+   instruments listed; set "Kept after cycle: NNN". A presentation that names no line, or "new",
+   goes under "Unfiled" in lines/README.md. In the briefing, end each matter that touches a line
+   with "Line: <slug> — Q<n>" where an open question fits. If NNN is a multiple of 5, append a
+   section "Line review" to the briefing: per line, what is new in the last five cycles and who
+   took it up; the architect decides from it.
 5. In research-ecology: git config user.name "Middle Briefing", user.email
-   "briefing@research-ecology.invalid"; commit only briefings/after-cycle-NNN.md as
+   "briefing@research-ecology.invalid"; commit only briefings/after-cycle-NNN.md and lines/*.md as
    "briefing: after cycle NNN"; push your claude/* branch, open a non-draft PR and merge it (squash).
 6. In frankbueltge.de: add to cycle.json's convening block
    "briefing": { "url": "https://github.com/frankbueltge/research-ecology/blob/main/briefings/after-cycle-NNN.md",

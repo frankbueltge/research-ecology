@@ -52,6 +52,8 @@ export const OFFER_MAX = 160;
 export const SOURCES = ["defaults", "seed", "continuing", "convening"];
 export const PROPOSAL_QUESTION_MAX = 200;
 export const DOCKS_MAX = 300;
+/** A proposal's optional "Line:" value (since 2026-10-25, lines/README.md). */
+export const LINE_MAX = 160;
 export const FINDING_MAX = 240;
 /** A seed is at most 500 characters (the site's seed gate), and a cycle's question is a seed or shorter. */
 export const CYCLE_QUESTION_MAX = 500;
@@ -74,6 +76,7 @@ const REF_KEYS = ["repo", "path", "commit"];
 const COUNT_KEYS = ["built_on", "answered", "noted", "open_handoffs"];
 const CONVENING_KEYS = ["after_cycle", "opened", "proposals", "rankings", "result"];
 const PROPOSAL_KEYS = ["practice", "question", "docks_onto", "date", "ref"];
+const PROPOSAL_OPTIONAL = ["line"];
 const RANKING_KEYS = ["practice", "order", "date", "ref"];
 const RESULT_KEYS = ["question", "proposed_by", "scores", "tallied_on", "rule"];
 const PROGRAMME_KEYS = ["cycle", "question", "source", "opened", "closed", "findings"];
@@ -224,12 +227,13 @@ function validateConvening(c, { from, to, cycle }, errors) {
   proposals.forEach((p, i) => {
     const where = `convening.proposals[${i}]${isObj(p) && typeof p.practice === "string" ? ` (${p.practice})` : ""}`;
     if (!isObj(p)) return errors.push(`${where}: must be an object`);
-    checkKeys(p, PROPOSAL_KEYS, [], where, errors);
+    checkKeys(p, PROPOSAL_KEYS, PROPOSAL_OPTIONAL, where, errors);
     if (!isPractice(p.practice)) errors.push(`${where}.practice: "${p.practice}" is not one of ${PRACTICES.join(", ")}`);
     else if (proposed.has(p.practice)) errors.push(`${where}.practice: ${p.practice} already has a proposal; the first one stands`);
     else proposed.set(p.practice, p);
     checkText(p.question, PROPOSAL_QUESTION_MAX, `${where}.question`, errors);
     checkText(p.docks_onto, DOCKS_MAX, `${where}.docks_onto`, errors);
+    if ("line" in p) checkText(p.line, LINE_MAX, `${where}.line`, errors);
     checkDateIn(p.date, from, to, `${where}.date`, errors);
     checkBulletinRef(p.ref, `${where}.ref`, p.practice, errors);
   });
