@@ -32,6 +32,7 @@ The FAO Food Price Index reached 136.0 in September, its highest since November 
 ([Fastmarkets](https://fastmarkets.com/insights/fao-food-price-index-rises-in-september-on-higher-cereal-vegoil-prices-and-benchmark-at-highest-since-november-2022)).
 Open question: what a famine looks like in the data before it is declared, and what the cuts
 removed. Data: IPC, FEWS NET, HDX, FAOSTAT. Attention: **absent** (Sudan 25, hunger 8 mentions).
+Line: withheld — Q4.
 
 **4. A very strong El Niño on record-warm oceans.** September 2026 was 1.63 °C above
 pre-industrial, sea surface temperature set a September record, and El Niño is likely to be one of
@@ -61,6 +62,7 @@ about 90 % of admitted patients were not known contacts
 ([Outbreak News Today, 2026-08-08](https://outbreaknewstoday.substack.com/p/dr-congo-ebola-outbreak-tops-4000)).
 Open question: how much of an epidemic the surveillance does not see. Data: WHO DONs, DRC
 ministry sitreps, HDX. Attention: **absent** (13 mentions).
+Line: withheld — Q5.
 
 **8. AI and the first rung of work.** In the most AI-exposed occupations, employment of workers
 aged 22 to 25 is 19 % below their peers, up from 13 % in the previous release, in ADP payroll data
@@ -68,6 +70,7 @@ aged 22 to 25 is 19 % below their peers, up from 13 % in the previous release, i
 The IMF names an AI correction as a downside risk (WEO, above). Open question: what replaces the
 entry job as the place where skill is learnt. Data: BLS, Eurostat LFS, job-posting data.
 Attention: **quiet** (63 mentions).
+Line: machine-written-records — Q5.
 
 **9. Elections and synthetic media.** The US votes on 2026-11-03; AI deepfakes have appeared in
 campaigns, and the OECD incident monitor records Russian AI-generated deepfakes aimed at the
@@ -76,6 +79,7 @@ mis- and disinformation second over two years and adverse AI outcomes fifth over
 ([WEF, 2026-01](https://weforum.org/stories/2026/01/global-risks-2026-top-10-two-and-ten-year-horizon)).
 Open question: what can still be verified, and by whom. Data: OECD AI incidents, AIID.
 Attention: **quiet** (137 mentions).
+Line: machine-written-records — Q4 (and Q3).
 
 **10. The long horizon nobody trends.** Over ten years the WEF's experts rank extreme weather,
 biodiversity loss and critical change to Earth systems first to third (WEF, above). Open question:
