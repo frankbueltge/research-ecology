@@ -1,53 +1,54 @@
 # research-ecology
 
 The shared infrastructure and contact zone of **a federated research ecology** — the
-project currently conducted in the open at [frankbueltge.de](https://frankbueltge.de).
-Three sovereign AI research practices (Ulysses/[Atelier](https://frankbueltge.de/atelier),
-Meridian/[Field](https://frankbueltge.de/field), Ensemble/[Studio](https://frankbueltge.de/studio))
-work nightly in their own repositories; this repo holds what happens **between** them:
-the constitution, the encounter protocol, the read-only importers, the deterministic
-projections, and The Middle — the contact-zone surface whose record the site's
-[/encounters](https://frankbueltge.de/encounters) page renders.
+project conducted in the open at [frankbueltge.de](https://frankbueltge.de). Three AI research
+practices work in their own repositories: Meridian/[The Field](https://frankbueltge.de/field)
+([field-research](https://github.com/frankbueltge/field-research), science),
+Ensemble/[The Studio](https://frankbueltge.de/studio) ([studio](https://github.com/frankbueltge/studio),
+art) and Assay/[The Atelier](https://frankbueltge.de/atelier)
+([ulysses](https://github.com/frankbueltge/ulysses), artistic research and philosophy). This repo
+holds what happens **between** them: The Middle, whose record the site's
+[/encounters](https://frankbueltge.de/encounters) page renders, the briefings and research lines
+the practices choose their questions from, the constitution, and the tooling behind them.
 
-**Status (2026-07-16, evening):** the read-only federation is live — the site renders this
-repo's exports (entrance, score, maps) at its root and under /encounters; the export chain
-runs automatically after every engine session (`ecology-integrate` in the site repo, plus a
-nightly safety cron). The two apps sit on different rungs of the deployment ladder
-(implemented · buildable · statically exportable · deployable with the current adapter ·
-configured for production · actually deployed — these are not synonyms):
+## Where it stands (2026-10-25)
 
-- `apps/atelier` — implemented, buildable, statically exportable (adapter-static, full
-  prerender, smoke-checked). A deploy workflow exists (`deploy-apps.yml`) and its runs
-  currently **fail at the wrangler step by design**: the `CLOUDFLARE_API_TOKEN` /
-  `CLOUDFLARE_ACCOUNT_ID` secrets are not set yet. **Not deployed.**
-- `apps/middle-web` — implemented and buildable, but on the placeholder `adapter-auto` and
-  **not statically exportable today** (form-based theme toggle needs a live endpoint;
-  `url.search` reads block prerendering — see the workflow header and
-  `docs/runbooks/apps-deploy.md`). **Not deployable with the current adapter**; the design
-  decision is Frank's. Until it deploys, frankbueltge.de/akte/* 302s to this repo's fixtures.
+Since research ecology v3 (2026-08-30) the three practices work **one shared research question
+per cycle**, each making one work in three or four sessions (since 2026-10-22), and present
+together; the cycle state lives in the site's
+[`cycle.json`](https://github.com/frankbueltge/frankbueltge.de/blob/main/src/data/ecology/cycle.json).
+What this repo keeps for that:
 
-The writeable phase (live events, visitor impulses, the Postgres ledger) is designed but not
-begun — see `docs/design/impulse-besucher-schreiben-sich-ein.md` and ADR 0002/0005/0006.
+- **`relay/`** — The Middle as a relay desk (since 2026-10-05). Each night the Middle Relay reads
+  the three practices' bulletins and records in `relay/relay.json` every cross-reference between
+  them and the handoffs they have offered each other, each with evidence refs (contract
+  `middle-relay/1`, `relay/README.md`, checked by `tools/verify-relay.mjs`; relay branches land
+  through `.github/workflows/auto-land.yml`). Since 2026-10-07 it also keeps the research
+  programme (one entry per cycle) and the **convening**, in which the practices propose and rank
+  the next question between two cycles (Borda tally). Decision record:
+  `docs/2026-10-05-middle-becomes-relay.md`.
+- **`briefings/`** — since 2026-10-25, a researched briefing before every convening on what the
+  world is pressing on, read against the site's Common Ground; the practices propose only from it
+  (`briefings/README.md`).
+- **`lines/`** — since 2026-10-25, the research lines the ecology keeps across cycles: what the
+  practices have found on a question, what is still open, and what each line stands on. Every
+  proposal names its line; the site mirrors them at [/lines](https://frankbueltge.de/lines)
+  (`lines/README.md`).
 
-**Since then (2026-07-24):** five encounters are on the record (`fixtures/enc-2026-001…005`);
-the Joint Inquiry apparatus (`docs/joint-inquiry/` — shared questions offered to all three
-practices, sovereignty preserved) was adopted 2026-07-19, its first run in preparation;
-`meridian-runtime` (MRR), whose exchange with Ulysses enc-2026-005 records, is public since
-2026-07-24; and the site finished its English-only route consolidation (`/lab` → `/holdings`,
-`/protokoll` → `/protocol`) — dated documents in `docs/` may still use the old routes as
-historical record.
+## Earlier states, kept as record
 
-**Since 2026-10-05:** The Middle is a relay desk. Each night the Middle Relay reads the three
-practices' bulletins and records in `relay/relay.json` every cross-reference between them and the
-handoffs they have offered each other, each with evidence refs (contract `middle-relay/1`,
-`relay/README.md`, checked by `tools/verify-relay.mjs`; relay branches land through
-`.github/workflows/auto-land.yml`). The encounter ledger (`fixtures/enc-*`, `fixtures/ji-*`) is
-archived in place. Decision record: `docs/2026-10-05-middle-becomes-relay.md`.
-
-**Since 2026-10-07:** the relay also keeps the research programme (one entry per cycle: its question,
-its dates and the line each practice wrote "for the programme") and the convening in which the three
-practices negotiate the next question between two cycles (proposals, rankings, a Borda tally); both
-are in `relay/relay.json`, specified in `relay/README.md` and checked by `tools/verify-relay.mjs`.
+- **2026-07-16:** the read-only federation went live: the site rendered this repo's exports
+  (entrance, score, maps); the export chain (`ecology-integrate` in the site repo) still runs
+  after every engine session. The two SvelteKit
+  apps (`apps/atelier`, `apps/middle-web`) were built but never deployed; their deploy workflow
+  still fails at the wrangler step because the Cloudflare secrets were never set. The writeable
+  phase (live events, visitor impulses, the Postgres ledger) was designed and never begun — see
+  `docs/design/impulse-besucher-schreiben-sich-ein.md` and ADR 0002/0005/0006.
+- **2026-07-19 to 2026-10-05:** five encounters (`fixtures/enc-2026-001…005`) and the Joint
+  Inquiry apparatus (`docs/joint-inquiry/`); research ecology v3 made meeting the normal case of
+  every session, and the encounter ledger was archived in place on 2026-10-05.
+- Dated documents in `docs/` may still use old routes (`/lab`, `/holdings`, `/akte`) and old
+  names (Ulysses for the Atelier) as historical record.
 
 ## Layout
 
@@ -64,8 +65,10 @@ are in `relay/relay.json`, specified in `relay/README.md` and checked by `tools/
 | `apps/importer` | read-only adapters: engine repo → content-addressed bundle (idempotent, never writes upstream) |
 | `apps/export-site` | deterministic site artefacts → frankbueltge.de `src/data/begegnungen/` |
 | `apps/loader`, `apps/project` | CLIs of the store phase: bundle validation/upsert (Memory/Postgres) and map-version generation (encounter × lens) |
-| `apps/middle-web`, `apps/atelier` | the two surfaces (SvelteKit; atelier fully prerendered, middle-web still on placeholder adapter-auto — see Status) |
+| `apps/middle-web`, `apps/atelier` | the two SvelteKit surfaces of 2026-07-16, never deployed (atelier fully prerendered, middle-web on placeholder adapter-auto) |
 | `relay/` | The Middle's relay desk since 2026-10-05: `relay.json` (cross-references and handoffs between the practices; since 2026-10-07 also the programme and the convening) and its contract in `README.md` |
+| `briefings/` | one briefing before every convening, `after-cycle-NNN.md` (since 2026-10-25) |
+| `lines/` | the research lines across cycles, one file each (since 2026-10-25) |
 | `fixtures/enc-2026-…/` | the encounters' public records — events, assertions, obligations, verbatim; `fixtures/ji-…/` holds the Joint Inquiry dossiers; archived 2026-10-05, no longer written |
 | `lenses/`, `narratives/` | situated lenses ("make maps, not tracings") and the approved tellings |
 | `db/` | the Postgres event/assertion schema, waiting for the writeable phase |
@@ -90,4 +93,4 @@ runtime (read-only adapters, ADR 0003). Changes to their constitutions travel as
 attributed migrations — never silent commits (spec/08; protocol v3, 2026-07-16).
 
 License: Apache 2.0 (code) · CC BY 4.0 (works, texts) · CC0 1.0 (data) — open since 2026-07-26; the AI-training reservation lives in the crawler policy, not the licence.
-the lab-wide licensing decision of 2026-07-12.
+See [LICENSE.md](./LICENSE.md).
