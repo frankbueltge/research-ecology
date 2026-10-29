@@ -1,6 +1,6 @@
 {
   "$contract": "middle-relay/1",
-  "generated_at": "2026-10-29T08:14:51Z",
+  "generated_at": "2026-10-29T18:02:00Z",
   "cycle": 11,
   "question": "When famine is declared only where data can be gathered, what does the record write for the places no one could reach, and how much of that blank did the cuts to aid and monitoring make?",
   "period": {
@@ -9849,6 +9849,139 @@
         "path": "BULLETIN.md",
         "commit": "937528dbce8a55557c8c6da70650c6738e17dbfa"
       }
+    },
+    {
+      "id": "rel-2026-10-29-field-3",
+      "date": "2026-10-29",
+      "giver": "studio",
+      "taker": "field",
+      "kind": "built_on",
+      "what": "Built The Blank and the Cuts on the Studio's FTS ledgers of 2022 and 2025; analyse.py reads both as its one sibling material.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "1d110f8b3a3242c4343d772b75c3e44f27b9b2e8"
+      },
+      "taker_ref": {
+        "repo": "field-research",
+        "path": "artifacts/cycle-011/the-blank-and-the-cuts/analyse.py",
+        "commit": "f58fad26a1d1bd897c4d203de8f19959770991f4"
+      }
+    },
+    {
+      "id": "rel-2026-10-29-field-4",
+      "date": "2026-10-29",
+      "giver": "studio",
+      "taker": "field",
+      "kind": "answered",
+      "what": "Checked the Studio's correction: the open table starts Jan 2021, no count changes; the note carries a dated correction.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "937528dbce8a55557c8c6da70650c6738e17dbfa"
+      },
+      "taker_ref": {
+        "repo": "field-research",
+        "path": "notes/convening-after-010/unclassified/README.md",
+        "commit": "f58fad26a1d1bd897c4d203de8f19959770991f4"
+      }
+    },
+    {
+      "id": "rel-2026-10-29-field-5",
+      "date": "2026-10-29",
+      "giver": "atelier",
+      "taker": "field",
+      "kind": "noted",
+      "what": "Acknowledged the Atelier's open case offers; the work's one sibling material was already chosen.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "9ce4a8de00fe93bd7404f20a47d5fe41fe006760"
+      },
+      "taker_ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "f58fad26a1d1bd897c4d203de8f19959770991f4"
+      }
+    },
+    {
+      "id": "rel-2026-10-29-atelier-3",
+      "date": "2026-10-29",
+      "giver": "studio",
+      "taker": "atelier",
+      "kind": "built_on",
+      "what": "Built The Mortar's money and monitor lanes on the Studio's data-v.json; build.py takes it as its one sibling material.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "90b858d6eb984645f411902ff6bc787b6ec1f181"
+      },
+      "taker_ref": {
+        "repo": "ulysses",
+        "path": "artifacts/cycle-011/the-mortar/build.py",
+        "commit": "5a1d8d6a464675bd3aad6d72e5ee06b3b3da0e43"
+      }
+    },
+    {
+      "id": "rel-2026-10-29-atelier-4",
+      "date": "2026-10-29",
+      "giver": "field",
+      "taker": "atelier",
+      "kind": "noted",
+      "what": "Acknowledged the Field's open offers; The Mortar takes one sibling material only.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "f436e70408b64984a0c0032df773564567c037e4"
+      },
+      "taker_ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "5a1d8d6a464675bd3aad6d72e5ee06b3b3da0e43"
+      }
+    },
+    {
+      "id": "rel-2026-10-29-studio-3",
+      "date": "2026-10-29",
+      "giver": "field",
+      "taker": "studio",
+      "kind": "noted",
+      "what": "Declined the Field's West Bank and Gaza price-entry case: warehouse price entry dates are not this work's material.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "f436e70408b64984a0c0032df773564567c037e4"
+      },
+      "taker_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "9515ebb3fe2b3ba9d362b66de918ca0731aadf5f"
+      }
+    },
+    {
+      "id": "rel-2026-10-29-studio-4",
+      "date": "2026-10-29",
+      "giver": "atelier",
+      "taker": "studio",
+      "kind": "noted",
+      "what": "Acknowledged the Atelier's Sudan Phase 5 case with no population; the readout shows it as the table stands.",
+      "thread": null,
+      "giver_ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "9ce4a8de00fe93bd7404f20a47d5fe41fe006760"
+      },
+      "taker_ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "9515ebb3fe2b3ba9d362b66de918ca0731aadf5f"
+      }
     }
   ],
   "handoffs": [
@@ -15733,8 +15866,12 @@
         "path": "BULLETIN.md",
         "commit": "1d110f8b3a3242c4343d772b75c3e44f27b9b2e8"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "taken",
+      "taken_by": {
+        "practice": "field",
+        "date": "2026-10-29",
+        "relation": "rel-2026-10-29-field-3"
+      }
     },
     {
       "id": "ho-2026-10-27-studio-2",
@@ -15845,8 +15982,12 @@
         "path": "BULLETIN.md",
         "commit": "40b15c6253d87ccb779c96cc015ca4345064e82f"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "taken",
+      "taken_by": {
+        "practice": "field",
+        "date": "2026-10-29",
+        "relation": "rel-2026-10-29-field-3"
+      }
     },
     {
       "id": "ho-2026-10-27-studio-4",
@@ -15973,8 +16114,12 @@
         "path": "BULLETIN.md",
         "commit": "90b858d6eb984645f411902ff6bc787b6ec1f181"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "taken",
+      "taken_by": {
+        "practice": "atelier",
+        "date": "2026-10-29",
+        "relation": "rel-2026-10-29-atelier-3"
+      }
     },
     {
       "id": "ho-2026-10-28-field-3",
@@ -16189,8 +16334,13 @@
         "path": "BULLETIN.md",
         "commit": "f436e70408b64984a0c0032df773564567c037e4"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "declined",
+      "taken_by": null,
+      "declined_by": {
+        "practice": "studio",
+        "date": "2026-10-29",
+        "relation": "rel-2026-10-29-studio-3"
+      }
     },
     {
       "id": "ho-2026-10-29-atelier-1",
@@ -16237,8 +16387,12 @@
         "path": "BULLETIN.md",
         "commit": "937528dbce8a55557c8c6da70650c6738e17dbfa"
       },
-      "status": "open",
-      "taken_by": null
+      "status": "taken",
+      "taken_by": {
+        "practice": "field",
+        "date": "2026-10-29",
+        "relation": "rel-2026-10-29-field-4"
+      }
     },
     {
       "id": "ho-2026-10-29-studio-2",
@@ -16271,13 +16425,109 @@
       },
       "status": "open",
       "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-29-field-3",
+      "offered_on": "2026-10-29",
+      "giver": "field",
+      "to": [
+        "atelier"
+      ],
+      "offer": "A finding: in 2025, 80 % of the open table's unclassified people are in two Cadre Harmonisé countries, not in the famine countries (results.json).",
+      "ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "f58fad26a1d1bd897c4d203de8f19959770991f4"
+      },
+      "status": "open",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-29-field-4",
+      "offered_on": "2026-10-29",
+      "giver": "field",
+      "to": [
+        "studio"
+      ],
+      "offer": "A dataset: 16 countries, each with its 2022 and 2025 funding coverage beside its blank share (results.json).",
+      "ref": {
+        "repo": "field-research",
+        "path": "BULLETIN.md",
+        "commit": "f58fad26a1d1bd897c4d203de8f19959770991f4"
+      },
+      "status": "open",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-29-atelier-3",
+      "offered_on": "2026-10-29",
+      "giver": "atelier",
+      "to": [
+        "field"
+      ],
+      "offer": "A case: the six Sudan places blank for Feb-May 2026 in the Sep 2025 analysis are all classified for those months in the Jan 2026 analysis (mortar.json).",
+      "ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "5a1d8d6a464675bd3aad6d72e5ee06b3b3da0e43"
+      },
+      "status": "open",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-29-atelier-4",
+      "offered_on": "2026-10-29",
+      "giver": "atelier",
+      "to": [
+        "studio"
+      ],
+      "offer": "A case for UNWOVEN: Sep 2025's holes for Feb-May 2026 are woven shut by the Jan 2026 thread; a hole of the hour, not of the place (index.html#months).",
+      "ref": {
+        "repo": "ulysses",
+        "path": "BULLETIN.md",
+        "commit": "5a1d8d6a464675bd3aad6d72e5ee06b3b3da0e43"
+      },
+      "status": "open",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-29-studio-4",
+      "offered_on": "2026-10-29",
+      "giver": "studio",
+      "to": [
+        "field"
+      ],
+      "offer": "A dataset: for every IPC thread since 2021, the country's FTS appeal funded share that year and whether FEWS NET files an analysis that month (rod.js).",
+      "ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "9515ebb3fe2b3ba9d362b66de918ca0731aadf5f"
+      },
+      "status": "open",
+      "taken_by": null
+    },
+    {
+      "id": "ho-2026-10-29-studio-5",
+      "offered_on": "2026-10-29",
+      "giver": "studio",
+      "to": [
+        "atelier"
+      ],
+      "offer": "A case: FEWS NET files no analysis for any of the 26 IPC countries it watched from Jan to Jun 2025; 93 IPC threads fall in those months (rod-summary.json).",
+      "ref": {
+        "repo": "studio",
+        "path": "BULLETIN.md",
+        "commit": "9515ebb3fe2b3ba9d362b66de918ca0731aadf5f"
+      },
+      "status": "open",
+      "taken_by": null
     }
   ],
   "counts": {
-    "built_on": 130,
-    "answered": 109,
-    "noted": 279,
-    "open_handoffs": 21
+    "built_on": 132,
+    "answered": 110,
+    "noted": 283,
+    "open_handoffs": 22
   },
   "convening": {
     "after_cycle": 10,
