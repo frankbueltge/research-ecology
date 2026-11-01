@@ -1,0 +1,583 @@
+{
+  "$contract": "briefing/1",
+  "id": "after-cycle-011",
+  "written": "2026-11-01",
+  "checked": {
+    "on": "2026-11-01",
+    "claims": 71,
+    "held": 42,
+    "corrected": 26,
+    "dropped": 3
+  },
+  "matters": [
+    {
+      "id": "ebola",
+      "title": "Ebola has left eastern Congo",
+      "short": "Ebola beyond Congo",
+      "strip": "EBOLA",
+      "gist": "The Bundibugyo outbreak in Congo now has cases in Kenya and Nigeria, and no licensed vaccine exists for this strain.",
+      "quiet_rank": 1,
+      "terms": [
+        "Ebola",
+        "Bundibugyo"
+      ],
+      "lines": [
+        {
+          "text": "The Bundibugyo strain of Ebola in Congo: 10,274 confirmed cases and 4,992 deaths by 29 October.",
+          "say": "The Bundibugyo strain of Ebola, in Congo. Ten thousand, two hundred and seventy-four confirmed cases, and four thousand, nine hundred and ninety-two deaths, by the twenty-ninth of October."
+        },
+        {
+          "text": "That is more than twice the cases of early August."
+        },
+        {
+          "text": "Kenya has nine confirmed cases, and Nigeria reported one in October.",
+          "say": "Kenya has nine confirmed cases, and Nigeria reported one in October."
+        },
+        {
+          "text": "No licensed vaccine exists for this strain."
+        },
+        {
+          "text": "In Kenya, contact tracing is partly on paper."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ECDC, the outbreak, 30 October",
+          "url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026",
+          "kind": "primary"
+        },
+        {
+          "label": "ECDC, week 32",
+          "url": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-32-2026.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Al Jazeera, 2026-10-16",
+          "url": "https://www.aljazeera.com/news/2026/10/16/kenya-reports-third-bundibugyo-strain-ebola-case",
+          "kind": "report"
+        },
+        {
+          "label": "WHO AFRO, week 41",
+          "url": "https://afro.who.int/sites/default/files/2026-10/Week%2041%20Situation%20Report.pdf",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "el-nino",
+      "title": "El Niño heads for a historic peak",
+      "short": "El Niño",
+      "strip": "EL NIÑO",
+      "gist": "NOAA expects a strong to very strong El Niño into early 2027, on oceans that set a September record.",
+      "quiet_rank": 2,
+      "terms": [
+        "El Niño",
+        "La Niña",
+        "ENSO"
+      ],
+      "lines": [
+        {
+          "text": "NOAA puts the central Pacific at 2.1 degrees above normal.",
+          "say": "NOAA puts the central Pacific at two point one degrees above normal."
+        },
+        {
+          "text": "A strong to very strong El Niño is likely into early 2027.",
+          "say": "A strong to very strong El Niño is likely into early twenty twenty-seven."
+        },
+        {
+          "text": "NOAA puts the odds of a historic peak of 2.5 degrees at 83 percent for October to December, and 70 for November to January.",
+          "say": "NOAA puts the odds of a historic peak of two and a half degrees at eighty-three percent for October to December, and seventy for November to January."
+        },
+        {
+          "text": "It lands on oceans that set a September record, in a month 1.63 degrees above pre-industrial.",
+          "say": "It lands on oceans that set a September record, in a month one point six three degrees above pre-industrial."
+        }
+      ],
+      "sources": [
+        {
+          "label": "NOAA CPC, 2026-10-08",
+          "url": "https://cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Copernicus, 2026-10-12",
+          "url": "https://climate.copernicus.eu/copernicus-second-warmest-september-global-temperatures-stay-above-15degc",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "cop31",
+      "title": "COP31 meets on a 2.8 °C path",
+      "short": "COP31",
+      "strip": "COP31",
+      "gist": "Current policies lead far past the Paris goal as the climate talks meet in Antalya.",
+      "quiet_rank": 3,
+      "terms": [
+        "COP31",
+        "COP 31",
+        "UNFCCC",
+        "Paris Agreement",
+        "emissions gap",
+        "climate summit",
+        "climate talks",
+        "climate pledges",
+        "net zero"
+      ],
+      "lines": [
+        {
+          "text": "COP31 meets in Antalya from 9 to 20 November.",
+          "say": "Cop thirty-one meets in Antalya, from the ninth to the twentieth of November."
+        },
+        {
+          "text": "Current policies lead to about 2.8 degrees this century, full national pledges to about 2.6.",
+          "say": "Current policies lead to about two point eight degrees this century. Full national pledges, to about two point six."
+        },
+        {
+          "text": "The lowest path that overshoots 1.5 degrees needs cuts of 18 percent by 2030.",
+          "say": "The lowest path that overshoots one and a half degrees needs cuts of eighteen percent by twenty thirty."
+        },
+        {
+          "text": "The pledges deliver 5 to 8.",
+          "say": "The pledges deliver five to eight."
+        },
+        {
+          "text": "As of July, finance and adaptation remained stalled."
+        }
+      ],
+      "sources": [
+        {
+          "label": "UNFCCC, COP31",
+          "url": "https://unfccc.int/cop31",
+          "kind": "primary"
+        },
+        {
+          "label": "PBL on the UNEP Emissions Gap Report",
+          "url": "https://www.pbl.nl/en/publications/unep-emissions-gap-report-2026",
+          "kind": "report"
+        },
+        {
+          "label": "Böll Foundation",
+          "url": "https://www.boell.de/en/cop-climate-change-conference",
+          "kind": "report"
+        }
+      ]
+    },
+    {
+      "id": "wildlife",
+      "title": "Monitored wildlife populations down 73 % on average",
+      "short": "Monitored wildlife",
+      "strip": "WILDLIFE",
+      "gist": "The Living Planet Index shows monitored vertebrate populations shrinking on average, most of all in Latin America and in fresh water.",
+      "quiet_rank": null,
+      "terms": [
+        "biodiversity",
+        "Living Planet",
+        "WWF",
+        "wildlife",
+        "mass extinction",
+        "species extinction",
+        "endangered species"
+      ],
+      "lines": [
+        {
+          "text": "The Living Planet Index records an average decline of 73 percent since 1970.",
+          "say": "The Living Planet Index records an average decline of seventy-three percent since nineteen seventy."
+        },
+        {
+          "text": "It rests on 35,803 population trends of 5,790 vertebrate species.",
+          "say": "It rests on thirty-five thousand, eight hundred and three population trends, of five thousand, seven hundred and ninety vertebrate species."
+        },
+        {
+          "text": "95 percent in Latin America and the Caribbean.",
+          "say": "Ninety-five percent in Latin America and the Caribbean."
+        },
+        {
+          "text": "85 percent in fresh water.",
+          "say": "Eighty-five percent in fresh water."
+        },
+        {
+          "text": "That is what is monitored."
+        }
+      ],
+      "sources": [
+        {
+          "label": "WWF, Living Planet Report 2026",
+          "url": "https://wwf.panda.org/wwf_news/press_releases/?16359466",
+          "kind": "primary"
+        },
+        {
+          "label": "ATTA on the WWF report",
+          "url": "https://atta.travel/resource/wwf-report-flags-73-drop-in-wildlife-populations-but-points-to-signs-of-recovery.html",
+          "kind": "report"
+        }
+      ]
+    },
+    {
+      "id": "diseases",
+      "title": "Record West Nile in Europe, diphtheria in Nigeria",
+      "short": "West Nile and diphtheria",
+      "strip": "DISEASES",
+      "gist": "Europe has its worst West Nile season on record, and diphtheria has spread widely in Nigeria.",
+      "quiet_rank": 4,
+      "terms": [
+        "West Nile",
+        "chikungunya",
+        "dengue",
+        "mpox",
+        "measles",
+        "diphtheria",
+        "cholera",
+        "polio",
+        "malaria",
+        "vaccination"
+      ],
+      "lines": [
+        {
+          "text": "The EU and EEA recorded 1,715 West Nile infections by 7 October, the most ever reported there, and 130 deaths.",
+          "say": "The European Union and the European Economic Area recorded one thousand, seven hundred and fifteen West Nile infections by the seventh of October, the most ever reported there, and one hundred and thirty deaths."
+        },
+        {
+          "text": "Nigeria counted 18,334 suspected cases of diphtheria and 731 deaths by week 34.",
+          "say": "Nigeria counted eighteen thousand, three hundred and thirty-four suspected cases of diphtheria, and seven hundred and thirty-one deaths, by week thirty-four."
+        },
+        {
+          "text": "How much of this is climate, and how much is lost surveillance and vaccination, is still open."
+        }
+      ],
+      "sources": [
+        {
+          "label": "ECDC, week 42",
+          "url": "https://www.ecdc.europa.eu/sites/default/files/documents/communicable-disease-threats-report-week-42-2026.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "NCDC Nigeria, week 34",
+          "url": "https://ncdc.gov.ng/themes/common/docs/wers/700_1791361960.pdf",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "displaced",
+      "title": "The forcibly displaced",
+      "short": "The forcibly displaced",
+      "strip": "DISPLACED",
+      "gist": "More than one in every seventy people on Earth has been forced to flee, most of them inside their own countries.",
+      "quiet_rank": 5,
+      "terms": [
+        "refugee",
+        "refugees",
+        "displaced",
+        "UNHCR",
+        "asylum seekers",
+        "migrants"
+      ],
+      "lines": [
+        {
+          "text": "UNHCR counts 117.8 million people forcibly displaced at the end of 2025.",
+          "say": "The UN refugee agency counts one hundred and seventeen point eight million people forcibly displaced, at the end of twenty twenty-five."
+        },
+        {
+          "text": "68.7 million of them inside their own countries.",
+          "say": "Sixty-eight point seven million of them, inside their own countries."
+        },
+        {
+          "text": "41.6 million are refugees.",
+          "say": "Forty-one point six million are refugees."
+        },
+        {
+          "text": "More than 1 in every 70 people on Earth has been forced to flee.",
+          "say": "More than one in every seventy people on Earth has been forced to flee."
+        }
+      ],
+      "sources": [
+        {
+          "label": "UNHCR, figures at a glance",
+          "url": "https://www.unhcr.org/about-unhcr/who-we-are/figures-glance",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "elections-synthetic",
+      "title": "AI in the American vote",
+      "short": "AI in the American vote",
+      "strip": "AI VOTE",
+      "gist": "Political ads made or enhanced with AI have grown from almost nothing in 2024, and no federal rule requires a disclaimer.",
+      "quiet_rank": null,
+      "terms": [
+        "deepfake",
+        "deepfakes",
+        "disinformation",
+        "misinformation",
+        "synthetic media",
+        "AI generated ads",
+        "political ads"
+      ],
+      "lines": [
+        {
+          "text": "By 29 October the Wesleyan Media Project had tracked 289 political ads made or enhanced with AI.",
+          "say": "By the twenty-ninth of October, the Wesley-an Media Project had tracked two hundred and eighty-nine political ads, made or enhanced with AI."
+        },
+        {
+          "text": "Spending on them has passed 187 million dollars.",
+          "say": "Spending on them has passed one hundred and eighty-seven million dollars."
+        },
+        {
+          "text": "In 2024 it was under 50,000.",
+          "say": "In twenty twenty-four it was under fifty thousand."
+        },
+        {
+          "text": "Of the first 220, 27 percent carried an AI disclaimer.",
+          "say": "Of the first two hundred and twenty, twenty-seven percent carried an AI disclaimer."
+        },
+        {
+          "text": "No federal rule requires one."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wesleyan Media Project, 2026-10-29",
+          "url": "https://mediaproject.wesleyan.edu/releases-102926",
+          "kind": "primary"
+        },
+        {
+          "label": "WION, 2026-10-26",
+          "url": "https://www.wionews.com/world/unfiltered-deepfakes-how-synthetic-media-is-shaping-the-us-midterm-elections-1792986632524",
+          "kind": "report"
+        }
+      ]
+    },
+    {
+      "id": "ai-first-rung",
+      "title": "AI and the first rung of work",
+      "short": "AI and the first rung",
+      "strip": "FIRST RUNG",
+      "gist": "Employment of the youngest workers in the jobs most exposed to AI has fallen behind their peers, apparently through fewer hires.",
+      "quiet_rank": null,
+      "terms": [
+        "entry-level",
+        "junior jobs",
+        "junior developers",
+        "junior roles",
+        "graduate jobs",
+        "AI layoffs",
+        "replaced by AI"
+      ],
+      "lines": [
+        {
+          "text": "In American payroll data, employment of workers aged 22 to 25 in the jobs most exposed to AI stands about 19 percent behind less exposed peers.",
+          "say": "In American payroll data, employment of workers aged twenty-two to twenty-five, in the jobs most exposed to AI, stands about nineteen percent behind less exposed peers."
+        },
+        {
+          "text": "A year earlier the gap was 15 percent.",
+          "say": "A year earlier the gap was fifteen percent."
+        },
+        {
+          "text": "It appears to come mainly from fewer hires."
+        },
+        {
+          "text": "The authors call this a pattern, not a proven effect of AI."
+        },
+        {
+          "text": "Where is skill learnt once the entry job is gone?",
+          "say": "Where is skill learned, once the entry job is gone?"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Stanford Digital Economy Lab",
+          "url": "https://digitaleconomy.stanford.edu/news/canariesaug26",
+          "kind": "primary"
+        },
+        {
+          "label": "Computing on the Stanford study",
+          "url": "https://www.computing.co.uk/news/2026/ai/ai-is-closing-the-door-on-entry-level-jobs-study-finds",
+          "kind": "report"
+        }
+      ]
+    },
+    {
+      "id": "power-bill",
+      "title": "AI’s power bill",
+      "short": "AI’s power bill",
+      "strip": "POWER BILL",
+      "gist": "The electricity data centres use is rising fast, and the AI-focused ones fastest.",
+      "quiet_rank": null,
+      "terms": [
+        "data center",
+        "data centers",
+        "data centre",
+        "data centres",
+        "datacenter",
+        "datacenters",
+        "hyperscaler",
+        "hyperscalers"
+      ],
+      "lines": [
+        {
+          "text": "Data-centre electricity rose 17 percent in 2025.",
+          "say": "Data centre electricity rose seventeen percent in twenty twenty-five."
+        },
+        {
+          "text": "AI-focused data centres rose 50 percent.",
+          "say": "AI focused data centres rose fifty percent."
+        },
+        {
+          "text": "The International Energy Agency projects 485 terawatt-hours doubling to about 950 by 2030.",
+          "say": "The International Energy Agency projects four hundred and eighty-five terawatt hours, doubling to about nine hundred and fifty by twenty thirty."
+        }
+      ],
+      "sources": [
+        {
+          "label": "IEA, Key questions on energy and AI",
+          "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+          "kind": "primary"
+        },
+        {
+          "label": "Enlit on the IEA",
+          "url": "https://www.enlit.world/library/ai-and-data-centre-electricity-use-continue-to-surge-iea-finds",
+          "kind": "report"
+        }
+      ]
+    },
+    {
+      "id": "iran-hormuz",
+      "title": "The war on Iran as an energy shock far away",
+      "short": "Iran and Hormuz",
+      "strip": "IRAN",
+      "gist": "Ship traffic through the Strait of Hormuz has collapsed, oil has found other routes, and the cost falls hardest on energy importers.",
+      "quiet_rank": null,
+      "terms": [
+        "Iran",
+        "Iranian",
+        "Hormuz",
+        "oil price",
+        "oil prices",
+        "energy prices",
+        "energy crisis",
+        "fuel prices",
+        "cost of living",
+        "Brent crude"
+      ],
+      "lines": [
+        {
+          "text": "Iran announced a prohibited zone around the Strait of Hormuz on 5 September.",
+          "say": "Iran announced a prohibited zone around the Strait of Hormuz on the fifth of September."
+        },
+        {
+          "text": "In mid-October, ship traffic through the strait stood about 70 percent below its pre-war level.",
+          "say": "In the middle of October, ship traffic through the strait stood about seventy percent below its pre-war level."
+        },
+        {
+          "text": "Preliminary estimates put oil flows, with transfers at sea, at about 82 percent of pre-war levels.",
+          "say": "Preliminary estimates put oil flows, with transfers at sea, at about eighty-two percent of pre-war levels."
+        },
+        {
+          "text": "The IMF sees 4.7 percent inflation in 2026, hardest for energy importers outside the technology chain.",
+          "say": "The International Monetary Fund sees four point seven percent inflation in twenty twenty-six, hardest for energy importers outside the technology chain."
+        },
+        {
+          "text": "In the Philippines, which imports about 98 percent of its oil from the Middle East, a state think tank estimated in April that 1.3 to 3.1 million people could be pushed into poverty.",
+          "say": "In the Philippines, which imports about ninety-eight percent of its oil from the Middle East, a state think tank estimated in April that one point three to three point one million people could be pushed into poverty."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia, 2026 Hormuz crisis",
+          "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+          "kind": "report"
+        },
+        {
+          "label": "IMF WEO, October 2026",
+          "url": "https://www.imf.org/en/publications/weo/issues/2026/10/13/world-economic-outlook-october-2026",
+          "kind": "primary"
+        },
+        {
+          "label": "Inquirer on the PIDS note, 2026-04-17",
+          "url": "https://newsinfo.inquirer.net/2213698",
+          "kind": "report"
+        },
+        {
+          "label": "Wikipedia, 2026 Philippine energy crisis",
+          "url": "https://en.wikipedia.org/wiki/2026_Philippine_energy_crisis",
+          "kind": "report"
+        }
+      ]
+    }
+  ],
+  "estimates": [
+    {
+      "id": "ebola-cases",
+      "label": "Confirmed Ebola cases in the DRC",
+      "matter": "ebola",
+      "question": "How many confirmed Ebola cases had the Democratic Republic of the Congo reported in this outbreak by 29 October 2026?",
+      "kind": "count",
+      "unit": "confirmed cases",
+      "truth": 10274,
+      "truth_label": "10,274",
+      "source": {
+        "label": "ECDC, the outbreak, 30 October 2026",
+        "url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026"
+      }
+    },
+    {
+      "id": "displaced-world",
+      "label": "People forcibly displaced worldwide",
+      "matter": "displaced",
+      "question": "How many people were forcibly displaced worldwide at the end of 2025?",
+      "kind": "count",
+      "unit": "people",
+      "truth": 117800000,
+      "truth_label": "117.8 million",
+      "source": {
+        "label": "UNHCR, figures at a glance",
+        "url": "https://www.unhcr.org/about-unhcr/who-we-are/figures-glance"
+      }
+    },
+    {
+      "id": "ai-ad-spend",
+      "label": "Spending on AI political ads",
+      "matter": "elections-synthetic",
+      "question": "How much had been spent on American political ads made or enhanced with AI by 29 October 2026, in dollars?",
+      "kind": "count",
+      "unit": "dollars",
+      "truth": 187000000,
+      "truth_label": "over 187 million dollars",
+      "source": {
+        "label": "Wesleyan Media Project, 29 October 2026",
+        "url": "https://mediaproject.wesleyan.edu/releases-102926"
+      }
+    },
+    {
+      "id": "first-rung-gap",
+      "label": "The gap for the youngest workers",
+      "matter": "ai-first-rung",
+      "question": "In American payroll data, how far behind less exposed peers does employment of workers aged 22 to 25 in the jobs most exposed to AI stand, in percent?",
+      "kind": "percent",
+      "unit": "% behind",
+      "truth": 19,
+      "truth_label": "about 19 %",
+      "source": {
+        "label": "Stanford Digital Economy Lab",
+        "url": "https://digitaleconomy.stanford.edu/news/canariesaug26"
+      }
+    },
+    {
+      "id": "pacific-heat",
+      "label": "The central Pacific above normal",
+      "matter": "el-nino",
+      "question": "In NOAA's discussion of 8 October 2026, how many degrees above normal stood the central Pacific (Niño-3.4)?",
+      "kind": "degrees",
+      "unit": "°C",
+      "truth": 2.1,
+      "truth_label": "+2.1 °C",
+      "source": {
+        "label": "NOAA CPC, 8 October 2026",
+        "url": "https://cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.pdf"
+      }
+    }
+  ],
+  "fallback": "How much of the Ebola epidemic in eastern Congo does surveillance not see, now that it has crossed into Kenya?"
+}
