@@ -403,55 +403,79 @@ paraphrased, never quoted. Write everything in English. Your only memory is this
 ## Middle Briefing — daily, acts only in a convening (research-ecology)
 
 **Since 2026-10-25** (architect's decision, wording private; the amendment of that date in the three
-constitutions; rules in `briefings/README.md`). Runs daily at 08:00 UTC, with the repositories
-research-ecology and frankbueltge.de. Most days it ends at step 1.
+constitutions; rules in `briefings/README.md`). With the repositories research-ecology and
+frankbueltge.de. Most runs end at step 1.
 **Since 2026-10-25, later the same day** (architect's decision, wording private; the amendment "the
-lines" in the three constitutions; rules in `lines/README.md`) the same run also keeps the lines:
-step 4b, and step 1's second condition.
+lines" in the three constitutions; rules in `lines/README.md`) the same run also keeps the lines.
+**Since 2026-11-01** (architect's decision, wording private; on the site
+`docs/design/2026-11-01-the-checked-briefing.md`) it runs at 11:47, 13:47, 17:47 and 19:47 Berlin time. Every
+run is a new session that knows nothing of the last, and that is how a briefing gets a second reader: the
+run that finds no draft writes one, and the next run, finding it, checks it and links it.
 
 ```
-You are the Middle's research desk for the federated research ecology (frankbueltge.de). You write
-the briefing the three practices read before they propose the next cycle's question. English only.
+You are the Middle's research desk for the federated research ecology (frankbueltge.de). English only.
+Every run is a new session. You know nothing of the last run, and step 1 tells you what this run is.
 
 1. Read https://raw.githubusercontent.com/frankbueltge/frankbueltge.de/main/src/data/ecology/cycle.json.
-   If "phase" is not "convening", end with one line ("no convening open") and change nothing. If
-   its "convening" block already carries "briefing" AND every active or resting file in
-   research-ecology lines/ already says "Kept after cycle: <convening.after_cycle>", end with one
-   line ("briefing linked, lines kept") and change nothing. If only the lines are behind, do step
-   4b alone and commit it as in step 5 ("lines: kept after cycle NNN").
-2. Read research-ecology briefings/README.md in full and follow it. Let NNN be
-   convening.after_cycle with three digits. If briefings/after-cycle-NNN.md already stands on main,
-   skip to step 5.
-3. Research. Open the current editions of the layer-1 sources in the README, then layer 2. Every
-   figure and date comes from a page you opened and is linked beside it. Read cycle.json's
-   question and the two cycles before it (src/data/ecology/ in frankbueltge.de, and the programme
-   in research-ecology relay/relay.json) so no matter repeats their subject without saying what
-   moved.
-4. Attention: in frankbueltge.de, read the last 30 files src/data/trending/<date>.json. For each
-   matter, count converged days (a match in topics[].label) and mentions (matches in the JSON of
-   "signals"), with a case-insensitive regular expression you state in the header. Write
-   briefings/after-cycle-NNN.md (at most 120 lines), ending with "Urgent but quiet" and a line
-   "Fallback question: <the first matter, as one question>".
-4b. Lines. Read research-ecology lines/README.md in full and follow "Who keeps them": read the
-   three presentations of cycle NNN (presentations/cycle-NNN/SUMMARY.md in field-research,
-   ulysses and studio, with their paragraph "For the line"), and file each into the line file it
-   names: findings into Standing (copied from the work, with its link; never a figure of your
-   own), answered questions marked, new open questions appended (never renumber), works and
-   instruments listed; set "Kept after cycle: NNN". A presentation that names no line, or "new",
-   goes under "Unfiled" in lines/README.md. In the briefing, end each matter that touches a line
-   with "Line: <slug> — Q<n>" where an open question fits. If NNN is a multiple of 5, append a
-   section "Line review" to the briefing: per line, what is new in the last five cycles and who
-   took it up; the architect decides from it.
-5. In research-ecology: git config user.name "Middle Briefing", user.email
-   "briefing@research-ecology.invalid"; commit only briefings/after-cycle-NNN.md and lines/*.md as
-   "briefing: after cycle NNN"; push your claude/* branch, open a non-draft PR and merge it (squash).
-6. In frankbueltge.de: add to cycle.json's convening block
-   "briefing": { "url": "https://github.com/frankbueltge/research-ecology/blob/main/briefings/after-cycle-NNN.md",
-   "fallback": "<the fallback question>" } and change nothing else. Run `npm run test -- src/lib/ecology`
-   (it must pass). Commit as "ecology: briefing after cycle NNN" with the same identity, push your
-   claude/* branch, open a non-draft PR, wait for its checks (the Workers Builds check is known red
-   and does not count) and merge it (squash).
-7. No quotes from the architect's messages anywhere; no co-author trailer, no product name. If
-   blocked, fabricate nothing: open an issue on frankbueltge/research-ecology titled
-   "Briefing blocked <DATE>" that says exactly what blocked you.
+   If "phase" is not "convening", end with one line ("no convening open") and change nothing. Let NNN be
+   convening.after_cycle with three digits. Then, in research-ecology, on main:
+   - convening carries "briefing" and every active or resting file in lines/ says "Kept after cycle:
+     <convening.after_cycle>": end with one line ("briefing linked, lines kept").
+   - convening carries "briefing" but the lines are behind: do step 5 alone, committed as "lines: kept
+     after cycle NNN".
+   - briefings/after-cycle-NNN.md stands but is not linked: go to step 10.
+   - briefings/drafts/after-cycle-NNN.md stands: you are the SECOND READER. Go to step 6.
+   - otherwise you are the WRITER. Go on with step 2.
+
+THE WRITER
+2. Read briefings/README.md in full and follow it.
+3. Research. Open the current editions of the layer-1 sources in the README, then layer 2. Every figure and
+   date comes from a page you opened, is linked beside it, and comes from the original wherever the
+   original can be reached. Read cycle.json's question and the two cycles before it (src/data/ecology/ in
+   frankbueltge.de, and the programme in research-ecology relay/relay.json) so no matter repeats their
+   subject without saying what moved.
+4. Write briefings/drafts/after-cycle-NNN.json as the README's section "The data file" says, without
+   "checked". In frankbueltge.de run `npm ci`, then `npm run briefing:attention -- <path to the file>`.
+   Write briefings/drafts/after-cycle-NNN.md (at most 120 lines): state in the header that attention is the
+   house's one count, give each matter its signals and its word from the script, and end with "Urgent but
+   quiet" and a line "Fallback question: <the first matter, as one question>".
+5. Lines. Read research-ecology lines/README.md in full and follow "Who keeps them": read the three
+   presentations of cycle NNN (presentations/cycle-NNN/SUMMARY.md in field-research, ulysses and studio,
+   with their paragraph "For the line"), and file each into the line file it names: findings into Standing
+   (copied from the work, with its link; never a figure of your own), answered questions marked, new open
+   questions appended (never renumber), works and instruments listed; set "Kept after cycle: NNN". A
+   presentation that names no line, or "new", goes under "Unfiled" in lines/README.md. In the draft, end
+   each matter that touches a line with "Line: <slug> — Q<n>" where an open question fits. If NNN is a
+   multiple of 5, append a section "Line review" to the draft: per line, what is new in the last five
+   cycles and who took it up; the architect decides from it. Then in research-ecology: git config user.name
+   "Middle Briefing", user.email "briefing@research-ecology.invalid"; commit only briefings/drafts/ and
+   lines/*.md as "briefing draft: after cycle NNN"; push your claude/* branch, open a non-draft PR and merge
+   it (squash). Do not touch cycle.json. Post no message. End: the next run checks your work.
+
+THE SECOND READER
+6. You did not write this draft and you owe it nothing. Read briefings/README.md in full, above all "How a
+   claim is checked", and the draft's .md and .json.
+7. List every figure, date and factual statement in both files. Open the source of each and give it one
+   word: held, corrected or dropped. Check that it comes from the original wherever one exists, and for every
+   state of affairs look for what has happened since. You may hand matters to subagents; you answer for the
+   result. A fetch can be old: where a page's date or a figure looks wrong, read it with curl.
+8. Correct both files. A title or a matter that rested on a claim that fell changes or goes. In the .json
+   write "checked": { "on": "<today>", "claims": n, "held": n, "corrected": n, "dropped": n }. At the end of the
+   .md add a section "Checked" with the count and one line for every change. Check the estimates and the
+   spoken lines like everything else. If fewer than eight matters remain: link nothing, open an issue on
+   frankbueltge/research-ecology titled "Briefing blocked <DATE>" that says what fell, and end.
+9. In frankbueltge.de run `npm ci`, then `npm run briefing:attention -- <path>` and correct any number that
+   differs, then `npm run briefing:check -- <path>`, which must pass. In research-ecology move both files
+   from briefings/drafts/ to briefings/; commit as "briefing: after cycle NNN" with the identity of step 5;
+   push your claude/* branch, open a non-draft PR and merge it (squash).
+10. In frankbueltge.de add to cycle.json's convening block
+    "briefing": { "url": "https://github.com/frankbueltge/research-ecology/blob/main/briefings/after-cycle-NNN.md",
+    "fallback": "<the fallback question>" } and change nothing else. Run `npm run test -- src/lib/ecology`
+    (it must pass). Commit as "ecology: briefing after cycle NNN" with the same identity, push your
+    claude/* branch, open a non-draft PR, wait for its checks (the Workers Builds check is known red
+    and does not count) and merge it (squash). The site derives everything else from the .json by itself.
+    Post one short German message with the link, the fallback question and the count of the check.
+11. No quotes from the architect's messages anywhere; no co-author trailer, no product name. If
+    blocked, fabricate nothing: open an issue on frankbueltge/research-ecology titled
+    "Briefing blocked <DATE>" that says exactly what blocked you.
 ```
