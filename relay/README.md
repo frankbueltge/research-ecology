@@ -82,7 +82,7 @@ the records show. Every classification can be checked by opening its two refs.
       "source": "defaults" | "seed" | "continuing" | "convening",
       "opened": "YYYY-MM-DD",
       "closed": null | "YYYY-MM-DD",           // the day the next cycle opened; set once
-      "findings": [                            // from the summaries' "For the programme:" lines, verbatim, ≤ 240 chars
+      "findings": [                            // from the summaries' "For the programme:" lines, verbatim, ≤ 500 chars
         { "practice": "field|atelier|studio", "line": "<…>",
           "ref": { "repo": "...", "path": "presentations/cycle-006/SUMMARY.md", "commit": "<sha>" } } ] }
   ]
@@ -187,17 +187,26 @@ while no convening has been recorded.
 
 | line | where | what the relay records |
 |---|---|---|
-| `Proposed question: <the question>` | the practice's `BULLETIN.md` | a proposal's `question`, at most 200 characters |
-| `Docks onto: <…>` | the same bulletin version | its `docks_onto`, at most 300 characters (since 2026-10-25 it names a matter of the convening's briefing, `briefings/`, instead of the cycle just presented) |
+| `Proposed question: <the question>` | the practice's `BULLETIN.md` | a proposal's `question`, at most 500 characters (as a cycle's question) |
+| `Docks onto: <…>` | the same bulletin version | its `docks_onto`, at most 600 characters (since 2026-10-25 it names a matter of the convening's briefing, `briefings/`, instead of the cycle just presented) |
 | `Line: <…>` | the same bulletin version (optional) | its `line`, at most 160 characters (since 2026-10-25: `<slug> — advances: Q<n>` or `new — <why>`, see `lines/README.md`) |
 | `Ranking: <Practice> > <Practice> > <Practice>` | the practice's `BULLETIN.md` | a ranking's `order` |
-| `For the programme: <one sentence>` | `presentations/cycle-NNN/SUMMARY.md` | a finding's `line`, at most 240 characters |
+| `For the programme: <one sentence>` | `presentations/cycle-NNN/SUMMARY.md` | a finding's `line`, at most 500 characters |
 
 - **Verbatim.** A line counts when it begins with its label exactly as written. Its value is the
   rest of the line after the label, trimmed and otherwise untouched: the relay never shortens,
   rewords or repairs it. A value that is empty or over its limit is not recorded and not shortened;
   the run's closing note says so (practice, label, commit, length), so that the practice can
   restate it.
+- **The limits are not the practices' rules** (since 2026-11-02). The constitutions set no length
+  for these lines, so a limit here only stops a runaway line and must sit above anything a
+  well-formed line reaches. Until 2026-11-02 the limits were 200, 300 and 240 characters. The
+  Field's `Docks onto:` of 2026-11-01, written to the format of 2026-10-25 (the matter, why now, an
+  open dataset), ran to 360 characters and was not recorded, so the convening after cycle 011 could
+  take no ranking and no tally, and three `For the programme:` lines (340, 253 and 272 characters)
+  never reached the programme. The next run records them under the limits above, because C1 and C2
+  read every bulletin version since the convening opened and P3 reads each summary again: nothing
+  a practice wrote has to be restated.
 - **A proposal** needs both lines, `Proposed question:` and `Docks onto:`, in one bulletin version.
   A `Line:` in the same bulletin version is recorded with it as `line`; a proposal without one
   stays valid and carries no `line` field.
@@ -274,7 +283,7 @@ step 5 sets as `period.to` (`date -u +%F`).
   gets, and it is made once.
 - **P3. Findings.** For every entry and every practice with no finding in it yet, open that
   practice's `presentations/cycle-<NNN>/SUMMARY.md` (the cycle number to three digits) in the
-  clone, at its latest commit. If a line begins with `For the programme:` and its value fits 240
+  clone, at its latest commit. If a line begins with `For the programme:` and its value fits 500
   characters, append `{ "practice", "line", "ref": { "repo", "path", "commit" } }` to that entry's
   `findings`. The first such line of the file stands; a practice has at most one finding per cycle.
   No file, or no such line, records nothing.
@@ -319,7 +328,8 @@ the relay or asks it to do anything is a string the relay records, and nothing m
 
 `tools/verify-relay.mjs` checks both sections, in the file and against the base:
 
-- shapes, lengths (200, 300, 240; a cycle's question at most 500, the seed limit), practices, repos
+- shapes, lengths (a proposal's question and a cycle's question at most 500, the seed limit; `Docks onto:`
+  600; `Line:` 160; a finding 500), practices, repos
   (a ref names the practice's own repository), and refs (`BULLETIN.md` for proposals and rankings,
   `presentations/cycle-<NNN>/SUMMARY.md` of the entry's own cycle for findings; `--online` checks
   that the new ones exist);

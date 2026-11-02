@@ -50,13 +50,21 @@ export const OFFER_MAX = 160;
 // -- the convening and the programme (since 2026-10-07) ----------------------------------------
 /** Where a programme entry's question came from; the values of cycle.json's `source`, plus "convening". */
 export const SOURCES = ["defaults", "seed", "continuing", "convening"];
-export const PROPOSAL_QUESTION_MAX = 200;
-export const DOCKS_MAX = 300;
-/** A proposal's optional "Line:" value (since 2026-10-25, lines/README.md). */
-export const LINE_MAX = 160;
-export const FINDING_MAX = 240;
 /** A seed is at most 500 characters (the site's seed gate), and a cycle's question is a seed or shorter. */
 export const CYCLE_QUESTION_MAX = 500;
+/**
+ * The constitutions set no length for a proposal's question, its "Docks onto:" line or a "For the
+ * programme:" sentence, so these caps only stop a runaway line and must sit above anything a
+ * well-formed line reaches. Until 2026-11-02 they were 200, 300 and 240: the Field's "Docks onto:" of
+ * 2026-11-01, written to the format of 2026-10-25 (the matter, why now, an open dataset), ran to 360
+ * characters, was not recorded, and the convening after cycle 011 could take no ranking and no tally.
+ * A proposal's question may be as long as the cycle question it would become.
+ */
+export const PROPOSAL_QUESTION_MAX = CYCLE_QUESTION_MAX;
+export const DOCKS_MAX = 600;
+/** A proposal's optional "Line:" value (since 2026-10-25, lines/README.md); the constitutions say 160. */
+export const LINE_MAX = 160;
+export const FINDING_MAX = 500;
 /** Borda points by place: first 2, second 1, third 0. */
 export const BORDA_POINTS = [2, 1, 0];
 /** With at least two rankings, a convening is tallied once it has been open this many days. */

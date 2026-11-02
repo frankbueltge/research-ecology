@@ -200,16 +200,20 @@ describe("programme: shapes and chain", () => {
 describe("programme: findings", () => {
   const finding = (doc: RelayDoc) => prog(doc)[1]!.findings[0]!;
 
-  it("a finding is a practice, a line of at most 240 characters, and a ref to the cycle's own summary", () => {
+  it("a finding is a practice, a line of at most 500 characters, and a ref to the cycle's own summary", () => {
     const doc = convened();
-    finding(doc).line = "x".repeat(241);
-    expectError(doc, "at most 240");
+    finding(doc).line = "x".repeat(501);
+    expectError(doc, "at most 500");
     const doc2 = convened();
     finding(doc2).line = "two\nlines";
     expectError(doc2, "must be one line");
     const doc3 = convened();
-    finding(doc3).line = "x".repeat(240);
+    finding(doc3).line = "x".repeat(500);
     expect(errorsOf(doc3)).toEqual([]);
+    // the Studio's line for cycle 009 ran to 340 characters and was lost under the old limit of 240
+    const doc4 = convened();
+    finding(doc4).line = "x".repeat(340);
+    expect(errorsOf(doc4)).toEqual([]);
   });
 
   it("at most one finding per practice and cycle: the first one stands", () => {
@@ -296,18 +300,23 @@ describe("convening: shape, proposals and rankings", () => {
     expectError(doc, "field already has a proposal; the first one stands");
 
     const q = convened();
-    conv(q).proposals[0]!.question = "x".repeat(201);
-    expectError(q, "at most 200");
+    conv(q).proposals[0]!.question = "x".repeat(501);
+    expectError(q, "at most 500");
     const q2 = convened();
-    conv(q2).proposals[0]!.question = "x".repeat(200);
+    conv(q2).proposals[0]!.question = "x".repeat(500);
     expectNoError(q2, "proposals[0]");
 
     const d = convened();
-    conv(d).proposals[0]!.docks_onto = "x".repeat(301);
-    expectError(d, "at most 300");
+    conv(d).proposals[0]!.docks_onto = "x".repeat(601);
+    expectError(d, "at most 600");
     const d2 = convened();
-    conv(d2).proposals[0]!.docks_onto = "x".repeat(300);
+    conv(d2).proposals[0]!.docks_onto = "x".repeat(600);
     expectNoError(d2, "proposals[0]");
+    // the Field's "Docks onto:" of 2026-11-01 (matter, why now, an open dataset) ran to 360 characters,
+    // and under the old limit of 300 the convening after cycle 011 could take no ranking and no tally
+    const d3 = convened();
+    conv(d3).proposals[0]!.docks_onto = "x".repeat(360);
+    expectNoError(d3, "proposals[0]");
 
     const nl = convened();
     conv(nl).proposals[1]!.docks_onto = "one\ntwo";
