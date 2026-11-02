@@ -41,7 +41,7 @@ search result alone is not a source.
   page. For a figure, ask for the sentence it stands in, and check the page's own date. If a page fails
   or looks old, fetch it with curl and read the text yourself. What cannot be opened is not confirmed.
 
-1. **The map** — for each of the eleven fields, the newest editions of its sources in
+1. **The map** — for each of the thirteen fields, the newest editions of its sources in
    [`MAP.md`](MAP.md). This is the fixed reading list: a field is read whether or not anything
    happened in it.
 2. **Rankings** — the current editions of the WEF Global Risks Report, the UN SDG Report, 80,000 Hours'
@@ -56,14 +56,14 @@ search result alone is not a source.
    gives each matter its signals and converged days in the thirty days to the briefing, and one word:
    **loud** (it converged), **quiet** (ten signals or more), **absent** (fewer). The terms are wide on
    purpose, and the same terms feed Third Reading and Ducking, so a number means the same in all three.
-   The script also counts the eleven fields, whose `signals` the map copies. Common Ground is a set of
+   The script also counts the thirteen fields, whose `signals` the map copies. Common Ground is a set of
    public charts, not the world's press: about a third encyclopaedia pages and a quarter developer
    platforms. Quiet means quiet in these charts. Since the day file of 2026-11-02 it reads ten English
    editions of Google News instead of one, so a word after that date does not compare with one before it.
 
 ## What a briefing holds (at most 135 lines before the section Checked, English)
 
-A header with the date and the method of the attention count, then **The map**: a table of the eleven
+A header with the date and the method of the attention count, then **The map**: a table of the thirteen
 fields of [`MAP.md`](MAP.md), in that order, each row saying where the field stands (a dated figure from
 the original source, linked), its direction and its signals. A field without news still has its row.
 A direction is only what the source's own comparison shows: worse, better, steady, or unclear where it
@@ -99,7 +99,7 @@ in frankbueltge.de says what is wrong with it. `after-cycle-011.json` is the mod
   `say` is what is spoken wherever `text` holds a digit, with every number written out;
 - `sources`: each with `label`, `url` and `kind`, `primary` or `report`. Every matter has a primary source.
 
-And for the whole: `map`, eleven lines in the order of the map, each with `field`, `state` (at most 280
+And for the whole: `map`, thirteen lines in the order of the map, each with `field`, `state` (at most 280
 characters, holding a dated figure), `as_of` (the date that figure is true of: YYYY, YYYY-MM or YYYY-MM-DD,
 at most two years back), `direction`, `compared_with` (the earlier value and date the direction rests on),
 `signals`, `lines` (the state for a voice on Ducking's desk, one to three sentences, each with `text` and,
@@ -118,7 +118,7 @@ factual statement, in the text and in the data, opens the source of each, and gi
   source says, and link the original if the draft linked a report.
 - **Dropped:** the source does not say it and no other page does. It goes.
 
-The eleven lines of the map are claims like any other. A claim that cannot be confirmed is not confirmed.
+The thirteen lines of the map are claims like any other. A claim that cannot be confirmed is not confirmed.
 If a title or a matter rested on a claim that falls, the title changes or the matter goes. It also reads
 **Urgent but quiet** against the newest lists of neglected crises named in [`MAP.md`](MAP.md), and names a
 crisis high on them that the briefing leaves out, with the reason. Then, at the end of the briefing, a
