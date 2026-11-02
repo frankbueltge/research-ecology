@@ -49,9 +49,9 @@ export interface Handoff {
 /** A practice's bulletin line "Proposed question: …" with its "Docks onto: …" line, verbatim. */
 export interface Proposal {
   practice: Practice;
-  /** at most 200 characters */
+  /** at most 500 characters, as a cycle's question */
   question: string;
-  /** at most 300 characters */
+  /** at most 600 characters */
   docks_onto: string;
   date: string;
   /** the practice's BULLETIN.md at the commit that first holds the lines */
@@ -89,7 +89,7 @@ export interface Convening {
 /** A practice's "For the programme: …" line from its presentation summary, verbatim. */
 export interface Finding {
   practice: Practice;
-  /** at most 240 characters */
+  /** at most 500 characters */
   line: string;
   /** presentations/cycle-NNN/SUMMARY.md in the practice's repository */
   ref: Ref;
