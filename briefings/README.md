@@ -25,7 +25,7 @@ A briefing now passes through two sessions.
 - The site reads the `.json`: a workflow turns it into a round of Third Reading, a round of Ducking and new
   seeds on Common Ground's watchlist, without a hand.
 
-## Sources, in three layers
+## Sources, in four layers
 
 Every figure or date comes from a page the session opened, and is linked beside the sentence. A
 search result alone is not a source.
@@ -41,24 +41,38 @@ search result alone is not a source.
   page. For a figure, ask for the sentence it stands in, and check the page's own date. If a page fails
   or looks old, fetch it with curl and read the text yourself. What cannot be opened is not confirmed.
 
-1. **Expert agendas** — the current editions of: WEF Global Risks Report; Crisis Group CrisisWatch
-   (monthly); Copernicus climate bulletins (monthly); IMF World Economic Outlook; FAO–WFP Hunger
-   Hotspots and the FAO Food Price Index; WHO disease outbreak news; International AI Safety Report;
-   Stanford AI Index; UN reports (SDG Report, UNEP, UNHCR).
-2. **Current research** — news sections of Nature and Science, widely discussed recent preprints,
+1. **The map** — for each of the eleven fields, the newest editions of its sources in
+   [`MAP.md`](MAP.md). This is the fixed reading list: a field is read whether or not anything
+   happened in it.
+2. **Rankings** — the current editions of the WEF Global Risks Report, the UN SDG Report, 80,000 Hours'
+   list of problems, the IRC Emergency Watchlist and Ipsos *What Worries the World*. Each has its
+   standpoint, so none of them decides. Read them across the map: what do they put high that this
+   briefing leaves out?
+3. **Current research** — news sections of Nature and Science, widely discussed recent preprints,
    and summits or conferences in the coming weeks.
-3. **Attention** — Common Ground on the site, counted by the house's one rule, never by hand. Write the
+4. **Attention** — Common Ground on the site, counted by the house's one rule, never by hand. Write the
    matters and their terms into the draft's `.json`, then in frankbueltge.de run
    `npm run briefing:attention -- <path to the .json>` and copy the table into the briefing. The script
    gives each matter its signals and converged days in the thirty days to the briefing, and one word:
    **loud** (it converged), **quiet** (ten signals or more), **absent** (fewer). The terms are wide on
    purpose, and the same terms feed Third Reading and Ducking, so a number means the same in all three.
+   The script also counts the eleven fields, whose `signals` the map copies. Common Ground is a set of
+   public charts, not the world's press: about a third encyclopaedia pages and a quarter developer
+   platforms. Quiet means quiet in these charts. Since the day file of 2026-11-02 it reads ten English
+   editions of Google News instead of one, so a word after that date does not compare with one before it.
 
-## What a briefing holds (at most 120 lines before the section Checked, English)
+## What a briefing holds (at most 135 lines before the section Checked, English)
 
-A header with the date and the method of the attention count, then **eight to twelve matters**
-spread over these fields: geopolitics and conflict, AI, climate and environment, the world economy
-and inequality, health and food, democracy and information. For each matter:
+A header with the date and the method of the attention count, then **The map**: a table of the eleven
+fields of [`MAP.md`](MAP.md), in that order, each row saying where the field stands (a dated figure from
+the original source, linked), its direction and its signals. A field without news still has its row.
+A direction is only what the source's own comparison shows: worse, better, steady, or unclear where it
+offers none on the same definition.
+
+Then **eight to twelve matters**, taken from the map. A matter can be an event or a state: that hundreds
+of millions live in extreme poverty is a matter as much as an outbreak is. Each belongs to one field. At
+most two matters per field, and a field that had no matter in either of the last two briefings has to
+have one now. `npm run briefing:check` holds a briefing to this. For each matter:
 
 - what is happening, dated and sourced (two or three sentences);
 - why it is urgent, after which source;
@@ -71,12 +85,13 @@ in Common Ground, best first. The first of them is the convening's fallback.
 
 ## The data file
 
-Beside `after-cycle-NNN.md` stands `after-cycle-NNN.json`, the same matters as data, contract `briefing/1`.
-The rules are in the site's `src/lib/briefing/briefing.ts`; `npm run briefing:check -- <file>` in
-frankbueltge.de says what is wrong with it. `after-cycle-011.json` is the model. For each matter:
+Beside `after-cycle-NNN.md` stands `after-cycle-NNN.json`, the same matters as data, contract `briefing/2`.
+The rules are in the site's `src/lib/briefing/briefing.ts` and `map.ts`; `npm run briefing:check -- <file>`
+in frankbueltge.de says what is wrong with it. `after-cycle-011.json` is the model for the matters, under
+`briefing/1`, and [`map-2026-11-01.json`](map-2026-11-01.json) for the map. For each matter:
 
 - `id`: a stable slug, the same when a matter returns; `title`, and `short` (28 characters at most);
-- `strip`: what stands on a fader, 14 capitals at most;
+- `field`: its field on the map;
 - `gist`: one line for Third Reading, which never gives away a figure an estimate asks for and never says
   how loud the web was;
 - `quiet_rank`: its place in Urgent but quiet, or null; `terms`, and `exclude` for a term's false friends;
@@ -84,8 +99,14 @@ frankbueltge.de says what is wrong with it. `after-cycle-011.json` is the model.
   `say` is what is spoken wherever `text` holds a digit, with every number written out;
 - `sources`: each with `label`, `url` and `kind`, `primary` or `report`. Every matter has a primary source.
 
-And for the whole: five `estimates` for Third Reading, each a figure a reader can guess, with its source and
-the date in its question; the `fallback`; and `checked`, which only the second session writes.
+And for the whole: `map`, eleven lines in the order of the map, each with `field`, `state` (at most 280
+characters, holding a dated figure), `as_of` (the date that figure is true of: YYYY, YYYY-MM or YYYY-MM-DD,
+at most two years back), `direction`, `compared_with` (the earlier value and date the direction rests on),
+`signals`, `lines` (the state for a voice on Ducking's desk, one to three sentences, each with `text` and,
+wherever it holds a digit, `say` with every number written out) and `sources` with a primary one; five
+`estimates` for Third Reading, each a figure a reader can
+guess, with its source and the date in its question; the `fallback`; and `checked`, which only the second
+session writes.
 
 ## How a claim is checked
 
@@ -97,13 +118,16 @@ factual statement, in the text and in the data, opens the source of each, and gi
   source says, and link the original if the draft linked a report.
 - **Dropped:** the source does not say it and no other page does. It goes.
 
-A claim that cannot be confirmed is not confirmed. If a title or a matter rested on a claim that falls, the
-title changes or the matter goes. Then, at the end of the briefing, a section **Checked**: the count, and one
-line for every change. If fewer than eight matters survive, the session opens an issue, links nothing, and
+The eleven lines of the map are claims like any other. A claim that cannot be confirmed is not confirmed.
+If a title or a matter rested on a claim that falls, the title changes or the matter goes. It also reads
+**Urgent but quiet** against the newest lists of neglected crises named in [`MAP.md`](MAP.md), and names a
+crisis high on them that the briefing leaves out, with the reason. Then, at the end of the briefing, a
+section **Checked**: the count, and one line for every change. If fewer than eight matters survive, the session opens an issue, links nothing, and
 the convening's clock takes its course.
 
 ## What a briefing is not
 
-It proposes no cycle question and ranks no proposal: that stays the practices' and the relay's. It
-does not repeat the subject of the two cycles before it as a matter unless the world has moved on it
-since, and then says what moved. No quotes from the architect's messages.
+It proposes no cycle question and ranks no proposal: that stays the practices' and the relay's. And a
+mirror does not leave out what was just looked at: the subject of a recent cycle stands here like any
+other, saying what has moved. It is the proposals that may not repeat it. No quotes from the architect's
+messages.
