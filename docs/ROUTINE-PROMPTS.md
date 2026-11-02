@@ -412,7 +412,7 @@ lines" in the three constitutions; rules in `lines/README.md`) the same run also
 run is a new session that knows nothing of the last, and that is how a briefing gets a second reader: the
 run that finds no draft writes one, and the next run, finding it, checks it and links it.
 **Since 2026-11-01, later the same day** (architect's decision, wording private; on the site
-`docs/design/2026-11-01-the-map.md`) a briefing opens with the map of eleven fields (`briefings/MAP.md`) and
+`docs/design/2026-11-01-the-map.md`) a briefing opens with the map of thirteen fields (`briefings/MAP.md`; eleven until 2026-11-02) and
 takes its matters from it.
 
 ```
@@ -432,7 +432,7 @@ Every run is a new session. You know nothing of the last run, and step 1 tells y
 
 THE WRITER
 2. Read briefings/README.md and briefings/MAP.md in full and follow them.
-3. Research. For each of the eleven fields in MAP.md open the newest editions of its sources, and note
+3. Research. For each of the thirteen fields in MAP.md open the newest editions of its sources, and note
    where the field stands, with a dated figure from the original, and its direction. Then read the
    rankings and the current research the README names. Every figure and date comes from a page you
    opened, is linked beside it, and comes from the original wherever the original can be reached. Read
@@ -462,7 +462,7 @@ THE WRITER
 THE SECOND READER
 6. You did not write this draft and you owe it nothing. Read briefings/README.md in full, above all "How a
    claim is checked", and the draft's .md and .json.
-7. List every figure, date and factual statement in both files, the eleven lines of the map included.
+7. List every figure, date and factual statement in both files, the thirteen lines of the map included.
    Open the source of each and give it one
    word: held, corrected or dropped. Check that it comes from the original wherever one exists, and for every
    state of affairs look for what has happened since. You may hand matters to subagents; you answer for the

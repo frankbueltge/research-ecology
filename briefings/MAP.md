@@ -1,15 +1,20 @@
 # The map — where the world stands
 
 *Since 2026-11-01 (architect's decision, wording private; on the site `docs/design/2026-11-01-the-map.md`).*
-A briefing used to ask what is new, and a state of affairs has no date: poverty, inequality, the
-concentration of money and power, democracy and rights were no matter in its first two editions, while AI
-was three of ten. Every briefing now opens with these eleven fields, one line each, and takes its matters
-from them. A field without news still has its line. The rules are in [README.md](README.md). The fields,
-their terms for the attention count and the machine's half of the check are in the site's
-`src/lib/briefing/map.ts`.
+A briefing used to ask what is new, and a state of affairs has no date: poverty, inequality, the concentration
+of money and power, democracy and rights were no matter in its first two editions, while AI was three of ten.
+Every briefing now opens with these thirteen fields, one line each, and takes its matters from them. A field
+without news still has its line. Until 2026-11-02 there were eleven: read against the rankings below, they
+gave the environment one field for four subjects and the economy none, and read none of the largest measured
+harms, so nature, air and water and debt, work and cost of living joined, war took in the violence beyond it,
+and the concentration of money and power reads control while inequality reads how the whole is shared
+(architect's decision, wording private; on the site the same record, "Thirteen fields"). The rules are in
+[README.md](README.md). The fields, their terms for the attention count and the machine's half of the check
+are in the site's `src/lib/briefing/map.ts`.
 
 ## The first edition, 2026-11-01
 
+It has the eleven fields of its day; the first briefing with thirteen lines is the one after cycle 012.
 Written by one session and read against its sources by a second, which owed it nothing: 124 claims,
 119 held, 5 corrected, 0 dropped. The data, with what each direction rests on:
 [`map-2026-11-01.json`](map-2026-11-01.json).
@@ -37,13 +42,15 @@ so, and it is worth reading before the word is quoted.
 
 Every briefing opens the newest edition of these, whether or not anything happened in the field.
 
-### War and armed conflict
+### War and violence
 
 | Source | Comes | Read for |
 |---|---|---|
 | [Organized violence article and UCDP datasets](https://ucdp.uu.se/downloads/), Uppsala Conflict Data Program, Uppsala University | yearly (June); candidate events monthly | Deaths in organised violence in the last full year with its three types apart (state-based, non-state, one-sided), and the number of state-based conflicts. Candidate events are preliminary. |
 | [Trends in World Military Expenditure and the Military Expenditure Database](https://www.sipri.org/databases/milex), SIPRI | yearly (April) | World total, real-terms change and the world military burden (share of GDP). |
 | [ACLED Conflict Index](https://acleddata.com/series/acled-conflict-index), ACLED | yearly (December) | Conflict events and deaths over the twelve months and the places ranked highest. It counts differently from UCDP: never mix the two. ACLED called 2025 steady on events, 204,605 against 208,219. |
+| [SIPRI Yearbook, chapter World nuclear forces](https://www.sipri.org/yearbook), SIPRI | yearly (June) | Total inventory, military stockpile and deployed warheads in January of the edition's year (2026: 12,187, about 9,745, about 4,012). These are estimates from public information. SIPRI puts the rise of about 100 deployed warheads mainly down to a reassessment of Russian deployments and to new Chinese and Indian ones, so part of a change can be a recount. The total falls as retired US and Russian warheads are dismantled while stockpiles grow: read the stockpile for the trend. |
+| [Global Study on Homicide and UNODC homicide data](https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html), UNODC | data yearly, global rate through SDG indicator 16.1.1; study irregular (2011, 2013, 2019, 2023) | The global homicide rate per 100,000 for the latest year (2024: 5.1, down from 5.9 in 2015). When a study appears, also the global count; the newest count, 458,000, is for 2021. These are UNODC model estimates from national data, re-estimated with every release (2021 was 5.8 in the study and is 5.53 now), so compare only within one release. Homicides and UCDP's organised violence overlap where gangs and cartels fight: never add the two. |
 
 ### Hunger
 
@@ -61,6 +68,15 @@ Every briefing opens the newest edition of these, whether or not anything happen
 | [Poverty, Prosperity, and Planet Report](https://www.worldbank.org/en/publication/poverty-prosperity-and-planet), World Bank | every two years | The Bank's own reading of the trend, Annex 1C for the series, the $8.30 line, the Prosperity Gap. |
 | [Global Multidimensional Poverty Index](https://ophi.org.uk/global-mpi), UNDP and OPHI | yearly (October) | People and share in acute multidimensional poverty, the survey years behind them, and the change like for like. Population growth is part of the change: read the update's own split. |
 
+### Debt, work and cost of living
+
+| Source | Comes | Read for |
+|---|---|---|
+| [A World of Debt](https://unctad.org/publication/world-of-debt), UN Trade and Development (UNCTAD) | yearly (June to July) | People living in developing countries that spend more on net interest than on health or on education, and how many countries (2026 edition: 3.7 billion in 51), with the net interest bill (US$995 billion in 2025). "Or" means either one. The population figure lags the interest figures (the page's regional shares run to 2023). |
+| [Latest debt sustainability analyses under the LIC-DSF](https://www.worldbank.org/en/programs/debt-toolkit/dsa), World Bank and IMF | continuous; the table states its date (end-September 2026) | Countries in debt distress and at high risk of external debt distress (end-September 2026: 10 and 22 of 68 rated). Only IDA countries under the low-income framework. Each rating is as old as the country's last published analysis (Afghanistan, Myanmar and Sudan: 2021). The IMF keeps its own list, dated differently: name which one you quote. |
+| [Employment and Social Trends (until 2025: World Employment and Social Outlook: Trends)](https://www.ilo.org/publications/flagship-reports/employment-and-social-trends-2026), International Labour Organization | yearly (January), update in May; the year in the address changes | Global unemployment, the jobs gap, extreme working poverty (under US$3 a day) and informal employment (January 2026: 4.9% projected for 2026, jobs gap 408 million, nearly 300 million, 2.1 billion). ILO model estimates and projections. The May 2026 update added an oil-shock scenario (+0.1 point in 2026, +0.5 in 2027), not a new baseline. |
+| [World Economic Outlook](https://www.imf.org/en/publications/weo), IMF | April and October, updates in January and July | World consumer price inflation for the last full year and the current one (October 2026: 4.1% in 2025, 4.7% projected for 2026). The current year is a projection revised in every edition. The world figure is an average weighted by economies' size at purchasing-power parity, not what any household pays. |
+
 ### Inequality
 
 | Source | Comes | Read for |
@@ -68,24 +84,38 @@ Every briefing opens the newest edition of these, whether or not anything happen
 | [World Inequality Report](https://wir2026.wid.world/), World Inequality Lab | about every four years (2018, 2022, 2026) | Global shares of the top 10%, top 1%, top 0.001% and bottom 50% in income and wealth, with the year and the PPP basis. |
 | [World Inequality Database](https://wid.world/), World Inequality Lab | rolling | Top and bottom shares between report editions, and country series for inequality within countries. |
 | [Global Wealth Report](https://www.ubs.com/global/en/wealthmanagement/insights/global-wealth-report.html), UBS | yearly (June) | The wealth pyramid (2025: 1.5% of adults held 48.4% of wealth, 41.1% held 0.6%, sample of 56 markets) and average against median. A bank's estimates in USD; UBS says the weaker dollar amplified 2025 increases outside the US. |
+| [World's Billionaires list](https://www.forbes.com/worlds-billionaires/), Forbes | yearly (March to April) | Number of billionaires and their combined net worth on the list's date (2026: 3,428 people, $20.1 trillion, prices of 1 March). These are estimates by Forbes in nominal dollars that move with markets: set them beside WIL's shares, not alone. Oxfam's yearly billionaire figures are its own analysis of Forbes data. |
+| [Global Gender Gap Report](https://www.weforum.org/publications/global-gender-gap-report/), World Economic Forum | yearly (June until 2025; September in 2026) | Share of the gender gap closed across the edition's economies and across the 97 indexed since 2006, and the years to parity (2026: 69.2% across 145, 69.4% in the constant sample, 120 years). It scores gaps between women and men, not levels. The set of economies changes between editions, so compare the constant sample or the report's own like-for-like change. Years to parity is an extrapolation. |
+| [Global estimates of intimate partner/family member femicides](https://www.unwomen.org/en/digital-library/publications/2025/11/femicides-in-2024-global-estimates-of-intimate-partner-family-member-femicides), UNODC and UN Women | yearly (late November); the year in the address changes | Women and girls killed by intimate partners or family members, with the range, and their share of all women and girls killed intentionally (2024: about 50,000, range 44,400–55,500, 60% of about 83,000). Based on 117 countries and territories with missing values imputed: read it as magnitude, not precision. The authors say the fall from 51,100 in 2023 reflects data availability, not a real decrease. |
 
 ### Concentration of money and power
 
+It reads control: who holds compute, markets and the state's ear, and what money does to get them. How large
+fortunes are, and how the whole is shared, is inequality's.
+
 | Source | Comes | Read for |
 |---|---|---|
-| [World's Billionaires list](https://www.forbes.com/worlds-billionaires/), Forbes | yearly (March to April) | Number of billionaires and combined net worth on the list's date. Estimates by Forbes. Oxfam's yearly billionaire figures are its own analysis of Forbes data. |
 | [Data on AI chip owners and Data Insights](https://epoch.ai/data/ai-chip-owners), Epoch AI | irregular, several updates a year | Share of the world's cumulative AI compute held by the five hyperscalers, in H100-equivalents, finalised quarters only. An estimate; coverage of chip ownership is incomplete. |
 | [Corruption Perceptions Index](https://www.transparency.org/en/cpi), Transparency International | yearly (late January to February) | Global average score and how many of 182 countries score below 50. Perceptions of public-sector corruption, not measured corruption. |
 | [The State of Tax Justice](https://taxjustice.net/reports/), Tax Justice Network | yearly (November) | Estimated tax lost to corporate tax abuse and offshore wealth. Check the period: the 2025 edition's US$1.7 trillion covers six years. |
+| [Search Engine Market Share Worldwide](https://gs.statcounter.com/search-engine-market-share), StatCounter Global Stats | monthly (from daily data; a month can be revised for 45 days) | Share of search referrals worldwide held by the leading engine and the next (October 2026: Google 91.05%, Bing 4.8%). It counts page views arriving from search on sites that carry StatCounter's code, not searches made. China weighs little in the worldwide figure (Baidu has 49% in China, 0.42% worldwide), and AI chatbots are counted on a separate page. One market, not concentration in general. |
 
-### Climate, nature and disasters
+### Climate and disasters
 
 | Source | Comes | Read for |
 |---|---|---|
-| [Climate bulletin](https://climate.copernicus.eu/climate-bulletins), Copernicus Climate Change Service (ECMWF) | monthly | The month's anomaly against 1850–1900, its rank in ERA5, the 12-month mean and sea surface temperature. |
+| [Climate bulletin](https://climate.copernicus.eu/climate-bulletin), Copernicus Climate Change Service (ECMWF) | monthly | The month's anomaly against 1850–1900, its rank in ERA5, the 12-month mean and sea surface temperature. |
 | [Emissions Gap Report](https://www.unep.org/en/publications/report/emissions-gap-report-2026), UNEP | yearly (before each COP); the year in the address changes | Emissions of the last year with their range, and warming by 2100 under current policies and under NDCs, as 66% chance statements. UNEP finds 2025 emissions (58.4 GtCO2e, ±5.5) inconclusive on direction. |
-| [Planetary Health Check](https://www.planetaryhealthcheck.org/), Planetary Boundaries Science Lab, PIK | yearly (September) | How many of nine boundaries are transgressed (seven in 2026) and which. The assessment uses the latest available data, some of it older than the edition. |
 | [Disasters in Numbers, from EM-DAT](https://www.emdat.be/publications/), CRED, UCLouvain | yearly | Natural-hazard disasters, deaths, people affected and damage against the 2005–2024 average. Earthquakes count; heatwave and drought deaths lag in reporting, so the newest year is provisional. |
+
+### Nature, air and water
+
+| Source | Comes | Read for |
+|---|---|---|
+| [Planetary Health Check](https://www.planetaryhealthcheck.org/), Planetary Boundaries Science Lab, PIK | yearly (September) | How many of nine boundaries are transgressed (seven in 2026) and which. The assessment uses the latest available data, some of it older than the edition. |
+| [State of Global Air](https://www.stateofglobalair.org/), Health Effects Institute with IHME | irregular, following Global Burden of Disease rounds (2024: June; 2025: 22 October) | Deaths attributable to air pollution in the latest GBD year, with ambient PM2.5, household air pollution and ozone apart (2023: 7.9 million). Model estimates: each edition revises the past (2021 went from 8.1 to 7.6 million), so compare years only within one edition. |
+| [Progress on household drinking water, sanitation and hygiene](https://washdata.org/reports), WHO/UNICEF Joint Monitoring Programme | every two years (2025: 26 August); reports on schools and health care facilities in between | People without safely managed drinking water, without safely managed sanitation and without basic hygiene at home (2024: 2.1 billion, 3.4 billion, 1.7 billion). Estimates from national surveys, censuses and administrative data. Each report re-estimates the whole series, so compare years only within one report. |
+| [IUCN Red List of Threatened Species, summary statistics](https://www.iucnredlist.org/statistics), IUCN | at least twice a year (2026-1: 9 July; 2026-2 planned for 26 November) | Species assessed and species threatened with extinction (2026-1: 49,505 of 175,909, 28%). The count rises mainly because more species are assessed, and many groups are not fully assessed: it is no trend and no census of life. For direction, read the Red List Index (SDG 15.5.1: 0.806 in 1993, 0.745 in 2025; based on mammals, birds, amphibians, corals and cycads). |
 
 ### Health and epidemics
 
@@ -152,8 +182,10 @@ the briefing leaves out is named in "Checked", with the reason.
 ## What the map cannot do
 
 - **Power.** No body publishes a scheduled global series on corporate concentration or on money in
-  politics. The field's line rests on billionaires and AI compute, which is a part of it, and that should be
-  said wherever the line is used.
+  politics. Since 2026-11-02 the field reads control through parts of it: AI compute (Epoch AI), search
+  (StatCounter), perceived corruption (Transparency International) and tax abuse (Tax Justice Network); the
+  billionaires moved to inequality. Each is one market or one estimate, and that should be said wherever the
+  line is used.
 - **Attention.** Common Ground is a set of public charts, in English terms. Quiet means quiet in these charts.
 - **Ranking.** The map does not rank the fields. Which matter is most urgent stays a judgement, written down
   and checked.
