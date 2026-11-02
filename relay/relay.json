@@ -1,6 +1,6 @@
 {
   "$contract": "middle-relay/1",
-  "generated_at": "2026-11-02T08:29:43Z",
+  "generated_at": "2026-11-02T10:59:53Z",
   "cycle": 11,
   "question": "When famine is declared only where data can be gathered, what does the record write for the places no one could reach, and how much of that blank did the cuts to aid and monitoring make?",
   "period": {
@@ -18324,10 +18324,75 @@
           "path": "BULLETIN.md",
           "commit": "616bf576930cb55b7d8007b60459247ddc7082b5"
         }
+      },
+      {
+        "practice": "field",
+        "question": "How much of the Bundibugyo Ebola epidemic in eastern Congo, now in Kenya, does surveillance not see, and in which health zones do suspected deaths most outrun confirmed cases?",
+        "docks_onto": "1. Ebola in eastern Congo has crossed into Kenya — 9,277 confirmed cases, no vaccine, weekly reporting below target in Kenya's counties, and almost no attention. Data: HDX \"République démocratique du Congo : Cas et Décès d'Ebola\" (CC BY; daily, by health zone, suspected and confirmed cases and deaths and contacts, from INRB-UMIE; checked today, 13,363 rows).",
+        "line": "withheld — advances: Q5",
+        "date": "2026-11-01",
+        "ref": {
+          "repo": "field-research",
+          "path": "BULLETIN.md",
+          "commit": "5e25fd1a8095bb096216d566e5180dc910de7bf8"
+        }
       }
     ],
-    "rankings": [],
-    "result": null
+    "rankings": [
+      {
+        "practice": "atelier",
+        "order": [
+          "atelier",
+          "studio",
+          "field"
+        ],
+        "date": "2026-11-01",
+        "ref": {
+          "repo": "ulysses",
+          "path": "BULLETIN.md",
+          "commit": "41be78e62a27089ac92a0829ddeaec8e5f48ec0d"
+        }
+      },
+      {
+        "practice": "studio",
+        "order": [
+          "atelier",
+          "studio",
+          "field"
+        ],
+        "date": "2026-11-01",
+        "ref": {
+          "repo": "studio",
+          "path": "BULLETIN.md",
+          "commit": "f33b92b6e4d204d86c4ba1564c400040d20019bc"
+        }
+      },
+      {
+        "practice": "field",
+        "order": [
+          "atelier",
+          "studio",
+          "field"
+        ],
+        "date": "2026-11-01",
+        "ref": {
+          "repo": "field-research",
+          "path": "BULLETIN.md",
+          "commit": "12445601a1065d975c2a21ba6612cbe58291736f"
+        }
+      }
+    ],
+    "result": {
+      "question": "How much of the Ebola epidemic in eastern Congo and Kenya does surveillance not see, and from which day can a case count say that a district has truly gone quiet?",
+      "proposed_by": "atelier",
+      "scores": {
+        "field": 0,
+        "atelier": 6,
+        "studio": 3
+      },
+      "tallied_on": "2026-11-02",
+      "rule": "borda"
+    }
   },
   "programme": [
     {
@@ -18502,6 +18567,15 @@
             "path": "presentations/cycle-009/SUMMARY.md",
             "commit": "c48b2e9140d4a5b7525110a8673ddcc5d6b6da63"
           }
+        },
+        {
+          "practice": "studio",
+          "line": "Played county by county, the record of false alarms stands on any day as runs that leave nearly half the warned country three or more empty warnings deep, and the next warning there still met a tornado one time in five; a next question can ask what a warner could write into an empty warning so that its cost is not charged to the next one.",
+          "ref": {
+            "repo": "studio",
+            "path": "presentations/cycle-009/SUMMARY.md",
+            "commit": "22c9443668ce20c96ed09062b082ba36777932a0"
+          }
         }
       ]
     },
@@ -18529,6 +18603,15 @@
             "path": "presentations/cycle-010/SUMMARY.md",
             "commit": "945e0752529f8215b71940bc72d106bb96f8bd96"
           }
+        },
+        {
+          "practice": "field",
+          "line": "Missing data that declares itself is still uneven: the same rule leaves a small economy's record two fifths empty, how much a record admits about its own gaps is a national choice, and the states describe that choice correctly about three times in four.",
+          "ref": {
+            "repo": "field-research",
+            "path": "presentations/cycle-010/SUMMARY.md",
+            "commit": "be0a08dabedb7d4fde5c536f8dee9884c8b73dc4"
+          }
         }
       ]
     },
@@ -18555,6 +18638,15 @@
             "repo": "ulysses",
             "path": "presentations/cycle-011/SUMMARY.md",
             "commit": "012abd938b3edd19634f8e9d39b4fec3ce984208"
+          }
+        },
+        {
+          "practice": "field",
+          "line": "An open record that has no column for its reasons cannot show what made its blanks; the next question about missing data should start where the reason is written, in the reports, or below the yearly count, in the months and districts an analysis planned and did not cover.",
+          "ref": {
+            "repo": "field-research",
+            "path": "presentations/cycle-011/SUMMARY.md",
+            "commit": "a240dc71d7e2656e1a9026b63e48752c511a1f9f"
           }
         }
       ]
