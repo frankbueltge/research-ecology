@@ -1,0 +1,407 @@
+{
+  "$contract": "briefing-map/1",
+  "written": "2026-11-01",
+  "checked": {
+    "on": "2026-11-02",
+    "claims": 124,
+    "held": 119,
+    "corrected": 5,
+    "dropped": 0
+  },
+  "map": [
+    {
+      "field": "war",
+      "state": "UCDP counted about 244,600 people killed in organised violence in 2025, up from about 187,000 in 2024, and a record 65 state-based conflicts. SIPRI put world military spending at $2,887 billion in 2025, up 2.9% in real terms.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "About 187,000 killed in organised violence in 2024 (UCDP, same series, already revised upward; UCDP expects upward revisions for 2025 too). The rise came from one-sided violence, 14,300 in 2024 to 76,500 in 2025; state-based deaths were 155,000 and 153,600.",
+      "sources": [
+        {
+          "label": "Uppsala University, UCDP press release on the 2025 data, 9 June 2026",
+          "url": "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states",
+          "kind": "primary"
+        },
+        {
+          "label": "Davies, Pettersson and Öberg, Organized violence 1989–2025, Journal of Peace Research 63(4), 2026",
+          "url": "https://academic.oup.com/jpr/article/63/4/705/8703754",
+          "kind": "primary"
+        },
+        {
+          "label": "SIPRI, Trends in World Military Expenditure, 2025, fact sheet, April 2026",
+          "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "UCDP counted about 244,600 people killed in organised violence in 2025, up from about 187,000 in 2024, and a record 65 state-based conflicts.",
+          "say": "The Uppsala Conflict Data Program counted about two hundred and forty-four thousand six hundred people killed in organised violence in twenty twenty-five, up from about one hundred and eighty-seven thousand in twenty twenty-four, and a record sixty-five state-based conflicts."
+        },
+        {
+          "text": "SIPRI put world military spending at $2,887 billion in 2025, up 2.9% in real terms.",
+          "say": "SIPRI put world military spending at two thousand eight hundred and eighty-seven billion dollars in twenty twenty-five, up two point nine percent in real terms."
+        }
+      ],
+      "signals": 286
+    },
+    {
+      "field": "hunger",
+      "state": "SOFI 2026 nowcasts 645 million people undernourished in 2025 (7.8%, range 608–696 million), about 14 million fewer than in 2024. Separately, 266 million people in 47 food-crisis countries and territories faced high acute food insecurity in 2025, 22.9% of those analysed.",
+      "as_of": "2025",
+      "direction": "unclear",
+      "compared_with": "658.8 million (8.1%) in 2024 (SOFI 2026, Tables 2.1 and 2.2, same revised series). 2025 is a nowcast, and SOFI says it may not fully reflect the worsening situation in humanitarian crises. The acute figure has no like comparison: 296 million in 53 countries in 2024, and the GRFC says the fall mainly reflects fewer countries covered. Its analysed share was 22.7% in 2024. Mid-year Update, data to 31 August 2026: of 33 comparable countries and territories 17 improved, 15 worsened.",
+      "sources": [
+        {
+          "label": "FAO, IFAD, UNICEF, WFP and WHO, The State of Food Security and Nutrition in the World 2026, 21 July 2026",
+          "url": "https://openknowledge.fao.org/3/cd8306en/cd8306en.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO newsroom on SOFI 2026, 21 July 2026",
+          "url": "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO, WFP and GNAFC, 2026 Global Report on Food Crises, 24 April 2026",
+          "url": "https://doi.org/10.4060/cd9424en",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO newsroom on the 2026 Global Report on Food Crises, 24 April 2026",
+          "url": "https://www.fao.org/newsroom/detail/acute-food-insecurity-and-malnutrition-remain-alarmingly-high-as-crises-deepen--un--eu-and-partners-warn-in-new-report/en",
+          "kind": "primary"
+        },
+        {
+          "label": "Global Network Against Food Crises, Mid-Year Update of the 2026 GRFC now available, 21 September 2026",
+          "url": "https://www.fightfoodcrises.net/articles/mid-year-update-2026-grfc-now-available",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "SOFI 2026 nowcasts 645 million people undernourished in 2025 (7.8%, range 608–696 million), about 14 million fewer than in 2024.",
+          "say": "The State of Food Security report nowcasts six hundred and forty-five million people undernourished in twenty twenty-five, seven point eight percent, in a range of six hundred and eight to six hundred and ninety-six million, about fourteen million fewer than in twenty twenty-four."
+        },
+        {
+          "text": "Separately, 266 million people in 47 food-crisis countries and territories faced high acute food insecurity in 2025, 22.9% of those analysed.",
+          "say": "Separately, two hundred and sixty-six million people in forty-seven food-crisis countries and territories faced high acute food insecurity in twenty twenty-five, twenty-two point nine percent of those analysed."
+        }
+      ],
+      "signals": 1
+    },
+    {
+      "field": "poverty",
+      "state": "The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million. UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025.",
+      "as_of": "2026",
+      "direction": "steady",
+      "compared_with": "824 million (10.1%) in 2024 and 837 million (10.8%) in 2019, itself a projection (PIP September 2026 version; Poverty, Prosperity, and Planet 2026, Table 1C.2). The Bank calls the rate unchanged since 2019, though PIP's 2026 nowcast is 9.8%. UNDP-OPHI's count rose 51.5 million on its previous update, like for like; 15.8 million of that is population updates in 95 countries with no new survey.",
+      "sources": [
+        {
+          "label": "World Bank, Poverty, Prosperity, and Planet Report 2026, 26 October 2026",
+          "url": "https://www.worldbank.org/en/publication/poverty-prosperity-and-planet",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank Data Blog, September 2026 Global Poverty Update, 22 September 2026",
+          "url": "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank, Poverty and Inequality Platform, version 20260922",
+          "url": "https://pip.worldbank.org/home",
+          "kind": "primary"
+        },
+        {
+          "label": "UNDP and OPHI, 2026 Global Multidimensional Poverty Index: Statistical Update, 12 October 2026",
+          "url": "https://hdr.undp.org/content/2026-global-multidimensional-poverty-index-mpi",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million.",
+          "say": "The World Bank's now cast is about eight hundred and eleven million people, one in ten, below three dollars a day in twenty twenty-six; twenty twenty-four, the latest year with sufficient data, stands at eight hundred and twenty-four million."
+        },
+        {
+          "text": "UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025.",
+          "say": "The United Nations Development Programme and Oxford's poverty initiative count one point two billion people, eighteen point nine percent, in acute multidimensional poverty in one hundred and eight countries, in surveys from twenty fourteen to twenty twenty-five."
+        }
+      ],
+      "signals": 4
+    },
+    {
+      "field": "inequality",
+      "state": "World Inequality Lab estimates, 2025: the global top 10% took 53% of income and held 75% of wealth, the bottom half 8% and 2%. The top 0.001% held nearly 6.1% of wealth, up from around 3.8% in 1995. Average income in North America & Oceania is about 13 times Sub-Saharan Africa's.",
+      "as_of": "2025",
+      "direction": "unclear",
+      "compared_with": "Top 0.001% held around 3.8% of wealth in 1995 (World Inequality Report 2026, Figure 2, same series). The bottom half's share has stagnated at around 2% since the early 2000s. Income points the other way since 2000: top 10% 58% to 53%, bottom half 7% to 8% (Figure 1.9), and the report finds little long-term change since 1910.",
+      "sources": [
+        {
+          "label": "World Inequality Lab, World Inequality Report 2026, executive summary",
+          "url": "https://wir2026.wid.world/insight/executive-summary/",
+          "kind": "primary"
+        },
+        {
+          "label": "World Inequality Lab, World Inequality Report 2026, full report",
+          "url": "https://wir2026.wid.world/www-site/uploads/2026/09/World_Inequality_Report_2026.pdf",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "World Inequality Lab estimates, 2025: the global top 10% took 53% of income and held 75% of wealth, the bottom half 8% and 2%.",
+          "say": "World Inequality Lab estimates for twenty twenty-five: the global top ten percent took fifty-three percent of income and held seventy-five percent of wealth, the bottom half eight percent and two percent."
+        },
+        {
+          "text": "The top 0.001% held nearly 6.1% of wealth, up from around 3.8% in 1995.",
+          "say": "The top zero point zero zero one percent held nearly six point one percent of wealth, up from around three point eight percent in nineteen ninety-five."
+        },
+        {
+          "text": "Average income in North America & Oceania is about 13 times Sub-Saharan Africa's.",
+          "say": "Average income in North America and Oceania is about thirteen times Sub-Saharan Africa's."
+        }
+      ],
+      "signals": 8
+    },
+    {
+      "field": "power",
+      "state": "Forbes counted a record 3,428 billionaires worth an estimated $20.1 trillion at 1 March 2026 prices, 400 more people and up from $16.1 trillion in its 2025 list. Epoch AI estimates five hyperscalers held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024.",
+      "as_of": "2026-03-01",
+      "direction": "worse",
+      "compared_with": "3,028 billionaires and $16.1 trillion on Forbes's 2025 list, the same annual list. Epoch AI: 63% in Q1 2024, same series in H100-equivalents; the five are Amazon, Google, Meta, Microsoft and Oracle.",
+      "sources": [
+        {
+          "label": "Forbes, 40th annual World's Billionaires list, press release, 10 March 2026",
+          "url": "https://www.forbes.com/sites/pr/2026/03/10/forbes-40th-annual-worlds-billionaires-list-elon-musk-is-worlds-richest-person-ever-recorded/",
+          "kind": "primary"
+        },
+        {
+          "label": "Forbes, World's Billionaires List: Facts And Figures, 10 March 2026",
+          "url": "https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/",
+          "kind": "primary"
+        },
+        {
+          "label": "Epoch AI, Five hyperscalers now own over two-thirds of global AI compute, 14 April 2026",
+          "url": "https://epoch.ai/data-insights/hyperscalers-control-most-compute",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "Forbes counted a record 3,428 billionaires worth an estimated $20.1 trillion at 1 March 2026 prices, 400 more people and up from $16.1 trillion in its 2025 list.",
+          "say": "Forbes counted a record three thousand four hundred and twenty-eight billionaires worth an estimated twenty point one trillion dollars at prices of the first of March twenty twenty-six, four hundred more people, and up from sixteen point one trillion dollars in its twenty twenty-five list."
+        },
+        {
+          "text": "Epoch AI estimates five hyperscalers held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024.",
+          "say": "Epoch AI estimates that five hyperscalers held seventy-one percent of the world's cumulative AI compute in the last quarter of twenty twenty-five, up from sixty-three percent in the first quarter of twenty twenty-four."
+        }
+      ],
+      "signals": 34
+    },
+    {
+      "field": "climate",
+      "state": "September 2026 was 1.63°C above pre-industrial and the 12 months to it 1.50°C; the month was the second-warmest September in Copernicus's ERA5 record. EM-DAT recorded 358 natural-hazard disasters, 16,607 deaths and 110.2 million people affected in 2025, figures still evolving.",
+      "as_of": "2026-09",
+      "direction": "worse",
+      "compared_with": "1.47°C in September 2025 (same ERA5 series and baseline). January to September 2026 ranks above the same months of 2023 and 2025, below 2024. The 12-month mean was 1.51°C a year earlier, so the rise does not show in that average. EM-DAT's 2025 deaths and people affected lie below its 2005–2024 averages of 57,429 and 169.0 million, but it cites reporting delays and no mega-disaster, and calls the burden typical.",
+      "sources": [
+        {
+          "label": "Copernicus Climate Change Service, Surface air temperature for September 2026",
+          "url": "https://climate.copernicus.eu/surface-air-temperature-september-2026",
+          "kind": "primary"
+        },
+        {
+          "label": "Copernicus Climate Change Service, Surface air temperature for September 2025",
+          "url": "https://climate.copernicus.eu/surface-air-temperature-september-2025",
+          "kind": "primary"
+        },
+        {
+          "label": "CRED, 2025 Disasters in Numbers: Earth, Wind & Fire, 2026",
+          "url": "https://files.emdat.be/reports/2025_EMDAT_report.pdf",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "September 2026 was 1.63°C above pre-industrial and the 12 months to it 1.50°C; the month was the second-warmest September in Copernicus's ERA5 record.",
+          "say": "September twenty twenty-six was one point six three degrees Celsius above pre-industrial, and the twelve months to it one point five zero degrees; the month was the second-warmest September in the Copernicus record."
+        },
+        {
+          "text": "EM-DAT recorded 358 natural-hazard disasters, 16,607 deaths and 110.2 million people affected in 2025, figures still evolving.",
+          "say": "The EM-DAT disaster database recorded three hundred and fifty-eight natural-hazard disasters, sixteen thousand six hundred and seven deaths and one hundred and ten point two million people affected in twenty twenty-five, figures still evolving."
+        }
+      ],
+      "signals": 78
+    },
+    {
+      "field": "health",
+      "state": "UN IGME estimates 4.9 million children died before age five in 2024, down from 6.1 million in 2015, and the pace of decline has slowed by 61%. DR Congo's Bundibugyo Ebola outbreak reached 10,414 confirmed cases, including 5,372 deaths, by 30 October 2026 (INSP).",
+      "as_of": "2024",
+      "direction": "unclear",
+      "compared_with": "6,096,000 under-five deaths in 2015 and 42.9 per 1,000 live births, against 4,858,000 and 37.4 in 2024 (UN IGME report 2025, Tables 1 and 4). The annual rate of reduction fell from 3.9% in 2000–2015 to 1.5% in 2015–2024. Ebola points the other way: 9,704 confirmed cases, including 4,687 deaths, on 20 October 2026 (INSP SitRep N°159); part of the rise in deaths since is Ituri's data harmonisation of 29 October.",
+      "sources": [
+        {
+          "label": "UN IGME, Levels and trends in child mortality, report 2025, March 2026",
+          "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, Progress in reducing child deaths slows as 4.9 million children die before age five, 18 March 2026",
+          "url": "https://www.who.int/news/item/18-03-2026-progress-in-reducing-child-deaths-slows-as-4.9-million-children-die-before-age-five",
+          "kind": "primary"
+        },
+        {
+          "label": "INSP DR Congo, SitRep N°169/MVE-BDBV/30/10/2026, published 31 October 2026",
+          "url": "https://insp.cd/sitrep-n169-mve-bdbv-30-10-2026/",
+          "kind": "primary"
+        },
+        {
+          "label": "INSP DR Congo, SitRep N°159/MVE-BDBV/20/10/2026, published 21 October 2026",
+          "url": "https://insp.cd/sitrep-n159-mve-bdbv-20-10-2026/",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "UN IGME estimates 4.9 million children died before age five in 2024, down from 6.1 million in 2015, and the pace of decline has slowed by 61%.",
+          "say": "The United Nations child mortality group estimates four point nine million children died before age five in twenty twenty-four, down from six point one million in twenty fifteen, and the pace of decline has slowed by sixty-one percent."
+        },
+        {
+          "text": "DR Congo's Bundibugyo Ebola outbreak reached 10,414 confirmed cases, including 5,372 deaths, by 30 October 2026 (INSP).",
+          "say": "Congo's Bundibugyo Ebola outbreak reached ten thousand four hundred and fourteen confirmed cases, including five thousand three hundred and seventy-two deaths, by the thirtieth of October twenty twenty-six."
+        }
+      ],
+      "signals": 22
+    },
+    {
+      "field": "displacement",
+      "state": "UNHCR estimates 117.8 million people were forcibly displaced at end-2025, 5.4 million fewer than a year earlier, with many returns under adverse circumstances. OCHA's plans list 252.8 million people in need in 2026; its global appeal was 44.3% funded on 1 November.",
+      "as_of": "2025-12",
+      "direction": "unclear",
+      "compared_with": "About 123.2 million at end-2024, 5.4 million more (UNHCR Global Trends 2025, same count). The fall reflects returns, and UNHCR says most came under adverse circumstances or to fragile contexts, raising concerns about their sustainability. UNHCR estimated about 117 to 118 million at end-April 2026. Funding on 1 November 2026: US$15.54bn of US$35.06bn (OCHA FTS).",
+      "sources": [
+        {
+          "label": "UNHCR, Global Trends 2025, 11 June 2026",
+          "url": "https://www.unhcr.org/sites/default/files/2026-06/global-trends-report-2025.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "UNHCR, Figures at a glance",
+          "url": "https://www.unhcr.org/about-unhcr/overview/figures-glance",
+          "kind": "primary"
+        },
+        {
+          "label": "OCHA, Humanitarian Action, 2026 plans",
+          "url": "https://humanitarianaction.info/",
+          "kind": "primary"
+        },
+        {
+          "label": "OCHA Financial Tracking Service, Coordinated plans 2026, data of 1 November 2026",
+          "url": "https://fts.unocha.org/plans/overview/2026",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "UNHCR estimates 117.8 million people were forcibly displaced at end-2025, 5.4 million fewer than a year earlier, with many returns under adverse circumstances.",
+          "say": "The UN refugee agency estimates one hundred and seventeen point eight million people were forcibly displaced at the end of twenty twenty-five, five point four million fewer than a year earlier, with many returns under adverse circumstances."
+        },
+        {
+          "text": "OCHA's plans list 252.8 million people in need in 2026; its global appeal was 44.3% funded on 1 November.",
+          "say": "The UN humanitarian office lists two hundred and fifty-two point eight million people in need in twenty twenty-six; its global appeal was forty-four point three percent funded on the first of November."
+        }
+      ],
+      "signals": 5
+    },
+    {
+      "field": "democracy",
+      "state": "V-Dem's best estimate is 92 autocracies and 87 democracies at end-2025, with 74% of people (6 billion) living in autocracies, up from 50% in 2005. Freedom House recorded a 20th consecutive year of decline in global freedom in 2025: 54 countries down, 35 up.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "50% of the world's population in autocracies in 2005 (V-Dem Democracy Report 2026, same regime classification). Freedom House: 46% of people in Free countries two decades ago, 21% now.",
+      "sources": [
+        {
+          "label": "V-Dem Institute, Democracy Report 2026, 10th edition, March 2026",
+          "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Freedom House, Freedom in the World 2026, press release, 19 March 2026",
+          "url": "https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "V-Dem's best estimate is 92 autocracies and 87 democracies at end-2025, with 74% of people (6 billion) living in autocracies, up from 50% in 2005.",
+          "say": "The V-Dem Institute's best estimate is ninety-two autocracies and eighty-seven democracies at the end of twenty twenty-five, with seventy-four percent of people, six billion, living in autocracies, up from fifty percent in two thousand and five."
+        },
+        {
+          "text": "Freedom House recorded a 20th consecutive year of decline in global freedom in 2025: 54 countries down, 35 up.",
+          "say": "Freedom House recorded a twentieth consecutive year of decline in global freedom in twenty twenty-five: fifty-four countries down, thirty-five up."
+        }
+      ],
+      "signals": 22
+    },
+    {
+      "field": "information",
+      "state": "RSF's 2026 index (covering 2025) rates press freedom \"difficult\" or \"very serious\" in 52.2% of 180 countries and territories, against 13.7% in 2002. In the 2026 Digital News Report survey, trust in news averaged 37% across 48 markets, the lowest since measuring began in 2015.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "13.7% in 2002 (RSF's own comparison, with thresholds homogenised across its 2013 and 2022 method changes). Digital News Report: trust fell from 40%, held for three years, to 37%, and fell in 29 of 48 markets over the year.",
+      "sources": [
+        {
+          "label": "RSF, 2026 World Press Freedom Index, analysis, 30 April 2026",
+          "url": "https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low",
+          "kind": "primary"
+        },
+        {
+          "label": "Reuters Institute, Digital News Report 2026, executive summary, 16 June 2026",
+          "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "RSF's 2026 index (covering 2025) rates press freedom \"difficult\" or \"very serious\" in 52.2% of 180 countries and territories, against 13.7% in 2002.",
+          "say": "The twenty twenty-six index of Reporters Without Borders, covering twenty twenty-five, rates press freedom difficult or very serious in fifty-two point two percent of one hundred and eighty countries and territories, against thirteen point seven percent in two thousand and two."
+        },
+        {
+          "text": "In the 2026 Digital News Report survey, trust in news averaged 37% across 48 markets, the lowest since measuring began in 2015.",
+          "say": "In the twenty twenty-six Digital News Report survey, trust in news averaged thirty-seven percent across forty-eight markets, the lowest since measuring began in twenty fifteen."
+        }
+      ],
+      "signals": 47
+    },
+    {
+      "field": "ai",
+      "state": "The AI Incident Database recorded 362 incidents in 2025, up from 233 in 2024. US payroll data show no widespread displacement, but employment at ages 22–25 in highly AI-exposed occupations was about 19% below the pace of less-exposed peers by June 2026; descriptive, not causal.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "233 incidents in 2024 (AI Index 2026, same database; AIID counts are revised and partly reflect what editors processed). The employment gap was 15% at the July 2025 data vintage, same measure, ADP data; the authors say it shrinks when education is accounted for and is larger than in national survey benchmarks.",
+      "sources": [
+        {
+          "label": "Stanford HAI, The 2026 AI Index Report, April 2026, counting the AI Incident Database",
+          "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+          "kind": "report"
+        },
+        {
+          "label": "Stanford Digital Economy Lab, No Widespread Displacement, but the AI Employment Gap for Young Workers Has Widened to 19%, 12 August 2026",
+          "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "The AI Incident Database recorded 362 incidents in 2025, up from 233 in 2024.",
+          "say": "The AI Incident Database recorded three hundred and sixty-two incidents in twenty twenty-five, up from two hundred and thirty-three in twenty twenty-four."
+        },
+        {
+          "text": "US payroll data show no widespread displacement, but employment at ages 22–25 in highly AI-exposed occupations was about 19% below the pace of less-exposed peers by June 2026; descriptive, not causal.",
+          "say": "US payroll data show no widespread displacement, but employment at ages twenty-two to twenty-five in highly AI-exposed occupations was about nineteen percent below the pace of less-exposed peers by June twenty twenty-six; descriptive, not causal."
+        }
+      ],
+      "signals": 1109
+    }
+  ]
+}
