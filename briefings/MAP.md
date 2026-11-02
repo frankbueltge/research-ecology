@@ -155,6 +155,11 @@ fortunes are, and how the whole is shared, is inequality's.
 
 ### AI and its harms
 
+Its attention counts a headline only when it names AI and a harm together (since 2026-11-02, architect's
+decision, wording private; the rule is `countTest` with the field's `requires` in the site's `map.ts`). Until
+then every mention of AI counted, so the first edition's 1,109 signals were mostly app-store entries, product
+news and developer posts, and do not compare with later editions.
+
 | Source | Comes | Read for |
 |---|---|---|
 | [AI Index Report](https://hai.stanford.edu/ai-index), Stanford HAI | yearly (April) | Documented AI incidents by year (from the AI Incident Database) and the responsible AI chapter. Past years are revised. |
