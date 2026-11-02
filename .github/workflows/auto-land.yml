@@ -69,6 +69,13 @@ jobs:
                 try { process.stdout.write(String(JSON.parse(s).period.to || "")); } catch {}
               });' || true
           }
+          # generated_at of relay/relay.json at a ref (ISO UTC, so it compares as a string)
+          relay_at() {
+            git show "$1:relay/relay.json" 2>/dev/null | node -e '
+              let s = ""; process.stdin.on("data", (d) => (s += d)).on("end", () => {
+                try { process.stdout.write(String(JSON.parse(s).generated_at || "")); } catch {}
+              });' || true
+          }
           # Newest first. A relay night re-reads every bulletin since main's period.to, so when two
           # relay branches wait (one failed, or the lander did not run in between), the newer one
           # lands and the older one is superseded below, instead of being merged on top of it.
@@ -85,10 +92,13 @@ jobs:
                   note "$name" skipped_draft_pr; echo "::endgroup::"; continue
                 fi ;;
             esac
-            # SUPERSEDED (narrow and provable): the branch changes nothing but relay/relay.json and
-            # its period.to is not later than main's. A newer night has re-read the same bulletins,
-            # so deleting the branch loses nothing; merging it would fail the append-only guard
-            # every night and teach everyone to ignore a red lander.
+            # SUPERSEDED (narrow and provable): the branch changes nothing but relay/relay.json, and
+            # its period.to is earlier than main's, or the same day and generated no later than
+            # main's. A newer run has re-read the same bulletins, so deleting the branch loses
+            # nothing; merging it would fail the append-only guard every night and teach everyone to
+            # ignore a red lander. A LATER RUN OF THE SAME DAY is not superseded (2026-11-02): after
+            # the relay's limits were raised, a second run that day recorded the convening's tally,
+            # and the rule as it stood, period.to alone, deleted it unread.
             mb="$(git merge-base origin/main "$b" 2>/dev/null || true)"
             changed=""
             if [ -n "$mb" ]; then changed="$(git diff --name-only "$mb" "$b" || true)"; fi
@@ -118,7 +128,8 @@ jobs:
             fi
             if [ "$changed" = "relay/relay.json" ]; then
               bto="$(relay_to "$b")"; mto="$(relay_to origin/main)"
-              if [ -n "$bto" ] && [ -n "$mto" ] && [[ ! "$bto" > "$mto" ]]; then
+              bat="$(relay_at "$b")"; mat="$(relay_at origin/main)"
+              if [ -n "$bto" ] && [ -n "$mto" ] && { [[ "$bto" < "$mto" ]] || { [ "$bto" = "$mto" ] && [[ ! "$bat" > "$mat" ]]; }; }; then
                 if git push origin --delete "$name"; then
                   note "$name" retired_superseded
                 else
