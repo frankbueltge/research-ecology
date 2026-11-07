@@ -125,18 +125,18 @@
   },
   {
    "field": "economy",
-   "state": "UNCTAD counts 3.7 billion people in 51 developing countries that spend more on net interest than on health or on education, 1.2 billion more than in 2010; their net interest bill reached $995 billion in 2025. The IMF projects world inflation at 4.7% in 2026, up from 4.1%.",
+   "state": "UNCTAD counts 3.7 billion people in 51 developing countries that spend more on interest than on health or on education, 1.2 billion more than in 2010; developing countries' net interest bill reached $995 billion in 2025. IMF: world inflation 4.7% in 2026, up from 4.1%.",
    "as_of": "2025",
    "direction": "worse",
-   "compared_with": "About 2.5 billion people in such countries in 2010 (UNCTAD, A World of Debt 2026: '1.2 billion more than in 2010'); the population figure lags the interest figures, its regional shares run to 2023. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO keeps 4.7% for 2026, a projection).",
+   "compared_with": "About 2.5 billion people in such countries in 2010 (UNCTAD, A World of Debt 2026: '1.2 billion more than in 2010'); the population figure lags the interest figures, its regional shares run to 2023. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, published 13 October, keeps 4.7% for 2026, a projection).",
    "lines": [
     {
      "text": "UNCTAD counts 3.7 billion people in 51 developing countries that spend more on interest than on health or on education, 1.2 billion more than in 2010.",
      "say": "UN Trade and Development counts three point seven billion people in fifty-one developing countries that spend more on interest than on health or on education, one point two billion more than in twenty ten."
     },
     {
-     "text": "Their net interest bill on public debt reached $995 billion in 2025.",
-     "say": "Their net interest bill on public debt reached nine hundred and ninety-five billion dollars in twenty twenty-five."
+     "text": "Developing countries' net interest bill on public debt reached $995 billion in 2025.",
+     "say": "Developing countries' net interest bill on public debt reached nine hundred and ninety-five billion dollars in twenty twenty-five."
     },
     {
      "text": "The IMF projects world inflation of 4.7% in 2026, up from 4.1% in 2025, driven by energy and food prices.",
@@ -151,8 +151,8 @@
      "kind": "primary"
     },
     {
-     "label": "IMF, World Economic Outlook October 2026, three key questions (IMF video, 12 October 2026)",
-     "url": "https://www.youtube.com/watch?v=0Mn2VlzQDcU",
+     "label": "IMF, World Economic Outlook, October 2026: Resilience Under Strain, Urgent Choices, 13 October 2026",
+     "url": "https://www.imf.org/en/publications/weo",
      "kind": "primary"
     },
     {
@@ -201,7 +201,7 @@
    "state": "Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. Google took 89.94% of worldwide search referrals in September 2026 (StatCounter).",
    "as_of": "2025",
    "direction": "worse",
-   "compared_with": "62.5% in Q1 2024 (Epoch AI, same series, H100-equivalents, finalised quarters; an estimate on incomplete coverage of chip ownership). Search is one market and has held between about 89% and 92% since 2024; it shows no direction of its own here.",
+   "compared_with": "63% in Q1 2024 (Epoch AI, same series, H100-equivalents, finalised quarters; an estimate on incomplete coverage of chip ownership). Search is one market, counted by StatCounter in page views; no direction is taken from it here.",
    "lines": [
     {
      "text": "Epoch AI estimates that five hyperscalers held 71% of the world's cumulative AI compute at the end of 2025, up from 63% early in 2024.",
@@ -253,14 +253,14 @@
   },
   {
    "field": "nature",
-   "state": "The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed, all with worsening trends. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5.",
+   "state": "The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed, all at their highest recorded level of transgression. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5.",
    "as_of": "2026",
    "direction": "worse",
    "compared_with": "Six of nine in the 2025 check before ocean acidification crossed in 2025 (PIK: 'the latest to breach its boundary in 2025'); all seven are at their highest recorded transgression. Air pollution deaths are model estimates, revised each edition, so no year-to-year direction is taken from them.",
    "lines": [
     {
-     "text": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all of them worsening.",
-     "say": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all of them worsening."
+     "text": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all at their highest recorded level.",
+     "say": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all at their highest recorded level."
     },
     {
      "text": "Air pollution contributed to 7.9 million deaths in 2023, by the State of Global Air's estimate.",
@@ -313,6 +313,11 @@
      "label": "ECDC, Ebola disease: multi-country outbreak 2026, updated 5 November",
      "url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026",
      "kind": "primary"
+    },
+    {
+     "label": "INSP, SitRep N°159/MVE-BDBV/20/10/2026",
+     "url": "https://insp.cd/sitrep-n159-mve-bdbv-20-10-2026/",
+     "kind": "primary"
     }
    ]
   },
@@ -321,7 +326,7 @@
    "state": "UNHCR estimates 117.8 million people forcibly displaced at end-2025, 5.4 million fewer than a year earlier. The 2026 Global Humanitarian Overview was 45.0% funded on 28 October: US$15.78 billion of US$35.06 billion.",
    "as_of": "2025-12",
    "direction": "unclear",
-   "compared_with": "About 123.2 million at end-2024, 5.4 million more (UNHCR Global Trends 2025, same count). The fall reflects returns, and UNHCR says most came under adverse circumstances or to fragile contexts, raising concerns about their sustainability. UNHCR estimated about 117 to 118 million at end-April 2026. Funding on 1 November 2026: US$15.54bn of US$35.06bn (OCHA FTS).",
+   "compared_with": "About 123.2 million at end-2024, 5.4 million more (UNHCR Global Trends 2025, same count). The fall reflects returns, and UNHCR says most came under adverse circumstances or to fragile contexts, raising concerns about their sustainability. UNHCR estimated about 117 to 118 million at end-April 2026. OCHA's Humanitarian Action put funding at US$15.75bn of US$35.06bn, 44.9%, on 5 November 2026.",
    "lines": [
     {
      "text": "UNHCR estimates 117.8 million people were forcibly displaced at the end of 2025, 5.4 million fewer than a year earlier.",
@@ -347,6 +352,11 @@
     {
      "label": "OCHA Financial Tracking Service, coordinated plans 2026, snapshot of 28 October 2026",
      "url": "https://fts.unocha.org/plans/overview/2026",
+     "kind": "primary"
+    },
+    {
+     "label": "OCHA, Humanitarian Action 2026, plan table of 5 November 2026",
+     "url": "https://humanitarianaction.info/",
      "kind": "primary"
     }
    ]
@@ -448,7 +458,7 @@
    "title": "Ebola in Congo, still running",
    "short": "Ebola in Congo",
    "field": "health",
-   "gist": "The Bundibugyo outbreak in eastern Congo keeps rising five months on, with cases in Kenya and Nigeria and no licensed vaccine for this strain.",
+   "gist": "The Bundibugyo outbreak in eastern Congo keeps rising nearly six months on, with cases in Kenya and Nigeria and no approved vaccine for this strain.",
    "quiet_rank": null,
    "terms": [
     "Ebola",
@@ -480,6 +490,16 @@
      "label": "INSP, SitRep 17th Ebola epidemic (daily reports)",
      "url": "https://insp.cd/ebola-17eme-epidemie/",
      "kind": "primary"
+    },
+    {
+     "label": "WHO, EPI-WIN webinar on the Bundibugyo outbreak (PHEIC; 10,467 cases on 31 October 2026)",
+     "url": "https://www.who.int/news-room/events/detail/2026/11/12/default-calendar/who-health-emergencies-epi-win-webinar-update-on-the-current-ebola-bundibugyo-virus-disease-outbreak",
+     "kind": "primary"
+    },
+    {
+     "label": "Clinical Trials Arena, WHO adds two more Ebola vaccines to clinical trial, 6 November 2026",
+     "url": "https://www.clinicaltrialsarena.com/news/who-adds-two-more-ebola-vaccines-to-clinical-trial",
+     "kind": "report"
     }
    ]
   },
@@ -599,6 +619,11 @@
      "label": "World Inequality Report 2026 (PDF)",
      "url": "https://wir2026.wid.world/www-site/uploads/2026/09/World_Inequality_Report_2026.pdf",
      "kind": "primary"
+    },
+    {
+     "label": "World Economic Forum, Global Risks Report 2026, 14 January 2026",
+     "url": "https://www.weforum.org/publications/global-risks-report-2026",
+     "kind": "primary"
     }
    ]
   },
@@ -607,7 +632,7 @@
    "title": "Five companies, most of the machines",
    "short": "Who owns AI compute",
    "field": "power",
-   "gist": "Five cloud companies own most of the world's computing power for AI, and their share is still growing.",
+   "gist": "Five cloud companies own most of the world's computing power for AI, and their share grew through 2025.",
    "quiet_rank": 6,
    "terms": [
     "hyperscaler",
@@ -766,9 +791,9 @@
      "kind": "primary"
     },
     {
-     "label": "Tantalya, COP31 Antalya 2026 guide",
-     "url": "https://tantalya.com/cop31/guide",
-     "kind": "report"
+     "label": "UNFCCC, COP31, Antalya, 9 to 20 November 2026",
+     "url": "https://unfccc.int/cop31",
+     "kind": "primary"
     }
    ]
   },
@@ -840,6 +865,10 @@
      "text": "The United States gave almost a third of the money tracked."
     },
     {
+     "text": "By 5 November OCHA's Humanitarian Action counted 44.9 percent, with Niger's plan at 20 percent.",
+     "say": "By the fifth of November OCHA's Humanitarian Action counted forty-four point nine percent, with Niger's plan at twenty percent."
+    },
+    {
      "text": "117.8 million people were forcibly displaced at the end of 2025.",
      "say": "One hundred and seventeen point eight million people were forcibly displaced at the end of twenty twenty-five."
     }
@@ -853,6 +882,11 @@
     {
      "label": "UNHCR, figures at a glance",
      "url": "https://www.unhcr.org/about-unhcr/overview/figures-glance",
+     "kind": "primary"
+    },
+    {
+     "label": "OCHA, Humanitarian Action 2026, plan table of 5 November 2026",
+     "url": "https://humanitarianaction.info/",
      "kind": "primary"
     }
    ]
@@ -930,5 +964,12 @@
    }
   }
  ],
- "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?"
+ "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?",
+ "checked": {
+  "on": "2026-11-07",
+  "claims": 163,
+  "held": 147,
+  "corrected": 15,
+  "dropped": 1
+ }
 }
