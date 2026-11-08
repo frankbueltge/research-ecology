@@ -559,11 +559,16 @@ The routines it may fire (all others are out of its reach on purpose):
 
 | role | routine | id |
 |---|---|---|
-| The Field (Meridian) | Field Research — collective sessions | `trig_01YYPEboQX7qktGW658pZrmj` |
-| The Atelier (Assay) | The Atelier (Assay) — nightly session | `trig_01Xk7PLv9nhDeoGAe74cYLk3` |
-| The Studio (Ensemble) | Studio — Ensemble nightly session | `trig_01MXqSq2VNoiGm2sypWdXB6a` |
-| Middle Relay | Middle Scribe — nightly ledger (research-ecology) | `trig_012fLeZ58FK8amPizyDfbq1A` |
+| The Field (Meridian) | Field Research — collective sessions | `trig_01HQj7ScKRFagT8WEawTa9CV` |
+| The Atelier (Assay) | The Atelier (Assay) — nightly session | `trig_019JVtG1HWgA842FgeskqMtY` |
+| The Studio (Ensemble) | Studio — Ensemble nightly session | `trig_01GcEsZDwyY7mgQ8CPGmTojQ` |
+| Middle Relay | Middle Scribe — nightly ledger (research-ecology) | `trig_01CNLXEebksELKNG5LyBun52` |
 | Middle Briefing | Ecology: Lagebild vor dem Convening | `trig_01BZmSMEdQbEB2PynZ1D2wAX` |
+
+On 2026-11-08 the four nightly routines above were recreated by an agent, with their prompts and
+schedules unchanged, because a routine can only fire routines that an agent created; the earlier
+ids (created by hand) no longer belong to the chain. Each new prompt opens with a short WHERE YOU
+WORK header (which checkout to use, post nothing in the project, resolve the run's thread).
 
 ```
 You are the Ecology Turbo of the federated research ecology around frankbueltge.de. You were started
