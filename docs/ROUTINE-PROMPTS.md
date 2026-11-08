@@ -512,7 +512,8 @@ P1. If programme/selection/dossier.md does not stand: you are the WRITER of the 
     programme/selection/dossier.md as "programme: dossier", push your claude/* branch, open a non-draft
     PR and merge it (squash). Post no message. End.
 P2. If the dossier stands and its status line was written less than eighteen hours ago: end with one line
-    ("dossier open for pleas").
+    ("dossier open for pleas"). Exception: this run was started by the Ecology Turbo (its start message
+    says so) and all three practices' BULLETIN.md on main carry a "Plea:" line; then go on with P3.
 P3. Otherwise you are the SECOND READER of the choice. Clone field-research, ulysses and studio read-only
     and read every BULLETIN.md version since the dossier was merged for lines "Plea:" and "Objection:".
     Check every claim of the dossier as step 7 checks a briefing; correct or drop what falls. Set the final
@@ -547,8 +548,10 @@ routine is the one button for that: it has no schedule, it is started by hand ("
 routine, or by asking any session of the project to fire it), and it starts the routines of one
 ecology run in the order the current state needs, waits for each to land, and says in German what it
 did and what is still waiting, and on what. It writes nothing itself: no file, no PR, no cycle.json.
-It cannot shorten a wait the rules set (the eighteen hours before the second reader, the veto day
-before a cycle opens); it names them with the hour they end.
+A press of the button is the architect's own act, so it does not wait for the eighteen hours before
+the programme's second reader once all three pleas stand (the wait exists only to let the pleas
+arrive; architect's decision of 2026-11-08, wording private). It does not shorten the veto day
+before a cycle opens; it names that with the hour it ends.
 
 The routines it may fire (all others are out of its reach on purpose):
 
@@ -600,15 +603,14 @@ FIRE AND WAIT (the same for every routine you start):
       Field -> Atelier -> Studio -> Middle Relay.
    B. phase "convening" and programme.status "selecting":
       B1. no programme/selection/dossier.md: Middle Briefing (it writes the dossier) -> Field ->
-          Atelier -> Studio (each writes its Plea/Objection lines). Then report that the second
-          reader may choose eighteen hours after the dossier was merged, with that hour in Berlin time.
+          Atelier -> Studio (each writes its Plea/Objection lines). Then re-read the bulletins and,
+          if all three pleas stand, go on as B3.
       B2. the dossier stands and a practice's BULLETIN.md lacks a "Plea:" line: fire only those
           practices, in the order Field, Atelier, Studio. Then as B3.
-      B3. all three pleas stand: let M be the time of the commit that added the current dossier
-          (git log --diff-filter=A -1 --format=%cI -- programme/selection/dossier.md). If now is at
-          least M + 18 hours: Middle Briefing (as second reader it makes the choice and sets
-          programme "chosen" in cycle.json). Otherwise fire nothing and report the hour M + 18 h in
-          Berlin time: that wait is the architect's rule, not a jam.
+      B3. all three pleas stand: Middle Briefing, fired with the text "Started by the Ecology
+          Turbo: all three pleas stand, the eighteen-hour wait of P2 is waived." As second reader it
+          makes the choice and sets programme "chosen" in cycle.json. If a plea is still missing,
+          fire nothing more and say which one.
    C. phase "convening" and programme.status "chosen": fire nothing. The cycle clock opens the first
       step the day after chosen_on unless the architect objects; if today is after chosen_on, start
       the workflow cycle-sentinel.yml on frankbueltge.de main. Report.
