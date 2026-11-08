@@ -415,7 +415,9 @@ run that finds no draft writes one, and the next run, finding it, checks it and 
 `docs/design/2026-11-08-the-programme.md`; rules in `programme/README.md`) the same run chooses and keeps
 the ecology's programme: one large question held for eight to twelve weeks. While the ecology chooses,
 it writes the dossier and then, as second reader, makes the choice; while a programme runs, it keeps
-`programme/STATE.md` instead of writing a briefing.
+`programme/STATE.md` instead of writing a briefing. Since the evening of 2026-11-08 (architect's decision,
+wording private) it writes the map beside it all the same, so that the site's instruments that read a
+briefing (Common Ground's watchlist, Ducking, Third Reading) do not stand still for twelve weeks.
 **Since 2026-11-01, later the same day** (architect's decision, wording private; on the site
 `docs/design/2026-11-01-the-map.md`) a briefing opens with the map of thirteen fields (`briefings/MAP.md`; eleven until 2026-11-02) and
 takes its matters from it.
@@ -435,7 +437,12 @@ Every run is a new session. You know nothing of the last run, and step 1 tells y
      presented, the section "What moved in the world" and any revision of PLAN.md, in a PR titled
      "programme draft: after cycle NNN" and marked "Draft: step after cycle NNN — unchecked" at the head
      of the new section; the second reader, finding that mark, checks every claim of the new section,
-     removes the mark and merges); the 13-field map, the briefing scripts and lines/ are not used; in step
+     removes the mark and merges); lines/ is not used. THE MAP GOES ON (since 2026-11-08, architect's
+     decision, wording private): beside STATE.md the writer also writes briefings/drafts/after-cycle-NNN.json
+     and .md exactly as steps 2 to 4 say (the thirteen fields re-read, matters taken from them, estimates,
+     the attention scripts), headed "The world beside the programme: after cycle NNN"; it feeds Common
+     Ground's watchlist, Ducking and Third Reading, not the proposals. The second reader checks it as steps
+     6 to 9 say, beside the new section of STATE.md, and moves it to briefings/. In step
      10 link "url": "https://github.com/frankbueltge/research-ecology/blob/main/programme/STATE.md" and
      "fallback": the next step of PLAN.md as one question. If the plan is done or the programme is twelve
      weeks old, follow "The end" in programme/README.md instead.

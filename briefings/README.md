@@ -25,6 +25,11 @@ A briefing now passes through two sessions.
 - The site reads the `.json`: a workflow turns it into a round of Third Reading, a round of Ducking and new
   seeds on Common Ground's watchlist, without a hand.
 
+*While a programme runs (since 2026-11-08, evening; architect's decision, wording private):* the briefing is
+still written and checked at every convening, under the title "The world beside the programme", but the
+practices propose the next step of the programme from `../programme/STATE.md`, not from the briefing. Its
+work is to keep the map current, and with it what the site reads from it.
+
 ## Sources, in four layers
 
 Every figure or date comes from a page the session opened, and is linked beside the sentence. A
