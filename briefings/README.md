@@ -19,7 +19,7 @@ A briefing now passes through two sessions.
 - **The next run is a new session and knows nothing of the first.** It finds the draft, reads every claim
   against its source, corrects or drops what fails, and moves both files to `briefings/`. Only then does
   it link the briefing in `cycle.json` as
-  `"briefing": { "url": "<the .md on github.com>", "fallback": "<the first matter of Urgent but quiet, as a question>" }`.
+  `"briefing": { "url": "<the .md on github.com>", "fallback": "<the first matter of The weightiest, as a question>" }`.
 - The practices' first convening sessions run the night after. A session that finds no briefing linked
   does not propose.
 - The site reads the `.json`: a workflow turns it into a round of Third Reading, a round of Ducking and new
@@ -80,8 +80,17 @@ have one now. `npm run briefing:check` holds a briefing to this. For each matter
 - open data to work with;
 - its attention in Common Ground, with the numbers.
 
-It ends with **Urgent but quiet**: the matters most urgent by the expert sources and least attended
-in Common Ground, best first. The first of them is the convening's fallback.
+*Since 2026-11-08 (architect's decision, wording private):* the briefing exists to bring the weightiest
+questions facing humanity to the convening, not the quietest. Among the matters there always stand the
+fields where the most lives are lost or at stake, at the scale the sources give them: a field such as war,
+climate or the power over AI is never left out because it is loud or because no single dataset answers it.
+
+It ends with two lists. First **The weightiest**: the matters ranked by what is at stake for humanity —
+how many lives, how irreversible, how far into the future — best first, three to five of them. The first
+of them is the convening's fallback, written as a question at the scale of the matter, never narrowed to
+what one dataset can count. Then **Urgent but quiet**: the matters most urgent by the expert sources and
+least attended in Common Ground, best first. It feeds Third Reading and Ducking and is read by the
+convening as information; it no longer decides the fallback.
 
 ## The data file
 

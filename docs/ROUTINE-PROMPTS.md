@@ -444,8 +444,11 @@ THE WRITER
    the only complaint it may leave is that the file is not checked yet. Write
    briefings/drafts/after-cycle-NNN.md (at most 135 lines): state in the header that attention is the
    house's one count, open with the section "The map" as a table, give each matter its signals and its
-   word from the script, and end with "Urgent but quiet" and a line "Fallback question: <the first matter,
-   as one question>".
+   word from the script, and end with "The weightiest" (three to five matters ranked by what is at stake
+   for humanity: lives, irreversibility, reach into the future), then "Urgent but quiet", and a line
+   "Fallback question: <the first matter of The weightiest, as one question at the scale of the matter>".
+   Never leave out a field where the most lives are lost or at stake (war, climate, power over AI) because
+   it is loud or because no single dataset answers it (architect's decision of 2026-11-08, wording private).
 5. Lines. Read research-ecology lines/README.md in full and follow "Who keeps them": read the three
    presentations of cycle NNN (presentations/cycle-NNN/SUMMARY.md in field-research, ulysses and studio,
    with their paragraph "For the line"), and file each into the line file it names: findings into Standing
