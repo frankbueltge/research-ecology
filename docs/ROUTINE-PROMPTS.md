@@ -411,6 +411,11 @@ lines" in the three constitutions; rules in `lines/README.md`) the same run also
 `docs/design/2026-11-01-the-checked-briefing.md`) it runs at 11:47, 13:47, 17:47 and 19:47 Berlin time. Every
 run is a new session that knows nothing of the last, and that is how a briefing gets a second reader: the
 run that finds no draft writes one, and the next run, finding it, checks it and links it.
+**Since 2026-11-08** (architect's decision, wording private; on the site
+`docs/design/2026-11-08-the-programme.md`; rules in `programme/README.md`) the same run chooses and keeps
+the ecology's programme: one large question held for eight to twelve weeks. While the ecology chooses,
+it writes the dossier and then, as second reader, makes the choice; while a programme runs, it keeps
+`programme/STATE.md` instead of writing a briefing.
 **Since 2026-11-01, later the same day** (architect's decision, wording private; on the site
 `docs/design/2026-11-01-the-map.md`) a briefing opens with the map of thirteen fields (`briefings/MAP.md`; eleven until 2026-11-02) and
 takes its matters from it.
@@ -421,7 +426,20 @@ Every run is a new session. You know nothing of the last run, and step 1 tells y
 
 1. Read https://raw.githubusercontent.com/frankbueltge/frankbueltge.de/main/src/data/ecology/cycle.json.
    If "phase" is not "convening", end with one line ("no convening open") and change nothing. Let NNN be
-   convening.after_cycle with three digits. Then, in research-ecology, on main:
+   convening.after_cycle with three digits.
+   THE PROGRAMME (since 2026-11-08) comes first. Read research-ecology programme/README.md in full.
+   - programme.status is "selecting": go to THE CHOICE (step P1) and do nothing else.
+   - programme.status is "chosen": end with one line ("choice stands, veto day runs").
+   - programme.status is "running": you keep the programme, not a briefing. Do steps 2 to 10 as written,
+     with these changes: the file is programme/STATE.md, not a briefing (the writer adds the step just
+     presented, the section "What moved in the world" and any revision of PLAN.md, in a PR titled
+     "programme draft: after cycle NNN" and marked "Draft: step after cycle NNN — unchecked" at the head
+     of the new section; the second reader, finding that mark, checks every claim of the new section,
+     removes the mark and merges); the 13-field map, the briefing scripts and lines/ are not used; in step
+     10 link "url": "https://github.com/frankbueltge/research-ecology/blob/main/programme/STATE.md" and
+     "fallback": the next step of PLAN.md as one question. If the plan is done or the programme is twelve
+     weeks old, follow "The end" in programme/README.md instead.
+   Without a programme block, go on as follows. In research-ecology, on main:
    - convening carries "briefing" and every active or resting file in lines/ says "Kept after cycle:
      NNN": end with one line ("briefing linked, lines kept").
    - convening carries "briefing" but the lines are behind: do step 5 alone, committed as "lines: kept
@@ -485,6 +503,37 @@ THE SECOND READER
     claude/* branch, open a non-draft PR, wait for its checks (the Workers Builds check is known red
     and does not count) and merge it (squash). The site derives everything else from the .json by itself.
     Post one short German message with the link, the fallback question and the count of the check.
+THE CHOICE (programme "selecting")
+P1. If programme/selection/dossier.md does not stand: you are the WRITER of the dossier. Follow section 1,
+    points 1 and 2 of programme/README.md: twelve candidates, every figure from a page you opened and
+    linked, the four scores with one line each. Read the newest briefing in briefings/ and MAP.md for the
+    fields, but take the candidates from the research and risk agendas the README names, not from the
+    news. Open the dossier with one line "Status: open for pleas since <today>". Commit only
+    programme/selection/dossier.md as "programme: dossier", push your claude/* branch, open a non-draft
+    PR and merge it (squash). Post no message. End.
+P2. If the dossier stands and its status line was written less than eighteen hours ago: end with one line
+    ("dossier open for pleas").
+P3. Otherwise you are the SECOND READER of the choice. Clone field-research, ulysses and studio read-only
+    and read every BULLETIN.md version since the dossier was merged for lines "Plea:" and "Objection:".
+    Check every claim of the dossier as step 7 checks a briefing; correct or drop what falls. Set the final
+    scores, naming for every changed score the argument that moved it, and add a section "Pleas and
+    objections" quoting each practice's lines. A candidate marked "objected by the architect" cannot win.
+    Choose by section 1, point 4. Change the status line to "Status: chosen on <today> — <number>".
+    Write programme/QUESTION.md, programme/PLAN.md (six to eight steps; each: the sub-question, the
+    Field's evidence, the Atelier's concept and critique, the Studio's form, the anchor data with links)
+    and programme/STATE.md (title, the question, empty headings "Step 1" … and "What moved in the world").
+    Commit as "programme: chosen — <short title>", push, open a non-draft PR and merge it (squash).
+P4. In frankbueltge.de set cycle.json's "programme" to status "chosen" with "question" (one sentence),
+    "chosen_on" (today), "first_step" (step 1 of PLAN.md as one question) and "objected": null, keeping
+    "since" and "url"; change nothing else. Run `npm run test -- src/lib/ecology` (it must pass). Commit
+    as "ecology: programme chosen", push your claude/* branch, open a non-draft PR, wait for its checks
+    and merge it (squash). Post one short German message: the question, the runner-up, that the first
+    step opens the day after today unless the architect objects, and the link
+    https://frankbueltge.de/question.
+P5. If the architect objected (programme.objected is set and status is "chosen" or "selecting" again):
+    mark the objected candidate in the dossier as "objected by the architect", take the runner-up
+    without new pleas, and do P3 (without re-reading pleas) and P4 for it.
+
 11. No quotes from the architect's messages anywhere; no co-author trailer, no product name. If
     blocked, fabricate nothing: open an issue on frankbueltge/research-ecology titled
     "Briefing blocked <DATE>" that says exactly what blocked you.
