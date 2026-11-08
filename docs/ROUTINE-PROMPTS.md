@@ -579,6 +579,10 @@ FIRE AND WAIT (the same for every routine you start):
      finished_at is set. Give up on it after 45 minutes and say so.
   c. If the status is FAILED with a usage limit, STOP THE WHOLE CHAIN at once: every routine shares
      one five-hour budget, and firing more only kills more. Report what ran and what did not.
+     The Middle Briefing runs as a thread of the project, and its last_run is marked finished the
+     moment it is delivered, not when its work is done. For it, skip b's finished_at and wait instead,
+     at most 60 minutes, until research-ecology main (or, for the choice, the site's cycle.json) has a
+     commit newer than the fire time, or until list_threads shows its new thread resolved.
   d. A practice or the relay pushes a branch that its repository's auto-land workflow lands. After
      the run, fetch that repository's main (field-research, ulysses, studio or research-ecology) and
      wait, at most 20 minutes, until a commit newer than the fire time is on main. If none comes,
