@@ -529,8 +529,10 @@ P4. In frankbueltge.de set cycle.json's "programme" to status "chosen" with "que
     "since" and "url"; change nothing else. Run `npm run test -- src/lib/ecology` (it must pass). Commit
     as "ecology: programme chosen", push your claude/* branch, open a non-draft PR, wait for its checks
     and merge it (squash). Post one short German message: the question, the runner-up, that the first
-    step opens the day after today unless the architect objects, and the link
-    https://frankbueltge.de/question.
+    step opens the day after today unless the architect objects, that he can instead answer "go" in the
+    project to open it at once, and the link https://frankbueltge.de/question. Whoever receives his go
+    sets "go" (today) in cycle.json's "programme" by a merged PR in frankbueltge.de and then starts
+    cycle-sentinel.yml there; the clock opens the first step in that run.
 P5. If the architect objected (programme.objected is set and status is "chosen" or "selecting" again):
     mark the objected candidate in the dossier as "objected by the architect", take the runner-up
     without new pleas, and do P3 (without re-reading pleas) and P4 for it.
@@ -612,7 +614,8 @@ FIRE AND WAIT (the same for every routine you start):
           makes the choice and sets programme "chosen" in cycle.json. If a plea is still missing,
           fire nothing more and say which one.
    C. phase "convening" and programme.status "chosen": fire nothing. The cycle clock opens the first
-      step the day after chosen_on unless the architect objects; if today is after chosen_on, start
+      step the day after chosen_on unless the architect objects, or at once once he has said go
+      (programme.go); remind him he can answer "go" in the project; if today is after chosen_on, start
       the workflow cycle-sentinel.yml on frankbueltge.de main. Report.
    D. phase "convening" otherwise (a programme running, or none):
       D1. convening.briefing is missing in cycle.json: Middle Briefing (the writer), then Middle
