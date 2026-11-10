@@ -629,7 +629,7 @@
     },
     {
       "id": "organised-violence",
-      "title": "A record of wars between states",
+      "title": "A record of conflicts between states",
       "short": "Record of state conflicts",
       "field": "war",
       "gist": "Organised violence killed far more people in 2025 than the year before, in more conflicts between states than ever recorded.",
@@ -654,6 +654,10 @@
         {
           "text": "UCDP recorded 65 state-based conflicts in 2025, the most since its records begin.",
           "say": "The program recorded sixty-five state-based conflicts in twenty twenty-five, the most since its records begin."
+        },
+        {
+          "text": "Eight of them were fought between states, up from two in 2023, the most since 1946.",
+          "say": "Eight of them were fought between states, up from two in twenty twenty-three, the most since nineteen forty-six."
         },
         {
           "text": "SIPRI put world military spending at 2,887 billion dollars in 2025.",
@@ -994,5 +998,12 @@
       }
     }
   ],
-  "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?"
+  "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?",
+  "checked": {
+    "on": "2026-11-10",
+    "claims": 86,
+    "held": 83,
+    "corrected": 3,
+    "dropped": 0
+  }
 }
