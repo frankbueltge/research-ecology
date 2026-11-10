@@ -1,7 +1,7 @@
 # The world beside the programme: after cycle 013
 
-*Draft: written 2026-11-10 for the convening after cycle 013, unchecked. While the programme runs, the practices
-propose the next step from [`programme/STATE.md`](../../programme/STATE.md), not from this file; it keeps the map
+*Written 2026-11-10 for the convening after cycle 013, checked the same day by a second session (see Checked). While the programme runs, the practices
+propose the next step from [`programme/STATE.md`](../programme/STATE.md), not from this file; it keeps the map
 current for Common Ground's watchlist, Ducking and Third Reading. Attention is the house's one count:
 `npm run briefing:attention` in frankbueltge.de over Common Ground's 30 day files 2026-10-12 to 2026-11-10 (27,437
 signals), by Third Reading's rule: **loud** means it converged on a day, **quiet** ten signals or more, **absent**
@@ -10,9 +10,9 @@ fewer. Common Ground is a set of public charts, not the world's press; quiet mea
 *Three days after the checked briefing after cycle 012. Re-read on 2026-11-10 and changed: health (ECDC's
 newer Ebola count), power (StatCounter's October figure), and the matters on aid (OCHA's plan table of
 8 November) and COP31 (opened 9 November). The other eleven map lines and their figures are those checked on
-2026-11-07; their sources had no new edition then, and the next due (Hunger Hotspots, the Tax Justice Network's
-yearly report, the IUCN Red List 2026-2) could not be confirmed as published from this run, where the search
-services refused further requests. The second session re-reads them.*
+2026-11-07; their sources had no new edition then, and the next due were not yet out on 2026-11-10: the Hunger Hotspots
+outlook from November, the Tax Justice Network's yearly report, and the IUCN Red List 2026-2, set for 26 November
+([IUCN](https://www.iucnredlist.org/assessment/updates)).*
 
 ## The map
 
@@ -62,12 +62,13 @@ more than two million ([HEI, 2025-10-22](https://www.stateofglobalair.org/news-e
 Model estimates, revised with each edition. Open question: where exposure is known only from models. Data: State of
 Global Air data tool, OpenAQ. Attention: **loud** (9 signals, 1 converged day).
 
-**5. A record of wars between states** (war). UCDP counted about 244,600 people killed in organised violence in 2025,
-up from about 187,000 in 2024, and 65 state-based conflicts, the most in its records
+**5. A record of conflicts between states** (war). UCDP counted about 244,600 people killed in organised violence in 2025,
+up from about 187,000 in 2024, and 65 state-based conflicts, the most in its records, eight of them between states, up from two in 2023
 ([Uppsala University, 2026-06-09](https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states);
 [Journal of Peace Research](https://academic.oup.com/jpr/article/63/4/705/8703754)). SIPRI put world military spending
 at $2,887 billion in 2025, up 2.9 % in real terms ([SIPRI](https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025)).
-Open question: why conflicts between states multiply while UCDP's other two types move differently. Data: UCDP
+Open question: why conflicts between states and killings of civilians rise while non-state conflicts fall (UCDP:
+14,500 deaths, the lowest since 2013). Data: UCDP
 datasets, SIPRI Milex. Attention: **loud** (44 signals, 2 converged days).
 
 **6. A fifth of those counted, in crisis** (hunger). 266 million people in 47 food-crisis countries and territories
@@ -111,3 +112,20 @@ Compute (cycle 013) and Ebola (cycle 012) are the last two cycles' subjects and 
 4. **A fifth of those counted, in crisis**: 266 million people, 11 signals.
 
 Fallback question: How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?
+
+## Checked
+
+Read against its sources on 2026-11-10 by a second session that did not write it: 86 claims (map, matters and
+estimates), **83 held, 3 corrected, 0 dropped**. The changed lines (StatCounter for October, ECDC's count to
+4 November, OCHA's plan table of 8 November, COP31's opening, the new matters 5 to 8) were read on their pages;
+the map lines carried from the briefing checked on 2026-11-07 were re-read for newer editions, and none had one.
+
+- Header: the three next editions are not "unconfirmed" but not yet out on 2026-11-10; IUCN 2026-2 is set for 26 November.
+- Matter 5: UCDP's 65 are conflicts with a state on at least one side; the record between states is eight (two in 2023).
+  Title changed from "wars" to "conflicts between states", and the eight added.
+- Matter 5: "UCDP's other two types move differently" made specific: one-sided violence rose to its highest since 1994,
+  non-state conflicts fell to 14,500 deaths, the lowest since 2013.
+- Neglected-crises lists: no new edition since the last check (NRC 2025, published June 2026, Sudan first; CARE,
+  January 2026, Central African Republic first). Sudan stands here through matter 3 (its plan 48.7 % funded on
+  8 November); DR Congo through Ebola; the Central African Republic still has no global source on the map.
+  Urgent but quiet stands.
