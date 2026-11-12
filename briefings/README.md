@@ -123,6 +123,20 @@ factual statement, in the text and in the data, opens the source of each, and gi
   source says, and link the original if the draft linked a report.
 - **Dropped:** the source does not say it and no other page does. It goes.
 
+**Three more readings, since 2026-11-13** (architect's order after a review of the ecology, wording private).
+A claim can agree with its source and still mislead: the state after the programme's first step held three such
+claims, each true to the work it came from. The second session therefore also reads
+
+- **the claims against each other.** Two figures for the same thing cannot both be held. One is corrected, or
+  the text says why they differ: another denominator, another date, another list.
+- **the source's own caveat.** Where a source limits a figure (what it counts, from when, how sure it is), the
+  limit travels with the figure. A comparison across a change in what is counted is cut to the span that
+  compares, or says what changed.
+- **the critique on record.** Where a sibling's critique, a correction or a declined offer contradicts or limits
+  a claim, the claim is held only as far as that leaves it, and the critique is linked.
+
+Each of these is a correction like any other and gets its line under **Checked**.
+
 The thirteen lines of the map are claims like any other. A claim that cannot be confirmed is not confirmed.
 If a title or a matter rested on a claim that falls, the title changes or the matter goes. It also reads
 **Urgent but quiet** against the newest lists of neglected crises named in [`MAP.md`](MAP.md), and names a
