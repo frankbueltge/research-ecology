@@ -224,6 +224,11 @@ while no convening has been recorded.
 
 ### When the relay records them
 
+- **Inside a running programme there are none, since 2026-11-13.** The plan sets the next step
+  (`../programme/README.md`, section 2, point 3): the practices write no `Proposed question:` and no
+  `Ranking:`, so the relay records no convening for such a step and keeps the last one it holds. That
+  is no gap and needs no note. A line `Next step:` in a presentation or `Objection to the step:` in a
+  bulletin is for the Middle's research desk, not for the relay.
 - **Proposals and rankings** only while the site's `cycle.json` (read in step 1 of the prompt)
   shows `"phase": "convening"` with `"convening": { "after_cycle": N, "opened": "YYYY-MM-DD" }`, and
   only from bulletin versions committed on or after that `opened` day. While `cycle.json` is not in
