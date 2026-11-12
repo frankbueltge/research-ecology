@@ -490,7 +490,10 @@ THE SECOND READER
 7. List every figure, date and factual statement in both files, the thirteen lines of the map included.
    Open the source of each and give it one
    word: held, corrected or dropped. Check that it comes from the original wherever one exists, and for every
-   state of affairs look for what has happened since. You may hand matters to subagents; you answer for the
+   state of affairs look for what has happened since. Then read the claims against each other (two figures
+   for the same thing cannot both be held), against each source's own caveat (what it counts, from when, how
+   sure) and against the critique on record (a sibling's critique, a correction, a declined offer), as the
+   README says under "Three more readings". You may hand matters to subagents; you answer for the
    result. A fetch can be old: where a page's date or a figure looks wrong, read it with curl.
 8. Correct both files. A title or a matter that rested on a claim that fell changes or goes. In the .json
    write "checked": { "on": "<today>", "claims": n, "held": n, "corrected": n, "dropped": n }. At the end of the
