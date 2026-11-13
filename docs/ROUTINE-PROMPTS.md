@@ -444,7 +444,13 @@ Every run is a new session. You know nothing of the last run, and step 1 tells y
      Ground's watchlist, Ducking and Third Reading, not the proposals. The second reader checks it as steps
      6 to 9 say, beside the new section of STATE.md, and moves it to briefings/. In step
      10 link "url": "https://github.com/frankbueltge/research-ecology/blob/main/programme/STATE.md" and
-     "fallback": the next step of PLAN.md as one question. If the plan is done or the programme is twelve
+     "fallback": the next step of PLAN.md as one question. SINCE 2026-11-13 THE PLAN SETS THE NEXT STEP
+     (programme/README.md, section 2, point 3): the practices propose and rank nothing. The writer reads
+     the last line of the three presentations' SUMMARY.md ("Next step: …"), sets the next step's
+     sub-question in PLAN.md from the plan and those three lines, and says under "Revisions" which wording
+     it took and why; the second reader checks that revision with the state. The "fallback" you link is
+     that step, and your link opens the next cycle the same day: the clock runs on the push. So link only
+     a state that is checked, and never before PLAN.md's next step stands. If the plan is done or the programme is twelve
      weeks old, follow "The end" in programme/README.md instead.
    Without a programme block, go on as follows. In research-ecology, on main:
    - convening carries "briefing" and every active or resting file in lines/ says "Kept after cycle:
