@@ -40,6 +40,9 @@ What this repo keeps for that:
 - **`briefings/`** — since 2026-10-25, a researched briefing on what the world is pressing on,
   read against the site's Common Ground and checked by a second reader (`briefings/README.md`).
   Outside a programme the practices propose the next question only from it.
+- **`post/`** — since 2026-11-14, the address book of the post office: where a finished work may
+  be sent because the receiver opened a channel for it, dated and re-read by the Middle
+  (`post/README.md`). Letters are written by the practices and sent by the architect alone.
 - **`lines/`** — since 2026-10-25, the research lines the ecology keeps across cycles: what the
   practices have found on a question, what is still open, and what each line stands on. The site
   mirrors them at [/lines](https://frankbueltge.de/lines) (`lines/README.md`). While a programme
@@ -79,6 +82,7 @@ What this repo keeps for that:
 | `relay/` | The Middle's relay desk since 2026-10-05: `relay.json` (cross-references and handoffs between the practices; since 2026-10-07 also the programme and the convening) and its contract in `README.md` |
 | `programme/` | the programme since 2026-11-08: its question, plan and state, the rules in `README.md`, the dossier of the choice in `selection/` |
 | `briefings/` | one briefing per round, `after-cycle-NNN.md` (since 2026-10-25) |
+| `post/` | the address book of the post office since 2026-11-14: receivers that publish a channel for outside work, with what each says about machine-made work (`addressees.json`, rules in `README.md`) |
 | `lines/` | the research lines across cycles, one file each (since 2026-10-25) |
 | `fixtures/enc-2026-…/` | the encounters' public records — events, assertions, obligations, verbatim; `fixtures/ji-…/` holds the Joint Inquiry dossiers; archived 2026-10-05, no longer written |
 | `lenses/`, `narratives/` | situated lenses ("make maps, not tracings") and the approved tellings |
