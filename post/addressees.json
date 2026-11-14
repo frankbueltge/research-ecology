@@ -1,0 +1,760 @@
+{
+  "contract": "post-addressees/1",
+  "kept_on": "2026-11-14",
+  "note": "Receivers that publish a channel of their own for outside work. Rules: post/README.md. Every entry was read on the day in \"checked\"; re-read the channel page before a letter is written.",
+  "entries": [
+    {
+      "name": "EMAF – European Media Art Festival (Osnabrück), EMAF 40",
+      "kind": "call",
+      "standing": "open",
+      "home": "https://www.emaf.de/",
+      "channel_type": "form",
+      "channel": "https://emaf.filmchief.com/entry-forms",
+      "channel_page": "https://www.emaf.de/",
+      "takes": "Film, Installation and Expanded (performance, live, workshop) media art finished 2026 or later; installations must relate to the 2027 theme of the archive as a tool for knowledge production.",
+      "machine_made": "nothing stated on the call page or entry-form page; the regulations PDF linked there was not read",
+      "deadline": "2026-12-15",
+      "cost": "none (page says no fee now or in future)",
+      "language": "de/en",
+      "fits": "interactive pages and data art as Installation; the OONI organ piece as Expanded/Installation",
+      "caveat": "Closes earlier if 2,200 works arrive. Installation must fit the archive theme. Regulations PDF not read, so AI rules unknown.",
+      "checked": "2026-11-14",
+      "recheck": "2026-12-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "NIME 2027 (New Interfaces for Musical Expression), Paris",
+      "kind": "call",
+      "standing": "open",
+      "home": "https://nime2027.org",
+      "channel_type": "call",
+      "channel": "https://nime2027.org/call",
+      "channel_page": "https://nime2027.org/call",
+      "takes": "Peer-reviewed tracks Papers, Music/Performance, Art/Installations (deadline 31 Jan 2027) plus juried tracks alt.nime and Artifacts & Ideas (4 Apr 2027).",
+      "machine_made": "nothing stated on call, key-dates or instructions pages; submission instructions not yet published",
+      "deadline": "2027-01-31",
+      "cost": "none stated for submission; fees not published",
+      "language": "en",
+      "fits": "Art/Installations or alt.nime for the live OONI censorship organ piece or the ducking desk",
+      "caveat": "Instrument/interface focus; a data sonification must frame itself as an instrument. Submission system opens 2026-12-04; juried deadline 2027-04-04 is a later option.",
+      "checked": "2026-11-14",
+      "recheck": "2026-12-04",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Canary Media (newsroom tips)",
+      "kind": "newsroom",
+      "standing": "open",
+      "home": "https://www.canarymedia.com",
+      "channel_type": "email",
+      "channel": "tips@canarymedia.com",
+      "channel_page": "https://www.canarymedia.com/contact",
+      "takes": "A tips address for the newsroom, listed beside media, sponsorship and general contacts; Canary covers clean energy including data centres and grids.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "data-centre grid-connection and permitting acts from the compute record",
+      "caveat": "A tips line, not a pitch or submissions line; the address is a Cloudflare-obscured link on the page (decoded). Site shows 404 for /pitch.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "netzpolitik.org",
+      "kind": "newsroom",
+      "standing": "open",
+      "home": "https://netzpolitik.org",
+      "channel_type": "email",
+      "channel": "kontakt@netzpolitik.org",
+      "channel_page": "https://www.netzpolitik.org/kontakt/",
+      "takes": "Welcomes substantive tips on its topics and invites enquiries about guest contributions, in German or English; no press releases, SEO spam or commercial offers.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "de",
+      "fits": "censorship measurement piece or compute-governance record for the digital-rights desk",
+      "caveat": "The general contact address; capacity is limited and guest contributions are by enquiry only.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "CLOT Magazine",
+      "kind": "outlet",
+      "standing": "open",
+      "home": "https://clotmag.com/",
+      "channel_type": "email",
+      "channel": "submissions@clotmag.com",
+      "channel_page": "https://clotmag.com/contact",
+      "takes": "Pitches and submissions for an art and culture magazine.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "weak: only if a work is framed as art writing or a feature",
+      "caveat": "No guidelines on the page; the fetched text listed only the address under a 'Submissions and pitches' heading. Focus on art and culture more broadly than media art.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Datawrapper Data Vis Dispatch",
+      "kind": "outlet",
+      "standing": "open",
+      "home": "https://www.datawrapper.de/blog/category/data-vis-dispatch",
+      "channel_type": "email",
+      "channel": "blog@datawrapper.de",
+      "channel_page": "https://www.datawrapper.de/blog/data-vis-dispatch-november-3-2026-midterm-elections-halloween-candies-and-the-30daymapchallenge",
+      "takes": "The weekly roundup of the best new visualisations from newsrooms and others; each edition asks readers to write in with suggestions of sources.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "a visually strong interactive chart or map, once published",
+      "caveat": "The invitation is to suggest newsletters, blogs and accounts to follow, not explicitly to send single works; the Dispatch covers only work published in the last seven days (per search summary of an earlier edition, not read on the page).",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Neural magazine",
+      "kind": "outlet",
+      "standing": "open",
+      "home": "https://neural.it/",
+      "channel_type": "form",
+      "channel": "https://neural.it/contact/",
+      "channel_page": "https://neural.it/contact/",
+      "takes": "Contact form with options to submit review material or a link about new media art, electronic music and hacktivism.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en/it",
+      "fits": "the Comma sound piece, the weekly album, the atlas of 629 data-art works",
+      "caveat": "The form lists categories only; no written submission guidelines were found. The form needs a name and email and has a captcha, so it must be used by Frank himself.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Nightingale (Data Visualization Society)",
+      "kind": "outlet",
+      "standing": "open",
+      "home": "https://nightingaledvs.com/",
+      "channel_type": "email",
+      "channel": "Nightingale@datavisualizationsociety.org",
+      "channel_page": "https://nightingaledvs.com/about/",
+      "takes": "Articles on any aspect of data visualisation and information design, 500 to 3,000 words, sent as a Google Doc link plus images; also ideas and pitches.",
+      "machine_made": "nothing stated (no AI policy on https://nightingaledvs.com/article-submission/ or /about/)",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "a making-of or methods article on a data-art or sonification work",
+      "caveat": "The submission page (https://nightingaledvs.com/article-submission/) says you must be a DVS member and give three weeks of exclusivity; membership terms not checked.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Epoch AI (feedback form on the AI chip owners dataset page)",
+      "kind": "source",
+      "standing": "open",
+      "home": "https://epoch.ai",
+      "channel_type": "form",
+      "channel": "https://epoch.ai/data/ai-chip-owners (Feedback form at the bottom: message, name, email); general form with a 'Data' subject at https://epoch.ai/contact",
+      "channel_page": "https://epoch.ai/data/ai-chip-owners",
+      "takes": "Questions and reports of errors about the dataset; the contact form has a Data subject and says they respond if they can accommodate the request. No stated route for 'work built on our data'.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "the compute-frontier study built on Epoch's chip-owner data; a correction or a courtesy notice that the study exists",
+      "caveat": "A feedback form, not a showcase; a reply is not promised ('We will respond if we can accommodate your request'). Data is CC BY, so no permission is needed to use it. Page text was read through a fetch tool that summarises, so the quotes should be re-checked on the live page.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "OONI (Open Observatory of Network Interference)",
+      "kind": "source",
+      "standing": "open",
+      "home": "https://ooni.org",
+      "channel_type": "email",
+      "channel": "contact@ooni.org (also Slack channel #ooni-data-analysis, ooni-talk mailing list)",
+      "channel_page": "https://ooni.org/about/contact",
+      "takes": "General contact for the OONI team; the Get Involved page points researchers who use OONI data to the #ooni-data-analysis Slack channel and offers a partnership programme for joint research.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "the live sound piece that plays OONI censorship measurements as organ tones",
+      "caveat": "No page lists or invites projects built on OONI data; the address is a general one with no research-showcase function. Slack needs an account, which the house must not create without Frank. Treat as a courtesy note, not a submission.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Wikimedia Research Newsletter / wiki-research-l",
+      "kind": "source",
+      "standing": "open",
+      "home": "https://meta.wikimedia.org/wiki/Research:Newsletter",
+      "channel_type": "other",
+      "channel": "Suggest a paper or project on the current coordination Etherpad (linked from the page, e.g. https://etherpad.wikimedia.org/p/WRN202611); announce code releases, events, CFPs or research blog posts to the wiki-research-l mailing list; general questions: wikiresearch-contact at googlegroups.com",
+      "channel_page": "https://meta.wikimedia.org/wiki/Research:Newsletter",
+      "takes": "Volunteer-written monthly newsletter on research about Wikimedia projects; anyone may suggest a paper or project on the Etherpad, and announcements go to the research mailing list.",
+      "machine_made": "nothing stated on this page",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "any house work built on Wikipedia or Wikimedia data (the atlas, the Wikipedia-fed live pieces)",
+      "caveat": "Covers research about Wikimedia, not merely using its data; a work must be about the projects to fit. The mailing list wants brief, on-topic posts. Wikimedia communities are wary of AI-written text, so disclose the machine origin plainly. The mailing list's own page (lists.wikimedia.org, wiki-research-l) names owners wiki-research-l-owner@lists.wikimedia.org and welcomes announcements of events, opportunities and recognition; a work announcement is not explicitly listed there.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "The Pudding Cup",
+      "kind": "call",
+      "standing": "disclose",
+      "home": "https://pudding.cool/",
+      "channel_type": "form",
+      "channel": "https://forms.gle/Uwx9KJ18GSbW27ek7",
+      "channel_page": "https://pudding.cool/pudding-cup/",
+      "takes": "Free entry by URL of a non-commercial visual data-driven story published online in 2026; up to three winners get $1,500 each.",
+      "machine_made": "Not a rule, but the page says 'We're not here to police how you create a visual data-driven story' and warns that if entries are 'drowning in slop' the form may close (https://pudding.cool/pudding-cup/).",
+      "deadline": "2026-11-30",
+      "cost": "none",
+      "language": "en",
+      "fits": "a single finished interactive page or data-art work from the compute or censorship themes",
+      "caveat": "Must be your own work, one entry per person, non-commercial, published in 2026; 'must be your own work' sits uneasily with machine-made authorship, so ask or disclose plainly; deadline is 16 days away; questions to sup@pudding.cool.",
+      "checked": "2026-11-14",
+      "recheck": "2026-11-25",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "xCoAx 2027 (Computation, Communication, Aesthetics & X)",
+      "kind": "call",
+      "standing": "disclose",
+      "home": "https://xcoax.org/",
+      "channel_type": "call",
+      "channel": "https://xcoax.org/",
+      "channel_page": "https://xcoax.org/",
+      "takes": "Papers, artworks and performances on computation and aesthetics; conference 7-9 July 2027 in Évora, Portugal; submission via Microsoft CMT.",
+      "machine_made": "AI use allowed but must be declared in every submission (https://xcoax.org/)",
+      "deadline": "2027-01-31",
+      "cost": "Submission free as far as read; registration if accepted: EUR 400 regular, 200 reduced, 80 general audience",
+      "language": "en",
+      "fits": "Artworks track for the OONI organ piece or ducking desk; paper track for the AI-compute-governance data art",
+      "caveat": "Dedicated call page URL returned 404; facts read from the home page. Machine-run practice as author must be disclosed fully.",
+      "checked": "2026-11-14",
+      "recheck": "2026-12-15",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "IEEE VIS Arts Program (VISAP)",
+      "kind": "call",
+      "standing": "not-now",
+      "standing_note": "the 2027 call is not published; it asks that AI parts are acknowledged",
+      "home": "https://visap.net/",
+      "channel_type": "call",
+      "channel": "https://visap.net/2026/",
+      "channel_page": "https://visap.net/2026/",
+      "takes": "Call for artworks for the VISAP exhibition alongside IEEE VIS: 2-page PDF with media, via the IEEE VGTC Precision Conference System.",
+      "machine_made": "Welcomed with scrutiny: collaboration with AI encouraged; committee assesses relevance, ethics and creative intent; AI components must be acknowledged (https://visap.net/2026/)",
+      "deadline": null,
+      "cost": "none stated for submission; registration costs if accepted",
+      "language": "en",
+      "fits": "data art on compute-frontier and public-body-action data; the visualisation and mixing-desk works",
+      "caveat": "The 2026 call closed 2026-07-07; the 2027 call is not published yet, so the channel is last year's page. Check the page again in spring 2027.",
+      "checked": "2026-11-14",
+      "recheck": "2027-03-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Lumen Prize",
+      "kind": "call",
+      "standing": "not-now",
+      "standing_note": "the 2027 call and its fee are not published",
+      "home": "https://lumenprize.org/",
+      "channel_type": "call",
+      "channel": "https://lumenprize.org/faq",
+      "channel_page": "https://lumenprize.org/faq",
+      "takes": "Annual prize for art made with technology; categories Legacy Futures, Systems & Structures, Experiential Innovation; entry via online form.",
+      "machine_made": "nothing stated on AI; work must be 'created, at least in part, on digital devices' (https://lumenprize.org/terms)",
+      "deadline": null,
+      "cost": "entry fee exists (non-refundable, amount not stated on pages read); bursary available",
+      "language": "en",
+      "fits": "interactive data art and sound pieces",
+      "caveat": "2026 call closed 2026-05-27; 2027 dates not published. Fee amount not seen.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Prix Ars Electronica",
+      "kind": "call",
+      "standing": "not-now",
+      "standing_note": "the next call opens in January 2027",
+      "home": "https://ars.electronica.art/prix/en/",
+      "channel_type": "call",
+      "channel": "https://ars.electronica.art/prix/en/opencall/",
+      "channel_page": "https://ars.electronica.art/prix/en/opencall/",
+      "takes": "Open call for media art in categories incl. Artificial Life & Intelligence and Digital Musics & Sound Art; next call opens January 2027.",
+      "machine_made": "No eligibility rule on AI-made work found; the rights page says Ars Electronica may use submitted works for AI research and may publish anonymised statistics on 'whether AI was used for the submitted work' (https://ars.electronica.art/prix/en/rights/)",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "Comma (sound piece) or the mixing desk for Digital Musics & Sound Art; data art for Artificial Life & Intelligence",
+      "caveat": "2026 call closed (deadline was 2026-03-09); 2027 deadline not yet published. Rights terms allow organisers to use works for AI research, which sits uneasily with an open-licence house policy.",
+      "checked": "2026-11-14",
+      "recheck": "2027-01-15",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Radiophrenia (Glasgow art radio)",
+      "kind": "call",
+      "standing": "not-now",
+      "standing_note": "no call is open",
+      "home": "https://radiophrenia.scot/",
+      "channel_type": "email",
+      "channel": "info@radiophrenia.scot",
+      "channel_page": "https://radiophrenia.scot/",
+      "takes": "Open calls for sound and radio art for its seasons of broadcasts; the call for September 2026 is closed, future calls via mailing list.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none stated",
+      "language": "en",
+      "fits": "Comma (the live censorship organ) or an episode of the weekly album as radio art",
+      "caveat": "Call closed; next one unannounced. The address is for enquiries and the mailing list, not a standing submission channel. Weak until a call opens.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "heise online Investigativ",
+      "kind": "newsroom",
+      "standing": "weak",
+      "standing_note": "built for whistleblower material",
+      "home": "https://www.heise.de",
+      "channel_type": "form",
+      "channel": "https://www.heise.de/investigativ/kontakt/",
+      "channel_page": "https://www.heise.de/investigativ/",
+      "takes": "An anonymous secure form for tips to the editorial team, plus a secured server for sensitive material.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "de",
+      "fits": "only as a tip about a documented finding, not a finished work",
+      "caveat": "Built for whistleblower material; a weak fit for a published work. I read the form's link but did not open the form page.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Latitude Media",
+      "kind": "newsroom",
+      "standing": "weak",
+      "standing_note": "commissions freelance journalists; the channel is the pitch page, not a role mailbox",
+      "home": "https://www.latitudemedia.com",
+      "channel_type": "other",
+      "channel": "https://www.latitudemedia.com/pitch-guidelines",
+      "channel_page": "https://www.latitudemedia.com/pitch-guidelines",
+      "takes": "Freelance pitches (analysis 600-1,200 words, features, explainers) on climate tech, AI and data centres, sent with PITCH in the subject.",
+      "machine_made": "nothing stated on the pitch page",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "data-centre power and grid-connection decisions in the compute record",
+      "caveat": "The channel is a named editor's address published on the pitch page, not a role mailbox; address decoded from an obscured link. Commissions paid human freelancers; fit is energy angle only.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Rest of World",
+      "kind": "newsroom",
+      "standing": "weak",
+      "standing_note": "pre-reported journalism only; no address on the pitch page",
+      "home": "https://restofworld.org",
+      "channel_type": "other",
+      "channel": "Email the relevant regional editor listed on https://restofworld.org/about/",
+      "channel_page": "https://restofworld.org/about/how-to-pitch-rest-of-world/",
+      "takes": "Pre-reported pitches of 300 words or less in a set template (headline, synopsis, at least six sources).",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "compute and censorship stories outside the US and Europe",
+      "caveat": "No address on the pitch page itself; I did not open the About page, so the channel is an instruction, not an address. Pre-reported journalism only.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Transformer (Tarbell)",
+      "kind": "newsroom",
+      "standing": "weak",
+      "standing_note": "wants reported pieces from journalists; the channel is the pitch page, not a role mailbox",
+      "home": "https://www.transformernews.ai",
+      "channel_type": "other",
+      "channel": "https://www.transformernews.ai/p/how-to-pitch-transformer",
+      "channel_page": "https://www.transformernews.ai/p/how-to-pitch-transformer",
+      "takes": "Pitches from experienced journalists for news, explainers and features on AI governance and frontier AI, plus 800-word op-eds from experts (opinion editor a named editor's address on the pitch page).",
+      "machine_made": "Nothing stated for pitches; its own ethics page says it uses AI tools for research and drafting but does not blindly publish outputs (https://www.transformernews.ai/p/standards-and-ethics).",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "AI governance and compute-frontier study as a pitch",
+      "caveat": "Addresses belong to named editors, published for this purpose; wants reported pieces, not a finished machine-made work.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Hyperallergic (pitches)",
+      "kind": "outlet",
+      "standing": "weak",
+      "standing_note": "takes writing by people, not finished works",
+      "home": "https://hyperallergic.com/",
+      "channel_type": "email",
+      "channel": "pitch@hyperallergic.com",
+      "channel_page": "https://hyperallergic.com/how-to-pitch/",
+      "takes": "Pitches for news reporting, exhibition/book/film reviews, opinion essays and remembrances; subject line 'PITCH: [Category] - [Subject Matter]'.",
+      "machine_made": "nothing stated",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "weak: the sound piece on censorship measurements as a news or essay pitch",
+      "caveat": "Takes writing by people, not finished works; a machine-written pitch is a poor match. Include only as a long shot.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Journal for Artistic Research (JAR)",
+      "kind": "outlet",
+      "standing": "weak",
+      "standing_note": "needs the architect's own Research Catalogue account and takes 8 to 12 months",
+      "home": "https://www.jar-online.net/",
+      "channel_type": "form",
+      "channel": "https://www.jar-online.net/#contact",
+      "channel_page": "https://www.jar-online.net/node/18",
+      "takes": "Peer-reviewed expositions of artistic practice as research, built in the Research Catalogue; rolling submissions, no fees.",
+      "machine_made": "nothing stated; the Publication Ethics page does not mention AI and says authors must hold a full Research Catalogue account (https://www.jar-online.net/node/1974)",
+      "deadline": null,
+      "cost": "none",
+      "language": "en/de/pt/es/fr",
+      "fits": "a work with a documented artistic-research method (the OONI organ piece, the weekly album) as an exposition",
+      "caveat": "8 to 12 months to publication; requires a full RC account with signed agreement and identity proof, which a machine practice cannot hold and which needs Frank personally; authorship rules may exclude machine authors.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "AI Incident Database (Responsible AI Collaborative)",
+      "kind": "source",
+      "standing": "weak",
+      "standing_note": "takes reports of harm, not studies",
+      "home": "https://incidentdatabase.ai",
+      "channel_type": "form",
+      "channel": "https://incidentdatabase.ai/apps/submit",
+      "channel_page": "https://incidentdatabase.ai/about_apps/2-submit",
+      "takes": "Anyone may submit new incident reports of AI harms for review; the project also takes contributions through GitHub issues.",
+      "machine_made": "nothing stated on the pages read",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "only incident-shaped items, such as a data-protection order against a model, if a public report of real harm exists; not a place to send a study or paper",
+      "caveat": "Scope is publicly documented harm or near harm; a research work is out of scope. Submissions are built from public reporting, so a machine-made study does not fit. The submit form itself was not opened (the fetch returned only the about page); the form URL comes from that page's relative link.",
+      "checked": "2026-11-14",
+      "recheck": "2027-02-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Global Voices (story pitching form)",
+      "kind": "newsroom",
+      "standing": "closed-to-machine-work",
+      "standing_note": "publishes work made by people only",
+      "home": "https://globalvoices.org",
+      "channel_type": "form",
+      "channel": "https://globalvoices.org/global-voices-story-pitching-form/",
+      "channel_page": "https://globalvoices.org/global-voices-story-pitching-form/",
+      "takes": "Volunteer contributors pitch stories on digital activism, human rights and censorship through a form; unpaid.",
+      "machine_made": "Excludes it: 'Global Voices is proud to publish writing, translation, and illustrations created by people, for people' (https://globalvoices.org/about/global-voices-policy-on-ai/).",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "the OONI censorship sound piece, as a pitch for a Digital Activism story",
+      "caveat": "Needs a human author with a regional team; machine-made work contradicts the AI policy. Not a place to send a finished work.",
+      "checked": "2026-11-14",
+      "recheck": "2027-05-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Just Security",
+      "kind": "newsroom",
+      "standing": "closed-to-machine-work",
+      "standing_note": "refuses AI-written text",
+      "home": "https://www.justsecurity.org",
+      "channel_type": "email",
+      "channel": "submissions@justsecurity.org",
+      "channel_page": "https://www.justsecurity.org/submissions-style-guide",
+      "takes": "Full article drafts (usually 1,200-2,500 words) on law, security and policy, sent by email with an AI-use and conflicts disclosure.",
+      "machine_made": "Excludes AI-written text; AI allowed for research or analysis if significantly used AI is disclosed and verified; repeated misuse may mean automatic decline (https://www.justsecurity.org/submissions-style-guide).",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "analysis of states stopping or conditioning AI compute (export licences, data-protection orders)",
+      "caveat": "Address read from the page's Cloudflare-obscured link (decoded). Wants exclusives, American English; a machine-written work is not eligible.",
+      "checked": "2026-11-14",
+      "recheck": "2027-05-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Tech Policy Press",
+      "kind": "newsroom",
+      "standing": "closed-to-machine-work",
+      "standing_note": "refuses contributions substantially composed by generative AI",
+      "home": "https://www.techpolicy.press",
+      "channel_type": "email",
+      "channel": "contributions@techpolicy.press",
+      "channel_page": "https://www.techpolicy.press/contributor-guidelines/",
+      "takes": "Completed drafts of analysis or perspective pieces (about 800-1,500 words) on tech and policy, sent as a Google Doc with a cover email; unpaid.",
+      "machine_made": "Excludes it: 'We do not accept contributions that are substantially or completely composed by generative AI tools'; any AI use must be disclosed (https://www.techpolicy.press/contributor-guidelines/).",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "op-ed style piece on the compute-governance record (28 acts) or who holds the compute frontier",
+      "caveat": "Machine-practice-made work would be refused; only a human-authored piece with disclosed AI help fits. No footnotes, no academic papers or complex datasets; exclusive submissions only.",
+      "checked": "2026-11-14",
+      "recheck": "2027-05-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Show HN (Hacker News)",
+      "kind": "outlet",
+      "standing": "closed-to-machine-work",
+      "standing_note": "posts must be written by a person; a Show HN of this house was removed on 2026-11-08",
+      "home": "https://news.ycombinator.com/",
+      "channel_type": "other",
+      "channel": "https://news.ycombinator.com/showhn.html",
+      "channel_page": "https://news.ycombinator.com/showhn.html",
+      "takes": "Projects you personally made and can discuss, which readers can try.",
+      "machine_made": "Guidelines: 'Please don't put generated text in HN posts. Write your text yourself' and 'please don't automate posting' (https://news.ycombinator.com/newsguidelines.html). Show HN rule: the project must be something you have worked on personally and are around to discuss.",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "a live interactive piece such as the censorship sound piece or the mixing desk",
+      "caveat": "HIGH RISK: the house's works are machine-made and posts must be human-written; a prior Show HN for Ducking was killed at once. Needs a human poster, human text and a long-standing account. Not recommended as an automated address.",
+      "checked": "2026-11-14",
+      "recheck": "2027-05-01",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "The Pudding (pitches)",
+      "kind": "outlet",
+      "standing": "closed-to-machine-work",
+      "standing_note": "pitches are paused until 2027 and pitches solely from AI agents are refused",
+      "home": "https://pudding.cool/",
+      "channel_type": "other",
+      "channel": "https://pudding.cool/pitch/",
+      "channel_page": "https://pudding.cool/pitch/",
+      "takes": "Freelance pitches for visual data stories only, reviewed monthly; no fee for pitching; pays $7,200 for end-to-end work.",
+      "machine_made": "AI-assisted pitches allowed, 'We do not accept pitches solely from AI agents'; a pitch should have a distinctly human voice (https://pudding.cool/pitch/).",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "a data story with a specific hypothesis, such as the compute-frontier study",
+      "caveat": "Pitches paused until 2027; fetched text did not show a form or address, so the exact channel is the page itself; excludes AI-only pitches, so a machine-run practice as sole author is likely out.",
+      "checked": "2026-11-14",
+      "recheck": "2027-01-15",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
+    }
+  ],
+  "unread": [
+    {
+      "name": "Creative Applications Network",
+      "reason": "HTTP 403 on contact and about pages"
+    },
+    {
+      "name": "Rhizome",
+      "reason": "HTTP 403 on about and submit pages"
+    },
+    {
+      "name": "We Make Money Not Art",
+      "reason": "About page opened but showed no submission channel; /submit 404"
+    },
+    {
+      "name": "Leonardo (MIT Press)",
+      "reason": "HTTP 403 on submission guidelines"
+    },
+    {
+      "name": "transmediale",
+      "reason": "Pages opened show no open call for artworks (curation calls closed); only info@transmediale.de general contact"
+    },
+    {
+      "name": "S+T+ARTS Prize",
+      "reason": "Site shows 2026 winners; 2027 call not yet published and no submission rules on the pages read (2026 deadline was 2026-03-04 per a search snippet only)"
+    },
+    {
+      "name": "ICAD",
+      "reason": "Home page shows ICAD 2027 in Athens but no call or deadlines"
+    },
+    {
+      "name": "ISEA",
+      "reason": "Home page lists no call; Dubai 2026 site not read"
+    },
+    {
+      "name": "Kunstradio (Ö1)",
+      "reason": "No submission policy on page read"
+    },
+    {
+      "name": "The Wire",
+      "reason": "No submissions channel found"
+    },
+    {
+      "name": "CYNETART",
+      "reason": "Redirects to a 2022 page; not read"
+    },
+    {
+      "name": "NODE Forum, Deutschlandfunk Kultur Klangkunst, SWR, Resonance FM, Sound of the Year Awards, Japan Media Arts Festival",
+      "reason": "Not reached in the time available"
+    },
+    {
+      "name": "r/dataisbeautiful",
+      "reason": "Reddit's rules page could not be fetched (fetch blocked by the tool; a direct curl attempt after the block was a mistake and returned only CSS). Search results only suggest an original-content rule; nothing on AI-generated work was read from the source."
+    },
+    {
+      "name": "Sigma Awards (GIJN)",
+      "reason": "Own site opened; the 2026 call closed in January/February 2026 and no 2027 call is posted. Rules page says submission via sigmaawards.awardsplatform.com, no AI rule stated. Revisit late 2026/early 2027."
+    },
+    {
+      "name": "Information is Beautiful Awards",
+      "reason": "Own site says 'Submissions are now closed' and the awards are 'on hiatus and will resume in 2027'. No open call."
+    },
+    {
+      "name": "Data Is Plural",
+      "reason": "Landing page opened; no dataset-suggestion channel or address stated, only a Contact link to the author's personal site."
+    },
+    {
+      "name": "Visual Capitalist creator programme",
+      "reason": "Creator hub fetch was denied by the permission system and the FAQ returned 403; only search snippets (form open to anyone, $500 per visual) were seen, which do not count."
+    },
+    {
+      "name": "FlowingData",
+      "reason": "about page returned 403."
+    },
+    {
+      "name": "GIJN data journalism pages",
+      "reason": "Pages returned 403."
+    },
+    {
+      "name": "Visualising Data (Andy Kirk)",
+      "reason": "About page stated no submission channel, only a professional-services email."
+    },
+    {
+      "name": "Journocode / datenjournalist.de",
+      "reason": "journocode.com did not resolve; no German channel verified."
+    },
+    {
+      "name": "Observable community",
+      "reason": "Fetch returned HTTP 429."
+    },
+    {
+      "name": "Datawrapper Dispatch hello@ address",
+      "reason": "Search summary said hello@datawrapper.de; the page I opened gives blog@datawrapper.de, which is the one recorded."
+    },
+    {
+      "name": "MIT Technology Review",
+      "reason": "Contact page opened: 'We do not accept unsolicited pitches'; no tips channel."
+    },
+    {
+      "name": "The Markup",
+      "reason": "Tips page opened, but it says not to send pitches or story ideas through the tips channel; reporters' own addresses only."
+    },
+    {
+      "name": "404 Media",
+      "reason": "Tips/contact page lists only four named reporters' emails and Signal handles; personal addresses do not count."
+    },
+    {
+      "name": "AlgorithmWatch",
+      "reason": "Contact page opened: general inquiries and media addresses only, no tips or submissions channel."
+    },
+    {
+      "name": "Lawfare",
+      "reason": "Page returns HTTP 403 to automated fetch; guidelines (AI-written work refused) known only from a search summary."
+    },
+    {
+      "name": "The New Humanitarian",
+      "reason": "Pitch pages return HTTP 403; channel and reported AI rule known only from third-party summaries."
+    },
+    {
+      "name": "Data Center Dynamics",
+      "reason": "Contact page returned HTTP 403."
+    },
+    {
+      "name": "Devex",
+      "reason": "Pitch page returned HTTP 403."
+    },
+    {
+      "name": "Access Now / Open Technology Fund",
+      "reason": "Contact pages opened but show only general contact forms, no tips or submissions channel."
+    },
+    {
+      "name": "Heatmap, Import AI, Golem, Tor Project blog, Internet Society Pulse, Freedom House, Tagesspiegel Background",
+      "reason": "No channel found, page not found, or not checked in this pass."
+    },
+    {
+      "name": "HDX (OCHA Humanitarian Data Exchange)",
+      "reason": "data.humdata.org returned 403. Help pages read (centre.humdata.org/ufaqs/data-review, docs.humdata.org/publish/publish-data/hdx-support) give hdx@un.org only for personal or sensitive data and for publishers' questions; a 'Contact the contributor' link per dataset exists per a search summary, not read on a dataset page. No channel for reporting use of a dataset."
+    },
+    {
+      "name": "GBIF",
+      "reason": "gbif.org pages returned 403. The community forum post (discourse.gbif.org/t/23) says staff find papers themselves and contact authors; no submission route for uses found."
+    },
+    {
+      "name": "IPC",
+      "reason": "ipcinfo.org returned 403 or 404 on every page tried; no channel read."
+    },
+    {
+      "name": "FEWS NET",
+      "reason": "fews.net/contact-us returned 404; a helpdesk portal and per-team contact pages exist per search results but were not opened, and an old info@ address is archive-only."
+    },
+    {
+      "name": "RAPID AMOC array (rapid.ac.uk)",
+      "reason": "rapid.ac.uk was not fetched; the NOC page opened lists only media@noc.ac.uk for press, no data-user or publication channel."
+    },
+    {
+      "name": "Data Center Watch",
+      "reason": "Only a general info@datacenterwatch.org address, no tips or submission channel stated; general contact does not count."
+    },
+    {
+      "name": "GovAI",
+      "reason": "Only contact@governance.ai on the About page; opportunities are staff and fellowship roles. No outside-research channel."
+    },
+    {
+      "name": "CSET (Georgetown)",
+      "reason": "Only a general CSET@georgetown.edu address; no research or data submission channel stated."
+    },
+    {
+      "name": "AI Now Institute",
+      "reason": "Contact page returned 404 / no page read; no channel."
+    },
+    {
+      "name": "Ada Lovelace Institute",
+      "reason": "Contact page lists general and media enquiries only."
+    },
+    {
+      "name": "AlgorithmWatch",
+      "reason": "Contact page lists general (cooperation requests), media and donor addresses only. Its report forms are for algorithmic discrimination and crowdsourced DSA case evidence, not for research works."
+    },
+    {
+      "name": "OECD AI Policy Observatory / AI Incidents Monitor",
+      "reason": "oecd.ai/en/incidents names no submission channel except a reporting framework for AI developers."
+    },
+    {
+      "name": "Wikimedia Research Showcase",
+      "reason": "Page URLs tried returned 404; no submission process read."
+    }
+  ]
+}

@@ -448,7 +448,10 @@ Every run is a new session. You know nothing of the last run, and step 1 tells y
      (programme/README.md, section 2, point 3): the practices propose and rank nothing. The writer reads
      the last line of the three presentations' SUMMARY.md ("Next step: …"), sets the next step's
      sub-question in PLAN.md from the plan and those three lines, and says under "Revisions" which wording
-     it took and why; the second reader checks that revision with the state. The "fallback" you link is
+     it took and why; the second reader checks that revision with the state. THE ADDRESS BOOK (since
+     2026-11-14): the writer also reads post/README.md and does what "Who keeps it" asks of the Middle,
+     in the same pull request; the second reader opens the channel page of every entry the writer
+     changed. The "fallback" you link is
      that step, and your link opens the next cycle the same day: the clock runs on the push. So link only
      a state that is checked, and never before PLAN.md's next step stands. If the plan is done or the programme is twelve
      weeks old, follow "The end" in programme/README.md instead.
