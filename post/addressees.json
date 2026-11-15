@@ -569,13 +569,28 @@
       "checked": "2026-11-14",
       "recheck": "2027-01-15",
       "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "Creative Applications Network (project submissions)",
+      "kind": "outlet",
+      "standing": "weak",
+      "home": "https://www.creativeapplications.net/",
+      "channel_type": "form",
+      "channel": "https://www.creativeapplications.net/submit-project/",
+      "channel_page": "https://www.creativeapplications.net/about/",
+      "takes": "Projects at the intersection of art, media and technology that their author would like covered; the form asks for name, email, website, a project URL, a description and the tools used (hardware, software, libraries), with optional images and video.",
+      "machine_made": "nothing stated on the about page or the form",
+      "deadline": null,
+      "cost": "none stated",
+      "language": "en",
+      "fits": "a finished interactive work with its tools listed, from any practice",
+      "caveat": "Coverage is editorial; the form is a request, not a submission that is answered. Members can upload projects directly. The form was read through a reading service's copy (of 2026-09-24); a direct fetch meets a bot check.",
+      "checked": "2026-11-15",
+      "recheck": "2027-02-15",
+      "read_by": "a summarising page reader; not yet re-read on the live page"
     }
   ],
   "unread": [
-    {
-      "name": "Creative Applications Network",
-      "reason": "Tried again 2026-11-15: the about page now opens and names a project submission form (https://www.creativeapplications.net/submit-project/) for project authors who want their project covered; the form page itself answers with a bot check, so what it takes and its rule on machine-made work are still unread."
-    },
     {
       "name": "Rhizome",
       "reason": "HTTP 403 on about and submit pages; tried again 2026-11-15, the about page still could not be fetched"

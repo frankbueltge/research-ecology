@@ -1,7 +1,7 @@
 # The world beside the programme: after cycle 014
 
-*Draft: written 2026-11-15 for the convening after cycle 014, unchecked. While the programme runs, the plan sets
-the next step from [`programme/STATE.md`](../../programme/STATE.md) and [`programme/PLAN.md`](../../programme/PLAN.md),
+*Written 2026-11-15 for the convening after cycle 014 and checked the same day by a second session (see Checked). While the programme runs, the plan sets
+the next step from [`programme/STATE.md`](../programme/STATE.md) and [`programme/PLAN.md`](../programme/PLAN.md),
 not from this file; it keeps the map current for Common Ground's watchlist, Ducking and Third Reading. Attention is
 the house's one count: `npm run briefing:attention` in frankbueltge.de over Common Ground's 30 day files 2026-10-17
 to 2026-11-15 (29,349 signals), by Third Reading's rule: **loud** means it converged on a day, **quiet** ten signals
@@ -119,3 +119,22 @@ Compute (cycles 013 and 014) is the last two cycles' subject and is not ranked.
 5. **Press freedom at a 25-year low**: 52.2 % of countries, 3 signals.
 
 Fallback question: How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?
+
+## Checked
+
+Read against its sources on 2026-11-15 by a second session that did not write it: 88 claims (map, matters and
+estimates), **87 held, 1 corrected, 0 dropped**. The changed lines (ECDC's count to 11 November and its update of
+12 November, OCHA's plan table of 12 November, the DR Congo IPC release of 13 November, the World Bank's September
+poverty update, COP31's first week, the senators' letters and the reported US rule) were read on their pages; the
+eleven map lines and four matters carried from the briefing checked on 2026-11-10 are unchanged word for word, and
+their sources were searched for newer editions, of which none is out.
+
+- Matter 1 (in the data file): the Asia Times report is dated 13 November, not 12; The Information's report it
+  relays is of 11 November, as the text says.
+- Health, compared with: ECDC's count of 4 November (10,741 cases, 5,230 deaths) holds; the series added 314 deaths
+  by harmonisation on 31 October, before both dates, so the comparison is on one definition.
+- Neglected-crises lists: no new edition since the last check (NRC 2025, Sudan first; CARE, January 2026, Central
+  African Republic first). Sudan stands here through matter 3 (its plan 50.2 % funded on 12 November); DR Congo
+  through Ebola and matter 6; the Central African Republic still has no global source on the map. Urgent but quiet
+  stands.
+
