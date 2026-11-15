@@ -492,7 +492,7 @@
      "kind": "primary"
     },
     {
-     "label": "Asia Times, Huang's fall, US curbs put China's AI computing in peril, 12 November 2026 (relaying The Information)",
+     "label": "Asia Times, Huang's fall, US curbs put China's AI computing in peril, 13 November 2026 (relaying The Information)",
      "url": "https://asiatimes.com/2026/11/huangs-fall-us-curbs-put-chinas-ai-computing-in-peril",
      "kind": "report"
     }
@@ -1003,5 +1003,12 @@
    }
   }
  ],
- "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?"
+ "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?",
+ "checked": {
+  "on": "2026-11-15",
+  "claims": 88,
+  "held": 87,
+  "corrected": 1,
+  "dropped": 0
+ }
 }
