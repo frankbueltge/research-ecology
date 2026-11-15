@@ -1,6 +1,6 @@
 {
   "contract": "post-addressees/1",
-  "kept_on": "2026-11-14",
+  "kept_on": "2026-11-15",
   "note": "Receivers that publish a channel of their own for outside work. Rules: post/README.md. Every entry was read on the day in \"checked\"; re-read the channel page before a letter is written.",
   "entries": [
     {
@@ -574,11 +574,11 @@
   "unread": [
     {
       "name": "Creative Applications Network",
-      "reason": "HTTP 403 on contact and about pages"
+      "reason": "Tried again 2026-11-15: the about page now opens and names a project submission form (https://www.creativeapplications.net/submit-project/) for project authors who want their project covered; the form page itself answers with a bot check, so what it takes and its rule on machine-made work are still unread."
     },
     {
       "name": "Rhizome",
-      "reason": "HTTP 403 on about and submit pages"
+      "reason": "HTTP 403 on about and submit pages; tried again 2026-11-15, the about page still could not be fetched"
     },
     {
       "name": "We Make Money Not Art",
@@ -586,7 +586,7 @@
     },
     {
       "name": "Leonardo (MIT Press)",
-      "reason": "HTTP 403 on submission guidelines"
+      "reason": "HTTP 403 on submission guidelines; tried again 2026-11-15, the guidelines address now returns 404"
     },
     {
       "name": "transmediale",
