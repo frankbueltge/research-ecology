@@ -1,6 +1,6 @@
 {
   "contract": "post-addressees/1",
-  "kept_on": "2026-11-15",
+  "kept_on": "2026-11-16",
   "note": "Receivers that publish a channel of their own for outside work. Rules: post/README.md. Every entry was read on the day in \"checked\"; re-read the channel page before a letter is written.",
   "entries": [
     {
@@ -454,7 +454,7 @@
       "name": "AI Incident Database (Responsible AI Collaborative)",
       "kind": "source",
       "standing": "weak",
-      "standing_note": "takes reports of harm, not studies",
+      "standing_note": "its form takes reports of harm, not studies; its steward also publishes a contact for getting in touch about the project",
       "home": "https://incidentdatabase.ai",
       "channel_type": "form",
       "channel": "https://incidentdatabase.ai/apps/submit",
@@ -465,10 +465,10 @@
       "cost": "none",
       "language": "en",
       "fits": "only incident-shaped items, such as a data-protection order against a model, if a public report of real harm exists; not a place to send a study or paper",
-      "caveat": "Scope is publicly documented harm or near harm; a research work is out of scope. Submissions are built from public reporting, so a machine-made study does not fit. The submit form itself was not opened (the fetch returned only the about page); the form URL comes from that page's relative link.",
-      "checked": "2026-11-14",
+      "caveat": "Scope of the form is publicly documented harm or near harm; a research work is out of scope there. Submissions are built from public reporting, so a machine-made study does not fit. The submit form itself was not opened (the fetch returned only the about page); the form URL comes from that page's relative link. Second channel, read on the live page on 2026-11-16: https://incidentdatabase.ai/contact/ names the Responsible AI Collaborative as steward under 'Contact About Collaboration' and gives its address there. The Studio named that page as the receiver's channel in its packet for OTHER HANDS (cycle 015), a work whose whole material is the database's snapshot of 2026-11-09. A letter there is a courtesy with a finding in it, not a submission; the page does not ask for work built on the data.",
+      "checked": "2026-11-16",
       "recheck": "2027-02-01",
-      "read_by": "a summarising page reader; not yet re-read on the live page"
+      "read_by": "the contact page as text on 2026-11-16; the submit page by a summarising page reader on 2026-11-14, not yet re-read on the live page"
     },
     {
       "name": "Global Voices (story pitching form)",
@@ -588,12 +588,32 @@
       "checked": "2026-11-15",
       "recheck": "2027-02-15",
       "read_by": "a summarising page reader; not yet re-read on the live page"
+    },
+    {
+      "name": "S+T+ARTS Prize (European Commission, run by Ars Electronica)",
+      "kind": "call",
+      "standing": "not-now",
+      "standing_note": "the 2027 call is not published; the 2026 submission phase ran from 7 January to 9 March 2026",
+      "home": "https://starts-prize.aec.at/en/",
+      "channel_type": "call",
+      "channel": "https://starts-prize.aec.at/en/",
+      "channel_page": "https://starts-prize.aec.at/en/",
+      "takes": "A yearly competition for projects at the nexus of science, technology and the arts with a possible impact on economic and social innovation; two prizes of EUR 20,000 each.",
+      "machine_made": "nothing stated on the page read",
+      "deadline": null,
+      "cost": "not stated on the page read",
+      "language": "en",
+      "fits": "a finished work of a programme step in which a finding and its form come from different practices; only once a call is open",
+      "caveat": "Only the prize's front page was read: it shows the 2026 calendar and no submission rules. Whether a 2027 edition is held, and its terms, are not on the page.",
+      "checked": "2026-11-16",
+      "recheck": "2027-01-10",
+      "read_by": "the front page as text on 2026-11-16"
     }
   ],
   "unread": [
     {
       "name": "Rhizome",
-      "reason": "HTTP 403 on about and submit pages; tried again 2026-11-15, the about page still could not be fetched"
+      "reason": "HTTP 403 on about and submit pages; tried again 2026-11-15 and 2026-11-16, the about page still could not be fetched"
     },
     {
       "name": "We Make Money Not Art",
@@ -606,10 +626,6 @@
     {
       "name": "transmediale",
       "reason": "Pages opened show no open call for artworks (curation calls closed); only info@transmediale.de general contact"
-    },
-    {
-      "name": "S+T+ARTS Prize",
-      "reason": "Site shows 2026 winners; 2027 call not yet published and no submission rules on the pages read (2026 deadline was 2026-03-04 per a search snippet only)"
     },
     {
       "name": "ICAD",
@@ -765,7 +781,7 @@
     },
     {
       "name": "OECD AI Policy Observatory / AI Incidents Monitor",
-      "reason": "oecd.ai/en/incidents names no submission channel except a reporting framework for AI developers."
+      "reason": "oecd.ai/en/incidents names no submission channel except a reporting framework for AI developers; read again 2026-11-16, unchanged: the monitor is automated from media, and the Hiroshima AI Reporting Framework is for organisations developing advanced AI"
     },
     {
       "name": "Wikimedia Research Showcase",
