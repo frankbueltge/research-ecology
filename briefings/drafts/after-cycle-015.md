@@ -14,7 +14,7 @@ close) and the AI matter (the database's own roundup, New York's reporting duty,
 without a matter in the last two briefings, return with theirs; their pages were opened again today. Press freedom and
 extreme poverty give up their places. The other map lines and matters are those checked on 2026-11-15, word for word;
 the Hunger Hotspots outlook from November, the Tax Justice Network's yearly report and UNHCR's Mid-Year Trends 2026
-were looked for and are not out, and the IUCN Red List 2026-2 is set for 26 November.*
+were looked for and are not out, and the IUCN Red List 2026-2 is scheduled and not out.*
 
 ## The map
 
@@ -28,7 +28,7 @@ were looked for and are not out, and the IUCN Red List 2026-2 is set for 26 Nove
 | Concentration of money and power | Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. Google took 91.05% of worldwide search referrals in October 2026 (StatCounter). [1](https://epoch.ai/data-insights/hyperscalers-control-most-compute) · [2](https://gs.statcounter.com/search-engine-market-share) | 2025 | worse | 43 |
 | Climate and disasters | October 2026 was the warmest October in ERA5, 1.75°C above pre-industrial, the third month in a row above 1.5°C; the 12 months to it stood at 1.51°C, and an exceptionally strong El Niño was still strengthening. [1](https://climate.copernicus.eu/surface-air-temperature-october-2026) | 2026-10 | worse | 229 |
 | Nature, air and water | The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5. [1](https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems) · [2](https://www.stateofglobalair.org/news-events/2025/new-state-global-air-2025-report-shows-nearly-nine-ten-global-air-pollution-deaths) | 2026 | worse | 49 |
-| Health and epidemics | UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by 61%. Congo's Bundibugyo Ebola outbreak had 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026 (ECDC). [1](https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/) · [2](https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026) · [3](https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-12) | 2024 | unclear | 112 |
+| Health and epidemics | UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026 (ECDC). [1](https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/) · [2](https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026) · [3](https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13) | 2024 | unclear | 112 |
 | Displacement and humanitarian need | UNHCR estimates 117.8 million people forcibly displaced at end-2025, 5.4 million fewer than a year earlier. The 2026 Global Humanitarian Overview was 44.9% funded on 15 November: US$15.76 billion of US$35.06 billion. [1](https://www.unhcr.org/about-unhcr/overview/figures-glance) · [2](https://fts.unocha.org/plans/overview/2026) | 2025-12 | unclear | 26 |
 | Democracy and rights | V-Dem's best estimate is 92 autocracies and 87 democracies at end-2025, with 74% of people living in autocracies, up from 50% in 2005. Freedom House recorded a 20th consecutive year of decline in 2025: 54 countries down, 35 up. [1](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf) · [2](https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025) | 2025 | worse | 28 |
 | Information and manipulation | RSF's 2026 index rates press freedom "difficult" or "very serious" in 52.2% of 180 countries and territories, against 13.7% in 2002. Trust in news averaged 37% across 48 markets in the 2026 Digital News Report, the lowest since 2015. [1](https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low) · [2](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary) | 2025 | worse | 54 |
@@ -104,14 +104,15 @@ The subject of cycles 013 and 014. Data: Epoch AI's chip owners dataset. Attenti
 **9. Ebola in Congo, still running** (health). On data to 2026-11-11 Congo's Bundibugyo outbreak stood at 11,197
 confirmed cases, including 5,471 deaths, in eight provinces, with community transmission ongoing; Kenya had nine
 confirmed cases and two deaths, the last case reported on 2026-10-20 ([ECDC](https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026);
-read again on 2026-11-16, no newer count). WHO said on 2026-11-13 that 400 to 500 cases are still identified every
+read again on 2026-11-16, no newer count from ECDC). WHO said on 2026-11-13 that 400 to 500 cases are still identified every
 week ([UN News](https://news.un.org/en/story/2026/11/1168797)). The subject of cycle 012. Data: INSP SitReps, HDX.
 Attention: **quiet** (58 signals).
 
 **10. COP31 in its last week, on a 2.8-degree path** (climate). COP31 opened in Antalya on 2026-11-09 and is set to
-close on 2026-11-20. The subsidiary bodies closed late on 2026-11-14 and forwarded adaptation, finance and mitigation
-texts unresolved; the presidency set four tracks for the second week, with ministers leading, and a first draft of
-the cover decision was expected at its start ([Earth Negotiations Bulletin, 2026-11-14](https://enb.iisd.org/antalya-un-climate-change-conference-cop31-daily-report-14nov2026);
+close on 2026-11-20. The subsidiary bodies closed in the night of 14 to 15 November and forwarded adaptation, finance and mitigation
+texts unresolved; the presidency set four tracks for the second week, two of them ministerial, and a first draft of
+the cover decision came out on 2026-11-16, while several groups oppose a cover decision ([UNFCCC, unedited draft](https://unfccc.int/sites/default/files/resource/dt_cop31_cover_decision.pdf);
+[Earth Negotiations Bulletin, 2026-11-14](https://enb.iisd.org/antalya-un-climate-change-conference-cop31-daily-report-14nov2026);
 [report: Third World Network, 2026-11-16](https://twn.my/title2/climate/info.service/2026/cc261109.htm)). UNEP finds that current policies could take warming to 2.8 °C this century
 ([UNEP, 2026-10-21](https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc));
 WMO puts January to September 2026 at about 1.47 °C above pre-industrial ([WMO, 2026-11-09](https://wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31)).
