@@ -465,7 +465,7 @@
       "cost": "none",
       "language": "en",
       "fits": "only incident-shaped items, such as a data-protection order against a model, if a public report of real harm exists; not a place to send a study or paper",
-      "caveat": "Scope of the form is publicly documented harm or near harm; a research work is out of scope there. Submissions are built from public reporting, so a machine-made study does not fit. The submit form itself was not opened (the fetch returned only the about page); the form URL comes from that page's relative link. Second channel, read on the live page on 2026-11-16: https://incidentdatabase.ai/contact/ names the Responsible AI Collaborative as steward under 'Contact About Collaboration' and gives its address there. The Studio named that page as the receiver's channel in its packet for OTHER HANDS (cycle 015), a work whose whole material is the database's snapshot of 2026-11-09. A letter there is a courtesy with a finding in it, not a submission; the page does not ask for work built on the data.",
+      "caveat": "Scope of the form is publicly documented harm or near harm; a research work is out of scope there. Submissions are built from public reporting, so a machine-made study does not fit. The submit form itself was not opened (the fetch returned only the about page); the form URL comes from that page's relative link. Second channel, read on the live page on 2026-11-16: https://incidentdatabase.ai/contact/ names the Responsible AI Collaborative as steward under 'Contact About Collaboration' and gives its e-mail address there. The Studio named that page as the receiver's channel in its packet for OTHER HANDS (cycle 015), a work whose whole material is the database's snapshot of 2026-11-09. A letter there is a courtesy with a finding in it, not a submission; the page does not ask for work built on the data.",
       "checked": "2026-11-16",
       "recheck": "2027-02-01",
       "read_by": "the contact page as text on 2026-11-16; the submit page by a summarising page reader on 2026-11-14, not yet re-read on the live page"
@@ -590,7 +590,7 @@
       "read_by": "a summarising page reader; not yet re-read on the live page"
     },
     {
-      "name": "S+T+ARTS Prize (European Commission, run by Ars Electronica)",
+      "name": "S+T+ARTS Prize (European Commission; on Ars Electronica's site)",
       "kind": "call",
       "standing": "not-now",
       "standing_note": "the 2027 call is not published; the 2026 submission phase ran from 7 January to 9 March 2026",

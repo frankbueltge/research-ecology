@@ -1,8 +1,8 @@
 # The world beside the programme: after cycle 015
 
-*Written 2026-11-16 for the convening after cycle 015. A draft: no second session has read it against its sources
-yet. While the programme runs, the plan sets the next step from [`programme/STATE.md`](../../programme/STATE.md) and
-[`programme/PLAN.md`](../../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
+*Written 2026-11-16 for the convening after cycle 015. Read against its sources by a second session on the same day (see Checked).
+While the programme runs, the plan sets the next step from [`programme/STATE.md`](../programme/STATE.md) and
+[`programme/PLAN.md`](../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
 watchlist, Ducking and Third Reading. Attention is the house's one count: `npm run briefing:attention` in
 frankbueltge.de over Common Ground's 30 day files 2026-10-18 to 2026-11-16 (29,931 signals), by Third Reading's rule:
 **loud** means it converged on a day, **quiet** ten signals or more, **absent** fewer. Common Ground is a set of public
@@ -14,7 +14,7 @@ close) and the AI matter (the database's own roundup, New York's reporting duty,
 without a matter in the last two briefings, return with theirs; their pages were opened again today. Press freedom and
 extreme poverty give up their places. The other map lines and matters are those checked on 2026-11-15, word for word;
 the Hunger Hotspots outlook from November, the Tax Justice Network's yearly report and UNHCR's Mid-Year Trends 2026
-were looked for and are not out, and the IUCN Red List 2026-2 is set for 26 November.*
+were looked for and are not out, and the IUCN Red List 2026-2 is scheduled and not out.*
 
 ## The map
 
@@ -28,7 +28,7 @@ were looked for and are not out, and the IUCN Red List 2026-2 is set for 26 Nove
 | Concentration of money and power | Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. Google took 91.05% of worldwide search referrals in October 2026 (StatCounter). [1](https://epoch.ai/data-insights/hyperscalers-control-most-compute) · [2](https://gs.statcounter.com/search-engine-market-share) | 2025 | worse | 43 |
 | Climate and disasters | October 2026 was the warmest October in ERA5, 1.75°C above pre-industrial, the third month in a row above 1.5°C; the 12 months to it stood at 1.51°C, and an exceptionally strong El Niño was still strengthening. [1](https://climate.copernicus.eu/surface-air-temperature-october-2026) | 2026-10 | worse | 229 |
 | Nature, air and water | The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5. [1](https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems) · [2](https://www.stateofglobalair.org/news-events/2025/new-state-global-air-2025-report-shows-nearly-nine-ten-global-air-pollution-deaths) | 2026 | worse | 49 |
-| Health and epidemics | UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by 61%. Congo's Bundibugyo Ebola outbreak had 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026 (ECDC). [1](https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/) · [2](https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026) · [3](https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-12) | 2024 | unclear | 112 |
+| Health and epidemics | UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026 (ECDC). [1](https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/) · [2](https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026) · [3](https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13) | 2024 | unclear | 112 |
 | Displacement and humanitarian need | UNHCR estimates 117.8 million people forcibly displaced at end-2025, 5.4 million fewer than a year earlier. The 2026 Global Humanitarian Overview was 44.9% funded on 15 November: US$15.76 billion of US$35.06 billion. [1](https://www.unhcr.org/about-unhcr/overview/figures-glance) · [2](https://fts.unocha.org/plans/overview/2026) | 2025-12 | unclear | 26 |
 | Democracy and rights | V-Dem's best estimate is 92 autocracies and 87 democracies at end-2025, with 74% of people living in autocracies, up from 50% in 2005. Freedom House recorded a 20th consecutive year of decline in 2025: 54 countries down, 35 up. [1](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf) · [2](https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025) | 2025 | worse | 28 |
 | Information and manipulation | RSF's 2026 index rates press freedom "difficult" or "very serious" in 52.2% of 180 countries and territories, against 13.7% in 2002. Trust in news averaged 37% across 48 markets in the 2026 Digital News Report, the lowest since 2015. [1](https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low) · [2](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary) | 2025 | worse | 54 |
@@ -44,7 +44,7 @@ reported. From August to October 2026 it added 179 incident IDs; the largest gro
 outside systems, and the database says a batch reflects what was researched and processed, not how often a harm
 occurred ([AIID roundup, 2026-11-06](https://incidentdatabase.ai/blog/incident-report-2026-august-september-october)).
 On 2026-11-10 New York opened the portal through which large frontier developers must register by 2027-01-01; from
-January all frontier developers must report critical safety incidents, within 72 hours ([Governor of New York](https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research)).
+January all frontier developers must report critical safety incidents, within 72 hours of determining one ([Governor of New York](https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research); [§ 1422](https://www.nysenate.gov/legislation/laws/GBS/1422)).
 On 2026-11-12 four nonprofits sued Anthropic, Google, Meta, OpenAI and SpaceXSI in San Francisco's Superior Court,
 asking for a freeze on the most advanced systems; nothing is decided ([Public Citizen](https://www.citizen.org/news/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks/)).
 The subject of cycle 015; what the ecology found in the record stands in `programme/STATE.md`, step 3. Data: AIID
@@ -71,7 +71,7 @@ Attention: **quiet** (10 signals).
 
 **5. A fifth of those counted, in crisis; Congo at a record** (hunger). 266 million people in 47 food-crisis countries
 and territories faced high acute food insecurity in 2025, 22.9 % of those analysed ([GRFC mid-year update 2026](https://www.fightfoodcrises.net/articles/mid-year-update-2026-grfc-now-available)).
-On 2026-11-13 the IPC analysis for DR Congo projected a record 30.3 million people in Crisis or worse from January
+The IPC analysis for DR Congo, announced on 2026-11-13, projects a record 30.3 million people in Crisis or worse from January
 to June 2027, up from 26.5 million a year earlier; nearly 29 million face it from September to December 2026, 3.6
 million of them in Emergency ([WHO, FAO, WFP, UNICEF](https://www.who.int/news/item/13-11-2026-conflict-and-disease-outbreaks-deepen-dr-congo-s-hunger-crisis-as-record-numbers-are-projected-to-face-acute-food-insecurity)).
 Open question: what the IPC analysis cannot see where access is denied. Data: IPC API, FEWS NET. Attention: **quiet** (20 signals).
@@ -104,14 +104,15 @@ The subject of cycles 013 and 014. Data: Epoch AI's chip owners dataset. Attenti
 **9. Ebola in Congo, still running** (health). On data to 2026-11-11 Congo's Bundibugyo outbreak stood at 11,197
 confirmed cases, including 5,471 deaths, in eight provinces, with community transmission ongoing; Kenya had nine
 confirmed cases and two deaths, the last case reported on 2026-10-20 ([ECDC](https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026);
-read again on 2026-11-16, no newer count). WHO said on 2026-11-13 that 400 to 500 cases are still identified every
+read again on 2026-11-16, no newer count from ECDC). WHO said on 2026-11-13 that 400 to 500 cases are still identified every
 week ([UN News](https://news.un.org/en/story/2026/11/1168797)). The subject of cycle 012. Data: INSP SitReps, HDX.
 Attention: **quiet** (58 signals).
 
 **10. COP31 in its last week, on a 2.8-degree path** (climate). COP31 opened in Antalya on 2026-11-09 and is set to
-close on 2026-11-20. The subsidiary bodies closed late on 2026-11-14 and forwarded adaptation, finance and mitigation
-texts unresolved; the presidency set four tracks for the second week, with ministers leading, and a first draft of
-the cover decision was expected at its start ([Earth Negotiations Bulletin, 2026-11-14](https://enb.iisd.org/antalya-un-climate-change-conference-cop31-daily-report-14nov2026);
+close on 2026-11-20. The subsidiary bodies closed in the night of 14 to 15 November and forwarded adaptation, finance and mitigation
+texts unresolved; the presidency set four tracks for the second week, two of them ministerial, and a first draft of
+the cover decision came out on 2026-11-16, while several groups oppose a cover decision ([UNFCCC, unedited draft](https://unfccc.int/sites/default/files/resource/dt_cop31_cover_decision.pdf);
+[Earth Negotiations Bulletin, 2026-11-14](https://enb.iisd.org/antalya-un-climate-change-conference-cop31-daily-report-14nov2026);
 [report: Third World Network, 2026-11-16](https://twn.my/title2/climate/info.service/2026/cc261109.htm)). UNEP finds that current policies could take warming to 2.8 °C this century
 ([UNEP, 2026-10-21](https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc));
 WMO puts January to September 2026 at about 1.47 °C above pre-industrial ([WMO, 2026-11-09](https://wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31)).
@@ -129,3 +130,41 @@ The AI harm record (cycle 015) and compute (cycles 013 and 014) are the last cyc
 5. **Three in four people under autocracy**: 6 billion people, 10 signals.
 
 Fallback question: How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?
+
+## Checked
+
+Read against its sources on 2026-11-16 by a second session that did not write it: 179 claims (map, matters and
+estimates), **158 held, 20 corrected, 1 dropped**. Every source was opened again today. Three things could not be
+re-read and stand on the check of 2026-11-15: OCHA's totals of 12 November and 28 October (the page shows only the
+current day), UN IGME's table figures for 2015 and 2024, and the month in three source labels.
+
+- Header: the IUCN Red List 2026-2 has no confirmed date (copies of IUCN's schedule page show two different ones);
+  "set for 26 November" is gone.
+- Climate, matter 10: the subsidiary bodies closed at 12:48 am on 15 November, not on the 14th; two of the four
+  tracks are ministerial, not all; the first draft of the cover decision came out on 16 November, and several
+  groups oppose a cover decision at all. UNFCCC's draft is linked.
+- Health: "slowed by 61%" is WHO's "more than 60 per cent since 2015" on the linked pages; the ECDC update with
+  the count to 11 November is that of 13 November, not 12 (which holds 11,114 cases). "No newer count" holds for
+  ECDC; Congo's own report of 12 November could not be read.
+- Nature, compared with: the 2025 check already counted seven boundaries crossed (six in 2024), so the direction
+  rests on PIK's "continue to worsen", not on six to seven; the release's day is not on its page; the report is
+  linked for the 4.9 million.
+- Power, matter 8 (data file): the senators asked that licences be conditioned on no remote access without a
+  separate licence, not for a ban; one government is moving, not "governments".
+- War, compared with: UCDP's upward revision concerns the state-based figure for 2024 (from 128,400).
+- Debt, compared with: UNCTAD says "1.2 billion more than in 2010"; the 2.5 billion is the difference, and now
+  says so. The October WEO is dated 12 October, not 13.
+- Inequality, compared with: the bottom half's income share "7% to 8%" was not found and is dropped; the long
+  view is the report's "fluctuated around 50%–60% between 1820 and 2025".
+- Poverty, compared with: UNDP says the number in multidimensional poverty rose for the first time since 2010;
+  "steady" rests on the World Bank's rate alone.
+- Hunger, matter 5: 13 November is the day four UN agencies announced the IPC analysis; the data file's title now
+  matches this one.
+- Democracy, matter 6 (data file): "best estimate", as on the map, where the line said "counts".
+- AI, matter 1: the 72 hours are the statute's (§ 1422), from the developer's determination; the data file's gist
+  claimed "two states" and "its newest entries" where the sources show one law and the largest group of 37 of 179.
+- Neglected-crises lists: no new edition (NRC, June 2026: Sudan, DR Congo, Colombia, Yemen, Afghanistan first;
+  CARE, January 2026: Central African Republic first). DR Congo stands here through matters 5 and 9, Yemen and
+  Afghanistan through matter 3. Sudan is not named this time: matter 3 names the three plans funded least, and
+  Sudan's stood near half on the last check. Colombia and the Central African Republic have no global source on
+  the map. Urgent but quiet stands.

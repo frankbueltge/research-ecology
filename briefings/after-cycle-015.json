@@ -8,7 +8,7 @@
       "state": "UCDP counted about 244,600 people killed in organised violence in 2025, up from about 187,000 in 2024, and a record 65 state-based conflicts. SIPRI put world military spending at $2,887 billion in 2025, up 2.9% in real terms.",
       "as_of": "2025",
       "direction": "worse",
-      "compared_with": "About 187,000 killed in organised violence in 2024 (UCDP, same series, already revised upward; UCDP expects upward revisions for 2025 too). The rise came from one-sided violence, 14,300 in 2024 to 76,500 in 2025; state-based deaths were 155,000 and 153,600.",
+      "compared_with": "About 187,000 killed in organised violence in 2024 (UCDP, same series; the 2024 state-based figure was already revised upward from 128,400, and UCDP expects upward revisions for 2025 too). The rise came from one-sided violence, 14,300 in 2024 to 76,500 in 2025; state-based deaths were 155,000 and 153,600.",
       "sources": [
         {
           "label": "Uppsala University, UCDP press release on the 2025 data, 9 June 2026",
@@ -88,7 +88,7 @@
       "state": "The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million. UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025.",
       "as_of": "2026",
       "direction": "steady",
-      "compared_with": "824 million (10.1%) in 2024 and 837 million (10.8%) in 2019, itself a projection (PIP September 2026 version; Poverty, Prosperity, and Planet 2026, Table 1C.2). The Bank calls the rate unchanged since 2019, though PIP's 2026 nowcast is 9.8%. UNDP-OPHI's count rose 51.5 million on its previous update, like for like; 15.8 million of that is population updates in 95 countries with no new survey.",
+      "compared_with": "824 million (10.1%) in 2024 and 837 million (10.8%) in 2019, itself a projection (PIP September 2026 version; Poverty, Prosperity, and Planet 2026, Table 1C.2). The Bank calls the rate unchanged since 2019, though PIP's 2026 nowcast is 9.8%. UNDP-OPHI's count rose 51.5 million on its previous update, like for like; 15.8 million of that is population updates in 95 countries with no new survey, and UNDP says the number has risen for the first time since the index began in 2010; steady rests on the Bank's rate alone.",
       "sources": [
         {
           "label": "World Bank, Poverty, Prosperity, and Planet Report 2026, 26 October 2026",
@@ -128,7 +128,7 @@
       "state": "UNCTAD counts 3.7 billion people in 51 developing countries that spend more on interest than on health or on education, 1.2 billion more than in 2010; developing countries' net interest bill reached $995 billion in 2025. IMF: world inflation 4.7% in 2026, up from 4.1%.",
       "as_of": "2025",
       "direction": "worse",
-      "compared_with": "About 2.5 billion people in such countries in 2010 (UNCTAD, A World of Debt 2026: '1.2 billion more than in 2010'); the population figure lags the interest figures, its regional shares run to 2023. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, published 13 October, keeps 4.7% for 2026, a projection).",
+      "compared_with": "UNCTAD, A World of Debt 2026: '1.2 billion more than in 2010', which implies about 2.5 billion people in such countries then; the population figure lags the interest figures, its regional shares run to 2023. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, published 12 October, keeps 4.7% for 2026, a projection).",
       "lines": [
         {
           "text": "UNCTAD counts 3.7 billion people in 51 developing countries that spend more on interest than on health or on education, 1.2 billion more than in 2010.",
@@ -151,7 +151,7 @@
           "kind": "primary"
         },
         {
-          "label": "IMF, World Economic Outlook, October 2026: Resilience Under Strain, Urgent Choices, 13 October 2026",
+          "label": "IMF, World Economic Outlook, October 2026: Resilience Under Strain, Urgent Choices, 12 October 2026",
           "url": "https://www.imf.org/en/publications/weo",
           "kind": "primary"
         },
@@ -167,7 +167,7 @@
       "state": "World Inequality Lab estimates, 2025: the global top 10% took 53% of income and held 75% of wealth, the bottom half 8% and 2%. The top 0.001% held nearly 6.1% of wealth, up from around 3.8% in 1995. Average income in North America & Oceania is about 13 times Sub-Saharan Africa's.",
       "as_of": "2025",
       "direction": "unclear",
-      "compared_with": "Top 0.001% held around 3.8% of wealth in 1995 (World Inequality Report 2026, Figure 2, same series). The bottom half's share has stagnated at around 2% since the early 2000s. Income points the other way since 2000: top 10% 58% to 53%, bottom half 7% to 8% (Figure 1.9), and the report finds little long-term change since 1910.",
+      "compared_with": "Top 0.001% held around 3.8% of wealth in 1995 (World Inequality Report 2026, Figure 2, same series). The bottom half's share has stagnated at around 2% since the early 2000s. Income points the other way since 2000: top 10% 58% to 53% (Figure 1.9), within a share the report says fluctuated around 50% to 60% between 1820 and 2025.",
       "sources": [
         {
           "label": "World Inequality Lab, World Inequality Report 2026, executive summary",
@@ -256,7 +256,7 @@
       "state": "The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed, all at their highest recorded level of transgression. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5.",
       "as_of": "2026",
       "direction": "worse",
-      "compared_with": "Six of nine in the 2025 check before ocean acidification crossed in 2025 (PIK: 'the latest to breach its boundary in 2025'); all seven are at their highest recorded transgression. Air pollution deaths are model estimates, revised each edition, so no year-to-year direction is taken from them.",
+      "compared_with": "Seven of nine in the 2025 check as well, six in 2024 (PIK, 24 September 2025: 'one more than last year'); the direction rests on PIK's 2026 reading that the seven 'continue to worsen' and all stand at their highest recorded transgression. Air pollution deaths are model estimates, revised each edition, so no year-to-year direction is taken from them.",
       "lines": [
         {
           "text": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all at their highest recorded level.",
@@ -275,22 +275,27 @@
           "kind": "primary"
         },
         {
-          "label": "Health Effects Institute, State of Global Air 2025, release of 22 October 2025",
+          "label": "Health Effects Institute, State of Global Air 2025, release of October 2025",
           "url": "https://www.stateofglobalair.org/news-events/2025/new-state-global-air-2025-report-shows-nearly-nine-ten-global-air-pollution-deaths",
+          "kind": "primary"
+        },
+        {
+          "label": "Health Effects Institute and IHME, State of Global Air 2025, report",
+          "url": "https://www.healthdata.org/sites/default/files/2025-10/soga-2025-report.pdf",
           "kind": "primary"
         }
       ]
     },
     {
       "field": "health",
-      "state": "UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by 61%. Congo's Bundibugyo Ebola outbreak had 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026 (ECDC).",
+      "state": "UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026 (ECDC).",
       "as_of": "2024",
       "direction": "unclear",
       "compared_with": "6,096,000 under-five deaths in 2015 and 42.9 per 1,000 live births, against 4,858,000 and 37.4 in 2024 (UN IGME report 2025, Tables 1 and 4). The annual rate of reduction fell from 3.9% in 2000–2015 to 1.5% in 2015–2024. Ebola points the other way: 10,741 confirmed cases, including 5,230 deaths, on data to 4 November 2026 (ECDC, same series).",
       "lines": [
         {
-          "text": "UN estimates say 4.9 million children died before age five in 2024, and the pace of decline has slowed by 61%.",
-          "say": "United Nations estimates say four point nine million children died before age five in twenty twenty-four, and the pace of decline has slowed by sixty-one percent."
+          "text": "UN estimates say 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015.",
+          "say": "United Nations estimates say four point nine million children died before age five in twenty twenty-four, and the pace of decline has slowed by more than sixty percent since twenty fifteen."
         },
         {
           "text": "Congo's Bundibugyo Ebola outbreak had 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026.",
@@ -315,8 +320,8 @@
           "kind": "primary"
         },
         {
-          "label": "ECDC, Ebola public health event update, 12 November 2026",
-          "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-12",
+          "label": "ECDC, Ebola public health event update, 13 November 2026",
+          "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13",
           "kind": "primary"
         }
       ]
@@ -453,7 +458,7 @@
       "title": "The harm record, and who writes it",
       "short": "AI harms on record",
       "field": "ai",
-      "gist": "The largest public record of AI harms keeps growing, its newest entries are about AI agents acting on real systems, and two states now want such incidents reported to them.",
+      "gist": "The largest public record of AI harms keeps growing, the largest group of its newest entries is about AI agents acting on outside systems, and from January New York requires frontier developers to report critical safety incidents to a state office.",
       "quiet_rank": null,
       "terms": [
         "AI incident",
@@ -639,7 +644,7 @@
     },
     {
       "id": "acute-hunger",
-      "title": "A fifth of those counted, in crisis",
+      "title": "A fifth of those counted, in crisis; Congo at a record",
       "short": "Acute food crises",
       "field": "hunger",
       "gist": "In the countries with food crises, more than a fifth of the people analysed could not reliably eat enough, and Congo now has a record number in crisis.",
@@ -718,8 +723,8 @@
       ],
       "lines": [
         {
-          "text": "V-Dem counts 92 autocracies and 87 democracies at the end of 2025.",
-          "say": "The V-Dem Institute counts ninety-two autocracies and eighty-seven democracies at the end of twenty twenty-five."
+          "text": "V-Dem's best estimate is 92 autocracies and 87 democracies at the end of 2025.",
+          "say": "The V-Dem Institute's best estimate is ninety-two autocracies and eighty-seven democracies at the end of twenty twenty-five."
         },
         {
           "text": "74 percent of the world's people, six billion, live in autocracies, up from half in 2005.",
@@ -803,7 +808,7 @@
       "title": "Five companies, most of the machines",
       "short": "Who owns AI compute",
       "field": "power",
-      "gist": "Five cloud companies own most of the world's computing power for AI, and governments are moving to control who may rent it.",
+      "gist": "Five cloud companies own most of the world's computing power for AI, and the US government is moving to control who may rent it.",
       "quiet_rank": null,
       "terms": [
         "hyperscaler",
@@ -826,8 +831,8 @@
           "say": "On the eleventh of November the US Commerce Department was reported to be finishing a rule on renting AI chips abroad; no text was published by the thirteenth of November."
         },
         {
-          "text": "On 13 November two US senators asked Commerce to bar Chinese firms' remote access to licensed chips.",
-          "say": "On the thirteenth of November two US senators asked Commerce to bar Chinese firms' remote access to licensed chips."
+          "text": "On 13 November two US senators asked Commerce to make chip licences conditional on no remote access for Chinese firms without a separate licence.",
+          "say": "On the thirteenth of November two US senators asked Commerce to make chip licences conditional on no remote access for Chinese firms without a separate licence."
         }
       ],
       "sources": [
@@ -915,8 +920,8 @@
           "say": "COP thirty-one opened in Antalya, Türkiye, on the ninth of November twenty twenty-six and is set to close on the twentieth of November."
         },
         {
-          "text": "On 14 November the technical bodies closed with adaptation, finance and mitigation texts unresolved; ministers lead the second week.",
-          "say": "On the fourteenth of November the technical bodies closed with adaptation, finance and mitigation texts unresolved; ministers lead the second week."
+          "text": "In the night to 15 November the technical bodies closed with adaptation, finance and mitigation texts unresolved; a first draft of the cover decision came out on 16 November.",
+          "say": "In the night to the fifteenth of November the technical bodies closed with adaptation, finance and mitigation texts unresolved; a first draft of the cover decision came out on the sixteenth of November."
         },
         {
           "text": "UNEP finds that current policies could take warming to 2.8°C this century.",
@@ -936,6 +941,11 @@
         {
           "label": "UNFCCC, COP31, Antalya, 9 to 20 November 2026",
           "url": "https://unfccc.int/cop31",
+          "kind": "primary"
+        },
+        {
+          "label": "UNFCCC, draft text of the cover decision, unedited version, 16 November 2026",
+          "url": "https://unfccc.int/sites/default/files/resource/dt_cop31_cover_decision.pdf",
           "kind": "primary"
         },
         {
@@ -985,7 +995,7 @@
       "id": "drc-ipc-2027",
       "label": "People in DR Congo projected in food crisis or worse",
       "matter": "acute-hunger",
-      "question": "How many people in DR Congo did the IPC analysis published on 13 November 2026 project to face crisis levels of food insecurity or worse from January to June 2027?",
+      "question": "How many people in DR Congo did the IPC analysis announced by four UN agencies on 13 November 2026 project to face crisis levels of food insecurity or worse from January to June 2027?",
       "kind": "count",
       "unit": "people",
       "truth": 30300000,
@@ -1038,5 +1048,12 @@
       }
     }
   ],
-  "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?"
+  "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?",
+  "checked": {
+    "on": "2026-11-16",
+    "claims": 179,
+    "held": 158,
+    "corrected": 20,
+    "dropped": 1
+  }
 }
