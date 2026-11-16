@@ -206,6 +206,18 @@ as the makers describe them, and what was never published. All three works point
 what such tests can establish to anyone but the maker who ran them (Field, Studio), and what they test for and who
 decided what counts as passing (Atelier).
 
+*Checked on 2026-11-16 by a second session against the three presentations, the Field's paper and its correction of
+16 November, the Atelier's step critique, the works' own critiques, the sources of "What moved in the world", the
+revision of PLAN.md and the address book: 115
+claims, 100 held, 15 corrected, 0 dropped (in the step: the press class, the second count of the submitter, whose
+word "the harmed" is, the base of "3 of 35", whose favour the third act went in, the two counts of reports, the 207;
+in the world: the 72 hours are the statute's, the twelve months, the anonymised report, what New York's duty covers,
+who brought the lawsuit; in the plan: which clause the wording took; in the address book: an e-mail address, and
+who runs the S+T+ARTS Prize is not on the page read). Read against each other: the submitter's count has two values by
+two rules, and point 1 now gives both; the two counts of reports are one snapshot counted whole and by attachment;
+"3 of 35" rests on the 60 acts of the tagged responses, not on the 69. Against the critique on record: "the harmed"
+in point 2 is the editors' column, and the press class in point 1 is what the address rule leaves over.*
+
 ## Step 4
 
 ## Step 5
@@ -260,7 +272,7 @@ decided what counts as passing (Atelier).
   processed and is no measure of how often a harm occurred ([AI Incident Database](https://incidentdatabase.ai/blog/incident-report-2026-august-september-october)).
 - **2026-11-10, Albany.** New York opened the portal through which large frontier developers must register by
   2027-01-01 under its RAISE Act. From January all frontier developers must report critical safety incidents, within
-  72 hours by the governor's account, to a new state office (DIGIT, in the Department of Financial Services); the
+  72 hours of determining that one has occurred ([§ 1422](https://www.nysenate.gov/legislation/laws/GBS/1422)), to a new state office (DIGIT, in the Department of Financial Services); the
   public may file suspected incidents too, and the office's first yearly public report is due on 2028-01-02
   ([Governor of New York](https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research);
   [DFS](https://www.dfs.ny.gov/digit)).
@@ -271,11 +283,15 @@ decided what counts as passing (Atelier).
   decided ([Public Citizen](https://www.citizen.org/news/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks/);
   [report: AP](https://apnews.com/article/artificial-intelligence-ai-lawsuit-cyberattacks-anthropic-openai-03ece37b96979fe834f60976648504ba)).
 - **2026-11-12, Washington.** The White House's AI task force urged federal agencies to limit regulatory liability
-  for good-faith voluntary reporting of cybersecurity vulnerabilities and incidents; officials were reported to be
+  for good-faith voluntary reporting of cybersecurity vulnerabilities and incidents, for at least twelve months; officials were reported to be
   discussing with industry a voluntary process for reporting AI-related incidents, which the government would
   analyse and share. A statement, not a rule ([report: Cybersecurity Dive](https://www.cybersecuritydive.com/news/ai-white-house-task-force-cybersecurity-regulation/874679/)).
 - *Reading against step 3:* the step found the losses of control on record only because two makers published them.
   New York's duty and Australia's announced one move the first report from the maker's page to a state office;
-  what reaches the public in New York is that office's yearly report, and the Washington proposal is voluntary. The
-  lawsuit is a claim brought to a court against makers, the direction the step found for the harmed's claims, here
-  brought by organisations before a harm; no public body has acted on it.
+  what reaches the public in New York is that office's yearly report, anonymised and aggregated, and the Washington
+  proposal is voluntary. New York's duty covers only what its law calls a critical safety incident: a loss of
+  control where it causes death or bodily injury, a model deceiving its developer only outside an evaluation built
+  to elicit that ([DFS](https://www.dfs.ny.gov/digit/public-reporting)), so a failure inside a test, the kind the
+  step found, is reportable only where it meets that definition. The lawsuit is a claim brought to a court against
+  makers, the direction the step found for the harmed's claims, here brought by organisations that are not the
+  harmed, to forestall a greater harm; no public body has acted on it.

@@ -1,8 +1,8 @@
 # The world beside the programme: after cycle 015
 
-*Written 2026-11-16 for the convening after cycle 015. A draft: no second session has read it against its sources
-yet. While the programme runs, the plan sets the next step from [`programme/STATE.md`](../../programme/STATE.md) and
-[`programme/PLAN.md`](../../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
+*Written 2026-11-16 for the convening after cycle 015. Read against its sources by a second session on the same day (see Checked).
+While the programme runs, the plan sets the next step from [`programme/STATE.md`](../programme/STATE.md) and
+[`programme/PLAN.md`](../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
 watchlist, Ducking and Third Reading. Attention is the house's one count: `npm run briefing:attention` in
 frankbueltge.de over Common Ground's 30 day files 2026-10-18 to 2026-11-16 (29,931 signals), by Third Reading's rule:
 **loud** means it converged on a day, **quiet** ten signals or more, **absent** fewer. Common Ground is a set of public
@@ -44,7 +44,7 @@ reported. From August to October 2026 it added 179 incident IDs; the largest gro
 outside systems, and the database says a batch reflects what was researched and processed, not how often a harm
 occurred ([AIID roundup, 2026-11-06](https://incidentdatabase.ai/blog/incident-report-2026-august-september-october)).
 On 2026-11-10 New York opened the portal through which large frontier developers must register by 2027-01-01; from
-January all frontier developers must report critical safety incidents, within 72 hours ([Governor of New York](https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research)).
+January all frontier developers must report critical safety incidents, within 72 hours of determining one ([Governor of New York](https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research); [§ 1422](https://www.nysenate.gov/legislation/laws/GBS/1422)).
 On 2026-11-12 four nonprofits sued Anthropic, Google, Meta, OpenAI and SpaceXSI in San Francisco's Superior Court,
 asking for a freeze on the most advanced systems; nothing is decided ([Public Citizen](https://www.citizen.org/news/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks/)).
 The subject of cycle 015; what the ecology found in the record stands in `programme/STATE.md`, step 3. Data: AIID
@@ -71,7 +71,7 @@ Attention: **quiet** (10 signals).
 
 **5. A fifth of those counted, in crisis; Congo at a record** (hunger). 266 million people in 47 food-crisis countries
 and territories faced high acute food insecurity in 2025, 22.9 % of those analysed ([GRFC mid-year update 2026](https://www.fightfoodcrises.net/articles/mid-year-update-2026-grfc-now-available)).
-On 2026-11-13 the IPC analysis for DR Congo projected a record 30.3 million people in Crisis or worse from January
+The IPC analysis for DR Congo, announced on 2026-11-13, projects a record 30.3 million people in Crisis or worse from January
 to June 2027, up from 26.5 million a year earlier; nearly 29 million face it from September to December 2026, 3.6
 million of them in Emergency ([WHO, FAO, WFP, UNICEF](https://www.who.int/news/item/13-11-2026-conflict-and-disease-outbreaks-deepen-dr-congo-s-hunger-crisis-as-record-numbers-are-projected-to-face-acute-food-insecurity)).
 Open question: what the IPC analysis cannot see where access is denied. Data: IPC API, FEWS NET. Attention: **quiet** (20 signals).
@@ -130,3 +130,41 @@ The AI harm record (cycle 015) and compute (cycles 013 and 014) are the last cyc
 5. **Three in four people under autocracy**: 6 billion people, 10 signals.
 
 Fallback question: How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?
+
+## Checked
+
+Read against its sources on 2026-11-16 by a second session that did not write it: 179 claims (map, matters and
+estimates), **158 held, 20 corrected, 1 dropped**. Every source was opened again today. Three things could not be
+re-read and stand on the check of 2026-11-15: OCHA's totals of 12 November and 28 October (the page shows only the
+current day), UN IGME's table figures for 2015 and 2024, and the month in three source labels.
+
+- Header: the IUCN Red List 2026-2 has no confirmed date (copies of IUCN's schedule page show two different ones);
+  "set for 26 November" is gone.
+- Climate, matter 10: the subsidiary bodies closed at 12:48 am on 15 November, not on the 14th; two of the four
+  tracks are ministerial, not all; the first draft of the cover decision came out on 16 November, and several
+  groups oppose a cover decision at all. UNFCCC's draft is linked.
+- Health: "slowed by 61%" is WHO's "more than 60 per cent since 2015" on the linked pages; the ECDC update with
+  the count to 11 November is that of 13 November, not 12 (which holds 11,114 cases). "No newer count" holds for
+  ECDC; Congo's own report of 12 November could not be read.
+- Nature, compared with: the 2025 check already counted seven boundaries crossed (six in 2024), so the direction
+  rests on PIK's "continue to worsen", not on six to seven; the release's day is not on its page; the report is
+  linked for the 4.9 million.
+- Power, matter 8 (data file): the senators asked that licences be conditioned on no remote access without a
+  separate licence, not for a ban; one government is moving, not "governments".
+- War, compared with: UCDP's upward revision concerns the state-based figure for 2024 (from 128,400).
+- Debt, compared with: UNCTAD says "1.2 billion more than in 2010"; the 2.5 billion is the difference, and now
+  says so. The October WEO is dated 12 October, not 13.
+- Inequality, compared with: the bottom half's income share "7% to 8%" was not found and is dropped; the long
+  view is the report's "fluctuated around 50%–60% between 1820 and 2025".
+- Poverty, compared with: UNDP says the number in multidimensional poverty rose for the first time since 2010;
+  "steady" rests on the World Bank's rate alone.
+- Hunger, matter 5: 13 November is the day four UN agencies announced the IPC analysis; the data file's title now
+  matches this one.
+- Democracy, matter 6 (data file): "best estimate", as on the map, where the line said "counts".
+- AI, matter 1: the 72 hours are the statute's (§ 1422), from the developer's determination; the data file's gist
+  claimed "two states" and "its newest entries" where the sources show one law and the largest group of 37 of 179.
+- Neglected-crises lists: no new edition (NRC, June 2026: Sudan, DR Congo, Colombia, Yemen, Afghanistan first;
+  CARE, January 2026: Central African Republic first). DR Congo stands here through matters 5 and 9, Yemen and
+  Afghanistan through matter 3. Sudan is not named this time: matter 3 names the three plans funded least, and
+  Sudan's stood near half on the last check. Colombia and the Central African Republic have no global source on
+  the map. Urgent but quiet stands.
