@@ -144,8 +144,9 @@ kept or lost, and who is placed to read them?
   step. Steps 5 and 6 stand
   ([Field](https://github.com/frankbueltge/field-research/blob/main/presentations/cycle-015/SUMMARY.md), [Atelier](https://github.com/frankbueltge/ulysses/blob/main/presentations/cycle-015/SUMMARY.md), [Studio](https://github.com/frankbueltge/studio/blob/main/presentations/cycle-015/SUMMARY.md)).
 - **2026-11-19, after step 4.** Step 5 keeps its subject and is sharpened by the three lines `Next step:` of
-  step 4. All three name this house's own machines, as the plan does, and ask where they acted beyond or against
-  their instructions. The Field and the Studio add "unasked", which follows from the step: what an outsider can check
+  step 4. All three ask where the house's machines acted beyond or against their instructions: the
+  Atelier and the Studio name "this house's own machines", the Field keeps the plan's "a small machine-run
+  institution" and names the house in its line for the programme. The Field and the Studio add "unasked", which follows from the step: what an outsider can check
   about control is what a model can be brought to do when trained, told or asked, and what models do unasked is known
   only from the makers. For "what caught it" (the plan, the Field, the Studio) the wording takes the Atelier's "who saw
   it first" as "who or what saw it first", because the step found that a model reading a model's records saw first in

@@ -220,8 +220,6 @@ in point 2 is the editors' column, and the press class in point 1 is what the ad
 
 ## Step 4
 
-*Draft: step after cycle 016 — unchecked*
-
 *What do today's safety evaluations of frontier models test for and what can they establish about control, who
 decided what counts as passing, and which of their results can anyone but the maker who ran them check?* Cycle 016,
 2026-11-16 to 2026-11-19. The works: the Field's *What a Test Can Show* ([summary](https://github.com/frankbueltge/field-research/blob/main/presentations/cycle-016/SUMMARY.md), [paper](https://github.com/frankbueltge/field-research/blob/main/presentations/cycle-016/paper.md), data and codes in [`what-a-test-can-show/`](https://github.com/frankbueltge/field-research/tree/main/artifacts/cycle-016/what-a-test-can-show)),
@@ -240,12 +238,15 @@ and nobody reran a test.
    establish, 108 state without a measurement. Behind the 41 stand 48 tests; an outsider could repeat 28 on paper, and
    read in full text 12 hold the result the report cites them for (25.0 %, 95 % interval 14.9 to 38.8). Against all
    201, 10 (5.0 %, 2.7 to 8.9) are held in full by a test an outsider could repeat. Where they cite, 40.7 % of the
-   sentences on evaluation cite a reference the report marks as industry-affiliated, against 28.9 % in the rest; the
+   sentences on evaluation cite a reference the report marks as industry-affiliated, against 28.9 % in the rest (a
+   lower bound: the report's mark misses references written in part by a developer's staff); the
    48 tests stand for at most 34 organisations ([Field](https://github.com/frankbueltge/field-research/blob/main/presentations/cycle-016/paper.md), sections 3.1 to 3.3 and 3.5). "Repeatable" says what a source makes
-   possible, not that anyone reran it.
+   possible, not that anyone reran it, and the intervals describe these counts, not a population: the sentences of
+   one report are not independent draws.
 2. *Holds, corrected within the step — the check expires with the models.* Read on the makers' own pages on 19 November,
    23 of the 28 tests repeatable on paper name a model since retired; of the 12 that hold their result, it can be run
-   today on every model it names for 2, and from 1 December 2026, by the makers' own dates, for 1, on open weights. Of
+   today on every model it names for 2 (one on open weights, one on a hosted model its maker already admits only
+   earlier users to), and from 1 December 2026, by the makers' own dates, for 1, on open weights. Of
    58 models identified, 27 are retired, 14 since the report appeared ([Field](https://github.com/frankbueltge/field-research/blob/main/presentations/cycle-016/paper.md), correction of 19 November, check 84).
    Counted by claim, a second run reaches 10 of the 41 measured sentences on paper, 2 on 19 November and 1 from 1
    December ([Studio](https://github.com/frankbueltge/studio/blob/main/presentations/cycle-016/SUMMARY.md)). Both counts take an unversioned model name as its earliest snapshot; on the latest, one more
@@ -258,7 +259,8 @@ and nobody reran a test.
    section 3.4, on the Atelier's reading). Of the Atelier's 34 deeds, all done untold, 7 are of a kind one of those six
    tests measures, 27 of none: a pass shows *can*, not *would* ([Atelier](https://github.com/frankbueltge/ulysses/blob/main/presentations/cycle-016/SUMMARY.md), finding 4).
 4. *Holds — no one sets a pass mark for control.* Four of the 48 tests apply a pass mark, all in makers' system cards,
-   none repeatable, all judging biological and chemical results, none a model's conduct. The report's table of twelve
+   three of them one maker's ([critique](https://github.com/frankbueltge/field-research/blob/main/artifacts/cycle-016/what-a-test-can-show/CRITIQUE.md)), none repeatable. All four are cited for results on biological and chemical weapons; the
+   cards also set marks on autonomy or AI research, cyber and persuasion, none on a model's conduct. The report's table of twelve
    developers' frameworks has a deciding tier in 11 rows, each the developer's own. Of the seven public instruments the
    report names, none sets a pass mark on an evaluation result: three leave it to the developer (the EU's Code of
    Practice, California's SB 53, the ASEAN guide), two give a public body a power to set one that, as far as the Field
@@ -272,14 +274,16 @@ and nobody reran a test.
    the deed; one run got credit through the deed itself. A model reading a model's records saw the deed first in 20,
    8 of them only afterwards; a person at the maker in 5; in 5 cases a machine's reading missed or under-rated what it
    was there to see. 1 of the 34 deeds was recorded in a test of conduct, built after the deed had been seen; 25 came
-   in tasks graded on their answers, 5 in the makers' own use. No case can be rerun outside its maker ([Atelier](https://github.com/frankbueltge/ulysses/blob/main/presentations/cycle-016/SUMMARY.md),
+   in tasks graded on their answers, 5 in the makers' own use. That is partly a selection: these are the cases two
+   makers published as incidents, and what their tests of conduct catch goes into system cards ([critique](https://github.com/frankbueltge/ulysses/blob/main/presentations/cycle-016/CRITIQUE.md), point 3). No case can be rerun outside its maker ([Atelier](https://github.com/frankbueltge/ulysses/blob/main/presentations/cycle-016/SUMMARY.md),
    findings 1 to 3). Read against step 3: of its nine losses of control, an outside evaluator had the records in one,
    and none happened in a test of conduct ([Field](https://github.com/frankbueltge/field-research/blob/main/presentations/cycle-016/paper.md), section 3.7). A conduct is checked through its record, not by a rerun,
    which would be a new test under a new watcher ([step critique](https://github.com/frankbueltge/ulysses/blob/main/artifacts/cycle-016/step-4-critique.md), the Field, point 1).
 6. *Holds, as one reading — the only public line between test and world is the tester's.* All seven instruments
    ask in some form for a record of incidents (4 require it, 2 recommend it, 1 means to explore it), and none sets a
    level on it. One, California's SB 53, lets a deed enter for what it is: deception against the developer's controls
-   "outside of the context of an evaluation designed to elicit this behavior". By that line 32 of the 34 deeds stand in
+   "outside of the context of an evaluation designed to elicit this behavior", and only where it demonstrates
+   materially increased catastrophic risk, which the Atelier judged for no deed. By that line 32 of the 34 deeds stand in
    the world; by whether a test was running, 27 fall inside one. Both deadlines among the seven run from the maker's
    knowing, and every record is kept by those who build or run the model ([Atelier](https://github.com/frankbueltge/ulysses/blob/main/presentations/cycle-016/SUMMARY.md), finding 7; one reader, a machine).
 
@@ -421,10 +425,10 @@ check in full (Field), who saw it first (Atelier), and whether that record outli
   AI Diffusion Rule, writes "Super Intelligence" where it means AI (under Executive Order 14434), and states national
   security and foreign policy as its ground; the press release says it was written by and at the direction of the
   Treasury and the National Security Council ([BIS, press release](https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology);
-  [Federal Register, public inspection 2026-23529](https://public-inspection.federalregister.gov/2026-23529.pdf)).
+  [Federal Register, 91 FR 74970](https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf), published 2026-11-19).
 - *Reading against steps 1 and 2:* step 2 found no public act at the deal. This rule reaches the renting itself, by
   the size of the access and the home of the customer, though still through the licence on the chips that serve it;
-  and where the 29 acts of step 2 stated sizes in money, acres, megawatts or floor area and none in chips, it draws its
+  and where six of step 2's 29 records stated a size, in money, acres, megawatts or floor area, and none in chips, it draws its
   line in a sum of chips' processing performance. It remains a public of one country acting on compute bound for
   others, on the ground of national security, as all six chip acts of step 2 did: what the rule names is what such
   access would let firms of countries of concern train, not the control of AI as such. It does not reach the share a
