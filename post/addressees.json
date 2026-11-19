@@ -1,6 +1,6 @@
 {
   "contract": "post-addressees/1",
-  "kept_on": "2026-11-16",
+  "kept_on": "2026-11-19",
   "note": "Receivers that publish a channel of their own for outside work. Rules: post/README.md. Every entry was read on the day in \"checked\"; re-read the channel page before a letter is written.",
   "entries": [
     {
@@ -608,6 +608,46 @@
       "checked": "2026-11-16",
       "recheck": "2027-01-10",
       "read_by": "the front page as text on 2026-11-16"
+    },
+    {
+      "name": "Leonardo (journal of Leonardo/ISAST, published by the MIT Press)",
+      "kind": "outlet",
+      "standing": "disclose",
+      "standing_note": "rolling submissions; generative AI may be used if disclosed, but only humans can be authors",
+      "home": "https://leonardo.info/",
+      "channel_type": "form",
+      "channel": "https://www.editorialexpress.com/leonardo",
+      "channel_page": "https://leonardo.info/faqs",
+      "takes": "Illustrated articles on work that crosses the boundaries between contemporary arts and sciences, by artists about their own work and by researchers; unsolicited articles with no deadline; a Statement format of two pages or less (about 2,000 words, up to three illustrations).",
+      "machine_made": "The MIT Press policy (https://direct.mit.edu/journals/pages/ai_guidelines, linked from the publication-ethics page) permits generative AI subject to disclosure at submission (tool and exact version, purpose, extent); 'Generative AI tools and systems cannot be listed as authors or co-authors'; undisclosed material use may lead to rejection or retraction.",
+      "deadline": null,
+      "cost": "not stated on the pages read",
+      "language": "en",
+      "fits": "a Statement by the architect on a programme step, with the machines' part disclosed as the policy asks; not a paper signed by a practice",
+      "caveat": "A person must be the author and answer for the work. Peer review takes about two months; print publication of a Statement under 18 months, of longer papers over three years. The submission system itself was not opened.",
+      "checked": "2026-11-19",
+      "recheck": "2027-02-19",
+      "read_by": "a summarising page reader (the FAQ, the author information and the MIT Press AI policy) on 2026-11-19; not yet re-read on the live page"
+    },
+    {
+      "name": "International AI Safety Report (Secretariat, Department for Science, Innovation and Technology)",
+      "kind": "source",
+      "standing": "open",
+      "standing_note": "the report publishes an enquiries address; the Field named it in its packet for What a Test Can Show (cycle 016)",
+      "home": "https://internationalaisafetyreport.org",
+      "channel_type": "email",
+      "channel": "secretariat.AIStateofScience@dsit.gov.uk",
+      "channel_page": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+      "takes": "Page 3 of the 2026 report: 'Any enquiries regarding this publication should be sent to' the address. The same page names the Secretariat as staff of the UK AI Security Institute and Mila - Quebec AI Institute.",
+      "machine_made": "nothing stated on the page read",
+      "deadline": null,
+      "cost": "none",
+      "language": "en",
+      "fits": "a work whose whole material is the report: an outside check of its sentences against their sources, for a later edition or update (the Field's study of cycle 016)",
+      "caveat": "An enquiries address for the publication, not a call for work built on it; a reply is not promised. The report is a synthesis led by its Chair and writing team, so a correction concerns their reading of sources, not the sources themselves.",
+      "checked": "2026-11-19",
+      "recheck": "2027-02-19",
+      "read_by": "the report's PDF downloaded on 2026-11-19 (sha256 beginning e2a35f439caf), page 3 read as text"
     }
   ],
   "unread": [
@@ -620,20 +660,16 @@
       "reason": "About page opened but showed no submission channel; /submit 404"
     },
     {
-      "name": "Leonardo (MIT Press)",
-      "reason": "HTTP 403 on submission guidelines; tried again 2026-11-15, the guidelines address now returns 404"
-    },
-    {
       "name": "transmediale",
       "reason": "Pages opened show no open call for artworks (curation calls closed); only info@transmediale.de general contact"
     },
     {
       "name": "ICAD",
-      "reason": "Home page shows ICAD 2027 in Athens but no call or deadlines"
+      "reason": "Home page shows ICAD 2027 in Athens but no call or deadlines; tried again 2026-11-19, icad.org/conferences still says of ICAD 2027 in Athens only that more information will come"
     },
     {
       "name": "ISEA",
-      "reason": "Home page lists no call; Dubai 2026 site not read"
+      "reason": "Home page lists no call; Dubai 2026 site not read; tried again 2026-11-19, the home page still names Dubai 2026 as the next edition and no 2027 call was found"
     },
     {
       "name": "Kunstradio (Ö1)",
