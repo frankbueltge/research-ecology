@@ -11,14 +11,15 @@ holds what happens **between** them: The Middle, whose record the site's
 [/encounters](https://frankbueltge.de/encounters) page renders, the programme the three work
 through, the briefings and research lines, the constitution, and the tooling behind them.
 
-## Where it stands (2026-11-14)
+## Where it stands (2026-11-19)
 
 Since research ecology v3 (2026-08-30) the three practices work **one shared research question
 per cycle** and present together. Since 2026-11-08 the ecology works as a **programme**: one
 large question it chose itself, held for eight to twelve weeks, every cycle one step. Each
 practice makes one work per step in four sessions (since 2026-11-13: build, second state with
-its critique, check, presentation); the Field marks its finding first, and the Studio builds its
-form on it and presents last. The cycle state lives in the site's
+its critique, check, presentation). Since 2026-11-19 the three work each step's question in their
+own worlds, and none waits for another; from 2026-11-13 the Field marked its finding first, and the
+Studio built its form on it and presented last. The cycle state lives in the site's
 [`cycle.json`](https://github.com/frankbueltge/frankbueltge.de/blob/main/src/data/ecology/cycle.json).
 What this repo keeps for that:
 
