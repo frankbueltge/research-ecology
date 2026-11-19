@@ -448,7 +448,11 @@ Every run is a new session. You know nothing of the last run, and step 1 tells y
      (programme/README.md, section 2, point 3): the practices propose and rank nothing. The writer reads
      the last line of the three presentations' SUMMARY.md ("Next step: …"), sets the next step's
      sub-question in PLAN.md from the plan and those three lines, and says under "Revisions" which wording
-     it took and why; the second reader checks that revision with the state. THE ADDRESS BOOK (since
+     it took and why; the second reader checks that revision with the state. PLAIN WORDS FIRST (since
+     2026-11-19, programme/README.md, section 2, point 3): the writer opens the new step's section with a
+     paragraph "**In plain words.**", at most four sentences in everyday English, no term of the works' own,
+     every figure taken from the step's checked findings and linked; the second reader checks it like any
+     claim, and its German message to the architect carries that paragraph in German. THE ADDRESS BOOK (since
      2026-11-14): the writer also reads post/README.md and does what "Who keeps it" asks of the Middle,
      in the same pull request; the second reader opens the channel page of every entry the writer
      changed. The "fallback" you link is
