@@ -304,6 +304,18 @@ regulation of July 2026, which the Field did not read; what part of the makers' 
 soon. All three works point the next step at this house: a record of machines acting unasked that an outsider can
 check in full (Field), who saw it first (Atelier), and whether that record outlives the models that ran it (Studio).
 
+*Checked on 2026-11-19 by a second session against the three presentations, the Field's paper and its data, the
+Atelier's step critique and its marked record, the works' own critiques, the sources of "What moved in the world", the
+revision of PLAN.md and the address book: 180 claims, 168 held, 12 corrected, 0 dropped (in the step: the industry
+share is a lower bound, what the intervals describe, which hosted model still answers and to whom, whose the four pass
+marks are, what else the cards set marks on, which incidents the record holds, what SB 53's duty to report requires;
+in the world: the US rule is published, and what step 2's records stated a size in; in the plan: whose wording names
+the house; in the address book: where the publisher's AI policy stands, and how it was read). Read against each
+other: the four marks cited for results and the cards' wider marks are two lists, and point 4 now names both; "2" and
+"6" count tests in one work and sentences in another, as the step says. Against the critique on record: the Field's
+own critique leaves the four marks as three of one maker and none repeatable, and the Atelier's critique, point 3,
+makes point 5 a selection of the incidents two makers published; both are linked.*
+
 ## Step 5
 
 ## Step 6
