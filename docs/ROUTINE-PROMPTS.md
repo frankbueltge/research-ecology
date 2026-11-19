@@ -621,7 +621,7 @@ FIRE AND WAIT (the same for every routine you start):
      wait, at most 20 minutes, until a commit newer than the fire time is on main. If none comes,
      look for an open PR or an issue "Session <DATE> — blocked" / "Relay blocked <DATE>" and report
      it; go on with the chain unless the next step needs exactly that landing.
-  Fire one routine at a time, in the order given; the Studio builds on what the Field lands.
+  Fire one routine at a time, in the order given; a practice may take from what a sibling lands before it.
 
 1. READ THE STATE. https://raw.githubusercontent.com/frankbueltge/frankbueltge.de/main/src/data/ecology/cycle.json
    (phase, cycle, programme, convening); in a fresh clone of research-ecology: programme/README.md,
