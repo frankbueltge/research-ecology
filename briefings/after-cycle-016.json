@@ -43,7 +43,7 @@
       "state": "SOFI 2026 nowcasts 645 million people undernourished in 2025 (7.8%, range 608–696 million), about 14 million fewer than in 2024. Separately, 266 million people in 47 food-crisis countries and territories faced high acute food insecurity in 2025, 22.9% of those analysed.",
       "as_of": "2025",
       "direction": "unclear",
-      "compared_with": "658.8 million (8.1%) in 2024 (SOFI 2026, Tables 2.1 and 2.2, same revised series). 2025 is a nowcast, and SOFI says it may not fully reflect the worsening situation in humanitarian crises. The acute figure has no like comparison: 296 million in 53 countries in 2024, and the GRFC says the fall mainly reflects fewer countries covered. Its analysed share was 22.7% in 2024. Mid-year Update, data to 31 August 2026: of 33 comparable countries and territories 17 improved, 15 worsened.",
+      "compared_with": "658.8 million (8.1%) in 2024 (SOFI 2026, Tables 2.1 and 2.2, same revised series). 2025 is a nowcast, and SOFI says it may not fully reflect the worsening situation in humanitarian crises. The acute figure has no like comparison: 296 million in 53 countries in 2024, and the GRFC says the fall mainly reflects fewer countries covered. Its analysed share was 22.7% in 2024. Mid-year Update, data to 31 August 2026: of 33 comparable countries and territories 17 improved, 15 worsened. The 17 include DR Congo (26.5 million against 27.7 million at the 2025 peak), on an analysis that did not yet consider Ebola; the IPC analysis released on 30 October 2026 has since put it at 28.8 million for September to December 2026.",
       "sources": [
         {
           "label": "FAO, IFAD, UNICEF, WFP and WHO, The State of Food Security and Nutrition in the World 2026, 21 July 2026",
@@ -68,6 +68,16 @@
         {
           "label": "Global Network Against Food Crises, Mid-Year Update of the 2026 GRFC now available, 21 September 2026",
           "url": "https://www.fightfoodcrises.net/articles/mid-year-update-2026-grfc-now-available",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO, WFP and GNAFC, 2026 Global Report on Food Crises: Mid-year Update, September 2026",
+          "url": "https://doi.org/10.4060/ce1690en",
+          "kind": "primary"
+        },
+        {
+          "label": "IPC, Democratic Republic of the Congo: Acute Food Insecurity Snapshot, September 2026 to June 2027, 30 October 2026 (on ReliefWeb)",
+          "url": "https://reliefweb.int/report/democratic-republic-congo/democratic-republic-congo-ipc-acute-food-insecurity-snapshot-september-2026-june-2027",
           "kind": "primary"
         }
       ],
@@ -125,22 +135,22 @@
     },
     {
       "field": "economy",
-      "state": "UNCTAD counts 3.7 billion people in 51 developing countries that spend more on interest than on health or on education, 1.2 billion more than in 2010; developing countries' net interest bill reached $995 billion in 2025. IMF: world inflation 4.7% in 2026, up from 4.1%.",
+      "state": "For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010; developing countries' net interest bill reached $995 billion in 2025. IMF: world inflation 4.7% in 2026, up from 4.1%.",
       "as_of": "2025",
       "direction": "worse",
-      "compared_with": "UNCTAD, A World of Debt 2026: '1.2 billion more than in 2010', which implies about 2.5 billion people in such countries then; the population figure lags the interest figures, its regional shares run to 2023. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, published 12 October, keeps 4.7% for 2026, a projection).",
+      "compared_with": "UNCTAD, A World of Debt 2026: the number of people in such countries 'increased from 2.5 billion in 2010 to 3.7 billion in 2023' (report, figure 25; its figures 'refer to 2023 because data coverage for 2024 is limited'). The count is of 2023, the interest bill of 2025. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, dated 13 October, has the same 4.1% and keeps 4.7% for 2026, a projection).",
       "lines": [
         {
-          "text": "UNCTAD counts 3.7 billion people in 51 developing countries that spend more on interest than on health or on education, 1.2 billion more than in 2010.",
-          "say": "UN Trade and Development counts three point seven billion people in fifty-one developing countries that spend more on interest than on health or on education, one point two billion more than in twenty ten."
+          "text": "For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010.",
+          "say": "For twenty twenty-three, UN Trade and Development counts three point seven billion people in fifty-one developing countries that spent more on interest than on health or on education, one point two billion more than in twenty ten."
         },
         {
           "text": "Developing countries' net interest bill on public debt reached $995 billion in 2025.",
           "say": "Developing countries' net interest bill on public debt reached nine hundred and ninety-five billion dollars in twenty twenty-five."
         },
         {
-          "text": "The IMF projects world inflation of 4.7% in 2026, up from 4.1% in 2025, driven by energy and food prices.",
-          "say": "The International Monetary Fund projects world inflation of four point seven percent in twenty twenty-six, up from four point one percent in twenty twenty-five, driven by energy and food prices."
+          "text": "The IMF projects world inflation of 4.7% in 2026, up from 4.1% in 2025, driven mainly by energy and food prices.",
+          "say": "The International Monetary Fund projects world inflation of four point seven percent in twenty twenty-six, up from four point one percent in twenty twenty-five, driven mainly by energy and food prices."
         }
       ],
       "signals": 98,
@@ -151,7 +161,12 @@
           "kind": "primary"
         },
         {
-          "label": "IMF, World Economic Outlook, October 2026: Resilience Under Strain, Urgent Choices, 12 October 2026",
+          "label": "UNCTAD, A World of Debt 2026, report (UNCTAD/OSG/INF/2026/11), 7 October 2026",
+          "url": "https://unctad.org/system/files/official-document/osginf2026d11_en.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "IMF, World Economic Outlook, October 2026: Resilience Under Strain, Urgent Choices, 13 October 2026",
           "url": "https://www.imf.org/en/publications/weo",
           "kind": "primary"
         },
@@ -288,18 +303,18 @@
     },
     {
       "field": "health",
-      "state": "UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,432 confirmed cases, including 5,593 deaths, on data to 15 November 2026 (WHO).",
+      "state": "UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,613 confirmed cases, including 5,678 deaths, on data to 17 November 2026 (INSP).",
       "as_of": "2024",
       "direction": "unclear",
-      "compared_with": "6,096,000 under-five deaths in 2015 and 42.9 per 1,000 live births, against 4,858,000 and 37.4 in 2024 (UN IGME report 2025, Tables 1 and 4). The annual rate of reduction fell from 3.9% in 2000–2015 to 1.5% in 2015–2024. Ebola points the other way: 11,197 confirmed cases, including 5,471 deaths, on data to 11 November 2026 (ECDC), and 442 confirmed cases in the week to 15 November against 458 the week before (WHO).",
+      "compared_with": "6,096,000 under-five deaths in 2015 and 42.9 per 1,000 live births, against 4,858,000 and 37.4 in 2024 (UN IGME report 2025, Tables 1 and 4). The annual rate of reduction fell from 3.9% in 2000–2015 to 1.5% in 2015–2024. Ebola points the other way: 11,432 confirmed cases, including 5,593 deaths, on data to 15 November 2026 (WHO, the same national series) and 11,197 and 5,471 on data to 11 November (ECDC); 442 confirmed cases in the week to 15 November against 458 the week before, in WHO's words 'no downward trend over the last six weeks'.",
       "lines": [
         {
           "text": "UN estimates say 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015.",
           "say": "United Nations estimates say four point nine million children died before age five in twenty twenty-four, and the pace of decline has slowed by more than sixty percent since twenty fifteen."
         },
         {
-          "text": "Congo's Bundibugyo Ebola outbreak had 11,432 confirmed cases, including 5,593 deaths, on data to 15 November 2026.",
-          "say": "Congo's Bundibugyo Ebola outbreak had eleven thousand, four hundred and thirty-two confirmed cases, including five thousand, five hundred and ninety-three deaths, on data to the fifteenth of November twenty twenty-six."
+          "text": "Congo's Bundibugyo Ebola outbreak had 11,613 confirmed cases, including 5,678 deaths, on data to 17 November 2026, by Congo's own count.",
+          "say": "Congo's Bundibugyo Ebola outbreak had eleven thousand, six hundred and thirteen confirmed cases, including five thousand, six hundred and seventy-eight deaths, on data to the seventeenth of November twenty twenty-six, by Congo's own count."
         }
       ],
       "signals": 160,
@@ -312,6 +327,11 @@
         {
           "label": "WHO, Progress in reducing child deaths slows as 4.9 million children die before age five, 18 March 2026",
           "url": "https://www.who.int/news/item/18-03-2026-progress-in-reducing-child-deaths-slows-as-4.9-million-children-die-before-age-five",
+          "kind": "primary"
+        },
+        {
+          "label": "Institut National de Santé Publique (DR Congo), SitRep N°187, data of 17 November 2026, published 18 November 2026",
+          "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N187_17-11-2026_corrige_VF.pdf",
           "kind": "primary"
         },
         {
@@ -328,14 +348,14 @@
     },
     {
       "field": "displacement",
-      "state": "UNHCR counts 41.7 million refugees, 8.6 million asylum-seekers and an estimated 69.4 million people displaced within their own country at end-June 2026, one in 70 people. The 2026 Global Humanitarian Overview was 45.1% funded on 19 November: US$15.81 billion of US$35.06 billion.",
+      "state": "UNHCR estimates 118.2 million people forcibly displaced at end-June 2026, one in 70 people, a slight increase of 344,000 (0.3%) on end-2025. The 2026 Global Humanitarian Overview was 45.1% funded on 19 November: US$15.81 billion of US$35.06 billion.",
       "as_of": "2026-06",
-      "direction": "worse",
-      "compared_with": "From end-2025 to mid-2026 the number of refugees rose by 40,100 and the internally displaced by 1% (UNHCR Mid-Year Trends 2026, same definitions); returns stayed historically high. UNHCR's total at end-2025 was 117.8 million (Global Trends 2025). The appeal stood at US$15.76bn, 44.9%, on 15 November (FTS); the tracked total moves with reporting.",
+      "direction": "steady",
+      "compared_with": "UNHCR's total rose from 117.8 million at end-2025 (Global Trends 2025) to 118.2 million at mid-2026, 'a slight increase of 344,000 people or 0.3 per cent', one in 70 at both dates (Mid-Year Trends 2026, same definitions): refugees up 40,100, partly new reporting, internally displaced up 1%, asylum-seekers down 5%. Returns fell by about a quarter against the first half of 2025 but 'remained historically high compared with years prior to 2025'. The appeal stood at US$15.76bn, 44.9%, on 15 November (FTS, as recorded in the briefing after cycle 015); the tracked total moves with reporting.",
       "lines": [
         {
-          "text": "At the end of June 2026 one in every 70 people on Earth was forcibly displaced, by UNHCR's count.",
-          "say": "At the end of June twenty twenty-six one in every seventy people on Earth was forcibly displaced, by the UN refugee agency's count."
+          "text": "UNHCR estimates that 118.2 million people were forcibly displaced at the end of June 2026, one in every 70 people on Earth, slightly more than at the end of 2025.",
+          "say": "The UN refugee agency estimates that one hundred and eighteen point two million people were forcibly displaced at the end of June twenty twenty-six, one in every seventy people on Earth, slightly more than at the end of twenty twenty-five."
         },
         {
           "text": "The 2026 humanitarian appeals were 45.1% funded on 19 November: about 15.8 of 35.1 billion dollars.",
@@ -347,6 +367,11 @@
         {
           "label": "UNHCR, Mid-Year Trends 2026, 17 November 2026",
           "url": "https://www.unhcr.org/us/mid-year-trends",
+          "kind": "primary"
+        },
+        {
+          "label": "UNHCR, Mid-Year Trends 2026, report, November 2026",
+          "url": "https://www.unhcr.org/sites/default/files/docs/default/2026-11/mid-year-trends-report-2026.pdf",
           "kind": "primary"
         },
         {
@@ -458,7 +483,7 @@
       "title": "Who checks the tests of frontier AI",
       "short": "Who checks AI's tests",
       "field": "ai",
-      "gist": "Within three days a UK parliamentary committee, California's government and the EU's science advisers each asked that someone other than the developer check the safety of the most capable AI systems.",
+      "gist": "Within three days a UK parliamentary committee, California's government and the EU's science and ethics advisers each asked that someone other than the developer check the safety of the most capable AI systems.",
       "quiet_rank": null,
       "terms": [
         "AI safety",
@@ -480,7 +505,7 @@
           "say": "On the sixteenth of November California's Government Operations Agency recommended licensed independent verifiers with full access to frontier developers."
         },
         {
-          "text": "The same day the European Commission's chief scientific advisers asked Europe to build its own capacity to evaluate AI models."
+          "text": "The same day the European Commission's scientific and ethics advisers asked Europe to build its own capacity to evaluate AI models."
         },
         {
           "text": "None of the three is law."
@@ -488,7 +513,7 @@
       ],
       "sources": [
         {
-          "label": "UK Parliament, Business and Trade Committee news: Close AI safety gaps, 18 November 2026",
+          "label": "UK Parliament, Business, Innovation, Science and Trade Committee, news: Close AI safety gaps, 18 November 2026",
           "url": "https://committees.parliament.uk/committee/365/business-innovation-science-and-trade-committee/news/219006/close-ai-safety-gaps-to-secure-britains-400-billion-ai-growth-opportunity-mps-urge/",
           "kind": "primary"
         },
@@ -505,6 +530,11 @@
         {
           "label": "European Commission, DG Research and Innovation, joint statement of the GCSA and the EGE, 16 November 2026",
           "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/ai-requires-rigorous-safeguards-and-rules-keep-pace-technological-advances-experts-tell-european-2026-11-16_en",
+          "kind": "primary"
+        },
+        {
+          "label": "Group of Chief Scientific Advisors and European Group on Ethics, The next phase of artificial intelligence: governing for safety, security and human agency, joint statement, 16 November 2026",
+          "url": "https://scientificadvice.eu/scientific-outputs/the-next-phase-of-artificial-intelligence-governing-for-safety-security-and-human-agency-joint-ege-gcsa-statement/",
           "kind": "primary"
         }
       ]
@@ -525,8 +555,8 @@
       ],
       "lines": [
         {
-          "text": "UNCTAD counts 3.7 billion people living in countries that spend more on interest than on health or on education.",
-          "say": "UN Trade and Development counts three point seven billion people living in countries that spend more on interest than on health or on education."
+          "text": "By UNCTAD's count for 2023, 3.7 billion people lived in countries that spent more on interest than on health or on education.",
+          "say": "By UN Trade and Development's count for twenty twenty-three, three point seven billion people lived in countries that spent more on interest than on health or on education."
         },
         {
           "text": "That is 1.2 billion more people than in 2010.",
@@ -546,6 +576,11 @@
           "label": "UNCTAD, A World of Debt 2026",
           "url": "https://unctad.org/publication/world-of-debt",
           "kind": "primary"
+        },
+        {
+          "label": "UNCTAD, A World of Debt 2026, report (UNCTAD/OSG/INF/2026/11), 7 October 2026",
+          "url": "https://unctad.org/system/files/official-document/osginf2026d11_en.pdf",
+          "kind": "primary"
         }
       ]
     },
@@ -554,7 +589,7 @@
       "title": "Appeals less than half funded",
       "short": "Aid less than half paid",
       "field": "displacement",
-      "gist": "With six weeks of the year left, the world's humanitarian appeals have received less than half of what they asked for, as UNHCR counts more people forced from their homes than at the end of last year.",
+      "gist": "With six weeks of the year left, the world's humanitarian appeals have received less than half of what they asked for, while UNHCR estimates slightly more people forced from their homes than at the end of last year.",
       "quiet_rank": 2,
       "terms": [
         "humanitarian aid",
@@ -573,12 +608,12 @@
           "say": "Niger's plan was twenty percent funded, Yemen's twenty-three and Afghanistan's thirty-three point nine."
         },
         {
-          "text": "The United States gave 30.8 percent of the money tracked.",
-          "say": "The United States gave thirty point eight percent of the money tracked."
+          "text": "The United States gave 30.8 percent of the money these appeals received.",
+          "say": "The United States gave thirty point eight percent of the money these appeals received."
         },
         {
-          "text": "At the end of June 2026, UNHCR counted one in every 70 people on Earth as forcibly displaced.",
-          "say": "At the end of June twenty twenty-six, the UN refugee agency counted one in every seventy people on Earth as forcibly displaced."
+          "text": "At the end of June 2026, by UNHCR's estimate, 118.2 million people were forcibly displaced, one in every 70 on Earth.",
+          "say": "At the end of June twenty twenty-six, by the UN refugee agency's estimate, one hundred and eighteen point two million people were forcibly displaced, one in every seventy on Earth."
         }
       ],
       "sources": [
@@ -590,6 +625,11 @@
         {
           "label": "UNHCR, Mid-Year Trends 2026, 17 November 2026",
           "url": "https://www.unhcr.org/us/mid-year-trends",
+          "kind": "primary"
+        },
+        {
+          "label": "UNHCR, Mid-Year Trends 2026, report, November 2026",
+          "url": "https://www.unhcr.org/sites/default/files/docs/default/2026-11/mid-year-trends-report-2026.pdf",
           "kind": "primary"
         }
       ]
@@ -628,8 +668,8 @@
           "text": "It measures the average change in population size, not the number of animals lost."
         },
         {
-          "text": "The IUCN Red List's next update is scheduled for 3 December 2026.",
-          "say": "The IUCN Red List's next update is scheduled for the third of December twenty twenty-six."
+          "text": "The IUCN Red List's next update is scheduled for 3 December 2026, a date IUCN says may change.",
+          "say": "The IUCN Red List's next update is scheduled for the third of December twenty twenty-six, a date IUCN says may change."
         }
       ],
       "sources": [
@@ -698,10 +738,10 @@
     },
     {
       "id": "acute-hunger",
-      "title": "A fifth of those counted, in crisis; Congo at a record",
+      "title": "A fifth of those counted, in crisis; a record projected for Congo",
       "short": "Acute food crises",
       "field": "hunger",
-      "gist": "In the countries with food crises, more than a fifth of the people analysed could not reliably eat enough, and Congo now has a record number in crisis.",
+      "gist": "In the countries with food crises, more than a fifth of the people analysed could not reliably eat enough, and Congo is projected to reach a record number in crisis in the first half of 2027.",
       "quiet_rank": null,
       "terms": [
         "famine",
@@ -758,6 +798,11 @@
           "label": "WHO, FAO, WFP and UNICEF, joint news release on the DR Congo IPC analysis, 13 November 2026",
           "url": "https://www.who.int/news/item/13-11-2026-conflict-and-disease-outbreaks-deepen-dr-congo-s-hunger-crisis-as-record-numbers-are-projected-to-face-acute-food-insecurity",
           "kind": "primary"
+        },
+        {
+          "label": "IPC, Democratic Republic of the Congo: Acute Food Insecurity Snapshot, September 2026 to June 2027, 30 October 2026 (on ReliefWeb)",
+          "url": "https://reliefweb.int/report/democratic-republic-congo/democratic-republic-congo-ipc-acute-food-insecurity-snapshot-september-2026-june-2027",
+          "kind": "primary"
         }
       ]
     },
@@ -807,7 +852,7 @@
       "title": "A record of conflicts between states",
       "short": "Record of state conflicts",
       "field": "war",
-      "gist": "Organised violence killed far more people in 2025 than the year before, in more conflicts between states than ever recorded.",
+      "gist": "Organised violence killed far more people in 2025 than the year before, a rise driven by one-sided killings of civilians, and more conflicts were fought between states than ever recorded.",
       "quiet_rank": null,
       "terms": [
         "armed conflict",
@@ -862,7 +907,7 @@
       "title": "Five companies, most of the machines",
       "short": "Who owns AI compute",
       "field": "power",
-      "gist": "Five cloud companies own most of the world's computing power for AI, and the US now requires a licence to rent large amounts of it abroad to firms from China and other embargoed countries.",
+      "gist": "Five companies own most of the world's computing power for AI, and the US now requires a licence to rent large amounts of it abroad to firms from China and other embargoed countries.",
       "quiet_rank": null,
       "terms": [
         "hyperscaler",
@@ -903,8 +948,8 @@
           "kind": "primary"
         },
         {
-          "label": "Federal Register, public inspection 2026-23529, Addressing Remote Access to Advanced Semiconductors (interim final rule)",
-          "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+          "label": "Federal Register, 91 FR 74970, Addressing Remote Access to Advanced Semiconductors (interim final rule), 19 November 2026",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf",
           "kind": "primary"
         }
       ]
@@ -930,8 +975,12 @@
           "say": "In the week to the fifteenth of November four hundred and forty-two cases were confirmed, against four hundred and fifty-eight the week before."
         },
         {
-          "text": "On 17 November WHO's chief said two thirds of confirmed deaths occur outside Ebola treatment centres.",
-          "say": "On the seventeenth of November the head of the World Health Organization said two thirds of confirmed deaths occur outside Ebola treatment centres."
+          "text": "By 17 November Congo's own count stood at 11,613 confirmed cases, including 5,678 deaths.",
+          "say": "By the seventeenth of November Congo's own count stood at eleven thousand, six hundred and thirteen confirmed cases, including five thousand, six hundred and seventy-eight deaths."
+        },
+        {
+          "text": "On 17 November WHO's chief said two thirds of confirmed deaths occur outside Ebola treatment centres; in the week to 15 November the share was 59 percent.",
+          "say": "On the seventeenth of November the head of the World Health Organization said two thirds of confirmed deaths occur outside Ebola treatment centres; in the week to the fifteenth of November the share was fifty-nine percent."
         },
         {
           "text": "Children account for more than a quarter of confirmed cases and a third of deaths."
@@ -948,13 +997,28 @@
           "kind": "primary"
         },
         {
+          "label": "Institut National de Santé Publique (DR Congo), SitRep N°187, data of 17 November 2026, published 18 November 2026",
+          "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N187_17-11-2026_corrige_VF.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, Director-General's opening remarks at the third IHR Emergency Committee meeting on Bundibugyo virus disease, 17 November 2026",
+          "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-third-ihr-emergency-committee-meeting-on-bundibugyo-virus-disease-epidemic-in-the-democratic-republic-of-the-congo---17-november-2026",
+          "kind": "primary"
+        },
+        {
           "label": "UN News, World News in Brief: Ebola cases double in DR Congo, 17 November 2026",
           "url": "https://news.un.org/en/story/2026/11/1168827",
-          "kind": "primary"
+          "kind": "report"
         },
         {
           "label": "ECDC, Ebola disease: multi-country outbreak 2026, updated 16 November 2026",
           "url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, Disease Outbreak News DON625, Bundibugyo virus disease: Democratic Republic of the Congo, Kenya and Nigeria, 6 November 2026",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625",
           "kind": "primary"
         }
       ]
@@ -984,6 +1048,10 @@
           "say": "On the eighteenth of November divisions persisted over mitigation, carbon-market guidance and finance for adaptation and loss and damage, while a decision on the least developed countries was agreed."
         },
         {
+          "text": "A second draft of the cover decision came out on 19 November, cut from 18 pages to 9 and no longer naming fossil fuels.",
+          "say": "A second draft of the cover decision came out on the nineteenth of November, cut from eighteen pages to nine and no longer naming fossil fuels."
+        },
+        {
           "text": "UNEP finds that current policies could take warming to 2.8°C this century.",
           "say": "The UN Environment Programme finds that current policies could take warming to two point eight degrees this century."
         },
@@ -1006,6 +1074,11 @@
         {
           "label": "UNFCCC, draft text of the cover decision, unedited version, 16 November 2026",
           "url": "https://unfccc.int/sites/default/files/resource/dt_cop31_cover_decision.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "UNFCCC, draft text of the cover decision, unedited version, 19 November 2026",
+          "url": "https://unfccc.int/sites/default/files/resource/Upload_dt_cop31_cover_decision.pdf",
           "kind": "primary"
         },
         {
@@ -1103,5 +1176,12 @@
       }
     }
   ],
-  "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?"
+  "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?",
+  "checked": {
+    "on": "2026-11-19",
+    "claims": 307,
+    "held": 277,
+    "corrected": 30,
+    "dropped": 0
+  }
 }

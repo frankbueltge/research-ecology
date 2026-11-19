@@ -619,7 +619,7 @@
       "channel": "https://www.editorialexpress.com/leonardo",
       "channel_page": "https://leonardo.info/faqs",
       "takes": "Illustrated articles on work that crosses the boundaries between contemporary arts and sciences, by artists about their own work and by researchers; unsolicited articles with no deadline; a Statement format of two pages or less (about 2,000 words, up to three illustrations).",
-      "machine_made": "The MIT Press policy (https://direct.mit.edu/journals/pages/ai_guidelines, linked from the publication-ethics page) permits generative AI subject to disclosure at submission (tool and exact version, purpose, extent); 'Generative AI tools and systems cannot be listed as authors or co-authors'; undisclosed material use may lead to rejection or retraction.",
+      "machine_made": "Leonardo's own FAQ, author information and code of ethics say nothing of AI. Its publisher's policy for all MIT Press journals (https://direct.mit.edu/journals/pages/ai_guidelines) permits generative AI subject to disclosure at submission (tool and exact version, purpose, extent); 'Generative AI tools and systems cannot be listed as authors or co-authors'; undisclosed material use may lead to rejection or retraction; a journal may add requirements of its own.",
       "deadline": null,
       "cost": "not stated on the pages read",
       "language": "en",
@@ -627,7 +627,7 @@
       "caveat": "A person must be the author and answer for the work. Peer review takes about two months; print publication of a Statement under 18 months, of longer papers over three years. The submission system itself was not opened.",
       "checked": "2026-11-19",
       "recheck": "2027-02-19",
-      "read_by": "a summarising page reader (the FAQ, the author information and the MIT Press AI policy) on 2026-11-19; not yet re-read on the live page"
+      "read_by": "the FAQ, the author information and the code of ethics as text on the live pages on 2026-11-19; the MIT Press AI policy through an extraction service, in a copy of 2026-11-06, the page having refused a direct request"
     },
     {
       "name": "International AI Safety Report (Secretariat, Department for Science, Innovation and Technology)",
