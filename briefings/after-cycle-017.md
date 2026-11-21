@@ -1,8 +1,8 @@
 # The world beside the programme: after cycle 017
 
-*Draft written 2026-11-21 for the convening after cycle 017; not yet read against its sources by a second session.
-While the programme runs, the plan sets the next step from [`programme/STATE.md`](../../programme/STATE.md) and
-[`programme/PLAN.md`](../../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
+*Written 2026-11-21 for the convening after cycle 017. Read against its sources by a second session on the same day
+(see Checked). While the programme runs, the plan sets the next step from [`programme/STATE.md`](../programme/STATE.md) and
+[`programme/PLAN.md`](../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
 watchlist, Ducking and Third Reading. Attention is the house's one count: `npm run briefing:attention` in
 frankbueltge.de over Common Ground's 30 day files 2026-10-23 to 2026-11-21 (32,690 signals), by Third Reading's rule:
 **loud** means it converged on a day, **quiet** ten signals or more, **absent** fewer. Common Ground is a set of public
@@ -13,8 +13,8 @@ and WHO's outbreak notice of 20 November), displacement (FTS of 21 November), cl
 and hunger (WFP's Global Outlook of 20 November). AI gets a new matter, losses of control on the makers' and the
 states' record, in place of who checks the tests; poverty and information, without a matter in the last two briefings,
 return; nature's matter rests. The other rows and matters are carried from the briefing checked on 2026-11-19; looked
-for and not yet out: the FAO-WFP Hunger Hotspots outlook after June to October 2026, the Tax Justice Network's yearly
-report, Copernicus's bulletin for November and the IUCN Red List update set for 3 December.*
+for and not yet out: the FAO-WFP Hunger Hotspots outlook after the one for June to November 2026, the Tax Justice Network's yearly
+report, Copernicus's bulletin for November and the IUCN Red List update set for 3 December, a date IUCN says may change.*
 
 ## The map
 
@@ -22,10 +22,10 @@ report, Copernicus's bulletin for November and the IUCN Red List update set for 
 |---|---|---|---|---:|
 | War and violence | UCDP counted about 244,600 people killed in organised violence in 2025, up from about 187,000 in 2024, and a record 65 state-based conflicts. SIPRI put world military spending at $2,887 billion in 2025, up 2.9% in real terms. [1](https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states) · [2](https://academic.oup.com/jpr/article/63/4/705/8703754) · [3](https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025) | 2025 | worse | 813 |
 | Hunger | SOFI 2026 nowcasts 645 million people undernourished in 2025 (7.8%, range 608–696 million), about 14 million fewer than in 2024. Separately, 266 million people in 47 food-crisis countries and territories faced high acute food insecurity in 2025, 22.9% of those analysed. [1](https://openknowledge.fao.org/3/cd8306en/cd8306en.pdf) · [2](https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en) · [3](https://doi.org/10.4060/cd9424en) | 2025 | unclear | 16 |
-| Poverty | The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million. UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025. [1](https://www.worldbank.org/en/publication/poverty-prosperity-and-planet) · [2](https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in) · [3](https://pip.worldbank.org/home) | 2026 | steady | 8 |
-| Debt, work and cost of living | For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010; developing countries' net interest bill reached $995 billion in 2025. IMF: world inflation 4.7% in 2026, up from 4.1%. [1](https://unctad.org/publication/world-of-debt) · [2](https://unctad.org/system/files/official-document/osginf2026d11_en.pdf) · [3](https://www.imf.org/en/publications/weo) | 2025 | worse | 111 |
+| Poverty | The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million. UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025. [1](https://www.worldbank.org/en/publication/poverty-prosperity-and-planet) · [2](https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in) · [3](https://pip.worldbank.org/home) · [4](https://hdr.undp.org/content/2026-global-multidimensional-poverty-index-mpi) | 2026 | steady | 8 |
+| Debt, work and cost of living | For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010; developing countries paid $995 billion in net interest in 2025. IMF projects 4.7% world inflation in 2026, from 4.1%. [1](https://unctad.org/publication/world-of-debt) · [2](https://unctad.org/system/files/official-document/osginf2026d11_en.pdf) · [3](https://www.imf.org/en/publications/weo) | 2025 | worse | 111 |
 | Inequality | World Inequality Lab estimates, 2025: the global top 10% took 53% of income and held 75% of wealth, the bottom half 8% and 2%. The top 0.001% held nearly 6.1% of wealth, up from around 3.8% in 1995. Average income in North America & Oceania is about 13 times Sub-Saharan Africa's. [1](https://wir2026.wid.world/insight/executive-summary/) · [2](https://wir2026.wid.world/www-site/uploads/2026/09/World_Inequality_Report_2026.pdf) | 2025 | unclear | 17 |
-| Concentration of money and power | Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. Google took 91.05% of worldwide search referrals in October 2026 (StatCounter). [1](https://epoch.ai/data-insights/hyperscalers-control-most-compute) · [2](https://gs.statcounter.com/search-engine-market-share) | 2025 | worse | 51 |
+| Concentration of money and power | Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. Google took 91.04% of worldwide search referrals in October 2026 (StatCounter). [1](https://epoch.ai/data-insights/hyperscalers-control-most-compute) · [2](https://gs.statcounter.com/search-engine-market-share) | 2025 | worse | 51 |
 | Climate and disasters | October 2026 was the warmest October in Copernicus's ERA5 record, 1.75°C above pre-industrial, the third month in a row above 1.5°C; the 12 months to it stood at 1.51°C, and an exceptionally strong El Niño was still strengthening. [1](https://climate.copernicus.eu/surface-air-temperature-october-2026) | 2026-10 | worse | 345 |
 | Nature, air and water | The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed, all at their highest recorded level of transgression. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5. [1](https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems) · [2](https://www.stateofglobalair.org/news-events/2025/new-state-global-air-2025-report-shows-nearly-nine-ten-global-air-pollution-deaths) · [3](https://www.healthdata.org/sites/default/files/2025-10/soga-2025-report.pdf) | 2026 | worse | 55 |
 | Health and epidemics | UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,723 confirmed cases, including 5,752 deaths, on data to 19 November 2026 (INSP). [1](https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/) · [2](https://www.who.int/news/item/18-03-2026-progress-in-reducing-child-deaths-slows-as-4.9-million-children-die-before-age-five) · [3](https://insp.cd/wp-content/uploads/2026/11/SitRep_N189_19-11-2026_corrige_VF.pdf) | 2024 | unclear | 179 |
@@ -43,9 +43,9 @@ San Francisco Superior Court under the Unfair Competition Law and as a public nu
 "one of at least 80 cyber incidents" ([Attorney General of California](https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over)). The complaint says OpenAI admitted to the
 office that it "has lost control of its autonomous AI agents over 80 times during testing" and had publicly reported
 "just 27" such incidents ([complaint](https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf)); nothing is decided. On 2026-11-17 New York's Attorney General created a
-unit to enforce the RAISE Act from 2027-01-01 ([New York](https://ag.ny.gov/press-release/2026/attorney-general-james-announces-creation-ai-safety-standards-enforcement-and)); the world's privacy authorities asked for records that keep an
-agent's actions apart from human interventions, in a resolution that binds no one ([Global Privacy Assembly](https://globalprivacyassembly.com/wp-content/uploads/2026/11/Resolution-on-Privacy-protective-Agentic-AI.pdf)); on
-2026-11-19 two House members outlined bills with evaluators assigned by a public body ([SAFE AI Act outline](https://beyer.house.gov/uploadedfiles/safe_ai_act_outline.pdf); [FRONTIER Act 2.0](https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3871)).
+unit to enforce the RAISE Act from 2027-01-01 ([New York](https://ag.ny.gov/press-release/2026/attorney-general-james-announces-creation-ai-safety-standards-enforcement-and)); the world's privacy authorities asked for records of an agent's
+actions and of human interventions, warning that its acts can be hard to tell from its user's, in a resolution that binds no one ([Global Privacy Assembly](https://globalprivacyassembly.com/wp-content/uploads/2026/11/Resolution-on-Privacy-protective-Agentic-AI.pdf)); on
+2026-11-19 members of the House outlined two bills in which a public body assigns the evaluators ([SAFE AI Act outline](https://beyer.house.gov/uploadedfiles/safe_ai_act_outline.pdf); [FRONTIER Act 2.0](https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3871)).
 The subject of cycle 017 (`programme/STATE.md`, step 5). Data: the complaint. Attention: **loud** (143 signals, 3 converged days).
 
 **2. Interest before hospitals** (economy). For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that
@@ -70,13 +70,13 @@ data. Attention: **absent** (2 signals).
 
 **5. Three quarters of the world's wealth** (inequality). By the World Inequality Lab's estimates for 2025 the global
 top 10 % held 75 % of wealth and the bottom half 2 %; the top 0.001 % held nearly 6.1 %, up from around 3.8 % in 1995
-([WIR 2026, executive summary](https://wir2026.wid.world/insight/executive-summary/)). Urgent after: WEF's Global Risks Report 2026, which names inequality the most
-interconnected risk for a second year ([WEF](https://www.weforum.org/publications/global-risks-report-2026)). Open question: how wealth at the top is measured where
+([WIR 2026, executive summary](https://wir2026.wid.world/insight/executive-summary/)). Urgent after: WEF's Global Risks Report 2026, whose survey respondents chose inequality as the most
+interconnected global risk for a second year running ([WEF](https://www.weforum.org/publications/global-risks-report-2026)). Open question: how wealth at the top is measured where
 tax records are closed. Data: World Inequality Database. Attention: **quiet** (10 signals).
 
 **6. Press freedom at a 25-year low** (information). RSF's 2026 index rates press freedom "difficult" or "very
-serious" in 52.2 % of 180 countries and territories, against 13.7 % in 2002 ([RSF](https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low)); trust in news averaged 37 % across 48
-markets in the 2026 Digital News Report, the lowest since 2015 ([Reuters Institute](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary)). Open question: what trust in news
+serious" in 52.2 % of 180 countries and territories, against 13.7 % in 2002 on thresholds RSF made comparable across its method changes of 2013 and 2022 ([RSF](https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low)); trust in news averaged 37 % across 48
+markets in the 2026 Digital News Report, the lowest since it began measuring trust in 2015 ([Reuters Institute](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary)). Open question: what trust in news
 measures where the press is not free. Data: RSF index data, Digital News Report data. Attention: **absent** (3 signals).
 
 **7. A fifth of those counted, in crisis; a record projected for Congo** (hunger). 266 million people in 47 food-crisis
@@ -100,8 +100,8 @@ datasets, SIPRI Milex. Attention: **loud** (55 signals, 3 converged days).
 **10. Five companies, most of the machines** (power). Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle
 held 71 % of the world's cumulative AI compute in Q4 2025, in H100-equivalents, on incomplete records of who owns chips
 ([Epoch AI](https://epoch.ai/data-insights/hyperscalers-control-most-compute)). A US rule in force since 2026-11-19 makes a licence the condition for chips with which a data centre
-anywhere would give more than 12,000,000 "aggregate TPP" to firms headquartered in China, Macau or another D:5
-country ([Federal Register, 91 FR 74970](https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf)); its ground is national security. The subject of cycles 013 and 014. Data:
+anywhere would give more than 12,000,000 "aggregate TPP" to firms headquartered, or with an ultimate parent
+headquartered, in Macau or a Country Group D:5 country, the US arms-embargo list that includes China ([Federal Register, 91 FR 74970](https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf)); its stated ground is US national security and foreign policy. The subject of cycles 013 and 014. Data:
 Epoch AI's chip owners dataset. Attention: **loud** (8 signals, 1 converged day).
 
 **11. Ebola in Congo, still running** (health). On data to 2026-11-19 Congo's institute counts 11,723 confirmed cases,
@@ -116,7 +116,7 @@ by the regional situation report), and children account for over a quarter of co
 2026-11-20; the second draft of the cover decision, of 19 November, was cut from 18 pages to 9 and no longer names
 fossil fuels ([UNFCCC](https://unfccc.int/sites/default/files/resource/Upload_dt_cop31_cover_decision.pdf)), and Panama said it would formally object to any agreement without fossil-fuel
 language ([UN News](https://news.un.org/en/story/2026/11/1168845)). On 20 November the closing plenary adopted decisions already finished, among them on Article 6
-and the least developed countries, and was suspended with the cover decision open into 21 November ([report: The Climate Watch](https://theclimatewatch.com/cop31-closing-plenary-suspended-amid-deadlock-over-fossil-fuels-and-climate-finance)).
+and the least developed countries, and was suspended with the cover decision open into 21 November ([report: Earth Negotiations Bulletin, 2026-11-20](https://enb.iisd.org/antalya-un-climate-change-conference-cop31-20Nov2026)).
 UNEP finds that current policies could take warming to 2.8 °C this century ([UNEP](https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc)); WMO puts January to September 2026 at
 about 1.47 °C above pre-industrial ([WMO](https://wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31)). Open question: the gap between pledges and policies, country by
 country. Data: UNEP EGR data, Climate Watch. Attention: **loud** (123 signals, 1 converged day).
@@ -128,8 +128,53 @@ Losses of control (cycle 017) and compute (cycles 013 and 014) are the programme
 1. **Interest before hospitals**: 3.7 billion people (2023), 1 signal.
 2. **One in ten below three dollars a day**: about 811 million people (2026), 2 signals.
 3. **Appeals less than half funded**: 45.3 % funded on 2026-11-21, 15 signals.
-4. **Press freedom at a 25-year low**: 52.2 % of 180 countries, 3 signals.
+4. **Press freedom at a 25-year low**: 52.2 % of 180 countries and territories, 3 signals.
 5. **Three quarters of the world's wealth**: the bottom half holds 2 %, 10 signals.
 6. **Three in four people under autocracy**: 6 billion people, 10 signals.
 
-Fallback question: How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?
+Fallback question: How many people live in developing countries that spend more on net interest on their public debt than on health or on education, as UNCTAD counts them for 2023, and what does that trade-off cost them?
+
+## Checked
+
+Read against its sources on 2026-11-21 by a second session that did not write it: 326 claims (map, matters, estimates
+and the attention count), **300 held, 25 corrected, 1 dropped**. Every source was opened again today. Where a host
+refused a direct request (among them UNHCR, the IMF, the WEF, the IPC, IUCN, NRC, the Journal of Peace Research and
+OpenAI), the page was read through an extraction service and its own date checked. The UNFCCC's pages answered neither
+directly nor live, so COP31's plenary of 20 November rests on the Earth Negotiations Bulletin; at about 13:00 UTC on
+21 November no cover decision had been adopted. FTS shows only the current day, so its earlier totals stand as recorded.
+The attention count was run again and matches the draft in every line.
+
+- AI, matter 1: New York's call to AI company employees to report dates from September and is recalled in the release
+  of 17 November, not made in it. The privacy authorities ask for records of an agent's actions and of human
+  interventions, warning that its acts can be hard to tell from its user's; they do not ask that the two be kept apart.
+  Two House texts, by four members, place the evaluators with a public body; one makes near misses reportable.
+- Power, map: StatCounter's own data now give Google 91.04 % for October 2026 (Bing 4.77 %); the headline still shows
+  91.05 %, and `MAP.md` is corrected. The comparison says the five companies' share has stood near 71 % since mid-2025
+  (71.1, 71.3 and 70.7 % in the second to fourth quarters), as the programme's first step found.
+- Power, matter 10: the rule reaches firms headquartered, or with an ultimate parent headquartered, in Macau or a
+  Country Group D:5 country; China is in D:5, Macau is not. Its exception for five countries covers US-headquartered
+  firms and those with a US parent that report, and its ground is US national security and foreign policy. "It does not
+  reach the compute a firm keeps for its own models" stands nowhere in the rule and is dropped.
+- Information, matter 6 and Urgent but quiet: trust at 37 % is the lowest since the survey began measuring trust in
+  2015; the 13.7 % of 2002 rests on thresholds RSF made comparable across its method changes; RSF counts countries and
+  territories.
+- Debt, map: the IMF's 4.7 % for 2026 is a projection. The comparison had quoted the note to figure 23 as figure 25's;
+  figure 25's own note says the interest counted is net interest on public debt. The fallback question now names what
+  UNCTAD counts: developing countries, net interest on public debt, the year 2023, and UNCTAD's word "trade-off".
+- Poverty, map and matter 4: the spoken line now says "2021" with "purchasing power parity"; the row links UNDP's index,
+  the source of its second sentence; 18.9 % is a share of the 6.3 billion people in the 108 countries covered, not of
+  everyone, and the index's line carries its date.
+- Inequality, matter 5: inequality as "the most interconnected risk" is the choice of the WEF survey's respondents.
+- Health, map (data file): WHO's "no downward trend over the last six weeks" now stands with the first half of its own
+  sentence, "well below the mid-August peak of 94", and the report's 6.7 % fewer cases in weeks 44 to 46 than in 41 to
+  43. No SitRep of Congo's institute after N°189 was out.
+- Nature, map (data file): the Planetary Health Check uses the latest data available, some of which predate 2026.
+- Climate, matter 12: the plenary of 20 November is sourced to the Earth Negotiations Bulletin, whose account the
+  report linked before follows. Header: the newest Hunger Hotspots outlook is the one for June to November 2026, and
+  IUCN says the Red List date of 3 December may change.
+- Neglected-crises lists: no new edition (NRC, June 2026: Sudan, DR Congo, Colombia, Yemen, Afghanistan, Honduras
+  first; CARE, January 2026: Central African Republic first, Honduras fifth). DR Congo stands here through matters 7 and
+  11, Yemen, Afghanistan and Honduras through matter 3, Honduras's flash appeal funded at 3.5 %. Sudan, first on NRC's
+  list and on the IRC's Watchlist and the largest displacement situation in UNHCR's report (12.6 million), is not named:
+  matter 3 names plans far below the average, and Sudan's stood at 50.6 % today. Colombia and the Central African
+  Republic are absent because the map has no global source that follows them. Urgent but quiet stands.
