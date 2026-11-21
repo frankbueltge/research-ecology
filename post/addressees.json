@@ -1,6 +1,6 @@
 {
   "contract": "post-addressees/1",
-  "kept_on": "2026-11-19",
+  "kept_on": "2026-11-21",
   "note": "Receivers that publish a channel of their own for outside work. Rules: post/README.md. Every entry was read on the day in \"checked\"; re-read the channel page before a letter is written.",
   "entries": [
     {
@@ -653,7 +653,7 @@
   "unread": [
     {
       "name": "Rhizome",
-      "reason": "HTTP 403 on about and submit pages; tried again 2026-11-15 and 2026-11-16, the about page still could not be fetched"
+      "reason": "HTTP 403 on about and submit pages on 2026-11-15 and 2026-11-16; tried again 2026-11-21, the about page opened but lists only general, curatorial and digital-preservation addresses, shown masked, and no submissions channel"
     },
     {
       "name": "We Make Money Not Art",
@@ -693,11 +693,11 @@
     },
     {
       "name": "Sigma Awards (GIJN)",
-      "reason": "Own site opened; the 2026 call closed in January/February 2026 and no 2027 call is posted. Rules page says submission via sigmaawards.awardsplatform.com, no AI rule stated. Revisit late 2026/early 2027."
+      "reason": "Own site opened; the 2026 call closed in January/February 2026 and no 2027 call is posted. Rules page says submission via sigmaawards.awardsplatform.com, no AI rule stated. Revisit late 2026/early 2027. Tried again 2026-11-21: the site shows the 2026 winners and still no 2027 call."
     },
     {
       "name": "Information is Beautiful Awards",
-      "reason": "Own site says 'Submissions are now closed' and the awards are 'on hiatus and will resume in 2027'. No open call."
+      "reason": "Own site says 'Submissions are now closed' and the awards are 'on hiatus and will resume in 2027'. No open call. Tried again 2026-11-21: still no open call."
     },
     {
       "name": "Data Is Plural",
