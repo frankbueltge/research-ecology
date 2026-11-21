@@ -124,7 +124,7 @@
       "lines": [
         {
           "text": "The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million.",
-          "say": "The World Bank's now cast is about eight hundred and eleven million people, one in ten, below three dollars a day in twenty twenty-six; twenty twenty-four, the latest year with sufficient data, stands at eight hundred and twenty-four million."
+          "say": "The World Bank's now cast is about eight hundred and eleven million people, one in ten, below three dollars a day at twenty twenty-one purchasing power parity in twenty twenty-six; twenty twenty-four, the latest year with sufficient data, stands at eight hundred and twenty-four million."
         },
         {
           "text": "UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025.",
@@ -135,10 +135,10 @@
     },
     {
       "field": "economy",
-      "state": "For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010; developing countries' net interest bill reached $995 billion in 2025. IMF: world inflation 4.7% in 2026, up from 4.1%.",
+      "state": "For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010; developing countries paid $995 billion in net interest in 2025. IMF projects 4.7% world inflation in 2026, from 4.1%.",
       "as_of": "2025",
       "direction": "worse",
-      "compared_with": "UNCTAD, A World of Debt 2026: the number of people in such countries 'increased from 2.5 billion in 2010 to 3.7 billion in 2023' (report, figure 25; its figures 'refer to 2023 because data coverage for 2024 is limited'). The count is of 2023, the interest bill of 2025. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, dated 13 October, has the same 4.1% and keeps 4.7% for 2026, a projection).",
+      "compared_with": "UNCTAD, A World of Debt 2026: the number of people in such countries 'increased from 2.5 billion in 2010 to 3.7 billion in 2023' (report, p. 28 and figure 25, whose note reads 'Interest refers to net interest payments on public debt'; spending figures 'refer to 2023 because data coverage for 2024 is limited', note to figure 23). The count is of 2023, the interest bill of 2025. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, dated 13 October, has the same 4.1% and keeps 4.7% for 2026, a projection).",
       "lines": [
         {
           "text": "For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010.",
@@ -213,18 +213,18 @@
     },
     {
       "field": "power",
-      "state": "Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. Google took 91.05% of worldwide search referrals in October 2026 (StatCounter).",
+      "state": "Epoch AI estimates that Amazon, Google, Meta, Microsoft and Oracle held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. Google took 91.04% of worldwide search referrals in October 2026 (StatCounter).",
       "as_of": "2025",
       "direction": "worse",
-      "compared_with": "63% in Q1 2024 (Epoch AI, same series, H100-equivalents, finalised quarters; an estimate on incomplete coverage of chip ownership). Search is one market, counted by StatCounter in page views; no direction is taken from it here.",
+      "compared_with": "63% in Q1 2024 (Epoch AI, same series, H100-equivalents, finalised quarters; an estimate on incomplete coverage of chip ownership). The rise stalled from mid-2025: Epoch's own quarterly shares are 71.1% in Q2, 71.3% in Q3 and 70.7% in Q4 2025, as the programme's first step found (programme/STATE.md, corrected 2026-11-13). Search is one market, counted by StatCounter in page views; no direction is taken from it here.",
       "lines": [
         {
           "text": "Epoch AI estimates that five hyperscalers held 71% of the world's cumulative AI compute at the end of 2025, up from 63% early in 2024.",
           "say": "Epoch AI estimates that five hyperscalers held seventy-one percent of the world's cumulative AI compute at the end of twenty twenty-five, up from sixty-three percent early in twenty twenty-four."
         },
         {
-          "text": "Google took 91.05% of worldwide search referrals in October 2026, by StatCounter's count of page views.",
-          "say": "Google took ninety-one point zero five percent of worldwide search referrals in October twenty twenty-six, by StatCounter's count of page views."
+          "text": "Google took 91.04% of worldwide search referrals in October 2026, by StatCounter's count of page views.",
+          "say": "Google took ninety-one point zero four percent of worldwide search referrals in October twenty twenty-six, by StatCounter's count of page views."
         }
       ],
       "signals": 51,
@@ -271,7 +271,7 @@
       "state": "The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed, all at their highest recorded level of transgression. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5.",
       "as_of": "2026",
       "direction": "worse",
-      "compared_with": "Seven of nine in the 2025 check as well, six in 2024 (PIK, 24 September 2025: 'one more than last year'); the direction rests on PIK's 2026 reading that the seven 'continue to worsen' and all stand at their highest recorded transgression. Air pollution deaths are model estimates, revised each edition, so no year-to-year direction is taken from them.",
+      "compared_with": "Seven of nine in the 2025 check as well, six in 2024 (PIK, 24 September 2025: 'one more than last year'); the direction rests on PIK's 2026 reading that the seven 'continue to worsen' and all stand at their highest recorded transgression. The check uses the latest available data, some of which predate 2026. Air pollution deaths are model estimates, revised each edition, so no year-to-year direction is taken from them.",
       "lines": [
         {
           "text": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all at their highest recorded level.",
@@ -306,7 +306,7 @@
       "state": "UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,723 confirmed cases, including 5,752 deaths, on data to 19 November 2026 (INSP).",
       "as_of": "2024",
       "direction": "unclear",
-      "compared_with": "6,096,000 under-five deaths in 2015 and 42.9 per 1,000 live births, against 4,858,000 and 37.4 in 2024 (UN IGME report 2025, Tables 1 and 4). The annual rate of reduction fell from 3.9% in 2000–2015 to 1.5% in 2015–2024. Ebola points the other way: 11,613 confirmed cases, including 5,678 deaths, on data to 17 November 2026 (INSP and WHO, the same national series), and 11,432 and 5,593 on data to 15 November (WHO); 442 confirmed cases in the week to 15 November against 458 the week before, in WHO's words 'no downward trend over the last six weeks'.",
+      "compared_with": "6,096,000 under-five deaths in 2015 and 42.9 per 1,000 live births, against 4,858,000 and 37.4 in 2024 (UN IGME report 2025, Tables 1 and 4). The annual rate of reduction fell from 3.9% in 2000–2015 to 1.5% in 2015–2024. Ebola keeps adding to the toll without falling: 11,613 confirmed cases, including 5,678 deaths, on data to 17 November 2026 (INSP and WHO, the same national series), and 11,432 and 5,593 on data to 15 November (WHO); 442 confirmed cases in the week to 15 November against 458 the week before, 6.7% fewer in weeks 44–46 than in weeks 41–43, in WHO's words 'well below the mid-August peak of 94 but with no downward trend over the last six weeks'.",
       "lines": [
         {
           "text": "UN estimates say 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015.",
@@ -483,7 +483,7 @@
       "title": "Losses of control, admitted and published",
       "short": "AI control, on record",
       "field": "ai",
-      "gist": "A US state sued an AI developer, saying it had admitted to investigators many more losses of control over its agents than it had made public, while the world's privacy regulators asked that an agent's acts be recorded apart from its user's.",
+      "gist": "A US state sued an AI developer, saying it had admitted to investigators many more losses of control over its agents than it had made public, while the world's privacy regulators asked for records of what agents do, warning that an agent's acts can be hard to tell from its user's.",
       "quiet_rank": null,
       "terms": [
         "OpenAI",
@@ -503,15 +503,15 @@
           "say": "The complaint says OpenAI admitted it lost control of its autonomous agents over eighty times during testing, and had publicly reported twenty-seven such incidents."
         },
         {
-          "text": "On 17 November New York's Attorney General created a unit to enforce the state's AI safety law, in force from January, and asked AI company employees to report.",
-          "say": "On the seventeenth of November New York's Attorney General created a unit to enforce the state's AI safety law, in force from January, and asked AI company employees to report."
+          "text": "On 17 November New York's Attorney General created a unit to enforce the state's AI safety law, in force from January; in September she had asked AI company employees to report unsafe development.",
+          "say": "On the seventeenth of November New York's Attorney General created a unit to enforce the state's AI safety law, in force from January; in September she had asked AI company employees to report unsafe development."
         },
         {
-          "text": "The world's privacy authorities asked that records of AI agents keep their actions apart from human interventions; their resolution binds no one."
+          "text": "The world's privacy authorities asked for records of AI agents' actions and of human interventions, warning that an agent's acts can be hard to tell from its user's; their resolution binds no one."
         },
         {
-          "text": "On 19 November two members of the US House outlined bills with evaluators assigned by a public body and a wider duty to report incidents, near misses included.",
-          "say": "On the nineteenth of November two members of the US House outlined bills with evaluators assigned by a public body and a wider duty to report incidents, near misses included."
+          "text": "On 19 November members of the US House outlined two bills in which a public body assigns the evaluators; one would make near misses reportable.",
+          "say": "On the nineteenth of November members of the US House outlined two bills in which a public body assigns the evaluators; one would make near misses reportable."
         }
       ],
       "sources": [
@@ -657,7 +657,7 @@
       "title": "One in ten below three dollars a day",
       "short": "One in ten, extreme poor",
       "field": "poverty",
-      "gist": "Extreme poverty barely moves: about one in ten people live on less than three dollars a day, and more than one in six are poor by a wider measure.",
+      "gist": "Extreme poverty barely moves: about one in ten people live on less than three dollars a day, and a wider measure finds more than one in six poor in the 108 countries it covers.",
       "quiet_rank": 2,
       "terms": [
         "extreme poverty",
@@ -674,8 +674,8 @@
           "say": "Its now cast for twenty twenty-six is about eight hundred and eleven million, one in ten."
         },
         {
-          "text": "UNDP and OPHI count 1.2 billion people in acute multidimensional poverty in 108 countries.",
-          "say": "The United Nations Development Programme and Oxford's poverty initiative count one point two billion people in acute multidimensional poverty in one hundred and eight countries."
+          "text": "In their 2026 update, UNDP and OPHI count 1.2 billion people in acute multidimensional poverty in 108 countries.",
+          "say": "In their twenty twenty-six update, the United Nations Development Programme and Oxford's poverty initiative count one point two billion people in acute multidimensional poverty in one hundred and eight countries."
         }
       ],
       "sources": [
@@ -768,12 +768,12 @@
           "say": "Reporters Without Borders' twenty twenty-six index rates press freedom difficult or very serious in fifty-two point two percent of one hundred and eighty countries and territories."
         },
         {
-          "text": "In 2002 the share was 13.7 percent.",
-          "say": "In two thousand and two the share was thirteen point seven percent."
+          "text": "In 2002, on thresholds RSF has made comparable across its changes of method, the share was 13.7 percent.",
+          "say": "In two thousand and two, on thresholds RSF has made comparable across its changes of method, the share was thirteen point seven percent."
         },
         {
-          "text": "Trust in news averaged 37 percent across 48 markets in the 2026 Digital News Report survey, the lowest since 2015.",
-          "say": "Trust in news averaged thirty-seven percent across forty-eight markets in the twenty twenty-six Digital News Report survey, the lowest since twenty fifteen."
+          "text": "Trust in news averaged 37 percent across 48 markets in the 2026 Digital News Report survey, the lowest since measuring began in 2015.",
+          "say": "Trust in news averaged thirty-seven percent across forty-eight markets in the twenty twenty-six Digital News Report survey, the lowest since measuring began in twenty fifteen."
         }
       ],
       "sources": [
@@ -988,14 +988,14 @@
           "text": "It is an estimate, measured in a common unit of chips, on incomplete records of who owns them."
         },
         {
-          "text": "On 16 November the US Commerce Department issued a rule: data centres anywhere need a licence to give large amounts of AI compute to firms headquartered in China, Macau or other embargoed countries.",
-          "say": "On the sixteenth of November the US Commerce Department issued a rule: data centres anywhere need a licence to give large amounts of AI compute to firms headquartered in China, Macau or other embargoed countries."
+          "text": "On 16 November a US rule made data centres anywhere need a licence to give much AI compute to firms based, or with a parent based, in Macau or a US arms-embargoed country such as China.",
+          "say": "On the sixteenth of November a US rule made data centres anywhere need a licence to give much AI compute to firms based, or with a parent based, in Macau or a US arms-embargoed country such as China."
         },
         {
-          "text": "The same rule requires licences for advanced chips sold to Indonesia, Malaysia, Singapore, Thailand and Brazil, except to companies headquartered in the United States."
+          "text": "The same rule requires licences for advanced chips sent to Indonesia, Malaysia, Singapore, Thailand and Brazil, except to firms based, or with a parent based, in the United States that report."
         },
         {
-          "text": "It states national security as its ground; it does not reach the compute a firm keeps for its own models."
+          "text": "It states US national security and foreign policy as its ground, and exempts commercial recommender systems such as those of online retailers and social media."
         }
       ],
       "sources": [
@@ -1157,8 +1157,8 @@
           "kind": "report"
         },
         {
-          "label": "The Climate Watch, COP31 closing plenary suspended amid deadlock over fossil fuels and climate finance, 21 November 2026",
-          "url": "https://theclimatewatch.com/cop31-closing-plenary-suspended-amid-deadlock-over-fossil-fuels-and-climate-finance",
+          "label": "Earth Negotiations Bulletin (IISD), Highlights and images for 20 November 2026",
+          "url": "https://enb.iisd.org/antalya-un-climate-change-conference-cop31-20Nov2026",
           "kind": "report"
         }
       ]
@@ -1236,5 +1236,12 @@
       }
     }
   ],
-  "fallback": "How many people live in countries that pay more interest to their creditors than they spend on health or on education, and what does that choice cost them?"
+  "fallback": "How many people live in developing countries that spend more on net interest on their public debt than on health or on education, as UNCTAD counts them for 2023, and what does that trade-off cost them?",
+  "checked": {
+    "on": "2026-11-21",
+    "claims": 326,
+    "held": 300,
+    "corrected": 25,
+    "dropped": 1
+  }
 }
