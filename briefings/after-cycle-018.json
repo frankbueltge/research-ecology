@@ -16,7 +16,7 @@
           "kind": "primary"
         },
         {
-          "label": "Davies, Pettersson and Öberg, Organized violence 1989–2025, Journal of Peace Research 63(4), 2026",
+          "label": "Davies, Pettersson and Öberg, Organized violence 1989–2025, and violent political protests, Journal of Peace Research 63(4), 2026",
           "url": "https://academic.oup.com/jpr/article/63/4/705/8703754",
           "kind": "primary"
         },
@@ -216,7 +216,7 @@
       "state": "Epoch AI estimates five hyperscalers held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. The Tax Justice Network estimates countries lose US$583 billion a year to cross-border tax abuse, on 2023 data (published 24 November 2026).",
       "as_of": "2025",
       "direction": "worse",
-      "compared_with": "63% in Q1 2024 (Epoch AI, same series, H100-equivalents, finalised quarters; an estimate on incomplete coverage of chip ownership). The rise stalled from mid-2025: 71.1% in Q2, 71.3% in Q3 and 70.7% in Q4 2025 (programme/STATE.md, corrected 2026-11-13). No direction is taken from the Tax Justice Network: its 2025 edition's US$1.7 trillion was corporate tax loss summed over six years (2016-2021), the 2026 edition's US$583 billion is one year (2023) and adds offshore wealth. Search is one market (StatCounter, page views); no direction is taken from it.",
+      "compared_with": "63% in Q1 2024 (Epoch AI, same series, H100-equivalents, finalised quarters; an estimate on incomplete coverage of chip ownership). The rise stalled from mid-2025: 71.1% in Q2, 71.3% in Q3 and 70.7% in Q4 2025 (programme/STATE.md, corrected 2026-11-13). No direction is taken from the Tax Justice Network: its own 2016-2023 series (2025 prices) puts corporate losses at US$594 billion in 2016 and US$475 billion in 2023, US$581 billion at 2016 tax rates, with offshore losses flat at just above US$100 billion; its 2025 edition's US$1.7 trillion summed six years (2016-2021). Search is one market (StatCounter, page views); no direction is taken from it.",
       "sources": [
         {
           "label": "Epoch AI, Five hyperscalers now own over two-thirds of global AI compute, 14 April 2026",
@@ -245,8 +245,8 @@
           "say": "Epoch AI estimates that five hyperscalers held seventy-one percent of the world's cumulative AI compute at the end of twenty twenty-five, up from sixty-three percent early in twenty twenty-four."
         },
         {
-          "text": "The Tax Justice Network estimates countries lose US$583 billion a year to cross-border tax abuse: US$475 billion by multinationals and US$108.5 billion hidden offshore, on 2023 data.",
-          "say": "The Tax Justice Network estimates countries lose five hundred and eighty-three billion US dollars a year to cross-border tax abuse: four hundred and seventy-five billion by multinationals and one hundred and eight point five billion hidden offshore, on twenty twenty-three data."
+          "text": "The Tax Justice Network puts the yearly loss to cross-border tax abuse at US$583 billion: US$475 billion to multinationals' profit shifting, at least US$108.5 billion to offshore wealth (2023 data).",
+          "say": "The Tax Justice Network puts the yearly loss to cross-border tax abuse at five hundred and eighty-three billion US dollars: four hundred and seventy-five billion to multinationals' profit shifting, at least one hundred and eight point five billion to offshore wealth, on twenty twenty-three data."
         },
         {
           "text": "Google took 91.04% of worldwide search referrals in October 2026, by StatCounter's count of page views.",
@@ -365,7 +365,7 @@
       "state": "UNHCR estimates 118.2 million people forcibly displaced at end-June 2026, one in 70 people, a slight increase of 344,000 (0.3%) on end-2025. The 2026 Global Humanitarian Overview was 45.3% funded on 24 November: US$15.87 billion of US$35.06 billion.",
       "as_of": "2026-06",
       "direction": "steady",
-      "compared_with": "UNHCR as before: 117.8 million at end-2025 to 118.2 million at mid-2026, 'a slight increase of 344,000 people or 0.3 per cent', one in 70 at both dates (Mid-Year Trends 2026, same definitions). FTS: US$15.88bn, 45.3%, on 21 November; US$15.81bn, 45.1%, on 19 November; US$15.76bn, 44.9%, on 15 November (as recorded in earlier briefings). On 24 November the tracked total was US$15,872,851,684 of US$35,060,481,532.53, slightly below the 21 November figure: the tracked total moves with reporting.",
+      "compared_with": "UNHCR as before: 117.8 million at end-2025 to 118.2 million at mid-2026, 'a slight increase of 344,000 people or 0.3 per cent', one in 70 at both dates (Mid-Year Trends 2026, same definitions). FTS: US$15.88bn, 45.3%, on 21 November; US$15.81bn, 45.1%, on 19 November; US$15.76bn, 44.9%, on 15 November (as recorded in earlier briefings). At about 19:00 UTC on 24 November the tracked total was US$15,873,343,122 of US$35,060,481,532.53, slightly below the 21 November figure: the tracked total moves with reporting, even within a day.",
       "sources": [
         {
           "label": "UNHCR, Mid-Year Trends 2026, 17 November 2026",
@@ -492,7 +492,7 @@
       "title": "Losses of control, and who should check",
       "short": "Who checks AI control",
       "field": "ai",
-      "gist": "A week after a US state sued an AI developer over losses of control it had not all made public, the developer's chief scientist proposed industry limits, US governors asked for independent evaluation of frontier models, and the UN Secretary-General called for a global framework with independent oversight within a year.",
+      "gist": "A week after a US state sued an AI developer over losses of control it allegedly had not all made public, the developer's chief scientist proposed industry limits, US governors asked for independent evaluation of frontier models, and the UN Secretary-General called for a global framework with independent oversight within a year.",
       "quiet_rank": null,
       "terms": [
         "OpenAI",
@@ -506,16 +506,16 @@
       ],
       "lines": [
         {
-          "text": "California's lawsuit of 16 November says OpenAI admitted losing control of its agents over 80 times in testing and had publicly reported 27 such incidents; OpenAI says it is singled out.",
-          "say": "California's lawsuit of the sixteenth of November says OpenAI admitted losing control of its agents over eighty times in testing and had publicly reported twenty-seven such incidents; OpenAI says it is singled out."
+          "text": "California's suit of 16 November says OpenAI admitted losing control of its agents over 80 times in testing and had publicly reported 27 such incidents; OpenAI says the suit appears to single it out.",
+          "say": "California's suit of the sixteenth of November says OpenAI admitted losing control of its agents over eighty times in testing and had publicly reported twenty-seven such incidents; OpenAI says the suit appears to single it out."
         },
         {
           "text": "On 22 November OpenAI's chief scientist proposed common limits that AI developers would commit not to cross until their ability to understand and monitor AI behaviour reaches a concrete milestone.",
           "say": "On the twenty-second of November OpenAI's chief scientist proposed common limits that AI developers would commit not to cross until their ability to understand and monitor AI behaviour reaches a concrete milestone."
         },
         {
-          "text": "On 22 November US governors asked that frontier models be evaluated or audited by independent experts, and that developers report safety incidents to federal and state authorities.",
-          "say": "On the twenty-second of November US governors asked that frontier models be evaluated or audited by independent experts, and that developers report safety incidents to federal and state authorities."
+          "text": "US governors asked on 22 November for independent evaluation of frontier models and a duty on developers to report breaches and significant safety incidents to federal authorities and affected states.",
+          "say": "US governors asked on the twenty-second of November for independent evaluation of frontier models and a duty on developers to report breaches and significant safety incidents to federal authorities and affected states."
         },
         {
           "text": "On 23 November the UN Secretary-General called on member states to develop within the next year a framework for managing AI risk, backed by independent and credible oversight.",
@@ -616,8 +616,8 @@
           "say": "The World Bank counts a different bill: low- and middle-income countries paid one point four trillion dollars in principal and interest on external debt in twenty twenty-five, the fifth rise in a row."
         },
         {
-          "text": "Between 2022 and 2025 they paid 436 billion dollars more in debt service than they received in new financing.",
-          "say": "Between twenty twenty-two and twenty twenty-five they paid four hundred and thirty-six billion dollars more in debt service than they received in new financing."
+          "text": "Between 2022 and 2025 they paid 436 billion dollars more in debt service than they got in new financing, though in 2025 long-term debt flows turned to a net inflow of 45 billion.",
+          "say": "Between twenty twenty-two and twenty twenty-five they paid four hundred and thirty-six billion dollars more in debt service than they got in new financing, though in twenty twenty-five long-term debt flows turned to a net inflow of forty-five billion dollars."
         }
       ],
       "sources": [
@@ -752,7 +752,7 @@
       "title": "Killed by those closest to them",
       "short": "Femicide at home",
       "field": "inequality",
-      "gist": "Most women and girls who are killed intentionally die at the hands of a partner or a relative, and that rate falls more slowly than homicide overall.",
+      "gist": "Most women and girls who are killed intentionally die at the hands of a partner or a relative, and in the Americas and Europe that rate falls more slowly than homicide overall.",
       "quiet_rank": null,
       "terms": [
         "femicide",
@@ -772,8 +772,8 @@
           "say": "That is almost sixty percent of the women and girls killed intentionally that year; for men and boys the share is eleven percent."
         },
         {
-          "text": "The authors say the drop from 50,000 in 2024 reflects better data, not a decline.",
-          "say": "The authors say the drop from fifty thousand in twenty twenty-four reflects better data, not a decline."
+          "text": "The authors say the drop from 50,000 in 2024 largely reflects better data and is no evidence of a decline.",
+          "say": "The authors say the drop from fifty thousand in twenty twenty-four largely reflects better data and is no evidence of a decline."
         },
         {
           "text": "In the Americas and Europe the rate fell between 2010 and 2025 more slowly than homicide as a whole.",
@@ -948,8 +948,8 @@
           "say": "The July twenty twenty-six Red List counts forty-nine thousand, five hundred and five threatened species among one hundred and seventy-five thousand, nine hundred and nine assessed, a count that grows as more species are assessed."
         },
         {
-          "text": "The Red List Index for mammals, birds, amphibians, corals and cycads fell from 0.806 in 1993 to 0.745 in 2025.",
-          "say": "The Red List Index for mammals, birds, amphibians, corals and cycads fell from zero point eight zero six in nineteen ninety-three to zero point seven four five in twenty twenty-five."
+          "text": "The Red List Index for mammals, birds, amphibians, corals and cycads, modelled between assessments, fell from 0.806 in 1993 to 0.745 in 2025.",
+          "say": "The Red List Index for mammals, birds, amphibians, corals and cycads, modelled between assessments, fell from zero point eight zero six in nineteen ninety-three to zero point seven four five in twenty twenty-five."
         },
         {
           "text": "In July, IUCN found 62 percent of endemic hydrothermal-vent molluscs at risk of extinction from deep-sea mining.",
@@ -975,6 +975,11 @@
         {
           "label": "UN Statistics Division, SDG Global Database, Red List Index (15.5.1, ER_RSK_LST), World",
           "url": "https://unstats.un.org/sdgapi/v1/sdg/Series/Data?seriesCode=ER_RSK_LST&areaCode=1&pageSize=100",
+          "kind": "primary"
+        },
+        {
+          "label": "UN Statistics Division, SDG metadata 15.5.1, Red List Index, last updated 15 December 2023",
+          "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-15-05-01.pdf",
           "kind": "primary"
         },
         {
@@ -1028,7 +1033,7 @@
           "kind": "primary"
         },
         {
-          "label": "Davies, Pettersson and Öberg, Organized violence 1989–2025, Journal of Peace Research 63(4), 2026",
+          "label": "Davies, Pettersson and Öberg, Organized violence 1989–2025, and violent political protests, Journal of Peace Research 63(4), 2026",
           "url": "https://academic.oup.com/jpr/article/63/4/705/8703754",
           "kind": "primary"
         },
@@ -1044,7 +1049,7 @@
       "title": "Five companies, most of the machines",
       "short": "Who owns AI compute",
       "field": "power",
-      "gist": "Five companies own most of the world's computing power for AI, and since 19 November the US requires a licence to rent large amounts of it abroad to firms from China and other embargoed countries; China calls the rule coercion.",
+      "gist": "Five companies own most of the world's computing power for AI, and since 19 November the US requires a licence to rent large amounts of it abroad to firms from China and other US arms-embargoed countries; China calls the rule coercion.",
       "quiet_rank": null,
       "terms": [
         "hyperscaler",
@@ -1065,11 +1070,11 @@
           "text": "It is an estimate, measured in a common unit of chips, on incomplete records of who owns them."
         },
         {
-          "text": "A US rule in force since 19 November requires a licence for chips with which a data centre anywhere would give large amounts of compute to firms from Macau or embargoed countries such as China.",
-          "say": "A US rule in force since the nineteenth of November requires a licence for chips with which a data centre anywhere would give large amounts of compute to firms from Macau or embargoed countries such as China."
+          "text": "Since 19 November a US rule requires a licence for chips with which a data centre anywhere would give large amounts of compute to firms from Macau or US arms-embargoed countries such as China.",
+          "say": "Since the nineteenth of November a US rule requires a licence for chips with which a data centre anywhere would give large amounts of compute to firms from Macau or US arms-embargoed countries such as China."
         },
         {
-          "text": "The same rule requires licences for advanced chips sent to Indonesia, Malaysia, Singapore, Thailand and Brazil, except to firms based, or with a parent based, in the United States that report."
+          "text": "It also requires licences for advanced chips sent to Indonesia, Malaysia, Singapore, Thailand and Brazil, except to firms based in the US or with a US parent, if the exporter files monthly reports."
         },
         {
           "text": "China's foreign ministry called the rule economic coercion; Singapore said it is talking to US authorities about its scope; comments are open until 19 January 2027.",
@@ -1176,10 +1181,10 @@
     },
     {
       "id": "cop31-gap",
-      "title": "COP31 ends without its cover decision",
+      "title": "COP31 ends without its cover decisions",
       "short": "COP31 and the gap",
       "field": "climate",
-      "gist": "The climate summit in Antalya closed two days late without adopting its overarching decision, after objections to a text that no longer named fossil fuels, while current policies still point to far more warming than the Paris goal.",
+      "gist": "The climate summit in Antalya closed two days late without adopting its overarching decisions, after objections to texts that no longer named fossil fuels, while current policies still point to far more warming than the Paris goal.",
       "quiet_rank": null,
       "terms": [
         "COP31",
@@ -1192,14 +1197,14 @@
       ],
       "lines": [
         {
-          "text": "COP31 in Antalya ended on 22 November 2026, almost 50 hours late, without adopting its cover decision, the Antalya Pact.",
-          "say": "COP thirty-one in Antalya ended on the twenty-second of November twenty twenty-six, almost fifty hours late, without adopting its cover decision, the Antalya Pact."
+          "text": "COP31 in Antalya ended on 22 November 2026, almost 50 hours late, without adopting its two cover decisions, together the Antalya Pact.",
+          "say": "COP thirty-one in Antalya ended on the twenty-second of November twenty twenty-six, almost fifty hours late, without adopting its two cover decisions, together the Antalya Pact."
         },
         {
-          "text": "The last draft did not mention fossil fuels; the EU, Panama, the Marshall Islands and Vanuatu were among those who objected."
+          "text": "The last drafts did not mention fossil fuels; the EU, Panama, the Marshall Islands and Vanuatu were among those who objected."
         },
         {
-          "text": "Countries adopted narrower decisions, among them on the global goal on adaptation and a just transition work programme."
+          "text": "Countries adopted narrower decisions, among them on the global goal on adaptation and the UAE just transition work programme."
         },
         {
           "text": "The UN Secretary-General said he was deeply disappointed that COP31 ended without consensus on an overarching outcome.",
@@ -1221,9 +1226,24 @@
           "kind": "report"
         },
         {
-          "label": "UNFCCC, draft text of the CMA cover decision, version 22 November 2026, 2:00 (not adopted)",
-          "url": "https://docs.unfccc.int/documents/10000406/files/en/dt_cma8_cover_decision.pdf",
+          "label": "UNFCCC, Antalya Pact, draft decision -/CMA.8, proposal by the President (FCCC/PA/CMA/2026/L.25), 22 November 2026, 12:45 (not adopted)",
+          "url": "https://docs.unfccc.int/documents/10000420/files/en/dt_cma8_cover_decision1.pdf",
           "kind": "primary"
+        },
+        {
+          "label": "UNFCCC, Antalya Pact, draft decision -/CP.31, proposal by the President (FCCC/CP/2026/L.14), 22 November 2026, 12:45 (not adopted)",
+          "url": "https://docs.unfccc.int/documents/10000419/files/en/dt_cop31_cover_decision_COP.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "UNFCCC, COP31 delivers important progress across negotiations and action agenda, advancing implementation, but fails to agree Presidency-led decision, 23 November 2026",
+          "url": "https://unfccc.int/news/cop31-delivers-important-progress-across-negotiations-and-action-agenda-advancing-implementation-but",
+          "kind": "primary"
+        },
+        {
+          "label": "Earth Negotiations Bulletin (IISD), Summary of the 2026 Antalya Climate Change Conference, 24 November 2026",
+          "url": "https://enb.iisd.org/antalya-un-climate-change-conference-cop31-summary",
+          "kind": "report"
         },
         {
           "label": "UNFCCC, Outcomes of the Antalya Climate Change Conference, advance unedited versions",
@@ -1335,5 +1355,12 @@
       }
     }
   ],
-  "fallback": "How many people live in developing countries that spend more on net interest on their public debt than on health or on education, as UNCTAD counts them for 2023, and what does that trade-off cost them?"
+  "fallback": "How many people live in developing countries that spend more on net interest on their public debt than on health or on education, as UNCTAD counts them for 2023, and what does that trade-off cost them?",
+  "checked": {
+    "on": "2026-11-24",
+    "claims": 438,
+    "held": 413,
+    "corrected": 25,
+    "dropped": 0
+  }
 }
