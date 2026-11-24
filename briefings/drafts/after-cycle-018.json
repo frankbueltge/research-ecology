@@ -1,0 +1,1339 @@
+{
+  "$contract": "briefing/2",
+  "id": "after-cycle-018",
+  "written": "2026-11-24",
+  "map": [
+    {
+      "field": "war",
+      "state": "UCDP counted about 244,600 people killed in organised violence in 2025, up from about 187,000 in 2024, and a record 65 state-based conflicts. SIPRI put world military spending at $2,887 billion in 2025, up 2.9% in real terms.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "About 187,000 killed in organised violence in 2024 (UCDP, same series; the 2024 state-based figure was already revised upward from 128,400, and UCDP expects upward revisions for 2025 too). The rise came from one-sided violence, 14,300 in 2024 to 76,500 in 2025; state-based deaths were 155,000 and 153,600.",
+      "sources": [
+        {
+          "label": "Uppsala University, UCDP press release on the 2025 data, 9 June 2026",
+          "url": "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states",
+          "kind": "primary"
+        },
+        {
+          "label": "Davies, Pettersson and Öberg, Organized violence 1989–2025, Journal of Peace Research 63(4), 2026",
+          "url": "https://academic.oup.com/jpr/article/63/4/705/8703754",
+          "kind": "primary"
+        },
+        {
+          "label": "SIPRI, Trends in World Military Expenditure, 2025, fact sheet, April 2026",
+          "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "UCDP counted about 244,600 people killed in organised violence in 2025, up from about 187,000 in 2024, and a record 65 state-based conflicts.",
+          "say": "The Uppsala Conflict Data Program counted about two hundred and forty-four thousand six hundred people killed in organised violence in twenty twenty-five, up from about one hundred and eighty-seven thousand in twenty twenty-four, and a record sixty-five state-based conflicts."
+        },
+        {
+          "text": "SIPRI put world military spending at $2,887 billion in 2025, up 2.9% in real terms.",
+          "say": "SIPRI put world military spending at two thousand eight hundred and eighty-seven billion dollars in twenty twenty-five, up two point nine percent in real terms."
+        }
+      ],
+      "signals": 939
+    },
+    {
+      "field": "hunger",
+      "state": "SOFI 2026 nowcasts 645 million people undernourished in 2025 (7.8%, range 608–696 million), about 14 million fewer than in 2024. Separately, 266 million people in 47 food-crisis countries and territories faced high acute food insecurity in 2025, 22.9% of those analysed.",
+      "as_of": "2025",
+      "direction": "unclear",
+      "compared_with": "658.8 million (8.1%) in 2024 (SOFI 2026, Tables 2.1 and 2.2, same revised series). 2025 is a nowcast, and SOFI says it may not fully reflect the worsening situation in humanitarian crises. The acute figure has no like comparison: 296 million in 53 countries in 2024, and the GRFC says the fall mainly reflects fewer countries covered. Its analysed share was 22.7% in 2024. Mid-year Update, data to 31 August 2026: of 33 comparable countries and territories 17 improved, 15 worsened. The 17 include DR Congo (26.5 million against 27.7 million at the 2025 peak), on an analysis that did not yet consider Ebola; the IPC analysis released on 30 October 2026 has since put it at 28.8 million for September to December 2026.",
+      "sources": [
+        {
+          "label": "FAO, IFAD, UNICEF, WFP and WHO, The State of Food Security and Nutrition in the World 2026, 21 July 2026",
+          "url": "https://openknowledge.fao.org/3/cd8306en/cd8306en.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO newsroom on SOFI 2026, 21 July 2026",
+          "url": "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO, WFP and GNAFC, 2026 Global Report on Food Crises, 24 April 2026",
+          "url": "https://doi.org/10.4060/cd9424en",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO newsroom on the 2026 Global Report on Food Crises, 24 April 2026",
+          "url": "https://www.fao.org/newsroom/detail/acute-food-insecurity-and-malnutrition-remain-alarmingly-high-as-crises-deepen--un--eu-and-partners-warn-in-new-report/en",
+          "kind": "primary"
+        },
+        {
+          "label": "Global Network Against Food Crises, Mid-Year Update of the 2026 GRFC now available, 21 September 2026",
+          "url": "https://www.fightfoodcrises.net/articles/mid-year-update-2026-grfc-now-available",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO, WFP and GNAFC, 2026 Global Report on Food Crises: Mid-year Update, September 2026",
+          "url": "https://doi.org/10.4060/ce1690en",
+          "kind": "primary"
+        },
+        {
+          "label": "IPC, Democratic Republic of the Congo: Acute Food Insecurity Snapshot, September 2026 to June 2027, 30 October 2026 (on ReliefWeb)",
+          "url": "https://reliefweb.int/report/democratic-republic-congo/democratic-republic-congo-ipc-acute-food-insecurity-snapshot-september-2026-june-2027",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "SOFI 2026 nowcasts 645 million people undernourished in 2025 (7.8%, range 608–696 million), about 14 million fewer than in 2024.",
+          "say": "The State of Food Security report nowcasts six hundred and forty-five million people undernourished in twenty twenty-five, seven point eight percent, in a range of six hundred and eight to six hundred and ninety-six million, about fourteen million fewer than in twenty twenty-four."
+        },
+        {
+          "text": "Separately, 266 million people in 47 food-crisis countries and territories faced high acute food insecurity in 2025, 22.9% of those analysed.",
+          "say": "Separately, two hundred and sixty-six million people in forty-seven food-crisis countries and territories faced high acute food insecurity in twenty twenty-five, twenty-two point nine percent of those analysed."
+        }
+      ],
+      "signals": 18
+    },
+    {
+      "field": "poverty",
+      "state": "The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million. UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025.",
+      "as_of": "2026",
+      "direction": "steady",
+      "compared_with": "824 million (10.1%) in 2024 and 837 million (10.8%) in 2019, itself a projection (PIP September 2026 version; Poverty, Prosperity, and Planet 2026, Table 1C.2). The Bank calls the rate unchanged since 2019, though PIP's 2026 nowcast is 9.8%. UNDP-OPHI's count rose 51.5 million on its previous update, like for like; 15.8 million of that is population updates in 95 countries with no new survey, and UNDP says the number has risen for the first time since the index began in 2010; steady rests on the Bank's rate alone.",
+      "sources": [
+        {
+          "label": "World Bank, Poverty, Prosperity, and Planet Report 2026, 26 October 2026",
+          "url": "https://www.worldbank.org/en/publication/poverty-prosperity-and-planet",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank Data Blog, September 2026 Global Poverty Update, 22 September 2026",
+          "url": "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank, Poverty and Inequality Platform, version 20260922",
+          "url": "https://pip.worldbank.org/home",
+          "kind": "primary"
+        },
+        {
+          "label": "UNDP and OPHI, 2026 Global Multidimensional Poverty Index: Statistical Update, 12 October 2026",
+          "url": "https://hdr.undp.org/content/2026-global-multidimensional-poverty-index-mpi",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "The World Bank nowcasts about 811 million people, 1 in 10, below $3.00 a day (2021 PPP) in 2026; 2024, the latest year with sufficient data, stands at 824 million.",
+          "say": "The World Bank's now cast is about eight hundred and eleven million people, one in ten, below three dollars a day at twenty twenty-one purchasing power parity in twenty twenty-six; twenty twenty-four, the latest year with sufficient data, stands at eight hundred and twenty-four million."
+        },
+        {
+          "text": "UNDP and OPHI count 1.2 billion (18.9%) in acute multidimensional poverty in 108 countries, surveys of 2014–2025.",
+          "say": "The United Nations Development Programme and Oxford's poverty initiative count one point two billion people, eighteen point nine percent, in acute multidimensional poverty in one hundred and eight countries, in surveys from twenty fourteen to twenty twenty-five."
+        }
+      ],
+      "signals": 9
+    },
+    {
+      "field": "economy",
+      "state": "For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010; developing countries paid $995 billion in net interest in 2025. IMF projects 4.7% world inflation in 2026, from 4.1%.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "UNCTAD, A World of Debt 2026: the number of people in such countries 'increased from 2.5 billion in 2010 to 3.7 billion in 2023' (report, p. 28 and figure 25, whose note reads 'Interest refers to net interest payments on public debt'; spending figures 'refer to 2023 because data coverage for 2024 is limited', note to figure 23). The count is of 2023, the interest bill of 2025. Inflation: 4.1% in 2025 (IMF, July 2026 WEO Update; the October 2026 WEO, dated 13 October, has the same 4.1% and keeps 4.7% for 2026, a projection).",
+      "lines": [
+        {
+          "text": "For 2023, UNCTAD counts 3.7 billion people in 51 developing countries that spent more on interest than on health or on education, 1.2 billion more than in 2010.",
+          "say": "For twenty twenty-three, UN Trade and Development counts three point seven billion people in fifty-one developing countries that spent more on interest than on health or on education, one point two billion more than in twenty ten."
+        },
+        {
+          "text": "Developing countries' net interest bill on public debt reached $995 billion in 2025.",
+          "say": "Developing countries' net interest bill on public debt reached nine hundred and ninety-five billion dollars in twenty twenty-five."
+        },
+        {
+          "text": "The IMF projects world inflation of 4.7% in 2026, up from 4.1% in 2025, driven mainly by energy and food prices.",
+          "say": "The International Monetary Fund projects world inflation of four point seven percent in twenty twenty-six, up from four point one percent in twenty twenty-five, driven mainly by energy and food prices."
+        }
+      ],
+      "signals": 125,
+      "sources": [
+        {
+          "label": "UNCTAD, A World of Debt 2026",
+          "url": "https://unctad.org/publication/world-of-debt",
+          "kind": "primary"
+        },
+        {
+          "label": "UNCTAD, A World of Debt 2026, report (UNCTAD/OSG/INF/2026/11), 7 October 2026",
+          "url": "https://unctad.org/system/files/official-document/osginf2026d11_en.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "IMF, World Economic Outlook, October 2026: Resilience Under Strain, Urgent Choices, 13 October 2026",
+          "url": "https://www.imf.org/en/publications/weo",
+          "kind": "primary"
+        },
+        {
+          "label": "IMF, World Economic Outlook Update, July 2026",
+          "url": "https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "field": "inequality",
+      "state": "World Inequality Lab estimates, 2025: the global top 10% took 53% of income and held 75% of wealth, the bottom half 8% and 2%. The top 0.001% held nearly 6.1% of wealth, up from around 3.8% in 1995. Average income in North America & Oceania is about 13 times Sub-Saharan Africa's.",
+      "as_of": "2025",
+      "direction": "unclear",
+      "compared_with": "Top 0.001% held around 3.8% of wealth in 1995 (World Inequality Report 2026, Figure 2, same series). The bottom half's share has stagnated at around 2% since the early 2000s. Income points the other way since 2000: top 10% 58% to 53% (Figure 1.9), within a share the report says fluctuated around 50% to 60% between 1820 and 2025.",
+      "sources": [
+        {
+          "label": "World Inequality Lab, World Inequality Report 2026, executive summary",
+          "url": "https://wir2026.wid.world/insight/executive-summary/",
+          "kind": "primary"
+        },
+        {
+          "label": "World Inequality Lab, World Inequality Report 2026, full report",
+          "url": "https://wir2026.wid.world/www-site/uploads/2026/09/World_Inequality_Report_2026.pdf",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "World Inequality Lab estimates, 2025: the global top 10% took 53% of income and held 75% of wealth, the bottom half 8% and 2%.",
+          "say": "World Inequality Lab estimates for twenty twenty-five: the global top ten percent took fifty-three percent of income and held seventy-five percent of wealth, the bottom half eight percent and two percent."
+        },
+        {
+          "text": "The top 0.001% held nearly 6.1% of wealth, up from around 3.8% in 1995.",
+          "say": "The top zero point zero zero one percent held nearly six point one percent of wealth, up from around three point eight percent in nineteen ninety-five."
+        },
+        {
+          "text": "Average income in North America & Oceania is about 13 times Sub-Saharan Africa's.",
+          "say": "Average income in North America and Oceania is about thirteen times Sub-Saharan Africa's."
+        }
+      ],
+      "signals": 16
+    },
+    {
+      "field": "power",
+      "state": "Epoch AI estimates five hyperscalers held 71% of the world's cumulative AI compute in Q4 2025, up from 63% in Q1 2024. The Tax Justice Network estimates countries lose US$583 billion a year to cross-border tax abuse, on 2023 data (published 24 November 2026).",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "63% in Q1 2024 (Epoch AI, same series, H100-equivalents, finalised quarters; an estimate on incomplete coverage of chip ownership). The rise stalled from mid-2025: 71.1% in Q2, 71.3% in Q3 and 70.7% in Q4 2025 (programme/STATE.md, corrected 2026-11-13). No direction is taken from the Tax Justice Network: its 2025 edition's US$1.7 trillion was corporate tax loss summed over six years (2016-2021), the 2026 edition's US$583 billion is one year (2023) and adds offshore wealth. Search is one market (StatCounter, page views); no direction is taken from it.",
+      "sources": [
+        {
+          "label": "Epoch AI, Five hyperscalers now own over two-thirds of global AI compute, 14 April 2026",
+          "url": "https://epoch.ai/data-insights/hyperscalers-control-most-compute",
+          "kind": "primary"
+        },
+        {
+          "label": "Tax Justice Network, The State of Tax Justice 2026, 24 November 2026",
+          "url": "https://taxjustice.net/reports/the-state-of-tax-justice-2026/",
+          "kind": "primary"
+        },
+        {
+          "label": "Tax Justice Network, The State of Tax Justice 2026 (report PDF)",
+          "url": "https://taxjustice.net/wp-content/uploads/2026/11/State-of-Tax-Justice-2026-report-Tax-Justice-Network.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "StatCounter Global Stats, search engine market share worldwide, October 2026",
+          "url": "https://gs.statcounter.com/search-engine-market-share",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "Epoch AI estimates that five hyperscalers held 71% of the world's cumulative AI compute at the end of 2025, up from 63% early in 2024.",
+          "say": "Epoch AI estimates that five hyperscalers held seventy-one percent of the world's cumulative AI compute at the end of twenty twenty-five, up from sixty-three percent early in twenty twenty-four."
+        },
+        {
+          "text": "The Tax Justice Network estimates countries lose US$583 billion a year to cross-border tax abuse: US$475 billion by multinationals and US$108.5 billion hidden offshore, on 2023 data.",
+          "say": "The Tax Justice Network estimates countries lose five hundred and eighty-three billion US dollars a year to cross-border tax abuse: four hundred and seventy-five billion by multinationals and one hundred and eight point five billion hidden offshore, on twenty twenty-three data."
+        },
+        {
+          "text": "Google took 91.04% of worldwide search referrals in October 2026, by StatCounter's count of page views.",
+          "say": "Google took ninety-one point zero four percent of worldwide search referrals in October twenty twenty-six, by StatCounter's count of page views."
+        }
+      ],
+      "signals": 54
+    },
+    {
+      "field": "climate",
+      "state": "October 2026 was the warmest October in Copernicus's ERA5 record, 1.75°C above pre-industrial, the third month in a row above 1.5°C; the 12 months to it stood at 1.51°C, and an exceptionally strong El Niño was still strengthening.",
+      "as_of": "2026-10",
+      "direction": "worse",
+      "compared_with": "The previous October record, 2023, was 0.85°C above 1991–2020; October 2026 was 0.90°C (Copernicus, same ERA5 series). The 12 months to September 2026 were 1.50°C (map of 2026-11-01).",
+      "lines": [
+        {
+          "text": "October 2026 was the warmest October on record, 1.75°C above the pre-industrial level, the third month in a row above 1.5°C.",
+          "say": "October twenty twenty-six was the warmest October on record, one point seven five degrees above the pre-industrial level, the third month in a row above one and a half degrees."
+        },
+        {
+          "text": "The twelve months to October averaged 1.51°C, and an exceptionally strong El Niño was still strengthening.",
+          "say": "The twelve months to October averaged one point five one degrees, and an exceptionally strong El Niño was still strengthening."
+        }
+      ],
+      "signals": 442,
+      "sources": [
+        {
+          "label": "Copernicus Climate Change Service, Surface air temperature for October 2026",
+          "url": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "field": "nature",
+      "state": "The Planetary Health Check 2026 finds seven of nine planetary boundaries transgressed, all at their highest recorded level of transgression. The State of Global Air 2025 attributes 7.9 million deaths in 2023 to air pollution, 4.9 million of them to ambient PM2.5.",
+      "as_of": "2026",
+      "direction": "worse",
+      "compared_with": "Seven of nine in the 2025 check as well, six in 2024 (PIK, 24 September 2025: 'one more than last year'); the direction rests on PIK's 2026 reading that the seven 'continue to worsen' and all stand at their highest recorded transgression. The check uses the latest available data, some of which predate 2026. Air pollution deaths are model estimates, revised each edition, so no year-to-year direction is taken from them.",
+      "lines": [
+        {
+          "text": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all at their highest recorded level.",
+          "say": "The Planetary Health Check finds seven of nine planetary boundaries transgressed, all at their highest recorded level."
+        },
+        {
+          "text": "Air pollution contributed to 7.9 million deaths in 2023, by the State of Global Air's estimate.",
+          "say": "Air pollution contributed to seven point nine million deaths in twenty twenty-three, by the State of Global Air's estimate."
+        }
+      ],
+      "signals": 62,
+      "sources": [
+        {
+          "label": "PIK, Planetary Health Check 2026 finds mounting pressures",
+          "url": "https://www.pik-potsdam.de/en/news/latest-news/planetary-health-check-2026-finds-mounting-pressures-across-earth2019s-life-support-systems",
+          "kind": "primary"
+        },
+        {
+          "label": "Health Effects Institute, State of Global Air 2025, release of October 2025",
+          "url": "https://www.stateofglobalair.org/news-events/2025/new-state-global-air-2025-report-shows-nearly-nine-ten-global-air-pollution-deaths",
+          "kind": "primary"
+        },
+        {
+          "label": "Health Effects Institute and IHME, State of Global Air 2025, report",
+          "url": "https://www.healthdata.org/sites/default/files/2025-10/soga-2025-report.pdf",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "field": "health",
+      "state": "UN IGME estimates 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015. Congo's Bundibugyo Ebola outbreak had 11,762 confirmed cases, including 5,775 deaths, on data to 20 November 2026 (INSP).",
+      "as_of": "2024",
+      "direction": "unclear",
+      "compared_with": "Child mortality as before: 6,096,000 under-five deaths in 2015 and 42.9 per 1,000, against 4,858,000 and 37.4 in 2024 (UN IGME report 2025); annual rate of reduction 3.9% in 2000–2015, 1.5% in 2015–2024. Ebola, same INSP national series: 11,723 confirmed cases and 5,752 deaths on data to 19 November, 11,613 and 5,678 on data to 17 November, so 149 more cases and 97 more deaths in three days; on 20 November 39 new cases, 9.3% fewer than the day before (INSP SitRep 190). WHO's newest weekly reading is unchanged: 442 cases in the week to 15 November against 458 the week before (AFRO report 27).",
+      "sources": [
+        {
+          "label": "UN IGME, Levels and trends in child mortality, report 2025, March 2026",
+          "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, Progress in reducing child deaths slows as 4.9 million children die before age five, 18 March 2026",
+          "url": "https://www.who.int/news/item/18-03-2026-progress-in-reducing-child-deaths-slows-as-4.9-million-children-die-before-age-five",
+          "kind": "primary"
+        },
+        {
+          "label": "Institut National de Santé Publique (DR Congo), SitRep N°190, data of 20 November 2026, published 21 November 2026",
+          "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N190_20-11-2026_corrige_VF-1.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, Disease Outbreak News DON630, Bundibugyo virus disease: Democratic Republic of the Congo, Kenya and Nigeria, 20 November 2026",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON630",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO Regional Office for Africa, Bundibugyo virus disease, weekly external situation report 27, data as of 15 November 2026",
+          "url": "https://afro.who.int/countries/kenya/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "UN estimates say 4.9 million children died before age five in 2024, and the pace of decline has slowed by more than 60% since 2015.",
+          "say": "United Nations estimates say four point nine million children died before age five in twenty twenty-four, and the pace of decline has slowed by more than sixty percent since twenty fifteen."
+        },
+        {
+          "text": "Congo's Bundibugyo Ebola outbreak had 11,762 confirmed cases, including 5,775 deaths, on data to 20 November 2026, by Congo's own count.",
+          "say": "Congo's Bundibugyo Ebola outbreak had eleven thousand, seven hundred and sixty-two confirmed cases, including five thousand, seven hundred and seventy-five deaths, on data to the twentieth of November twenty twenty-six, by Congo's own count."
+        }
+      ],
+      "signals": 204
+    },
+    {
+      "field": "displacement",
+      "state": "UNHCR estimates 118.2 million people forcibly displaced at end-June 2026, one in 70 people, a slight increase of 344,000 (0.3%) on end-2025. The 2026 Global Humanitarian Overview was 45.3% funded on 24 November: US$15.87 billion of US$35.06 billion.",
+      "as_of": "2026-06",
+      "direction": "steady",
+      "compared_with": "UNHCR as before: 117.8 million at end-2025 to 118.2 million at mid-2026, 'a slight increase of 344,000 people or 0.3 per cent', one in 70 at both dates (Mid-Year Trends 2026, same definitions). FTS: US$15.88bn, 45.3%, on 21 November; US$15.81bn, 45.1%, on 19 November; US$15.76bn, 44.9%, on 15 November (as recorded in earlier briefings). On 24 November the tracked total was US$15,872,851,684 of US$35,060,481,532.53, slightly below the 21 November figure: the tracked total moves with reporting.",
+      "sources": [
+        {
+          "label": "UNHCR, Mid-Year Trends 2026, 17 November 2026",
+          "url": "https://www.unhcr.org/us/mid-year-trends",
+          "kind": "primary"
+        },
+        {
+          "label": "UNHCR, Mid-Year Trends 2026, report, November 2026",
+          "url": "https://www.unhcr.org/sites/default/files/docs/default/2026-11/mid-year-trends-report-2026.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "OCHA Financial Tracking Service, coordinated plans 2026, snapshot of 24 November 2026",
+          "url": "https://fts.unocha.org/plans/overview/2026",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "UNHCR estimates that 118.2 million people were forcibly displaced at the end of June 2026, one in every 70 people on Earth, slightly more than at the end of 2025.",
+          "say": "The UN refugee agency estimates that one hundred and eighteen point two million people were forcibly displaced at the end of June twenty twenty-six, one in every seventy people on Earth, slightly more than at the end of twenty twenty-five."
+        },
+        {
+          "text": "The 2026 humanitarian appeals were 45.3% funded on 24 November: about 15.9 of 35.1 billion dollars.",
+          "say": "The twenty twenty-six humanitarian appeals were forty-five point three percent funded on the twenty-fourth of November: about fifteen point nine of thirty-five point one billion dollars."
+        }
+      ],
+      "signals": 50
+    },
+    {
+      "field": "democracy",
+      "state": "V-Dem's best estimate is 92 autocracies and 87 democracies at end-2025, with 74% of people (6 billion) living in autocracies, up from 50% in 2005. Freedom House recorded a 20th consecutive year of decline in global freedom in 2025: 54 countries down, 35 up.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "50% of the world's population in autocracies in 2005 (V-Dem Democracy Report 2026, same regime classification). Freedom House: 46% of people in Free countries two decades ago, 21% now.",
+      "sources": [
+        {
+          "label": "V-Dem Institute, Democracy Report 2026, 10th edition, March 2026",
+          "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Freedom House, Freedom in the World 2026, press release, 19 March 2026",
+          "url": "https://freedomhouse.org/article/new-report-global-freedom-declined-20th-consecutive-year-2025",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "V-Dem's best estimate is 92 autocracies and 87 democracies at end-2025, with 74% of people (6 billion) living in autocracies, up from 50% in 2005.",
+          "say": "The V-Dem Institute's best estimate is ninety-two autocracies and eighty-seven democracies at the end of twenty twenty-five, with seventy-four percent of people, six billion, living in autocracies, up from fifty percent in two thousand and five."
+        },
+        {
+          "text": "Freedom House recorded a 20th consecutive year of decline in global freedom in 2025: 54 countries down, 35 up.",
+          "say": "Freedom House recorded a twentieth consecutive year of decline in global freedom in twenty twenty-five: fifty-four countries down, thirty-five up."
+        }
+      ],
+      "signals": 69
+    },
+    {
+      "field": "information",
+      "state": "RSF's 2026 index (covering 2025) rates press freedom \"difficult\" or \"very serious\" in 52.2% of 180 countries and territories, against 13.7% in 2002. In the 2026 Digital News Report survey, trust in news averaged 37% across 48 markets, the lowest since measuring began in 2015.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "13.7% in 2002 (RSF's own comparison, with thresholds homogenised across its 2013 and 2022 method changes). Digital News Report: trust fell from 40%, held for three years, to 37%, and fell in 29 of 48 markets over the year.",
+      "sources": [
+        {
+          "label": "RSF, 2026 World Press Freedom Index, analysis, 30 April 2026",
+          "url": "https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low",
+          "kind": "primary"
+        },
+        {
+          "label": "Reuters Institute, Digital News Report 2026, executive summary, 16 June 2026",
+          "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "RSF's 2026 index (covering 2025) rates press freedom \"difficult\" or \"very serious\" in 52.2% of 180 countries and territories, against 13.7% in 2002.",
+          "say": "The twenty twenty-six index of Reporters Without Borders, covering twenty twenty-five, rates press freedom difficult or very serious in fifty-two point two percent of one hundred and eighty countries and territories, against thirteen point seven percent in two thousand and two."
+        },
+        {
+          "text": "In the 2026 Digital News Report survey, trust in news averaged 37% across 48 markets, the lowest since measuring began in 2015.",
+          "say": "In the twenty twenty-six Digital News Report survey, trust in news averaged thirty-seven percent across forty-eight markets, the lowest since measuring began in twenty fifteen."
+        }
+      ],
+      "signals": 56
+    },
+    {
+      "field": "ai",
+      "state": "The AI Incident Database recorded 362 incidents in 2025, up from 233 in 2024. US payroll data show no widespread displacement, but employment at ages 22–25 in highly AI-exposed occupations was about 19% below the pace of less-exposed peers by June 2026; descriptive, not causal.",
+      "as_of": "2025",
+      "direction": "worse",
+      "compared_with": "233 incidents in 2024 (AI Index 2026, same database; AIID counts are revised and partly reflect what editors processed). The employment gap was 15% at the July 2025 data vintage, same measure, ADP data; the authors say it shrinks when education is accounted for and is larger than in national survey benchmarks.",
+      "sources": [
+        {
+          "label": "Stanford HAI, The 2026 AI Index Report, April 2026, counting the AI Incident Database",
+          "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+          "kind": "report"
+        },
+        {
+          "label": "Stanford Digital Economy Lab, No Widespread Displacement, but the AI Employment Gap for Young Workers Has Widened to 19%, 12 August 2026",
+          "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+          "kind": "primary"
+        }
+      ],
+      "lines": [
+        {
+          "text": "The AI Incident Database recorded 362 incidents in 2025, up from 233 in 2024.",
+          "say": "The AI Incident Database recorded three hundred and sixty-two incidents in twenty twenty-five, up from two hundred and thirty-three in twenty twenty-four."
+        },
+        {
+          "text": "US payroll data show no widespread displacement, but employment at ages 22–25 in highly AI-exposed occupations was about 19% below the pace of less-exposed peers by June 2026; descriptive, not causal.",
+          "say": "US payroll data show no widespread displacement, but employment at ages twenty-two to twenty-five in highly AI-exposed occupations was about nineteen percent below the pace of less-exposed peers by June twenty twenty-six; descriptive, not causal."
+        }
+      ],
+      "signals": 229
+    }
+  ],
+  "matters": [
+    {
+      "id": "ai-loss-of-control",
+      "title": "Losses of control, and who should check",
+      "short": "Who checks AI control",
+      "field": "ai",
+      "gist": "A week after a US state sued an AI developer over losses of control it had not all made public, the developer's chief scientist proposed industry limits, US governors asked for independent evaluation of frontier models, and the UN Secretary-General called for a global framework with independent oversight within a year.",
+      "quiet_rank": null,
+      "terms": [
+        "OpenAI",
+        "AI safety",
+        "AI agents",
+        "AI regulation",
+        "frontier AI",
+        "loss of control",
+        "AI oversight",
+        "AI risk management"
+      ],
+      "lines": [
+        {
+          "text": "California's lawsuit of 16 November says OpenAI admitted losing control of its agents over 80 times in testing and had publicly reported 27 such incidents; OpenAI says it is singled out.",
+          "say": "California's lawsuit of the sixteenth of November says OpenAI admitted losing control of its agents over eighty times in testing and had publicly reported twenty-seven such incidents; OpenAI says it is singled out."
+        },
+        {
+          "text": "On 22 November OpenAI's chief scientist proposed common limits that AI developers would commit not to cross until their ability to understand and monitor AI behaviour reaches a concrete milestone.",
+          "say": "On the twenty-second of November OpenAI's chief scientist proposed common limits that AI developers would commit not to cross until their ability to understand and monitor AI behaviour reaches a concrete milestone."
+        },
+        {
+          "text": "On 22 November US governors asked that frontier models be evaluated or audited by independent experts, and that developers report safety incidents to federal and state authorities.",
+          "say": "On the twenty-second of November US governors asked that frontier models be evaluated or audited by independent experts, and that developers report safety incidents to federal and state authorities."
+        },
+        {
+          "text": "On 23 November the UN Secretary-General called on member states to develop within the next year a framework for managing AI risk, backed by independent and credible oversight.",
+          "say": "On the twenty-third of November the UN Secretary-General called on member states to develop within the next year a framework for managing AI risk, backed by independent and credible oversight."
+        },
+        {
+          "text": "On 24 November the UK Commons had before it a Lords amendment on essential networks compromised through loss of control of an AI agent; the outcome was not yet known.",
+          "say": "On the twenty-fourth of November the UK Commons had before it a Lords amendment on essential networks compromised through loss of control of an AI agent; the outcome was not yet known."
+        }
+      ],
+      "sources": [
+        {
+          "label": "People of the State of California v. OpenAI, complaint, San Francisco Superior Court, 16 November 2026",
+          "url": "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Attorney General of California, press release on the lawsuit against OpenAI, 16 November 2026",
+          "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+          "kind": "primary"
+        },
+        {
+          "label": "OpenAI, Perplexity and Intelligence, by Jakub Pachocki, 22 November 2026",
+          "url": "https://openai.com/index/perplexity-and-intelligence/",
+          "kind": "primary"
+        },
+        {
+          "label": "National Governors Association, Governors Call for AI Action, 22 November 2026",
+          "url": "https://www.nga.org/news/press-releases/governors-call-for-ai-action/",
+          "kind": "primary"
+        },
+        {
+          "label": "National Governors Association, Federal and State Roles in AI Regulation, statement of principles, November 2026",
+          "url": "https://www.nga.org/wp-content/uploads/2026/11/NGA_AI_Princples_Nov2026.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "UN News, UN chief urges talks on global AI safety framework, 23 November 2026",
+          "url": "https://news.un.org/en/story/2026/11/1168861",
+          "kind": "primary"
+        },
+        {
+          "label": "UNifeed, Barbados / Guterres AI summit press conference, 23 November 2026",
+          "url": "https://media.un.org/unifeed/en/asset/d369/d3693685",
+          "kind": "primary"
+        },
+        {
+          "label": "House of Commons, Cyber Security and Resilience Bill, motions relating to Lords Amendments, 24 November 2026",
+          "url": "https://publications.parliament.uk/pa/bills/cbill/59-02/0175/amend/cyber_sec_day_ccla_1124.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Cyber Security and Resilience Bill, Lords Amendments (Bill 175), 3 November 2026",
+          "url": "https://publications.parliament.uk/pa/bills/cbill/59-02/0175/260175.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "The Record, California sues OpenAI for Hugging Face and other incidents, 16 November 2026 (OpenAI's statement)",
+          "url": "https://therecord.media/california-sues-openai-hugging-face",
+          "kind": "report"
+        }
+      ]
+    },
+    {
+      "id": "interest-over-health",
+      "title": "Interest before hospitals",
+      "short": "Interest before health",
+      "field": "economy",
+      "gist": "In much of the developing world, governments now spend more on interest to creditors than on health or on education.",
+      "quiet_rank": 1,
+      "terms": [
+        "sovereign debt",
+        "debt crisis",
+        "debt relief",
+        "debt distress",
+        "public debt",
+        "debt service"
+      ],
+      "lines": [
+        {
+          "text": "By UNCTAD's count for 2023, 3.7 billion people lived in countries that spent more on interest than on health or on education.",
+          "say": "By UN Trade and Development's count for twenty twenty-three, three point seven billion people lived in countries that spent more on interest than on health or on education."
+        },
+        {
+          "text": "That is 1.2 billion more people than in 2010.",
+          "say": "That is one point two billion more people than in twenty ten."
+        },
+        {
+          "text": "Developing countries paid $995 billion in net interest on public debt in 2025.",
+          "say": "Developing countries paid nine hundred and ninety-five billion dollars in net interest on public debt in twenty twenty-five."
+        },
+        {
+          "text": "In Africa, the share of people in such countries rose from 24 to 65 percent between 2010 and 2023.",
+          "say": "In Africa, the share of people in such countries rose from twenty-four to sixty-five percent between twenty ten and twenty twenty-three."
+        },
+        {
+          "text": "The World Bank counts a different bill: low- and middle-income countries paid 1.4 trillion dollars in principal and interest on external debt in 2025, the fifth rise in a row.",
+          "say": "The World Bank counts a different bill: low- and middle-income countries paid one point four trillion dollars in principal and interest on external debt in twenty twenty-five, the fifth rise in a row."
+        },
+        {
+          "text": "Between 2022 and 2025 they paid 436 billion dollars more in debt service than they received in new financing.",
+          "say": "Between twenty twenty-two and twenty twenty-five they paid four hundred and thirty-six billion dollars more in debt service than they received in new financing."
+        }
+      ],
+      "sources": [
+        {
+          "label": "UNCTAD, A World of Debt 2026",
+          "url": "https://unctad.org/publication/world-of-debt",
+          "kind": "primary"
+        },
+        {
+          "label": "UNCTAD, A World of Debt 2026, report (UNCTAD/OSG/INF/2026/11), 7 October 2026",
+          "url": "https://unctad.org/system/files/official-document/osginf2026d11_en.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank, press release on the International Debt Report 2026, 5 November 2026",
+          "url": "https://www.worldbank.org/en/news/press-release/2026/11/05/developing-countries-external-debt-surges-to-record-9-4-trillion",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank Data Blog, Access to finance is not enough: What the International Debt Report 2026 tells us, 5 November 2026",
+          "url": "https://blogs.worldbank.org/en/opendata/access-to-finance-is-not-enough--what-the-international-debt-rep",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank, International Debt Report 2026 (Open Knowledge Repository), 5 November 2026",
+          "url": "https://openknowledge.worldbank.org/entities/publication/0643cd42-7921-4db8-9077-13f7f4ed6dec",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "aid-shortfall",
+      "title": "Appeals less than half funded",
+      "short": "Aid less than half paid",
+      "field": "displacement",
+      "gist": "With five weeks of the year left, the world's humanitarian appeals have received less than half of what they asked for, while UNHCR estimates slightly more people forced from their homes than at the end of last year.",
+      "quiet_rank": 3,
+      "terms": [
+        "humanitarian aid",
+        "aid cuts",
+        "humanitarian funding",
+        "displaced",
+        "refugees"
+      ],
+      "lines": [
+        {
+          "text": "On 24 November, the 2026 humanitarian appeals had received 15.87 of 35.06 billion dollars, 45.3 percent.",
+          "say": "On the twenty-fourth of November, the twenty twenty-six humanitarian appeals had received fifteen point eight seven of thirty-five point zero six billion dollars, forty-five point three percent."
+        },
+        {
+          "text": "Niger's plan was 20.0 percent funded, Yemen's 23.0 and Afghanistan's 33.9; the flash appeal for Honduras had 3.5 percent.",
+          "say": "Niger's plan was twenty percent funded, Yemen's twenty-three and Afghanistan's thirty-three point nine; the flash appeal for Honduras had three point five percent."
+        },
+        {
+          "text": "The United States gave 30.7 percent of the money these appeals received.",
+          "say": "The United States gave thirty point seven percent of the money these appeals received."
+        },
+        {
+          "text": "At the end of June 2026, by UNHCR's estimate, 118.2 million people were forcibly displaced, one in every 70 on Earth.",
+          "say": "At the end of June twenty twenty-six, by the UN refugee agency's estimate, one hundred and eighteen point two million people were forcibly displaced, one in every seventy on Earth."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OCHA Financial Tracking Service, coordinated plans 2026, snapshot of 24 November 2026",
+          "url": "https://fts.unocha.org/plans/overview/2026",
+          "kind": "primary"
+        },
+        {
+          "label": "UNHCR, Mid-Year Trends 2026, 17 November 2026",
+          "url": "https://www.unhcr.org/us/mid-year-trends",
+          "kind": "primary"
+        },
+        {
+          "label": "UNHCR, Mid-Year Trends 2026, report, November 2026",
+          "url": "https://www.unhcr.org/sites/default/files/docs/default/2026-11/mid-year-trends-report-2026.pdf",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "extreme-poverty",
+      "title": "One in ten below three dollars a day",
+      "short": "One in ten, extreme poor",
+      "field": "poverty",
+      "gist": "Extreme poverty barely moves: about one in ten people live on less than three dollars a day, and a wider measure finds more than one in six poor in the 108 countries it covers.",
+      "quiet_rank": 2,
+      "terms": [
+        "extreme poverty",
+        "poverty line",
+        "poorest"
+      ],
+      "lines": [
+        {
+          "text": "The World Bank counts 824 million people below three dollars a day in 2024, the latest year with sufficient data.",
+          "say": "The World Bank counts eight hundred and twenty-four million people below three dollars a day in twenty twenty-four, the latest year with sufficient data."
+        },
+        {
+          "text": "Its nowcast for 2026 is about 811 million, one in ten.",
+          "say": "Its now cast for twenty twenty-six is about eight hundred and eleven million, one in ten."
+        },
+        {
+          "text": "In their 2026 update, UNDP and OPHI count 1.2 billion people in acute multidimensional poverty in 108 countries.",
+          "say": "In their twenty twenty-six update, the United Nations Development Programme and Oxford's poverty initiative count one point two billion people in acute multidimensional poverty in one hundred and eight countries."
+        }
+      ],
+      "sources": [
+        {
+          "label": "World Bank, Poverty, Prosperity, and Planet Report 2026, 26 October 2026",
+          "url": "https://www.worldbank.org/en/publication/poverty-prosperity-and-planet",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank Data Blog, September 2026 Global Poverty Update, 22 September 2026",
+          "url": "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in",
+          "kind": "primary"
+        },
+        {
+          "label": "World Bank, Poverty and Inequality Platform, version 20260922",
+          "url": "https://pip.worldbank.org/home",
+          "kind": "primary"
+        },
+        {
+          "label": "UNDP and OPHI, 2026 Global Multidimensional Poverty Index: Statistical Update, 12 October 2026",
+          "url": "https://hdr.undp.org/content/2026-global-multidimensional-poverty-index-mpi",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "femicide",
+      "title": "Killed by those closest to them",
+      "short": "Femicide at home",
+      "field": "inequality",
+      "gist": "Most women and girls who are killed intentionally die at the hands of a partner or a relative, and that rate falls more slowly than homicide overall.",
+      "quiet_rank": null,
+      "terms": [
+        "femicide",
+        "feminicide",
+        "violence against women",
+        "domestic violence",
+        "intimate partner violence",
+        "gender-based violence"
+      ],
+      "lines": [
+        {
+          "text": "UNODC and UN Women estimate that around 47,000 women and girls were killed by an intimate partner or family member in 2025, in a range of 37,100 to 56,700.",
+          "say": "UNODC and UN Women estimate that around forty-seven thousand women and girls were killed by an intimate partner or family member in twenty twenty-five, in a range of thirty-seven thousand one hundred to fifty-six thousand seven hundred."
+        },
+        {
+          "text": "That is almost 60 percent of the women and girls killed intentionally that year; for men and boys the share is 11 percent.",
+          "say": "That is almost sixty percent of the women and girls killed intentionally that year; for men and boys the share is eleven percent."
+        },
+        {
+          "text": "The authors say the drop from 50,000 in 2024 reflects better data, not a decline.",
+          "say": "The authors say the drop from fifty thousand in twenty twenty-four reflects better data, not a decline."
+        },
+        {
+          "text": "In the Americas and Europe the rate fell between 2010 and 2025 more slowly than homicide as a whole.",
+          "say": "In the Americas and Europe the rate fell between twenty ten and twenty twenty-five more slowly than homicide as a whole."
+        }
+      ],
+      "sources": [
+        {
+          "label": "UNODC and UN Women, Femicides in 2025: Global estimates of intimate partner/family member femicides, November 2026",
+          "url": "https://www.unodc.org/documents/data-and-analysis/briefs/Femicide_Brief_2026.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "UNODC, press release, Five women killed every hour by a partner or close relative in 2025, 24 November 2026",
+          "url": "https://www.unodc.org/unodc/en/press/releases/2026/November/five-women-killed-every-hour-by-a-partner-or-close-relative-in-2025.html",
+          "kind": "primary"
+        },
+        {
+          "label": "UN Women, press release, 24 November 2026",
+          "url": "https://www.unwomen.org/en/news-stories/press-release/2026/11/five-women-killed-every-hour-by-a-partner-or-close-relative-in-2025",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "press-freedom",
+      "title": "Press freedom at a 25-year low",
+      "short": "Press freedom low",
+      "field": "information",
+      "gist": "In more than half the world's countries, journalism now works under conditions rated difficult or very serious.",
+      "quiet_rank": 4,
+      "terms": [
+        "press freedom",
+        "journalists killed",
+        "journalist jailed",
+        "disinformation",
+        "censorship",
+        "internet shutdown"
+      ],
+      "lines": [
+        {
+          "text": "RSF's 2026 index rates press freedom difficult or very serious in 52.2 percent of 180 countries and territories.",
+          "say": "Reporters Without Borders' twenty twenty-six index rates press freedom difficult or very serious in fifty-two point two percent of one hundred and eighty countries and territories."
+        },
+        {
+          "text": "In 2002, on thresholds RSF has made comparable across its changes of method, the share was 13.7 percent.",
+          "say": "In two thousand and two, on thresholds RSF has made comparable across its changes of method, the share was thirteen point seven percent."
+        },
+        {
+          "text": "Trust in news averaged 37 percent across 48 markets in the 2026 Digital News Report survey, the lowest since measuring began in 2015.",
+          "say": "Trust in news averaged thirty-seven percent across forty-eight markets in the twenty twenty-six Digital News Report survey, the lowest since measuring began in twenty fifteen."
+        }
+      ],
+      "sources": [
+        {
+          "label": "RSF, 2026 World Press Freedom Index, analysis, 30 April 2026",
+          "url": "https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low",
+          "kind": "primary"
+        },
+        {
+          "label": "Reuters Institute, Digital News Report 2026, executive summary, 16 June 2026",
+          "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "acute-hunger",
+      "title": "A fifth of those counted, in crisis; a record projected for Congo",
+      "short": "Acute food crises",
+      "field": "hunger",
+      "gist": "In the countries with food crises, more than a fifth of the people analysed could not reliably eat enough, and Congo is projected to reach a record number in crisis in the first half of next year.",
+      "quiet_rank": null,
+      "terms": [
+        "famine",
+        "food insecurity",
+        "hunger",
+        "malnutrition",
+        "starvation"
+      ],
+      "lines": [
+        {
+          "text": "266 million people in 47 food-crisis countries and territories faced high acute food insecurity in 2025.",
+          "say": "Two hundred and sixty-six million people in forty-seven food-crisis countries and territories faced high acute food insecurity in twenty twenty-five."
+        },
+        {
+          "text": "That was 22.9 percent of the people analysed.",
+          "say": "That was twenty-two point nine percent of the people analysed."
+        },
+        {
+          "text": "In DR Congo a record 30.3 million people are projected to face crisis levels or worse from January to June 2027.",
+          "say": "In the Democratic Republic of the Congo a record thirty point three million people are projected to face crisis levels or worse from January to June twenty twenty-seven."
+        },
+        {
+          "text": "Nearly 29 million face them now, from September to December 2026, among them 3.6 million in Emergency.",
+          "say": "Nearly twenty-nine million face them now, from September to December twenty twenty-six, among them three point six million in Emergency."
+        },
+        {
+          "text": "On 20 November WFP said it needs 12.1 billion dollars to assist 91 million people in 2027.",
+          "say": "On the twentieth of November the World Food Programme said it needs twelve point one billion dollars to assist ninety-one million people in twenty twenty-seven."
+        }
+      ],
+      "sources": [
+        {
+          "label": "FAO, IFAD, UNICEF, WFP and WHO, The State of Food Security and Nutrition in the World 2026, 21 July 2026",
+          "url": "https://openknowledge.fao.org/3/cd8306en/cd8306en.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO newsroom on SOFI 2026, 21 July 2026",
+          "url": "https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO, WFP and GNAFC, 2026 Global Report on Food Crises, 24 April 2026",
+          "url": "https://doi.org/10.4060/cd9424en",
+          "kind": "primary"
+        },
+        {
+          "label": "FAO newsroom on the 2026 Global Report on Food Crises, 24 April 2026",
+          "url": "https://www.fao.org/newsroom/detail/acute-food-insecurity-and-malnutrition-remain-alarmingly-high-as-crises-deepen--un--eu-and-partners-warn-in-new-report/en",
+          "kind": "primary"
+        },
+        {
+          "label": "Global Network Against Food Crises, Mid-Year Update of the 2026 GRFC now available, 21 September 2026",
+          "url": "https://www.fightfoodcrises.net/articles/mid-year-update-2026-grfc-now-available",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, FAO, WFP and UNICEF, joint news release on the DR Congo IPC analysis, 13 November 2026",
+          "url": "https://www.who.int/news/item/13-11-2026-conflict-and-disease-outbreaks-deepen-dr-congo-s-hunger-crisis-as-record-numbers-are-projected-to-face-acute-food-insecurity",
+          "kind": "primary"
+        },
+        {
+          "label": "IPC, Democratic Republic of the Congo: Acute Food Insecurity Snapshot, September 2026 to June 2027, 30 October 2026 (on ReliefWeb)",
+          "url": "https://reliefweb.int/report/democratic-republic-congo/democratic-republic-congo-ipc-acute-food-insecurity-snapshot-september-2026-june-2027",
+          "kind": "primary"
+        },
+        {
+          "label": "WFP, Global Outlook 2027, 20 November 2026",
+          "url": "https://www.wfp.org/publications/wfp-global-outlook",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "red-list",
+      "title": "Extinction risk, before the Red List's next update",
+      "short": "The Red List update",
+      "field": "nature",
+      "gist": "IUCN plans its next Red List update for 3 December; the index that follows extinction risk in five well-assessed groups has kept declining since 1993.",
+      "quiet_rank": 5,
+      "terms": [
+        "Red List",
+        "IUCN",
+        "extinction",
+        "threatened species",
+        "endangered species",
+        "biodiversity loss"
+      ],
+      "exclude": [
+        "travel red list",
+        "red list countries"
+      ],
+      "lines": [
+        {
+          "text": "IUCN plans its next Red List update for 3 December 2026, a date it says may change.",
+          "say": "IUCN plans its next Red List update for the third of December twenty twenty-six, a date it says may change."
+        },
+        {
+          "text": "The July 2026 Red List counts 49,505 threatened species among 175,909 assessed, a count that grows as more species are assessed.",
+          "say": "The July twenty twenty-six Red List counts forty-nine thousand, five hundred and five threatened species among one hundred and seventy-five thousand, nine hundred and nine assessed, a count that grows as more species are assessed."
+        },
+        {
+          "text": "The Red List Index for mammals, birds, amphibians, corals and cycads fell from 0.806 in 1993 to 0.745 in 2025.",
+          "say": "The Red List Index for mammals, birds, amphibians, corals and cycads fell from zero point eight zero six in nineteen ninety-three to zero point seven four five in twenty twenty-five."
+        },
+        {
+          "text": "In July, IUCN found 62 percent of endemic hydrothermal-vent molluscs at risk of extinction from deep-sea mining.",
+          "say": "In July, IUCN found sixty-two percent of endemic hydrothermal-vent molluscs at risk of extinction from deep-sea mining."
+        }
+      ],
+      "sources": [
+        {
+          "label": "IUCN Red List, When are the next IUCN Red List updates scheduled?",
+          "url": "https://www.iucnredlist.org/assessment/updates",
+          "kind": "primary"
+        },
+        {
+          "label": "IUCN, From desert frog to deep-sea molluscs, remarkable species at risk – IUCN Red List, 9 July 2026",
+          "url": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list",
+          "kind": "primary"
+        },
+        {
+          "label": "IUCN Red List, summary statistics, version 2026-1",
+          "url": "https://www.iucnredlist.org/statistics",
+          "kind": "primary"
+        },
+        {
+          "label": "UN Statistics Division, SDG Global Database, Red List Index (15.5.1, ER_RSK_LST), World",
+          "url": "https://unstats.un.org/sdgapi/v1/sdg/Series/Data?seriesCode=ER_RSK_LST&areaCode=1&pageSize=100",
+          "kind": "primary"
+        },
+        {
+          "label": "GBIF, The IUCN Red List of Threatened Species (dataset metadata)",
+          "url": "https://api.gbif.org/v1/dataset/19491596-35ae-4a91-9a98-85cf505f1bd3",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organised-violence",
+      "title": "A record of conflicts between states",
+      "short": "Record of state conflicts",
+      "field": "war",
+      "gist": "Organised violence killed far more people in 2025 than the year before, a rise driven by one-sided killings of civilians, and more conflicts were fought between states than ever recorded.",
+      "quiet_rank": null,
+      "terms": [
+        "armed conflict",
+        "civil war",
+        "airstrike",
+        "airstrikes",
+        "ceasefire",
+        "military spending"
+      ],
+      "lines": [
+        {
+          "text": "UCDP counted about 244,600 people killed in organised violence in 2025.",
+          "say": "The Uppsala Conflict Data Program counted about two hundred and forty-four thousand, six hundred people killed in organised violence in twenty twenty-five."
+        },
+        {
+          "text": "In 2024 the count was about 187,000.",
+          "say": "In twenty twenty-four the count was about one hundred and eighty-seven thousand."
+        },
+        {
+          "text": "UCDP recorded 65 state-based conflicts in 2025, the most since its records begin.",
+          "say": "The program recorded sixty-five state-based conflicts in twenty twenty-five, the most since its records begin."
+        },
+        {
+          "text": "Eight of them were fought between states, up from two in 2023, the most since 1946.",
+          "say": "Eight of them were fought between states, up from two in twenty twenty-three, the most since nineteen forty-six."
+        },
+        {
+          "text": "SIPRI put world military spending at 2,887 billion dollars in 2025.",
+          "say": "SIPRI put world military spending at two thousand, eight hundred and eighty-seven billion dollars in twenty twenty-five."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Uppsala University, UCDP press release on the 2025 data, 9 June 2026",
+          "url": "https://www.uu.se/en/press/press-releases/2026/2026-06-09-ucdp-record-number-of-conflicts-between-states",
+          "kind": "primary"
+        },
+        {
+          "label": "Davies, Pettersson and Öberg, Organized violence 1989–2025, Journal of Peace Research 63(4), 2026",
+          "url": "https://academic.oup.com/jpr/article/63/4/705/8703754",
+          "kind": "primary"
+        },
+        {
+          "label": "SIPRI, Trends in World Military Expenditure, 2025, fact sheet, April 2026",
+          "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "compute-concentration",
+      "title": "Five companies, most of the machines",
+      "short": "Who owns AI compute",
+      "field": "power",
+      "gist": "Five companies own most of the world's computing power for AI, and since 19 November the US requires a licence to rent large amounts of it abroad to firms from China and other embargoed countries; China calls the rule coercion.",
+      "quiet_rank": null,
+      "terms": [
+        "hyperscaler",
+        "hyperscalers",
+        "market concentration",
+        "antitrust",
+        "big tech",
+        "monopolies",
+        "export controls",
+        "AI chips"
+      ],
+      "lines": [
+        {
+          "text": "Epoch AI estimates Amazon, Google, Meta, Microsoft and Oracle held 71 percent of the world's AI compute at the end of 2025.",
+          "say": "Epoch AI estimates Amazon, Google, Meta, Microsoft and Oracle held seventy-one percent of the world's AI compute at the end of twenty twenty-five."
+        },
+        {
+          "text": "It is an estimate, measured in a common unit of chips, on incomplete records of who owns them."
+        },
+        {
+          "text": "A US rule in force since 19 November requires a licence for chips with which a data centre anywhere would give large amounts of compute to firms from Macau or embargoed countries such as China.",
+          "say": "A US rule in force since the nineteenth of November requires a licence for chips with which a data centre anywhere would give large amounts of compute to firms from Macau or embargoed countries such as China."
+        },
+        {
+          "text": "The same rule requires licences for advanced chips sent to Indonesia, Malaysia, Singapore, Thailand and Brazil, except to firms based, or with a parent based, in the United States that report."
+        },
+        {
+          "text": "China's foreign ministry called the rule economic coercion; Singapore said it is talking to US authorities about its scope; comments are open until 19 January 2027.",
+          "say": "China's foreign ministry called the rule economic coercion; Singapore said it is talking to US authorities about its scope; comments are open until the nineteenth of January twenty twenty-seven."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Epoch AI, Five hyperscalers now own over two-thirds of global AI compute, 14 April 2026",
+          "url": "https://epoch.ai/data-insights/hyperscalers-control-most-compute",
+          "kind": "primary"
+        },
+        {
+          "label": "Epoch AI, Data on AI chip owners (updated 12 May 2026)",
+          "url": "https://epoch.ai/data/ai-chip-owners",
+          "kind": "primary"
+        },
+        {
+          "label": "Bureau of Industry and Security, BIS issues rule addressing remote access, 16 November 2026",
+          "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+          "kind": "primary"
+        },
+        {
+          "label": "Federal Register, 91 FR 74970, Addressing Remote Access to Advanced Semiconductors (interim final rule), 19 November 2026",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/pdf/2026-23529.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Ministry of Foreign Affairs of China, regular press conference, 17 November 2026",
+          "url": "https://www.fmprc.gov.cn/eng/xw/fyrbt/202611/t20261117_12061159.html",
+          "kind": "primary"
+        },
+        {
+          "label": "Singapore MDDI and METI, joint media statement on the US interim final rule, 16 November 2026",
+          "url": "https://www.mddi.gov.sg/newsroom/mddi-meti-joint-media-statement-on-us-interim-final-rule-on-addressing-remote-access-to-advanced-semiconductors/",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "ebola",
+      "title": "Ebola in Congo, still running",
+      "short": "Ebola in Congo",
+      "field": "health",
+      "gist": "The Bundibugyo outbreak in eastern Congo, the country's largest, still adds dozens of confirmed cases a day, and most of its deaths still happen outside treatment centres.",
+      "quiet_rank": null,
+      "terms": [
+        "Ebola",
+        "Bundibugyo"
+      ],
+      "lines": [
+        {
+          "text": "By 20 November Congo's own count of its Bundibugyo Ebola outbreak stood at 11,762 confirmed cases, including 5,775 deaths.",
+          "say": "By the twentieth of November Congo's own count of its Bundibugyo Ebola outbreak stood at eleven thousand, seven hundred and sixty-two confirmed cases, including five thousand, seven hundred and seventy-five deaths."
+        },
+        {
+          "text": "On 20 November alone it added 39 confirmed cases and 23 confirmed deaths, 17 of them in the community.",
+          "say": "On the twentieth of November alone it added thirty-nine confirmed cases and twenty-three confirmed deaths, seventeen of them in the community."
+        },
+        {
+          "text": "Contact follow-up stood at 81.2 percent that day, below the 95 percent threshold.",
+          "say": "Contact follow-up stood at eighty-one point two percent that day, below the ninety-five percent threshold."
+        },
+        {
+          "text": "On 20 November WHO said the outbreak remains a public health emergency of international concern, after its emergency committee met a third time.",
+          "say": "On the twentieth of November the World Health Organization said the outbreak remains a public health emergency of international concern, after its emergency committee met a third time."
+        },
+        {
+          "text": "On 17 November WHO's chief said two thirds of confirmed deaths occur outside Ebola treatment centres; in the week to 15 November the share was 59 percent.",
+          "say": "On the seventeenth of November the head of the World Health Organization said two thirds of confirmed deaths occur outside Ebola treatment centres; in the week to the fifteenth of November the share was fifty-nine percent."
+        },
+        {
+          "text": "Kenya's nine cases have all recovered or died, and its last patient left care on 11 November.",
+          "say": "Kenya's nine cases have all recovered or died, and its last patient left care on the eleventh of November."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Institut National de Santé Publique (DR Congo), SitRep N°190, data of 20 November 2026",
+          "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N190_20-11-2026_corrige_VF-1.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "Institut National de Santé Publique (DR Congo), SitRep N°189, data of 19 November 2026",
+          "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N189_19-11-2026_corrige_VF.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, Disease Outbreak News DON630, Bundibugyo virus disease: Democratic Republic of the Congo, Kenya and Nigeria, 20 November 2026",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON630",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO Regional Office for Africa, Bundibugyo virus disease, weekly external situation report 27, data as of 15 November 2026",
+          "url": "https://afro.who.int/countries/kenya/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation",
+          "kind": "primary"
+        },
+        {
+          "label": "WHO, Director-General's opening remarks at the third IHR Emergency Committee meeting on Bundibugyo virus disease, 17 November 2026",
+          "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-third-ihr-emergency-committee-meeting-on-bundibugyo-virus-disease-epidemic-in-the-democratic-republic-of-the-congo---17-november-2026",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "cop31-gap",
+      "title": "COP31 ends without its cover decision",
+      "short": "COP31 and the gap",
+      "field": "climate",
+      "gist": "The climate summit in Antalya closed two days late without adopting its overarching decision, after objections to a text that no longer named fossil fuels, while current policies still point to far more warming than the Paris goal.",
+      "quiet_rank": null,
+      "terms": [
+        "COP31",
+        "Antalya Pact",
+        "emissions gap",
+        "Paris Agreement",
+        "climate summit",
+        "NDC",
+        "NDCs"
+      ],
+      "lines": [
+        {
+          "text": "COP31 in Antalya ended on 22 November 2026, almost 50 hours late, without adopting its cover decision, the Antalya Pact.",
+          "say": "COP thirty-one in Antalya ended on the twenty-second of November twenty twenty-six, almost fifty hours late, without adopting its cover decision, the Antalya Pact."
+        },
+        {
+          "text": "The last draft did not mention fossil fuels; the EU, Panama, the Marshall Islands and Vanuatu were among those who objected."
+        },
+        {
+          "text": "Countries adopted narrower decisions, among them on the global goal on adaptation and a just transition work programme."
+        },
+        {
+          "text": "The UN Secretary-General said he was deeply disappointed that COP31 ended without consensus on an overarching outcome.",
+          "say": "The UN Secretary-General said he was deeply disappointed that COP thirty-one ended without consensus on an overarching outcome."
+        },
+        {
+          "text": "UNEP finds that current policies could take warming to 2.8°C this century.",
+          "say": "The UN Environment Programme finds that current policies could take warming to two point eight degrees this century."
+        },
+        {
+          "text": "WMO puts January to September 2026 at about 1.47°C above pre-industrial.",
+          "say": "The World Meteorological Organization puts January to September twenty twenty-six at about one point four seven degrees above pre-industrial."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Earth Negotiations Bulletin (IISD), Highlights and images for 22 November 2026",
+          "url": "https://enb.iisd.org/antalya-un-climate-change-conference-cop31-22Nov2026",
+          "kind": "report"
+        },
+        {
+          "label": "UNFCCC, draft text of the CMA cover decision, version 22 November 2026, 2:00 (not adopted)",
+          "url": "https://docs.unfccc.int/documents/10000406/files/en/dt_cma8_cover_decision.pdf",
+          "kind": "primary"
+        },
+        {
+          "label": "UNFCCC, Outcomes of the Antalya Climate Change Conference, advance unedited versions",
+          "url": "https://unfccc.int/cop31/auvs",
+          "kind": "primary"
+        },
+        {
+          "label": "UN Secretary-General, Statement on the conclusion of COP31, 22 November 2026",
+          "url": "https://www.un.org/sg/en/content/sg/statements/2026-11-22/statement-the-secretary-general-the-conclusion-of-cop31",
+          "kind": "primary"
+        },
+        {
+          "label": "UNFCCC, Simon Stiell remarks at the closing plenary of COP31, 22 November 2026",
+          "url": "https://unfccc.int/news/un-climate-change-executive-secretary-simon-stiell-remarks-at-the-closing-plenary-of-cop31",
+          "kind": "primary"
+        },
+        {
+          "label": "UN News, COP31 ends without climate pact as UN chief warns there is 'no ambiguity in the science', 22 November 2026",
+          "url": "https://news.un.org/en/story/2026/11/1168855",
+          "kind": "report"
+        },
+        {
+          "label": "UNEP, press release on the Emissions Gap Report 2026, 21 October 2026",
+          "url": "https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc",
+          "kind": "primary"
+        },
+        {
+          "label": "WMO, State of the Climate Update for COP31, 9 November 2026",
+          "url": "https://wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31",
+          "kind": "primary"
+        },
+        {
+          "label": "UNFCCC, COP31, Antalya, 9 to 20 November 2026",
+          "url": "https://unfccc.int/cop31",
+          "kind": "primary"
+        }
+      ]
+    }
+  ],
+  "estimates": [
+    {
+      "id": "ebola-cases-nov20",
+      "label": "Confirmed Ebola cases in the DRC",
+      "matter": "ebola",
+      "question": "How many confirmed Ebola cases had the Democratic Republic of the Congo reported in this outbreak on data to 20 November 2026, by its national public health institute?",
+      "kind": "count",
+      "unit": "confirmed cases",
+      "truth": 11762,
+      "truth_label": "11,762",
+      "source": {
+        "label": "INSP (DR Congo), SitRep N°190, data of 20 November 2026",
+        "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N190_20-11-2026_corrige_VF-1.pdf"
+      }
+    },
+    {
+      "id": "openai-public-loc",
+      "label": "Losses of control OpenAI had reported publicly",
+      "matter": "ai-loss-of-control",
+      "question": "How many loss-of-control incidents had OpenAI reported publicly when California sued it on 16 November 2026, according to the complaint?",
+      "kind": "count",
+      "unit": "incidents",
+      "truth": 27,
+      "truth_label": "27",
+      "source": {
+        "label": "People of the State of California v. OpenAI, complaint, 16 November 2026",
+        "url": "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf"
+      }
+    },
+    {
+      "id": "extreme-poor-2024",
+      "label": "People below three dollars a day",
+      "matter": "extreme-poverty",
+      "question": "How many people lived below $3.00 a day (2021 prices) in 2024, by the World Bank's count of September 2026?",
+      "kind": "count",
+      "unit": "people",
+      "truth": 824000000,
+      "truth_label": "824 million",
+      "source": {
+        "label": "World Bank, September 2026 Global Poverty Update",
+        "url": "https://blogs.worldbank.org/en/opendata/september-2026-global-poverty-update-from-the-world-bank--one-in"
+      }
+    },
+    {
+      "id": "femicides-2025",
+      "label": "Women and girls killed by a partner or family member",
+      "matter": "femicide",
+      "question": "How many women and girls were killed intentionally by an intimate partner or another family member in 2025, by the estimate UNODC and UN Women published on 24 November 2026?",
+      "kind": "count",
+      "unit": "women and girls",
+      "truth": 47000,
+      "truth_label": "47,000",
+      "source": {
+        "label": "UNODC and UN Women, Femicides in 2025: Global estimates of intimate partner/family member femicides, November 2026",
+        "url": "https://www.unodc.org/documents/data-and-analysis/briefs/Femicide_Brief_2026.pdf"
+      }
+    },
+    {
+      "id": "gho-funded-nov24",
+      "label": "Share of the 2026 humanitarian appeals funded",
+      "matter": "aid-shortfall",
+      "question": "What share of the 2026 Global Humanitarian Overview's requirements was funded on 24 November 2026?",
+      "kind": "percent",
+      "unit": "%",
+      "truth": 45.3,
+      "truth_label": "45.3%",
+      "source": {
+        "label": "OCHA FTS, coordinated plans 2026",
+        "url": "https://fts.unocha.org/plans/overview/2026"
+      }
+    }
+  ],
+  "fallback": "How many people live in developing countries that spend more on net interest on their public debt than on health or on education, as UNCTAD counts them for 2023, and what does that trade-off cost them?"
+}

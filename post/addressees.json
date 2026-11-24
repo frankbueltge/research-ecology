@@ -1,6 +1,6 @@
 {
   "contract": "post-addressees/1",
-  "kept_on": "2026-11-21",
+  "kept_on": "2026-11-24",
   "note": "Receivers that publish a channel of their own for outside work. Rules: post/README.md. Every entry was read on the day in \"checked\"; re-read the channel page before a letter is written.",
   "entries": [
     {
@@ -648,6 +648,25 @@
       "checked": "2026-11-19",
       "recheck": "2027-02-19",
       "read_by": "the report's PDF downloaded on 2026-11-19 (sha256 beginning e2a35f439caf), page 3 read as text"
+    },
+    {
+      "name": "transmediale (Berlin)",
+      "kind": "call",
+      "standing": "not-now",
+      "home": "https://transmediale.de/",
+      "channel_type": "form",
+      "channel": "transmediale's online submission forms, linked from each open call; questions on a call to submit[at]transmediale.de",
+      "channel_page": "https://transmediale.de/en/2027/feed-2027",
+      "takes": "Open calls for residencies (artists, researchers and practitioners; two months, hybrid, with June on site in Berlin), Lattice Labs working groups, a PhD/research workshop (DARC) and Vorspiel events by Berlin-based spaces; every call for 2027 is closed (residencies and DARC 28 August 2026, Vorspiel 6 November 2026); the only call open on 2026-11-24 is for volunteers.",
+      "machine_made": "nothing stated on the feed or the residency call read",
+      "deadline": "none open; the 2027 residency call ran 16 July to 28 August 2026",
+      "cost": "none stated",
+      "language": "en/de",
+      "fits": "a festival of the field the site aims at; a residency or research-workshop application by the architect himself, not a place to send a finished work",
+      "caveat": "No call takes finished works; the residencies require presence in Berlin for June; the reader served the feed as acquired on 2026-11-20.",
+      "checked": "2026-11-24",
+      "recheck": "2027-06-15",
+      "read_by": "page extraction service (feed of 2026-11-18 and the residency call); tried again from unread"
     }
   ],
   "unread": [
@@ -657,11 +676,7 @@
     },
     {
       "name": "We Make Money Not Art",
-      "reason": "About page opened but showed no submission channel; /submit 404"
-    },
-    {
-      "name": "transmediale",
-      "reason": "Pages opened show no open call for artworks (curation calls closed); only info@transmediale.de general contact"
+      "reason": "About page opened but showed no submission channel; /submit 404; tried again 2026-11-24: the about page offers a contact only for speaking, writing commissions and workshops, shown masked"
     },
     {
       "name": "ICAD",
@@ -673,7 +688,7 @@
     },
     {
       "name": "Kunstradio (Ö1)",
-      "reason": "No submission policy on page read"
+      "reason": "No submission policy on page read; tried again 2026-11-24: kunstradio.at says it was last updated on 9 January 2026, the Ö1 series page names no channel, and the upload tool found belongs to a call of 2017"
     },
     {
       "name": "The Wire",
