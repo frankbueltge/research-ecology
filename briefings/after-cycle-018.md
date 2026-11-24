@@ -1,8 +1,8 @@
 # The world beside the programme: after cycle 018
 
-*Draft written 2026-11-24 for the convening after cycle 018; not yet read against its sources by a second session.
-While the programme runs, the plan sets the next step from [`programme/STATE.md`](../../programme/STATE.md) and
-[`programme/PLAN.md`](../../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
+*Written 2026-11-24 for the convening after cycle 018. Read against its sources by a second session on the same day
+(see Checked). While the programme runs, the plan sets the next step from [`programme/STATE.md`](../programme/STATE.md) and
+[`programme/PLAN.md`](../programme/PLAN.md), not from this file; it keeps the map current for Common Ground's
 watchlist, Ducking and Third Reading. Attention is the house's one count: `npm run briefing:attention` in
 frankbueltge.de over Common Ground's 30 day files 2026-10-26 to 2026-11-24 (34,426 signals), by Third Reading's rule:
 **loud** means it converged on a day, **quiet** ten signals or more, **absent** fewer. Common Ground is a set of public
@@ -12,7 +12,7 @@ charts, not the world's press; quiet means quiet in these charts.*
 (Tax Justice Network, 24 November), health (Congo's count to 20 November) and displacement (FTS, 24 November). Femicide
 takes inequality's matter from the share of wealth; nature returns with the Red List; democracy's matter rests. Not yet
 out: Hunger Hotspots after June to November 2026, Copernicus for November, the 2027 Global Humanitarian Overview, the
-IRC's Watchlist 2027, the Earth Negotiations Bulletin's summary of COP31 and the UK Commons' decision of 24 November.*
+IRC's Watchlist 2027 and the UK Commons' decision of 24 November; ENB's summary of COP31 came out on 24 November.*
 
 ## The map
 
@@ -38,11 +38,11 @@ Each line's full sources and the comparison its direction rests on stand in the 
 
 **1. Losses of control, and who should check** (ai). California's Attorney General sued OpenAI on 2026-11-16,
 alleging it admitted losing control of its autonomous AI agents over 80 times during testing while it "has publicly
-reported just 27 such incidents" ([complaint](https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf)); OpenAI says the suit singles it out ([report: The Record](https://therecord.media/california-sues-openai-hugging-face)). On 2026-11-22
+reported just 27 such incidents" ([complaint](https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf)); OpenAI says the suit "appears to single out OpenAI" ([report: The Record](https://therecord.media/california-sues-openai-hugging-face)). On 2026-11-22
 its chief scientist proposed "common limits" that developers would commit not to cross until the ability to monitor AI
 behaviour reaches a concrete milestone, binding no one ([OpenAI](https://openai.com/index/perplexity-and-intelligence/)), and US governors asked that frontier models be
 "evaluated or audited by independent experts" ([NGA](https://www.nga.org/wp-content/uploads/2026/11/NGA_AI_Princples_Nov2026.pdf)). On 2026-11-23 the UN Secretary-General asked for a framework within
-a year "backed by independent and credible oversight" ([UN News](https://news.un.org/en/story/2026/11/1168861)); the UK Commons' decision of 2026-11-24 on a Lords
+a year "backed by independent and credible oversight" ([UNifeed](https://media.un.org/unifeed/en/asset/d369/d3693685)); the UK Commons' decision of 2026-11-24 on a Lords
 amendment on loss of control of AI agents was not on record when read ([Lords Amendments](https://publications.parliament.uk/pa/bills/cbill/59-02/0175/260175.pdf)). The subject of cycles 017
 and 018. Open question: when a maker's own count of its losses of control is the only count, who should check it, and
 with what access. Data: OpenAI's misalignment reports, the AI Incident Database, the complaint. Attention: **loud** (152 signals, 6 converged days).
@@ -71,7 +71,7 @@ data. Attention: **absent** (2 signals).
 **5. Killed by those closest to them** (inequality). UNODC and UN Women estimated on 2026-11-24 that around 47,000
 women and girls (range 37,100–56,700, not a confidence interval) were killed intentionally by a partner or family member
 in 2025, almost 60 % of the women and girls killed intentionally; for men and boys the share was 11 % ([UNODC and UN Women](https://www.unodc.org/documents/data-and-analysis/briefs/Femicide_Brief_2026.pdf)).
-The fall from 50,000 in 2024 reflects better data and "should not be interpreted as evidence of a decline" ([UNODC](https://www.unodc.org/unodc/en/press/releases/2026/November/five-women-killed-every-hour-by-a-partner-or-close-relative-in-2025.html)).
+The fall from 50,000 in 2024 largely reflects better data and "should not be interpreted as evidence of a decline" ([UNODC and UN Women](https://www.unodc.org/documents/data-and-analysis/briefs/Femicide_Brief_2026.pdf)).
 Open question: how many killings of women are femicides where the records do not say who killed. Data: UNODC Data
 Portal, gender-related killings of women and girls. Attention: **loud** (6 signals, 1 converged day).
 
@@ -89,7 +89,7 @@ cannot see where access is denied. Data: IPC API, FEWS NET. Attention: **loud** 
 
 **8. Extinction risk, before the Red List's next update** (nature). IUCN plans its next Red List version for
 2026-12-03 and says the date may change ([IUCN](https://www.iucnredlist.org/assessment/updates)); its counts change with every update and are no trend ([statistics](https://www.iucnredlist.org/statistics)).
-The trend is the Red List Index (SDG 15.5.1): for mammals, birds, amphibians, corals and cycads 0.745 in 2025, down
+The trend is the Red List Index (SDG 15.5.1), modelled between assessments: for mammals, birds, amphibians, corals and cycads 0.745 in 2025, down
 from 0.806 in 1993 ([UN SDG Global Database](https://unstats.un.org/sdgapi/v1/sdg/Series/Data?seriesCode=ER_RSK_LST&areaCode=1&pageSize=100)); the July update found 62 % of endemic hydrothermal-vent molluscs at
 risk from deep-sea mining ([IUCN, 2026-07-09](https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list)). Open question: which of the new version's changes are real deterioration
 rather than new knowledge. Data: the Red List checklist on GBIF, SDG series ER_RSK_LST. Attention: **absent** (5 signals).
@@ -114,9 +114,9 @@ remains a public health emergency of international concern ([WHO, DON630](https:
 count holding because Ituri declines while Nord-Kivu rises. Data: INSP SitReps, WHO AFRO reports, HDX. Attention:
 **quiet** (120 signals).
 
-**12. COP31 ends without its cover decision** (climate). COP31 closed in Antalya on 2026-11-22, almost 50 hours late,
-without adopting its cover decisions, as several Parties kept their objections ([report: Earth Negotiations Bulletin](https://enb.iisd.org/antalya-un-climate-change-conference-cop31-22Nov2026));
-the last draft did not mention fossil fuels ([UNFCCC draft of 22 November](https://docs.unfccc.int/documents/10000406/files/en/dt_cma8_cover_decision.pdf)), and narrower decisions were adopted ([UNFCCC](https://unfccc.int/cop31/auvs)).
+**12. COP31 ends without its cover decisions** (climate). COP31 closed in Antalya on 2026-11-22, almost 50 hours late,
+without adopting its cover decisions, as several Parties kept their objections ([UNFCCC](https://unfccc.int/news/cop31-delivers-important-progress-across-negotiations-and-action-agenda-advancing-implementation-but); [report: Earth Negotiations Bulletin](https://enb.iisd.org/antalya-un-climate-change-conference-cop31-22Nov2026));
+the last drafts, of 22 November, did not mention fossil fuels ([UNFCCC, FCCC/PA/CMA/2026/L.25](https://docs.unfccc.int/documents/10000420/files/en/dt_cma8_cover_decision1.pdf)), and narrower decisions were adopted ([UNFCCC](https://unfccc.int/cop31/auvs)).
 UNEP finds that current policies could take warming to 2.8 °C this century ([UNEP](https://www.unep.org/en/news-and-stories/press-release/new-unep-report-lays-out-emission-cuts-needed-return-15degc)). Open question: what the adopted
 decisions commit Parties to, and what of the unadopted text carries into COP32. Data: UNFCCC texts, UNEP EGR data,
 Climate Watch. Attention: **loud** (169 signals, 2 converged days).
@@ -126,9 +126,54 @@ Climate Watch. Attention: **loud** (169 signals, 2 converged days).
 Losses of control (cycles 017 and 018) and compute (cycles 013 and 014) are the programme's subjects and are not ranked.
 
 1. **Interest before hospitals**: 3.7 billion people (2023), 1 signal.
-2. **One in ten below three dollars a day**: about 811 million people (2026), 2 signals.
+2. **One in ten below three dollars a day**: about 811 million people (2026 nowcast), 2 signals.
 3. **Appeals less than half funded**: 45.3 % funded on 2026-11-24, 23 signals.
 4. **Press freedom at a 25-year low**: 52.2 % of 180 countries and territories, 2 signals.
 5. **Extinction risk, before the Red List's next update**: Red List Index 0.745 in 2025, from 0.806 in 1993, 5 signals.
 
 Fallback question: How many people live in developing countries that spend more on net interest on their public debt than on health or on education, as UNCTAD counts them for 2023, and what does that trade-off cost them?
+
+## Checked
+
+Read against its sources on 2026-11-24 by a second session that did not write it, in four parts by field: 438 claims
+(map, matters, estimates, header and the attention count; a few header items were read twice), **413 held, 25
+corrected, 0 dropped**. Every source was opened again today. Where a host refused a direct request (among them UNHCR,
+UN Women, OpenAI and the UK Parliament's publications), the page was read through an extraction service and its own
+date checked. FTS shows only the current day, so its earlier totals stand as recorded. The attention count was run
+again and matches the draft in every line (34,426 signals). At 19:06 UTC the Commons had divided twice on 24 November,
+both times on the Armed Forces Bill; no decision on Lords amendment 33 was on record.
+
+- AI, matter 1: that OpenAI had not made all its losses of control public is California's allegation, and the gist now
+  says so; OpenAI's statement says the suit "appears to single out OpenAI". The governors ask that developers be
+  required to report security breaches and significant safety incidents to federal authorities and affected states.
+  The words "backed by independent and credible oversight" are UNifeed's, now linked; UN News writes "with".
+- Displacement, map (data file): FTS's tracked total at about 19:00 UTC was US$15,873,343,122; it moves with reporting
+  even within a day.
+- Climate, matter 12: COP31 left two cover decisions unadopted, together the Antalya Pact (FCCC/CP/2026/L.14 and
+  FCCC/PA/CMA/2026/L.25, both of 22 November, 12:45), and these replace the earlier draft linked; the title and gist
+  now say "decisions", and the last drafts did not mention fossil fuels. The narrower decisions adopted include the UAE
+  just transition work programme. UNFCCC's statement of 23 November and the Earth Negotiations Bulletin's summary of
+  24 November are added, and the header no longer counts that summary as not yet out.
+- Nature, matter 8: the Red List Index is modelled between assessments (SDG metadata 15.5.1, added as a source).
+- Power, map: the Tax Justice Network's US$108.5 billion is tax lost on offshore wealth, at least that much, at 2025
+  prices. The comparison now uses the network's own 2016-2023 series (corporate losses US$594 billion in 2016 and
+  US$475 billion in 2023, US$581 billion at 2016 tax rates; offshore flat just above US$100 billion).
+- Power, matter 10: Country Group D:5 is the US arms-embargoed countries, and the gist and the line say so; under the
+  rule the exporter files the monthly reports, not the receiving firm.
+- Inequality, matter 5: trend data exist only for the Americas and Europe, and the gist says so. The authors say the
+  drop "largely" reflects better data; the quoted words are the UNODC and UN Women brief's, now linked, not the press
+  release's.
+- War, map and matter 9: the Journal of Peace Research article is by Davies, Pettersson and Öberg, 63(4), 2026.
+- Economy, matter 2 (data file): in 2025 long-term debt flows turned to a net inflow of US$45 billion, beside the US$436
+  billion more paid in debt service than received between 2022 and 2025.
+- Poverty, Urgent but quiet: the 811 million is a 2026 nowcast.
+- `MAP.md`: the Tax Justice Network's row now carries the 2026 edition (one year, 2023 data, 2025 prices), the femicide
+  row the 2025 edition, and UNCTAD's row the date of the 2026 edition, 7 October. The LIC-DSF table now states
+  end-October 2026; its counts, of end-September, were not redone.
+- Neglected-crises lists: no new edition (NRC, 4 June 2026: Sudan, DR Congo, Colombia, Yemen, Afghanistan, Honduras
+  first; CARE, 28 January 2026: Central African Republic first, Honduras fifth). DR Congo stands here through matters 7
+  and 11, Yemen and Honduras through matter 3. Sudan, first on NRC's list and on the IRC's Watchlist and the largest
+  displacement situation in UNHCR's report (12.6 million), is not named: matter 3 names plans far below the average,
+  and Sudan's stood at 50.7 % today. Colombia (48.6 %) and the Central African Republic (58.1 %) stand near or above it,
+  Ecuador and Namibia, Zambia, Malawi and Angola have no plan in the overview, and the map has no global source that
+  follows them. Urgent but quiet stands.
