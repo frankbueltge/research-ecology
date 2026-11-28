@@ -1,6 +1,6 @@
 {
   "contract": "post-addressees/1",
-  "kept_on": "2026-11-24",
+  "kept_on": "2026-11-28",
   "note": "Receivers that publish a channel of their own for outside work. Rules: post/README.md. Every entry was read on the day in \"checked\"; re-read the channel page before a letter is written.",
   "entries": [
     {
@@ -221,15 +221,15 @@
       "channel": "https://forms.gle/Uwx9KJ18GSbW27ek7",
       "channel_page": "https://pudding.cool/pudding-cup/",
       "takes": "Free entry by URL of a non-commercial visual data-driven story published online in 2026; up to three winners get $1,500 each.",
-      "machine_made": "Not a rule, but the page says 'We're not here to police how you create a visual data-driven story' and warns that if entries are 'drowning in slop' the form may close (https://pudding.cool/pudding-cup/).",
+      "machine_made": "Not a rule, but the page says \"We’re not here to police how you create a visual data-driven story, but if your project doesn’t have a heartbeat, it’s not getting the Cup!\" and that the submissions are open \"for now. But if we find ourselves drowning in slop, we’ll close the form\" (https://pudding.cool/pudding-cup/).",
       "deadline": "2026-11-30",
       "cost": "none",
       "language": "en",
       "fits": "a single finished interactive page or data-art work from the compute or censorship themes",
-      "caveat": "Must be your own work, one entry per person, non-commercial, published in 2026; 'must be your own work' sits uneasily with machine-made authorship, so ask or disclose plainly; deadline is 16 days away; questions to sup@pudding.cool.",
-      "checked": "2026-11-14",
-      "recheck": "2026-11-25",
-      "read_by": "a summarising page reader; not yet re-read on the live page"
+      "caveat": "Must be your own work, one entry per person, non-commercial (made without compensation), published in 2026; the form asks the entrant to confirm being the creator of the piece, which sits uneasily with machine-made authorship, so ask or disclose plainly; the deadline is 2026-11-30, two days after the reading of 2026-11-28, and winners are announced the week of 2026-12-07; the page names no date for a 2027 call; questions to sup@pudding.cool, as the page gives it.",
+      "checked": "2026-11-28",
+      "recheck": "2026-12-01",
+      "read_by": "direct request to the live channel page and to the form, 2026-11-28"
     },
     {
       "name": "xCoAx 2027 (Computation, Communication, Aesthetics & X)",
@@ -684,7 +684,7 @@
     },
     {
       "name": "ISEA",
-      "reason": "Home page lists no call; Dubai 2026 site not read; tried again 2026-11-19, the home page still names Dubai 2026 as the next edition and no 2027 call was found"
+      "reason": "Home page lists no call; Dubai 2026 site not read; tried again 2026-11-19, the home page still names Dubai 2026 as the next edition and no 2027 call was found; tried again 2026-11-28: ISEA2026's own FAQ says it took place in Dubai from 6 to 15 November 2026, while isea-international.org still names Dubai 2026 as the next edition and its upcoming-symposium page lists only 2026; no ISEA2027 host or call was found"
     },
     {
       "name": "Kunstradio (Ö1)",
@@ -708,11 +708,11 @@
     },
     {
       "name": "Sigma Awards (GIJN)",
-      "reason": "Own site opened; the 2026 call closed in January/February 2026 and no 2027 call is posted. Rules page says submission via sigmaawards.awardsplatform.com, no AI rule stated. Revisit late 2026/early 2027. Tried again 2026-11-21: the site shows the 2026 winners and still no 2027 call."
+      "reason": "Own site opened; the 2026 call closed in January/February 2026 and no 2027 call is posted. Rules page says submission via sigmaawards.awardsplatform.com, no AI rule stated. Revisit late 2026/early 2027. Tried again 2026-11-21: the site shows the 2026 winners and still no 2027 call. Tried again 2026-11-28: the rules page is still headed 'The Sigma Awards 2026 Rules' (entries by 18 January 2026), the newest post on the site is of 26 June 2026, and no 2027 call is posted."
     },
     {
       "name": "Information is Beautiful Awards",
-      "reason": "Own site says 'Submissions are now closed' and the awards are 'on hiatus and will resume in 2027'. No open call. Tried again 2026-11-21: still no open call."
+      "reason": "Own site says 'Submissions are now closed' and the awards are 'on hiatus and will resume in 2027'. No open call. Tried again 2026-11-21: still no open call. Tried again 2026-11-28: the Data Visualization Society's awards page still says the awards are on hiatus and will resume in 2027 and that submissions are closed."
     },
     {
       "name": "Data Is Plural",
